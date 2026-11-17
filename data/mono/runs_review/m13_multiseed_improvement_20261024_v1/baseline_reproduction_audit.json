@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "original": "runs_review\\m13_tracking_closed_loop_ablation_20261024_v2\\closed_loop\\core\\probability_temporal\\clear_pipe_tracker_only",
+  "current": "runs_review\\m13_multiseed_improvement_20261024_v1\\closed_loop\\entry\\baseline\\clear_pipe_tracker_only",
+  "metrics_equal": {
+    "task_completed": true,
+    "route_completed": true,
+    "active_inspection_valid_fraction": true,
+    "active_inspection_frames": true,
+    "synthetic_inspection_valid_fraction": true,
+    "progress_m": true,
+    "synthetic_pipe_iou": true,
+    "elapsed_sim_s": true
+  },
+  "trajectory_equal": true,
+  "compared_fields": [
+    "t",
+    "x",
+    "y",
+    "yaw",
+    "pipe_ok",
+    "pipe_reason",
+    "pipe_cx",
+    "motion_phase",
+    "inspection_frame_valid",
+    "action",
+    "speed",
+    "yaw_rate_command",
+    "sway_command_mps"
+  ],
+  "excluded": "Inference wall time and extra experiment metadata"
+}

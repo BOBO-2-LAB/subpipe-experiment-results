@@ -1,0 +1,72 @@
+[
+  {
+    "scenario": "clear_down",
+    "mode": "avoidance",
+    "invalid_inspection_frames": 1,
+    "invalid_iou": 0,
+    "invalid_current": 0,
+    "invalid_corridor": 1,
+    "phase_frames": {
+      "inspection": 579,
+      "waiting": 29,
+      "reinspect_reverse": 95
+    },
+    "events": {},
+    "bend_confirmed_s": null,
+    "cap_confirmed_s": null,
+    "speed_saturation_frames": 0,
+    "acceleration_saturation_frames": 75,
+    "sway_saturation_frames": 0,
+    "maximum_cross_track_m": 1.0121689546120454,
+    "minimum_3d_clearance_m": null,
+    "recovery_events": [
+      {
+        "t": 6.8,
+        "event": "loss_wait_started"
+      },
+      {
+        "t": 7.766666666666667,
+        "event": "vision_reacquired"
+      },
+      {
+        "t": 10.933333333333334,
+        "event": "reinspection_started"
+      }
+    ]
+  },
+  {
+    "scenario": "clear_down",
+    "mode": "tracker_only",
+    "invalid_inspection_frames": 1,
+    "invalid_iou": 0,
+    "invalid_current": 0,
+    "invalid_corridor": 1,
+    "phase_frames": {
+      "inspection": 579,
+      "waiting": 29,
+      "reinspect_reverse": 95
+    },
+    "events": {},
+    "bend_confirmed_s": null,
+    "cap_confirmed_s": null,
+    "speed_saturation_frames": 0,
+    "acceleration_saturation_frames": 75,
+    "sway_saturation_frames": 0,
+    "maximum_cross_track_m": 1.0121689546120454,
+    "minimum_3d_clearance_m": null,
+    "recovery_events": [
+      {
+        "t": 6.8,
+        "event": "loss_wait_started"
+      },
+      {
+        "t": 7.766666666666667,
+        "event": "vision_reacquired"
+      },
+      {
+        "t": 10.933333333333334,
+        "event": "reinspection_started"
+      }
+    ]
+  }
+]

@@ -1,0 +1,154 @@
+{
+  "scenario": "clear_pipe",
+  "mode": "tracker_only",
+  "outcome": "timeout",
+  "route_completed": false,
+  "task_completed": false,
+  "legacy_task_completed": false,
+  "inspection_scoring": "inspection_phase",
+  "active_inspection_valid_fraction": 0.5833333333333334,
+  "active_inspection_frames": 36,
+  "corridor_preserved": true,
+  "inspection_recovered": false,
+  "synthetic_inspection_valid_fraction": 0.23333333333333334,
+  "collision": false,
+  "minimum_clearance_m": null,
+  "encounter_passed": false,
+  "footprint_contact": false,
+  "physical_collision": null,
+  "contact_metric": "horizontal footprint overlap; not physical 3D collision",
+  "inspection_recovery_time_s": null,
+  "elapsed_sim_s": 3.0,
+  "progress_m": 0.9965140720686009,
+  "maximum_abs_cross_track_m": 0.017465758888500545,
+  "pipe_loss_frames": 25,
+  "longest_pipe_loss_s": 0.4,
+  "ground_truth_pipe_out_of_view_frames": 0,
+  "tracking_error_abs_mean": 0.08881902700470705,
+  "actions": {
+    "recovery_initialization_wait": 13,
+    "nominal": 36,
+    "recovery_debounce_hold": 15,
+    "recovery_waiting": 11,
+    "recovery_reinspect_reverse": 15
+  },
+  "synthetic_pipe_iou": 0.3355541600906929,
+  "synthetic_fish_iou": null,
+  "visible_fish_frames": 0,
+  "fish_overlap_hit_frames": 0,
+  "fish_absent_but_detection_frames": 0,
+  "inference_wall_s_median": 0.014276750000135507,
+  "inference_wall_s_p95": 0.015220140005112626,
+  "frames": 90,
+  "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+  "video": null,
+  "event_times": {
+    "first_visible_s": null,
+    "first_effective_detection_s": null,
+    "first_matching_detection_s": null,
+    "first_confirmed_track_s": null,
+    "first_actionable_track_s": null,
+    "first_intervention_s": null,
+    "first_speed_command_reduction_s": 0.0,
+    "first_actual_speed_reduction_s": 0.0,
+    "first_avoidance_setpoint_s": null,
+    "contact_s": null,
+    "detection_delay_s": null,
+    "confirmation_delay_s": null,
+    "decision_delay_s": null,
+    "actuation_delay_s": null,
+    "remaining_time_at_intervention_s": null,
+    "matching_to_first_confirmation_s": null,
+    "matching_to_actionable_track_s": null,
+    "association_caveat": "Global first events; matching-based intervals are not proof of same-fish track identity.",
+    "post_intervention_command_reduction_s": null,
+    "post_intervention_actual_speed_response_s": null,
+    "post_intervention_actuation_delay_s": null
+  },
+  "minimum_sphere_clearance_m": null,
+  "simplified_3d_contact": null,
+  "sphere_metric": "Assumed sphere envelopes at fixed heights; evaluation only. Episode still stops at original horizontal contact.",
+  "speed_saturation_frames": 0,
+  "injected_fish_dropout_frames": 0,
+  "configured_image_delay_s": 0.21,
+  "loss_recovery_events": [
+    {
+      "t": 0.0,
+      "event": "initialization_wait_started"
+    },
+    {
+      "t": 0.43333333333333335,
+      "event": "initialization_confirmed"
+    },
+    {
+      "t": 1.6333333333333333,
+      "event": "loss_debounce_started",
+      "anchor": [
+        0.6320331904048332,
+        -0.0015959826518058833
+      ]
+    },
+    {
+      "t": 2.1333333333333333,
+      "event": "sustained_loss_confirmed",
+      "estimated_gap_m": 0.19851004777212375
+    },
+    {
+      "t": 2.5,
+      "event": "gap_reinspection_requested",
+      "gap": {
+        "anchor": [
+          0.6320331904048332,
+          -0.0015959826518058833
+        ],
+        "end": [
+          0.8761931613296973,
+          0.0024470019118513985
+        ],
+        "direction": [
+          0.9998629320420571,
+          0.016556482967730747
+        ],
+        "estimated_length_m": 0.244193442021305
+      },
+      "target": [
+        0.4820537505985246,
+        -0.004079455096965496
+      ]
+    },
+    {
+      "t": 2.5666666666666664,
+      "event": "reverse_observation_pause_started"
+    }
+  ],
+  "reinspection_restarts": 0,
+  "pipe_mask_motion_compensated": true,
+  "raw_delayed_pipe_iou": 0.3439543418035654,
+  "raw_delayed_inspection_valid_fraction": 0.32222222222222224,
+  "raw_delayed_active_valid_fraction": 0.6944444444444444,
+  "raw_delayed_task_completed": false,
+  "realized_image_age_s_max": 0.23333333333333361,
+  "original_inspection_recovered": true,
+  "new_tracker": {
+    "name": "probability",
+    "recovery_version": "v2",
+    "reverse_attempts": 1,
+    "completed_gaps": 0,
+    "unresolved_gap": {
+      "anchor": [
+        0.6320331904048332,
+        -0.0015959826518058833
+      ],
+      "end": [
+        0.8761931613296973,
+        0.0024470019118513985
+      ],
+      "direction": [
+        0.9998629320420571,
+        0.016556482967730747
+      ],
+      "estimated_length_m": 0.244193442021305
+    },
+    "failure": null
+  }
+}

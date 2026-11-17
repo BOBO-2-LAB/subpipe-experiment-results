@@ -1,0 +1,73 @@
+{
+  "integrity_passed": true,
+  "episodes": [
+    {
+      "scenario": "fish_down",
+      "mode": "avoidance",
+      "task_completed": false,
+      "inspection_valid_fraction": 0.9989837398373984,
+      "goal_reached": false,
+      "inspection_recovered": false,
+      "contact_xy": true,
+      "contact_3d": false,
+      "primary_contact_rule": "3D",
+      "maximum_cross_track_m": 1.0059424616053805,
+      "pipe_arc_observation_fraction": 1.0,
+      "terminal_pipe_observed": true,
+      "intervention_frames": 427,
+      "elapsed_s": 33.1,
+      "stop_reason": "corridor_exceeded"
+    },
+    {
+      "scenario": "mixed_clear",
+      "mode": "avoidance",
+      "task_completed": false,
+      "inspection_valid_fraction": 0.8179519595448799,
+      "goal_reached": false,
+      "inspection_recovered": false,
+      "contact_xy": false,
+      "contact_3d": false,
+      "primary_contact_rule": "3D",
+      "maximum_cross_track_m": 0.9062459358295067,
+      "pipe_arc_observation_fraction": 0.33620689655172414,
+      "terminal_pipe_observed": false,
+      "intervention_frames": 0,
+      "elapsed_s": 26.666666666666668,
+      "stop_reason": "unobserved_forward_geometry"
+    },
+    {
+      "scenario": "clear_straight",
+      "mode": "avoidance",
+      "task_completed": true,
+      "inspection_valid_fraction": 1.0,
+      "goal_reached": true,
+      "inspection_recovered": true,
+      "contact_xy": false,
+      "contact_3d": false,
+      "primary_contact_rule": "XY",
+      "maximum_cross_track_m": 2.6645352591003757e-15,
+      "pipe_arc_observation_fraction": 0.9444444444444444,
+      "terminal_pipe_observed": true,
+      "intervention_frames": 0,
+      "elapsed_s": 19.833333333333332,
+      "stop_reason": "goal_reached"
+    },
+    {
+      "scenario": "fish_up",
+      "mode": "avoidance",
+      "task_completed": true,
+      "inspection_valid_fraction": 1.0,
+      "goal_reached": true,
+      "inspection_recovered": true,
+      "contact_xy": true,
+      "contact_3d": false,
+      "primary_contact_rule": "3D",
+      "maximum_cross_track_m": 0.9011737306290193,
+      "pipe_arc_observation_fraction": 0.9375,
+      "terminal_pipe_observed": true,
+      "intervention_frames": 186,
+      "elapsed_s": 10.733333333333333,
+      "stop_reason": "goal_reached"
+    }
+  ]
+}

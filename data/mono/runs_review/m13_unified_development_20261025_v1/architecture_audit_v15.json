@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "scope": "static structure and existing controller interface regression; not a general-purpose taint proof",
+  "snapshot": "mono/runs_review/m13_unified_critical_v15_20261026_v1/source_snapshot",
+  "checks": {
+    "one_common_tracker_constructor": true,
+    "constructor_inputs_only_camera_config": true,
+    "same_main_config_for_every_run": true,
+    "no_legacy_orientation_controller_called": true,
+    "no_scenario_or_truth_name_in_common_control_core": true
+  },
+  "controller_constructor_args": [
+    [
+      "renderer.camera",
+      "cfg"
+    ]
+  ],
+  "common_core_sha256": "939672d0dacfe85cbfbf30b715c04be7163e095a22e394888aacb03a086a101c",
+  "models_changed": false,
+  "initial_axis_diameter_orthogonal_elbow_and_ideal_odometry_priors_explicit": true
+}

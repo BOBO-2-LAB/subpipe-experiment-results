@@ -1,0 +1,20 @@
+{
+  "scenario": "fish_vertical",
+  "model": "attention SUIM (not DeepCamo)",
+  "first_visible_s": 1.6333333333333333,
+  "first_raw_accepted_overlap_s": 1.8666666666666667,
+  "first_filtered_accepted_overlap_s": 6.766666666666667,
+  "raw_overlap_frames": 108,
+  "filtered_overlap_frames": 72,
+  "intervention_frames": 0,
+  "observations": [
+    "Early native accepted candidates predominantly rejected for insufficient image residual or gimbal sweep; class-consistency removes few annotated fish pixels at these times.",
+    "Native model also loses this target at intermediate closer views; no claim that filtering is the only problem."
+  ],
+  "new_single_config_switch": "fish_static_water_support=true",
+  "candidate_config": "configs/inspection_spatial_fish_up_wavelet_static_water_v1.json",
+  "algorithm_scope": "Existing model-probability support selected using RGB uniform-water ring, closed object, pipe exclusion and probability checks; no rendered fish labels used by controller.",
+  "acceptance_gates_unchanged": true,
+  "all_frame_valid_fraction": 0.6535714285714286,
+  "inspection_valid_fraction": 0.7157894736842105
+}

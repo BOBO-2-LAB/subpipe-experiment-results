@@ -1,0 +1,70 @@
+{
+  "episodes": [
+    {
+      "environment": "original",
+      "task_pass": false,
+      "goal": false,
+      "valid_fraction": 0.8333333333333334,
+      "active_frames": 18,
+      "valid_active_frames": 15,
+      "all_frame_valid_fraction": 0.03930817610062893,
+      "pipe_iou": 0.44854493663843376,
+      "progress_m": 0.4312378290269867,
+      "elapsed_s": 21.166666666666668,
+      "recovered": false,
+      "reverse_attempts": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered"
+    },
+    {
+      "environment": "visible",
+      "task_pass": false,
+      "goal": false,
+      "valid_fraction": 0.0,
+      "active_frames": 0,
+      "valid_active_frames": 0,
+      "all_frame_valid_fraction": 0.0,
+      "pipe_iou": 0.18919760170946914,
+      "progress_m": -0.0006435486103210898,
+      "elapsed_s": 20.0,
+      "recovered": false,
+      "reverse_attempts": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered"
+    }
+  ],
+  "funnels": {
+    "original": {
+      "status": {
+        "lost": 468,
+        "observed": 59,
+        "predicted": 109
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "short_skeleton_path": 465,
+        "pruned_skeleton": 136,
+        "no_endpoint_or_cyclic_skeleton": 17,
+        "no_near_component": 11
+      },
+      "smoothing_applied": 58,
+      "smoothing_fallback": 1,
+      "observed_without_current_measurement": 0
+    },
+    "visible": {
+      "status": {
+        "lost": 601
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "ambiguous_branch": 579,
+        "pruned_skeleton": 15
+      },
+      "smoothing_applied": 0,
+      "smoothing_fallback": 0,
+      "observed_without_current_measurement": 0
+    }
+  }
+}

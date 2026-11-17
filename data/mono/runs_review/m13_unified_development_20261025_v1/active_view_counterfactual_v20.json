@@ -1,0 +1,38 @@
+{
+  "counterfactual_only": true,
+  "original_render_exactly_matches_recorded_RGB": true,
+  "camera_request_uses_estimated_axis_only": true,
+  "old_pitch_deg": 64.78272118787334,
+  "new_pitch_deg": 35.572512278330905,
+  "new_yaw_deg": -8.109166648331561e-06,
+  "controller_phase": "geometry_verification",
+  "inference_wall_s": 0.37757979999878444,
+  "samples": [
+    {
+      "view": "recorded",
+      "near_branch": {
+        "visible_pixels": 8,
+        "mean_pipe_probability": 0.5663453340530396,
+        "neural_seeded_corners": 0
+      },
+      "whole_branch": {
+        "visible_pixels": 8,
+        "mean_pipe_probability": 0.5663453340530396,
+        "neural_seeded_corners": 0
+      }
+    },
+    {
+      "view": "active_view",
+      "near_branch": {
+        "visible_pixels": 1811,
+        "mean_pipe_probability": 0.02458137460052967,
+        "neural_seeded_corners": 1
+      },
+      "whole_branch": {
+        "visible_pixels": 2856,
+        "mean_pipe_probability": 0.23718148469924927,
+        "neural_seeded_corners": 23
+      }
+    }
+  ]
+}

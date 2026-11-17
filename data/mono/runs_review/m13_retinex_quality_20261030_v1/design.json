@@ -1,0 +1,59 @@
+{
+  "n": 129,
+  "size_hw": [
+    288,
+    512
+  ],
+  "conditions": [
+    "raw",
+    "retinex"
+  ],
+  "retinex": {
+    "mode": "msr_luminance_v1",
+    "strength": 0.35,
+    "sigma_fractions": [
+      0.04,
+      0.1,
+      0.21
+    ],
+    "target_luminance": 0.45,
+    "max_gain": 2.5,
+    "illumination_max_side": 192
+  },
+  "paired_experiment": "mono/runs_review/m13_retinex_input_20261030_v2",
+  "checkpoint_sha256": "938b238f52950150b09aa629bdd1ca1bdc2e392000480f95c0d2a16026c5f400",
+  "psnr_ssim_reference": "original degraded input RGB, not clean ground truth",
+  "psnr_range": 1.0,
+  "ssim": "mean over RGB; Gaussian 11x11 sigma=1.5; population covariance; K=.01/.03",
+  "uiqm": "Sobel magnitude, RGB-weighted EME .299/.587/.114; 10x10 full blocks; joint-RGB Michelson-log UIConM; all-pixel variance around 10% trimmed mean",
+  "uiqm_implementation_note": "Explicit common block variant, not a PLIP implementation. Exact trim and .114 blue weight correct off-by-one/.144 in FUnIE-GAN reference code.",
+  "uciqe": "native D65 CIELab, L=0..100 signed a/b; chroma std, mean top/bottom 1% L contrast, mean C/L",
+  "values": "per-image metrics, then unweighted image mean; std is across images, not across training seeds",
+  "image_precision": "same float32 enhanced RGB as paired network input; no saving/reloading JPEG or uint8 quantization",
+  "new_training": false,
+  "new_model_inference": false,
+  "clean_reference_available": false,
+  "sources": [
+    {
+      "name": "UCIQE original paper",
+      "url": "https://doi.org/10.1109/TIP.2015.2491020"
+    },
+    {
+      "name": "UIQM original paper",
+      "url": "https://doi.org/10.1109/JOE.2015.2469915"
+    },
+    {
+      "name": "FUnIE-GAN author implementation",
+      "url": "https://github.com/xahidbuffon/FUnIE-GAN/blob/master/Evaluation/uqim_utils.py"
+    },
+    {
+      "name": "SSIM author page",
+      "url": "https://ece.uwaterloo.ca/~z70wang/research/ssim/"
+    }
+  ],
+  "environment": {
+    "python": "3.13.16",
+    "numpy": "2.4.2",
+    "skimage": "0.26.0"
+  }
+}

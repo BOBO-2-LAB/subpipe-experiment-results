@@ -1,0 +1,73 @@
+{
+  "scenario": "clear_up",
+  "mode": "avoidance",
+  "task_completed": true,
+  "goal_reached": true,
+  "inspection_recovered": true,
+  "stop_reason": "goal_reached",
+  "inspection_valid_fraction": 1.0,
+  "valid_frames": 227,
+  "inspection_frames": 227,
+  "all_frame_valid_fraction": 0.9869565217391304,
+  "contact_3d": false,
+  "contact_xy": false,
+  "primary_contact_rule": "3D",
+  "elapsed_s": 7.866666666666666,
+  "maximum_cross_track_m": 0.18031555316755243,
+  "observed_elbows": [
+    {
+      "t": 0.9,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "gain": 0.2486159879831725,
+      "evidence": "current_surface_parallax_and_RGB",
+      "confirmation_baseline_m": 0.12933957614849828
+    },
+    {
+      "t": 2.8,
+      "event": "observed_frontier_end_confirmed",
+      "length_m": 4.100000000000001,
+      "position_xyz": [
+        3.95,
+        0.0,
+        -4.100000000000001
+      ],
+      "evidence": "current_paired_edges_and_finite_RGB_surface",
+      "mission_terminal_assumed": false
+    }
+  ],
+  "intervention_frames": 0,
+  "prediction_valid_frames": 0,
+  "frames_logged": 230,
+  "video_frames_written": 230,
+  "fps": 30,
+  "configuration_sha256": "c2164cc1243649cec98057cb68d5b116ff8be0e9ae755d5a24f56f3ba48f17b3",
+  "terminal_pipe_observed": true,
+  "pipe_arc_observation_fraction": 0.9375,
+  "schema_version": 2,
+  "route_completed": true,
+  "collision": false,
+  "simplified_3d_contact": false,
+  "active_inspection_valid_fraction": 1.0,
+  "synthetic_inspection_valid_fraction": 0.9869565217391304,
+  "maximum_abs_cross_track_m": 0.18031555316755243,
+  "elapsed_sim_s": 7.866666666666666,
+  "events": {},
+  "minimum_clearance_3d_m": null,
+  "minimum_clearance_xy_m": null,
+  "reverse_attempts": 0,
+  "waiting_frames": 3,
+  "reverse_recovery_frames": 0,
+  "synthetic_pipe_arc_bin_total": 32,
+  "episode_budget_s": 45.0,
+  "tracking_events": []
+}

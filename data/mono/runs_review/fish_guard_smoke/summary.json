@@ -1,0 +1,175 @@
+{
+  "tag": "fish_guard_smoke",
+  "ckpt": "mono/runs_ablation/M11/best.pt",
+  "n_train": 32,
+  "n_val": 8,
+  "epochs": 2,
+  "batch": 8,
+  "lr": 0.0003,
+  "size": [
+    64,
+    64
+  ],
+  "cache_dir": "mono/suim_clean/cache_384",
+  "separate_encoder": true,
+  "select": "bio",
+  "best_epoch": 1,
+  "best_score": 0.0901641845703125,
+  "evaluated_checkpoint": "runs_review\\fish_guard_smoke\\best.pt",
+  "per_class_iou": {
+    "BW": 0.0,
+    "HD": 0.0,
+    "PF": null,
+    "WR": 0.0,
+    "RO": null,
+    "RI": 0.0,
+    "FV": 0.180328369140625,
+    "SR": 0.0
+  },
+  "bio_mean_iou": 0.0901641845703125,
+  "all_mean_iou": 0.030054728190104168,
+  "confusion": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      13222,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4674,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3335,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1180,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5909,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4448,
+      0
+    ]
+  ],
+  "class_freq_train": {
+    "BW": 0.4027336961002556,
+    "HD": 0.05663768653640036,
+    "PF": 0.0029430703273147004,
+    "WR": 0.07244537884409268,
+    "RO": 0.04570203644158628,
+    "RI": 0.23888651166625444,
+    "FV": 0.020307939648775662,
+    "SR": 0.1603436804353203
+  },
+  "pipe_guard_before": [
+    {
+      "shape": [
+        2,
+        3,
+        288,
+        512
+      ],
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "shape": [
+        2,
+        3,
+        64,
+        64
+      ],
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    }
+  ],
+  "pipe_guard_after": [
+    {
+      "shape": [
+        2,
+        3,
+        288,
+        512
+      ],
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "shape": [
+        2,
+        3,
+        64,
+        64
+      ],
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    }
+  ],
+  "pipe_state_unchanged": true,
+  "model": {
+    "pipe_total_M": 0.476342,
+    "fish_decoder_M": 0.05396,
+    "fish_encoder_M": 0.336692,
+    "total_M": 0.866994,
+    "trainable_M": 0.390652
+  }
+}

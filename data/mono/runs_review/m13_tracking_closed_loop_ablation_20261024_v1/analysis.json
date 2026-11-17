@@ -1,0 +1,541 @@
+{
+  "episodes": [
+    {
+      "stage": "core",
+      "tracker": "paired_probability_temporal",
+      "scenario": "brief_occlusion",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.328125,
+      "all_frame_valid_fraction": 0.017341040462427744,
+      "pipe_iou": 0.129611155497516,
+      "elapsed_s": 40.333333333333336,
+      "progress_m": 0.8328183968592521,
+      "contact_2d": false,
+      "contact_3d": null,
+      "reverse_attempts": 0,
+      "recovery_failure": "perception_loss_timeout",
+      "unknown_motion_m": 0.4016532331422191,
+      "unverified_passed_segments": 0,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v1/closed_loop/core/paired_probability_temporal/brief_occlusion_tracker_only/result.json",
+      "frame_analysis": {
+        "status_counts": {
+          "lost": 839,
+          "observed": 176,
+          "predicted": 196
+        },
+        "measurement_reasons": {
+          "missing_probability_input": 7,
+          "probability_path": 176,
+          "short_probability_path": 668,
+          "insufficient_path_support": 40,
+          "blackout": 30,
+          "no_paired_edge_seed": 290
+        },
+        "pipe_health_reasons": {
+          "no_pipe": 12,
+          "near_segments_stable": 175,
+          "no_fresh_near_segments": 993,
+          "too_large": 30,
+          "near_segments_unstable": 1
+        },
+        "active_low_iou_frames": 43,
+        "reverse_phase_frames": 0
+      }
+    },
+    {
+      "stage": "core",
+      "tracker": "paired_probability_temporal",
+      "scenario": "clear_pipe",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.328125,
+      "all_frame_valid_fraction": 0.017341040462427744,
+      "pipe_iou": 0.14825135207117443,
+      "elapsed_s": 40.333333333333336,
+      "progress_m": 0.8328183968592521,
+      "contact_2d": false,
+      "contact_3d": null,
+      "reverse_attempts": 0,
+      "recovery_failure": "perception_loss_timeout",
+      "unknown_motion_m": 0.4016532331422191,
+      "unverified_passed_segments": 0,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v1/closed_loop/core/paired_probability_temporal/clear_pipe_tracker_only/result.json",
+      "frame_analysis": {
+        "status_counts": {
+          "lost": 819,
+          "observed": 187,
+          "predicted": 205
+        },
+        "measurement_reasons": {
+          "missing_probability_input": 7,
+          "probability_path": 187,
+          "short_probability_path": 680,
+          "insufficient_path_support": 41,
+          "no_paired_edge_seed": 296
+        },
+        "pipe_health_reasons": {
+          "no_pipe": 12,
+          "near_segments_stable": 186,
+          "no_fresh_near_segments": 1012,
+          "near_segments_unstable": 1
+        },
+        "active_low_iou_frames": 43,
+        "reverse_phase_frames": 0
+      }
+    },
+    {
+      "stage": "core",
+      "tracker": "paired_probability_temporal",
+      "scenario": "perception_loss",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.19811320754716982,
+      "all_frame_valid_fraction": 0.015555555555555555,
+      "pipe_iou": 0.14030355911984216,
+      "elapsed_s": 45.0,
+      "progress_m": 1.2183461756000744,
+      "contact_2d": false,
+      "contact_3d": null,
+      "reverse_attempts": 0,
+      "recovery_failure": null,
+      "unknown_motion_m": 0.4016532331422191,
+      "unverified_passed_segments": 0,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v1/closed_loop/core/paired_probability_temporal/perception_loss_tracker_only/result.json",
+      "frame_analysis": {
+        "status_counts": {
+          "lost": 700,
+          "observed": 314,
+          "predicted": 336
+        },
+        "measurement_reasons": {
+          "missing_probability_input": 7,
+          "probability_path": 314,
+          "short_probability_path": 859,
+          "insufficient_path_support": 37,
+          "blackout": 120,
+          "no_paired_edge_seed": 13
+        },
+        "pipe_health_reasons": {
+          "no_pipe": 21,
+          "near_segments_stable": 306,
+          "no_fresh_near_segments": 895,
+          "too_large": 120,
+          "near_segments_unstable": 8
+        },
+        "active_low_iou_frames": 85,
+        "reverse_phase_frames": 0
+      }
+    },
+    {
+      "stage": "core",
+      "tracker": "paired_probability_temporal",
+      "scenario": "pipe_jitter",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.328125,
+      "all_frame_valid_fraction": 0.017341040462427744,
+      "pipe_iou": 0.14733535947887083,
+      "elapsed_s": 40.333333333333336,
+      "progress_m": 0.8328183968592521,
+      "contact_2d": false,
+      "contact_3d": null,
+      "reverse_attempts": 0,
+      "recovery_failure": "perception_loss_timeout",
+      "unknown_motion_m": 0.4016532331422191,
+      "unverified_passed_segments": 0,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v1/closed_loop/core/paired_probability_temporal/pipe_jitter_tracker_only/result.json",
+      "frame_analysis": {
+        "status_counts": {
+          "lost": 819,
+          "observed": 183,
+          "predicted": 209
+        },
+        "measurement_reasons": {
+          "missing_probability_input": 7,
+          "probability_path": 183,
+          "short_probability_path": 679,
+          "insufficient_path_support": 40,
+          "blackout": 6,
+          "no_paired_edge_seed": 296
+        },
+        "pipe_health_reasons": {
+          "no_pipe": 12,
+          "near_segments_stable": 182,
+          "no_fresh_near_segments": 1010,
+          "too_large": 6,
+          "near_segments_unstable": 1
+        },
+        "active_low_iou_frames": 43,
+        "reverse_phase_frames": 0
+      }
+    },
+    {
+      "stage": "core",
+      "tracker": "probability_temporal",
+      "scenario": "brief_occlusion",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.12931034482758622,
+      "all_frame_valid_fraction": 0.011111111111111112,
+      "pipe_iou": 0.1708452032945705,
+      "elapsed_s": 45.0,
+      "progress_m": 1.439054796766525,
+      "contact_2d": false,
+      "contact_3d": null,
+      "reverse_attempts": 0,
+      "recovery_failure": null,
+      "unknown_motion_m": 0.4185087115512597,
+      "unverified_passed_segments": 0,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v1/closed_loop/core/probability_temporal/brief_occlusion_tracker_only/result.json",
+      "frame_analysis": {
+        "status_counts": {
+          "lost": 198,
+          "observed": 623,
+          "predicted": 529
+        },
+        "measurement_reasons": {
+          "missing_probability_input": 7,
+          "probability_path": 626,
+          "short_probability_path": 625,
+          "blackout": 30,
+          "no_probability_seed": 62
+        },
+        "pipe_health_reasons": {
+          "no_pipe": 14,
+          "near_segments_stable": 470,
+          "no_fresh_near_segments": 683,
+          "too_large": 30,
+          "near_segments_unstable": 153
+        },
+        "active_low_iou_frames": 101,
+        "reverse_phase_frames": 0
+      }
+    },
+    {
+      "stage": "core",
+      "tracker": "probability_temporal",
+      "scenario": "clear_pipe",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.15,
+      "all_frame_valid_fraction": 0.011111111111111112,
+      "pipe_iou": 0.14920952158090905,
+      "elapsed_s": 45.0,
+      "progress_m": 1.1193686865358619,
+      "contact_2d": false,
+      "contact_3d": null,
+      "reverse_attempts": 0,
+      "recovery_failure": null,
+      "unknown_motion_m": 0.4185087115512597,
+      "unverified_passed_segments": 0,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v1/closed_loop/core/probability_temporal/clear_pipe_tracker_only/result.json",
+      "frame_analysis": {
+        "status_counts": {
+          "lost": 150,
+          "observed": 668,
+          "predicted": 532
+        },
+        "measurement_reasons": {
+          "missing_probability_input": 7,
+          "probability_path": 671,
+          "short_probability_path": 535,
+          "no_probability_seed": 131,
+          "insufficient_path_support": 6
+        },
+        "pipe_health_reasons": {
+          "no_pipe": 28,
+          "near_segments_stable": 482,
+          "no_fresh_near_segments": 654,
+          "near_segments_unstable": 186
+        },
+        "active_low_iou_frames": 85,
+        "reverse_phase_frames": 0
+      }
+    },
+    {
+      "stage": "core",
+      "tracker": "probability_temporal",
+      "scenario": "perception_loss",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.12931034482758622,
+      "all_frame_valid_fraction": 0.013278008298755186,
+      "pipe_iou": 0.08726905782573403,
+      "elapsed_s": 40.13333333333333,
+      "progress_m": 1.2975225507184671,
+      "contact_2d": false,
+      "contact_3d": null,
+      "reverse_attempts": 0,
+      "recovery_failure": "perception_loss_timeout",
+      "unknown_motion_m": 0.4185087115512597,
+      "unverified_passed_segments": 0,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v1/closed_loop/core/probability_temporal/perception_loss_tracker_only/result.json",
+      "frame_analysis": {
+        "status_counts": {
+          "lost": 501,
+          "observed": 357,
+          "predicted": 347
+        },
+        "measurement_reasons": {
+          "missing_probability_input": 7,
+          "probability_path": 360,
+          "short_probability_path": 682,
+          "blackout": 120,
+          "insufficient_path_support": 2,
+          "no_probability_seed": 34
+        },
+        "pipe_health_reasons": {
+          "no_pipe": 18,
+          "near_segments_stable": 320,
+          "no_fresh_near_segments": 710,
+          "too_large": 120,
+          "near_segments_unstable": 37
+        },
+        "active_low_iou_frames": 101,
+        "reverse_phase_frames": 0
+      }
+    },
+    {
+      "stage": "core",
+      "tracker": "probability_temporal",
+      "scenario": "pipe_jitter",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.1509433962264151,
+      "all_frame_valid_fraction": 0.015180265654648957,
+      "pipe_iou": 0.12895988322434784,
+      "elapsed_s": 35.1,
+      "progress_m": 1.5013553906115429,
+      "contact_2d": false,
+      "contact_3d": null,
+      "reverse_attempts": 0,
+      "recovery_failure": "perception_loss_timeout",
+      "unknown_motion_m": 0.4185087115512597,
+      "unverified_passed_segments": 0,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v1/closed_loop/core/probability_temporal/pipe_jitter_tracker_only/result.json",
+      "frame_analysis": {
+        "status_counts": {
+          "lost": 596,
+          "observed": 296,
+          "predicted": 162
+        },
+        "measurement_reasons": {
+          "missing_probability_input": 7,
+          "probability_path": 299,
+          "short_probability_path": 720,
+          "blackout": 6,
+          "no_probability_seed": 22
+        },
+        "pipe_health_reasons": {
+          "no_pipe": 304,
+          "near_segments_stable": 254,
+          "no_fresh_near_segments": 448,
+          "too_large": 6,
+          "near_segments_unstable": 42
+        },
+        "active_low_iou_frames": 90,
+        "reverse_phase_frames": 0
+      }
+    },
+    {
+      "stage": "core",
+      "tracker": "skeleton_temporal",
+      "scenario": "brief_occlusion",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.39634146341463417,
+      "all_frame_valid_fraction": 0.09333333333333334,
+      "pipe_iou": 0.29471396533449745,
+      "elapsed_s": 45.0,
+      "progress_m": 1.291554563935127,
+      "contact_2d": false,
+      "contact_3d": null,
+      "reverse_attempts": 0,
+      "recovery_failure": null,
+      "unknown_motion_m": 1.4020214736555336,
+      "unverified_passed_segments": 0,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v1/closed_loop/core/skeleton_temporal/brief_occlusion_tracker_only/result.json",
+      "frame_analysis": {
+        "status_counts": {
+          "lost": 116,
+          "observed": 703,
+          "predicted": 531
+        },
+        "measurement_reasons": {
+          "missing_probability_input": 7,
+          "no_component": 334,
+          "image_skeleton": 706,
+          "blackout": 30,
+          "short_skeleton": 264,
+          "short_path": 9
+        },
+        "pipe_health_reasons": {
+          "no_pipe": 7,
+          "no_fresh_near_segments": 610,
+          "near_segments_unstable": 194,
+          "too_large": 30,
+          "near_segments_stable": 509
+        },
+        "active_low_iou_frames": 99,
+        "reverse_phase_frames": 0
+      }
+    },
+    {
+      "stage": "core",
+      "tracker": "skeleton_temporal",
+      "scenario": "clear_pipe",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.39634146341463417,
+      "all_frame_valid_fraction": 0.09333333333333334,
+      "pipe_iou": 0.34374487190963493,
+      "elapsed_s": 45.0,
+      "progress_m": 1.291554563935127,
+      "contact_2d": false,
+      "contact_3d": null,
+      "reverse_attempts": 0,
+      "recovery_failure": null,
+      "unknown_motion_m": 1.4020214736555336,
+      "unverified_passed_segments": 0,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v1/closed_loop/core/skeleton_temporal/clear_pipe_tracker_only/result.json",
+      "frame_analysis": {
+        "status_counts": {
+          "lost": 100,
+          "observed": 733,
+          "predicted": 517
+        },
+        "measurement_reasons": {
+          "missing_probability_input": 7,
+          "no_component": 334,
+          "image_skeleton": 736,
+          "short_skeleton": 264,
+          "short_path": 9
+        },
+        "pipe_health_reasons": {
+          "no_pipe": 7,
+          "no_fresh_near_segments": 610,
+          "near_segments_unstable": 224,
+          "near_segments_stable": 509
+        },
+        "active_low_iou_frames": 99,
+        "reverse_phase_frames": 0
+      }
+    },
+    {
+      "stage": "core",
+      "tracker": "skeleton_temporal",
+      "scenario": "perception_loss",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.4294478527607362,
+      "all_frame_valid_fraction": 0.08444444444444445,
+      "pipe_iou": 0.19192265941062076,
+      "elapsed_s": 45.0,
+      "progress_m": 1.3283254749523354,
+      "contact_2d": false,
+      "contact_3d": null,
+      "reverse_attempts": 0,
+      "recovery_failure": null,
+      "unknown_motion_m": 1.4260230631760336,
+      "unverified_passed_segments": 0,
+      "failed_checks": "goal_reached;inspection_valid_fraction",
+      "result": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v1/closed_loop/core/skeleton_temporal/perception_loss_tracker_only/result.json",
+      "frame_analysis": {
+        "status_counts": {
+          "lost": 229,
+          "observed": 805,
+          "predicted": 316
+        },
+        "measurement_reasons": {
+          "missing_probability_input": 7,
+          "no_component": 290,
+          "image_skeleton": 806,
+          "blackout": 120,
+          "short_skeleton": 113,
+          "short_path": 14
+        },
+        "pipe_health_reasons": {
+          "no_pipe": 8,
+          "no_fresh_near_segments": 417,
+          "near_segments_unstable": 271,
+          "too_large": 120,
+          "near_segments_stable": 534
+        },
+        "active_low_iou_frames": 93,
+        "reverse_phase_frames": 0
+      }
+    },
+    {
+      "stage": "core",
+      "tracker": "skeleton_temporal",
+      "scenario": "pipe_jitter",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.39634146341463417,
+      "all_frame_valid_fraction": 0.09333333333333334,
+      "pipe_iou": 0.334838442735712,
+      "elapsed_s": 45.0,
+      "progress_m": 1.291554563935127,
+      "contact_2d": false,
+      "contact_3d": null,
+      "reverse_attempts": 0,
+      "recovery_failure": null,
+      "unknown_motion_m": 1.4020214736555336,
+      "unverified_passed_segments": 0,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v1/closed_loop/core/skeleton_temporal/pipe_jitter_tracker_only/result.json",
+      "frame_analysis": {
+        "status_counts": {
+          "lost": 100,
+          "observed": 727,
+          "predicted": 523
+        },
+        "measurement_reasons": {
+          "missing_probability_input": 7,
+          "no_component": 334,
+          "image_skeleton": 730,
+          "blackout": 6,
+          "short_skeleton": 264,
+          "short_path": 9
+        },
+        "pipe_health_reasons": {
+          "no_pipe": 7,
+          "no_fresh_near_segments": 610,
+          "near_segments_unstable": 218,
+          "too_large": 6,
+          "near_segments_stable": 509
+        },
+        "active_low_iou_frames": 99,
+        "reverse_phase_frames": 0
+      }
+    }
+  ],
+  "entry_gates": {
+    "paired_probability_temporal": "FAIL: 0/4 core passed; 12 fish/bend episodes not run",
+    "probability_temporal": "FAIL: 0/4 core passed; 12 fish/bend episodes not run",
+    "skeleton_temporal": "FAIL: 0/4 core passed; 12 fish/bend episodes not run"
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "scenario": "pipe_jitter",
+  "mode": "tracker_only",
+  "outcome": "timeout",
+  "route_completed": false,
+  "task_completed": false,
+  "legacy_task_completed": false,
+  "inspection_scoring": "inspection_phase",
+  "active_inspection_valid_fraction": 0.9110032362459547,
+  "active_inspection_frames": 618,
+  "corridor_preserved": true,
+  "inspection_recovered": false,
+  "synthetic_inspection_valid_fraction": 0.7081481481481482,
+  "collision": false,
+  "minimum_clearance_m": null,
+  "encounter_passed": false,
+  "footprint_contact": false,
+  "physical_collision": null,
+  "contact_metric": "horizontal footprint overlap; not physical 3D collision",
+  "inspection_recovery_time_s": null,
+  "elapsed_sim_s": 45.0,
+  "progress_m": 7.9527967633279415,
+  "maximum_abs_cross_track_m": 0.02600316909465158,
+  "pipe_loss_frames": 253,
+  "longest_pipe_loss_s": 0.6666666666666662,
+  "ground_truth_pipe_out_of_view_frames": 6,
+  "tracking_error_abs_mean": 0.0005865274896979387,
+  "actions": {
+    "recovery_initialization_wait": 13,
+    "nominal": 618,
+    "recovery_debounce_hold": 196,
+    "recovery_waiting": 198,
+    "recovery_reinspect_reverse": 325
+  },
+  "synthetic_pipe_iou": 0.7802827217194417,
+  "synthetic_fish_iou": null,
+  "visible_fish_frames": 0,
+  "fish_overlap_hit_frames": 0,
+  "fish_absent_but_detection_frames": 0,
+  "inference_wall_s_median": 0.015129949999391101,
+  "inference_wall_s_p95": 0.016450860002078117,
+  "frames": 1350,
+  "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+  "video": "mono/runs_review/m13_probability_path_20261024_v1/closed_loop/core/skeleton/pipe_jitter_tracker_only/feedback.mp4",
+  "event_times": {
+    "first_visible_s": null,
+    "first_effective_detection_s": null,
+    "first_matching_detection_s": null,
+    "first_confirmed_track_s": null,
+    "first_actionable_track_s": null,
+    "first_intervention_s": null,
+    "first_speed_command_reduction_s": 0.0,
+    "first_actual_speed_reduction_s": 0.0,
+    "first_avoidance_setpoint_s": null,
+    "contact_s": null,
+    "detection_delay_s": null,
+    "confirmation_delay_s": null,
+    "decision_delay_s": null,
+    "actuation_delay_s": null,
+    "remaining_time_at_intervention_s": null,
+    "matching_to_first_confirmation_s": null,
+    "matching_to_actionable_track_s": null,
+    "association_caveat": "Global first events; matching-based intervals are not proof of same-fish track identity.",
+    "post_intervention_command_reduction_s": null,
+    "post_intervention_actual_speed_response_s": null,
+    "post_intervention_actuation_delay_s": null
+  },
+  "minimum_sphere_clearance_m": null,
+  "simplified_3d_contact": null,
+  "sphere_metric": "Assumed sphere envelopes at fixed heights; evaluation only. Episode still stops at original horizontal contact.",
+  "speed_saturation_frames": 20,
+  "injected_fish_dropout_frames": 0,
+  "configured_image_delay_s": 0.21,
+  "loss_recovery_events": [
+    {
+      "t": 0.0,
+      "event": "initialization_wait_started"
+    },
+    {
+      "t": 0.43333333333333335,
+      "event": "initialization_confirmed"
+    },
+    {
+      "t": 1.9666666666666666,
+      "event": "loss_debounce_started",
+      "anchor": [
+        0.7758519569871811,
+        -0.006404443613446051
+      ]
+    },
+    {
+      "t": 2.466666666666667,
+      "event": "sustained_loss_confirmed",
+      "estimated_gap_m": 0.18797981090446064
+    },
+    {
+      "t": 2.6333333333333333,
+      "event": "gap_reinspection_requested",
+      "gap": {
+        "anchor": [
+          0.7758519569871811,
+          -0.006404443613446051
+        ],
+        "end": [
+          0.9638317435861844,
+          -0.0065000358201388955
+        ],
+        "direction": [
+          0.999999870701767,
+          -0.0005085237942995293
+        ],
+        "estimated_length_m": 0.18797981090446064
+      },
+      "target": [
+        0.6258519763819161,
+        -0.006328165044301122
+      ]
+    },
+    {
+      "t": 2.8333333333333335,
+      "event": "reverse_observation_pause_started"
+    },
+    {
+      "t": 3.6,
+      "event": "reverse_observation_pause_resumed"
+    },
+    {
+      "t": 4.833333333333333,
+      "event": "reverse_observation_pause_started"
+    },
+    {
+      "t": 5.233333333333333,
+      "event": "reverse_observation_pause_resumed"
+    },
+    {
+      "t": 5.6,
+      "event": "reverse_observation_pause_started"
+    },
+    {
+      "t": 5.9,
+      "event": "reverse_observation_pause_resumed"
+    },
+    {
+      "t": 7.8999999999999995,
+      "event": "reinspection_forward_started"
+    },
+    {
+      "t": 10.033333333333333,
+      "event": "gap_reinspection_completed",
+      "gap": {
+        "anchor": [
+          0.7758519569871811,
+          -0.006404443613446051
+        ],
+        "end": [
+          0.9638317435861844,
+          -0.0065000358201388955
+        ],
+        "direction": [
+          0.999999870701767,
+          -0.0005085237942995293
+        ],
+        "estimated_length_m": 0.18797981090446064
+      }
+    },
+    {
+      "t": 11.1,
+      "event": "loss_debounce_started",
+      "anchor": [
+        1.3533269219973596,
+        -0.009857413971584916
+      ]
+    },
+    {
+      "t": 11.566666666666666,
+      "event": "brief_loss_resumed",
+      "estimated_gap_m": 0.10096966797802552,
+      "loss_duration_s": 0.4666666666666668
+    },
+    {
+      "t": 11.6,
+      "event": "loss_debounce_started",
+      "anchor": [
+        1.5270978226423755,
+        -0.010243965632681753
+      ]
+    },
+    {
+      "t": 11.9,
+      "event": "brief_loss_resumed",
+      "estimated_gap_m": 0.03572888743027821,
+      "loss_duration_s": 0.3000000000000007
+    },
+    {
+      "t": 12.5,
+      "event": "loss_debounce_started",
+      "anchor": [
+        1.7614186934022364,
+        -0.010767096479396047
+      ]
+    },
+    {
+      "t": 13.0,
+      "event": "sustained_loss_confirmed",
+      "estimated_gap_m": 0.1356587135103749
+    },
+    {
+      "t": 13.233333333333333,
+      "event": "stationary_loss_resumed",
+      "estimated_gap_m": 0.1356587135103749,
+      "loss_duration_s": 0.7333333333333325
+    },
+    {
+      "t": 19.066666666666666,
+      "event": "loss_debounce_started",
+      "anchor": [
+        4.311490430039669,
+        -0.017066075529231343
+      ]
+    },
+    {
+      "t": 19.4,
+      "event": "brief_loss_resumed",
+      "estimated_gap_m": 0.06380799890018941,
+      "loss_duration_s": 0.33333333333333215
+    },
+    {
+      "t": 25.9,
+      "event": "loss_debounce_started",
+      "anchor": [
+        7.520934656651817,
+        -0.02496012041440494
+      ]
+    },
+    {
+      "t": 26.4,
+      "event": "sustained_loss_confirmed",
+      "estimated_gap_m": 0.22145507875384166
+    },
+    {
+      "t": 27.4,
+      "event": "gap_reinspection_requested",
+      "gap": {
+        "anchor": [
+          7.520934656651817,
+          -0.02496012041440494
+        ],
+        "end": [
+          7.908361926453174,
+          -0.02590213237033587
+        ],
+        "direction": [
+          0.9999970440265009,
+          -0.002431447770446163
+        ],
+        "estimated_length_m": 0.3874284150294849
+      },
+      "target": [
+        7.370935100047841,
+        -0.024595403248838014
+      ]
+    },
+    {
+      "t": 27.53333333333333,
+      "event": "reverse_observation_pause_started"
+    },
+    {
+      "t": 27.8,
+      "event": "reverse_observation_pause_resumed"
+    },
+    {
+      "t": 29.0,
+      "event": "reverse_observation_pause_started"
+    },
+    {
+      "t": 29.466666666666665,
+      "event": "reverse_observation_pause_resumed"
+    },
+    {
+      "t": 30.8,
+      "event": "reverse_observation_pause_started"
+    },
+    {
+      "t": 31.733333333333334,
+      "event": "reverse_observation_pause_resumed"
+    },
+    {
+      "t": 31.766666666666666,
+      "event": "reverse_observation_pause_started"
+    },
+    {
+      "t": 32.96666666666667,
+      "event": "reverse_observation_pause_resumed"
+    },
+    {
+      "t": 32.96666666666667,
+      "event": "reinspection_forward_started"
+    },
+    {
+      "t": 33.1,
+      "event": "loss_debounce_started",
+      "anchor": [
+        7.369692450720372,
+        -0.02459065636490656
+      ]
+    },
+    {
+      "t": 33.333333333333336,
+      "event": "brief_loss_resumed",
+      "estimated_gap_m": 0.0006891485414564031,
+      "loss_duration_s": 0.23333333333333428
+    },
+    {
+      "t": 33.53333333333333,
+      "event": "loss_debounce_started",
+      "anchor": [
+        7.375342479600377,
+        -0.024604993637143992
+      ]
+    },
+    {
+      "t": 34.03333333333333,
+      "event": "sustained_loss_confirmed",
+      "estimated_gap_m": 0.025843653401524128
+    },
+    {
+      "t": 34.266666666666666,
+      "event": "stationary_loss_resumed",
+      "estimated_gap_m": 0.027152363553407034,
+      "loss_duration_s": 0.7333333333333343
+    },
+    {
+      "t": 34.4,
+      "event": "loss_debounce_started",
+      "anchor": [
+        7.413382365612251,
+        -0.02469877167897687
+      ]
+    },
+    {
+      "t": 34.9,
+      "event": "sustained_loss_confirmed",
+      "estimated_gap_m": 0.024856964035263666
+    },
+    {
+      "t": 38.06666666666666,
+      "event": "stationary_loss_resumed",
+      "estimated_gap_m": 0.046528331915909944,
+      "loss_duration_s": 3.6666666666666643
+    },
+    {
+      "t": 38.166666666666664,
+      "event": "loss_debounce_started",
+      "anchor": [
+        7.436303181591867,
+        -0.024754893621257174
+      ]
+    },
+    {
+      "t": 38.666666666666664,
+      "event": "sustained_loss_confirmed",
+      "estimated_gap_m": 0.00316597631945135
+    },
+    {
+      "t": 38.833333333333336,
+      "event": "stationary_loss_resumed",
+      "estimated_gap_m": 0.00316597631945135,
+      "loss_duration_s": 0.6666666666666714
+    },
+    {
+      "t": 38.86666666666667,
+      "event": "loss_debounce_started",
+      "anchor": [
+        7.4404836254371185,
+        -0.024765579833922056
+      ]
+    },
+    {
+      "t": 39.1,
+      "event": "brief_loss_resumed",
+      "estimated_gap_m": 0.00029347777341730703,
+      "loss_duration_s": 0.23333333333333428
+    },
+    {
+      "t": 39.56666666666666,
+      "event": "loss_debounce_started",
+      "anchor": [
+        7.468473974639191,
+        -0.024835067026988025
+      ]
+    },
+    {
+      "t": 40.06666666666666,
+      "event": "sustained_loss_confirmed",
+      "estimated_gap_m": 0.05837392943267645
+    },
+    {
+      "t": 41.6,
+      "event": "stationary_loss_resumed",
+      "estimated_gap_m": 0.10959207787004392,
+      "loss_duration_s": 2.0333333333333385
+    },
+    {
+      "t": 41.9,
+      "event": "loss_debounce_started",
+      "anchor": [
+        7.583536483938158,
+        -0.025117436391360222
+      ]
+    },
+    {
+      "t": 42.233333333333334,
+      "event": "brief_loss_resumed",
+      "estimated_gap_m": 0.009946774475876372,
+      "loss_duration_s": 0.3333333333333357
+    },
+    {
+      "t": 42.63333333333333,
+      "event": "loss_debounce_started",
+      "anchor": [
+        7.6325674795656075,
+        -0.025237298808245715
+      ]
+    },
+    {
+      "t": 43.13333333333333,
+      "event": "sustained_loss_confirmed",
+      "estimated_gap_m": 0.05363059577678557
+    },
+    {
+      "t": 43.233333333333334,
+      "event": "stationary_loss_resumed",
+      "estimated_gap_m": 0.05363059577678557,
+      "loss_duration_s": 0.6000000000000014
+    },
+    {
+      "t": 43.36666666666667,
+      "event": "loss_debounce_started",
+      "anchor": [
+        7.714242930335063,
+        -0.025437719210368193
+      ]
+    },
+    {
+      "t": 43.63333333333333,
+      "event": "brief_loss_resumed",
+      "estimated_gap_m": 0.010457865192905143,
+      "loss_duration_s": 0.2666666666666657
+    },
+    {
+      "t": 43.666666666666664,
+      "event": "loss_debounce_started",
+      "anchor": [
+        7.744163857212571,
+        -0.025511206338356143
+      ]
+    },
+    {
+      "t": 43.96666666666667,
+      "event": "brief_loss_resumed",
+      "estimated_gap_m": 0.011423300617512337,
+      "loss_duration_s": 0.30000000000000426
+    },
+    {
+      "t": 44.833333333333336,
+      "event": "gap_reinspection_completed",
+      "gap": {
+        "anchor": [
+          7.520934656651817,
+          -0.02496012041440494
+        ],
+        "end": [
+          7.908361926453174,
+          -0.02590213237033587
+        ],
+        "direction": [
+          0.9999970440265009,
+          -0.002431447770446163
+        ],
+        "estimated_length_m": 0.3874284150294849
+      }
+    },
+    {
+      "t": 44.93333333333333,
+      "event": "loss_debounce_started",
+      "anchor": [
+        7.927567682432986,
+        -0.025962142854097193
+      ]
+    }
+  ],
+  "reinspection_restarts": 2,
+  "pipe_mask_motion_compensated": true,
+  "raw_delayed_pipe_iou": 0.7843494900372616,
+  "raw_delayed_inspection_valid_fraction": 0.7088888888888889,
+  "raw_delayed_active_valid_fraction": 0.912621359223301,
+  "raw_delayed_task_completed": false,
+  "realized_image_age_s_max": 0.23333333333333783,
+  "original_inspection_recovered": true,
+  "new_tracker": {
+    "name": "skeleton",
+    "recovery_version": "v2",
+    "reverse_attempts": 2,
+    "completed_gaps": 2,
+    "unresolved_gap": null,
+    "failure": null
+  }
+}

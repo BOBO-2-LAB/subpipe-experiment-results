@@ -1,0 +1,155 @@
+{
+  "scenarios": [
+    {
+      "scenario": "S1 正前方接近(1.6k→25k px)",
+      "pass": true,
+      "actions": [
+        "nominal×2",
+        "slow×3",
+        "hover×2"
+      ],
+      "max_risk": 0.9958762945154984,
+      "note": "前半段应出现 slow，末态应为 hover"
+    },
+    {
+      "scenario": "S2 侧方掠过(5k px, cx=0.85)",
+      "pass": true,
+      "actions": [
+        "nominal×8"
+      ],
+      "max_risk": 0.2272062807241593,
+      "note": "中心权重应把它压到门限以下 → 全程 nominal"
+    },
+    {
+      "scenario": "S3 正前方小鱼(300 px < 门限 400)",
+      "pass": true,
+      "actions": [
+        "nominal×8"
+      ],
+      "max_risk": 0.0,
+      "note": "低于 400 等效像素门限 → 全程 nominal"
+    },
+    {
+      "scenario": "S4 正前方远离(20k→1k px)",
+      "pass": true,
+      "actions": [
+        "nominal×2",
+        "slow×5"
+      ],
+      "max_risk": 0.7469072208866239,
+      "note": "looming 为负 → 只减速不悬停"
+    },
+    {
+      "scenario": "S5 管道感知失效 + 正前方大鱼",
+      "pass": true,
+      "actions": [
+        "nominal×8"
+      ],
+      "max_risk": 0.0,
+      "note": "pipe_ok=False → 强制 nominal（宁可不避鱼）"
+    },
+    {
+      "scenario": "S6 持续接近大鱼 → 悬停超时降级并锁死",
+      "pass": true,
+      "actions": [
+        "nominal×2",
+        "slow×3",
+        "hover×30",
+        "slow×25"
+      ],
+      "max_risk": 0.9958762945154984,
+      "note": "连续悬停 >3 s 应降级为 slow 并置位 hover_capped，且不再回到 hover"
+    },
+    {
+      "scenario": "S7 单帧误检(只有第 1 帧有鱼)",
+      "pass": true,
+      "actions": [
+        "nominal×6"
+      ],
+      "max_risk": 0.0,
+      "note": "单帧不应升到悬停（dwell 保护）"
+    },
+    {
+      "scenario": "S8 感知退化后完全重置（悬停预算不沿用）",
+      "pass": true,
+      "actions": [
+        "nominal×2",
+        "slow×3",
+        "hover×30",
+        "slow×25",
+        "nominal×7",
+        "slow×3",
+        "hover×15"
+      ],
+      "max_risk": 0.8940917731197525,
+      "note": "退化窗口必须弃权；恢复后悬停额度应已重置，否则沿用旧预算就再也不会悬停"
+    },
+    {
+      "scenario": "S9 正前方 + 侧方各一条（侧方不应影响行为）",
+      "pass": true,
+      "actions": [
+        "nominal×2",
+        "slow×8"
+      ],
+      "max_risk": 0.7469072208866239,
+      "note": "侧方目标的中心权重应把它压到门限下，动作序列需与只有正前方那条完全相同"
+    },
+    {
+      "scenario": "S10 正前方两条（大鱼接近 + 小鱼静止）",
+      "pass": true,
+      "actions": [
+        "nominal×2",
+        "slow×3",
+        "hover×9"
+      ],
+      "max_risk": 0.9233476018181807,
+      "note": "第二条不应掩盖更危险的那条：应仍升级到悬停，且风险峰值 ≥0.65"
+    },
+    {
+      "scenario": "S11 一条鱼裂成 3 块（每块 300，合计 900）",
+      "pass": true,
+      "actions": [
+        "nominal×2",
+        "slow×10"
+      ],
+      "max_risk": 0.48119335277005926,
+      "note": "多对一关联应并成 ≤1 条轨迹；且合计面积应能触发动作（面积门限判定在**合并后**的轨迹面积上，见 FINDINGS §22.3）"
+    },
+    {
+      "scenario": "S12 横向预算(0.60)与速率(0.115/s)限制",
+      "pass": true,
+      "actions": [
+        "nominal×2",
+        "slow×3",
+        "hover×30",
+        "slow×5"
+      ],
+      "max_risk": 0.9985135026275479,
+      "note": "|设定值| ≤ 预算、单帧变化 ≤ 速率×dt、威胁持续时应单调外偏"
+    },
+    {
+      "scenario": "S13 威胁解除后回中",
+      "pass": true,
+      "actions": [
+        "nominal×2",
+        "slow×3",
+        "hover×15",
+        "slow×5",
+        "nominal×27"
+      ],
+      "max_risk": 0.9985135026275479,
+      "note": "威胁消失后设定值必须归零（管道回到中央）"
+    },
+    {
+      "scenario": "S14 减速削弱转向权限（慢速时偏移更小）",
+      "pass": true,
+      "actions": [
+        "nominal×2",
+        "slow×3",
+        "hover×20"
+      ],
+      "max_risk": 0.9985135026275479,
+      "note": "横向速率随 v 线性缩放：同样 2.5 s，最低速度下的偏移应明显小于巡航"
+    }
+  ]
+}

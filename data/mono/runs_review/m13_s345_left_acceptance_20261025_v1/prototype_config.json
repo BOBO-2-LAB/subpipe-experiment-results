@@ -1,0 +1,26 @@
+{
+  "name": "M13-S345 original-material prototype v3",
+  "scope": "Development acceptance on original clear straight and left 90-degree bend only; no independent generalization claim",
+  "tube": {
+    "cell_m": 0.05,
+    "minimum_edge_contrast": 4.0,
+    "semantic_seed": 0.5,
+    "minimum_seed_cells": 6,
+    "minimum_component_cells": 12,
+    "angles": 18,
+    "line_min_cells": 6,
+    "texture_std_min": 0.9,
+    "strong_semantic_min": 0.45,
+    "line_semantic_min": 0.12,
+    "beam_width": 24,
+    "beam_steps": 16
+  },
+  "centerline_source": "current_finite_chain",
+  "centerline_fallback": "original S345 skeleton and bounded current corridor measurement",
+  "pipe_input": "original RGB and 90/270-degree rotated RGB, probability maximum",
+  "biology": "original native-view output; unchanged checkpoint",
+  "geometry": "same v2 finite paired-edge hypotheses and bounded diverse beam search",
+  "segmentation": "unchanged v2 finite current surface with 0.8m planar width prior; engineering fusion scores",
+  "temporal": "original S345 wrapped-angle filter and actual-turn confirmation; canonical current near origin avoids endpoint jitter",
+  "scoring": "original IoU>=0.5 and active valid fraction>=0.9; predictions remain invalid"
+}

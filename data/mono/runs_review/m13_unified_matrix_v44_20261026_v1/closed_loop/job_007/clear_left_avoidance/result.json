@@ -1,0 +1,93 @@
+{
+  "scenario": "clear_left",
+  "mode": "avoidance",
+  "task_completed": true,
+  "goal_reached": true,
+  "inspection_recovered": true,
+  "stop_reason": "goal_reached",
+  "inspection_valid_fraction": 0.9663120567375887,
+  "valid_frames": 545,
+  "inspection_frames": 564,
+  "all_frame_valid_fraction": 0.9595070422535211,
+  "contact_3d": false,
+  "contact_xy": false,
+  "primary_contact_rule": "XY",
+  "elapsed_s": 19.133333333333333,
+  "maximum_cross_track_m": 0.15717473130402626,
+  "observed_elbows": [
+    {
+      "t": 0.6,
+      "event": "observed_frontier_end_confirmed",
+      "length_m": 3.700000000000001,
+      "position_xyz": [
+        3.700000000000001,
+        0.0,
+        0.0
+      ],
+      "evidence": "current_paired_edges_and_finite_RGB_surface",
+      "mission_terminal_assumed": false
+    },
+    {
+      "t": 1.2,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "gain": 0.07276813602998597,
+      "evidence": "current_surface_parallax_and_RGB",
+      "confirmation_baseline_m": 0.13161595056436615
+    },
+    {
+      "t": 14.7,
+      "event": "observed_endpoint_confirmed",
+      "length_m": 5.00436409073625,
+      "position_xyz": [
+        4.0,
+        -5.00436409073625,
+        0.0
+      ]
+    }
+  ],
+  "intervention_frames": 0,
+  "prediction_valid_frames": 0,
+  "frames_logged": 568,
+  "video_frames_written": 568,
+  "fps": 30,
+  "configuration_sha256": "2c1bf8ce6bda6b5f633a37eeac88d65656bac3839b10acca1aa4f391d2ae2ea9",
+  "terminal_pipe_observed": true,
+  "pipe_arc_observation_fraction": 0.9444444444444444,
+  "schema_version": 2,
+  "route_completed": true,
+  "collision": false,
+  "simplified_3d_contact": false,
+  "active_inspection_valid_fraction": 0.9663120567375887,
+  "synthetic_inspection_valid_fraction": 0.9595070422535211,
+  "maximum_abs_cross_track_m": 0.15717473130402626,
+  "elapsed_sim_s": 19.133333333333333,
+  "events": {},
+  "minimum_clearance_3d_m": null,
+  "minimum_clearance_xy_m": null,
+  "reverse_attempts": 0,
+  "waiting_frames": 4,
+  "reverse_recovery_frames": 0,
+  "synthetic_pipe_arc_bin_total": 36,
+  "episode_budget_s": 45.0,
+  "tracking_events": [
+    {
+      "t": 14.933333333333334,
+      "event": "finite_boundary_forward_watch_started",
+      "measured_position_xyz": [
+        4.001093153364489,
+        -2.929391263081825,
+        -2.0
+      ]
+    }
+  ]
+}

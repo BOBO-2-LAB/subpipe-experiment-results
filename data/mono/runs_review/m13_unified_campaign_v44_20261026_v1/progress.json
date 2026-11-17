@@ -1,0 +1,25 @@
+{
+  "status": "stopped_after_task_failure",
+  "screen": "mono/runs_review/m13_unified_critical_v44_20261026_v1",
+  "matrix": "mono/runs_review/m13_unified_matrix_v44_20261026_v1",
+  "delivery": "mono/runs_review/m13_unified_delivery_v44_20261026_v1",
+  "critical_shape_passed": true,
+  "command": [
+    "[公开副本已隐去本地信息]",
+    "-B",
+    "mono/runs_review/m13_unified_development_20261025_v1/adaptive_episode_matrix_runner.py",
+    "--out",
+    "mono/runs_review/m13_unified_matrix_v44_20261026_v1",
+    "--config",
+    "mono/runs_review/m13_unified_critical_v44_20261026_v1/tracking_config.json",
+    "--regression-log",
+    "mono/runs_review/m13_unified_critical_v44_20261026_v1/regression.log",
+    "--workers",
+    "6",
+    "--max-seconds",
+    "120"
+  ],
+  "expected_episodes": 52,
+  "pids": [],
+  "stop_reason": "fish_left_after avoidance perception_loss_timeout; preserve failure and revalidate common boundary gaze correction in v45"
+}

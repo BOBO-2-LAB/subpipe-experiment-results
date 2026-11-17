@@ -1,0 +1,90 @@
+{
+  "scenario": "fish_vertical",
+  "mode": "avoidance",
+  "task_completed": false,
+  "scene": {
+    "name": "fish_vertical",
+    "sign": -1,
+    "fish": [
+      2.75,
+      0.0,
+      -3.0
+    ],
+    "velocity": [
+      0,
+      0,
+      0
+    ]
+  },
+  "evaluation_route_xd": [
+    [
+      0,
+      -2.0
+    ],
+    [
+      2.0,
+      -2.0
+    ],
+    [
+      2.0,
+      -4
+    ]
+  ],
+  "evaluation_goal_xyz": [
+    2.0,
+    0.0,
+    -4.0
+  ],
+  "environment_contact_3d": false,
+  "goal_reached": false,
+  "stop_reason": "fish_contact_3d",
+  "elapsed_s": 12.766666666666666,
+  "inspection_valid_fraction": 1.0,
+  "required_goal_stability_hold_s": 0.0,
+  "goal_held_stably_s": 0.0,
+  "all_frame_valid_fraction": 0.9761273209549072,
+  "maximum_cross_track_m": 0.30422271229975717,
+  "endpoint_hold_duration_s": 0.0,
+  "fish_contact_3d": true,
+  "fish_contact_2d": true,
+  "minimum_fish_clearance_3d_m": -0.002029521106018617,
+  "terminal_pipe_observed": false,
+  "end_distance_m": 1.618084041188659,
+  "pipe_arc_observation_fraction": 0.9375,
+  "no_fish_false_intervention_pass": true,
+  "recentered_at_goal": false,
+  "failed_acceptance_checks": [
+    "goal_reached",
+    "fish_contact_3d"
+  ],
+  "legacy_2d_no_contact_pass": false,
+  "intervention_frames": 0,
+  "event_times": {
+    "fish_first_visible": 12.466666666666667,
+    "first_contact_3d": 12.766666666666666
+  },
+  "recovery_events": [
+    {
+      "t": 0.23333333333333334,
+      "event": "initialization_wait_started"
+    },
+    {
+      "t": 0.7666666666666666,
+      "event": "initialization_confirmed"
+    },
+    {
+      "t": 1.1333333333333333,
+      "event": "loss_wait_started"
+    },
+    {
+      "t": 1.9333333333333333,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 4.966666666666667,
+      "event": "reinspection_started"
+    }
+  ],
+  "task_completed_3d": false,
+  "task_completed_legacy_2d": false
+}

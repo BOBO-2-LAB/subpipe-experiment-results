@@ -1,0 +1,55 @@
+{
+  "fold": 2,
+  "group": "A0",
+  "attempt": 1,
+  "n_train": 513,
+  "n_test": 129,
+  "n_purged": 5,
+  "seed": 42,
+  "epoch": 60,
+  "metrics": {
+    "mIoU": 0.8211299927954956,
+    "IoU_pipe": 0.7143346518606203,
+    "IoU_bg": 0.9279253337303708,
+    "Dice": 0.8333666371210905,
+    "Precision": 0.8043475251026339,
+    "Recall": 0.8645580127842916,
+    "Dice_bg": 0.9626154265372037,
+    "F_boundary": 0.301638740634464,
+    "n_frames": 129
+  },
+  "confusion": {
+    "inter": [
+      14955419.0,
+      2904774.0
+    ],
+    "union": [
+      16117050.0,
+      4066405.0
+    ],
+    "tp": [
+      14955419.0,
+      2904774.0
+    ],
+    "fp": [
+      455063.0,
+      706568.0
+    ],
+    "fn": [
+      706568.0,
+      455063.0
+    ],
+    "b_pred_hit": 69527.0,
+    "b_pred": 248312.0,
+    "b_gt_hit": 69232.0,
+    "b_gt": 211780.0,
+    "n": 129
+  },
+  "params": 476342,
+  "checkpoint": "mono/runs_review/m13_fivefold_20261030_v1/training/fold_2/A0/attempt_1/epoch60.pt",
+  "checkpoint_sha256": "5685d3418a2d348155ec1b12fa3c5f263d64bf9ccd75607a9b5e327da1cbbec5",
+  "elapsed_seconds": 1067.5083378999843,
+  "heldout_used_for_selection": false,
+  "initialization_sha256": "d2faed4ad2c9cd5952398ab0e5772b13f1016f978251e60d8a14e7cc17221752",
+  "result_folder": "mono/runs_review/m13_fivefold_20261030_v1/training/fold_2/A0/attempt_1"
+}

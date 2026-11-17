@@ -1,0 +1,73 @@
+{
+  "integrity_passed": true,
+  "episodes": [
+    {
+      "scenario": "fish_down_before",
+      "mode": "avoidance",
+      "task_completed": true,
+      "inspection_valid_fraction": 0.9344473007712082,
+      "goal_reached": true,
+      "inspection_recovered": true,
+      "contact_xy": false,
+      "contact_3d": false,
+      "primary_contact_rule": "3D",
+      "maximum_cross_track_m": 0.9370127282969721,
+      "pipe_arc_observation_fraction": 0.9375,
+      "terminal_pipe_observed": true,
+      "intervention_frames": 246,
+      "elapsed_s": 31.7,
+      "stop_reason": "goal_reached"
+    },
+    {
+      "scenario": "fish_down_corner",
+      "mode": "avoidance",
+      "task_completed": false,
+      "inspection_valid_fraction": 0.9191616766467066,
+      "goal_reached": false,
+      "inspection_recovered": false,
+      "contact_xy": true,
+      "contact_3d": true,
+      "primary_contact_rule": "3D",
+      "maximum_cross_track_m": 2.220446049250313e-15,
+      "pipe_arc_observation_fraction": 0.9375,
+      "terminal_pipe_observed": true,
+      "intervention_frames": 0,
+      "elapsed_s": 13.266666666666666,
+      "stop_reason": "fish_contact_3d"
+    },
+    {
+      "scenario": "fish_up_corner",
+      "mode": "avoidance",
+      "task_completed": true,
+      "inspection_valid_fraction": 0.902127659574468,
+      "goal_reached": true,
+      "inspection_recovered": true,
+      "contact_xy": true,
+      "contact_3d": false,
+      "primary_contact_rule": "3D",
+      "maximum_cross_track_m": 0.9423335049291848,
+      "pipe_arc_observation_fraction": 0.9375,
+      "terminal_pipe_observed": true,
+      "intervention_frames": 185,
+      "elapsed_s": 8.5,
+      "stop_reason": "goal_reached"
+    },
+    {
+      "scenario": "clear_straight",
+      "mode": "avoidance",
+      "task_completed": true,
+      "inspection_valid_fraction": 0.9758620689655172,
+      "goal_reached": true,
+      "inspection_recovered": true,
+      "contact_xy": false,
+      "contact_3d": false,
+      "primary_contact_rule": "XY",
+      "maximum_cross_track_m": 2.6645352591003757e-15,
+      "pipe_arc_observation_fraction": 0.9444444444444444,
+      "terminal_pipe_observed": true,
+      "intervention_frames": 0,
+      "elapsed_s": 19.633333333333333,
+      "stop_reason": "goal_reached"
+    }
+  ]
+}

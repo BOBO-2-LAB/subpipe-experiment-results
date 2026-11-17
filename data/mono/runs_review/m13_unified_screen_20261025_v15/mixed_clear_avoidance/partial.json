@@ -1,0 +1,260 @@
+{
+  "last": {
+    "scenario": "mixed_clear",
+    "mode": "avoidance",
+    "t": 46.0,
+    "position_xyz": [
+      5.9501833827313835,
+      -3.999710795468605,
+      -5.051735180336948
+    ],
+    "phase": "waiting",
+    "source_t": 45.7,
+    "source_pose": {
+      "x": 5.9501833827313835,
+      "y": -3.999710795468605,
+      "depth": -5.051735180336948,
+      "yaw": -0.00014461552469413188,
+      "pitch": 2.8578316529834473e-17
+    },
+    "camera_yaw_deg": -0.008285859217043692,
+    "camera_pitch_deg": 5.967262838004633e-16,
+    "pipe_iou": 0.0,
+    "valid": false,
+    "current_observation_trusted": false,
+    "synthetic_corridor_m": 0.04981745673304491,
+    "synthetic_pipe_clearance_3d_m": 1.583886962858249,
+    "synthetic_fish_clearance_3d_m": null,
+    "synthetic_fish_clearance_xy_m": null,
+    "contact_3d": false,
+    "contact_xy": false,
+    "synthetic_end_distance_m": 11.4634870336129,
+    "bend_count": 3,
+    "inference_wall_s": 0.0732964000053471,
+    "fish_observations": 0,
+    "avoidance_offset_m": 0.0,
+    "synthetic_terminal_pipe_observed": false,
+    "synthetic_pipe_arc_observation_fraction": 0.5775862068965517,
+    "decision": {
+      "action": "nominal",
+      "speed_scale": 1.0,
+      "risk": 0.0,
+      "reason": "pipe_perception_unreliable",
+      "hover_capped": false,
+      "risk_raw": 0.0,
+      "lateral_setpoint": 0.0,
+      "lateral_reason": "recenter",
+      "yield_to_tracker": true
+    },
+    "control": {
+      "phase": "waiting",
+      "abort": false,
+      "current_observation_trusted": false,
+      "direction_xyz": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "normal_xyz": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "side_xyz": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "estimated_route_error_m": 0.00034244486731846457,
+      "lateral_offset_m": 0.0,
+      "requested_velocity_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "route_xyz": [
+        [
+          -5.0,
+          0.0,
+          -2.0
+        ],
+        [
+          4.000000000000017,
+          0.0,
+          -2.0
+        ],
+        [
+          4.000000000000017,
+          -4.0000000000000195,
+          -2.0
+        ],
+        [
+          5.950000000000021,
+          -4.0000000000000195,
+          -2.0
+        ],
+        [
+          5.950000000000021,
+          -4.0000000000000195,
+          -12.0
+        ]
+      ],
+      "geometry": {
+        "vision": {
+          "method": "unified_XYZ_finite_axis_RGB",
+          "truth_access": false,
+          "bend_count": 3,
+          "monocular_parallax": {
+            "tracked_features": 174,
+            "current_triangulated_points": 0,
+            "removed_background_plane_depths": [],
+            "source": "LK+known measured pose triangulation",
+            "rendered_depth_used": false
+          },
+          "reason": "insufficient_current_surface",
+          "current_rgb_verified": false,
+          "current_rgb_pixels": 0,
+          "current_neural_pixels": 0,
+          "axis_xyz": [
+            [
+              -5.0,
+              0.0,
+              0.0
+            ],
+            [
+              4.000000000000017,
+              0.0,
+              0.0
+            ],
+            [
+              4.000000000000017,
+              -4.0000000000000195,
+              0.0
+            ],
+            [
+              7.950000000000021,
+              -4.0000000000000195,
+              0.0
+            ],
+            [
+              7.950000000000021,
+              -4.0000000000000195,
+              -12.0
+            ]
+          ]
+        },
+        "temporal": {
+          "phase": "lost",
+          "current_observation_trusted": false,
+          "prediction_age_s": 18.700000000000003,
+          "prediction_counted_valid": false
+        }
+      }
+    },
+    "actuator": {
+      "held_body_command_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "speed_saturated": [
+        false,
+        false,
+        false
+      ],
+      "acceleration_saturated": [
+        false,
+        false,
+        false
+      ],
+      "hull_yaw_rad": 0.04382697874425108,
+      "yaw_rate_rad_s": 6.0301963133926495e-21
+    },
+    "velocity_xyz": [
+      3.1697080799687822e-18,
+      2.9301622380870516e-19,
+      -1.3121304141708356e-15
+    ],
+    "fish_refinement": {
+      "current_objects": [
+        {
+          "model_seed_pixels": 258,
+          "accepted": false,
+          "closed": false,
+          "area": 103350,
+          "box": [
+            0,
+            0,
+            512,
+            205
+          ],
+          "partial_supported": false,
+          "centre": [
+            255.5232801161103,
+            100.57775520077406
+          ],
+          "source": "current_neural_seed_and_RGB_object",
+          "uniform_water_assumed": false
+        }
+      ],
+      "calibrated_probability": false
+    }
+  },
+  "events": [
+    {
+      "t": 2.1,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "gain": 0.3237360645667141
+    },
+    {
+      "t": 10.200000000000001,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.000000000000017,
+        -4.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "gain": 0.16054018477558776
+    },
+    {
+      "t": 18.6,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        8.000000000000018,
+        -4.0000000000000195,
+        0.0
+      ],
+      "outgoing_xyz": [
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "gain": 0.2641421641421642
+    },
+    {
+      "t": 24.3,
+      "event": "observed_endpoint_confirmed",
+      "length_m": 3.967235871000632,
+      "position_xyz": [
+        7.950000000000021,
+        -4.0000000000000195,
+        -3.967235871000632
+      ]
+    }
+  ]
+}

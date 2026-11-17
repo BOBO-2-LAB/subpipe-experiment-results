@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checkpoints": [
+    {
+      "path": "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M13/best.pt",
+      "sha256": "938b238f52950150b09aa629bdd1ca1bdc2e392000480f95c0d2a16026c5f400"
+    },
+    {
+      "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+    }
+  ],
+  "samples": [
+    {
+      "image": "runs_review/m13_unified_development_20261025_v1/clear_straight_initial.npz",
+      "geometry_max_absolute_difference": 0.0,
+      "biology_max_absolute_difference": 0.0,
+      "exact_geometry_equal": true,
+      "exact_biology_equal": true
+    },
+    {
+      "image": "runs_review/m13_unified_screen_20261025_v13/fish_straight_avoidance/perception_debug/000040.npz",
+      "geometry_max_absolute_difference": 0.0,
+      "biology_max_absolute_difference": 0.0,
+      "exact_geometry_equal": true,
+      "exact_biology_equal": true
+    },
+    {
+      "image": "runs_review/m13_unified_screen_20261025_v10/clear_down_avoidance/perception_debug/000120.npz",
+      "geometry_max_absolute_difference": 0.0,
+      "biology_max_absolute_difference": 0.0,
+      "exact_geometry_equal": true,
+      "exact_biology_equal": true
+    }
+  ],
+  "change": "Remove unused 90/270 native288 pipe diagnostics and unused whole384 biology computation. Geometry/whole384 and biology288 unchanged. Native288 diagnostic now means native view, not previous rotated maximum."
+}

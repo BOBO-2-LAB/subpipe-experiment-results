@@ -1,0 +1,43 @@
+{
+  "unit_M": 1000000,
+  "M13_parameters": 1321782,
+  "groups": [
+    {
+      "group": "B0",
+      "mode": "none",
+      "encoder_parameters": 336692,
+      "decoder_parameters": 53960,
+      "wavelet_parameters": 0,
+      "biological_parameters": 390652,
+      "biological_M": 0.390652,
+      "historical_dual_parameters": 866994,
+      "M13_plus_active_biology_parameters": 1712434,
+      "checkpoint_sha256": "6eeb3afab454d97990c9228a8307f24045eab0787edca49bd9a6d22d0fe00b42"
+    },
+    {
+      "group": "B1",
+      "mode": "plain",
+      "encoder_parameters": 336692,
+      "decoder_parameters": 53960,
+      "wavelet_parameters": 84608,
+      "biological_parameters": 475260,
+      "biological_M": 0.47526,
+      "historical_dual_parameters": 951602,
+      "M13_plus_active_biology_parameters": 1797042,
+      "checkpoint_sha256": "9848481413a4a279360e7a214281995d7d618c925e11008bff157de693f98b7c"
+    },
+    {
+      "group": "B2",
+      "mode": "attention",
+      "encoder_parameters": 336692,
+      "decoder_parameters": 53960,
+      "wavelet_parameters": 179392,
+      "biological_parameters": 570044,
+      "biological_M": 0.570044,
+      "historical_dual_parameters": 1046386,
+      "M13_plus_active_biology_parameters": 1891826,
+      "checkpoint_sha256": "6386036ed2f670ecd05199c4e544564b447b9f37afbbbd1564254e4d353f6d73"
+    }
+  ],
+  "scope": "Parameter tensor elements; includes BN affine parameters, excludes BN buffers/optimizer/activations; active route sum is not resident checkpoint or memory size"
+}

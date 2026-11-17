@@ -1,0 +1,215 @@
+[
+  {
+    "scenario": "clear_up",
+    "mode": "avoidance",
+    "invalid_inspection_frames": 63,
+    "invalid_iou": 63,
+    "invalid_current": 0,
+    "invalid_corridor": 0,
+    "phase_frames": {
+      "inspection": 285,
+      "waiting": 24,
+      "reinspect_reverse": 104,
+      "endpoint_hold": 51
+    },
+    "events": {
+      "fish_first_detection": 3.2333333333333334,
+      "first_confirmed_track": 4.033333333333333,
+      "first_goal_region_entry": 15.666666666666666
+    },
+    "bend_confirmed_s": 6.233333333333333,
+    "cap_confirmed_s": 8.3,
+    "maximum_cross_track_m": 0.5019444444444474,
+    "minimum_3d_clearance_m": null,
+    "recovery_events": [
+      {
+        "t": 5.633333333333333,
+        "event": "loss_wait_started"
+      },
+      {
+        "t": 6.433333333333334,
+        "event": "vision_reacquired"
+      },
+      {
+        "t": 9.9,
+        "event": "reinspection_started"
+      }
+    ]
+  },
+  {
+    "scenario": "clear_up",
+    "mode": "tracker_only",
+    "invalid_inspection_frames": 63,
+    "invalid_iou": 63,
+    "invalid_current": 0,
+    "invalid_corridor": 0,
+    "phase_frames": {
+      "inspection": 285,
+      "waiting": 24,
+      "reinspect_reverse": 104,
+      "endpoint_hold": 51
+    },
+    "events": {
+      "fish_first_detection": 3.2333333333333334,
+      "first_confirmed_track": 4.033333333333333,
+      "first_goal_region_entry": 15.666666666666666
+    },
+    "bend_confirmed_s": 6.233333333333333,
+    "cap_confirmed_s": 8.3,
+    "maximum_cross_track_m": 0.5019444444444474,
+    "minimum_3d_clearance_m": null,
+    "recovery_events": [
+      {
+        "t": 5.633333333333333,
+        "event": "loss_wait_started"
+      },
+      {
+        "t": 6.433333333333334,
+        "event": "vision_reacquired"
+      },
+      {
+        "t": 9.9,
+        "event": "reinspection_started"
+      }
+    ]
+  },
+  {
+    "scenario": "fish_vertical",
+    "mode": "avoidance",
+    "invalid_inspection_frames": 63,
+    "invalid_iou": 63,
+    "invalid_current": 0,
+    "invalid_corridor": 0,
+    "phase_frames": {
+      "inspection": 223,
+      "waiting": 24,
+      "reinspect_reverse": 104,
+      "endpoint_hold": 992
+    },
+    "events": {
+      "fish_first_detection": 3.2333333333333334,
+      "first_confirmed_track": 4.033333333333333,
+      "fish_first_visible": 7.733333333333333,
+      "fish_first_effective_detection": 8.6
+    },
+    "bend_confirmed_s": 6.233333333333333,
+    "cap_confirmed_s": 8.233333333333333,
+    "maximum_cross_track_m": 0.5019444444444474,
+    "minimum_3d_clearance_m": 0.11684543032301375,
+    "recovery_events": [
+      {
+        "t": 5.633333333333333,
+        "event": "loss_wait_started"
+      },
+      {
+        "t": 6.433333333333334,
+        "event": "vision_reacquired"
+      },
+      {
+        "t": 9.9,
+        "event": "reinspection_started"
+      }
+    ]
+  },
+  {
+    "scenario": "fish_vertical",
+    "mode": "tracker_only",
+    "invalid_inspection_frames": 63,
+    "invalid_iou": 63,
+    "invalid_current": 0,
+    "invalid_corridor": 0,
+    "phase_frames": {
+      "inspection": 223,
+      "waiting": 24,
+      "reinspect_reverse": 104,
+      "endpoint_hold": 992
+    },
+    "events": {
+      "fish_first_detection": 3.2333333333333334,
+      "first_confirmed_track": 4.033333333333333,
+      "fish_first_visible": 7.733333333333333,
+      "fish_first_effective_detection": 8.6
+    },
+    "bend_confirmed_s": 6.233333333333333,
+    "cap_confirmed_s": 8.233333333333333,
+    "maximum_cross_track_m": 0.5019444444444474,
+    "minimum_3d_clearance_m": 0.11684543032301375,
+    "recovery_events": [
+      {
+        "t": 5.633333333333333,
+        "event": "loss_wait_started"
+      },
+      {
+        "t": 6.433333333333334,
+        "event": "vision_reacquired"
+      },
+      {
+        "t": 9.9,
+        "event": "reinspection_started"
+      }
+    ]
+  },
+  {
+    "scenario": "fish_bend",
+    "mode": "avoidance",
+    "invalid_inspection_frames": 36,
+    "invalid_iou": 36,
+    "invalid_current": 0,
+    "invalid_corridor": 0,
+    "phase_frames": {
+      "inspection": 135,
+      "waiting": 51,
+      "reinspect_reverse": 84,
+      "endpoint_hold": 320
+    },
+    "events": {
+      "fish_first_visible": 0.5333333333333333,
+      "fish_first_detection": 1.3666666666666667,
+      "fish_first_effective_detection": 1.3666666666666667,
+      "first_confirmed_track": 1.6666666666666667,
+      "first_intervention": 1.6666666666666667,
+      "first_contact_3d": 19.866666666666667
+    },
+    "bend_confirmed_s": 5.933333333333334,
+    "cap_confirmed_s": 7.166666666666667,
+    "maximum_cross_track_m": 0.9731902747873783,
+    "minimum_3d_clearance_m": -0.007780141856354228,
+    "recovery_events": [
+      {
+        "t": 4.733333333333333,
+        "event": "loss_wait_started"
+      },
+      {
+        "t": 6.433333333333334,
+        "event": "vision_reacquired"
+      },
+      {
+        "t": 9.233333333333333,
+        "event": "reinspection_started"
+      }
+    ]
+  },
+  {
+    "scenario": "fish_bend",
+    "mode": "tracker_only",
+    "invalid_inspection_frames": 0,
+    "invalid_iou": 0,
+    "invalid_current": 0,
+    "invalid_corridor": 0,
+    "phase_frames": {
+      "inspection": 135
+    },
+    "events": {
+      "fish_first_visible": 0.5333333333333333,
+      "fish_first_detection": 1.3666666666666667,
+      "fish_first_effective_detection": 1.3666666666666667,
+      "first_confirmed_track": 1.6666666666666667,
+      "first_contact_3d": 4.7
+    },
+    "bend_confirmed_s": null,
+    "cap_confirmed_s": null,
+    "maximum_cross_track_m": 0.0,
+    "minimum_3d_clearance_m": -0.002290564225128522,
+    "recovery_events": []
+  }
+]

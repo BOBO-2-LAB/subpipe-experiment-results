@@ -1,0 +1,67 @@
+{
+  "tag": "P4_s43",
+  "config": "P4",
+  "arch": "paper",
+  "args": {
+    "config": "M4",
+    "arch": "paper",
+    "paper_variant": "P4",
+    "data_root": "[本地引用:746bf541e6434668]",
+    "size": [
+      288,
+      512
+    ],
+    "epochs": 60,
+    "batch": 8,
+    "lr": 0.0001,
+    "lr_min": 1e-06,
+    "weight_decay": 0.0001,
+    "workers": 0,
+    "cache_dir": "[本地引用:d76c5529b519269e]",
+    "gpu_aug": true,
+    "amp": true,
+    "no_pretrained": false,
+    "eval_every": 5,
+    "dice_weight": 1.0,
+    "out": "[本地引用:c1ba17b1d4903a85]",
+    "tag": "P4_s43",
+    "device": "cuda:0",
+    "seed": 43,
+    "norm": "imagenet",
+    "color_jitter": 0.1,
+    "photo_strength": 1.0,
+    "boundary_weight": 0.0,
+    "boundary_cw": 3.0,
+    "unlabeled_cache": null,
+    "unsup_weight": 1.0,
+    "unsup_conf": 0.95,
+    "unsup_ratio": 1.0
+  },
+  "params_M": {
+    "total": 16.875424,
+    "efs": 1.920196,
+    "swin": 12.136032,
+    "fusion": 2.43161,
+    "cbam": 0.0,
+    "decoder": 0.387586
+  },
+  "val_metrics": {
+    "mIoU": 0.7929247862949814,
+    "IoU_pipe": 0.6699473751713635,
+    "IoU_bg": 0.9159021974185994,
+    "Dice": 0.8023574696210005,
+    "Precision": 0.7227847830775734,
+    "Recall": 0.9016182574229777,
+    "Dice_bg": 0.9561053780852122,
+    "F_boundary": 0.2956161100309268,
+    "n_frames": 129
+  },
+  "complexity": {
+    "Params_M": 16.875,
+    "input": "512x288",
+    "FLOPs_G": 49.19,
+    "latency_ms_median": 24.14,
+    "FPS": 41.4
+  },
+  "train_seconds": 992.4
+}

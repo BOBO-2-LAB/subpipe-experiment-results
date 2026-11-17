@@ -1,0 +1,244 @@
+{
+  "scope": "Post-hoc map diagnostics. Truth never enters a tracker or its input files.",
+  "matrix": "mono/runs_review/m13_unified_critical_v34_20261026_v1",
+  "diagnostic_tolerances": {
+    "corner_position_m": 0.5,
+    "direction_deg": 15.0
+  },
+  "episodes": [
+    {
+      "scenario": "mixed_clear",
+      "mode": "avoidance",
+      "partial": false,
+      "as_of_s": 68.33333333333333,
+      "shape_matches_within_tolerances": true,
+      "expected_bends": 6,
+      "confirmed_bends": 6,
+      "bend_count_matches": true,
+      "excess_confirmed_bends": 0,
+      "missing_confirmed_bends": 0,
+      "ordered_prefix_corner_errors_m": [
+        0.0,
+        0.025000000000000355,
+        0.025000000000000355,
+        0.025117181845651988,
+        0.1430162199067264,
+        0.144766949291422
+      ],
+      "ordered_prefix_direction_errors_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_prefix_corner_error_m": 0.144766949291422,
+      "expected_axis_xyz": [
+        [
+          -5.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          -4.0,
+          0.0
+        ],
+        [
+          8.0,
+          -4.0,
+          0.0
+        ],
+        [
+          8.0,
+          -4.0,
+          -4.0
+        ],
+        [
+          12.0,
+          -4.0,
+          -4.0
+        ],
+        [
+          12.0,
+          -4.0,
+          0.0
+        ],
+        [
+          17.0,
+          -4.0,
+          0.0
+        ]
+      ],
+      "estimated_hypothesis_axis_xyz": [
+        [
+          -5.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          -4.025,
+          0.0
+        ],
+        [
+          8.0,
+          -4.025,
+          0.0
+        ],
+        [
+          8.0,
+          -4.025,
+          -3.997576609014721
+        ],
+        [
+          11.859206653805865,
+          -4.025,
+          -3.997576609014721
+        ],
+        [
+          11.859206653805865,
+          -4.025,
+          -0.022576609014720583
+        ],
+        [
+          23.859206653805863,
+          -4.025,
+          -0.022576609014720583
+        ]
+      ],
+      "estimated_tail_is_unconfirmed_horizon": true,
+      "initial_axis_is_given_prior": true,
+      "current_visible_boundary_xyz": [
+        16.96093765226,
+        -4.025,
+        -0.022576609014720583
+      ],
+      "current_boundary_is_not_proof_of_mission_terminal": true,
+      "parallax_confirmed_bends": 6,
+      "edge_only_confirmed_bends": 0
+    },
+    {
+      "scenario": "mixed_fish",
+      "mode": "avoidance",
+      "partial": false,
+      "as_of_s": 55.43333333333333,
+      "shape_matches_within_tolerances": false,
+      "expected_bends": 6,
+      "confirmed_bends": 4,
+      "bend_count_matches": false,
+      "excess_confirmed_bends": 0,
+      "missing_confirmed_bends": 2,
+      "ordered_prefix_corner_errors_m": [
+        0.0,
+        0.0,
+        0.0,
+        0.002422458542178596
+      ],
+      "ordered_prefix_direction_errors_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_prefix_corner_error_m": 0.002422458542178596,
+      "expected_axis_xyz": [
+        [
+          -5.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          -4.0,
+          0.0
+        ],
+        [
+          8.0,
+          -4.0,
+          0.0
+        ],
+        [
+          8.0,
+          -4.0,
+          -4.0
+        ],
+        [
+          12.0,
+          -4.0,
+          -4.0
+        ],
+        [
+          12.0,
+          -4.0,
+          0.0
+        ],
+        [
+          17.0,
+          -4.0,
+          0.0
+        ]
+      ],
+      "estimated_hypothesis_axis_xyz": [
+        [
+          -5.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          -4.0,
+          0.0
+        ],
+        [
+          8.0,
+          -4.0,
+          0.0
+        ],
+        [
+          8.0,
+          -4.0,
+          -3.9975775414578214
+        ],
+        [
+          20.0,
+          -4.0,
+          -3.9975775414578214
+        ]
+      ],
+      "estimated_tail_is_unconfirmed_horizon": true,
+      "initial_axis_is_given_prior": true,
+      "current_visible_boundary_xyz": [
+        12.7,
+        -4.0,
+        -3.9975775414578214
+      ],
+      "current_boundary_is_not_proof_of_mission_terminal": true,
+      "parallax_confirmed_bends": 4,
+      "edge_only_confirmed_bends": 0
+    }
+  ]
+}

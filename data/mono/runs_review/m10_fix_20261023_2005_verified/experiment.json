@@ -1,0 +1,849 @@
+{
+  "status": "complete",
+  "pid": 3684,
+  "started": 1792757146.6928494,
+  "baseline": {
+    "pipe_iou": 0.6404942033204785,
+    "miou": 0.7764134289192453,
+    "confusion": [
+      [
+        15009872.0,
+        935680.0
+      ],
+      [
+        506640.0,
+        2569632.0
+      ]
+    ],
+    "empty_frames": 2,
+    "empty_false_pixels": 49301,
+    "empty_background_fpr": 0.1671719021267361
+  },
+  "baseline_negative": {
+    "mean_false_fraction": 0.8073713667690754,
+    "max_false_fraction": 0.969224750995636,
+    "per_colour": [
+      0.9396159052848816,
+      0.9504123330116272,
+      0.380913645029068,
+      0.653184711933136,
+      0.8731621503829956,
+      0.96685791015625,
+      0.7255995273590088,
+      0.969224750995636
+    ]
+  },
+  "arms": {
+    "masked_uniform_repeat": {
+      "status": "complete",
+      "attention_impl": "masked_v2",
+      "negative_weight": 0.25,
+      "real_negative_weight": 0.0,
+      "epochs": 8,
+      "best_epoch": 2,
+      "retained_epoch": 0,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.49700189164051645,
+          "validation": {
+            "pipe_iou": 0.6512290106820093,
+            "miou": 0.781276601715374,
+            "confusion": [
+              [
+                14872511.0,
+                1073041.0
+              ],
+              [
+                374119.0,
+                2702153.0
+              ]
+            ],
+            "empty_frames": 2,
+            "empty_false_pixels": 110748,
+            "empty_background_fpr": 0.3755289713541667
+          },
+          "negative_probe": {
+            "mean_false_fraction": 0.0,
+            "max_false_fraction": 0.0,
+            "per_colour": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "retention": {
+            "save_raw": true,
+            "save_retained": false,
+            "eligible": false
+          },
+          "elapsed_s": 96.57787466049194
+        },
+        {
+          "epoch": 2,
+          "loss": 0.26266412368187536,
+          "validation": {
+            "pipe_iou": 0.6616520313673784,
+            "miou": 0.7888273111813422,
+            "confusion": [
+              [
+                14965763.0,
+                979789.0
+              ],
+              [
+                392571.0,
+                2683701.0
+              ]
+            ],
+            "empty_frames": 2,
+            "empty_false_pixels": 66508,
+            "empty_background_fpr": 0.2255181206597222
+          },
+          "negative_probe": {
+            "mean_false_fraction": 0.0,
+            "max_false_fraction": 0.0,
+            "per_colour": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "retention": {
+            "save_raw": true,
+            "save_retained": false,
+            "eligible": false
+          },
+          "elapsed_s": 23.817936897277832
+        },
+        {
+          "epoch": 3,
+          "loss": 0.25941958542053517,
+          "validation": {
+            "pipe_iou": 0.6509515370135766,
+            "miou": 0.7807375658647926,
+            "confusion": [
+              [
+                14843006.0,
+                1102546.0
+              ],
+              [
+                356064.0,
+                2720208.0
+              ]
+            ],
+            "empty_frames": 2,
+            "empty_false_pixels": 85083,
+            "empty_background_fpr": 0.2885030110677083
+          },
+          "negative_probe": {
+            "mean_false_fraction": 0.0,
+            "max_false_fraction": 0.0,
+            "per_colour": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "retention": {
+            "save_raw": false,
+            "save_retained": false,
+            "eligible": false
+          },
+          "elapsed_s": 23.380428791046143
+        },
+        {
+          "epoch": 4,
+          "loss": 0.2442091377881857,
+          "validation": {
+            "pipe_iou": 0.6498367871529493,
+            "miou": 0.7815612942781873,
+            "confusion": [
+              [
+                14964239.0,
+                981313.0
+              ],
+              [
+                439504.0,
+                2636768.0
+              ]
+            ],
+            "empty_frames": 2,
+            "empty_false_pixels": 80844,
+            "empty_background_fpr": 0.2741292317708333
+          },
+          "negative_probe": {
+            "mean_false_fraction": 0.0,
+            "max_false_fraction": 0.0,
+            "per_colour": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "retention": {
+            "save_raw": false,
+            "save_retained": false,
+            "eligible": false
+          },
+          "elapsed_s": 24.963061332702637
+        },
+        {
+          "epoch": 5,
+          "loss": 0.24321213846023265,
+          "validation": {
+            "pipe_iou": 0.6529824635299051,
+            "miou": 0.78199422188202,
+            "confusion": [
+              [
+                14843332.0,
+                1102220.0
+              ],
+              [
+                347790.0,
+                2728482.0
+              ]
+            ],
+            "empty_frames": 2,
+            "empty_false_pixels": 91361,
+            "empty_background_fpr": 0.3097907172309028
+          },
+          "negative_probe": {
+            "mean_false_fraction": 0.0,
+            "max_false_fraction": 0.0,
+            "per_colour": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "retention": {
+            "save_raw": false,
+            "save_retained": false,
+            "eligible": false
+          },
+          "elapsed_s": 23.235040426254272
+        },
+        {
+          "epoch": 6,
+          "loss": 0.24063061567453237,
+          "validation": {
+            "pipe_iou": 0.6496850741847902,
+            "miou": 0.7825046512753293,
+            "confusion": [
+              [
+                15048031.0,
+                897521.0
+              ],
+              [
+                494558.0,
+                2581714.0
+              ]
+            ],
+            "empty_frames": 2,
+            "empty_false_pixels": 53840,
+            "empty_background_fpr": 0.1825629340277778
+          },
+          "negative_probe": {
+            "mean_false_fraction": 0.0,
+            "max_false_fraction": 0.0,
+            "per_colour": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "retention": {
+            "save_raw": false,
+            "save_retained": false,
+            "eligible": false
+          },
+          "elapsed_s": 23.890381574630737
+        },
+        {
+          "epoch": 7,
+          "loss": 0.23464502692222594,
+          "validation": {
+            "pipe_iou": 0.6475511832146585,
+            "miou": 0.7811101215009956,
+            "confusion": [
+              [
+                15040636.0,
+                904916.0
+              ],
+              [
+                498249.0,
+                2578023.0
+              ]
+            ],
+            "empty_frames": 2,
+            "empty_false_pixels": 67169,
+            "empty_background_fpr": 0.2277594672309028
+          },
+          "negative_probe": {
+            "mean_false_fraction": 0.0,
+            "max_false_fraction": 0.0,
+            "per_colour": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "retention": {
+            "save_raw": false,
+            "save_retained": false,
+            "eligible": false
+          },
+          "elapsed_s": 25.323421478271484
+        },
+        {
+          "epoch": 8,
+          "loss": 0.23607167670359977,
+          "validation": {
+            "pipe_iou": 0.6466157075030498,
+            "miou": 0.7765136664916512,
+            "confusion": [
+              [
+                14720733.0,
+                1224819.0
+              ],
+              [
+                295119.0,
+                2781153.0
+              ]
+            ],
+            "empty_frames": 2,
+            "empty_false_pixels": 100320,
+            "empty_background_fpr": 0.3401692708333333
+          },
+          "negative_probe": {
+            "mean_false_fraction": 0.0,
+            "max_false_fraction": 0.0,
+            "per_colour": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "retention": {
+            "save_raw": false,
+            "save_retained": false,
+            "eligible": false
+          },
+          "elapsed_s": 22.101585626602173
+        }
+      ],
+      "retained_for_closed_loop": false,
+      "selected_validation": {
+        "pipe_iou": 0.6616520313673784,
+        "miou": 0.7888273111813422,
+        "confusion": [
+          [
+            14965763.0,
+            979789.0
+          ],
+          [
+            392571.0,
+            2683701.0
+          ]
+        ],
+        "empty_frames": 2,
+        "empty_false_pixels": 66508,
+        "empty_background_fpr": 0.2255181206597222
+      },
+      "selected_negative": {
+        "mean_false_fraction": 0.0,
+        "max_false_fraction": 0.0,
+        "per_colour": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "selected_epoch": 2,
+      "reused_from": "mono/runs_review/m10_fix_20261023_1958_retention/masked_uniform_repeat",
+      "reused_checkpoint_hashes": {
+        "best_candidate.pt": "ffbac8fcf9ca068374adf134ccf22c51d21c75f2fe7321cc3d35877f5e4c8313",
+        "last.pt": "f418471669615ca6ff9ead6644b7c5046d24f3ff2c72c147dd8ee39642ab1c87"
+      }
+    },
+    "masked_uniform_realnegative": {
+      "status": "complete",
+      "attention_impl": "masked_v2",
+      "negative_weight": 0.25,
+      "real_negative_weight": 0.25,
+      "epochs": 8,
+      "best_epoch": 2,
+      "retained_epoch": 6,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.5062172130896495,
+          "validation": {
+            "pipe_iou": 0.6513137379845172,
+            "miou": 0.7815628229207541,
+            "confusion": [
+              [
+                14891320.0,
+                1054232.0
+              ],
+              [
+                386018.0,
+                2690254.0
+              ]
+            ],
+            "empty_frames": 2,
+            "empty_false_pixels": 104751,
+            "empty_background_fpr": 0.355194091796875
+          },
+          "negative_probe": {
+            "mean_false_fraction": 0.0,
+            "max_false_fraction": 0.0,
+            "per_colour": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "retention": {
+            "save_raw": true,
+            "save_retained": false,
+            "eligible": false
+          },
+          "elapsed_s": 133.69385528564453
+        },
+        {
+          "epoch": 2,
+          "loss": 0.2674881726503372,
+          "validation": {
+            "pipe_iou": 0.6610267132116456,
+            "miou": 0.7886239832681912,
+            "confusion": [
+              [
+                14980715.0,
+                964837.0
+              ],
+              [
+                404991.0,
+                2671281.0
+              ]
+            ],
+            "empty_frames": 2,
+            "empty_false_pixels": 61828,
+            "empty_background_fpr": 0.2096489800347222
+          },
+          "negative_probe": {
+            "mean_false_fraction": 0.0,
+            "max_false_fraction": 0.0,
+            "per_colour": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "retention": {
+            "save_raw": true,
+            "save_retained": false,
+            "eligible": false
+          },
+          "elapsed_s": 33.39469313621521
+        },
+        {
+          "epoch": 3,
+          "loss": 0.27038562779243175,
+          "validation": {
+            "pipe_iou": 0.6512046330624609,
+            "miou": 0.7815281225280154,
+            "confusion": [
+              [
+                14893928.0,
+                1051624.0
+              ],
+              [
+                388167.0,
+                2688105.0
+              ]
+            ],
+            "empty_frames": 2,
+            "empty_false_pixels": 71480,
+            "empty_background_fpr": 0.2423773871527778
+          },
+          "negative_probe": {
+            "mean_false_fraction": 0.0,
+            "max_false_fraction": 0.0,
+            "per_colour": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "retention": {
+            "save_raw": false,
+            "save_retained": false,
+            "eligible": false
+          },
+          "elapsed_s": 29.678085803985596
+        },
+        {
+          "epoch": 4,
+          "loss": 0.25198251398710103,
+          "validation": {
+            "pipe_iou": 0.651415522328694,
+            "miou": 0.7828367367898368,
+            "confusion": [
+              [
+                14989143.0,
+                956409.0
+              ],
+              [
+                449321.0,
+                2626951.0
+              ]
+            ],
+            "empty_frames": 2,
+            "empty_false_pixels": 62865,
+            "empty_background_fpr": 0.213165283203125
+          },
+          "negative_probe": {
+            "mean_false_fraction": 0.0,
+            "max_false_fraction": 0.0,
+            "per_colour": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "retention": {
+            "save_raw": false,
+            "save_retained": false,
+            "eligible": false
+          },
+          "elapsed_s": 25.191452026367188
+        },
+        {
+          "epoch": 5,
+          "loss": 0.24936035092060382,
+          "validation": {
+            "pipe_iou": 0.6558971130488712,
+            "miou": 0.7839410410554739,
+            "confusion": [
+              [
+                14855387.0,
+                1090165.0
+              ],
+              [
+                343518.0,
+                2732754.0
+              ]
+            ],
+            "empty_frames": 2,
+            "empty_false_pixels": 83591,
+            "empty_background_fpr": 0.2834438747829861
+          },
+          "negative_probe": {
+            "mean_false_fraction": 0.0,
+            "max_false_fraction": 0.0,
+            "per_colour": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "retention": {
+            "save_raw": false,
+            "save_retained": false,
+            "eligible": false
+          },
+          "elapsed_s": 26.037625789642334
+        },
+        {
+          "epoch": 6,
+          "loss": 0.24665256463564358,
+          "validation": {
+            "pipe_iou": 0.6472923861346548,
+            "miou": 0.78135320257006,
+            "confusion": [
+              [
+                15073015.0,
+                872537.0
+              ],
+              [
+                520238.0,
+                2556034.0
+              ]
+            ],
+            "empty_frames": 2,
+            "empty_false_pixels": 48757,
+            "empty_background_fpr": 0.16532728407118055
+          },
+          "negative_probe": {
+            "mean_false_fraction": 0.0,
+            "max_false_fraction": 0.0,
+            "per_colour": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "retention": {
+            "save_raw": false,
+            "save_retained": true,
+            "eligible": true
+          },
+          "elapsed_s": 25.699076652526855
+        },
+        {
+          "epoch": 7,
+          "loss": 0.24055727903659527,
+          "validation": {
+            "pipe_iou": 0.6504790464425549,
+            "miou": 0.7828888050881935,
+            "confusion": [
+              [
+                15039851.0,
+                905701.0
+              ],
+              [
+                486082.0,
+                2590190.0
+              ]
+            ],
+            "empty_frames": 2,
+            "empty_false_pixels": 64638,
+            "empty_background_fpr": 0.21917724609375
+          },
+          "negative_probe": {
+            "mean_false_fraction": 0.0,
+            "max_false_fraction": 0.0,
+            "per_colour": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "retention": {
+            "save_raw": false,
+            "save_retained": false,
+            "eligible": false
+          },
+          "elapsed_s": 25.830523014068604
+        },
+        {
+          "epoch": 8,
+          "loss": 0.24280687753970806,
+          "validation": {
+            "pipe_iou": 0.6470157791944852,
+            "miou": 0.776750229374533,
+            "confusion": [
+              [
+                14719830.0,
+                1225722.0
+              ],
+              [
+                292814.0,
+                2783458.0
+              ]
+            ],
+            "empty_frames": 2,
+            "empty_false_pixels": 99752,
+            "empty_background_fpr": 0.3382432725694444
+          },
+          "negative_probe": {
+            "mean_false_fraction": 0.0,
+            "max_false_fraction": 0.0,
+            "per_colour": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "retention": {
+            "save_raw": false,
+            "save_retained": false,
+            "eligible": false
+          },
+          "elapsed_s": 25.353612184524536
+        }
+      ],
+      "retained_for_closed_loop": true,
+      "selected_validation": {
+        "pipe_iou": 0.6472923861346548,
+        "miou": 0.78135320257006,
+        "confusion": [
+          [
+            15073015.0,
+            872537.0
+          ],
+          [
+            520238.0,
+            2556034.0
+          ]
+        ],
+        "empty_frames": 2,
+        "empty_false_pixels": 48757,
+        "empty_background_fpr": 0.16532728407118055
+      },
+      "selected_negative": {
+        "mean_false_fraction": 0.0,
+        "max_false_fraction": 0.0,
+        "per_colour": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "selected_epoch": 6
+    }
+  },
+  "source_hashes": {
+    "tools/refine_m10_retention.py": "8521e811ff0635a4dcc5c45fed3df2eb22172d2e6c3d42a78ee1de6d62e2b7d0",
+    "tools/pipeline_retention.py": "bb23d8747e37e5446aca7be78864aaa84f6e8dfd2648446313059678667aef2b",
+    "tools/refine_m10_v2.py": "4277f1e55b9ec30519984ce32873f2612cee9fc13f7b0a72fad9971464329b91",
+    "models/versioned_pipeline.py": "67ba5737438f0cc9bed5f01230ce9b41747adea97c6570058fe69a3aa579045f",
+    "models/window_attention_v2.py": "b04a97472936f4fb1d5b3358b9d39760542eec70468d0dbbdf32e20e835dac92",
+    "models/versioned_inspection.py": "18204ee0a03c1ad018bffcd1b216830e492398aa32ab061a107b89978740426a",
+    "tools/versioned_closed_loop.py": "770f6edae56b9131047e8f363b35bd4f1095814c7e0d1cdd4f9fc2b33cd5aa9e",
+    "models/global_context.py": "9b6851047bb188c8373a2b32786dec620236001e92c3030a202f5c2c7690629d",
+    "models/pipeline_net.py": "866dda33380115b0df9c7ebbd39a2500abd55eb506cc6f4b4b00adbebd7f25c5",
+    "models/efsnet.py": "f4230543c69d66b5096de0792832dab6c138a93b57253c4ca3de996ce8a4adb4",
+    "models/decoder.py": "9fa7f7d85ea7e42d013e80e82fa6e9d0e8ada6b3ab88a200a1b262022574d363",
+    "models/fusion.py": "7855d947df9a4f470ba0395e1139a61ae49c5b6b101fcc59e535b8ad88c0a2a6",
+    "models/wavelet.py": "615d41b92dc33d0d77c2598f033704665cc72dfed11e3774f363802f798f81b5",
+    "data/gpu_batch.py": "d8dfc3d8edea3f06392e855d9cc41a89e4e5fc5da566710e6047130bce189cf6",
+    "train.py": "97a7d306b4e36fa8a89e4cb8c7082491fbefb1fb644ee769b28b0121b22783e8"
+  },
+  "data_hashes": {
+    "mono/cache/288x512/train_img.npy": "36b5c0b29b1d0d3ef69479789a62346c980a9667f2a11b95aef5869001b5ea5d",
+    "mono/cache/288x512/train_msk.npy": "a84eb1308b066f6e908aedf0676a354e2b9b594a89edb3473cd996742bc600d6",
+    "mono/cache/288x512/val_img.npy": "48f35e63f0dbac86666eae2e1203d834c1d469d6b844a7943d2e706586c15cc1",
+    "mono/cache/288x512/val_msk.npy": "176d78c1c20d9c9be0572b9c11f0a6f531c54d9d9a876e7ef6decc97bf819ea3",
+    "mono/cache/288x512/meta.json": "8ab4f358d8a5a623ea687f3c84979cbbffd5d19b2748ff7321f92c7489f87c46"
+  },
+  "old_weight_hashes": {
+    "mono/runs_ablation/M10/best.pt": "3ba896a11f5d01ab98e542a4df8cd8dc6d905d5f1ad9bb5bd8e5109fc2fbf67e",
+    "mono/runs_ablation/M11/best.pt": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a",
+    "mono/runs_ablation/M4/best.pt": "9f5956a788d7cb969f7216f9702fdf3991ee2730b3b032af0323a936b987b365",
+    "mono/runs_fish/suim8_sep_e60/best.pt": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+  },
+  "train_frames": 518,
+  "val_frames": 129,
+  "seed": 42,
+  "batch": 8,
+  "lr": 3e-05,
+  "minimum_epochs": 8,
+  "maximum_epochs": 12,
+  "patience": 4,
+  "train_empty_frames": 16,
+  "train_empty_stems": [
+    "1693573937.584",
+    "1693573938.419",
+    "1693573944.259",
+    "1693573945.094",
+    "1693573947.597",
+    "1693573948.431",
+    "1693573949.266",
+    "1693573950.100",
+    "1693573954.272",
+    "1693573955.106",
+    "1693573955.941",
+    "1693573961.781",
+    "1693573966.787",
+    "1693573972.628",
+    "1693573980.137",
+    "1693573980.972"
+  ],
+  "negative_review": "mono/runs_review/m10_negative_review_20261023/reviewed_decisions.json",
+  "retention_policy": "Best native IoU among epochs satisfying all original retention conditions; unconstrained peak saved separately",
+  "dataset_scope": "Original SubPipeMini only, procedural backgrounds, additional verified zero-mask original TRAIN images. No validation images or diagnostic frames used for training.",
+  "deepcamo_used": false,
+  "elapsed_s": 329.03802156448364
+}

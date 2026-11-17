@@ -1,0 +1,314 @@
+[
+  {
+    "group": "A0",
+    "label": "去除注意力小波及必要融合分支（匹配M11）",
+    "model": "M11",
+    "checkpoint": "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M11/best.pt",
+    "reused": true,
+    "best_epoch": 30,
+    "cfg": {
+      "num_classes": 2,
+      "in_ch": 3,
+      "pretrained": true,
+      "out_ch": [
+        64,
+        128,
+        256
+      ],
+      "wavelet": "none",
+      "wavelet_plain_extra_blocks": 0,
+      "fusion": "concat",
+      "global_mode": "none",
+      "global_blocks": 1,
+      "global_stage": "s16",
+      "global_heads": 8,
+      "global_win": 7,
+      "decoder_mid": 128,
+      "decoder_skip": true,
+      "decoder_dw": true
+    },
+    "params": {
+      "encoder": 0.336692,
+      "wavelet": 0.0,
+      "fusion": 0.0,
+      "global": 0.0,
+      "decoder": 0.13965,
+      "total": 0.476342
+    },
+    "metrics": {
+      "mIoU": 0.8029961535430625,
+      "IoU_pipe": 0.6826847055959834,
+      "IoU_bg": 0.9233076014901418,
+      "Dice": 0.8114232016558158,
+      "Precision": 0.755895011128909,
+      "Recall": 0.8757564350613745,
+      "Dice_bg": 0.9601247359234486,
+      "F_boundary": 0.27936242427498514,
+      "n_frames": 129
+    },
+    "complexity": {
+      "Params_M": 0.476,
+      "input": "512x288",
+      "FLOPs_G": 2.49,
+      "latency_ms_median": 4.53,
+      "FPS": 220.8
+    },
+    "confusion": {
+      "tp": [
+        15075544.0,
+        2694065.0
+      ],
+      "fp": [
+        382207.0,
+        870008.0
+      ],
+      "fn": [
+        870008.0,
+        382207.0
+      ],
+      "intersection": [
+        15075544.0,
+        2694065.0
+      ],
+      "union": [
+        16327759.0,
+        3946280.0
+      ]
+    },
+    "checkpoint_sha256": "820f06c8794977b905191fe27896bc8208caf6be8cac19643fbed58d88a793a6"
+  },
+  {
+    "group": "A1",
+    "label": "普通小波替换注意力小波",
+    "model": "M13_plain",
+    "checkpoint": "mono/runs_review/m13_seg_ablation_20261027_v2/training/M13_plain/best.pt",
+    "reused": false,
+    "best_epoch": 30,
+    "cfg": {
+      "num_classes": 2,
+      "in_ch": 3,
+      "pretrained": true,
+      "out_ch": [
+        64,
+        128,
+        256
+      ],
+      "wavelet": "plain",
+      "wavelet_plain_extra_blocks": 0,
+      "fusion": "concat",
+      "global_mode": "none",
+      "global_blocks": 1,
+      "global_stage": "s16",
+      "global_heads": 8,
+      "global_win": 7,
+      "decoder_mid": 128,
+      "decoder_skip": true,
+      "decoder_dw": true
+    },
+    "params": {
+      "encoder": 0.336692,
+      "wavelet": 0.333056,
+      "fusion": 0.1344,
+      "global": 0.0,
+      "decoder": 0.13965,
+      "total": 0.943798
+    },
+    "metrics": {
+      "mIoU": 0.8044748047047057,
+      "IoU_pipe": 0.6870431813333955,
+      "IoU_bg": 0.921906428076016,
+      "Dice": 0.8144938895877866,
+      "Precision": 0.7404816945995644,
+      "Recall": 0.9049443612265415,
+      "Dice_bg": 0.9593666107864773,
+      "F_boundary": 0.29581654354810444,
+      "n_frames": 129
+    },
+    "complexity": {
+      "Params_M": 0.944,
+      "input": "512x288",
+      "FLOPs_G": 2.8,
+      "latency_ms_median": 5.88,
+      "FPS": 170.2
+    },
+    "confusion": {
+      "tp": [
+        14969888.0,
+        2783855.0
+      ],
+      "fp": [
+        292417.0,
+        975664.0
+      ],
+      "fn": [
+        975664.0,
+        292417.0
+      ],
+      "intersection": [
+        14969888.0,
+        2783855.0
+      ],
+      "union": [
+        16237969.0,
+        4051936.0
+      ]
+    },
+    "checkpoint_sha256": "a30e636d0f8f5ae23e03a0c4a3ac145316815cc140201921a2aadeb2f642af4d"
+  },
+  {
+    "group": "A2",
+    "label": "普通卷积替换深度可分离解码器",
+    "model": "M13_standard_decoder",
+    "checkpoint": "mono/runs_review/m13_seg_ablation_20261027_v2/training/M13_standard_decoder/best.pt",
+    "reused": false,
+    "best_epoch": 55,
+    "cfg": {
+      "num_classes": 2,
+      "in_ch": 3,
+      "pretrained": true,
+      "out_ch": [
+        64,
+        128,
+        256
+      ],
+      "wavelet": "attention",
+      "wavelet_plain_extra_blocks": 0,
+      "fusion": "concat",
+      "global_mode": "none",
+      "global_blocks": 1,
+      "global_stage": "s16",
+      "global_heads": 8,
+      "global_win": 7,
+      "decoder_mid": 128,
+      "decoder_skip": true,
+      "decoder_dw": false
+    },
+    "params": {
+      "encoder": 0.336692,
+      "wavelet": 0.71104,
+      "fusion": 0.1344,
+      "global": 0.0,
+      "decoder": 0.722434,
+      "total": 1.904566
+    },
+    "metrics": {
+      "mIoU": 0.7923464500300581,
+      "IoU_pipe": 0.6689991409638719,
+      "IoU_bg": 0.9156937590962444,
+      "Dice": 0.8016770345100537,
+      "Precision": 0.7225761169337909,
+      "Recall": 0.9002253376811609,
+      "Dice_bg": 0.9559917964427006,
+      "F_boundary": 0.2719307421832402,
+      "n_frames": 129
+    },
+    "complexity": {
+      "Params_M": 1.905,
+      "input": "512x288",
+      "FLOPs_G": 10.04,
+      "latency_ms_median": 6.62,
+      "FPS": 151.0
+    },
+    "confusion": {
+      "tp": [
+        14882300.0,
+        2769338.0
+      ],
+      "fp": [
+        306934.0,
+        1063252.0
+      ],
+      "fn": [
+        1063252.0,
+        306934.0
+      ],
+      "intersection": [
+        14882300.0,
+        2769338.0
+      ],
+      "union": [
+        16252486.0,
+        4139524.0
+      ]
+    },
+    "checkpoint_sha256": "6ed1b558a04c8d4a0115a5fc641d402e89fa7146eba046a08318cb2d9a20dd2a"
+  },
+  {
+    "group": "A3",
+    "label": "完整M13",
+    "model": "M13",
+    "checkpoint": "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M13/best.pt",
+    "reused": true,
+    "best_epoch": 50,
+    "cfg": {
+      "num_classes": 2,
+      "in_ch": 3,
+      "pretrained": true,
+      "out_ch": [
+        64,
+        128,
+        256
+      ],
+      "wavelet": "attention",
+      "wavelet_plain_extra_blocks": 0,
+      "fusion": "concat",
+      "global_mode": "none",
+      "global_blocks": 1,
+      "global_stage": "s16",
+      "global_heads": 8,
+      "global_win": 7,
+      "decoder_mid": 128,
+      "decoder_skip": true,
+      "decoder_dw": true
+    },
+    "params": {
+      "encoder": 0.336692,
+      "wavelet": 0.71104,
+      "fusion": 0.1344,
+      "global": 0.0,
+      "decoder": 0.13965,
+      "total": 1.321782
+    },
+    "metrics": {
+      "mIoU": 0.7973110758329541,
+      "IoU_pipe": 0.675853195435067,
+      "IoU_bg": 0.9187689562308413,
+      "Dice": 0.8065780430840295,
+      "Precision": 0.7336609108915898,
+      "Recall": 0.8955888816070571,
+      "Dice_bg": 0.9576650208429858,
+      "F_boundary": 0.27247405225143045,
+      "n_frames": 129
+    },
+    "complexity": {
+      "Params_M": 1.322,
+      "input": "512x288",
+      "FLOPs_G": 2.9,
+      "latency_ms_median": 6.33,
+      "FPS": 158.0
+    },
+    "confusion": {
+      "tp": [
+        14945384.0,
+        2755075.0
+      ],
+      "fp": [
+        321197.0,
+        1000168.0
+      ],
+      "fn": [
+        1000168.0,
+        321197.0
+      ],
+      "intersection": [
+        14945384.0,
+        2755075.0
+      ],
+      "union": [
+        16266749.0,
+        4076440.0
+      ]
+    },
+    "checkpoint_sha256": "938b238f52950150b09aa629bdd1ca1bdc2e392000480f95c0d2a16026c5f400"
+  }
+]

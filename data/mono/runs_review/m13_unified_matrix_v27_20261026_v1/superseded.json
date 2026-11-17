@@ -1,0 +1,194 @@
+{
+  "reason": "mixed_fish/avoidance fish_contact_3d at 22.333s",
+  "retained_for_diagnosis": [
+    {
+      "pid": 20344,
+      "creation_time": 1792978642.6315408,
+      "command": [
+        "[公开副本已隐去本地信息]",
+        "-B",
+        "-m",
+        "tools.m13_unified_loop",
+        "--out",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/closed_loop/job_001",
+        "--config",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/tracking_config.json",
+        "--perception-profile",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/perception_M13.json",
+        "--project-root",
+        "mono",
+        "--scenarios",
+        "mixed_clear",
+        "--modes",
+        "avoidance",
+        "--fps",
+        "30",
+        "--max-seconds",
+        "120.0"
+      ]
+    }
+  ],
+  "stopped": [
+    {
+      "pid": 20376,
+      "command": [
+        "[公开副本已隐去本地信息]",
+        "-B",
+        "runs_review/m13_unified_development_20261025_v1/resume_episode_matrix.py",
+        "--matrix",
+        "runs_review/m13_unified_matrix_v27_20261026_v1",
+        "--takeover-parent",
+        "7728",
+        "--workers",
+        "6"
+      ],
+      "role": "superseded scheduler/report waiter"
+    },
+    {
+      "pid": 24292,
+      "command": [
+        "[公开副本已隐去本地信息]",
+        "-B",
+        "runs_review/m13_unified_development_20261025_v1/finalize_unified_matrix.py",
+        "--matrix",
+        "runs_review/m13_unified_matrix_v27_20261026_v1",
+        "--campaign",
+        "runs_review/m13_unified_campaign_v27_20261026_v1",
+        "--delivery",
+        "runs_review/m13_unified_delivery_v27_20261026_v1"
+      ],
+      "role": "superseded scheduler/report waiter"
+    },
+    {
+      "pid": 23380,
+      "command": [
+        "[公开副本已隐去本地信息]",
+        "-B",
+        "-m",
+        "tools.m13_unified_loop",
+        "--out",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/closed_loop/job_000",
+        "--config",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/tracking_config.json",
+        "--perception-profile",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/perception_M13.json",
+        "--project-root",
+        "mono",
+        "--scenarios",
+        "mixed_clear",
+        "--modes",
+        "tracker_only",
+        "--fps",
+        "30",
+        "--max-seconds",
+        "120.0"
+      ],
+      "role": "unfinished superseded episode; partial logs retained"
+    },
+    {
+      "pid": 11376,
+      "command": [
+        "[公开副本已隐去本地信息]",
+        "-B",
+        "-m",
+        "tools.m13_unified_loop",
+        "--out",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/closed_loop/job_006",
+        "--config",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/tracking_config.json",
+        "--perception-profile",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/perception_M13.json",
+        "--project-root",
+        "mono",
+        "--scenarios",
+        "clear_left",
+        "--modes",
+        "tracker_only",
+        "--fps",
+        "30",
+        "--max-seconds",
+        "120.0"
+      ],
+      "role": "unfinished superseded episode; partial logs retained"
+    },
+    {
+      "pid": 11900,
+      "command": [
+        "[公开副本已隐去本地信息]",
+        "-B",
+        "-m",
+        "tools.m13_unified_loop",
+        "--out",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/closed_loop/job_007",
+        "--config",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/tracking_config.json",
+        "--perception-profile",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/perception_M13.json",
+        "--project-root",
+        "mono",
+        "--scenarios",
+        "clear_left",
+        "--modes",
+        "avoidance",
+        "--fps",
+        "30",
+        "--max-seconds",
+        "120.0"
+      ],
+      "role": "unfinished superseded episode; partial logs retained"
+    },
+    {
+      "pid": 6288,
+      "command": [
+        "[公开副本已隐去本地信息]",
+        "-B",
+        "-m",
+        "tools.m13_unified_loop",
+        "--out",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/closed_loop/job_008",
+        "--config",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/tracking_config.json",
+        "--perception-profile",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/perception_M13.json",
+        "--project-root",
+        "mono",
+        "--scenarios",
+        "clear_right",
+        "--modes",
+        "tracker_only",
+        "--fps",
+        "30",
+        "--max-seconds",
+        "120.0"
+      ],
+      "role": "unfinished superseded episode; partial logs retained"
+    },
+    {
+      "pid": 4848,
+      "command": [
+        "[公开副本已隐去本地信息]",
+        "-B",
+        "-m",
+        "tools.m13_unified_loop",
+        "--out",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/closed_loop/job_009",
+        "--config",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/tracking_config.json",
+        "--perception-profile",
+        "mono/runs_review/m13_unified_matrix_v27_20261026_v1/perception_M13.json",
+        "--project-root",
+        "mono",
+        "--scenarios",
+        "clear_right",
+        "--modes",
+        "avoidance",
+        "--fps",
+        "30",
+        "--max-seconds",
+        "120.0"
+      ],
+      "role": "unfinished superseded episode; partial logs retained"
+    }
+  ],
+  "original_records_preserved": true
+}

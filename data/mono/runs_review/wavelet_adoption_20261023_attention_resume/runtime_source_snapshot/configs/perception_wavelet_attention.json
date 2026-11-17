@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "name": "wavelet_attention_suim",
+  "adoption_status": "user-selected research configuration; task acceptance is reported separately",
+  "pipe_checkpoint": "runs_ablation/M11/best.pt",
+  "fish_checkpoint": "runs_fish/wavelet_20261023_seed42_gpu/attention/best.pt",
+  "pipe_sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a",
+  "fish_sha256": "6386036ed2f670ecd05199c4e544564b447b9f37afbbbd1564254e4d353f6d73",
+  "fish_wavelet": "attention",
+  "fish_wavelet_stage": "s8",
+  "includes_deepcamo": false,
+  "selection_basis": "Same-budget SUIM validation FV IoU 61.218% vs plain 60.844%. Both below historical 63.644%; not selected using DeepCamo held-out test scores."
+}

@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "pinned_inputs_unchanged": true,
+  "episodes": [
+    {
+      "episode": "clear_down_avoidance",
+      "scoring_mismatch": 0,
+      "fraction_exact": true,
+      "video_decoded": 1133,
+      "rows": 1133
+    },
+    {
+      "episode": "clear_down_tracker_only",
+      "scoring_mismatch": 0,
+      "fraction_exact": true,
+      "video_decoded": 1133,
+      "rows": 1133
+    },
+    {
+      "episode": "fish_down_bend_avoidance",
+      "scoring_mismatch": 0,
+      "fraction_exact": true,
+      "video_decoded": 1135,
+      "rows": 1135
+    },
+    {
+      "episode": "fish_down_bend_tracker_only",
+      "scoring_mismatch": 0,
+      "fraction_exact": true,
+      "video_decoded": 560,
+      "rows": 560
+    },
+    {
+      "episode": "fish_down_vertical_avoidance",
+      "scoring_mismatch": 0,
+      "fraction_exact": true,
+      "video_decoded": 1154,
+      "rows": 1154
+    },
+    {
+      "episode": "fish_down_vertical_tracker_only",
+      "scoring_mismatch": 0,
+      "fraction_exact": true,
+      "video_decoded": 925,
+      "rows": 925
+    }
+  ],
+  "truth_scope": "XYZ routes/fish position/contact and arc bins used only by renderer/scorer; vision receives RGB, NN masks, explicit priors and measured pose"
+}

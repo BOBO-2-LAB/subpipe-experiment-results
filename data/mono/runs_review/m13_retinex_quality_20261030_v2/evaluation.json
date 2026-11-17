@@ -1,0 +1,220 @@
+{
+  "design": {
+    "n": 129,
+    "size_hw": [
+      288,
+      512
+    ],
+    "conditions": [
+      "raw",
+      "retinex"
+    ],
+    "retinex": {
+      "mode": "msr_luminance_v1",
+      "strength": 0.35,
+      "sigma_fractions": [
+        0.04,
+        0.1,
+        0.21
+      ],
+      "target_luminance": 0.45,
+      "max_gain": 2.5,
+      "illumination_max_side": 192
+    },
+    "paired_experiment": "mono/runs_review/m13_retinex_input_20261030_v2",
+    "checkpoint_sha256": "938b238f52950150b09aa629bdd1ca1bdc2e392000480f95c0d2a16026c5f400",
+    "psnr_ssim_reference": "original degraded input RGB, not clean ground truth",
+    "psnr_range": 1.0,
+    "ssim": "mean over RGB; Gaussian 11x11 sigma=1.5; population covariance; K=.01/.03",
+    "uiqm": "Sobel magnitude, RGB-weighted EME .299/.587/.114; 10x10 full blocks; joint-RGB Michelson-log UIConM; all-pixel variance around 10% trimmed mean",
+    "uiqm_implementation_note": "Explicit common block variant, not a PLIP implementation. Exact trim and .114 blue weight correct off-by-one/.144 in FUnIE-GAN reference code.",
+    "uciqe": "native D65 CIELab, L=0..100 signed a/b; chroma std, mean top/bottom 1% L contrast, mean C/L",
+    "values": "per-image metrics, then unweighted image mean; std is across images, not across training seeds",
+    "image_precision": "both conditions use lossless 8-bit RGB, enhancement rounded to nearest uint8; no JPEG; segmentation retains its original float32 input",
+    "representation": "uint8",
+    "new_training": false,
+    "new_model_inference": false,
+    "clean_reference_available": false,
+    "sources": [
+      {
+        "name": "UCIQE original paper",
+        "url": "https://doi.org/10.1109/TIP.2015.2491020"
+      },
+      {
+        "name": "UIQM original paper",
+        "url": "https://doi.org/10.1109/JOE.2015.2469915"
+      },
+      {
+        "name": "FUnIE-GAN author implementation",
+        "url": "https://github.com/xahidbuffon/FUnIE-GAN/blob/master/Evaluation/uqim_utils.py"
+      },
+      {
+        "name": "SSIM author page",
+        "url": "https://ece.uwaterloo.ca/~z70wang/research/ssim/"
+      }
+    ],
+    "environment": {
+      "python": "3.13.16",
+      "numpy": "2.4.2",
+      "skimage": "0.26.0"
+    }
+  },
+  "results": [
+    {
+      "subset": "all_129",
+      "condition": "raw",
+      "n": 129,
+      "psnr_db_mean": "inf",
+      "psnr_db_std_images": null,
+      "ssim_rgb_mean": 1.0,
+      "ssim_rgb_std_images": 0.0,
+      "uiqm_mean": 1.27263697458611,
+      "uiqm_std_images": 0.597278460062259,
+      "uciqe_mean": 5.5140977059851854,
+      "uciqe_std_images": 1.1442955121381375,
+      "uicm_mean": -0.9752195317080363,
+      "uicm_std_images": 0.9243242409538514,
+      "uism_mean": 1.062027235666357,
+      "uism_std_images": 0.6317183417547563,
+      "uiconm_mean": 0.27592692156965887,
+      "uiconm_std_images": 0.1340951211871349,
+      "chroma_std_mean": 2.586480691661426,
+      "chroma_std_std_images": 1.0814566795211893,
+      "luminance_contrast_mean": 14.886615905304222,
+      "luminance_contrast_std_images": 2.650100276871484,
+      "saturation_mean_mean": 0.8433566625839614,
+      "saturation_mean_std_images": 0.17944805640395087
+    },
+    {
+      "subset": "all_129",
+      "condition": "retinex",
+      "n": 129,
+      "psnr_db_mean": 34.5053597360833,
+      "psnr_db_std_images": 2.946966300100386,
+      "ssim_rgb_mean": 0.9977912839077113,
+      "ssim_rgb_std_images": 0.0008748672354623123,
+      "uiqm_mean": 1.293161336556023,
+      "uiqm_std_images": 0.6046098030000577,
+      "uciqe_mean": 4.481805103478733,
+      "uciqe_std_images": 0.9499688056956037,
+      "uicm_mean": -1.2701963874553261,
+      "uicm_std_images": 1.062625516465981,
+      "uism_mean": 1.1595447774606056,
+      "uism_std_images": 0.6400515327951044,
+      "uiconm_mean": 0.27593972586863935,
+      "uiconm_std_images": 0.13417310324757234,
+      "chroma_std_mean": 2.110609759188219,
+      "chroma_std_std_images": 1.126717369260055,
+      "luminance_contrast_mean": 11.944531600684321,
+      "luminance_contrast_std_images": 1.9958252318223773,
+      "saturation_mean_mean": 0.8356592072624193,
+      "saturation_mean_std_images": 0.18027679101338126
+    },
+    {
+      "subset": "fixed_20",
+      "condition": "raw",
+      "n": 20,
+      "psnr_db_mean": "inf",
+      "psnr_db_std_images": null,
+      "ssim_rgb_mean": 1.0,
+      "ssim_rgb_std_images": 0.0,
+      "uiqm_mean": 1.2575805661359962,
+      "uiqm_std_images": 0.5401883678654689,
+      "uciqe_mean": 5.242468918061943,
+      "uciqe_std_images": 0.8327292460445753,
+      "uicm_mean": -1.006247498607729,
+      "uicm_std_images": 0.9200735107185425,
+      "uism_mean": 1.0670054728956222,
+      "uism_std_images": 0.4455634690396995,
+      "uiconm_mean": 0.2715492488604192,
+      "uiconm_std_images": 0.1344137728934535,
+      "chroma_std_mean": 2.4762664971479493,
+      "chroma_std_std_images": 0.7594958035014479,
+      "luminance_contrast_mean": 14.069878856894073,
+      "luminance_contrast_std_images": 1.9401855157949435,
+      "saturation_mean_mean": 0.8594505092363326,
+      "saturation_mean_std_images": 0.17188531801372509
+    },
+    {
+      "subset": "fixed_20",
+      "condition": "retinex",
+      "n": 20,
+      "psnr_db_mean": 34.40203114636813,
+      "psnr_db_std_images": 2.916933089885144,
+      "ssim_rgb_mean": 0.9977275791306305,
+      "ssim_rgb_std_images": 0.0009800945892229705,
+      "uiqm_mean": 1.28050976161888,
+      "uiqm_std_images": 0.5465397591886672,
+      "uciqe_mean": 4.288526077075473,
+      "uciqe_std_images": 0.7013959343713129,
+      "uicm_mean": -1.2827843850298246,
+      "uicm_std_images": 1.0630749269745396,
+      "uism_mean": 1.1705494102568648,
+      "uism_std_images": 0.47887164195964954,
+      "uiconm_mean": 0.271591486148818,
+      "uiconm_std_images": 0.13451707036927066,
+      "chroma_std_mean": 2.0025994578686612,
+      "chroma_std_std_images": 0.7544818991396697,
+      "luminance_contrast_mean": 11.409600140397668,
+      "luminance_contrast_std_images": 1.6116334000742014,
+      "saturation_mean_mean": 0.8516082773826856,
+      "saturation_mean_std_images": 0.1735690649540078
+    }
+  ],
+  "float_precision_sensitivity": {
+    "path": "mono/runs_review/m13_retinex_quality_20261030_v1/evaluation.json",
+    "sha256": "e2f360d9466037762edc6aedd5d7b8b107362d3d822a0b29becf3965d84c49cd",
+    "all_129": [
+      {
+        "subset": "all_129",
+        "condition": "raw",
+        "n": 129,
+        "psnr_db_mean": "inf",
+        "psnr_db_std_images": null,
+        "ssim_rgb_mean": 1.0,
+        "ssim_rgb_std_images": 0.0,
+        "uiqm_mean": 1.2830692076191978,
+        "uiqm_std_images": 0.5994965588194491,
+        "uciqe_mean": 5.5140984140004665,
+        "uciqe_std_images": 1.1442955323190016,
+        "uicm_mean": -0.9752193740154799,
+        "uicm_std_images": 0.9243242700824249,
+        "uism_mean": 1.0973547999450772,
+        "uism_std_images": 0.659065686237251,
+        "uiconm_mean": 0.2759269212493087,
+        "uiconm_std_images": 0.1340951210796052,
+        "chroma_std_mean": 2.5864813054834612,
+        "chroma_std_std_images": 1.0814567097988617,
+        "luminance_contrast_mean": 14.886617437932523,
+        "luminance_contrast_std_images": 2.6501003212047953,
+        "saturation_mean_mean": 0.8433566627396327,
+        "saturation_mean_std_images": 0.17944805363158786
+      },
+      {
+        "subset": "all_129",
+        "condition": "retinex",
+        "n": 129,
+        "psnr_db_mean": 34.52307905138212,
+        "psnr_db_std_images": 2.9578007850716004,
+        "ssim_rgb_mean": 0.9982683901625053,
+        "ssim_rgb_std_images": 0.0008182962575611684,
+        "uiqm_mean": 3.273576109426097,
+        "uiqm_std_images": 0.7459980575767848,
+        "uciqe_mean": 4.4722343061512655,
+        "uciqe_std_images": 0.9505155685831922,
+        "uicm_mean": -1.273198061780409,
+        "uicm_std_images": 1.0631477280296968,
+        "uism_mean": 7.865774760981843,
+        "uism_std_images": 0.9663776674616683,
+        "uiconm_mean": 0.2759815981457126,
+        "uiconm_std_images": 0.13411531777572624,
+        "chroma_std_mean": 2.1008399237445032,
+        "chroma_std_std_images": 1.1282145613811252,
+        "luminance_contrast_mean": 11.926329290198113,
+        "luminance_contrast_std_images": 1.9960990756887835,
+        "saturation_mean_mean": 0.83565152049478,
+        "saturation_mean_std_images": 0.18029311443030452
+      }
+    ]
+  }
+}

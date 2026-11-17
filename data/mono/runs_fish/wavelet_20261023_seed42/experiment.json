@@ -1,0 +1,103 @@
+{
+  "scope": "One-seed, matched-budget SUIM internal-validation ablation; not independent TEST or closed-loop acceptance.",
+  "smoke_only": false,
+  "epochs": 60,
+  "batch": 16,
+  "seed": 42,
+  "stage": "s8",
+  "modes": [
+    "none",
+    "plain",
+    "attention"
+  ],
+  "selection": "bio",
+  "evaluation_period": 5,
+  "initialization": "Same frozen M11 checkpoint and same seeded biological encoder/decoder; new wavelet parameters initialized separately.",
+  "training_rng": "Torch and NumPy reset after initialization/guards in every trial.",
+  "source_files": [
+    {
+      "path": "models/m11_fish.py",
+      "sha256": "64c334915af65628c8e10711ff83ae87129d92fb84c58721345d67b32d3bac4f"
+    },
+    {
+      "path": "models/wavelet.py",
+      "sha256": "615d41b92dc33d0d77c2598f033704665cc72dfed11e3774f363802f798f81b5"
+    },
+    {
+      "path": "models/efsnet.py",
+      "sha256": "f4230543c69d66b5096de0792832dab6c138a93b57253c4ca3de996ce8a4adb4"
+    },
+    {
+      "path": "models/decoder.py",
+      "sha256": "9fa7f7d85ea7e42d013e80e82fa6e9d0e8ada6b3ab88a200a1b262022574d363"
+    },
+    {
+      "path": "models/pipeline_net.py",
+      "sha256": "866dda33380115b0df9c7ebbd39a2500abd55eb506cc6f4b4b00adbebd7f25c5"
+    },
+    {
+      "path": "tools/train_fish.py",
+      "sha256": "1f5abb3e48481149cdcf07dd168ac3807aa210700fceed771a936284291f6590"
+    },
+    {
+      "path": "tools/fish_wavelet_experiment.py",
+      "sha256": "bfbbd19b932bcb143c5c6a424cea7609230ab8df89bae2b863c8e39cfe1c16e7"
+    },
+    {
+      "path": "tools/fish_wavelet_review.py",
+      "sha256": "d7250c1cc0e845943edcdad8dc6e78a2757299732ece58e59bf30dbbf34d637f"
+    },
+    {
+      "path": "data/suim_dataset.py",
+      "sha256": "960a1d7b476c6e76ceb946e0c528664d3f634c78ba8a0e45d98fe335b9b1b258"
+    },
+    {
+      "path": "data/suim.py",
+      "sha256": "4bd649aecfaab90b14c2f561b3ec162da1e3258ea91dee04a5c96475c0bc95dc"
+    }
+  ],
+  "original_weights": [
+    {
+      "path": "mono/runs_ablation/M11/best.pt",
+      "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+    },
+    {
+      "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+    }
+  ],
+  "status": "interrupted_for_preprocessing_optimization",
+  "commands": [
+    [
+      "[公开副本已隐去本地信息]",
+      "-B",
+      "-m",
+      "tools.train_fish",
+      "--separate-encoder",
+      "--fish-wavelet",
+      "none",
+      "--fish-wavelet-stage",
+      "s8",
+      "--epochs",
+      "60",
+      "--batch",
+      "16",
+      "--seed",
+      "42",
+      "--select",
+      "bio",
+      "--eval-every",
+      "5",
+      "--out",
+      "mono/runs_fish/wavelet_20261023_seed42",
+      "--tag",
+      "none"
+    ]
+  ],
+  "active_mode": "none",
+  "failed_mode": "none",
+  "return_code": 15,
+  "acceptance_evidence": false,
+  "reason": "CPU preprocessing bottleneck: GPU utilization2%, epoch2 25.5s. Restart all groups with verified common GPU preprocessing.",
+  "interrupted_at": "2026-10-23T00:35:45.026922+00:00"
+}

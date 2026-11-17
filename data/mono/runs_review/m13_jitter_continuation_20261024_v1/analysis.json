@@ -1,0 +1,246 @@
+{
+  "episodes": [
+    {
+      "group": "baseline",
+      "scenario": "clear_pipe",
+      "scope": "45s full entry",
+      "task_pass": false,
+      "goal": false,
+      "progress_m": 6.724608223449558,
+      "elapsed_s": 45.0,
+      "valid_fraction": 0.9232365145228216,
+      "active_frames": 482,
+      "valid_active_frames": 445,
+      "all_frame_valid_fraction": 0.6118518518518519,
+      "pipe_iou": 0.5593812445161092,
+      "contact_2d": false,
+      "recovered": false,
+      "jitter_control_frames": 0,
+      "mild_return_resumes": 0,
+      "inspection_seconds": 16.066666666666666,
+      "waiting_seconds": 28.933333333333334,
+      "failed_checks": "goal_reached;recovered"
+    },
+    {
+      "group": "blackout_probes",
+      "scenario": "brief_occlusion",
+      "scope": "12s behavior probe",
+      "task_pass": false,
+      "goal": false,
+      "progress_m": 2.6363961774004063,
+      "elapsed_s": 12.0,
+      "valid_fraction": 0.85,
+      "active_frames": 160,
+      "valid_active_frames": 136,
+      "all_frame_valid_fraction": 0.5472222222222223,
+      "pipe_iou": 0.34830547160199776,
+      "contact_2d": false,
+      "recovered": true,
+      "jitter_control_frames": 0,
+      "mild_return_resumes": 6,
+      "inspection_seconds": 5.333333333333333,
+      "waiting_seconds": 6.666666666666667,
+      "failed_checks": "goal_reached;inspection_valid_fraction"
+    },
+    {
+      "group": "blackout_probes",
+      "scenario": "perception_loss",
+      "scope": "12s behavior probe",
+      "task_pass": false,
+      "goal": false,
+      "progress_m": 1.794047315406107,
+      "elapsed_s": 12.0,
+      "valid_fraction": 0.7033898305084746,
+      "active_frames": 118,
+      "valid_active_frames": 83,
+      "all_frame_valid_fraction": 0.28888888888888886,
+      "pipe_iou": 0.12427988382022942,
+      "contact_2d": false,
+      "recovered": true,
+      "jitter_control_frames": 0,
+      "mild_return_resumes": 4,
+      "inspection_seconds": 3.933333333333333,
+      "waiting_seconds": 8.066666666666666,
+      "failed_checks": "goal_reached;inspection_valid_fraction"
+    },
+    {
+      "group": "blackout_probes",
+      "scenario": "pipe_jitter",
+      "scope": "12s behavior probe",
+      "task_pass": false,
+      "goal": false,
+      "progress_m": 2.6997713026234114,
+      "elapsed_s": 12.0,
+      "valid_fraction": 0.7357142857142858,
+      "active_frames": 140,
+      "valid_active_frames": 103,
+      "all_frame_valid_fraction": 0.5,
+      "pipe_iou": 0.4921444679747729,
+      "contact_2d": false,
+      "recovered": false,
+      "jitter_control_frames": 0,
+      "mild_return_resumes": 7,
+      "inspection_seconds": 4.666666666666667,
+      "waiting_seconds": 7.333333333333333,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered"
+    },
+    {
+      "group": "jitter",
+      "scenario": "clear_pipe",
+      "scope": "45s full entry",
+      "task_pass": false,
+      "goal": false,
+      "progress_m": 5.990727205274055,
+      "elapsed_s": 45.0,
+      "valid_fraction": 0.8801742919389978,
+      "active_frames": 459,
+      "valid_active_frames": 404,
+      "all_frame_valid_fraction": 0.6325925925925926,
+      "pipe_iou": 0.5701901212302647,
+      "contact_2d": false,
+      "recovered": false,
+      "jitter_control_frames": 1,
+      "mild_return_resumes": 8,
+      "inspection_seconds": 15.3,
+      "waiting_seconds": 29.7,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered"
+    }
+  ],
+  "control_observation_audits": [
+    {
+      "group": "baseline",
+      "scenario": "clear_pipe",
+      "prediction_counted_as_valid": 0,
+      "prediction_labeled_observed": 0,
+      "prediction_excluded_from_inspection": 0,
+      "continuation_over_age_bound": 0,
+      "continuation_under_min_speed_command": 0,
+      "status": {
+        "lost": 60,
+        "observed": 919,
+        "predicted": 371
+      },
+      "continuation_reasons": {
+        "null": 1350
+      }
+    },
+    {
+      "group": "blackout_probes",
+      "scenario": "brief_occlusion",
+      "prediction_counted_as_valid": 0,
+      "prediction_labeled_observed": 0,
+      "prediction_excluded_from_inspection": 0,
+      "continuation_over_age_bound": 0,
+      "continuation_under_min_speed_command": 0,
+      "status": {
+        "lost": 38,
+        "observed": 228,
+        "predicted": 94
+      },
+      "continuation_reasons": {
+        "no_accepted_anchor": 12,
+        "bounded_current_supported_jitter": 166,
+        "geometry_change_exceeds_jitter_bound": 46,
+        "anchor_expired": 37,
+        "no_current_image_evidence": 8,
+        "insufficient_current_probability_support": 85,
+        "no_current_geometry_candidate": 6
+      }
+    },
+    {
+      "group": "blackout_probes",
+      "scenario": "perception_loss",
+      "prediction_counted_as_valid": 0,
+      "prediction_labeled_observed": 0,
+      "prediction_excluded_from_inspection": 0,
+      "continuation_over_age_bound": 0,
+      "continuation_under_min_speed_command": 0,
+      "status": {
+        "lost": 148,
+        "observed": 154,
+        "predicted": 58
+      },
+      "continuation_reasons": {
+        "no_accepted_anchor": 12,
+        "bounded_current_supported_jitter": 108,
+        "geometry_change_exceeds_jitter_bound": 28,
+        "anchor_expired": 147,
+        "no_current_image_evidence": 8,
+        "insufficient_current_probability_support": 50,
+        "no_current_geometry_candidate": 7
+      }
+    },
+    {
+      "group": "blackout_probes",
+      "scenario": "pipe_jitter",
+      "prediction_counted_as_valid": 0,
+      "prediction_labeled_observed": 0,
+      "prediction_excluded_from_inspection": 0,
+      "continuation_over_age_bound": 0,
+      "continuation_under_min_speed_command": 0,
+      "status": {
+        "lost": 17,
+        "observed": 226,
+        "predicted": 117
+      },
+      "continuation_reasons": {
+        "no_accepted_anchor": 12,
+        "bounded_current_supported_jitter": 130,
+        "geometry_change_exceeds_jitter_bound": 65,
+        "anchor_expired": 19,
+        "no_current_image_evidence": 6,
+        "insufficient_current_probability_support": 124,
+        "no_current_geometry_candidate": 4
+      }
+    },
+    {
+      "group": "jitter",
+      "scenario": "clear_pipe",
+      "prediction_counted_as_valid": 0,
+      "prediction_labeled_observed": 0,
+      "prediction_excluded_from_inspection": 0,
+      "continuation_over_age_bound": 0,
+      "continuation_under_min_speed_command": 0,
+      "status": {
+        "lost": 26,
+        "observed": 943,
+        "predicted": 381
+      },
+      "continuation_reasons": {
+        "no_accepted_anchor": 12,
+        "bounded_current_supported_jitter": 453,
+        "geometry_change_exceeds_jitter_bound": 272,
+        "anchor_expired": 32,
+        "insufficient_current_probability_support": 545,
+        "no_current_geometry_candidate": 17,
+        "insufficient_remaining_path": 19
+      }
+    }
+  ],
+  "blackout_behavior_probes": [
+    {
+      "scenario": "brief_occlusion",
+      "scope": "behavior only, 12s does not test 8m endpoint",
+      "black_source_frames": 30,
+      "continued_while_black": 0,
+      "black_labeled_valid": 0,
+      "observed_after_black": 191
+    },
+    {
+      "scenario": "perception_loss",
+      "scope": "behavior only, 12s does not test 8m endpoint",
+      "black_source_frames": 120,
+      "continued_while_black": 0,
+      "black_labeled_valid": 0,
+      "observed_after_black": 117
+    },
+    {
+      "scenario": "pipe_jitter",
+      "scope": "behavior only, 12s does not test 8m endpoint",
+      "black_source_frames": 6,
+      "continued_while_black": 0,
+      "black_labeled_valid": 0,
+      "observed_after_black": 189
+    }
+  ]
+}

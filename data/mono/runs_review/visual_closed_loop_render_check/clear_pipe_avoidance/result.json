@@ -1,0 +1,32 @@
+{
+  "scenario": "clear_pipe",
+  "mode": "avoidance",
+  "outcome": "timeout",
+  "route_completed": false,
+  "task_completed": false,
+  "synthetic_inspection_valid_fraction": 0.0,
+  "collision": false,
+  "minimum_clearance_m": null,
+  "encounter_passed": false,
+  "inspection_recovery_time_s": null,
+  "elapsed_sim_s": 2.0,
+  "progress_m": 1.2886225414341335,
+  "maximum_abs_cross_track_m": 0.0,
+  "pipe_loss_frames": 60,
+  "longest_pipe_loss_s": 2.0,
+  "ground_truth_pipe_out_of_view_frames": 0,
+  "tracking_error_abs_mean": null,
+  "actions": {
+    "tracker_recovery": 60
+  },
+  "synthetic_pipe_iou": 0.03681473398134465,
+  "synthetic_fish_iou": 0.0,
+  "visible_fish_frames": 0,
+  "fish_overlap_hit_frames": 0,
+  "fish_absent_but_detection_frames": 6,
+  "inference_wall_s_median": 0.01584444999753032,
+  "inference_wall_s_p95": 0.01853415499717812,
+  "frames": 60,
+  "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+  "video": "runs_review\\visual_closed_loop_render_check\\clear_pipe_avoidance\\feedback.mp4"
+}

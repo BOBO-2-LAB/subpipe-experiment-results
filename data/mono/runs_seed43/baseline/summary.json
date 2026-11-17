@@ -1,0 +1,55 @@
+{
+  "tag": "baseline",
+  "config": "baseline",
+  "args": {
+    "config": "baseline",
+    "data_root": "[本地引用:746bf541e6434668]",
+    "size": [
+      288,
+      512
+    ],
+    "epochs": 60,
+    "batch": 8,
+    "lr": 0.0001,
+    "lr_min": 1e-06,
+    "weight_decay": 0.0001,
+    "workers": 0,
+    "cache_dir": "[本地引用:d76c5529b519269e]",
+    "gpu_aug": true,
+    "amp": true,
+    "no_pretrained": false,
+    "eval_every": 5,
+    "dice_weight": 1.0,
+    "out": "[本地引用:c50f31a9514097d4]",
+    "tag": "baseline",
+    "device": "cuda:0",
+    "seed": 43
+  },
+  "params_M": {
+    "encoder": 0.336692,
+    "wavelet": 0.0,
+    "fusion": 0.0,
+    "global": 0.0,
+    "decoder": 0.722434,
+    "total": 1.059126
+  },
+  "val_metrics": {
+    "mIoU": 0.7966135988796321,
+    "IoU_pipe": 0.6731594329451043,
+    "IoU_bg": 0.9200677648141599,
+    "Dice": 0.8046566509925541,
+    "Precision": 0.7454600600055711,
+    "Recall": 0.8740657523129054,
+    "Dice_bg": 0.9583700968004238,
+    "F_boundary": 0.27566816869625593,
+    "n_frames": 129
+  },
+  "complexity": {
+    "Params_M": 1.059,
+    "input": "512x288",
+    "FLOPs_G": 9.63,
+    "latency_ms_median": 7.59,
+    "FPS": 131.7
+  },
+  "train_seconds": 441.0
+}

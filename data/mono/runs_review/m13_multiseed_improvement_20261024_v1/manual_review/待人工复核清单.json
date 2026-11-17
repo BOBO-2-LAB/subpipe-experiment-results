@@ -1,0 +1,113 @@
+{
+  "status": "pending_manual_review",
+  "scope": "Uniform candidate frames, not proven failures, no labels or pseudo truth, no training performed.",
+  "source_video_sha256": "ebcdb96aee069c9ee9114176304d4d3cafe3bb2a220748364e6c9a5d0b4b7fdd",
+  "samples": [
+    {
+      "source_video": "测试视频.mp4",
+      "frame": 30,
+      "t_s": 0.9985218295218294,
+      "image": "mono/runs_review/m13_multiseed_improvement_20261024_v1/manual_review/frame_00030.png",
+      "image_sha256": "1772a5b00d341db94e99cb0dc75cc88480361e3320d28d23b17497b3610620bc",
+      "review_status": "pending_manual_review",
+      "visible_pipe_mask": null,
+      "occluded_region": null,
+      "uncertain_or_watermark_region": null,
+      "split": "diagnostic_development_only_not_independent_test",
+      "pseudo_ground_truth_created": false
+    },
+    {
+      "source_video": "测试视频.mp4",
+      "frame": 90,
+      "t_s": 2.9955654885654885,
+      "image": "mono/runs_review/m13_multiseed_improvement_20261024_v1/manual_review/frame_00090.png",
+      "image_sha256": "5d19fc3784b87f0a9e87ebc3d1c67ae9d3bf895929a235ad53d503136404643c",
+      "review_status": "pending_manual_review",
+      "visible_pipe_mask": null,
+      "occluded_region": null,
+      "uncertain_or_watermark_region": null,
+      "split": "diagnostic_development_only_not_independent_test",
+      "pseudo_ground_truth_created": false
+    },
+    {
+      "source_video": "测试视频.mp4",
+      "frame": 150,
+      "t_s": 4.992609147609147,
+      "image": "mono/runs_review/m13_multiseed_improvement_20261024_v1/manual_review/frame_00150.png",
+      "image_sha256": "fe427b2bad666ac3a218cf395b301aaa401c288f276ef4a0e701ffc1480295ab",
+      "review_status": "pending_manual_review",
+      "visible_pipe_mask": null,
+      "occluded_region": null,
+      "uncertain_or_watermark_region": null,
+      "split": "diagnostic_development_only_not_independent_test",
+      "pseudo_ground_truth_created": false
+    },
+    {
+      "source_video": "测试视频.mp4",
+      "frame": 210,
+      "t_s": 6.989652806652806,
+      "image": "mono/runs_review/m13_multiseed_improvement_20261024_v1/manual_review/frame_00210.png",
+      "image_sha256": "cf7a2252c414605525b7cd6b4d50a86f079ce58d956bb787132266e1517b9861",
+      "review_status": "pending_manual_review",
+      "visible_pipe_mask": null,
+      "occluded_region": null,
+      "uncertain_or_watermark_region": null,
+      "split": "diagnostic_development_only_not_independent_test",
+      "pseudo_ground_truth_created": false
+    },
+    {
+      "source_video": "测试视频.mp4",
+      "frame": 270,
+      "t_s": 8.986696465696465,
+      "image": "mono/runs_review/m13_multiseed_improvement_20261024_v1/manual_review/frame_00270.png",
+      "image_sha256": "6d83a5cb6d42cf170d1b19368f15962f982a02645022714c29e153ee3e7d09ca",
+      "review_status": "pending_manual_review",
+      "visible_pipe_mask": null,
+      "occluded_region": null,
+      "uncertain_or_watermark_region": null,
+      "split": "diagnostic_development_only_not_independent_test",
+      "pseudo_ground_truth_created": false
+    },
+    {
+      "source_video": "测试视频.mp4",
+      "frame": 330,
+      "t_s": 10.983740124740125,
+      "image": "mono/runs_review/m13_multiseed_improvement_20261024_v1/manual_review/frame_00330.png",
+      "image_sha256": "433df59b4b3175225454ba479fda668ed71d5460fe67bd6db48e9347c31bd20b",
+      "review_status": "pending_manual_review",
+      "visible_pipe_mask": null,
+      "occluded_region": null,
+      "uncertain_or_watermark_region": null,
+      "split": "diagnostic_development_only_not_independent_test",
+      "pseudo_ground_truth_created": false
+    },
+    {
+      "source_video": "测试视频.mp4",
+      "frame": 390,
+      "t_s": 12.980783783783783,
+      "image": "mono/runs_review/m13_multiseed_improvement_20261024_v1/manual_review/frame_00390.png",
+      "image_sha256": "ef6a86bce098ed35df43728cb8d1d52de818b17835b840cc55ef308605db6e64",
+      "review_status": "pending_manual_review",
+      "visible_pipe_mask": null,
+      "occluded_region": null,
+      "uncertain_or_watermark_region": null,
+      "split": "diagnostic_development_only_not_independent_test",
+      "pseudo_ground_truth_created": false
+    },
+    {
+      "source_video": "测试视频.mp4",
+      "frame": 450,
+      "t_s": 14.977827442827442,
+      "image": "mono/runs_review/m13_multiseed_improvement_20261024_v1/manual_review/frame_00450.png",
+      "image_sha256": "cc246eea8a953a3bf7aa93e0d46cca584c7171a8bbd5d17773eff2b543347a4d",
+      "review_status": "pending_manual_review",
+      "visible_pipe_mask": null,
+      "occluded_region": null,
+      "uncertain_or_watermark_region": null,
+      "split": "diagnostic_development_only_not_independent_test",
+      "pseudo_ground_truth_created": false
+    }
+  ],
+  "split_rule": "All frames of this already-inspected video belong to one development group. Obtain independent videos before claiming a new held-out test.",
+  "review_guidance": "Annotate visible pipe boundaries only. Mark uncertainty, sediment occlusion and watermark separately. Do not infer a visible mask beneath occlusion."
+}

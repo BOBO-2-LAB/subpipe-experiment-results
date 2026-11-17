@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "checks": {
+    "camera_assumptions": true,
+    "vehicle_assumptions": true,
+    "synthetic_inspection_criteria": true,
+    "appearance_assets": true,
+    "checkpoints": true,
+    "scenarios": true,
+    "rate_hz": true,
+    "resize_short": true,
+    "fish_resize_short": true,
+    "fish_height_m": true,
+    "avoidance_config_overrides": true,
+    "image_delay_assumption_s": true,
+    "inspection_scoring": true,
+    "loss_policy": true,
+    "tracker_sway": true,
+    "pipe_following": true,
+    "pipe_motion_compensation": true,
+    "assets_still_match": true,
+    "no_stable_local_path_blocked_by_center": true
+  },
+  "analysis": {
+    "paired_probability_temporal": {
+      "frames": 960,
+      "observed": 174,
+      "trusted": 174,
+      "active": 63,
+      "valid": 21,
+      "active_low_iou": 42,
+      "health_stable_but_center_missing": 0,
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 174,
+        "short_probability_path": 264,
+        "insufficient_path_support": 11,
+        "no_paired_edge_seed": 504
+      },
+      "median_path_length_m": 0.8828427124746185,
+      "median_trusted_burst_s": 0.06666666666666667,
+      "bursts_shorter_than_confirmation": 31,
+      "bursts": 39
+    },
+    "probability_temporal": {
+      "frames": 1350,
+      "observed": 395,
+      "trusted": 365,
+      "active": 115,
+      "valid": 15,
+      "active_low_iou": 100,
+      "health_stable_but_center_missing": 0,
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 398,
+        "short_probability_path": 921,
+        "no_probability_seed": 24
+      },
+      "median_path_length_m": 1.382842712474618,
+      "median_trusted_burst_s": 0.06666666666666667,
+      "bursts_shorter_than_confirmation": 75,
+      "bursts": 90
+    },
+    "skeleton_temporal": {
+      "frames": 1350,
+      "observed": 669,
+      "trusted": 471,
+      "active": 163,
+      "valid": 62,
+      "active_low_iou": 101,
+      "health_stable_but_center_missing": 0,
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "no_component": 366,
+        "image_skeleton": 672,
+        "short_skeleton": 289,
+        "short_path": 16
+      },
+      "median_path_length_m": 2.7313708498984735,
+      "median_trusted_burst_s": 0.06666666666666667,
+      "bursts_shorter_than_confirmation": 91,
+      "bursts": 111
+    }
+  }
+}

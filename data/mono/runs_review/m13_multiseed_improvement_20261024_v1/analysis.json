@@ -1,0 +1,765 @@
+{
+  "episodes": [
+    {
+      "stage": "entry",
+      "variant": "baseline",
+      "scenario": "clear_pipe",
+      "mode": "avoidance",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.13043478260869565,
+      "all_frame_valid_fraction": 0.013333333333333334,
+      "active_frames": 115,
+      "progress_m": 1.2912606781944733,
+      "pipe_iou": 0.2644662315272322,
+      "elapsed_s": 45.0,
+      "reverse_attempts": 0,
+      "fast_resumes": 0,
+      "nofish_detection_frames": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failure": null,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_multiseed_improvement_20261024_v1/closed_loop/entry/baseline/clear_pipe_avoidance/result.json",
+      "status_counts": {
+        "lost": 495,
+        "observed": 395,
+        "predicted": 460
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 398,
+        "short_probability_path": 921,
+        "no_probability_seed": 24
+      },
+      "seed_strategies": {
+        "null": 1350
+      },
+      "pipe_health_reasons": {
+        "no_pipe": 7,
+        "near_segments_stable": 365,
+        "no_fresh_near_segments": 948,
+        "near_segments_unstable": 30
+      },
+      "active_valid_frames": 15,
+      "active_low_iou_frames": 100,
+      "intervention_frames": 0,
+      "fast_resume_events": 0
+    },
+    {
+      "stage": "entry",
+      "variant": "baseline",
+      "scenario": "clear_pipe",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.13043478260869565,
+      "all_frame_valid_fraction": 0.013333333333333334,
+      "active_frames": 115,
+      "progress_m": 1.2912606781944733,
+      "pipe_iou": 0.2644662315272322,
+      "elapsed_s": 45.0,
+      "reverse_attempts": 0,
+      "fast_resumes": 0,
+      "nofish_detection_frames": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failure": null,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_multiseed_improvement_20261024_v1/closed_loop/entry/baseline/clear_pipe_tracker_only/result.json",
+      "status_counts": {
+        "lost": 495,
+        "observed": 395,
+        "predicted": 460
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 398,
+        "short_probability_path": 921,
+        "no_probability_seed": 24
+      },
+      "seed_strategies": {
+        "null": 1350
+      },
+      "pipe_health_reasons": {
+        "no_pipe": 7,
+        "near_segments_stable": 365,
+        "no_fresh_near_segments": 948,
+        "near_segments_unstable": 30
+      },
+      "active_valid_frames": 15,
+      "active_low_iou_frames": 100,
+      "intervention_frames": 0,
+      "fast_resume_events": 0
+    },
+    {
+      "stage": "entry",
+      "variant": "multiseed",
+      "scenario": "clear_pipe",
+      "mode": "avoidance",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.41403508771929826,
+      "all_frame_valid_fraction": 0.17777777777777778,
+      "active_frames": 570,
+      "progress_m": 7.766130973450959,
+      "pipe_iou": 0.30387208422093953,
+      "elapsed_s": 45.0,
+      "reverse_attempts": 0,
+      "fast_resumes": 0,
+      "nofish_detection_frames": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failure": null,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_multiseed_improvement_20261024_v1/closed_loop/entry/multiseed/clear_pipe_avoidance/result.json",
+      "status_counts": {
+        "lost": 13,
+        "observed": 1096,
+        "predicted": 241
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 1111,
+        "short_probability_path": 145,
+        "no_probability_seed": 86,
+        "insufficient_path_support": 1
+      },
+      "seed_strategies": {
+        "null": 7,
+        "original_success_preserved": 1014,
+        "multiseed_fallback": 97,
+        "fallback_failed": 146,
+        "no_fallback_seed": 86
+      },
+      "pipe_health_reasons": {
+        "no_pipe": 13,
+        "near_segments_stable": 890,
+        "no_fresh_near_segments": 241,
+        "near_segments_unstable": 206
+      },
+      "active_valid_frames": 236,
+      "active_low_iou_frames": 334,
+      "intervention_frames": 0,
+      "fast_resume_events": 0
+    },
+    {
+      "stage": "entry",
+      "variant": "multiseed",
+      "scenario": "clear_pipe",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.41403508771929826,
+      "all_frame_valid_fraction": 0.17777777777777778,
+      "active_frames": 570,
+      "progress_m": 7.766130973450959,
+      "pipe_iou": 0.30387208422093953,
+      "elapsed_s": 45.0,
+      "reverse_attempts": 0,
+      "fast_resumes": 0,
+      "nofish_detection_frames": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failure": null,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_multiseed_improvement_20261024_v1/closed_loop/entry/multiseed/clear_pipe_tracker_only/result.json",
+      "status_counts": {
+        "lost": 13,
+        "observed": 1096,
+        "predicted": 241
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 1111,
+        "short_probability_path": 145,
+        "no_probability_seed": 86,
+        "insufficient_path_support": 1
+      },
+      "seed_strategies": {
+        "null": 7,
+        "original_success_preserved": 1014,
+        "multiseed_fallback": 97,
+        "fallback_failed": 146,
+        "no_fallback_seed": 86
+      },
+      "pipe_health_reasons": {
+        "no_pipe": 13,
+        "near_segments_stable": 890,
+        "no_fresh_near_segments": 241,
+        "near_segments_unstable": 206
+      },
+      "active_valid_frames": 236,
+      "active_low_iou_frames": 334,
+      "intervention_frames": 0,
+      "fast_resume_events": 0
+    },
+    {
+      "stage": "entry",
+      "variant": "supported",
+      "scenario": "clear_pipe",
+      "mode": "avoidance",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.13636363636363635,
+      "all_frame_valid_fraction": 0.012155591572123177,
+      "active_frames": 110,
+      "progress_m": 1.644051026484706,
+      "pipe_iou": 0.17851618005282088,
+      "elapsed_s": 41.1,
+      "reverse_attempts": 0,
+      "fast_resumes": 10,
+      "nofish_detection_frames": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failure": "perception_loss_timeout",
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_multiseed_improvement_20261024_v1/closed_loop/entry/supported/clear_pipe_avoidance/result.json",
+      "status_counts": {
+        "lost": 766,
+        "observed": 209,
+        "predicted": 259
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 212,
+        "short_probability_path": 543,
+        "no_probability_seed": 472
+      },
+      "seed_strategies": {
+        "null": 7,
+        "original_success_preserved": 188,
+        "multiseed_fallback": 24,
+        "fallback_failed": 543,
+        "no_fallback_seed": 472
+      },
+      "pipe_health_reasons": {
+        "no_pipe": 11,
+        "near_segments_stable": 175,
+        "no_fresh_near_segments": 1015,
+        "current_near_geometry_stable": 23,
+        "near_segments_unstable": 10
+      },
+      "active_valid_frames": 15,
+      "active_low_iou_frames": 95,
+      "intervention_frames": 0,
+      "fast_resume_events": 10
+    },
+    {
+      "stage": "entry",
+      "variant": "supported",
+      "scenario": "clear_pipe",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.13636363636363635,
+      "all_frame_valid_fraction": 0.012155591572123177,
+      "active_frames": 110,
+      "progress_m": 1.644051026484706,
+      "pipe_iou": 0.17851618005282088,
+      "elapsed_s": 41.1,
+      "reverse_attempts": 0,
+      "fast_resumes": 10,
+      "nofish_detection_frames": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failure": "perception_loss_timeout",
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_multiseed_improvement_20261024_v1/closed_loop/entry/supported/clear_pipe_tracker_only/result.json",
+      "status_counts": {
+        "lost": 766,
+        "observed": 209,
+        "predicted": 259
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 212,
+        "short_probability_path": 543,
+        "no_probability_seed": 472
+      },
+      "seed_strategies": {
+        "null": 7,
+        "original_success_preserved": 188,
+        "multiseed_fallback": 24,
+        "fallback_failed": 543,
+        "no_fallback_seed": 472
+      },
+      "pipe_health_reasons": {
+        "no_pipe": 11,
+        "near_segments_stable": 175,
+        "no_fresh_near_segments": 1015,
+        "current_near_geometry_stable": 23,
+        "near_segments_unstable": 10
+      },
+      "active_valid_frames": 15,
+      "active_low_iou_frames": 95,
+      "intervention_frames": 0,
+      "fast_resume_events": 10
+    },
+    {
+      "stage": "occlusion",
+      "variant": "baseline",
+      "scenario": "brief_occlusion",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.13043478260869565,
+      "all_frame_valid_fraction": 0.011111111111111112,
+      "active_frames": 115,
+      "progress_m": 1.3217532589324437,
+      "pipe_iou": 0.1421862354661833,
+      "elapsed_s": 45.0,
+      "reverse_attempts": 0,
+      "fast_resumes": 0,
+      "nofish_detection_frames": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failure": null,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_multiseed_improvement_20261024_v1/closed_loop/occlusion/baseline/brief_occlusion_tracker_only/result.json",
+      "status_counts": {
+        "lost": 232,
+        "observed": 491,
+        "predicted": 627
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 495,
+        "short_probability_path": 670,
+        "blackout": 30,
+        "no_probability_seed": 147,
+        "insufficient_path_support": 1
+      },
+      "seed_strategies": {
+        "null": 1350
+      },
+      "pipe_health_reasons": {
+        "no_pipe": 59,
+        "near_segments_stable": 378,
+        "no_fresh_near_segments": 770,
+        "too_large": 30,
+        "near_segments_unstable": 113
+      },
+      "active_valid_frames": 15,
+      "active_low_iou_frames": 100,
+      "intervention_frames": 0,
+      "fast_resume_events": 0
+    },
+    {
+      "stage": "occlusion",
+      "variant": "baseline",
+      "scenario": "perception_loss",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.10948905109489052,
+      "all_frame_valid_fraction": 0.011111111111111112,
+      "active_frames": 137,
+      "progress_m": 1.4073650803194686,
+      "pipe_iou": 0.0961432432535717,
+      "elapsed_s": 45.0,
+      "reverse_attempts": 0,
+      "fast_resumes": 0,
+      "nofish_detection_frames": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failure": null,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_multiseed_improvement_20261024_v1/closed_loop/occlusion/baseline/perception_loss_tracker_only/result.json",
+      "status_counts": {
+        "lost": 568,
+        "observed": 400,
+        "predicted": 382
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 403,
+        "short_probability_path": 778,
+        "blackout": 120,
+        "no_probability_seed": 42
+      },
+      "seed_strategies": {
+        "null": 1350
+      },
+      "pipe_health_reasons": {
+        "no_pipe": 8,
+        "near_segments_stable": 323,
+        "no_fresh_near_segments": 822,
+        "too_large": 120,
+        "near_segments_unstable": 77
+      },
+      "active_valid_frames": 15,
+      "active_low_iou_frames": 122,
+      "intervention_frames": 0,
+      "fast_resume_events": 0
+    },
+    {
+      "stage": "occlusion",
+      "variant": "baseline",
+      "scenario": "pipe_jitter",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.14018691588785046,
+      "all_frame_valid_fraction": 0.011111111111111112,
+      "active_frames": 107,
+      "progress_m": 1.6900450856843,
+      "pipe_iou": 0.17726984271340926,
+      "elapsed_s": 45.0,
+      "reverse_attempts": 0,
+      "fast_resumes": 0,
+      "nofish_detection_frames": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failure": null,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_multiseed_improvement_20261024_v1/closed_loop/occlusion/baseline/pipe_jitter_tracker_only/result.json",
+      "status_counts": {
+        "lost": 536,
+        "observed": 385,
+        "predicted": 429
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 388,
+        "short_probability_path": 464,
+        "blackout": 6,
+        "no_probability_seed": 485
+      },
+      "seed_strategies": {
+        "null": 1350
+      },
+      "pipe_health_reasons": {
+        "no_pipe": 7,
+        "near_segments_stable": 381,
+        "no_fresh_near_segments": 952,
+        "too_large": 6,
+        "near_segments_unstable": 4
+      },
+      "active_valid_frames": 15,
+      "active_low_iou_frames": 92,
+      "intervention_frames": 0,
+      "fast_resume_events": 0
+    },
+    {
+      "stage": "occlusion",
+      "variant": "multiseed",
+      "scenario": "brief_occlusion",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.0967741935483871,
+      "all_frame_valid_fraction": 0.011111111111111112,
+      "active_frames": 155,
+      "progress_m": 1.6412192029098884,
+      "pipe_iou": 0.14720113001790158,
+      "elapsed_s": 45.0,
+      "reverse_attempts": 0,
+      "fast_resumes": 0,
+      "nofish_detection_frames": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failure": null,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_multiseed_improvement_20261024_v1/closed_loop/occlusion/multiseed/brief_occlusion_tracker_only/result.json",
+      "status_counts": {
+        "lost": 458,
+        "observed": 502,
+        "predicted": 390
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 509,
+        "short_probability_path": 598,
+        "blackout": 30,
+        "no_probability_seed": 206
+      },
+      "seed_strategies": {
+        "null": 37,
+        "original_success_preserved": 338,
+        "multiseed_fallback": 171,
+        "fallback_failed": 598,
+        "no_fallback_seed": 206
+      },
+      "pipe_health_reasons": {
+        "no_pipe": 39,
+        "near_segments_stable": 375,
+        "no_fresh_near_segments": 779,
+        "too_large": 30,
+        "near_segments_unstable": 127
+      },
+      "active_valid_frames": 15,
+      "active_low_iou_frames": 140,
+      "intervention_frames": 0,
+      "fast_resume_events": 0
+    },
+    {
+      "stage": "occlusion",
+      "variant": "multiseed",
+      "scenario": "perception_loss",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.11180124223602485,
+      "all_frame_valid_fraction": 0.014814814814814815,
+      "active_frames": 161,
+      "progress_m": 1.7653310698656433,
+      "pipe_iou": 0.13129836041517384,
+      "elapsed_s": 45.0,
+      "reverse_attempts": 0,
+      "fast_resumes": 0,
+      "nofish_detection_frames": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failure": null,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_multiseed_improvement_20261024_v1/closed_loop/occlusion/multiseed/perception_loss_tracker_only/result.json",
+      "status_counts": {
+        "lost": 525,
+        "observed": 534,
+        "predicted": 291
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 565,
+        "short_probability_path": 587,
+        "blackout": 120,
+        "no_probability_seed": 71
+      },
+      "seed_strategies": {
+        "null": 127,
+        "original_success_preserved": 405,
+        "multiseed_fallback": 160,
+        "fallback_failed": 587,
+        "no_fallback_seed": 71
+      },
+      "pipe_health_reasons": {
+        "no_pipe": 37,
+        "near_segments_stable": 442,
+        "no_fresh_near_segments": 659,
+        "too_large": 120,
+        "near_segments_unstable": 92
+      },
+      "active_valid_frames": 18,
+      "active_low_iou_frames": 143,
+      "intervention_frames": 0,
+      "fast_resume_events": 0
+    },
+    {
+      "stage": "occlusion",
+      "variant": "multiseed",
+      "scenario": "pipe_jitter",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.1258741258741259,
+      "all_frame_valid_fraction": 0.013333333333333334,
+      "active_frames": 143,
+      "progress_m": 1.6353527162177157,
+      "pipe_iou": 0.21280938817348644,
+      "elapsed_s": 45.0,
+      "reverse_attempts": 0,
+      "fast_resumes": 0,
+      "nofish_detection_frames": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failure": null,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_multiseed_improvement_20261024_v1/closed_loop/occlusion/multiseed/pipe_jitter_tracker_only/result.json",
+      "status_counts": {
+        "lost": 373,
+        "observed": 509,
+        "predicted": 468
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 519,
+        "short_probability_path": 663,
+        "blackout": 6,
+        "no_probability_seed": 155
+      },
+      "seed_strategies": {
+        "null": 13,
+        "original_success_preserved": 443,
+        "multiseed_fallback": 76,
+        "fallback_failed": 663,
+        "no_fallback_seed": 155
+      },
+      "pipe_health_reasons": {
+        "no_pipe": 24,
+        "near_segments_stable": 401,
+        "no_fresh_near_segments": 811,
+        "too_large": 6,
+        "near_segments_unstable": 108
+      },
+      "active_valid_frames": 18,
+      "active_low_iou_frames": 125,
+      "intervention_frames": 0,
+      "fast_resume_events": 0
+    },
+    {
+      "stage": "occlusion",
+      "variant": "supported",
+      "scenario": "brief_occlusion",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.15789473684210525,
+      "all_frame_valid_fraction": 0.023195876288659795,
+      "active_frames": 95,
+      "progress_m": 1.5832991732183779,
+      "pipe_iou": 0.11014983949034415,
+      "elapsed_s": 25.833333333333332,
+      "reverse_attempts": 0,
+      "fast_resumes": 6,
+      "nofish_detection_frames": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failure": "perception_loss_timeout",
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_multiseed_improvement_20261024_v1/closed_loop/occlusion/supported/brief_occlusion_tracker_only/result.json",
+      "status_counts": {
+        "lost": 491,
+        "observed": 152,
+        "predicted": 133
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 155,
+        "short_probability_path": 221,
+        "blackout": 30,
+        "no_probability_seed": 363
+      },
+      "seed_strategies": {
+        "null": 37,
+        "original_success_preserved": 143,
+        "multiseed_fallback": 12,
+        "fallback_failed": 221,
+        "no_fallback_seed": 363
+      },
+      "pipe_health_reasons": {
+        "no_pipe": 109,
+        "near_segments_stable": 137,
+        "no_fresh_near_segments": 485,
+        "current_near_geometry_stable": 8,
+        "near_segments_unstable": 7,
+        "too_large": 30
+      },
+      "active_valid_frames": 15,
+      "active_low_iou_frames": 80,
+      "intervention_frames": 0,
+      "fast_resume_events": 6
+    },
+    {
+      "stage": "occlusion",
+      "variant": "supported",
+      "scenario": "perception_loss",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": true,
+      "valid_fraction": 0.3333333333333333,
+      "all_frame_valid_fraction": 0.15903614457831325,
+      "active_frames": 594,
+      "progress_m": 8.001395127854805,
+      "pipe_iou": 0.18441592868101664,
+      "elapsed_s": 41.5,
+      "reverse_attempts": 0,
+      "fast_resumes": 30,
+      "nofish_detection_frames": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failure": null,
+      "failed_checks": "inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_multiseed_improvement_20261024_v1/closed_loop/occlusion/supported/perception_loss_tracker_only/result.json",
+      "status_counts": {
+        "lost": 176,
+        "observed": 810,
+        "predicted": 259
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 828,
+        "short_probability_path": 238,
+        "blackout": 120,
+        "no_probability_seed": 52
+      },
+      "seed_strategies": {
+        "null": 127,
+        "original_success_preserved": 740,
+        "multiseed_fallback": 88,
+        "fallback_failed": 238,
+        "no_fallback_seed": 52
+      },
+      "pipe_health_reasons": {
+        "no_pipe": 19,
+        "near_segments_stable": 732,
+        "no_fresh_near_segments": 296,
+        "current_near_geometry_stable": 38,
+        "near_segments_unstable": 40,
+        "too_large": 120
+      },
+      "active_valid_frames": 198,
+      "active_low_iou_frames": 396,
+      "intervention_frames": 0,
+      "fast_resume_events": 30
+    },
+    {
+      "stage": "occlusion",
+      "variant": "supported",
+      "scenario": "pipe_jitter",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.14705882352941177,
+      "all_frame_valid_fraction": 0.011645962732919254,
+      "active_frames": 102,
+      "progress_m": 1.6742044880904787,
+      "pipe_iou": 0.1632516011699219,
+      "elapsed_s": 42.9,
+      "reverse_attempts": 0,
+      "fast_resumes": 12,
+      "nofish_detection_frames": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failure": "perception_loss_timeout",
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_multiseed_improvement_20261024_v1/closed_loop/occlusion/supported/pipe_jitter_tracker_only/result.json",
+      "status_counts": {
+        "lost": 792,
+        "observed": 214,
+        "predicted": 282
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "probability_path": 220,
+        "short_probability_path": 598,
+        "blackout": 6,
+        "no_probability_seed": 457
+      },
+      "seed_strategies": {
+        "null": 13,
+        "original_success_preserved": 197,
+        "multiseed_fallback": 23,
+        "fallback_failed": 598,
+        "no_fallback_seed": 457
+      },
+      "pipe_health_reasons": {
+        "no_pipe": 28,
+        "near_segments_stable": 181,
+        "no_fresh_near_segments": 1040,
+        "current_near_geometry_stable": 18,
+        "near_segments_unstable": 15,
+        "too_large": 6
+      },
+      "active_valid_frames": 15,
+      "active_low_iou_frames": 87,
+      "intervention_frames": 0,
+      "fast_resume_events": 12
+    }
+  ],
+  "entry_gates": {
+    "baseline": "0/5 passed; 12 fish/bend episodes not run",
+    "multiseed": "0/5 passed; 12 fish/bend episodes not run",
+    "supported": "0/5 passed; 12 fish/bend episodes not run"
+  }
+}

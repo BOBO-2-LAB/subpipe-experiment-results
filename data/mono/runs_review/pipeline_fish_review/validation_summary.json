@@ -1,0 +1,331 @@
+{
+  "label_status": "No human pixel masks or encounter ground truth: accuracy, recall, IoU against truth and collision success unavailable",
+  "original": {
+    "frames": 481,
+    "fish_detection_frames": 481,
+    "pipe_health_pass_frames": 481,
+    "pipe_health_reasons": {
+      "warmup": 2,
+      "ok": 479
+    },
+    "pipe_predicted_area_fraction_quantiles": [
+      0.15112,
+      0.22007,
+      0.25519
+    ],
+    "fish_max_component_area_eq_median": 5578.9,
+    "actual_actions": {
+      "nominal": 5,
+      "slow": 386,
+      "hover": 90
+    },
+    "action_timeline": [
+      {
+        "action": "nominal",
+        "start_frame": 0,
+        "end_frame": 4,
+        "duration_s": 0.1664203049203049
+      },
+      {
+        "action": "slow",
+        "start_frame": 5,
+        "end_frame": 9,
+        "duration_s": 0.1664203049203049
+      },
+      {
+        "action": "hover",
+        "start_frame": 10,
+        "end_frame": 99,
+        "duration_s": 2.9955654885654885
+      },
+      {
+        "action": "slow",
+        "start_frame": 100,
+        "end_frame": 480,
+        "duration_s": 12.681227234927235
+      }
+    ],
+    "max_abs_lateral_setpoint": 0.5995,
+    "speed_scale_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "clean": {
+    "frames": 481,
+    "fish_detection_frames": 481,
+    "pipe_health_pass_frames": 481,
+    "pipe_health_reasons": {
+      "warmup": 2,
+      "ok": 479
+    },
+    "pipe_predicted_area_fraction_quantiles": [
+      0.15009,
+      0.22678,
+      0.25543
+    ],
+    "fish_max_component_area_eq_median": 6349.4,
+    "actual_actions": {
+      "nominal": 5,
+      "slow": 386,
+      "hover": 90
+    },
+    "action_timeline": [
+      {
+        "action": "nominal",
+        "start_frame": 0,
+        "end_frame": 4,
+        "duration_s": 0.16642258021568365
+      },
+      {
+        "action": "slow",
+        "start_frame": 5,
+        "end_frame": 13,
+        "duration_s": 0.2995606443882306
+      },
+      {
+        "action": "hover",
+        "start_frame": 14,
+        "end_frame": 103,
+        "duration_s": 2.995606443882306
+      },
+      {
+        "action": "slow",
+        "start_frame": 104,
+        "end_frame": 480,
+        "duration_s": 12.548262548262548
+      }
+    ],
+    "max_abs_lateral_setpoint": 0.5999,
+    "speed_scale_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "paired_action_changed_frames": 8,
+  "paired_pipe_health_changed_frames": 0,
+  "paired_speed_scale_mean_absolute_difference": 0.06895841995841995,
+  "sample_comparison": [
+    {
+      "frame": 0,
+      "pipe": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.4499570907530573,
+          "changed_pixel_fraction": 0.14392982456140352
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.8720896088483232,
+          "changed_pixel_fraction": 0.020351728957680785
+        }
+      },
+      "fish": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.1415062705385286,
+          "changed_pixel_fraction": 0.17966315789473683
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.5869110523998239,
+          "changed_pixel_fraction": 0.051134826189285
+        }
+      }
+    },
+    {
+      "frame": 60,
+      "pipe": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.7706976576835894,
+          "changed_pixel_fraction": 0.08944561403508772
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.9252637762467042,
+          "changed_pixel_fraction": 0.015974583942486825
+        }
+      },
+      "fish": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.301528751178327,
+          "changed_pixel_fraction": 0.2391859649122807
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.6296116744178403,
+          "changed_pixel_fraction": 0.04387559836555439
+        }
+      }
+    },
+    {
+      "frame": 120,
+      "pipe": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.7714365342334252,
+          "changed_pixel_fraction": 0.10359298245614035
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.950632233722531,
+          "changed_pixel_fraction": 0.011309327981218281
+        }
+      },
+      "fish": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.40081087869111265,
+          "changed_pixel_fraction": 0.2343859649122807
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.7433376503698538,
+          "changed_pixel_fraction": 0.040122369284258434
+        }
+      }
+    },
+    {
+      "frame": 180,
+      "pipe": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.5492854666615308,
+          "changed_pixel_fraction": 0.16422456140350877
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.9527213554299221,
+          "changed_pixel_fraction": 0.010435261665086598
+        }
+      },
+      "fish": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.2570053168558701,
+          "changed_pixel_fraction": 0.2902736842105263
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.769711994558505,
+          "changed_pixel_fraction": 0.025045212004882314
+        }
+      }
+    },
+    {
+      "frame": 240,
+      "pipe": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.5672019549659626,
+          "changed_pixel_fraction": 0.1392
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.9423166821703962,
+          "changed_pixel_fraction": 0.011890416612321415
+        }
+      },
+      "fish": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.2316756816425654,
+          "changed_pixel_fraction": 0.39075087719298246
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.6665464984311369,
+          "changed_pixel_fraction": 0.048616775454504754
+        }
+      }
+    },
+    {
+      "frame": 300,
+      "pipe": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.7907947019867549,
+          "changed_pixel_fraction": 0.08867368421052632
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.9429581844677384,
+          "changed_pixel_fraction": 0.012230114991308005
+        }
+      },
+      "fish": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.4516616660177275,
+          "changed_pixel_fraction": 0.3360140350877193
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.7758643935413984,
+          "changed_pixel_fraction": 0.04692509699410735
+        }
+      }
+    },
+    {
+      "frame": 360,
+      "pipe": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.9254952773894364,
+          "changed_pixel_fraction": 0.030666666666666665
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.9093446234151593,
+          "changed_pixel_fraction": 0.01950783642306367
+        }
+      },
+      "fish": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.48108786396578657,
+          "changed_pixel_fraction": 0.28439298245614036
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.7477446423474031,
+          "changed_pixel_fraction": 0.04558771712955843
+        }
+      }
+    },
+    {
+      "frame": 420,
+      "pipe": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.7888349514563107,
+          "changed_pixel_fraction": 0.09890526315789473
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.86704298915227,
+          "changed_pixel_fraction": 0.03221099844069684
+        }
+      },
+      "fish": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.3884756300655046,
+          "changed_pixel_fraction": 0.30922105263157895
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.7451174458380844,
+          "changed_pixel_fraction": 0.05439359459285835
+        }
+      }
+    },
+    {
+      "frame": 480,
+      "pipe": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.8413531860630836,
+          "changed_pixel_fraction": 0.05936842105263158
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.9121829422954978,
+          "changed_pixel_fraction": 0.02156744034838064
+        }
+      },
+      "fish": {
+        "inside_repaired_roi": {
+          "prediction_iou": 0.31101484360068804,
+          "changed_pixel_fraction": 0.30357894736842106
+        },
+        "outside_repaired_roi": {
+          "prediction_iou": 0.7852107928529439,
+          "changed_pixel_fraction": 0.03876454911610287
+        }
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "path": "mono/runs_ablation/M11/best.pt",
+      "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+    },
+    {
+      "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+    }
+  ],
+  "clean_pipe_temporal_prediction_iou_median": 0.9371134286491208,
+  "overlay_video": "runs_review\\pipeline_fish_review\\inspection_overlay.mp4",
+  "source_frames": 481,
+  "overlay_frames_verified": 481
+}

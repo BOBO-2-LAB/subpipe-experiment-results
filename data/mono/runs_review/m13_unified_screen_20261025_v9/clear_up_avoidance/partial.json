@@ -1,0 +1,182 @@
+{
+  "last": {
+    "scenario": "clear_up",
+    "mode": "avoidance",
+    "t": 8.0,
+    "position_xyz": [
+      1.9999413831649189,
+      0.0,
+      -3.674390444192259
+    ],
+    "phase": "inspection",
+    "source_t": 7.7,
+    "source_pose": {
+      "x": 2.0024307201189537,
+      "y": 0.0,
+      "depth": -3.539480033763976,
+      "yaw": 0.0,
+      "pitch": -0.31184568864091117
+    },
+    "camera_yaw_deg": 0.0,
+    "camera_pitch_deg": -14.478527516243023,
+    "pipe_iou": 0.9713524317121919,
+    "valid": true,
+    "current_observation_trusted": true,
+    "synthetic_corridor_m": 5.8616835081126695e-05,
+    "synthetic_pipe_clearance_3d_m": 1.280058616835081,
+    "synthetic_fish_clearance_3d_m": null,
+    "synthetic_fish_clearance_xy_m": null,
+    "contact_3d": false,
+    "contact_xy": false,
+    "synthetic_end_distance_m": 0.32560956108389677,
+    "bend_count": 1,
+    "inference_wall_s": 0.07815159999881871,
+    "fish_observations": 0,
+    "avoidance_offset_m": 0.0,
+    "synthetic_terminal_pipe_observed": true,
+    "synthetic_pipe_arc_observation_fraction": 0.9375,
+    "decision": {
+      "action": "nominal",
+      "speed_scale": 1.0,
+      "risk": 0.0,
+      "reason": "no_track",
+      "hover_capped": false,
+      "risk_raw": 0.0,
+      "lateral_setpoint": 0.0,
+      "lateral_reason": "recenter",
+      "yield_to_tracker": false
+    },
+    "control": {
+      "phase": "inspection",
+      "abort": false,
+      "current_observation_trusted": true,
+      "direction_xyz": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "normal_xyz": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "side_xyz": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "estimated_route_error_m": 5.861683508823212e-05,
+      "lateral_offset_m": 0.0,
+      "requested_velocity_xyz": [
+        5.861683508823212e-05,
+        0.0,
+        -0.45
+      ],
+      "route_xyz": [
+        [
+          -5.0,
+          0.0,
+          -2.0
+        ],
+        [
+          2.000000000000007,
+          0.0,
+          -2.0
+        ],
+        [
+          2.000000000000007,
+          0.0,
+          -12.0
+        ]
+      ],
+      "geometry": {
+        "vision": {
+          "method": "unified_XYZ_finite_axis_RGB",
+          "truth_access": false,
+          "bend_count": 1,
+          "monocular_parallax": {
+            "tracked_features": 193,
+            "current_triangulated_points": 92,
+            "source": "LK+known measured pose triangulation",
+            "rendered_depth_used": false
+          },
+          "reason": "current_surface_supported",
+          "current_rgb_verified": true,
+          "current_rgb_pixels": 16709,
+          "current_neural_pixels": 6680,
+          "axis_xyz": [
+            [
+              -5.0,
+              0.0,
+              0.0
+            ],
+            [
+              4.000000000000007,
+              0.0,
+              0.0
+            ],
+            [
+              4.000000000000007,
+              0.0,
+              -12.0
+            ]
+          ]
+        },
+        "temporal": {
+          "phase": "tracking",
+          "current_observation_trusted": true,
+          "prediction_age_s": 0.09999999999999964,
+          "prediction_counted_valid": false
+        }
+      }
+    },
+    "actuator": {
+      "held_body_command_mps": [
+        5.861683508823212e-05,
+        0.0,
+        -0.45
+      ],
+      "speed_saturated": [
+        false,
+        false,
+        false
+      ],
+      "acceleration_saturated": [
+        false,
+        false,
+        false
+      ],
+      "hull_yaw_rad": 0.0,
+      "yaw_rate_rad_s": 0.0
+    },
+    "velocity_xyz": [
+      -0.005821051294954417,
+      0.0,
+      -0.44979489566914577
+    ],
+    "fish_refinement": {
+      "policy": "current_motion_seeded_RGB_segmentation",
+      "rois": [],
+      "fusion_score_calibrated": false,
+      "history_fill": false,
+      "training": false
+    }
+  },
+  "events": [
+    {
+      "t": 1.2000000000000002,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "gain": 0.2713219168939148
+    }
+  ]
+}

@@ -1,0 +1,1008 @@
+{
+  "status": "complete",
+  "scope": "Eight selected synthetic replay frames, labeled empty TRAIN stress/VAL checks; not independent generalization or vehicle acceptance. GT scores only. No training.",
+  "positives": [
+    {
+      "frame": 39,
+      "original_reason": "short_probability_path",
+      "native": {
+        "iou": 0.4161933959893451,
+        "precision": 0.9455355103905001,
+        "recall": 0.4264160659114315,
+        "false_pixels": 477
+      },
+      "context": {
+        "iou": 0.2502172912725599,
+        "precision": 0.9723822769719849,
+        "recall": 0.25200823892893925,
+        "false_pixels": 139
+      },
+      "context_trace": {
+        "applied": true,
+        "box": [
+          166,
+          0,
+          338,
+          288
+        ],
+        "crop_weight": 0.5,
+        "biology": "not called or altered by context review"
+      },
+      "paths": {
+        "native": {
+          "found": true,
+          "truth_support": 1.0,
+          "trace": {
+            "reason": "probability_path",
+            "paired_edges_required": false,
+            "mean_probability": 0.8736467957496643,
+            "paired_edge_fraction": 0.75,
+            "graph_states": 350,
+            "path_points": 8,
+            "width_cells": 8.0,
+            "maximum_unpaired_run_cells": 2,
+            "seed_strategy": "multiseed_fallback",
+            "original_reason": "short_probability_path",
+            "selected_seed": [
+              15,
+              50
+            ],
+            "seed_trials": [
+              {
+                "seed": [
+                  15,
+                  50
+                ],
+                "reason": "probability_path",
+                "accepted": true,
+                "score": 0.8802235927336853
+              },
+              {
+                "seed": [
+                  15,
+                  46
+                ],
+                "reason": "probability_path",
+                "accepted": true,
+                "score": 0.7443178876061421
+              }
+            ]
+          }
+        },
+        "context": {
+          "found": true,
+          "truth_support": 1.0,
+          "trace": {
+            "reason": "probability_path",
+            "paired_edges_required": false,
+            "mean_probability": 0.5042591094970703,
+            "paired_edge_fraction": 0.75,
+            "graph_states": 331,
+            "path_points": 8,
+            "width_cells": 8.0,
+            "maximum_unpaired_run_cells": 2,
+            "seed_strategy": "original_success_preserved",
+            "seed_trials": []
+          }
+        }
+      }
+    },
+    {
+      "frame": 426,
+      "original_reason": "short_probability_path",
+      "native": {
+        "iou": 0.18433202850547023,
+        "precision": 0.9024570024570024,
+        "recall": 0.18807926673152747,
+        "false_pixels": 397
+      },
+      "context": {
+        "iou": 0.020452810989570084,
+        "precision": 0.7613636363636364,
+        "recall": 0.020584771365661326,
+        "false_pixels": 126
+      },
+      "context_trace": {
+        "applied": true,
+        "box": [
+          168,
+          0,
+          316,
+          288
+        ],
+        "crop_weight": 0.5,
+        "biology": "not called or altered by context review"
+      },
+      "paths": {
+        "native": {
+          "found": true,
+          "truth_support": 1.0,
+          "trace": {
+            "reason": "probability_path",
+            "paired_edges_required": false,
+            "mean_probability": 0.6457118988037109,
+            "paired_edge_fraction": 0.0,
+            "graph_states": 125,
+            "path_points": 6,
+            "width_cells": 8.0,
+            "maximum_unpaired_run_cells": 6,
+            "seed_strategy": "multiseed_fallback",
+            "original_reason": "short_probability_path",
+            "selected_seed": [
+              15,
+              48
+            ],
+            "seed_trials": [
+              {
+                "seed": [
+                  15,
+                  50
+                ],
+                "reason": "short_probability_path",
+                "accepted": false,
+                "score": null
+              },
+              {
+                "seed": [
+                  15,
+                  48
+                ],
+                "reason": "probability_path",
+                "accepted": true,
+                "score": 0.6220305724653046
+              }
+            ]
+          }
+        },
+        "context": {
+          "found": false,
+          "truth_support": null,
+          "trace": {
+            "reason": "short_probability_path",
+            "graph_states": 91,
+            "seed_strategy": "fallback_failed",
+            "seed_trials": [
+              {
+                "seed": [
+                  15,
+                  50
+                ],
+                "reason": "short_probability_path",
+                "accepted": false,
+                "score": null
+              },
+              {
+                "seed": [
+                  15,
+                  49
+                ],
+                "reason": "short_probability_path",
+                "accepted": false,
+                "score": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "frame": 706,
+      "original_reason": "short_probability_path",
+      "native": {
+        "iou": 0.1725808894048761,
+        "precision": 0.942652329749104,
+        "recall": 0.17441207978370657,
+        "false_pixels": 208
+      },
+      "context": {
+        "iou": 0.14478930103456977,
+        "precision": 0.9311911716975008,
+        "recall": 0.14635514972198133,
+        "false_pixels": 212
+      },
+      "context_trace": {
+        "applied": true,
+        "box": [
+          166,
+          0,
+          309,
+          288
+        ],
+        "crop_weight": 0.5,
+        "biology": "not called or altered by context review"
+      },
+      "paths": {
+        "native": {
+          "found": false,
+          "truth_support": null,
+          "trace": {
+            "reason": "short_probability_path",
+            "graph_states": 66,
+            "seed_strategy": "fallback_failed",
+            "seed_trials": [
+              {
+                "seed": [
+                  16,
+                  50
+                ],
+                "reason": "short_probability_path",
+                "accepted": false,
+                "score": null
+              }
+            ]
+          }
+        },
+        "context": {
+          "found": false,
+          "truth_support": null,
+          "trace": {
+            "reason": "short_probability_path",
+            "graph_states": 58,
+            "seed_strategy": "fallback_failed",
+            "seed_trials": [
+              {
+                "seed": [
+                  16,
+                  50
+                ],
+                "reason": "short_probability_path",
+                "accepted": false,
+                "score": null
+              },
+              {
+                "seed": [
+                  19,
+                  49
+                ],
+                "reason": "short_probability_path",
+                "accepted": false,
+                "score": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "frame": 955,
+      "original_reason": "short_probability_path",
+      "native": {
+        "iou": 0.3728281973415642,
+        "precision": 0.9546207775653283,
+        "recall": 0.3795550149510922,
+        "false_pixels": 356
+      },
+      "context": {
+        "iou": 0.20649884665530038,
+        "precision": 0.9512589512589512,
+        "recall": 0.2087071106380822,
+        "false_pixels": 211
+      },
+      "context_trace": {
+        "applied": true,
+        "box": [
+          146,
+          0,
+          321,
+          288
+        ],
+        "crop_weight": 0.5,
+        "biology": "not called or altered by context review"
+      },
+      "paths": {
+        "native": {
+          "found": true,
+          "truth_support": 1.0,
+          "trace": {
+            "reason": "probability_path",
+            "paired_edges_required": false,
+            "mean_probability": 0.7144258618354797,
+            "paired_edge_fraction": 0.42857142857142855,
+            "graph_states": 206,
+            "path_points": 7,
+            "width_cells": 8.0,
+            "maximum_unpaired_run_cells": 3,
+            "seed_strategy": "multiseed_fallback",
+            "original_reason": "short_probability_path",
+            "selected_seed": [
+              15,
+              48
+            ],
+            "seed_trials": [
+              {
+                "seed": [
+                  15,
+                  48
+                ],
+                "reason": "probability_path",
+                "accepted": true,
+                "score": 0.6695160980566707
+              }
+            ]
+          }
+        },
+        "context": {
+          "found": true,
+          "truth_support": 1.0,
+          "trace": {
+            "reason": "probability_path",
+            "paired_edges_required": false,
+            "mean_probability": 0.4192225933074951,
+            "paired_edge_fraction": 0.5,
+            "graph_states": 172,
+            "path_points": 6,
+            "width_cells": 8.0,
+            "maximum_unpaired_run_cells": 2,
+            "seed_strategy": "multiseed_fallback",
+            "original_reason": "short_probability_path",
+            "selected_seed": [
+              15,
+              48
+            ],
+            "seed_trials": [
+              {
+                "seed": [
+                  15,
+                  49
+                ],
+                "reason": "short_probability_path",
+                "accepted": false,
+                "score": null
+              },
+              {
+                "seed": [
+                  15,
+                  48
+                ],
+                "reason": "probability_path",
+                "accepted": true,
+                "score": 0.3800610517364023
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "frame": 1163,
+      "original_reason": "short_probability_path",
+      "native": {
+        "iou": 0.22353353002950443,
+        "precision": 0.951063829787234,
+        "recall": 0.2261344665351343,
+        "false_pixels": 230
+      },
+      "context": {
+        "iou": 0.09758303602834029,
+        "precision": 0.9354527938342967,
+        "recall": 0.09824454899580108,
+        "false_pixels": 134
+      },
+      "context_trace": {
+        "applied": true,
+        "box": [
+          139,
+          0,
+          326,
+          288
+        ],
+        "crop_weight": 0.5,
+        "biology": "not called or altered by context review"
+      },
+      "paths": {
+        "native": {
+          "found": true,
+          "truth_support": 1.0,
+          "trace": {
+            "reason": "probability_path",
+            "paired_edges_required": false,
+            "mean_probability": 0.7154787182807922,
+            "paired_edge_fraction": 0.5,
+            "graph_states": 161,
+            "path_points": 8,
+            "width_cells": 8.0,
+            "maximum_unpaired_run_cells": 2,
+            "seed_strategy": "multiseed_fallback",
+            "original_reason": "short_probability_path",
+            "selected_seed": [
+              15,
+              51
+            ],
+            "seed_trials": [
+              {
+                "seed": [
+                  15,
+                  51
+                ],
+                "reason": "probability_path",
+                "accepted": true,
+                "score": 0.7121237125292763
+              }
+            ]
+          }
+        },
+        "context": {
+          "found": false,
+          "truth_support": null,
+          "trace": {
+            "reason": "short_probability_path",
+            "graph_states": 114,
+            "seed_strategy": "fallback_failed",
+            "seed_trials": [
+              {
+                "seed": [
+                  16,
+                  51
+                ],
+                "reason": "short_probability_path",
+                "accepted": false,
+                "score": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "frame": 1349,
+      "original_reason": "short_probability_path",
+      "native": {
+        "iou": 0.31700430927732925,
+        "precision": 0.935535740388832,
+        "recall": 0.32408345148875833,
+        "false_pixels": 441
+      },
+      "context": {
+        "iou": 0.18714887640449437,
+        "precision": 0.952028578719061,
+        "recall": 0.1889305246100871,
+        "false_pixels": 188
+      },
+      "context_trace": {
+        "applied": true,
+        "box": [
+          143,
+          0,
+          318,
+          288
+        ],
+        "crop_weight": 0.5,
+        "biology": "not called or altered by context review"
+      },
+      "paths": {
+        "native": {
+          "found": true,
+          "truth_support": 1.0,
+          "trace": {
+            "reason": "probability_path",
+            "paired_edges_required": false,
+            "mean_probability": 0.7645512819290161,
+            "paired_edge_fraction": 0.42857142857142855,
+            "graph_states": 174,
+            "path_points": 7,
+            "width_cells": 8.0,
+            "maximum_unpaired_run_cells": 3,
+            "seed_strategy": "multiseed_fallback",
+            "original_reason": "short_probability_path",
+            "selected_seed": [
+              15,
+              49
+            ],
+            "seed_trials": [
+              {
+                "seed": [
+                  15,
+                  49
+                ],
+                "reason": "probability_path",
+                "accepted": true,
+                "score": 0.7705543077098435
+              },
+              {
+                "seed": [
+                  15,
+                  48
+                ],
+                "reason": "probability_path",
+                "accepted": true,
+                "score": 0.6463155955329571
+              }
+            ]
+          }
+        },
+        "context": {
+          "found": true,
+          "truth_support": 1.0,
+          "trace": {
+            "reason": "probability_path",
+            "paired_edges_required": false,
+            "mean_probability": 0.40793266892433167,
+            "paired_edge_fraction": 0.0,
+            "graph_states": 139,
+            "path_points": 6,
+            "width_cells": 8.0,
+            "maximum_unpaired_run_cells": 6,
+            "seed_strategy": "multiseed_fallback",
+            "original_reason": "short_probability_path",
+            "selected_seed": [
+              15,
+              48
+            ],
+            "seed_trials": [
+              {
+                "seed": [
+                  15,
+                  49
+                ],
+                "reason": "short_probability_path",
+                "accepted": false,
+                "score": null
+              },
+              {
+                "seed": [
+                  15,
+                  48
+                ],
+                "reason": "probability_path",
+                "accepted": true,
+                "score": 0.39100110626339385
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "frame": 7,
+      "original_reason": "probability_path",
+      "native": {
+        "iou": 0.4372503166715385,
+        "precision": 0.8892301595164965,
+        "recall": 0.4624381698268755,
+        "false_pixels": 1118
+      },
+      "context": {
+        "iou": 0.3013489437515907,
+        "precision": 0.9615072275458827,
+        "recall": 0.30502885408079145,
+        "false_pixels": 237
+      },
+      "context_trace": {
+        "applied": true,
+        "box": [
+          134,
+          0,
+          357,
+          288
+        ],
+        "crop_weight": 0.5,
+        "biology": "not called or altered by context review"
+      },
+      "paths": {
+        "native": {
+          "found": true,
+          "truth_support": 1.0,
+          "trace": {
+            "reason": "probability_path",
+            "paired_edges_required": false,
+            "mean_probability": 0.773055911064148,
+            "paired_edge_fraction": 0.5294117647058824,
+            "graph_states": 781,
+            "path_points": 17,
+            "width_cells": 8.0,
+            "maximum_unpaired_run_cells": 7,
+            "seed_strategy": "original_success_preserved",
+            "seed_trials": []
+          }
+        },
+        "context": {
+          "found": true,
+          "truth_support": 1.0,
+          "trace": {
+            "reason": "probability_path",
+            "paired_edges_required": false,
+            "mean_probability": 0.6619347333908081,
+            "paired_edge_fraction": 0.47368421052631576,
+            "graph_states": 913,
+            "path_points": 19,
+            "width_cells": 8.0,
+            "maximum_unpaired_run_cells": 7,
+            "seed_strategy": "original_success_preserved",
+            "seed_trials": []
+          }
+        }
+      }
+    },
+    {
+      "frame": 1287,
+      "original_reason": "probability_path",
+      "native": {
+        "iou": 0.3878835952605225,
+        "precision": 0.9502064610153024,
+        "recall": 0.3959313799908912,
+        "false_pixels": 410
+      },
+      "context": {
+        "iou": 0.09762083646381167,
+        "precision": 0.9052484904784023,
+        "recall": 0.09862861191235262,
+        "false_pixels": 204
+      },
+      "context_trace": {
+        "applied": true,
+        "box": [
+          144,
+          0,
+          323,
+          288
+        ],
+        "crop_weight": 0.5,
+        "biology": "not called or altered by context review"
+      },
+      "paths": {
+        "native": {
+          "found": true,
+          "truth_support": 1.0,
+          "trace": {
+            "reason": "probability_path",
+            "paired_edges_required": false,
+            "mean_probability": 0.7612634301185608,
+            "paired_edge_fraction": 0.42857142857142855,
+            "graph_states": 232,
+            "path_points": 7,
+            "width_cells": 8.0,
+            "maximum_unpaired_run_cells": 4,
+            "seed_strategy": "original_success_preserved",
+            "seed_trials": []
+          }
+        },
+        "context": {
+          "found": true,
+          "truth_support": 1.0,
+          "trace": {
+            "reason": "probability_path",
+            "paired_edges_required": false,
+            "mean_probability": 0.40601322054862976,
+            "paired_edge_fraction": 0.5714285714285714,
+            "graph_states": 204,
+            "path_points": 7,
+            "width_cells": 8.0,
+            "maximum_unpaired_run_cells": 3,
+            "seed_strategy": "multiseed_fallback",
+            "original_reason": "short_probability_path",
+            "selected_seed": [
+              15,
+              49
+            ],
+            "seed_trials": [
+              {
+                "seed": [
+                  15,
+                  49
+                ],
+                "reason": "probability_path",
+                "accepted": true,
+                "score": 0.4116404643083407
+              },
+              {
+                "seed": [
+                  15,
+                  48
+                ],
+                "reason": "probability_path",
+                "accepted": true,
+                "score": 0.3841587425321033
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "negatives": [
+    {
+      "split": "train",
+      "index": 4,
+      "native_false_pixels": 0,
+      "context_false_pixels": 14,
+      "context_trace": {
+        "applied": true,
+        "box": [
+          0,
+          0,
+          24,
+          288
+        ],
+        "crop_weight": 0.5,
+        "biology": "not called or altered by context review"
+      }
+    },
+    {
+      "split": "train",
+      "index": 5,
+      "native_false_pixels": 0,
+      "context_false_pixels": 0,
+      "context_trace": {
+        "applied": true,
+        "box": [
+          89,
+          0,
+          128,
+          288
+        ],
+        "crop_weight": 0.5,
+        "biology": "not called or altered by context review"
+      }
+    },
+    {
+      "split": "train",
+      "index": 12,
+      "native_false_pixels": 0,
+      "context_false_pixels": 0,
+      "context_trace": {
+        "applied": false,
+        "reason": "no_bounded_context_proposal"
+      }
+    },
+    {
+      "split": "train",
+      "index": 13,
+      "native_false_pixels": 0,
+      "context_false_pixels": 0,
+      "context_trace": {
+        "applied": false,
+        "reason": "no_bounded_context_proposal"
+      }
+    },
+    {
+      "split": "train",
+      "index": 16,
+      "native_false_pixels": 424,
+      "context_false_pixels": 535,
+      "context_trace": {
+        "applied": true,
+        "box": [
+          0,
+          0,
+          29,
+          288
+        ],
+        "crop_weight": 0.5,
+        "biology": "not called or altered by context review"
+      }
+    },
+    {
+      "split": "train",
+      "index": 17,
+      "native_false_pixels": 0,
+      "context_false_pixels": 0,
+      "context_trace": {
+        "applied": false,
+        "reason": "no_bounded_context_proposal"
+      }
+    },
+    {
+      "split": "train",
+      "index": 18,
+      "native_false_pixels": 0,
+      "context_false_pixels": 0,
+      "context_trace": {
+        "applied": false,
+        "reason": "no_bounded_context_proposal"
+      }
+    },
+    {
+      "split": "train",
+      "index": 19,
+      "native_false_pixels": 0,
+      "context_false_pixels": 0,
+      "context_trace": {
+        "applied": true,
+        "box": [
+          59,
+          0,
+          78,
+          288
+        ],
+        "crop_weight": 0.5,
+        "biology": "not called or altered by context review"
+      }
+    },
+    {
+      "split": "train",
+      "index": 24,
+      "native_false_pixels": 0,
+      "context_false_pixels": 0,
+      "context_trace": {
+        "applied": false,
+        "reason": "no_bounded_context_proposal"
+      }
+    },
+    {
+      "split": "train",
+      "index": 25,
+      "native_false_pixels": 0,
+      "context_false_pixels": 0,
+      "context_trace": {
+        "applied": false,
+        "reason": "no_bounded_context_proposal"
+      }
+    },
+    {
+      "split": "train",
+      "index": 26,
+      "native_false_pixels": 0,
+      "context_false_pixels": 0,
+      "context_trace": {
+        "applied": true,
+        "box": [
+          38,
+          0,
+          68,
+          288
+        ],
+        "crop_weight": 0.5,
+        "biology": "not called or altered by context review"
+      }
+    },
+    {
+      "split": "train",
+      "index": 33,
+      "native_false_pixels": 502,
+      "context_false_pixels": 502,
+      "context_trace": {
+        "applied": false,
+        "reason": "no_bounded_context_proposal"
+      }
+    },
+    {
+      "split": "train",
+      "index": 39,
+      "native_false_pixels": 0,
+      "context_false_pixels": 0,
+      "context_trace": {
+        "applied": false,
+        "reason": "no_bounded_context_proposal"
+      }
+    },
+    {
+      "split": "train",
+      "index": 46,
+      "native_false_pixels": 0,
+      "context_false_pixels": 1,
+      "context_trace": {
+        "applied": true,
+        "box": [
+          126,
+          0,
+          157,
+          288
+        ],
+        "crop_weight": 0.5,
+        "biology": "not called or altered by context review"
+      }
+    },
+    {
+      "split": "train",
+      "index": 55,
+      "native_false_pixels": 12891,
+      "context_false_pixels": 10478,
+      "context_trace": {
+        "applied": true,
+        "box": [
+          0,
+          0,
+          190,
+          288
+        ],
+        "crop_weight": 0.5,
+        "biology": "not called or altered by context review"
+      }
+    },
+    {
+      "split": "train",
+      "index": 56,
+      "native_false_pixels": 10302,
+      "context_false_pixels": 3677,
+      "context_trace": {
+        "applied": true,
+        "box": [
+          0,
+          0,
+          164,
+          288
+        ],
+        "crop_weight": 0.5,
+        "biology": "not called or altered by context review"
+      }
+    },
+    {
+      "split": "val",
+      "index": 87,
+      "native_false_pixels": 31317,
+      "context_false_pixels": 31317,
+      "context_trace": {
+        "applied": false,
+        "reason": "no_bounded_context_proposal"
+      }
+    },
+    {
+      "split": "val",
+      "index": 88,
+      "native_false_pixels": 20955,
+      "context_false_pixels": 20955,
+      "context_trace": {
+        "applied": false,
+        "reason": "no_bounded_context_proposal"
+      }
+    }
+  ],
+  "model_selection": {
+    "profile_path": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v2/perception_M13.json",
+    "profile_sha256": "feefc32491d49d44ec826b669cfb0111d70370ad829db84047674fed7e4278ab",
+    "profile": {
+      "schema_version": 1,
+      "name": "M13_original_suim_independent",
+      "composition": "independent_pipe_biology",
+      "pipe_architecture": "M13",
+      "pipe_checkpoint": "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M13/best.pt",
+      "fish_checkpoint": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "pipe_sha256": "938b238f52950150b09aa629bdd1ca1bdc2e392000480f95c0d2a16026c5f400",
+      "fish_sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2",
+      "fish_wavelet": "none",
+      "fish_wavelet_stage": "s8",
+      "includes_deepcamo": false
+    },
+    "checkpoints": [
+      {
+        "path": "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M13/best.pt",
+        "sha256": "938b238f52950150b09aa629bdd1ca1bdc2e392000480f95c0d2a16026c5f400"
+      },
+      {
+        "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+        "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+      }
+    ],
+    "model_config": {
+      "composition": "independent_pipe_biology",
+      "pipe_architecture": "M13",
+      "pipe_config": {
+        "num_classes": 2,
+        "in_ch": 3,
+        "pretrained": false,
+        "out_ch": [
+          64,
+          128,
+          256
+        ],
+        "wavelet": "attention",
+        "wavelet_plain_extra_blocks": 0,
+        "fusion": "concat",
+        "global_mode": "none",
+        "global_blocks": 1,
+        "global_stage": "s16",
+        "global_heads": 8,
+        "global_win": 7,
+        "decoder_mid": 128,
+        "decoder_skip": true,
+        "decoder_dw": true
+      },
+      "separate_encoder": true,
+      "num_fish_classes": 8,
+      "fish_mid": 64,
+      "fish_wavelet": "none",
+      "fish_wavelet_stage": "s8"
+    },
+    "biological_bundle_pipe_used": false,
+    "loader": "tools.m13_closed_loop",
+    "pipe_exactly_matches_reference": true
+  },
+  "native_mean_iou": 0.31395078281001876,
+  "context_mean_iou": 0.16320749282502967,
+  "native_multiseed_paths": 7,
+  "context_multiseed_paths": 5,
+  "empty_retention_pass": false,
+  "biology_bitwise_unchanged": true,
+  "context_entry_gate": false,
+  "weights_unchanged": true
+}

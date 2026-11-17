@@ -1,0 +1,219 @@
+{
+  "tag": "attention",
+  "ckpt": "mono/runs_ablation/M11/best.pt",
+  "n_train": 32,
+  "n_val": 8,
+  "epochs": 1,
+  "batch": 8,
+  "lr": 0.0003,
+  "size": [
+    384,
+    384
+  ],
+  "cache_dir": "mono/suim_clean/cache_384",
+  "separate_encoder": true,
+  "fish_wavelet": "attention",
+  "fish_wavelet_stage": "s8",
+  "seed": 42,
+  "args": {
+    "ckpt": "mono/runs_ablation/M11/best.pt",
+    "root": "[本地引用:f459689f5b5d9ff0]",
+    "index_dir": "mono/suim_clean/masks_index",
+    "meta_dir": "mono/suim_clean",
+    "cache_dir": "mono/suim_clean/cache_384",
+    "size": [
+      384,
+      384
+    ],
+    "epochs": 1,
+    "batch": 8,
+    "lr": 0.0003,
+    "lr_min": 1e-05,
+    "weight_decay": 0.0001,
+    "dice_weight": 1.0,
+    "fish_mid": 64,
+    "separate_encoder": true,
+    "fish_wavelet": "attention",
+    "fish_wavelet_stage": "s8",
+    "val_every": 10,
+    "eval_every": 5,
+    "select": "bio",
+    "photo_strength": 1.0,
+    "limit": 32,
+    "out": "runs_review/fish_wavelet_20261023_cli_smoke",
+    "tag": "attention",
+    "seed": 42
+  },
+  "model_config": {
+    "num_fish_classes": 8,
+    "fish_mid": 64,
+    "separate_encoder": true,
+    "fish_wavelet": "attention",
+    "fish_wavelet_stage": "s8"
+  },
+  "train_seconds": 7.725126266479492,
+  "common_initial_state_sha256": "07b59711d8f3e722053a7859c8c64a4348d417cd7db55959ce493b5a4f184f47",
+  "training_stems_sha256": "01fe8414a13a8d5f88133665c2c1a49bf9312f5d2922edefd4b11866a24f3ec0",
+  "validation_stems_sha256": "49de3e7da0c71e3d16a01261adc031d8257c85fe512579ea316cfc7a3dc1c30d",
+  "select": "bio",
+  "best_epoch": 1,
+  "best_score": 0.006053924560546875,
+  "evaluated_checkpoint": "runs_review/fish_wavelet_20261023_cli_smoke\\attention\\best.pt",
+  "per_class_iou": {
+    "BW": 0.0,
+    "HD": 0.0,
+    "PF": null,
+    "WR": 0.0,
+    "RO": 0.0,
+    "RI": 0.0,
+    "FV": 0.01210784912109375,
+    "SR": 0.0
+  },
+  "bio_mean_iou": 0.006053924560546875,
+  "all_mean_iou": 0.0017296927315848215,
+  "confusion": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      658265,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      79407,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      98452,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      12482,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      101761,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      14283,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      214998,
+      0
+    ]
+  ],
+  "class_freq_train": {
+    "BW": 0.4027336961002556,
+    "HD": 0.05663768653640036,
+    "PF": 0.0029430703273147004,
+    "WR": 0.07244537884409268,
+    "RO": 0.04570203644158628,
+    "RI": 0.23888651166625444,
+    "FV": 0.020307939648775662,
+    "SR": 0.1603436804353203
+  },
+  "pipe_guard_before": [
+    {
+      "shape": [
+        2,
+        3,
+        288,
+        512
+      ],
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "shape": [
+        2,
+        3,
+        384,
+        384
+      ],
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    }
+  ],
+  "pipe_guard_after": [
+    {
+      "shape": [
+        2,
+        3,
+        288,
+        512
+      ],
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "shape": [
+        2,
+        3,
+        384,
+        384
+      ],
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    }
+  ],
+  "pipe_state_unchanged": true,
+  "model": {
+    "pipe_total_M": 0.476342,
+    "fish_decoder_M": 0.05396,
+    "fish_encoder_M": 0.336692,
+    "fish_wavelet_M": 0.179392,
+    "total_M": 1.046386,
+    "trainable_M": 0.570044
+  }
+}

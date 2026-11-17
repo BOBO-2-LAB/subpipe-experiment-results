@@ -1,0 +1,651 @@
+{
+  "before": {
+    "experiment": "mono/runs_review/m13_unified_critical_v43_20261026_v1",
+    "episodes": {
+      "mixed_clear_avoidance": {
+        "complete": true,
+        "directory": "mono/runs_review/m13_unified_critical_v43_20261026_v1/closed_loop/job_000/mixed_clear_avoidance",
+        "passed": false,
+        "reason": "perception_loss_timeout",
+        "elapsed_s": 62.766666666666666,
+        "valid_fraction": 0.958664546899841,
+        "all_frame_valid_fraction": 0.6425146510388918,
+        "maximum_corridor_m": 0.18047369233745192,
+        "contact_3d": false,
+        "contact_xy": false,
+        "confirmed_bends": 4,
+        "last_position_xyz": [
+          11.886515647792882,
+          -4.000000117785317,
+          -6.000001196904349
+        ],
+        "recovery_events": {},
+        "tracking_events": [
+          {
+            "t": 23.1,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              6.086114589440283,
+              -4.0051449562990245,
+              -2.695622299558398
+            ]
+          },
+          {
+            "t": 39.03333333333333,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              9.706733757394503,
+              -4.000001442233199,
+              -6.000188384070864
+            ]
+          }
+        ]
+      },
+      "mixed_fish_avoidance": {
+        "complete": false,
+        "directory": "mono/runs_review/m13_unified_critical_v43_20261026_v1/closed_loop/job_001/mixed_fish_avoidance"
+      },
+      "fish_down_corner_avoidance": {
+        "complete": true,
+        "directory": "mono/runs_review/m13_unified_critical_v43_20261026_v1/closed_loop/job_002/fish_down_corner_avoidance",
+        "passed": true,
+        "reason": "goal_reached",
+        "elapsed_s": 27.966666666666665,
+        "valid_fraction": 0.9568627450980393,
+        "all_frame_valid_fraction": 0.8787515006002401,
+        "maximum_corridor_m": 0.8965259490481117,
+        "contact_3d": false,
+        "contact_xy": true,
+        "confirmed_bends": 1,
+        "last_position_xyz": [
+          6.007837488018421,
+          -7.06579872712914e-05,
+          3.811820921562989
+        ],
+        "recovery_events": {
+          "encounter_release": [
+            {
+              "t": 16.433333333333334,
+              "position_xyz": [
+                6.0476651158100045,
+                0.8469993354382903,
+                -1.3870369815039978
+              ],
+              "required_progress_m": 1.0,
+              "actual_progress_m": 2.9466551837037773
+            }
+          ]
+        },
+        "tracking_events": [
+          {
+            "t": 5.633333333333333,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              2.5128358457581026,
+              0.0,
+              -2.0
+            ]
+          },
+          {
+            "t": 23.166666666666668,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              6.008014196323629,
+              0.006631682849659107,
+              1.6518208348154217
+            ]
+          }
+        ]
+      },
+      "fish_down_before_avoidance": {
+        "complete": true,
+        "directory": "mono/runs_review/m13_unified_critical_v43_20261026_v1/closed_loop/job_003/fish_down_before_avoidance",
+        "passed": true,
+        "reason": "goal_reached",
+        "elapsed_s": 30.866666666666667,
+        "valid_fraction": 0.9543147208121827,
+        "all_frame_valid_fraction": 0.8478260869565217,
+        "maximum_corridor_m": 0.9370127282969721,
+        "contact_3d": false,
+        "contact_xy": false,
+        "confirmed_bends": 1,
+        "last_position_xyz": [
+          6.004718052394662,
+          2.8537462206327248e-08,
+          3.8097443469513843
+        ],
+        "recovery_events": {
+          "encounter_release": [
+            {
+              "t": 7.566666666666666,
+              "position_xyz": [
+                3.2347058533774424,
+                0.844108059140104,
+                -2.0
+              ],
+              "required_progress_m": 1.0119769627024353,
+              "actual_progress_m": 1.0153019905296512
+            }
+          ]
+        },
+        "tracking_events": [
+          {
+            "t": 7.733333333333333,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              3.3096813977373,
+              0.839418118346395,
+              -2.0
+            ]
+          },
+          {
+            "t": 8.533333333333333,
+            "event": "boundary_recenter_started",
+            "estimated_target_xyz": [
+              4.004717768020367,
+              0.0,
+              -2.0
+            ],
+            "measured_position_xyz": [
+              3.6681784556562973,
+              0.681977310846088,
+              -2.0
+            ]
+          },
+          {
+            "t": 26.066666666666666,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              6.004897570457165,
+              1.1790117411677955e-06,
+              1.6497442614048488
+            ]
+          }
+        ]
+      },
+      "fish_up_before_avoidance": {
+        "complete": true,
+        "directory": "mono/runs_review/m13_unified_critical_v43_20261026_v1/closed_loop/job_004/fish_up_before_avoidance",
+        "passed": true,
+        "reason": "goal_reached",
+        "elapsed_s": 8.133333333333333,
+        "valid_fraction": 1.0,
+        "all_frame_valid_fraction": 0.9873949579831933,
+        "maximum_corridor_m": 0.9497603050813164,
+        "contact_3d": false,
+        "contact_xy": true,
+        "confirmed_bends": 1,
+        "last_position_xyz": [
+          1.9486584347639102,
+          -0.008800826997354577,
+          -3.8081639448671067
+        ],
+        "recovery_events": {
+          "encounter_release": [
+            {
+              "t": 5.466666666666667,
+              "position_xyz": [
+                1.9804535168645163,
+                0.9098362196799148,
+                -2.610778722572405
+              ],
+              "required_progress_m": 1.0859999705389278,
+              "actual_progress_m": 1.089306759352571
+            }
+          ]
+        },
+        "tracking_events": [
+          {
+            "t": 4.4,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              1.7968719354410387,
+              0.9286057131241671,
+              -2.1738775996754818
+            ]
+          },
+          {
+            "t": 7.666666666666667,
+            "event": "boundary_recenter_started",
+            "estimated_target_xyz": [
+              1.9500000000000002,
+              0.0,
+              -3.950000000000002
+            ],
+            "measured_position_xyz": [
+              1.9513913227485802,
+              0.14073676922518,
+              -3.6079859537309114
+            ]
+          }
+        ]
+      },
+      "fish_up_corner_avoidance": {
+        "complete": true,
+        "directory": "mono/runs_review/m13_unified_critical_v43_20261026_v1/closed_loop/job_005/fish_up_corner_avoidance",
+        "passed": true,
+        "reason": "goal_reached",
+        "elapsed_s": 8.9,
+        "valid_fraction": 0.9066666666666666,
+        "all_frame_valid_fraction": 0.9080459770114943,
+        "maximum_corridor_m": 0.9374397527717575,
+        "contact_3d": false,
+        "contact_xy": true,
+        "confirmed_bends": 1,
+        "last_position_xyz": [
+          1.997520295954235,
+          -0.19629390382479456,
+          -3.9791724057646576
+        ],
+        "recovery_events": {
+          "encounter_release": [
+            {
+              "t": 6.533333333333333,
+              "position_xyz": [
+                2.023835296489601,
+                -0.8951815746807659,
+                -3.072102988094731
+              ],
+              "required_progress_m": 1.4466858632973865,
+              "actual_progress_m": 1.4553804238548045
+            }
+          ]
+        },
+        "tracking_events": [
+          {
+            "t": 4.433333333333334,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              1.8445532245726726,
+              -0.7962324211155917,
+              -2.1698308779085895
+            ]
+          },
+          {
+            "t": 7.833333333333333,
+            "event": "boundary_recenter_started",
+            "estimated_target_xyz": [
+              2.0,
+              0.0,
+              -4.000000000000002
+            ],
+            "measured_position_xyz": [
+              2.0022080815307413,
+              -0.5633403523197327,
+              -3.658057266623377
+            ]
+          }
+        ]
+      },
+      "fish_up_avoidance": {
+        "complete": true,
+        "directory": "mono/runs_review/m13_unified_critical_v43_20261026_v1/closed_loop/job_006/fish_up_avoidance",
+        "passed": true,
+        "reason": "goal_reached",
+        "elapsed_s": 12.6,
+        "valid_fraction": 0.9,
+        "all_frame_valid_fraction": 0.7956989247311828,
+        "maximum_corridor_m": 0.9372838763014618,
+        "contact_3d": false,
+        "contact_xy": true,
+        "confirmed_bends": 1,
+        "last_position_xyz": [
+          2.000060092604955,
+          0.19859324414319693,
+          -4.00342847239461
+        ],
+        "recovery_events": {
+          "encounter_release": [
+            {
+              "t": 8.066666666666666,
+              "position_xyz": [
+                2.002265824523379,
+                0.86477386595385,
+                -3.648496773269739
+              ],
+              "required_progress_m": 1.1882433130433694,
+              "actual_progress_m": 1.190339189138268
+            }
+          ]
+        },
+        "tracking_events": [
+          {
+            "t": 6.233333333333333,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              2.0555573410644454,
+              0.9351031173778772,
+              -2.8795267743811137
+            ]
+          },
+          {
+            "t": 9.366666666666667,
+            "event": "boundary_recenter_started",
+            "estimated_target_xyz": [
+              2.0,
+              0.0,
+              -3.9970401565664355
+            ],
+            "measured_position_xyz": [
+              1.9959255631099195,
+              0.8522827182184998,
+              -3.8077161466447516
+            ]
+          }
+        ]
+      },
+      "fish_down_avoidance": {
+        "complete": true,
+        "directory": "mono/runs_review/m13_unified_critical_v43_20261026_v1/closed_loop/job_007/fish_down_avoidance",
+        "passed": false,
+        "reason": "corridor_exceeded",
+        "elapsed_s": 32.766666666666666,
+        "valid_fraction": 0.9417927823050058,
+        "all_frame_valid_fraction": 0.8280450358239508,
+        "maximum_corridor_m": 1.0005990707986299,
+        "contact_3d": false,
+        "contact_xy": true,
+        "confirmed_bends": 1,
+        "last_position_xyz": [
+          6.007836920040906,
+          -0.09697410859081272,
+          4.995857974527679
+        ],
+        "recovery_events": {
+          "encounter_release": [
+            {
+              "t": 28.099999999999998,
+              "position_xyz": [
+                6.007835689907407,
+                0.8499749294644816,
+                3.2713576803811932
+              ],
+              "required_progress_m": 1.4153304048080249,
+              "actual_progress_m": 1.4292348501573926
+            }
+          ]
+        },
+        "tracking_events": [
+          {
+            "t": 5.633333333333333,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              2.5128358457581026,
+              0.0,
+              -2.0
+            ]
+          }
+        ]
+      },
+      "fish_left_corner_avoidance": {
+        "complete": true,
+        "directory": "mono/runs_review/m13_unified_critical_v43_20261026_v1/closed_loop/job_008/fish_left_corner_avoidance",
+        "passed": true,
+        "reason": "goal_reached",
+        "elapsed_s": 16.133333333333333,
+        "valid_fraction": 0.9661733615221987,
+        "all_frame_valid_fraction": 0.9560669456066946,
+        "maximum_corridor_m": 0.9370127282969721,
+        "contact_3d": false,
+        "contact_xy": false,
+        "confirmed_bends": 1,
+        "last_position_xyz": [
+          4.033041724374523,
+          -4.803116833656884,
+          -2.0
+        ],
+        "recovery_events": {
+          "encounter_release": [
+            {
+              "t": 11.033333333333333,
+              "position_xyz": [
+                3.1487693341170715,
+                -2.4559501910502273,
+                -2.0
+              ],
+              "required_progress_m": 2.5,
+              "actual_progress_m": 2.5052091380403714
+            }
+          ]
+        },
+        "tracking_events": [
+          {
+            "t": 1.6333333333333333,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              0.7084159586731544,
+              -0.035388888888888886,
+              -2.0
+            ]
+          },
+          {
+            "t": 11.633333333333333,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              3.175204127990385,
+              -2.7343582217136833,
+              -2.0
+            ]
+          }
+        ]
+      },
+      "fish_right_corner_avoidance": {
+        "complete": true,
+        "directory": "mono/runs_review/m13_unified_critical_v43_20261026_v1/closed_loop/job_009/fish_right_corner_avoidance",
+        "passed": true,
+        "reason": "goal_reached",
+        "elapsed_s": 16.2,
+        "valid_fraction": 0.9308176100628931,
+        "all_frame_valid_fraction": 0.925,
+        "maximum_corridor_m": 0.9370127282969721,
+        "contact_3d": false,
+        "contact_xy": false,
+        "confirmed_bends": 1,
+        "last_position_xyz": [
+          4.031855647941977,
+          4.814597304460401,
+          -2.0
+        ],
+        "recovery_events": {
+          "encounter_release": [
+            {
+              "t": 11.033333333333333,
+              "position_xyz": [
+                3.1487693341170715,
+                2.4559501910502273,
+                -2.0
+              ],
+              "required_progress_m": 2.5,
+              "actual_progress_m": 2.5052091380403714
+            }
+          ]
+        },
+        "tracking_events": [
+          {
+            "t": 11.166666666666666,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              3.147646054680887,
+              2.5154185809955822,
+              -2.0
+            ]
+          }
+        ]
+      },
+      "clear_straight_avoidance": {
+        "complete": true,
+        "directory": "mono/runs_review/m13_unified_critical_v43_20261026_v1/closed_loop/job_010/clear_straight_avoidance",
+        "passed": true,
+        "reason": "goal_reached",
+        "elapsed_s": 19.633333333333333,
+        "valid_fraction": 0.9758620689655172,
+        "all_frame_valid_fraction": 0.9708404802744426,
+        "maximum_corridor_m": 2.6645352591003757e-15,
+        "contact_3d": false,
+        "contact_xy": false,
+        "confirmed_bends": 0,
+        "last_position_xyz": [
+          8.803122828524517,
+          0.0,
+          -2.0
+        ],
+        "recovery_events": {},
+        "tracking_events": [
+          {
+            "t": 13.633333333333333,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              6.112833333336111,
+              0.0,
+              -2.0
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "after": {
+    "experiment": "mono/runs_review/m13_unified_critical_v44_20261026_v1",
+    "episodes": {
+      "mixed_clear_avoidance": {
+        "complete": false,
+        "directory": "mono/runs_review/m13_unified_critical_v44_20261026_v1/closed_loop/job_000/mixed_clear_avoidance"
+      },
+      "mixed_fish_avoidance": {
+        "complete": false,
+        "directory": "mono/runs_review/m13_unified_critical_v44_20261026_v1/closed_loop/job_001/mixed_fish_avoidance"
+      },
+      "fish_down_avoidance": {
+        "complete": true,
+        "directory": "mono/runs_review/m13_unified_critical_v44_20261026_v1/closed_loop/job_002/fish_down_avoidance",
+        "passed": true,
+        "reason": "goal_reached",
+        "elapsed_s": 31.433333333333334,
+        "valid_fraction": 0.9299123904881101,
+        "all_frame_valid_fraction": 0.7929562433297759,
+        "maximum_corridor_m": 0.9245852715218276,
+        "contact_3d": false,
+        "contact_xy": true,
+        "confirmed_bends": 1,
+        "last_position_xyz": [
+          6.007838329115699,
+          -0.08384007666446266,
+          4.164788653069691
+        ],
+        "recovery_events": {
+          "encounter_release": [
+            {
+              "t": 27.166666666666668,
+              "position_xyz": [
+                6.007826351580668,
+                0.8500748681781876,
+                2.85199607996817
+              ],
+              "required_progress_m": 1.0,
+              "actual_progress_m": 1.0098732497443694
+            }
+          ]
+        },
+        "tracking_events": [
+          {
+            "t": 5.633333333333333,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              2.5128358457581026,
+              0.0,
+              -2.0
+            ]
+          },
+          {
+            "t": 28.066666666666666,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              6.007835474155721,
+              0.7134179272085147,
+              3.2563671749726883
+            ]
+          },
+          {
+            "t": 28.966666666666665,
+            "event": "boundary_recenter_started",
+            "estimated_target_xyz": [
+              6.007837081838835,
+              0.0,
+              4.0
+            ],
+            "measured_position_xyz": [
+              6.00783856711503,
+              0.3371942204453837,
+              3.6612327907499247
+            ]
+          }
+        ]
+      },
+      "fish_up_avoidance": {
+        "complete": true,
+        "directory": "mono/runs_review/m13_unified_critical_v44_20261026_v1/closed_loop/job_003/fish_up_avoidance",
+        "passed": true,
+        "reason": "goal_reached",
+        "elapsed_s": 12.5,
+        "valid_fraction": 0.9,
+        "all_frame_valid_fraction": 0.7967479674796748,
+        "maximum_corridor_m": 0.9372838763014618,
+        "contact_3d": false,
+        "contact_xy": true,
+        "confirmed_bends": 1,
+        "last_position_xyz": [
+          2.0000225135613023,
+          0.19925866560002992,
+          -4.002592038407946
+        ],
+        "recovery_events": {
+          "encounter_release": [
+            {
+              "t": 7.566666666666666,
+              "position_xyz": [
+                2.011773426732015,
+                0.8833797235529428,
+                -3.4624177321719656
+              ],
+              "required_progress_m": 1.0,
+              "actual_progress_m": 1.0042601480522404
+            }
+          ]
+        },
+        "tracking_events": [
+          {
+            "t": 6.233333333333333,
+            "event": "finite_boundary_forward_watch_started",
+            "measured_position_xyz": [
+              2.0555573410644454,
+              0.9351031173778772,
+              -2.8795267743811137
+            ]
+          },
+          {
+            "t": 9.333333333333334,
+            "event": "boundary_recenter_started",
+            "estimated_target_xyz": [
+              2.0,
+              0.0,
+              -3.9970401565664355
+            ],
+            "measured_position_xyz": [
+              1.9959705397606304,
+              0.8297733573083074,
+              -3.806575599637553
+            ]
+          }
+        ]
+      },
+      "fish_down_corner_avoidance": {
+        "complete": false,
+        "directory": "mono/runs_review/m13_unified_critical_v44_20261026_v1/closed_loop/job_004/fish_down_corner_avoidance"
+      },
+      "fish_down_before_avoidance": {
+        "complete": false,
+        "directory": "mono/runs_review/m13_unified_critical_v44_20261026_v1/closed_loop/job_005/fish_down_before_avoidance"
+      }
+    }
+  }
+}

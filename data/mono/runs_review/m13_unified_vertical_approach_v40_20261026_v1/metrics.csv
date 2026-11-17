@@ -1,0 +1,5 @@
+scenario,mode,task_completed,inspection_valid_fraction,goal_reached,inspection_recovered,contact_xy,contact_3d,primary_contact_rule,maximum_cross_track_m,pipe_arc_observation_fraction,terminal_pipe_observed,intervention_frames,elapsed_s,stop_reason
+fish_up_before,avoidance,True,1.0,True,True,True,False,3D,0.9469330743061012,0.9375,True,189,8.233333333333333,goal_reached
+fish_up_corner,avoidance,True,0.9192825112107623,True,True,True,False,3D,0.9374536817429683,0.9375,True,163,8.2,goal_reached
+fish_down_before,avoidance,False,0.8647686832740213,False,False,False,False,3D,0.9370127282969724,0.5625,True,184,31.633333333333333,perception_loss_timeout
+fish_down_corner,avoidance,False,0.9602446483180428,False,False,True,True,3D,2.6645352591003757e-15,0.96875,True,0,12.333333333333334,fish_contact_3d

@@ -1,0 +1,17 @@
+{
+  "required_scenes": [
+    "bend_left_fish_before",
+    "bend_left_fish_corner",
+    "bend_right_fish_before",
+    "bend_right_fish_corner"
+  ],
+  "modes": [
+    "tracker_only",
+    "avoidance"
+  ],
+  "stage_exemptions": false,
+  "baseline_configuration": "frozen horizontal v25",
+  "acceptance": "original XY no contact, goal, recovery, >=90% active valid observations, original IoU/corridor; no threshold changes",
+  "preserve_vertical": "up_v3 and down_v7 completed; do not edit frozen inputs",
+  "training": false
+}

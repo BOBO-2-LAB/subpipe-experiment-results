@@ -1,0 +1,33 @@
+{
+  "scenario": "crossing",
+  "mode": "tracker_only",
+  "outcome": "collision",
+  "route_completed": false,
+  "task_completed": false,
+  "synthetic_inspection_valid_fraction": 0.515527950310559,
+  "collision": true,
+  "minimum_clearance_m": -0.012853135373049218,
+  "encounter_passed": false,
+  "contact_metric": "horizontal footprint overlap; not physical 3D collision",
+  "inspection_recovery_time_s": null,
+  "elapsed_sim_s": 5.366666666666666,
+  "progress_m": 4.560090994958675,
+  "maximum_abs_cross_track_m": 0.05571394653335408,
+  "pipe_loss_frames": 0,
+  "longest_pipe_loss_s": 0.0,
+  "ground_truth_pipe_out_of_view_frames": 0,
+  "tracking_error_abs_mean": 0.024236972930923438,
+  "actions": {
+    "nominal": 161
+  },
+  "synthetic_pipe_iou": 0.47991918095981023,
+  "synthetic_fish_iou": 0.3638754278355756,
+  "visible_fish_frames": 53,
+  "fish_overlap_hit_frames": 31,
+  "fish_absent_but_detection_frames": 0,
+  "inference_wall_s_median": 0.015014700002211612,
+  "inference_wall_s_p95": 0.018109299999196082,
+  "frames": 161,
+  "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+  "video": "runs_review\\visual_closed_loop_photo\\crossing_tracker_only\\feedback.mp4"
+}

@@ -1,0 +1,237 @@
+{
+  "scope": "Eight fixed diagnostic RGBs. Alternative seeds use only current probability/geometry. Probability/mean/span thresholds unchanged. No temporal or vehicle rollout. GT scores predictions only.",
+  "source_of_instrumented_search": "avoid.path_ablation.search_path, initial seed override only",
+  "rows": [
+    {
+      "frame": 39,
+      "original_reason": "short_probability_path",
+      "raw_iou288": 0.4161933959893451,
+      "raw_iou384": 0.09,
+      "raw_precision384": 0.9564032697547684,
+      "raw_recall384": 0.09037075180226571,
+      "seed_trials": [
+        {
+          "seed": [
+            15,
+            50
+          ],
+          "found": true,
+          "reason": "probability_path",
+          "path_points": 8,
+          "mean_probability": 0.8736467957496643,
+          "path_in_truth_fraction": 1.0
+        },
+        {
+          "seed": [
+            15,
+            46
+          ],
+          "found": true,
+          "reason": "probability_path",
+          "path_points": 8,
+          "mean_probability": 0.7837786078453064,
+          "path_in_truth_fraction": 0.875
+        }
+      ],
+      "alternative_found": true
+    },
+    {
+      "frame": 426,
+      "original_reason": "short_probability_path",
+      "raw_iou288": 0.18433202850547023,
+      "raw_iou384": 0.1331362429222829,
+      "raw_precision384": 0.8612641815235008,
+      "raw_recall384": 0.13605407342925904,
+      "seed_trials": [
+        {
+          "seed": [
+            15,
+            50
+          ],
+          "found": false,
+          "reason": "short_probability_path",
+          "path_points": 0,
+          "mean_probability": null,
+          "path_in_truth_fraction": null
+        },
+        {
+          "seed": [
+            15,
+            48
+          ],
+          "found": true,
+          "reason": "probability_path",
+          "path_points": 6,
+          "mean_probability": 0.6457118988037109,
+          "path_in_truth_fraction": 1.0
+        }
+      ],
+      "alternative_found": true
+    },
+    {
+      "frame": 706,
+      "original_reason": "short_probability_path",
+      "raw_iou288": 0.1725808894048761,
+      "raw_iou384": 0.2323643218573271,
+      "raw_precision384": 0.8940637526245466,
+      "raw_recall384": 0.23894301892567466,
+      "seed_trials": [
+        {
+          "seed": [
+            16,
+            50
+          ],
+          "found": false,
+          "reason": "short_probability_path",
+          "path_points": 0,
+          "mean_probability": null,
+          "path_in_truth_fraction": null
+        }
+      ],
+      "alternative_found": false
+    },
+    {
+      "frame": 955,
+      "original_reason": "short_probability_path",
+      "raw_iou288": 0.3728281973415642,
+      "raw_iou384": 0.1682737946540095,
+      "raw_precision384": 0.9222343921139102,
+      "raw_recall384": 0.1706958593076884,
+      "seed_trials": [
+        {
+          "seed": [
+            15,
+            48
+          ],
+          "found": true,
+          "reason": "probability_path",
+          "path_points": 7,
+          "mean_probability": 0.7144258618354797,
+          "path_in_truth_fraction": 1.0
+        }
+      ],
+      "alternative_found": true
+    },
+    {
+      "frame": 1163,
+      "original_reason": "short_probability_path",
+      "raw_iou288": 0.22353353002950443,
+      "raw_iou384": 0.23596286551159212,
+      "raw_precision384": 0.92669136283876,
+      "raw_recall384": 0.24045125714574797,
+      "seed_trials": [
+        {
+          "seed": [
+            15,
+            51
+          ],
+          "found": true,
+          "reason": "probability_path",
+          "path_points": 8,
+          "mean_probability": 0.7154787182807922,
+          "path_in_truth_fraction": 1.0
+        }
+      ],
+      "alternative_found": true
+    },
+    {
+      "frame": 1349,
+      "original_reason": "short_probability_path",
+      "raw_iou288": 0.31700430927732925,
+      "raw_iou384": 0.2578381606449687,
+      "raw_precision384": 0.937398226886195,
+      "raw_recall384": 0.2623556815880089,
+      "seed_trials": [
+        {
+          "seed": [
+            15,
+            49
+          ],
+          "found": true,
+          "reason": "probability_path",
+          "path_points": 7,
+          "mean_probability": 0.7645512819290161,
+          "path_in_truth_fraction": 1.0
+        },
+        {
+          "seed": [
+            15,
+            48
+          ],
+          "found": true,
+          "reason": "probability_path",
+          "path_points": 7,
+          "mean_probability": 0.6689953804016113,
+          "path_in_truth_fraction": 1.0
+        }
+      ],
+      "alternative_found": true
+    },
+    {
+      "frame": 7,
+      "original_reason": "probability_path",
+      "raw_iou288": 0.4372503166715385,
+      "raw_iou384": 0.34416145595038383,
+      "raw_precision384": 0.9626048627897057,
+      "raw_recall384": 0.3488252267106348,
+      "seed_trials": [
+        {
+          "seed": [
+            15,
+            51
+          ],
+          "found": true,
+          "reason": "probability_path",
+          "path_points": 18,
+          "mean_probability": 0.7759172916412354,
+          "path_in_truth_fraction": 1.0
+        },
+        {
+          "seed": [
+            15,
+            44
+          ],
+          "found": true,
+          "reason": "probability_path",
+          "path_points": 20,
+          "mean_probability": 0.670143187046051,
+          "path_in_truth_fraction": 0.85
+        }
+      ],
+      "alternative_found": true
+    },
+    {
+      "frame": 1287,
+      "original_reason": "probability_path",
+      "raw_iou288": 0.3878835952605225,
+      "raw_iou384": 0.21235405648138908,
+      "raw_precision384": 0.9380648005289839,
+      "raw_recall384": 0.21537371590506554,
+      "seed_trials": [
+        {
+          "seed": [
+            15,
+            49
+          ],
+          "found": true,
+          "reason": "probability_path",
+          "path_points": 8,
+          "mean_probability": 0.7268571853637695,
+          "path_in_truth_fraction": 1.0
+        },
+        {
+          "seed": [
+            15,
+            47
+          ],
+          "found": true,
+          "reason": "probability_path",
+          "path_points": 8,
+          "mean_probability": 0.6591516733169556,
+          "path_in_truth_fraction": 1.0
+        }
+      ],
+      "alternative_found": true
+    }
+  ]
+}

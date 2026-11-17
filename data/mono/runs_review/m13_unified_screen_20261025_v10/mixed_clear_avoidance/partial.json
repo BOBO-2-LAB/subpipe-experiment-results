@@ -1,0 +1,232 @@
+{
+  "last": {
+    "scenario": "mixed_clear",
+    "mode": "avoidance",
+    "t": 22.0,
+    "position_xyz": [
+      5.791845212301935,
+      -4.617606512468001,
+      -2.1889837962962964
+    ],
+    "phase": "jitter_continuation",
+    "source_t": 21.700000000000003,
+    "source_pose": {
+      "x": 5.752612664212547,
+      "y": -4.61098717631634,
+      "depth": -2.098,
+      "yaw": -0.02447432740413458,
+      "pitch": 0.5077575091462931
+    },
+    "camera_yaw_deg": -1.1801832388596754,
+    "camera_pitch_deg": 15.592362290157892,
+    "pipe_iou": 0.002898920072632283,
+    "valid": false,
+    "current_observation_trusted": false,
+    "synthetic_corridor_m": 0.6458735785782284,
+    "synthetic_pipe_clearance_3d_m": 1.5544423194907873,
+    "synthetic_fish_clearance_3d_m": null,
+    "synthetic_fish_clearance_xy_m": null,
+    "contact_3d": false,
+    "contact_xy": false,
+    "synthetic_end_distance_m": 11.226748702295982,
+    "bend_count": 3,
+    "inference_wall_s": 0.09357300000556279,
+    "fish_observations": 0,
+    "avoidance_offset_m": 0.0,
+    "synthetic_terminal_pipe_observed": false,
+    "synthetic_pipe_arc_observation_fraction": 0.6982758620689655,
+    "decision": {
+      "action": "nominal",
+      "speed_scale": 1.0,
+      "risk": 0.0,
+      "reason": "pipe_perception_unreliable",
+      "hover_capped": false,
+      "risk_raw": 0.0,
+      "lateral_setpoint": 0.0,
+      "lateral_reason": "recenter",
+      "yield_to_tracker": true
+    },
+    "control": {
+      "phase": "jitter_continuation",
+      "abort": false,
+      "current_observation_trusted": false,
+      "direction_xyz": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "normal_xyz": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "side_xyz": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "estimated_route_error_m": 0.05291842615837359,
+      "lateral_offset_m": 0.0,
+      "requested_velocity_xyz": [
+        -0.041845212301911516,
+        -0.03239348753202087,
+        -0.4
+      ],
+      "route_xyz": [
+        [
+          -5.0,
+          0.0,
+          -2.0
+        ],
+        [
+          4.00000000000002,
+          0.0,
+          -2.0
+        ],
+        [
+          4.00000000000002,
+          -4.650000000000022,
+          -2.0
+        ],
+        [
+          5.750000000000023,
+          -4.650000000000022,
+          -2.0
+        ],
+        [
+          5.750000000000023,
+          -4.650000000000022,
+          -12.0
+        ]
+      ],
+      "geometry": {
+        "vision": {
+          "method": "unified_XYZ_finite_axis_RGB",
+          "truth_access": false,
+          "bend_count": 3,
+          "monocular_parallax": {
+            "tracked_features": 377,
+            "current_triangulated_points": 93,
+            "source": "LK+known measured pose triangulation",
+            "rendered_depth_used": false
+          },
+          "reason": "current_surface_supported",
+          "current_rgb_verified": true,
+          "current_rgb_pixels": 3958,
+          "current_neural_pixels": 2393,
+          "axis_xyz": [
+            [
+              -5.0,
+              0.0,
+              0.0
+            ],
+            [
+              4.00000000000002,
+              0.0,
+              0.0
+            ],
+            [
+              4.00000000000002,
+              -4.650000000000022,
+              0.0
+            ],
+            [
+              7.750000000000023,
+              -4.650000000000022,
+              0.0
+            ],
+            [
+              7.750000000000023,
+              -4.650000000000022,
+              -12.0
+            ]
+          ]
+        },
+        "temporal": {
+          "phase": "reacquiring",
+          "current_observation_trusted": false,
+          "prediction_age_s": 0.20000000000000284,
+          "prediction_counted_valid": false
+        }
+      }
+    },
+    "actuator": {
+      "held_body_command_mps": [
+        -0.02634148839018008,
+        -0.04589646845313097,
+        -0.4
+      ],
+      "speed_saturated": [
+        false,
+        false,
+        false
+      ],
+      "acceleration_saturated": [
+        false,
+        false,
+        false
+      ],
+      "hull_yaw_rad": -0.3829634643393586,
+      "yaw_rate_rad_s": 0.08036875846060765
+    },
+    "velocity_xyz": [
+      0.07918725074591368,
+      -0.02364087838883722,
+      -0.33586033950617283
+    ],
+    "fish_refinement": {
+      "policy": "current_motion_seeded_RGB_segmentation",
+      "rois": [],
+      "fusion_score_calibrated": false,
+      "history_fill": false,
+      "training": false
+    }
+  },
+  "events": [
+    {
+      "t": 2.4000000000000004,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "gain": 0.22772292840785988
+    },
+    {
+      "t": 10.200000000000001,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.00000000000002,
+        -4.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "gain": 0.20554018477558778
+    },
+    {
+      "t": 20.700000000000003,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        7.75000000000002,
+        -4.650000000000022,
+        0.0
+      ],
+      "outgoing_xyz": [
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "gain": 0.1498627797390374
+    }
+  ]
+}

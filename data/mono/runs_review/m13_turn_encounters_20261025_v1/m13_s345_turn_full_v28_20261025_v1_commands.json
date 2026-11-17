@@ -1,0 +1,76 @@
+{
+  "full_acceptance": true,
+  "modes": [
+    "tracker_only",
+    "avoidance"
+  ],
+  "stage_deadline_exemptions": false,
+  "jobs": [
+    {
+      "pid": 19384,
+      "out": "mono/runs_review/m13_s345_turn_full_v28_20261025_v1_left",
+      "command": [
+        "[公开副本已隐去本地信息]",
+        "-B",
+        "-m",
+        "tools.m13_s345_fish_acceptance",
+        "--out",
+        "mono/runs_review/m13_s345_turn_full_v28_20261025_v1_left",
+        "--fish-config",
+        "mono/configs/m13_s345_fish_v28.json",
+        "--avoidance-config",
+        "mono/runs_review/m13_s345_right_acceptance_20261025_v2/avoidance_config.json",
+        "--baseline-source",
+        "mono/runs_review/m13_s345_right_acceptance_20261025_v2/closed_loop/worker_0",
+        "--regression-log",
+        "mono/runs_review/m13_turn_encounters_20261025_v1/regression_v28_explicit_scale.log",
+        "--source-snapshot",
+        "mono/runs_review/m13_turn_encounters_20261025_v1/m13_s345_turn_full_v28_20261025_v1_source",
+        "--workers",
+        "2",
+        "--scenarios",
+        "clear_pipe",
+        "head_on",
+        "bend_left_90",
+        "bend_left_fish_before",
+        "bend_left_fish_corner",
+        "bend_left_fish_after",
+        "--modes",
+        "tracker_only",
+        "avoidance"
+      ]
+    },
+    {
+      "pid": 1260,
+      "out": "mono/runs_review/m13_s345_turn_full_v28_20261025_v1_right",
+      "command": [
+        "[公开副本已隐去本地信息]",
+        "-B",
+        "-m",
+        "tools.m13_s345_fish_acceptance",
+        "--out",
+        "mono/runs_review/m13_s345_turn_full_v28_20261025_v1_right",
+        "--fish-config",
+        "mono/configs/m13_s345_fish_v28.json",
+        "--avoidance-config",
+        "mono/runs_review/m13_s345_right_acceptance_20261025_v2/avoidance_config.json",
+        "--baseline-source",
+        "mono/runs_review/m13_s345_right_acceptance_20261025_v2/closed_loop/worker_0",
+        "--regression-log",
+        "mono/runs_review/m13_turn_encounters_20261025_v1/regression_v28_explicit_scale.log",
+        "--source-snapshot",
+        "mono/runs_review/m13_turn_encounters_20261025_v1/m13_s345_turn_full_v28_20261025_v1_source",
+        "--workers",
+        "2",
+        "--scenarios",
+        "bend_right_90",
+        "bend_right_fish_before",
+        "bend_right_fish_corner",
+        "bend_right_fish_after",
+        "--modes",
+        "tracker_only",
+        "avoidance"
+      ]
+    }
+  ]
+}

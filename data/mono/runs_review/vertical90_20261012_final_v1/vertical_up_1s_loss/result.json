@@ -1,0 +1,30 @@
+{
+  "scenario": "vertical_up_1s_loss",
+  "goal_reached": true,
+  "stop_reason": "goal_reached",
+  "elapsed_s": 22.166666666666668,
+  "inspection_valid_fraction": 0.98635477582846,
+  "active_valid_fraction": 0.9438543247344461,
+  "synthetic_pipe_iou": 0.8431285206214724,
+  "max_cross_track_m": 0.17347175617426558,
+  "minimum_pipe_clearance_3d_m": 1.28,
+  "corner_confirmation_s": 4.066666666666666,
+  "end_distance_m": 0.18786175569997787,
+  "events": [
+    {
+      "t": 12.233333333333333,
+      "event": "loss_wait_started"
+    },
+    {
+      "t": 13.733333333333333,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 17.1,
+      "event": "reinspection_started"
+    }
+  ],
+  "inference_mean_s": 0.045967416388291986,
+  "task_completed": true,
+  "legacy_task_completed": true
+}

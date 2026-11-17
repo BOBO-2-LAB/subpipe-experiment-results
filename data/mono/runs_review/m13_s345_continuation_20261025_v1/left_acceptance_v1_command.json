@@ -1,0 +1,31 @@
+{
+  "pid": 936,
+  "command": [
+    "[公开副本已隐去本地信息]",
+    "-B",
+    "-m",
+    "tools.m13_s345_fish_acceptance",
+    "--out",
+    "mono/runs_review/m13_s345_left_acceptance_20261025_v1",
+    "--fish-config",
+    "mono/configs/m13_s345_fish_v22.json",
+    "--avoidance-config",
+    "mono/configs/avoidance_s345_fish_v4.json",
+    "--baseline-source",
+    "mono/runs_review/m13_s345_original_acceptance_20261024_v1/closed_loop",
+    "--regression-log",
+    "mono/runs_review/m13_s345_continuation_20261025_v1/regression_v22.log",
+    "--scenarios",
+    "clear_pipe",
+    "bend_left_90",
+    "head_on",
+    "bend_left_fish_after",
+    "bend_left_fish_before",
+    "bend_left_fish_corner",
+    "--workers",
+    "2",
+    "--stage",
+    "left"
+  ],
+  "cwd": "mono"
+}

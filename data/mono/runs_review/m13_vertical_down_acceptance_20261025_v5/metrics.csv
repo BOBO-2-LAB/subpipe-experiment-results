@@ -1,0 +1,7 @@
+scenario,mode,task_3d,task_legacy_2d,valid_fraction,valid_frames,inspection_frames,goal,contact_3d,contact_2d,arc_observed_fraction,recentered,failed_checks,result
+clear_down,avoidance,True,True,1.0,894,894,True,False,False,0.96875,True,,mono/runs_review/m13_vertical_down_acceptance_20261025_v5/closed_loop/worker_0/clear_down_avoidance/result.json
+clear_down,tracker_only,True,True,1.0,894,894,True,False,False,0.96875,True,,mono/runs_review/m13_vertical_down_acceptance_20261025_v5/closed_loop/worker_0/clear_down_tracker_only/result.json
+fish_down_bend,avoidance,True,False,1.0,897,897,True,False,True,1.0,True,,mono/runs_review/m13_vertical_down_acceptance_20261025_v5/closed_loop/worker_1/fish_down_bend_avoidance/result.json
+fish_down_bend,tracker_only,False,False,0.9770642201834863,426,436,False,True,True,0.78125,False,goal_reached;pipe_arc_observation_fraction;fish_contact_3d;goal_stability_hold,mono/runs_review/m13_vertical_down_acceptance_20261025_v5/closed_loop/worker_1/fish_down_bend_tracker_only/result.json
+fish_down_vertical,avoidance,False,False,0.9717832957110609,861,886,False,True,True,1.0,False,goal_reached;fish_contact_3d;goal_stability_hold,mono/runs_review/m13_vertical_down_acceptance_20261025_v5/closed_loop/worker_2/fish_down_vertical_avoidance/result.json
+fish_down_vertical,tracker_only,False,False,0.9717832957110609,861,886,False,True,True,1.0,False,goal_reached;fish_contact_3d;goal_stability_hold,mono/runs_review/m13_vertical_down_acceptance_20261025_v5/closed_loop/worker_2/fish_down_vertical_tracker_only/result.json

@@ -1,0 +1,34 @@
+{
+  "scenario": "vertical_up_12s_loss",
+  "goal_reached": true,
+  "stop_reason": "goal_reached",
+  "elapsed_s": 29.566666666666666,
+  "inspection_valid_fraction": 0.9861660079051383,
+  "active_valid_fraction": 0.583427922814983,
+  "synthetic_pipe_iou": 0.5254192322156656,
+  "max_cross_track_m": 0.17347175617426558,
+  "minimum_pipe_clearance_3d_m": 1.28,
+  "corner_confirmation_s": 4.066666666666666,
+  "end_distance_m": 0.19209133600958467,
+  "events": [
+    {
+      "t": 12.233333333333333,
+      "event": "loss_wait_started"
+    },
+    {
+      "t": 20.233333333333334,
+      "event": "retreat_started"
+    },
+    {
+      "t": 24.733333333333334,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 24.733333333333334,
+      "event": "reinspection_started"
+    }
+  ],
+  "inference_mean_s": 0.05378362190705924,
+  "task_completed": true,
+  "legacy_task_completed": false
+}

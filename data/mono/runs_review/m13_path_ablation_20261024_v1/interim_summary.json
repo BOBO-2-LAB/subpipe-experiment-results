@@ -1,0 +1,27 @@
+{
+  "status": "interim",
+  "fixed_frames": 8,
+  "continuous_video_frames_in_snapshot": 30,
+  "target_continuous_video_frames": 120,
+  "status_counts": {
+    "skeleton": {
+      "observed": 30
+    },
+    "skeleton_temporal": {
+      "observed": 16,
+      "predicted": 14
+    },
+    "probability_temporal": {
+      "observed": 22,
+      "predicted": 8
+    },
+    "paired_probability_temporal": {
+      "lost": 12,
+      "observed": 3,
+      "predicted": 15
+    }
+  },
+  "closed_loop_acceptance": "not run for these two ablation variants",
+  "regression_tests": 225,
+  "regression_passed": true
+}

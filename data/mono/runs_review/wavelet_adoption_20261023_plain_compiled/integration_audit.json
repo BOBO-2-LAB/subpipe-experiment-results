@@ -1,0 +1,215 @@
+{
+  "status": "PASS",
+  "runtime_source_snapshot_verified": true,
+  "current_runtime_sources_match_snapshot": true,
+  "old_weights_unchanged": 123,
+  "loaded_model": "plain",
+  "task_passes": 4,
+  "tested_avoidance_episodes": 6,
+  "results": [
+    {
+      "group": "straight",
+      "scenario": "clear_pipe",
+      "mode": "avoidance",
+      "task_pass": true,
+      "raw_task_completed": true,
+      "goal": true,
+      "valid_fraction": 0.9648033126293996,
+      "contact_3d": null,
+      "legacy_xy_contact": false,
+      "legacy_task_pass": true,
+      "elapsed_sim_s": 16.1,
+      "goal_held_stably_s": null,
+      "intervention_frames": null,
+      "actions": {
+        "tracker_recovery": 7,
+        "nominal": 476
+      },
+      "failures": [],
+      "result": "mono/runs_review/wavelet_adoption_20261023_plain/straight/clear_pipe_avoidance/result.json",
+      "feedback_video": "mono/runs_review/wavelet_adoption_20261023_plain/straight/clear_pipe_avoidance/feedback_h264.mp4"
+    },
+    {
+      "group": "straight",
+      "scenario": "head_on",
+      "mode": "avoidance",
+      "task_pass": true,
+      "raw_task_completed": true,
+      "goal": true,
+      "valid_fraction": 0.987012987012987,
+      "contact_3d": false,
+      "legacy_xy_contact": false,
+      "legacy_task_pass": true,
+      "elapsed_sim_s": 17.96666666666667,
+      "goal_held_stably_s": null,
+      "intervention_frames": null,
+      "actions": {
+        "tracker_recovery": 7,
+        "nominal": 362,
+        "slow": 97,
+        "hover": 73
+      },
+      "failures": [],
+      "result": "mono/runs_review/wavelet_adoption_20261023_plain/straight/head_on_avoidance/result.json",
+      "feedback_video": "mono/runs_review/wavelet_adoption_20261023_plain/straight/head_on_avoidance/feedback_h264.mp4"
+    },
+    {
+      "group": "up",
+      "scenario": "clear_up",
+      "mode": "avoidance",
+      "task_pass": true,
+      "raw_task_completed": true,
+      "goal": true,
+      "valid_fraction": 1.0,
+      "contact_3d": false,
+      "legacy_xy_contact": false,
+      "legacy_task_pass": true,
+      "elapsed_sim_s": 9.4,
+      "goal_held_stably_s": 0.0,
+      "intervention_frames": 0,
+      "actions": null,
+      "failures": [],
+      "result": "mono/runs_review/wavelet_adoption_20261023_plain/up/clear_up_avoidance/result.json",
+      "feedback_video": "mono/runs_review/wavelet_adoption_20261023_plain/up/clear_up_avoidance/feedback_h264.mp4"
+    },
+    {
+      "group": "up",
+      "scenario": "fish_vertical",
+      "mode": "avoidance",
+      "task_pass": false,
+      "raw_task_completed": false,
+      "goal": true,
+      "valid_fraction": 0.7157894736842105,
+      "contact_3d": false,
+      "legacy_xy_contact": false,
+      "legacy_task_pass": false,
+      "elapsed_sim_s": 9.433333333333334,
+      "goal_held_stably_s": 0.0,
+      "intervention_frames": 0,
+      "actions": null,
+      "failures": [
+        "inspection_valid_fraction"
+      ],
+      "result": "mono/runs_review/wavelet_adoption_20261023_plain/up/fish_vertical_avoidance/result.json",
+      "feedback_video": "mono/runs_review/wavelet_adoption_20261023_plain/up/fish_vertical_avoidance/feedback_h264.mp4"
+    },
+    {
+      "group": "down",
+      "scenario": "clear_down",
+      "mode": "avoidance",
+      "task_pass": true,
+      "raw_task_completed": true,
+      "goal": true,
+      "valid_fraction": 1.0,
+      "contact_3d": false,
+      "legacy_xy_contact": false,
+      "legacy_task_pass": true,
+      "elapsed_sim_s": 37.96666666666667,
+      "goal_held_stably_s": 1.0,
+      "intervention_frames": 0,
+      "actions": null,
+      "failures": [],
+      "result": "mono/runs_review/wavelet_adoption_20261023_plain_resume/down/clear_down_avoidance/clear_down_avoidance/result.json",
+      "feedback_video": "mono/runs_review/wavelet_adoption_20261023_plain_resume/down/clear_down_avoidance/clear_down_avoidance/feedback_h264.mp4"
+    },
+    {
+      "group": "down",
+      "scenario": "fish_down_vertical",
+      "mode": "avoidance",
+      "task_pass": false,
+      "raw_task_completed": false,
+      "goal": false,
+      "valid_fraction": 1.0,
+      "contact_3d": false,
+      "legacy_xy_contact": true,
+      "legacy_task_pass": false,
+      "elapsed_sim_s": 44.96666666666667,
+      "goal_held_stably_s": 0.0,
+      "intervention_frames": 374,
+      "actions": null,
+      "failures": [
+        "goal_reached",
+        "goal_stability_hold"
+      ],
+      "result": "mono/runs_review/wavelet_adoption_20261023_plain_down_fish_parallel/fish_down_vertical_avoidance/result.json",
+      "feedback_video": "mono/runs_review/wavelet_adoption_20261023_plain_down_fish_parallel/fish_down_vertical_avoidance/feedback_h264.mp4"
+    }
+  ],
+  "videos": [
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_plain/straight/clear_pipe_avoidance/feedback.mp4",
+      "decoded_frames": 483,
+      "fps": 30.0,
+      "sha256": "0c69364ead0a9e8f00a3a7d4a2db0ca308cfba795097bc03a733e8246993364a"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_plain/straight/clear_pipe_avoidance/feedback_h264.mp4",
+      "decoded_frames": 483,
+      "fps": 30.0,
+      "sha256": "598eb5300b64dc8b70050d24695f67f38a479208bbc792a58d0935a16c9bc3ee"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_plain/straight/head_on_avoidance/feedback.mp4",
+      "decoded_frames": 539,
+      "fps": 30.0,
+      "sha256": "065f4c2048dff726798844b2d6a809fad81a52446879aa18b40ca5637b2e1a78"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_plain/straight/head_on_avoidance/feedback_h264.mp4",
+      "decoded_frames": 539,
+      "fps": 30.0,
+      "sha256": "31e7325ade3f46b4edc98632a3cc0d9ff961bb56e7081321bde9d7e4c98fcdb2"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_plain/up/clear_up_avoidance/feedback.mp4",
+      "decoded_frames": 276,
+      "fps": 30.0,
+      "sha256": "4509ab4efe2c0fd88319961beb5ddaae8e392eaff2fbf3399584807ab6073490"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_plain/up/clear_up_avoidance/feedback_h264.mp4",
+      "decoded_frames": 276,
+      "fps": 30.0,
+      "sha256": "d49143edbd72d2cd5b0ba9a231450a2576b289f2f58378a83044d5570e94eda3"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_plain/up/fish_vertical_avoidance/feedback.mp4",
+      "decoded_frames": 277,
+      "fps": 30.0,
+      "sha256": "d2491ee6cc510c321f1852d3662a59d17e4c49a5d604660fa028d9a65bf994b9"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_plain/up/fish_vertical_avoidance/feedback_h264.mp4",
+      "decoded_frames": 277,
+      "fps": 30.0,
+      "sha256": "2be5bcc3b4a755fde33d47c87c7ffb420d34d9b8bba80d1062fee9de9aa459be"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_plain_resume/down/clear_down_avoidance/clear_down_avoidance/feedback.mp4",
+      "decoded_frames": 1133,
+      "fps": 30.0,
+      "sha256": "7dafb26d1473d73d0c3a2f604ae615f8bca9200b94108435024588ed81520a38"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_plain_resume/down/clear_down_avoidance/clear_down_avoidance/feedback_h264.mp4",
+      "decoded_frames": 1133,
+      "fps": 30.0,
+      "sha256": "c13d6518c8f2cb02b0a8a13972083bce935f9a28298aff468b44cf19b44091d2"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_plain_down_fish_parallel/fish_down_vertical_avoidance/feedback.mp4",
+      "decoded_frames": 1343,
+      "fps": 30.0,
+      "sha256": "ed296edff578a5b8e5c9fa402fd3e2a22c0461c27ede4f1bb31e0009e7c74a89"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_plain_down_fish_parallel/fish_down_vertical_avoidance/feedback_h264.mp4",
+      "decoded_frames": 1343,
+      "fps": 30.0,
+      "sha256": "5bb2746c121cb0e4f46a653d3bcc27b821dbad14699ed96851e0194f1c40dae2"
+    }
+  ],
+  "all_directed_tasks_pass": false,
+  "wall_timing_affected_by_concurrent_workers_and_suspension": true,
+  "scope": "Directed integration only; not full mission matrix or independent model generalization"
+}

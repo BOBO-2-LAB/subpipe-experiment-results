@@ -1,0 +1,58 @@
+{
+  "tag": "squid_real",
+  "args": {
+    "data_root": "[本地引用:bcf6a38854661709]",
+    "layout": "nested",
+    "size": [
+      384,
+      576
+    ],
+    "epochs": 600,
+    "batch": 2,
+    "lr": 0.0002,
+    "max_disp": 96,
+    "disp_scale": 256.0,
+    "sup_weight": 1.0,
+    "grad_thresh": 0.3,
+    "mask_guided": false,
+    "fx": 752.6,
+    "baseline": 0.5,
+    "no_pretrained": false,
+    "workers": 0,
+    "eval_every": 50,
+    "seed": 42,
+    "tag": "squid_real",
+    "out": "[本地引用:6f25ac148c8515b3]"
+  },
+  "params_M": {
+    "total": 0.503184,
+    "encoder": 0.336692,
+    "volume": 0.0,
+    "agg": 0.026649,
+    "decoder": 0.13965
+  },
+  "val_metrics": {
+    "mIoU": 0.31542290581525917,
+    "IoU_pipe": 0.0,
+    "IoU_bg": 0.6308458116305183,
+    "Dice": 0.0,
+    "Precision": 0.0,
+    "Recall": 0.0,
+    "Dice_bg": 0.7736424953623289,
+    "F_boundary": 0.0,
+    "n_frames": 2,
+    "EPE": 6.745330520512733,
+    "D1": 0.6525969267539261,
+    "RMSE": 9.151094991472819,
+    "depth_MAE_mm": 6013.77380187371,
+    "n_px": 354804
+  },
+  "complexity": {
+    "Params_M": 0.503,
+    "input": "576x384",
+    "latency_ms_median": 16.03,
+    "FPS": 62.4,
+    "FLOPs_G": 6.28
+  },
+  "train_seconds": 388.4
+}

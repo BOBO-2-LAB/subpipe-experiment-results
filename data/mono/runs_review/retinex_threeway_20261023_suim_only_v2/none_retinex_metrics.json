@@ -1,0 +1,166 @@
+{
+  "architecture": "none",
+  "input": "retinex",
+  "profile": "mono/runs_review/retinex_threeway_20261023_suim_only_v2/none_retinex.json",
+  "profile_sha256": "1142107259fb7cc062070a2afa1c365c9f4946dfadd8e541ce19ea27ffcc9817",
+  "provenance": {
+    "profile_path": "mono/runs_review/retinex_threeway_20261023_suim_only_v2/none_retinex.json",
+    "profile_sha256": "1142107259fb7cc062070a2afa1c365c9f4946dfadd8e541ce19ea27ffcc9817",
+    "profile": {
+      "schema_version": 1,
+      "name": "none_retinex",
+      "pipe_checkpoint": "mono/runs_ablation/M11/best.pt",
+      "fish_checkpoint": "mono/runs_fish/wavelet_20261023_seed42_gpu/none/best.pt",
+      "pipe_sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a",
+      "fish_sha256": "6eeb3afab454d97990c9228a8307f24045eab0787edca49bd9a6d22d0fe00b42",
+      "fish_wavelet": "none",
+      "fish_wavelet_stage": "s8",
+      "includes_deepcamo": false,
+      "adoption_status": "Preregistered research comparison; not an operational replacement",
+      "fish_preprocess": {
+        "mode": "msr_luminance_v1",
+        "strength": 0.35,
+        "sigma_fractions": [
+          0.04,
+          0.1,
+          0.21
+        ],
+        "target_luminance": 0.45,
+        "max_gain": 2.5,
+        "illumination_max_side": 192
+      }
+    },
+    "checkpoints": [
+      {
+        "path": "mono/runs_ablation/M11/best.pt",
+        "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+      },
+      {
+        "path": "mono/runs_fish/wavelet_20261023_seed42_gpu/none/best.pt",
+        "sha256": "6eeb3afab454d97990c9228a8307f24045eab0787edca49bd9a6d22d0fe00b42"
+      }
+    ],
+    "model_config": {
+      "num_fish_classes": 8,
+      "fish_mid": 64,
+      "separate_encoder": true,
+      "fish_wavelet": "none",
+      "fish_wavelet_stage": "s8"
+    },
+    "pipe_exactly_matches_reference": true,
+    "fish_preprocess": {
+      "mode": "msr_luminance_v1",
+      "strength": 0.35,
+      "sigma_fractions": [
+        0.04,
+        0.1,
+        0.21
+      ],
+      "target_luminance": 0.45,
+      "max_gain": 2.5,
+      "illumination_max_side": 192
+    }
+  },
+  "pipe_bitwise_equal": true,
+  "suim": {
+    "per_class_iou": {
+      "BW": 0.8265490668374084,
+      "HD": 0.6683433457630397,
+      "PF": 0.13394919168591224,
+      "WR": 0.6828986850678481,
+      "RO": 0.603681035621505,
+      "RI": 0.7196710308667392,
+      "FV": 0.6049258149532215,
+      "SR": 0.525377775021861
+    },
+    "fish_iou": 0.6049258149532215,
+    "bio_iou": 0.48618201250195775,
+    "all_iou": 0.5956744932271919,
+    "negative_crops": 52,
+    "negative_candidates": 10,
+    "gate": "p(FV)>0.5; largest 8-connected component >=400px at 384x384",
+    "confusion": [
+      [
+        6344851,
+        26954,
+        7128,
+        131550,
+        8003,
+        144375,
+        114937,
+        272728
+      ],
+      [
+        14692,
+        317959,
+        0,
+        15868,
+        17211,
+        383,
+        25064,
+        4064
+      ],
+      [
+        25296,
+        4564,
+        88856,
+        66,
+        178,
+        111569,
+        24691,
+        88943
+      ],
+      [
+        28692,
+        19873,
+        32445,
+        1423307,
+        1079,
+        31457,
+        12331,
+        39834
+      ],
+      [
+        3725,
+        4741,
+        1,
+        3801,
+        68551,
+        300,
+        312,
+        32
+      ],
+      [
+        111300,
+        2174,
+        226318,
+        90908,
+        2521,
+        6047554,
+        346446,
+        695073
+      ],
+      [
+        59096,
+        8048,
+        7000,
+        10663,
+        781,
+        275653,
+        1576182,
+        64980
+      ],
+      [
+        382988,
+        14147,
+        46301,
+        242340,
+        2319,
+        317189,
+        79395,
+        2490981
+      ]
+    ]
+  },
+  "wall_seconds_including_preprocess": 1.9479518000007374
+}

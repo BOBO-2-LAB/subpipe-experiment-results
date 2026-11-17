@@ -1,0 +1,23 @@
+{
+  "baseline": "mono/runs_review/a1_plain_dw_after_cv_20261031_v1",
+  "cases": [
+    "mixed_fish",
+    "fish_down_corner",
+    "fish_up",
+    "fish_up_before",
+    "fish_up_corner",
+    "fish_down",
+    "mixed_clear",
+    "clear_straight"
+  ],
+  "changed_sources": [
+    "avoid/unified_tracking.py"
+  ],
+  "controller": "one configuration shared by every scenario",
+  "pipe": "A1 plain Haar + depthwise separable decoder; preselected original checkpoint",
+  "biology": "unchanged original SUIM8, no wavelet or DeepCamo",
+  "acceptance": "unchanged frozen v45 scorer; valid>=90%, IoU>=.5, corridor<=1m, reach and coverage",
+  "truth_access": "renderer/scorer only; no scenario names or truth in controller",
+  "fps": 30,
+  "promotion": "full 52 paired episodes only after every targeted avoidance case passes"
+}

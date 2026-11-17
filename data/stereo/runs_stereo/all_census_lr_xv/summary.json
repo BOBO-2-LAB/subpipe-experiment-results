@@ -1,0 +1,110 @@
+{
+  "tag": "all_census_lr_xv",
+  "args": {
+    "data_root": "[本地引用:d292ffae675f42c3]",
+    "layout": "nested",
+    "size": [
+      384,
+      576
+    ],
+    "epochs": 500,
+    "batch": 4,
+    "lr": 0.0002,
+    "max_disp": 192,
+    "disp_scale": 256.0,
+    "sup_weight": 1.0,
+    "grad_thresh": 0.3,
+    "mask_guided": false,
+    "no_census": false,
+    "census_k": 5,
+    "no_lr": false,
+    "lr_thresh": 1.5,
+    "conf_temp": 1.0,
+    "lr_cons_weight": 0.1,
+    "xv_photo": 0.35,
+    "fx": 1000.0,
+    "baseline": 0.5,
+    "no_pretrained": false,
+    "workers": 0,
+    "eval_every": 100,
+    "seed": 42,
+    "tag": "all_census_lr_xv",
+    "out": "[本地引用:6f25ac148c8515b3]"
+  },
+  "params_M": {
+    "total": 0.525,
+    "encoder": 0.336692,
+    "volume": 0.0,
+    "census": 0.0,
+    "census_volume": 0.0,
+    "agg": 0.048465,
+    "decoder": 0.13965
+  },
+  "val_metrics": {
+    "mIoU": 0.28021805374689535,
+    "IoU_pipe": 0.0,
+    "IoU_bg": 0.5604361074937907,
+    "Dice": 0.0,
+    "Precision": 0.0,
+    "Recall": 0.0,
+    "Dice_bg": 0.7183070230205125,
+    "F_boundary": 0.0,
+    "n_frames": 6,
+    "n": 1119411,
+    "EPE": 18.066448211669922,
+    "D1": 0.8444128036499023,
+    "RMSE": 24.594650268554688,
+    "depth_MAE_mm": 2712.082275390625,
+    "n_px": 1119411,
+    "lr_valid_frac": 0.28782278299331665,
+    "EPE_lrvalid": 15.146240234375,
+    "D1_lrvalid": 0.8205914497375488,
+    "coverage_lrvalid": 0.28782278299331665,
+    "coverage_curve": {
+      "0.00": {
+        "coverage": 1.0,
+        "EPE": 18.066,
+        "D1": 0.8444,
+        "depth_MAE_mm": 2712.1
+      },
+      "0.30": {
+        "coverage": 0.1822797954082489,
+        "EPE": 8.707,
+        "D1": 0.7582,
+        "depth_MAE_mm": 4109.7
+      },
+      "0.50": {
+        "coverage": 0.09585040807723999,
+        "EPE": 7.367,
+        "D1": 0.7449,
+        "depth_MAE_mm": 4404.0
+      },
+      "0.70": {
+        "coverage": 0.04315037280321121,
+        "EPE": 6.917,
+        "D1": 0.7419,
+        "depth_MAE_mm": 4593.2
+      },
+      "0.90": {
+        "coverage": 0.006704418454319239,
+        "EPE": 6.521,
+        "D1": 0.7158,
+        "depth_MAE_mm": 5032.8
+      },
+      "0.95": {
+        "coverage": 0.0010112461168318987,
+        "EPE": 5.77,
+        "D1": 0.6263,
+        "depth_MAE_mm": 4751.8
+      }
+    }
+  },
+  "complexity": {
+    "Params_M": 0.525,
+    "input": "576x384",
+    "latency_ms_median": 38.7,
+    "FPS": 25.8,
+    "FLOPs_G": 8.33
+  },
+  "train_seconds": 724.1
+}

@@ -1,0 +1,158 @@
+[
+  {
+    "scenario": "fish_bend",
+    "mode": "avoidance",
+    "invalid_inspection_frames": 7,
+    "invalid_iou": 7,
+    "invalid_current": 0,
+    "invalid_corridor": 0,
+    "phase_frames": {
+      "inspection": 223,
+      "endpoint_hold": 67
+    },
+    "events": {
+      "fish_first_visible": 0.5333333333333333,
+      "fish_first_detection": 1.3666666666666667,
+      "fish_first_effective_detection": 1.3666666666666667,
+      "first_confirmed_track": 1.6666666666666667,
+      "first_intervention": 1.6666666666666667,
+      "first_goal_region_entry": 9.866666666666667
+    },
+    "bend_confirmed_s": 2.3333333333333335,
+    "cap_confirmed_s": 4.866666666666666,
+    "speed_saturation_frames": 0,
+    "acceleration_saturation_frames": 0,
+    "sway_saturation_frames": 73,
+    "maximum_cross_track_m": 0.9357486208930473,
+    "minimum_3d_clearance_m": 0.3834283607160489,
+    "recovery_events": []
+  },
+  {
+    "scenario": "fish_vertical",
+    "mode": "avoidance",
+    "invalid_inspection_frames": 15,
+    "invalid_iou": 15,
+    "invalid_current": 0,
+    "invalid_corridor": 0,
+    "phase_frames": {
+      "inspection": 211,
+      "endpoint_hold": 131
+    },
+    "events": {
+      "fish_first_visible": 2.5666666666666664,
+      "fish_first_detection": 3.4,
+      "fish_first_effective_detection": 3.4,
+      "first_confirmed_track": 3.7333333333333334,
+      "first_intervention": 3.7333333333333334,
+      "first_goal_region_entry": 11.6
+    },
+    "bend_confirmed_s": 2.3333333333333335,
+    "cap_confirmed_s": 6.666666666666667,
+    "speed_saturation_frames": 0,
+    "acceleration_saturation_frames": 1,
+    "sway_saturation_frames": 69,
+    "maximum_cross_track_m": 0.9021162609304835,
+    "minimum_3d_clearance_m": 0.3427375931491665,
+    "recovery_events": []
+  },
+  {
+    "scenario": "fish_vertical",
+    "mode": "tracker_only",
+    "invalid_inspection_frames": 82,
+    "invalid_iou": 82,
+    "invalid_current": 0,
+    "invalid_corridor": 0,
+    "phase_frames": {
+      "inspection": 235,
+      "endpoint_hold": 17
+    },
+    "events": {
+      "fish_first_visible": 2.5666666666666664,
+      "fish_first_detection": 3.4,
+      "fish_first_effective_detection": 3.4,
+      "first_confirmed_track": 3.7333333333333334,
+      "first_goal_region_entry": 8.6
+    },
+    "bend_confirmed_s": 2.3333333333333335,
+    "cap_confirmed_s": 8.066666666666666,
+    "speed_saturation_frames": 0,
+    "acceleration_saturation_frames": 1,
+    "sway_saturation_frames": 0,
+    "maximum_cross_track_m": 0.29117351449622886,
+    "minimum_3d_clearance_m": 0.10009203532121458,
+    "recovery_events": []
+  },
+  {
+    "scenario": "clear_up",
+    "mode": "avoidance",
+    "invalid_inspection_frames": 0,
+    "invalid_iou": 0,
+    "invalid_current": 0,
+    "invalid_corridor": 0,
+    "phase_frames": {
+      "inspection": 223,
+      "endpoint_hold": 51
+    },
+    "events": {
+      "first_goal_region_entry": 9.333333333333334
+    },
+    "bend_confirmed_s": 2.3333333333333335,
+    "cap_confirmed_s": 3.966666666666667,
+    "speed_saturation_frames": 0,
+    "acceleration_saturation_frames": 0,
+    "sway_saturation_frames": 0,
+    "maximum_cross_track_m": 0.18563473971767652,
+    "minimum_3d_clearance_m": null,
+    "recovery_events": []
+  },
+  {
+    "scenario": "clear_up",
+    "mode": "tracker_only",
+    "invalid_inspection_frames": 0,
+    "invalid_iou": 0,
+    "invalid_current": 0,
+    "invalid_corridor": 0,
+    "phase_frames": {
+      "inspection": 223,
+      "endpoint_hold": 51
+    },
+    "events": {
+      "first_goal_region_entry": 9.333333333333334
+    },
+    "bend_confirmed_s": 2.3333333333333335,
+    "cap_confirmed_s": 3.966666666666667,
+    "speed_saturation_frames": 0,
+    "acceleration_saturation_frames": 0,
+    "sway_saturation_frames": 0,
+    "maximum_cross_track_m": 0.18563473971767652,
+    "minimum_3d_clearance_m": null,
+    "recovery_events": []
+  },
+  {
+    "scenario": "fish_bend",
+    "mode": "tracker_only",
+    "invalid_inspection_frames": 69,
+    "invalid_iou": 69,
+    "invalid_current": 0,
+    "invalid_corridor": 0,
+    "phase_frames": {
+      "inspection": 207,
+      "endpoint_hold": 51
+    },
+    "events": {
+      "fish_first_visible": 0.5333333333333333,
+      "fish_first_detection": 1.3666666666666667,
+      "fish_first_effective_detection": 1.3666666666666667,
+      "first_confirmed_track": 1.6666666666666667,
+      "first_goal_region_entry": 8.8
+    },
+    "bend_confirmed_s": 2.3333333333333335,
+    "cap_confirmed_s": 5.333333333333333,
+    "speed_saturation_frames": 0,
+    "acceleration_saturation_frames": 0,
+    "sway_saturation_frames": 0,
+    "maximum_cross_track_m": 0.3175060686847986,
+    "minimum_3d_clearance_m": 0.10027899769611726,
+    "recovery_events": []
+  }
+]

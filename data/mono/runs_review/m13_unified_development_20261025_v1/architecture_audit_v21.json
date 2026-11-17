@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "scope": "static architecture/interface checks, not a formal taint proof",
+  "snapshot": "mono/runs_review/m13_unified_critical_v21_20261026_v1/source_snapshot",
+  "checks": {
+    "one_common_tracker_constructor": true,
+    "constructor_inputs_only_camera_config": true,
+    "no_scene_truth_names_in_core": true,
+    "no_per_scene_config_assignment": true,
+    "command_has_no_external_route": true
+  },
+  "constructor_args": [
+    [
+      "renderer.camera",
+      "cfg"
+    ]
+  ],
+  "common_core_sha256": "111a984f075719cb7cda97b7a20e7db7f1f06380627efa806b030b7357132f78",
+  "models_changed": false
+}

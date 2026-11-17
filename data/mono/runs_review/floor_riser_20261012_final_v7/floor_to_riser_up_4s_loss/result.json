@@ -1,0 +1,31 @@
+{
+  "scenario": "floor_to_riser_up_4s_loss",
+  "task_completed": true,
+  "goal_reached": true,
+  "stop_reason": "goal_reached",
+  "elapsed_s": 16.2,
+  "inspection_valid_fraction": 0.9735849056603774,
+  "all_frame_valid_fraction": 0.7354166666666667,
+  "maximum_cross_track_m": 0.22259556474124764,
+  "minimum_pipe_clearance_3d_m": 1.434065922853802,
+  "first_bend_confirmation_s": 2.6333333333333333,
+  "first_heave_s": 2.966666666666667,
+  "end_distance_m": 0.1988664882713961,
+  "events": [
+    {
+      "t": 5.233333333333333,
+      "event": "loss_wait_started"
+    },
+    {
+      "t": 9.733333333333333,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 12.4,
+      "event": "reinspection_started"
+    }
+  ],
+  "fixed_gimbal": false,
+  "terminal_pipe_observed": true,
+  "pipe_arc_observation_fraction": 0.9375
+}

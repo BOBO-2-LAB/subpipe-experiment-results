@@ -1,0 +1,161 @@
+{
+  "scope": "Vertical-plane monocular integration, level hull with surge/heave; known side standoff and plane prior; reused training photo appearance; no real-vehicle/general 3D validation",
+  "timing": "30 Hz fixed simulated time; measured inference latency not injected",
+  "config": {
+    "camera_mount": "fixed side-looking, upright; optical axis toward the declared vertical inspection plane",
+    "standoff_m": 2.0,
+    "initial_depth_m": 20.0,
+    "pipe_width_prior_m": 0.8,
+    "cruise_mps": 0.5,
+    "inspection_command_floor_mps": 0.4,
+    "lookahead_m": 0.7,
+    "outgoing_min_m": 0.45,
+    "outgoing_span_m": 0.4,
+    "outgoing_edge_span_m": [
+      0.4,
+      1.2
+    ],
+    "outgoing_min_points": 8,
+    "normal_gain": 0.8,
+    "surge_max_mps": 0.6,
+    "heave_max_mps": 0.2,
+    "response_tau_s": 0.6,
+    "acceleration_mps2": 0.35,
+    "control_rate_hz": 10.0,
+    "image_delay_s": 0.21,
+    "wait_before_retreat_s": 8.0,
+    "reinspect_overlap_m": 0.3,
+    "reacquire_s": 0.5,
+    "max_loss_s": 20.0,
+    "assumptions": "Side mount, known perpendicular observation distance, ideal pressure depth/odometry and vertical-plane prior are explicit simulation assumptions. Heave limits are assumed, not measured BlueROV2 performance. Hull stays level; zero surge during ascent/descent is not zero route speed. No pitch actuator, seabed, pressure or tether physics."
+  },
+  "camera_reference_profile": {
+    "schema_version": 1,
+    "name": "BlueROV2 planar inspection reference with 4K Cam",
+    "scope": "Published hardware references plus explicit uncalibrated planar simulation assumptions",
+    "sources": {
+      "vehicle": "https://bluerobotics.com/store/rov/bluerov2/",
+      "vehicle_datasheet": "https://bluerobotics.com/wp-content/uploads/2025/04/BROV2-DATASHEET.pdf",
+      "camera": "https://bluerobotics.com/store/sensors-cameras/cameras/4k-cam/",
+      "retrieved_date": "2026-10-11"
+    },
+    "published_vehicle": {
+      "length_m": 0.457,
+      "width_m": 0.338,
+      "height_m": 0.254,
+      "mass_in_air_kg_range": [
+        11,
+        12
+      ],
+      "thrusters": 6,
+      "horizontal_thrusters": 4,
+      "vertical_thrusters": 2,
+      "forward_bollard_thrust_kgf": 9,
+      "depth_rating_aluminum_m": 300,
+      "usage": "Dimensional and propulsion reference, not a deep-sea pressure-rating claim"
+    },
+    "vehicle": {
+      "class": "rov_thruster_planar",
+      "dp_capable": true,
+      "cruise_speed_mps": 0.5,
+      "max_speed_mps": 1.5,
+      "min_control_speed_mps": 0.0,
+      "tau_s": 1.5,
+      "accel_mps2": 0.25,
+      "decel_mps2": 0.35
+    },
+    "interface": {
+      "control_rate_hz": 10.0
+    },
+    "camera": {
+      "model": "Blue Robotics 4K Cam (wide setting, nominal pinhole)",
+      "native_stream_width": 1920,
+      "native_stream_height": 1080,
+      "frame_rate_hz": 30,
+      "horizontal_fov_deg": 94,
+      "vertical_fov_deg": 62,
+      "published_lens_to_screen_delay_s": 0.21,
+      "published_delay_test_setup": "1080p30 on 2024 M3 MacBook Air; not direct inference-input delay",
+      "simulation_width": 512,
+      "simulation_height": 288,
+      "pitch_deg": 45,
+      "altitude_m": 2.0
+    },
+    "controller": {
+      "kp": 0.75,
+      "max_yaw_rate_rad_s": 0.35,
+      "yaw_response_tau_s": 0.6,
+      "loss_timeout_s": 3.0
+    },
+    "simulation": {
+      "fish_height_m": 1.5,
+      "boat_radius_m": 0.32,
+      "pipe_width_m": 0.8,
+      "image_delay_s": 0.21,
+      "delay_usage": "Stress proxy only; do not equate display latency with measured camera-to-inference delay",
+      "resize_short": 288,
+      "fish_resize_short": 288,
+      "max_seconds": 30
+    },
+    "assumption_notes": [
+      "No calibrated lens distortion, housing refraction, current compensation or tether drag",
+      "Planar surge/yaw only; published lateral/heave abilities are not fully implemented",
+      "Stopping surge is not verified station keeping",
+      "Hydrostatic depth, pressure and lighting physics are not simulated"
+    ]
+  },
+  "camera_mount_override": "Fixed side-looking upright; original 45-degree downward camera mounting is not used in this opt-in mode",
+  "coordinate_convention": "World X forward, world Y lateral, pressure depth positive down; initial pipe depth is an evaluation-only datum",
+  "truth_access": "Renderer and scorer only; controller receives predicted masks/RGB and measured X/depth odometry",
+  "criteria": {
+    "pipe_iou_min": 0.5,
+    "inspection_fraction_min": 0.9,
+    "corridor_m": 1,
+    "goal_distance_m": 0.2,
+    "terminal_surge_max_mps": 0.08,
+    "contact": "evaluation-only sphere and pipe-radius envelope"
+  },
+  "checkpoints": [
+    {
+      "path": "mono/runs_ablation/M11/best.pt",
+      "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+    },
+    {
+      "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+    }
+  ],
+  "implementation_hashes": [
+    {
+      "path": "mono/avoid/vertical_tracking.py",
+      "sha256": "7886818e928ceb8b8562bc5ec646419b1472538027cb0282550f717d09528814"
+    },
+    {
+      "path": "mono/avoid/centerline.py",
+      "sha256": "89af8e557c092339b4a6c627969afb942e6c27b0a6726ac9263dd53e1fb8d249"
+    },
+    {
+      "path": "mono/tools/vertical_closed_loop.py",
+      "sha256": "6b2d0451a0f9a664fd97a1c9c34cdd256439c50e094e2b26944ead0dcccfc1d0"
+    }
+  ],
+  "episodes": [
+    {
+      "scenario": "vertical_up_90",
+      "goal_reached": false,
+      "stop_reason": "insufficient_route_speed_capability",
+      "elapsed_s": 8.233333333333333,
+      "inspection_valid_fraction": 1.0,
+      "active_valid_fraction": 1.0,
+      "synthetic_pipe_iou": 0.9211422030661792,
+      "max_cross_track_m": 0.14246758797395032,
+      "minimum_pipe_clearance_3d_m": 1.28,
+      "corner_confirmation_s": 4.066666666666666,
+      "end_distance_m": 3.804394879808935,
+      "events": [],
+      "inference_mean_s": 0.08367854937755491,
+      "task_completed": false,
+      "legacy_task_completed": false
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "name": "visible_pipe_v1",
+  "scope": "Easier synthetic visibility condition. Rendering-only change; not independent recognition validation.",
+  "geometry": "Inherited original photo-plane pipe mask, width, route, camera, fish sprite and occlusion",
+  "visibility": {
+    "background_bgr": [
+      52.0,
+      54.0,
+      42.0
+    ],
+    "background_texture_weight": 0.15,
+    "background_blur_sigma": 3.0,
+    "pipe_texture_gain": 1.25,
+    "pipe_color_bgr": [
+      165.0,
+      145.0,
+      100.0
+    ],
+    "pipe_color_weight": 0.25,
+    "crown_light": 1.1,
+    "edge_light": 0.65,
+    "shadow_width_m": 0.12,
+    "shadow_opacity": 0.25
+  }
+}

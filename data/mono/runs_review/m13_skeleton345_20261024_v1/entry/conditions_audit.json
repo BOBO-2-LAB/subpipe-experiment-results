@@ -1,0 +1,25 @@
+{
+  "all_equal": true,
+  "shared_inputs": {
+    "reference_profile": true,
+    "camera_assumptions": true,
+    "vehicle_assumptions": true,
+    "image_delay_assumption_s": true,
+    "resize_short": true,
+    "fish_resize_short": true,
+    "pipe_width_m": true,
+    "boat_radius_m": true,
+    "fish_height_m": true,
+    "appearance_manifest": true,
+    "appearance_assets": true,
+    "checkpoints": true,
+    "tracker_assumptions": true,
+    "synthetic_inspection_criteria": true,
+    "inspection_scoring": true,
+    "loss_policy": true,
+    "pipe_motion_compensation": true,
+    "pipe_rotations": true,
+    "avoidance_config_overrides": true
+  },
+  "variable": "Only legacy finite-skeleton tracker versus explicit S345 geometry/EMA/reacquisition module. In particular S345 requires near-band skeleton support; legacy can select a far-only component."
+}

@@ -1,0 +1,493 @@
+{
+  "scope": "Six preselected poses, labels for scoring only; no tuning from predictions.",
+  "rows": [
+    {
+      "case": "straight_near",
+      "environment": "original",
+      "pipe_iou": 0.4372503166715385,
+      "foreground_luminance_contrast": 11.777416417884922,
+      "background_luminance_std": 8.448241770249659,
+      "visible_pipe_pixels": 19408,
+      "visible_fish_pixels": 0,
+      "raw_pipe_fraction": 0.0684475368923611,
+      "mean_true_pipe_probability": 0.4561721682548523,
+      "fish_prediction_pixels": 10549,
+      "pose": {
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "yaw_rate": 0.0
+      },
+      "scenario": {
+        "name": "clear_pipe",
+        "fish_x": null,
+        "fish_y": 0.0,
+        "fish_vy": 0.0,
+        "fish_radius": 0.45,
+        "current_y": 0.0,
+        "blackout_start": null,
+        "blackout_duration": 0.0,
+        "goal_x": 8.0,
+        "fish_dropout_start": null,
+        "fish_dropout_duration": 0.0,
+        "pipe_points": null
+      }
+    },
+    {
+      "case": "straight_near",
+      "environment": "visible",
+      "pipe_iou": 0.07647997164126197,
+      "foreground_luminance_contrast": 60.558426365308804,
+      "background_luminance_std": 2.442957668497575,
+      "visible_pipe_pixels": 19408,
+      "visible_fish_pixels": 0,
+      "raw_pipe_fraction": 0.033135308159722224,
+      "mean_true_pipe_probability": 0.11633580178022385,
+      "fish_prediction_pixels": 0,
+      "pose": {
+        "x": 0.0,
+        "y": 0.0,
+        "yaw": 0.0,
+        "yaw_rate": 0.0
+      },
+      "scenario": {
+        "name": "clear_pipe",
+        "fish_x": null,
+        "fish_y": 0.0,
+        "fish_vy": 0.0,
+        "fish_radius": 0.45,
+        "current_y": 0.0,
+        "blackout_start": null,
+        "blackout_duration": 0.0,
+        "goal_x": 8.0,
+        "fish_dropout_start": null,
+        "fish_dropout_duration": 0.0,
+        "pipe_points": null
+      }
+    },
+    {
+      "case": "straight_offset",
+      "environment": "original",
+      "pipe_iou": 0.5588994835121176,
+      "foreground_luminance_contrast": 15.984002428052747,
+      "background_luminance_std": 9.44302034507651,
+      "visible_pipe_pixels": 19474,
+      "visible_fish_pixels": 0,
+      "raw_pipe_fraction": 0.080810546875,
+      "mean_true_pipe_probability": 0.5530796051025391,
+      "fish_prediction_pixels": 21718,
+      "pose": {
+        "x": 2.0,
+        "y": 0.4,
+        "yaw": 0.08,
+        "yaw_rate": 0.0
+      },
+      "scenario": {
+        "name": "clear_pipe",
+        "fish_x": null,
+        "fish_y": 0.0,
+        "fish_vy": 0.0,
+        "fish_radius": 0.45,
+        "current_y": 0.0,
+        "blackout_start": null,
+        "blackout_duration": 0.0,
+        "goal_x": 8.0,
+        "fish_dropout_start": null,
+        "fish_dropout_duration": 0.0,
+        "pipe_points": null
+      }
+    },
+    {
+      "case": "straight_offset",
+      "environment": "visible",
+      "pipe_iou": 0.06735222878511027,
+      "foreground_luminance_contrast": 54.04016749816801,
+      "background_luminance_std": 2.597962119415253,
+      "visible_pipe_pixels": 19474,
+      "visible_fish_pixels": 0,
+      "raw_pipe_fraction": 0.038275824652777776,
+      "mean_true_pipe_probability": 0.10692880302667618,
+      "fish_prediction_pixels": 0,
+      "pose": {
+        "x": 2.0,
+        "y": 0.4,
+        "yaw": 0.08,
+        "yaw_rate": 0.0
+      },
+      "scenario": {
+        "name": "clear_pipe",
+        "fish_x": null,
+        "fish_y": 0.0,
+        "fish_vy": 0.0,
+        "fish_radius": 0.45,
+        "current_y": 0.0,
+        "blackout_start": null,
+        "blackout_duration": 0.0,
+        "goal_x": 8.0,
+        "fish_dropout_start": null,
+        "fish_dropout_duration": 0.0,
+        "pipe_points": null
+      }
+    },
+    {
+      "case": "straight_fish",
+      "environment": "original",
+      "pipe_iou": 0.7563386834147476,
+      "foreground_luminance_contrast": 15.474133492973024,
+      "background_luminance_std": 10.25891895347713,
+      "visible_pipe_pixels": 14242,
+      "visible_fish_pixels": 13478,
+      "raw_pipe_fraction": 0.10823567708333333,
+      "mean_true_pipe_probability": 0.900341272354126,
+      "fish_prediction_pixels": 22050,
+      "pose": {
+        "x": 3.8,
+        "y": 0.0,
+        "yaw": 0.0,
+        "yaw_rate": 0.0
+      },
+      "scenario": {
+        "name": "head_on",
+        "fish_x": 5.0,
+        "fish_y": 0.0,
+        "fish_vy": 0.0,
+        "fish_radius": 0.45,
+        "current_y": 0.0,
+        "blackout_start": null,
+        "blackout_duration": 0.0,
+        "goal_x": 8.0,
+        "fish_dropout_start": null,
+        "fish_dropout_duration": 0.0,
+        "pipe_points": null
+      }
+    },
+    {
+      "case": "straight_fish",
+      "environment": "visible",
+      "pipe_iou": 0.03647194064165535,
+      "foreground_luminance_contrast": 52.33887695630383,
+      "background_luminance_std": 2.5976175583614194,
+      "visible_pipe_pixels": 14242,
+      "visible_fish_pixels": 13478,
+      "raw_pipe_fraction": 0.03793674045138889,
+      "mean_true_pipe_probability": 0.07948656380176544,
+      "fish_prediction_pixels": 116,
+      "pose": {
+        "x": 3.8,
+        "y": 0.0,
+        "yaw": 0.0,
+        "yaw_rate": 0.0
+      },
+      "scenario": {
+        "name": "head_on",
+        "fish_x": 5.0,
+        "fish_y": 0.0,
+        "fish_vy": 0.0,
+        "fish_radius": 0.45,
+        "current_y": 0.0,
+        "blackout_start": null,
+        "blackout_duration": 0.0,
+        "goal_x": 8.0,
+        "fish_dropout_start": null,
+        "fish_dropout_duration": 0.0,
+        "pipe_points": null
+      }
+    },
+    {
+      "case": "left_bend",
+      "environment": "original",
+      "pipe_iou": 0.09436018809753667,
+      "foreground_luminance_contrast": 15.362851779940272,
+      "background_luminance_std": 10.063923978965448,
+      "visible_pipe_pixels": 25982,
+      "visible_fish_pixels": 0,
+      "raw_pipe_fraction": 0.062113444010416664,
+      "mean_true_pipe_probability": 0.12732619047164917,
+      "fish_prediction_pixels": 5952,
+      "pose": {
+        "x": 2.6,
+        "y": 0.0,
+        "yaw": 0.0,
+        "yaw_rate": 0.0
+      },
+      "scenario": {
+        "name": "left",
+        "fish_x": null,
+        "fish_y": 0.0,
+        "fish_vy": 0.0,
+        "fish_radius": 0.45,
+        "current_y": 0.0,
+        "blackout_start": null,
+        "blackout_duration": 0.0,
+        "goal_x": 8.0,
+        "fish_dropout_start": null,
+        "fish_dropout_duration": 0.0,
+        "pipe_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            -5.0
+          ]
+        ]
+      }
+    },
+    {
+      "case": "left_bend",
+      "environment": "visible",
+      "pipe_iou": 0.031054693824681845,
+      "foreground_luminance_contrast": 54.78349687650551,
+      "background_luminance_std": 4.2428623600359865,
+      "visible_pipe_pixels": 25982,
+      "visible_fish_pixels": 0,
+      "raw_pipe_fraction": 0.039727105034722224,
+      "mean_true_pipe_probability": 0.07531485706567764,
+      "fish_prediction_pixels": 30828,
+      "pose": {
+        "x": 2.6,
+        "y": 0.0,
+        "yaw": 0.0,
+        "yaw_rate": 0.0
+      },
+      "scenario": {
+        "name": "left",
+        "fish_x": null,
+        "fish_y": 0.0,
+        "fish_vy": 0.0,
+        "fish_radius": 0.45,
+        "current_y": 0.0,
+        "blackout_start": null,
+        "blackout_duration": 0.0,
+        "goal_x": 8.0,
+        "fish_dropout_start": null,
+        "fish_dropout_duration": 0.0,
+        "pipe_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            -5.0
+          ]
+        ]
+      }
+    },
+    {
+      "case": "right_bend",
+      "environment": "original",
+      "pipe_iou": 0.18861284365308895,
+      "foreground_luminance_contrast": 10.169107980692061,
+      "background_luminance_std": 8.447504673672846,
+      "visible_pipe_pixels": 25982,
+      "visible_fish_pixels": 0,
+      "raw_pipe_fraction": 0.055135091145833336,
+      "mean_true_pipe_probability": 0.21396413445472717,
+      "fish_prediction_pixels": 2775,
+      "pose": {
+        "x": 2.6,
+        "y": 0.0,
+        "yaw": 0.0,
+        "yaw_rate": 0.0
+      },
+      "scenario": {
+        "name": "right",
+        "fish_x": null,
+        "fish_y": 0.0,
+        "fish_vy": 0.0,
+        "fish_radius": 0.45,
+        "current_y": 0.0,
+        "blackout_start": null,
+        "blackout_duration": 0.0,
+        "goal_x": 8.0,
+        "fish_dropout_start": null,
+        "fish_dropout_duration": 0.0,
+        "pipe_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            5.0
+          ]
+        ]
+      }
+    },
+    {
+      "case": "right_bend",
+      "environment": "visible",
+      "pipe_iou": 0.16296153102648367,
+      "foreground_luminance_contrast": 55.44845240752359,
+      "background_luminance_std": 3.690274497240568,
+      "visible_pipe_pixels": 25982,
+      "visible_fish_pixels": 0,
+      "raw_pipe_fraction": 0.06858995225694445,
+      "mean_true_pipe_probability": 0.19411121308803558,
+      "fish_prediction_pixels": 8386,
+      "pose": {
+        "x": 2.6,
+        "y": 0.0,
+        "yaw": 0.0,
+        "yaw_rate": 0.0
+      },
+      "scenario": {
+        "name": "right",
+        "fish_x": null,
+        "fish_y": 0.0,
+        "fish_vy": 0.0,
+        "fish_radius": 0.45,
+        "current_y": 0.0,
+        "blackout_start": null,
+        "blackout_duration": 0.0,
+        "goal_x": 8.0,
+        "fish_dropout_start": null,
+        "fish_dropout_duration": 0.0,
+        "pipe_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            5.0
+          ]
+        ]
+      }
+    },
+    {
+      "case": "right_turn",
+      "environment": "original",
+      "pipe_iou": 0.02786668522126357,
+      "foreground_luminance_contrast": 9.03779550258703,
+      "background_luminance_std": 7.668757223608064,
+      "visible_pipe_pixels": 28626,
+      "visible_fish_pixels": 0,
+      "raw_pipe_fraction": 0.006232367621527778,
+      "mean_true_pipe_probability": 0.05353705585002899,
+      "fish_prediction_pixels": 3404,
+      "pose": {
+        "x": 3.5,
+        "y": 0.3,
+        "yaw": 0.5,
+        "yaw_rate": 0.0
+      },
+      "scenario": {
+        "name": "right",
+        "fish_x": null,
+        "fish_y": 0.0,
+        "fish_vy": 0.0,
+        "fish_radius": 0.45,
+        "current_y": 0.0,
+        "blackout_start": null,
+        "blackout_duration": 0.0,
+        "goal_x": 8.0,
+        "fish_dropout_start": null,
+        "fish_dropout_duration": 0.0,
+        "pipe_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            5.0
+          ]
+        ]
+      }
+    },
+    {
+      "case": "right_turn",
+      "environment": "visible",
+      "pipe_iou": 0.0,
+      "foreground_luminance_contrast": 58.82216530829045,
+      "background_luminance_std": 4.898552645806122,
+      "visible_pipe_pixels": 28626,
+      "visible_fish_pixels": 0,
+      "raw_pipe_fraction": 0.016676161024305556,
+      "mean_true_pipe_probability": 0.03353679180145264,
+      "fish_prediction_pixels": 3,
+      "pose": {
+        "x": 3.5,
+        "y": 0.3,
+        "yaw": 0.5,
+        "yaw_rate": 0.0
+      },
+      "scenario": {
+        "name": "right",
+        "fish_x": null,
+        "fish_y": 0.0,
+        "fish_vy": 0.0,
+        "fish_radius": 0.45,
+        "current_y": 0.0,
+        "blackout_start": null,
+        "blackout_duration": 0.0,
+        "goal_x": 8.0,
+        "fish_dropout_start": null,
+        "fish_dropout_duration": 0.0,
+        "pipe_points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            5.0
+          ]
+        ]
+      }
+    }
+  ],
+  "geometry_audit": [
+    {
+      "case": "straight_near",
+      "pipe_and_fish_labels_identical": true
+    },
+    {
+      "case": "straight_offset",
+      "pipe_and_fish_labels_identical": true
+    },
+    {
+      "case": "straight_fish",
+      "pipe_and_fish_labels_identical": true
+    },
+    {
+      "case": "left_bend",
+      "pipe_and_fish_labels_identical": true
+    },
+    {
+      "case": "right_bend",
+      "pipe_and_fish_labels_identical": true
+    },
+    {
+      "case": "right_turn",
+      "pipe_and_fish_labels_identical": true
+    }
+  ]
+}

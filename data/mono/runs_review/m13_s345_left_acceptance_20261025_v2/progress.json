@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "expected_episodes": 8,
+  "completed_episodes": 8,
+  "pids": [
+    8872,
+    19492
+  ],
+  "implementation_source": "mono/runs_review/m13_s345_right_acceptance_20261025_v2/source_snapshot",
+  "avoidance_pass": 4,
+  "avoidance_total": 4,
+  "stage_release": {
+    "stage": "left",
+    "release": true,
+    "required": [
+      "bend_left_90",
+      "bend_left_fish_after"
+    ],
+    "nonblocking_after_cutoff": [
+      "bend_left_fish_before",
+      "bend_left_fish_corner"
+    ],
+    "blocking": [],
+    "evaluated_at": "2026-10-25T10:15:44.435921+08:00",
+    "left_cutoff": "2026-10-25T08:40:00+08:00",
+    "exemption_changes_task_result": false
+  }
+}

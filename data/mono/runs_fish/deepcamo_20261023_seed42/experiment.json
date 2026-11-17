@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "smoke_only": false,
+  "modes": [
+    "none",
+    "plain",
+    "attention"
+  ],
+  "epochs": 20,
+  "batch": 16,
+  "patience": 5,
+  "min_epochs": 5,
+  "lr": 3e-05,
+  "lr_min": 1e-06,
+  "deep_weight": 1.0,
+  "seed": 42,
+  "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "dataset": "mono/data_deepcamo/subset_20261023_v2",
+  "dataset_lock_sha256": "b1d27373a242e82dd8b9a9d979b71d7b861484b5428e9437ce229499e2f69edc",
+  "source_sha256": {
+    "data/deepcamo.py": "23c053c30013cbb3a6b1eaed8bf0e5b197fc49caee7a9dc40ecb35fab0bc06b1",
+    "data/gpu_suim.py": "f67f92e08d47a27a5ed318ab73be55890636fea9a4eb29dac0c664b403115e0c",
+    "data/suim_dataset.py": "960a1d7b476c6e76ceb946e0c528664d3f634c78ba8a0e45d98fe335b9b1b258",
+    "data/suim.py": "4bd649aecfaab90b14c2f561b3ec162da1e3258ea91dee04a5c96475c0bc95dc",
+    "tools/train_deepcamo.py": "4b24e96c7bddd3d707a5cebea61a0a402dbf3e528825ea9d9246cdc0e446b0c8",
+    "tools/deepcamo_metrics.py": "1b645990c81099e17821c8e00696e2939c6a946584a70e7176932a71a5c48502",
+    "tools/train_fish.py": "ce53624730d0dd09d0ece6b92d4f883439bae51ced629310ae3a935048af5b8a",
+    "tools/fish_wavelet_review.py": "d7250c1cc0e845943edcdad8dc6e78a2757299732ece58e59bf30dbbf34d637f",
+    "models/m11_fish.py": "64c334915af65628c8e10711ff83ae87129d92fb84c58721345d67b32d3bac4f",
+    "models/wavelet.py": "615d41b92dc33d0d77c2598f033704665cc72dfed11e3774f363802f798f81b5",
+    "models/pipeline_net.py": "866dda33380115b0df9c7ebbd39a2500abd55eb506cc6f4b4b00adbebd7f25c5",
+    "models/efsnet.py": "f4230543c69d66b5096de0792832dab6c138a93b57253c4ca3de996ce8a4adb4",
+    "models/decoder.py": "9fa7f7d85ea7e42d013e80e82fa6e9d0e8ada6b3ab88a200a1b262022574d363",
+    "tests/test_deepcamo_training.py": "03e0329ad24392156cb82c160d38467b66c71e61042467379703edb3efeda081"
+  },
+  "original_weights_preserved": 123,
+  "initial_weights": {
+    "none": {
+      "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+    },
+    "plain": {
+      "path": "mono/runs_fish/wavelet_20261023_seed42_gpu/plain/best.pt",
+      "sha256": "9848481413a4a279360e7a214281995d7d618c925e11008bff157de693f98b7c"
+    },
+    "attention": {
+      "path": "mono/runs_fish/wavelet_20261023_seed42_gpu/attention/best.pt",
+      "sha256": "6386036ed2f670ecd05199c4e544564b447b9f37afbbbd1564254e4d353f6d73"
+    }
+  },
+  "supervision": "SUIM full 8-class CE+Dice; original DeepCamo FG FV-only CE, no negative DeepCamo pixels or pseudo-labels",
+  "test_policy": "No test images loaded before all runs finish and selections are hash-locked",
+  "selection": "max DeepCamo val macro IoU; best additionally requires no SUIM FV/bio or negative-candidate regression; epoch0 fallback",
+  "bn_running_statistics": "frozen",
+  "adopted_as_default": false,
+  "started_epoch_time": 1792721805.6229498,
+  "elapsed_s": 331.6730766296387,
+  "old_weights_unchanged": true,
+  "test_evaluated": true
+}

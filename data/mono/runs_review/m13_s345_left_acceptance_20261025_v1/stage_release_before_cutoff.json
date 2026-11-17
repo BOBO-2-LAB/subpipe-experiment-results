@@ -1,0 +1,18 @@
+{
+  "stage": "left",
+  "release": false,
+  "required": [
+    "bend_left_90",
+    "bend_left_fish_after",
+    "bend_left_fish_before",
+    "bend_left_fish_corner"
+  ],
+  "nonblocking_after_cutoff": [],
+  "blocking": [
+    "bend_left_fish_before:inspection_valid_fraction",
+    "bend_left_fish_corner:inspection_valid_fraction"
+  ],
+  "evaluated_at": "2026-10-25T08:28:03.268637+08:00",
+  "left_cutoff": "2026-10-25T08:40:00+08:00",
+  "exemption_changes_task_result": false
+}

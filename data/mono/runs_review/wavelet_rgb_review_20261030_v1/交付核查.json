@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checks": {
+    "tables_unchanged": true,
+    "human_observation_only": true,
+    "rgb_implementation_disclosed": true,
+    "human_outcomes_pending": true,
+    "retinex_excluded": true,
+    "historical_input_result_removed_from_paper": true,
+    "math_and_protected_inputs_passed": true,
+    "human_ui_test_passed": true,
+    "rgb_count": true,
+    "comparisons_count": true,
+    "subbands_count": true,
+    "unlabelled_video_examples_count": true,
+    "all_pngs_decode": true,
+    "one_A4_page": true,
+    "all_text_inside_page": true,
+    "human_scope_in_pdf": true
+  },
+  "visual_review_passed": true,
+  "pdf_pages": 1,
+  "new_module_tests": {
+    "passed": 14,
+    "command": "python -B -m unittest tests.test_wavelet_rgb_review tests.test_image_quality -v"
+  },
+  "human_observation_only": true,
+  "real_human_observer_results": false,
+  "new_training": false,
+  "current_production_inputs_changed": false,
+  "previous_optional_input_diagnostic_preserved": true
+}

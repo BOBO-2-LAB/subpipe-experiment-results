@@ -1,0 +1,70 @@
+{
+  "scenario": "clear_straight",
+  "mode": "avoidance",
+  "task_completed": false,
+  "goal_reached": false,
+  "inspection_recovered": false,
+  "stop_reason": "corridor_exceeded",
+  "inspection_valid_fraction": 0.765625,
+  "valid_frames": 49,
+  "inspection_frames": 64,
+  "all_frame_valid_fraction": 0.6901408450704225,
+  "contact_3d": false,
+  "contact_xy": false,
+  "primary_contact_rule": "XY",
+  "elapsed_s": 7.300000000000001,
+  "maximum_cross_track_m": 1.012448927882239,
+  "observed_elbows": [
+    {
+      "t": 3.9000000000000004,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        1.5,
+        0.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "gain": 0.9307479224376731
+    },
+    {
+      "t": 4.800000000000001,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        1.5,
+        0.0,
+        -1.5734999999999997
+      ],
+      "outgoing_xyz": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "gain": 1.5439632545931758
+    },
+    {
+      "t": 6.9,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        2.75,
+        0.0,
+        -1.5734999999999997
+      ],
+      "outgoing_xyz": [
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "gain": 0.660958904109589
+    }
+  ],
+  "intervention_frames": 0,
+  "prediction_valid_frames": 0,
+  "frames_logged": 71,
+  "video_frames_written": 71,
+  "fps": 10,
+  "configuration_sha256": "45f95d86bb6f361f0bff5206b8531bd68298851ae1fd50985d58995c0a5538da"
+}

@@ -1,0 +1,33 @@
+{
+  "scenario": "head_on",
+  "mode": "tracker_only",
+  "outcome": "collision",
+  "route_completed": false,
+  "task_completed": false,
+  "synthetic_inspection_valid_fraction": 0.5496688741721855,
+  "collision": true,
+  "minimum_clearance_m": -0.025587086249255542,
+  "encounter_passed": false,
+  "contact_metric": "horizontal footprint overlap; not physical 3D collision",
+  "inspection_recovery_time_s": null,
+  "elapsed_sim_s": 5.033333333333333,
+  "progress_m": 4.276995412221007,
+  "maximum_abs_cross_track_m": 0.043020429034640595,
+  "pipe_loss_frames": 0,
+  "longest_pipe_loss_s": 0.0,
+  "ground_truth_pipe_out_of_view_frames": 0,
+  "tracking_error_abs_mean": 0.045631860654994125,
+  "actions": {
+    "nominal": 151
+  },
+  "synthetic_pipe_iou": 0.46429411360085426,
+  "synthetic_fish_iou": 0.1253720738194458,
+  "visible_fish_frames": 43,
+  "fish_overlap_hit_frames": 5,
+  "fish_absent_but_detection_frames": 0,
+  "inference_wall_s_median": 0.014109899995673914,
+  "inference_wall_s_p95": 0.01737360000333865,
+  "frames": 151,
+  "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+  "video": "runs_review\\visual_closed_loop_photo\\head_on_tracker_only\\feedback.mp4"
+}

@@ -1,0 +1,207 @@
+{
+  "scope": "Monocular image-based 2.5D integration simulation; reused training appearance. Not independent recognition evaluation or real-vehicle safety validation.",
+  "truth_access": "Renderer and scorer only. Controller uses model masks/probabilities, their history, and simulated measured speed.",
+  "timing": "Fixed simulated time; inference latency is measured but not injected into feedback. Not a real-time or delay-robustness claim.",
+  "camera_assumptions": {
+    "width": 512,
+    "height": 288,
+    "focal_px": 280,
+    "pitch_deg": 20,
+    "altitude_m": 3
+  },
+  "vehicle_assumptions": {
+    "klass": "auv_fin",
+    "dp_capable": false,
+    "cruise_speed_mps": 0.85,
+    "max_speed_mps": 1.5,
+    "min_control_speed_mps": 0.4,
+    "tau_s": 1.5,
+    "accel_mps2": 0.25,
+    "decel_mps2": 0.35,
+    "control_rate_hz": 10.0
+  },
+  "rate_hz": 30,
+  "resize_short": 288,
+  "boat_radius_m": 0.3,
+  "pipe_width_m": 0.8,
+  "synthetic_inspection_criteria": {
+    "corridor_m": 1.0,
+    "frame_pipe_iou_min": 0.5,
+    "required_valid_fraction": 0.9,
+    "usage": "scoring only, never fed to controller"
+  },
+  "appearance_manifest": {
+    "pipe_cache_index": 81,
+    "ground_cache_index": 0,
+    "fish_video_frame": 240,
+    "fish_annotation": "manually outlined appearance sprite, not real-video evaluation ground truth",
+    "source_cache": "mono/cache/288x512",
+    "source_video": "测试视频.mp4"
+  },
+  "checkpoints": [
+    {
+      "path": "mono/runs_ablation/M11/best.pt",
+      "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+    },
+    {
+      "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "clear_pipe",
+      "fish_x": null,
+      "fish_y": 0.0,
+      "fish_vy": 0.0,
+      "fish_radius": 0.45,
+      "current_y": 0.0,
+      "blackout_start": null,
+      "blackout_duration": 0.0,
+      "goal_x": 8.0
+    },
+    {
+      "name": "head_on",
+      "fish_x": 5.0,
+      "fish_y": 0.0,
+      "fish_vy": 0.0,
+      "fish_radius": 0.45,
+      "current_y": 0.0,
+      "blackout_start": null,
+      "blackout_duration": 0.0,
+      "goal_x": 8.0
+    }
+  ],
+  "episodes": [
+    {
+      "scenario": "clear_pipe",
+      "mode": "tracker_only",
+      "outcome": "timeout",
+      "route_completed": false,
+      "task_completed": false,
+      "synthetic_inspection_valid_fraction": 0.0,
+      "collision": false,
+      "minimum_clearance_m": null,
+      "encounter_passed": false,
+      "inspection_recovery_time_s": null,
+      "elapsed_sim_s": 2.0,
+      "progress_m": 1.2886225414341335,
+      "maximum_abs_cross_track_m": 0.0,
+      "pipe_loss_frames": 60,
+      "longest_pipe_loss_s": 2.0,
+      "ground_truth_pipe_out_of_view_frames": 0,
+      "tracking_error_abs_mean": null,
+      "actions": {
+        "tracker_recovery": 60
+      },
+      "synthetic_pipe_iou": 0.03681473398134465,
+      "synthetic_fish_iou": 0.0,
+      "visible_fish_frames": 0,
+      "fish_overlap_hit_frames": 0,
+      "fish_absent_but_detection_frames": 6,
+      "inference_wall_s_median": 0.015809899996384047,
+      "inference_wall_s_p95": 0.01766852000291692,
+      "frames": 60,
+      "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+      "video": "runs_review\\visual_closed_loop_render_check\\clear_pipe_tracker_only\\feedback.mp4"
+    },
+    {
+      "scenario": "clear_pipe",
+      "mode": "avoidance",
+      "outcome": "timeout",
+      "route_completed": false,
+      "task_completed": false,
+      "synthetic_inspection_valid_fraction": 0.0,
+      "collision": false,
+      "minimum_clearance_m": null,
+      "encounter_passed": false,
+      "inspection_recovery_time_s": null,
+      "elapsed_sim_s": 2.0,
+      "progress_m": 1.2886225414341335,
+      "maximum_abs_cross_track_m": 0.0,
+      "pipe_loss_frames": 60,
+      "longest_pipe_loss_s": 2.0,
+      "ground_truth_pipe_out_of_view_frames": 0,
+      "tracking_error_abs_mean": null,
+      "actions": {
+        "tracker_recovery": 60
+      },
+      "synthetic_pipe_iou": 0.03681473398134465,
+      "synthetic_fish_iou": 0.0,
+      "visible_fish_frames": 0,
+      "fish_overlap_hit_frames": 0,
+      "fish_absent_but_detection_frames": 6,
+      "inference_wall_s_median": 0.01584444999753032,
+      "inference_wall_s_p95": 0.01853415499717812,
+      "frames": 60,
+      "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+      "video": "runs_review\\visual_closed_loop_render_check\\clear_pipe_avoidance\\feedback.mp4"
+    },
+    {
+      "scenario": "head_on",
+      "mode": "tracker_only",
+      "outcome": "timeout",
+      "route_completed": false,
+      "task_completed": false,
+      "synthetic_inspection_valid_fraction": 0.0,
+      "collision": false,
+      "minimum_clearance_m": 2.9103407122611182,
+      "encounter_passed": false,
+      "inspection_recovery_time_s": null,
+      "elapsed_sim_s": 2.0,
+      "progress_m": 1.3396955870154565,
+      "maximum_abs_cross_track_m": 0.01577569525389398,
+      "pipe_loss_frames": 54,
+      "longest_pipe_loss_s": 0.8666666666666666,
+      "ground_truth_pipe_out_of_view_frames": 0,
+      "tracking_error_abs_mean": 0.12524461839530335,
+      "actions": {
+        "tracker_recovery": 54,
+        "nominal": 6
+      },
+      "synthetic_pipe_iou": 0.024141551956911516,
+      "synthetic_fish_iou": 0.8619027539477128,
+      "visible_fish_frames": 60,
+      "fish_overlap_hit_frames": 60,
+      "fish_absent_but_detection_frames": 0,
+      "inference_wall_s_median": 0.01575194999895757,
+      "inference_wall_s_p95": 0.018839665003906696,
+      "frames": 60,
+      "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+      "video": "runs_review\\visual_closed_loop_render_check\\head_on_tracker_only\\feedback.mp4"
+    },
+    {
+      "scenario": "head_on",
+      "mode": "avoidance",
+      "outcome": "timeout",
+      "route_completed": false,
+      "task_completed": false,
+      "synthetic_inspection_valid_fraction": 0.0,
+      "collision": false,
+      "minimum_clearance_m": 2.9103407122611182,
+      "encounter_passed": false,
+      "inspection_recovery_time_s": null,
+      "elapsed_sim_s": 2.0,
+      "progress_m": 1.3396955870154565,
+      "maximum_abs_cross_track_m": 0.01577569525389398,
+      "pipe_loss_frames": 54,
+      "longest_pipe_loss_s": 0.8666666666666666,
+      "ground_truth_pipe_out_of_view_frames": 0,
+      "tracking_error_abs_mean": 0.12524461839530335,
+      "actions": {
+        "tracker_recovery": 54,
+        "nominal": 6
+      },
+      "synthetic_pipe_iou": 0.024141551956911516,
+      "synthetic_fish_iou": 0.8619027539477128,
+      "visible_fish_frames": 60,
+      "fish_overlap_hit_frames": 60,
+      "fish_absent_but_detection_frames": 0,
+      "inference_wall_s_median": 0.016130849999171915,
+      "inference_wall_s_p95": 0.019986190004419768,
+      "frames": 60,
+      "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+      "video": "runs_review\\visual_closed_loop_render_check\\head_on_avoidance\\feedback.mp4"
+    }
+  ]
+}

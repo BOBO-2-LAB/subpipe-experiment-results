@@ -1,0 +1,132 @@
+{
+  "complete_paired_episodes": 8,
+  "avoidance_passed": 1,
+  "avoidance_total": 4,
+  "deadline_exemptions": false,
+  "episodes": [
+    {
+      "scenario": "bend_left_fish_before",
+      "mode": "avoidance",
+      "passed": false,
+      "valid_frames": 504,
+      "inspection_frames": 587,
+      "valid_fraction": 0.858603066439523,
+      "whole_valid_fraction": 0.7006369426751592,
+      "goal": true,
+      "recovered": true,
+      "contact_2d": false,
+      "contact_3d": false,
+      "minimum_clearance_m": 0.0657889168320297,
+      "cross_track_max_m": 0.8972389714174265,
+      "elapsed_s": 26.166666666666668,
+      "intervention_frames": 240,
+      "failed_checks": "inspection_valid_fraction",
+      "result": "mono/runs_review/m13_s345_left_encounter_baseline_20261025_v1/closed_loop/worker_0/bend_left_fish_before_avoidance/result.json",
+      "invalid_iou": 47,
+      "invalid_current": 39,
+      "phases": {
+        "initialization_wait": 16,
+        "inspection": 587,
+        "debounce_hold": 77,
+        "waiting": 105
+      },
+      "temporal_rejection": {
+        "confirming_turn_or_outlier": 10,
+        "confirming_reacquisition": 29
+      }
+    },
+    {
+      "scenario": "bend_left_fish_corner",
+      "mode": "avoidance",
+      "passed": false,
+      "valid_frames": 425,
+      "inspection_frames": 478,
+      "valid_fraction": 0.8891213389121339,
+      "whole_valid_fraction": 0.7318952234206472,
+      "goal": true,
+      "recovered": true,
+      "contact_2d": false,
+      "contact_3d": false,
+      "minimum_clearance_m": 0.4949650331787523,
+      "cross_track_max_m": 0.9096473184527403,
+      "elapsed_s": 21.633333333333336,
+      "intervention_frames": 264,
+      "failed_checks": "inspection_valid_fraction",
+      "result": "mono/runs_review/m13_s345_left_encounter_baseline_20261025_v1/closed_loop/worker_1/bend_left_fish_corner_avoidance/result.json",
+      "invalid_iou": 23,
+      "invalid_current": 32,
+      "phases": {
+        "initialization_wait": 16,
+        "inspection": 478,
+        "debounce_hold": 108,
+        "waiting": 47
+      },
+      "temporal_rejection": {
+        "confirming_reacquisition": 28,
+        "confirming_turn_or_outlier": 4
+      }
+    },
+    {
+      "scenario": "bend_right_fish_before",
+      "mode": "avoidance",
+      "passed": false,
+      "valid_frames": 205,
+      "inspection_frames": 238,
+      "valid_fraction": 0.8613445378151261,
+      "whole_valid_fraction": 0.5408805031446541,
+      "goal": false,
+      "recovered": false,
+      "contact_2d": true,
+      "contact_3d": false,
+      "minimum_clearance_m": -0.0009671882974831014,
+      "cross_track_max_m": 0.9228404450930725,
+      "elapsed_s": 15.9,
+      "intervention_frames": 249,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered;original_planar_no_contact",
+      "result": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1/closed_loop/worker_0/bend_right_fish_before_avoidance/result.json",
+      "invalid_iou": 5,
+      "invalid_current": 29,
+      "phases": {
+        "initialization_wait": 22,
+        "inspection": 238,
+        "debounce_hold": 84,
+        "waiting": 133
+      },
+      "temporal_rejection": {
+        "confirming_reacquisition": 23,
+        "confirming_turn_or_outlier": 6
+      }
+    },
+    {
+      "scenario": "bend_right_fish_corner",
+      "mode": "avoidance",
+      "passed": true,
+      "valid_frames": 453,
+      "inspection_frames": 485,
+      "valid_fraction": 0.934020618556701,
+      "whole_valid_fraction": 0.86,
+      "goal": true,
+      "recovered": true,
+      "contact_2d": false,
+      "contact_3d": false,
+      "minimum_clearance_m": 0.5687759246470907,
+      "cross_track_max_m": 0.9555303015216536,
+      "elapsed_s": 18.333333333333336,
+      "intervention_frames": 229,
+      "failed_checks": "",
+      "result": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1/closed_loop/worker_1/bend_right_fish_corner_avoidance/result.json",
+      "invalid_iou": 21,
+      "invalid_current": 11,
+      "phases": {
+        "initialization_wait": 21,
+        "inspection": 485,
+        "debounce_hold": 28,
+        "waiting": 16
+      },
+      "temporal_rejection": {
+        "confirming_reacquisition": 10,
+        "confirming_turn_or_outlier": 1
+      }
+    }
+  ]
+}

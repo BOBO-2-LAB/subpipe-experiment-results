@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "inverse_luminance_max_error": 2.384185791015625e-07,
+  "protected_files_unchanged": {
+    "mono/cache/288x512/val_img.npy": true,
+    "mono/cache/288x512/val_msk.npy": true,
+    "mono/cache/288x512/meta.json": true,
+    "mono/runs_review/m13_seg_ablation_20261027_v2/evaluation.json": true,
+    "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M13/best.pt": true,
+    "mono/runs_fish/suim8_sep_e60/best.pt": true,
+    "mono/configs/m13_unified_tracking_v45.json": true,
+    "mono/avoid/wavelet_rgb_review.py": true,
+    "mono/models/wavelet.py": true,
+    "mono/models/pipeline_net.py": true,
+    "mono/data/image_quality.py": true,
+    "mono/data/metrics.py": true,
+    "mono/tools/wavelet_rgb_review.py": true,
+    "mono/tests/test_wavelet_rgb_review.py": true,
+    "mono/requirements-review.txt": true
+  },
+  "model_state_unchanged": true,
+  "raw_m13_reference_delta": {
+    "IoU_pipe": -1.927057341810645e-06,
+    "Dice": -1.3723098810647372e-06,
+    "Precision": 7.10928990532711e-06,
+    "Recall": -1.3977957735833435e-05,
+    "F_boundary": -0.00012095892491342797
+  },
+  "human_observer_results_exist": false,
+  "production_default_changed": false
+}

@@ -1,0 +1,770 @@
+{
+  "status": "PASS",
+  "meaning": "Artifact integrity and completed experiment stages; not mission acceptance",
+  "all_four_stages_complete": true,
+  "deepcamo_used": false,
+  "old_weights_unchanged": true,
+  "source_snapshots_verified": true,
+  "pipe_output_bitwise_equal": true,
+  "training_validation_disjoint": true,
+  "hard_sample_train_only_verified": true,
+  "upweighted_reviewed_training_images": 18,
+  "full_closed_loop_acceptance_run": false,
+  "operational_defaults_changed": false,
+  "actual_trained_checkpoint_audit": [
+    {
+      "stage": "hard",
+      "mode": "none",
+      "arm": "control",
+      "path": "mono/runs_review/fish_priority_20261023/02_hard_training/none_control/last.pt",
+      "sha256": "a8abde95ffff6b18837399dcfcf710e2c1f79d4c39c96a5e8f041434c961116d",
+      "actual_training_epochs": 6,
+      "pipe_exactly_matches_reference": true
+    },
+    {
+      "stage": "hard",
+      "mode": "none",
+      "arm": "candidate",
+      "path": "mono/runs_review/fish_priority_20261023/02_hard_training/none_candidate/last.pt",
+      "sha256": "861ac1443e9203c6f5b65b5c160f784cd3b2a0829b688945f64374ac06d68542",
+      "actual_training_epochs": 6,
+      "pipe_exactly_matches_reference": true
+    },
+    {
+      "stage": "hard",
+      "mode": "plain",
+      "arm": "control",
+      "path": "mono/runs_review/fish_priority_20261023/02_hard_training/plain_control/last.pt",
+      "sha256": "7478843ff733d8fa46e481fa5d16a7418b2f9bf31a5236772f4a21552dde5865",
+      "actual_training_epochs": 6,
+      "pipe_exactly_matches_reference": true
+    },
+    {
+      "stage": "hard",
+      "mode": "plain",
+      "arm": "candidate",
+      "path": "mono/runs_review/fish_priority_20261023/02_hard_training/plain_candidate/last.pt",
+      "sha256": "f81b58c5662320d35ab4625b6f2eeb90c75220a8ff2f6d58161203ebec06f2c9",
+      "actual_training_epochs": 6,
+      "pipe_exactly_matches_reference": true
+    },
+    {
+      "stage": "hard",
+      "mode": "attention",
+      "arm": "control",
+      "path": "mono/runs_review/fish_priority_20261023/02_hard_training/attention_control/last.pt",
+      "sha256": "3fb0bafe6cbc3012d2f0950a1e6ba8b15b510f427ac4448b0db9553b8cd8891b",
+      "actual_training_epochs": 6,
+      "pipe_exactly_matches_reference": true
+    },
+    {
+      "stage": "hard",
+      "mode": "attention",
+      "arm": "candidate",
+      "path": "mono/runs_review/fish_priority_20261023/02_hard_training/attention_candidate/last.pt",
+      "sha256": "6a1551dfafaeb3cfe33619a613a685cf1de36b209d826d39c2ff80e8a243ca63",
+      "actual_training_epochs": 6,
+      "pipe_exactly_matches_reference": true
+    },
+    {
+      "stage": "fusion",
+      "mode": "none",
+      "arm": "control",
+      "path": "mono/runs_review/fish_priority_20261023/03_fusion_training/none_control/last.pt",
+      "sha256": "79bff32b201645ef6ed3a28c27a046216f11bbcc65873f126473eeb6558f9324",
+      "actual_training_epochs": 6,
+      "pipe_exactly_matches_reference": true
+    },
+    {
+      "stage": "fusion",
+      "mode": "none",
+      "arm": "candidate",
+      "path": "mono/runs_review/fish_priority_20261023/03_fusion_training/none_candidate/last.pt",
+      "sha256": "6b8b1a9c88874e67f51742a8c166b64fb8be5ac808be46f0cd66a95fe862e6d8",
+      "actual_training_epochs": 6,
+      "pipe_exactly_matches_reference": true,
+      "trained_fusion_gates": [
+        -0.0014936919324100018,
+        -6.434288661694154e-05
+      ]
+    },
+    {
+      "stage": "fusion",
+      "mode": "plain",
+      "arm": "control",
+      "path": "mono/runs_review/fish_priority_20261023/03_fusion_training/plain_control/last.pt",
+      "sha256": "90027f91b5a5adfd0361b70e1e5bd2bd1793ae2df772c0d4bb9b15622ab13507",
+      "actual_training_epochs": 6,
+      "pipe_exactly_matches_reference": true
+    },
+    {
+      "stage": "fusion",
+      "mode": "plain",
+      "arm": "candidate",
+      "path": "mono/runs_review/fish_priority_20261023/03_fusion_training/plain_candidate/last.pt",
+      "sha256": "ca70c1133f9fb9f19f56a6ebbc60858bd4e1e0bc0ea347a56d85d26881ecd9cd",
+      "actual_training_epochs": 6,
+      "pipe_exactly_matches_reference": true,
+      "trained_fusion_gates": [
+        -0.00028590127476491034,
+        0.0010234866058453918
+      ]
+    },
+    {
+      "stage": "fusion",
+      "mode": "attention",
+      "arm": "control",
+      "path": "mono/runs_review/fish_priority_20261023/03_fusion_training/attention_control/last.pt",
+      "sha256": "e07f61c1bab5844694d8be1e9c008d13f97eec05dc21c3fbdadc010644d2a228",
+      "actual_training_epochs": 6,
+      "pipe_exactly_matches_reference": true
+    },
+    {
+      "stage": "fusion",
+      "mode": "attention",
+      "arm": "candidate",
+      "path": "mono/runs_review/fish_priority_20261023/03_fusion_training/attention_candidate/last.pt",
+      "sha256": "937002955ca5a47112b7008e0da2bf7f26aebe6dd35bb6b205596b12b6a4471d",
+      "actual_training_epochs": 6,
+      "pipe_exactly_matches_reference": true,
+      "trained_fusion_gates": [
+        0.0016673702048137784,
+        0.0019366753986105323
+      ]
+    }
+  ],
+  "original_cache_regression": [
+    {
+      "mode": "none",
+      "original": "mono/runs_fish/wavelet_20261023_seed42_gpu/none/best.pt",
+      "selected_research_checkpoint": "mono/runs_fish/wavelet_20261023_seed42_gpu/none/best.pt",
+      "selected_sha256": "6eeb3afab454d97990c9228a8307f24045eab0787edca49bd9a6d22d0fe00b42",
+      "original_cache_baseline": {
+        "per_class_iou": {
+          "BW": 0.8267742843235778,
+          "HD": 0.6839805404078558,
+          "PF": 0.13455348587465032,
+          "WR": 0.7172915486339598,
+          "RO": 0.6204930830398315,
+          "RI": 0.7178650039734061,
+          "FV": 0.6047289337950045,
+          "SR": 0.5338074780433524
+        },
+        "fish_iou": 0.6047289337950045,
+        "bio_iou": 0.48571580788102037,
+        "all_iou": 0.6049367947614548,
+        "negative_crops": 52,
+        "negative_candidates": 9,
+        "gate": "p(FV)>0.5; largest 8-connected component >=400px at 384x384",
+        "confusion": [
+          [
+            6337358,
+            28814,
+            7933,
+            137360,
+            8089,
+            145920,
+            107733,
+            277319
+          ],
+          [
+            15060,
+            323228,
+            0,
+            16061,
+            14239,
+            348,
+            21969,
+            4336
+          ],
+          [
+            30221,
+            4666,
+            90713,
+            87,
+            0,
+            107302,
+            27185,
+            83989
+          ],
+          [
+            26890,
+            17122,
+            8234,
+            1439503,
+            678,
+            40958,
+            10267,
+            45366
+          ],
+          [
+            3136,
+            3504,
+            0,
+            5947,
+            68356,
+            303,
+            169,
+            48
+          ],
+          [
+            104167,
+            1885,
+            255244,
+            55783,
+            2679,
+            6043325,
+            331070,
+            728141
+          ],
+          [
+            62431,
+            7380,
+            10206,
+            10612,
+            659,
+            284297,
+            1558046,
+            68772
+          ],
+          [
+            372730,
+            13957,
+            48398,
+            191991,
+            2357,
+            317048,
+            75641,
+            2553538
+          ]
+        ]
+      },
+      "original_cache_current": {
+        "per_class_iou": {
+          "BW": 0.8267742843235778,
+          "HD": 0.6839805404078558,
+          "PF": 0.13455348587465032,
+          "WR": 0.7172915486339598,
+          "RO": 0.6204930830398315,
+          "RI": 0.7178650039734061,
+          "FV": 0.6047289337950045,
+          "SR": 0.5338074780433524
+        },
+        "fish_iou": 0.6047289337950045,
+        "bio_iou": 0.48571580788102037,
+        "all_iou": 0.6049367947614548,
+        "negative_crops": 52,
+        "negative_candidates": 9,
+        "gate": "p(FV)>0.5; largest 8-connected component >=400px at 384x384",
+        "confusion": [
+          [
+            6337358,
+            28814,
+            7933,
+            137360,
+            8089,
+            145920,
+            107733,
+            277319
+          ],
+          [
+            15060,
+            323228,
+            0,
+            16061,
+            14239,
+            348,
+            21969,
+            4336
+          ],
+          [
+            30221,
+            4666,
+            90713,
+            87,
+            0,
+            107302,
+            27185,
+            83989
+          ],
+          [
+            26890,
+            17122,
+            8234,
+            1439503,
+            678,
+            40958,
+            10267,
+            45366
+          ],
+          [
+            3136,
+            3504,
+            0,
+            5947,
+            68356,
+            303,
+            169,
+            48
+          ],
+          [
+            104167,
+            1885,
+            255244,
+            55783,
+            2679,
+            6043325,
+            331070,
+            728141
+          ],
+          [
+            62431,
+            7380,
+            10206,
+            10612,
+            659,
+            284297,
+            1558046,
+            68772
+          ],
+          [
+            372730,
+            13957,
+            48398,
+            191991,
+            2357,
+            317048,
+            75641,
+            2553538
+          ]
+        ]
+      },
+      "original_cache_retained": true,
+      "pipe_bitwise_equal": true
+    },
+    {
+      "mode": "plain",
+      "original": "mono/runs_fish/wavelet_20261023_seed42_gpu/plain/best.pt",
+      "selected_research_checkpoint": "mono/runs_fish/wavelet_20261023_seed42_gpu/plain/best.pt",
+      "selected_sha256": "9848481413a4a279360e7a214281995d7d618c925e11008bff157de693f98b7c",
+      "original_cache_baseline": {
+        "per_class_iou": {
+          "BW": 0.8263679793351046,
+          "HD": 0.702755321755051,
+          "PF": 0.12925369197930087,
+          "WR": 0.7105061200651026,
+          "RO": 0.6201280344343322,
+          "RI": 0.718955033841306,
+          "FV": 0.6084370282730203,
+          "SR": 0.53899747313807
+        },
+        "fish_iou": 0.6084370282730203,
+        "bio_iou": 0.4855485846978757,
+        "all_iou": 0.6069250853526609,
+        "negative_crops": 52,
+        "negative_candidates": 8,
+        "gate": "p(FV)>0.5; largest 8-connected component >=400px at 384x384",
+        "confusion": [
+          [
+            6329135,
+            28160,
+            8536,
+            135059,
+            9201,
+            129209,
+            111205,
+            300021
+          ],
+          [
+            16409,
+            327030,
+            11,
+            17269,
+            11162,
+            269,
+            19022,
+            4069
+          ],
+          [
+            30890,
+            3911,
+            89195,
+            101,
+            0,
+            98065,
+            26563,
+            95438
+          ],
+          [
+            29554,
+            16436,
+            7327,
+            1425757,
+            933,
+            43892,
+            13758,
+            51361
+          ],
+          [
+            3916,
+            3742,
+            0,
+            5309,
+            68002,
+            294,
+            137,
+            63
+          ],
+          [
+            113722,
+            1781,
+            291055,
+            44828,
+            2357,
+            6024309,
+            325562,
+            718680
+          ],
+          [
+            60683,
+            2416,
+            10806,
+            11625,
+            2545,
+            279837,
+            1565907,
+            68584
+          ],
+          [
+            353279,
+            13667,
+            28179,
+            203469,
+            1997,
+            305397,
+            75005,
+            2594667
+          ]
+        ]
+      },
+      "original_cache_current": {
+        "per_class_iou": {
+          "BW": 0.8263679793351046,
+          "HD": 0.702755321755051,
+          "PF": 0.12925369197930087,
+          "WR": 0.7105061200651026,
+          "RO": 0.6201280344343322,
+          "RI": 0.718955033841306,
+          "FV": 0.6084370282730203,
+          "SR": 0.53899747313807
+        },
+        "fish_iou": 0.6084370282730203,
+        "bio_iou": 0.4855485846978757,
+        "all_iou": 0.6069250853526609,
+        "negative_crops": 52,
+        "negative_candidates": 8,
+        "gate": "p(FV)>0.5; largest 8-connected component >=400px at 384x384",
+        "confusion": [
+          [
+            6329135,
+            28160,
+            8536,
+            135059,
+            9201,
+            129209,
+            111205,
+            300021
+          ],
+          [
+            16409,
+            327030,
+            11,
+            17269,
+            11162,
+            269,
+            19022,
+            4069
+          ],
+          [
+            30890,
+            3911,
+            89195,
+            101,
+            0,
+            98065,
+            26563,
+            95438
+          ],
+          [
+            29554,
+            16436,
+            7327,
+            1425757,
+            933,
+            43892,
+            13758,
+            51361
+          ],
+          [
+            3916,
+            3742,
+            0,
+            5309,
+            68002,
+            294,
+            137,
+            63
+          ],
+          [
+            113722,
+            1781,
+            291055,
+            44828,
+            2357,
+            6024309,
+            325562,
+            718680
+          ],
+          [
+            60683,
+            2416,
+            10806,
+            11625,
+            2545,
+            279837,
+            1565907,
+            68584
+          ],
+          [
+            353279,
+            13667,
+            28179,
+            203469,
+            1997,
+            305397,
+            75005,
+            2594667
+          ]
+        ]
+      },
+      "original_cache_retained": true,
+      "pipe_bitwise_equal": true
+    },
+    {
+      "mode": "attention",
+      "original": "mono/runs_fish/wavelet_20261023_seed42_gpu/attention/best.pt",
+      "selected_research_checkpoint": "mono/runs_fish/wavelet_20261023_seed42_gpu/attention/best.pt",
+      "selected_sha256": "6386036ed2f670ecd05199c4e544564b447b9f37afbbbd1564254e4d353f6d73",
+      "original_cache_baseline": {
+        "per_class_iou": {
+          "BW": 0.8269361281233243,
+          "HD": 0.6961495626223198,
+          "PF": 0.1318011394211647,
+          "WR": 0.7135584828222783,
+          "RO": 0.6197853280016105,
+          "RI": 0.7210839706984569,
+          "FV": 0.6121800297760782,
+          "SR": 0.5271118562730395
+        },
+        "fish_iou": 0.6121800297760782,
+        "bio_iou": 0.48835504663189994,
+        "all_iou": 0.606075812217284,
+        "negative_crops": 52,
+        "negative_candidates": 9,
+        "gate": "p(FV)>0.5; largest 8-connected component >=400px at 384x384",
+        "confusion": [
+          [
+            6339748,
+            27197,
+            9335,
+            158336,
+            9560,
+            142245,
+            101896,
+            262209
+          ],
+          [
+            16583,
+            321910,
+            0,
+            18815,
+            12080,
+            577,
+            21316,
+            3960
+          ],
+          [
+            29837,
+            4925,
+            90133,
+            264,
+            0,
+            114224,
+            21464,
+            83316
+          ],
+          [
+            26504,
+            16113,
+            2643,
+            1485815,
+            1187,
+            17409,
+            10209,
+            29138
+          ],
+          [
+            3761,
+            3571,
+            0,
+            5867,
+            67732,
+            304,
+            166,
+            62
+          ],
+          [
+            103055,
+            1924,
+            275155,
+            53949,
+            2438,
+            6081297,
+            301806,
+            702670
+          ],
+          [
+            65296,
+            718,
+            10912,
+            13557,
+            56,
+            292586,
+            1547716,
+            71562
+          ],
+          [
+            370989,
+            12726,
+            41648,
+            242455,
+            2499,
+            343910,
+            68944,
+            2492489
+          ]
+        ]
+      },
+      "original_cache_current": {
+        "per_class_iou": {
+          "BW": 0.8269361281233243,
+          "HD": 0.6961495626223198,
+          "PF": 0.1318011394211647,
+          "WR": 0.7135584828222783,
+          "RO": 0.6197853280016105,
+          "RI": 0.7210839706984569,
+          "FV": 0.6121800297760782,
+          "SR": 0.5271118562730395
+        },
+        "fish_iou": 0.6121800297760782,
+        "bio_iou": 0.48835504663189994,
+        "all_iou": 0.606075812217284,
+        "negative_crops": 52,
+        "negative_candidates": 9,
+        "gate": "p(FV)>0.5; largest 8-connected component >=400px at 384x384",
+        "confusion": [
+          [
+            6339748,
+            27197,
+            9335,
+            158336,
+            9560,
+            142245,
+            101896,
+            262209
+          ],
+          [
+            16583,
+            321910,
+            0,
+            18815,
+            12080,
+            577,
+            21316,
+            3960
+          ],
+          [
+            29837,
+            4925,
+            90133,
+            264,
+            0,
+            114224,
+            21464,
+            83316
+          ],
+          [
+            26504,
+            16113,
+            2643,
+            1485815,
+            1187,
+            17409,
+            10209,
+            29138
+          ],
+          [
+            3761,
+            3571,
+            0,
+            5867,
+            67732,
+            304,
+            166,
+            62
+          ],
+          [
+            103055,
+            1924,
+            275155,
+            53949,
+            2438,
+            6081297,
+            301806,
+            702670
+          ],
+          [
+            65296,
+            718,
+            10912,
+            13557,
+            56,
+            292586,
+            1547716,
+            71562
+          ],
+          [
+            370989,
+            12726,
+            41648,
+            242455,
+            2499,
+            343910,
+            68944,
+            2492489
+          ]
+        ]
+      },
+      "original_cache_retained": true,
+      "pipe_bitwise_equal": true
+    }
+  ],
+  "test_log_sha256": "fd8b3b30f35b3da809bd9113c75fb02e9bbb1b760700e7259cde4df601949188",
+  "review_sources": {
+    "tools/fish_priority_review.py": "3a66ce67ffb4e86b78ea90784543890376687b5898789e1fbf84dd8809977dd2",
+    "tools/fish_priority_plots.py": "4993c011ddfdfd8de375db42b1e8bd36e8227b8befbf882ff59a74a201d25c48",
+    "models/inspection_loader.py": "d912dfda7d6e045d5ad491a3089f45410e0af670c0ebf57694b8b632a3d807ff",
+    "tests/test_fish_priority.py": "ca418037cd18d124f926eb964d86735a3eca1af5225addf9a249711160076114",
+    "tests/test_fish_temporal.py": "603ad9439defd6f7a79a4cd9d1cbbbffc788a19252c6cf4b1a4e56972d372b86"
+  }
+}

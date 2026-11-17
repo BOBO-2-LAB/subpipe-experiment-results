@@ -1,0 +1,115 @@
+{
+  "n_observers": 1,
+  "n_responses": 20,
+  "coverage": {
+    "1": {
+      "completed": 20,
+      "planned": 20,
+      "complete": true
+    }
+  },
+  "method_summary": [
+    {
+      "method": "raw",
+      "n": 20,
+      "mean": 1.95,
+      "std_across_images": 0.223606797749979,
+      "median": 2.0,
+      "preferred_count": 0,
+      "preferred_fraction": 0.0
+    },
+    {
+      "method": "plain",
+      "n": 20,
+      "mean": 2.95,
+      "std_across_images": 0.7591546545162482,
+      "median": 3.0,
+      "preferred_count": 8,
+      "preferred_fraction": 0.4
+    },
+    {
+      "method": "guided",
+      "n": 20,
+      "mean": 3.05,
+      "std_across_images": 0.7591546545162482,
+      "median": 3.0,
+      "preferred_count": 8,
+      "preferred_fraction": 0.4
+    }
+  ],
+  "labelled_pipe_summary": [
+    {
+      "method": "raw",
+      "n": 19,
+      "mean": 2.0,
+      "std_across_images": 0.0,
+      "median": 2.0,
+      "preferred_count": 0,
+      "preferred_fraction": 0.0
+    },
+    {
+      "method": "plain",
+      "n": 19,
+      "mean": 3.0526315789473686,
+      "std_across_images": 0.6212607441973955,
+      "median": 3.0,
+      "preferred_count": 8,
+      "preferred_fraction": 0.42105263157894735
+    },
+    {
+      "method": "guided",
+      "n": 19,
+      "mean": 3.1578947368421053,
+      "std_across_images": 0.6021404316396672,
+      "median": 3.0,
+      "preferred_count": 8,
+      "preferred_fraction": 0.42105263157894735
+    }
+  ],
+  "n_labelled_pipe_responses": 19,
+  "empty_label_cases": [
+    {
+      "case_id": "C14",
+      "stem": "1693574350.597",
+      "choice": "none"
+    }
+  ],
+  "choices": {
+    "guided": 8,
+    "plain": 8,
+    "tie": 3,
+    "none": 1
+  },
+  "paired_against_raw": {
+    "plain": {
+      "higher": 16,
+      "equal": 4,
+      "lower": 0,
+      "mean_difference": 1.0
+    },
+    "guided": {
+      "higher": 17,
+      "equal": 3,
+      "lower": 0,
+      "mean_difference": 1.1
+    }
+  },
+  "timing": {
+    "total_seconds": 83.242,
+    "median_seconds": 1.2145000000000001,
+    "less_than_one_second": 10,
+    "interpretation": "shared triplet review time, manually started after images are visible; not per-method identification speed"
+  },
+  "preferred_display_positions": {
+    "B": 12,
+    "C": 2,
+    "tie": 3,
+    "A": 2,
+    "none": 1
+  },
+  "inference": "single-observer exploratory subjective visibility ratings; not recognition accuracy or general human performance",
+  "source_csv_sha256": "1b319f50c2a7d469e38b61cfc313ee9cdb42db016717ef28d7cc2a6d9046f8f2",
+  "plan_sha256": "2710d28eb3db655e00410b1561075898301ae6ecb3a5a9a67cf6206650ce9388",
+  "labels_sha256": "176d78c1c20d9c9be0572b9c11f0a6f531c54d9d9a876e7ef6decc97bf819ea3",
+  "all_mappings_matched": true
+}

@@ -1,0 +1,68 @@
+{
+  "cpu_only": true,
+  "simulated_episodes_started": 0,
+  "pipe_output_equal": true,
+  "original_biology_output_equal": true,
+  "all_parameters_frozen": true,
+  "pipe_params": 943798,
+  "selection": {
+    "profile_path": "mono/runs_review/a1_plain_dw_after_cv_20261031_v1/perception_A1.json",
+    "profile_sha256": "e5ead8af15f5e1f7f80bbdb43dddab69513e593ed8fe15b5ed7a12cd39564b75",
+    "profile": {
+      "schema_version": 1,
+      "name": "A1_plain_Haar_DW_original_biology",
+      "composition": "independent_pipe_biology",
+      "pipe_architecture": "plain_wavelet_dw",
+      "pipe_checkpoint": "mono/runs_review/m13_seg_ablation_20261027_v2/training/M13_plain/best.pt",
+      "fish_checkpoint": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "pipe_sha256": "a30e636d0f8f5ae23e03a0c4a3ac145316815cc140201921a2aadeb2f642af4d",
+      "fish_sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2",
+      "fish_wavelet": "none",
+      "fish_wavelet_stage": "s8",
+      "includes_deepcamo": false
+    },
+    "checkpoints": [
+      {
+        "path": "mono/runs_review/m13_seg_ablation_20261027_v2/training/M13_plain/best.pt",
+        "sha256": "a30e636d0f8f5ae23e03a0c4a3ac145316815cc140201921a2aadeb2f642af4d"
+      },
+      {
+        "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+        "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+      }
+    ],
+    "model_config": {
+      "composition": "independent_pipe_biology",
+      "pipe_architecture": "plain_wavelet_dw",
+      "pipe_config": {
+        "num_classes": 2,
+        "in_ch": 3,
+        "pretrained": false,
+        "out_ch": [
+          64,
+          128,
+          256
+        ],
+        "wavelet": "plain",
+        "wavelet_plain_extra_blocks": 0,
+        "fusion": "concat",
+        "global_mode": "none",
+        "global_blocks": 1,
+        "global_stage": "s16",
+        "global_heads": 8,
+        "global_win": 7,
+        "decoder_mid": 128,
+        "decoder_skip": true,
+        "decoder_dw": true
+      },
+      "separate_encoder": true,
+      "num_fish_classes": 8,
+      "fish_mid": 64,
+      "fish_wavelet": "none",
+      "fish_wavelet_stage": "s8"
+    },
+    "biological_bundle_pipe_used": false,
+    "pipe_exactly_matches_reference": true,
+    "loader": "tools.plain_wavelet_unified_loop"
+  }
+}

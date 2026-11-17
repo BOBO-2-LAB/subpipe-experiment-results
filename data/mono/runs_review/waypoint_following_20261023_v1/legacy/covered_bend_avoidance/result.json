@@ -1,0 +1,231 @@
+{
+  "scenario": "covered_bend",
+  "mode": "avoidance",
+  "outcome": "timeout",
+  "route_completed": false,
+  "task_completed": false,
+  "legacy_task_completed": false,
+  "inspection_scoring": "inspection_phase",
+  "active_inspection_valid_fraction": 0.8571428571428571,
+  "active_inspection_frames": 182,
+  "corridor_preserved": true,
+  "inspection_recovered": true,
+  "synthetic_inspection_valid_fraction": 0.6696296296296296,
+  "collision": false,
+  "minimum_clearance_m": null,
+  "encounter_passed": false,
+  "footprint_contact": false,
+  "physical_collision": null,
+  "contact_metric": "horizontal footprint overlap; not physical 3D collision",
+  "inspection_recovery_time_s": null,
+  "elapsed_sim_s": 45.0,
+  "progress_m": 0.4777381762615329,
+  "maximum_abs_cross_track_m": 0.45629328357736915,
+  "pipe_loss_frames": 288,
+  "longest_pipe_loss_s": 0.7333333333333362,
+  "ground_truth_pipe_out_of_view_frames": 0,
+  "tracking_error_abs_mean": 0.0003938309642495217,
+  "actions": {
+    "tracker_recovery": 7,
+    "nominal": 175,
+    "recovery_waiting": 640,
+    "recovery_reinspect_reverse": 360,
+    "recovery_retreat_wait": 168
+  },
+  "synthetic_pipe_iou": 0.5528496571129763,
+  "synthetic_fish_iou": null,
+  "visible_fish_frames": 0,
+  "fish_overlap_hit_frames": 0,
+  "fish_absent_but_detection_frames": 0,
+  "inference_wall_s_median": 0.023195150002720766,
+  "inference_wall_s_p95": 0.028698840002107318,
+  "frames": 1350,
+  "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+  "video": "mono/runs_review/waypoint_following_20261023_v1/legacy/covered_bend_avoidance/feedback.mp4",
+  "event_times": {
+    "first_visible_s": null,
+    "first_effective_detection_s": null,
+    "first_matching_detection_s": null,
+    "first_confirmed_track_s": null,
+    "first_actionable_track_s": null,
+    "first_intervention_s": null,
+    "first_speed_command_reduction_s": 0.0,
+    "first_actual_speed_reduction_s": 0.13333333333333333,
+    "first_avoidance_setpoint_s": null,
+    "contact_s": null,
+    "detection_delay_s": null,
+    "confirmation_delay_s": null,
+    "decision_delay_s": null,
+    "actuation_delay_s": null,
+    "remaining_time_at_intervention_s": null,
+    "matching_to_first_confirmation_s": null,
+    "matching_to_actionable_track_s": null,
+    "association_caveat": "Global first events; matching-based intervals are not proof of same-fish track identity.",
+    "post_intervention_command_reduction_s": null,
+    "post_intervention_actual_speed_response_s": null,
+    "post_intervention_actuation_delay_s": null
+  },
+  "minimum_sphere_clearance_m": null,
+  "simplified_3d_contact": null,
+  "sphere_metric": "Assumed sphere envelopes at fixed heights; evaluation only. Episode still stops at original horizontal contact.",
+  "speed_saturation_frames": 10,
+  "injected_fish_dropout_frames": 0,
+  "configured_image_delay_s": 0.21,
+  "loss_recovery_events": [
+    {
+      "t": 0.8,
+      "event": "loss_wait_started",
+      "measured_anchor": [
+        0.25954002265608855,
+        -5.0479312331825634e-05,
+        -8.751791588696027e-06
+      ]
+    },
+    {
+      "t": 1.6333333333333333,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 3.5666666666666664,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 6.233333333333333,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 7.266666666666667,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 9.0,
+      "event": "retreat_to_last_observed_corridor"
+    },
+    {
+      "t": 12.7,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 12.7,
+      "event": "reinspection_started",
+      "measured_position": [
+        -0.13648464385652037,
+        1.5547159888416172e-05
+      ]
+    },
+    {
+      "t": 12.733333333333333,
+      "event": "loss_wait_started",
+      "measured_anchor": [
+        -0.14036204414409742,
+        8.366239769865438e-06,
+        -0.0005189588831601263
+      ]
+    },
+    {
+      "t": 14.366666666666667,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 16.5,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 19.666666666666668,
+      "event": "reinspection_started",
+      "measured_position": [
+        -0.43299439247328186,
+        -0.0004328248534345294
+      ]
+    },
+    {
+      "t": 21.8,
+      "event": "loss_wait_started",
+      "measured_anchor": [
+        -0.14659601643546394,
+        -0.0005816675725887682,
+        -0.0008014627703895561
+      ]
+    },
+    {
+      "t": 22.433333333333334,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 24.866666666666667,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 26.666666666666668,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 27.633333333333333,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 29.8,
+      "event": "retreat_to_last_observed_corridor"
+    },
+    {
+      "t": 30.233333333333334,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 30.466666666666665,
+      "event": "retreat_to_last_observed_corridor"
+    },
+    {
+      "t": 31.0,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 31.53333333333333,
+      "event": "retreat_to_last_observed_corridor"
+    },
+    {
+      "t": 32.1,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 33.266666666666666,
+      "event": "reinspection_started",
+      "measured_position": [
+        -0.4486199270408993,
+        -0.0003420882381910033
+      ]
+    },
+    {
+      "t": 36.36666666666667,
+      "event": "loss_wait_started",
+      "measured_anchor": [
+        0.19026530339468067,
+        -0.000942900885099323,
+        -0.0009332217946457882
+      ]
+    },
+    {
+      "t": 37.333333333333336,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 43.7,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 44.36666666666667,
+      "event": "retreat_to_last_observed_corridor"
+    },
+    {
+      "t": 44.733333333333334,
+      "event": "vision_reacquired"
+    }
+  ],
+  "reinspection_restarts": 3,
+  "pipe_mask_motion_compensated": true,
+  "raw_delayed_pipe_iou": 0.5601247212417296,
+  "raw_delayed_inspection_valid_fraction": 0.6703703703703704,
+  "raw_delayed_active_valid_fraction": 0.8626373626373627,
+  "raw_delayed_task_completed": false,
+  "realized_image_age_s_max": 0.23333333333333783
+}

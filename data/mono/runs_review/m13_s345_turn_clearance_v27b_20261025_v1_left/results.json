@@ -1,0 +1,43 @@
+{
+  "integrity_passed": true,
+  "episodes": [
+    {
+      "scenario": "bend_left_fish_before",
+      "mode": "avoidance",
+      "passed": false,
+      "valid_frames": 453,
+      "inspection_frames": 522,
+      "valid_fraction": 0.867816091954023,
+      "whole_valid_fraction": 0.6992084432717678,
+      "goal": true,
+      "recovered": true,
+      "contact_2d": false,
+      "contact_3d": false,
+      "minimum_clearance_m": 0.09019636487392912,
+      "cross_track_max_m": 0.9013638968452954,
+      "elapsed_s": 25.26666666666667,
+      "intervention_frames": 293,
+      "failed_checks": "inspection_valid_fraction",
+      "result": "mono/runs_review/m13_s345_turn_clearance_v27b_20261025_v1_left/closed_loop/worker_0/bend_left_fish_before_avoidance/result.json"
+    },
+    {
+      "scenario": "bend_left_fish_corner",
+      "mode": "avoidance",
+      "passed": true,
+      "valid_frames": 421,
+      "inspection_frames": 466,
+      "valid_fraction": 0.9034334763948498,
+      "whole_valid_fraction": 0.7458471760797342,
+      "goal": true,
+      "recovered": true,
+      "contact_2d": false,
+      "contact_3d": false,
+      "minimum_clearance_m": 0.4596250383392959,
+      "cross_track_max_m": 0.8814040812805493,
+      "elapsed_s": 20.066666666666666,
+      "intervention_frames": 261,
+      "failed_checks": "",
+      "result": "mono/runs_review/m13_s345_turn_clearance_v27b_20261025_v1_left/closed_loop/worker_1/bend_left_fish_corner_avoidance/result.json"
+    }
+  ]
+}

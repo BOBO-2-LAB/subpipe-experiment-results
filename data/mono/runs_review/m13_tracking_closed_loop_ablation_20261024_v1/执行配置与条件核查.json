@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "compared_arms": [
+    "paired_probability_temporal",
+    "probability_temporal",
+    "skeleton_temporal"
+  ],
+  "conditions_equal": {
+    "camera_assumptions": true,
+    "vehicle_assumptions": true,
+    "synthetic_inspection_criteria": true,
+    "appearance_assets": true,
+    "checkpoints": true,
+    "scenarios": true,
+    "rate_hz": true,
+    "resize_short": true,
+    "fish_resize_short": true,
+    "fish_height_m": true,
+    "avoidance_config_overrides": true,
+    "image_delay_assumption_s": true,
+    "inspection_scoring": true,
+    "loss_policy": true,
+    "tracker_sway": true,
+    "pipe_following": true,
+    "pipe_motion_compensation": true
+  },
+  "appearance_assets": [
+    {
+      "path": "mono/assets/visual_loop_photo_v2/ground.png",
+      "sha256": "b19a20361528ba7a9057f33e01da6152b2fd378155b63d016c525aee9c00d70b",
+      "unchanged": true
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/pipe.png",
+      "sha256": "421ec11cf08051cb25a1e24afbddc75c4cf30f84405bb9f46eadb5ffc4babe0c",
+      "unchanged": true
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/fish.png",
+      "sha256": "e8939701733d81630a994e6257ec495964acc7aee9177e10e3e79c033ba081ad",
+      "unchanged": true
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/manifest.json",
+      "sha256": "55a190333cf1acf83635f6f0cc010025894cb56b60aeffe79afb85c829df2e36",
+      "unchanged": true
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/photo_ground.png",
+      "sha256": "7debdb69980c1e1a9f83ebaaf5fc1146a01bd09d21efc516a1ef4815bd4639f7",
+      "unchanged": true
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/photo_pipe_mask.png",
+      "sha256": "d46768dc07512a92f22d2c7ee616af50894aa6f01f2cee31b6319304ebe109e1",
+      "unchanged": true
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/photo_background.png",
+      "sha256": "dc95aa5a9f5878ee2dedc282476c82da3beeb9e7068dd48daa89fe05c72edc0e",
+      "unchanged": true
+    }
+  ],
+  "actual_configs": {
+    "m13_probability_path_v1.json": {
+      "cell_m": 0.1,
+      "probability_floor": 0.18,
+      "measured_probability_min": 0.35,
+      "paired_contrast_min": 0.1,
+      "paired_rgb_min": 0.15,
+      "paired_fraction_min": 0.45,
+      "turn_cost": 0.8,
+      "temporal_weight": 0.3,
+      "min_span_cells": 6.0,
+      "prediction_timeout_s": 0.5,
+      "innovation_gate": 16.0
+    },
+    "m13_selective_recovery_v1.json": {
+      "jitter_s": 0.5,
+      "confirm_s": 0.2,
+      "gap_min_m": 0.15,
+      "overlap_m": 0.15,
+      "max_loss_s": 20.0,
+      "max_reverse_m": 1.0,
+      "max_reverse_s": 8.0,
+      "max_attempts_per_region": 1,
+      "max_attempts_total": 3,
+      "region_radius_m": 0.6,
+      "clearance_progress_m": 0.8,
+      "cooldown_s": 3.0
+    },
+    "m13_segment_observations_v1.json": {
+      "association_m": 0.18,
+      "tangent_cosine_min": 0.7,
+      "quality_hits": 2,
+      "fresh_confidence_min": 0.35,
+      "near_span_m": 0.3,
+      "near_distance_m": 1.5,
+      "passage_radius_m": 0.25,
+      "cell_m": 0.1
+    }
+  },
+  "actual_path_projection_cell_m": 0.1,
+  "steering": "current accepted measured path, simplified at 0.06m with 0.5m rear/0.2m forward tangent margins; no infinite line or preset right-angle corner",
+  "legacy_summary_metadata_note": "Base visual_closed_loop writes legacy centerline_assumptions (0.05m/corner samples) for every injected tracker. Those legacy descriptor fields do not configure these new trackers. Actual inputs are frozen configs plus source_snapshot/avoid/planar_path_ablation.py. This companion records the actual configuration without changing original results.",
+  "scope": "Condition and appearance consistency only, not mission acceptance"
+}

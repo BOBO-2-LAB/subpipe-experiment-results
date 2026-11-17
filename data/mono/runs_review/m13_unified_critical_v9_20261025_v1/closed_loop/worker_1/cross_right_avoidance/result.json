@@ -1,0 +1,84 @@
+{
+  "scenario": "cross_right",
+  "mode": "avoidance",
+  "task_completed": false,
+  "goal_reached": true,
+  "inspection_recovered": true,
+  "stop_reason": "goal_reached",
+  "inspection_valid_fraction": 1.0,
+  "valid_frames": 603,
+  "inspection_frames": 603,
+  "all_frame_valid_fraction": 0.995049504950495,
+  "contact_3d": false,
+  "contact_xy": true,
+  "primary_contact_rule": "XY",
+  "elapsed_s": 20.4,
+  "maximum_cross_track_m": 0.9011472817846053,
+  "observed_elbows": [
+    {
+      "t": 16.2,
+      "event": "observed_endpoint_confirmed",
+      "length_m": 9.004870840072673,
+      "position_xyz": [
+        9.004870840072673,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "intervention_frames": 386,
+  "prediction_valid_frames": 0,
+  "frames_logged": 606,
+  "video_frames_written": 606,
+  "fps": 30,
+  "configuration_sha256": "27cbf0d076061c52943671aa9f017873859d76cc8d573ae1759b43a9dacf1a8b",
+  "terminal_pipe_observed": true,
+  "pipe_arc_observation_fraction": 0.9444444444444444,
+  "schema_version": 2,
+  "route_completed": true,
+  "collision": true,
+  "simplified_3d_contact": false,
+  "active_inspection_valid_fraction": 1.0,
+  "synthetic_inspection_valid_fraction": 0.995049504950495,
+  "maximum_abs_cross_track_m": 0.9011472817846053,
+  "elapsed_sim_s": 20.4,
+  "events": {
+    "fish_first_visible": {
+      "simulation_t": 0.3333333333333333,
+      "source_t": 0.1
+    },
+    "fish_first_detection": {
+      "simulation_t": 0.7333333333333333,
+      "source_t": 0.5
+    },
+    "fish_first_effective_detection": {
+      "simulation_t": 0.7333333333333333,
+      "source_t": 0.5
+    },
+    "fish_first_confirmed": {
+      "simulation_t": 0.9666666666666667,
+      "source_t": 0.7333333333333333
+    },
+    "first_intervention": {
+      "simulation_t": 0.9666666666666667,
+      "source_t": 0.7333333333333333
+    },
+    "first_avoidance_offset": {
+      "simulation_t": 0.9666666666666667,
+      "source_t": 0.7333333333333333
+    },
+    "first_contact_xy": {
+      "simulation_t": 9.433333333333334,
+      "source_t": 9.2
+    },
+    "tracking_recovered_after_avoidance": {
+      "simulation_t": 14.433333333333334,
+      "source_t": 14.2
+    }
+  },
+  "minimum_clearance_3d_m": 0.048992237030759056,
+  "minimum_clearance_xy_m": -0.12134887318632759,
+  "reverse_attempts": 0,
+  "waiting_frames": 3,
+  "episode_budget_s": 45.0
+}

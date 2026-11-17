@@ -1,0 +1,136 @@
+{
+  "episodes": [
+    {
+      "stage": "core",
+      "tracker": "paired_probability_temporal",
+      "scenario": "clear_pipe",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.3333333333333333,
+      "all_frame_valid_fraction": 0.021875,
+      "pipe_iou": 0.14814265971359086,
+      "elapsed_s": 31.966666666666665,
+      "progress_m": 0.8372246354251897,
+      "contact_2d": false,
+      "contact_3d": null,
+      "reverse_attempts": 0,
+      "recovery_failure": "perception_loss_timeout",
+      "unknown_motion_m": 0.4016532331422191,
+      "unverified_passed_segments": 0,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v2/closed_loop/core/paired_probability_temporal/clear_pipe_tracker_only/result.json",
+      "frame_analysis": {
+        "status_counts": {
+          "lost": 617,
+          "observed": 174,
+          "predicted": 169
+        },
+        "measurement_reasons": {
+          "missing_probability_input": 7,
+          "probability_path": 174,
+          "short_probability_path": 264,
+          "insufficient_path_support": 11,
+          "no_paired_edge_seed": 504
+        },
+        "pipe_health_reasons": {
+          "no_pipe": 11,
+          "near_segments_stable": 174,
+          "no_fresh_near_segments": 775
+        },
+        "active_low_iou_frames": 42,
+        "reverse_phase_frames": 0
+      }
+    },
+    {
+      "stage": "core",
+      "tracker": "probability_temporal",
+      "scenario": "clear_pipe",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.13043478260869565,
+      "all_frame_valid_fraction": 0.013333333333333334,
+      "pipe_iou": 0.2644662315272322,
+      "elapsed_s": 45.0,
+      "progress_m": 1.2912606781944733,
+      "contact_2d": false,
+      "contact_3d": null,
+      "reverse_attempts": 0,
+      "recovery_failure": null,
+      "unknown_motion_m": 0.4185087115512597,
+      "unverified_passed_segments": 0,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v2/closed_loop/core/probability_temporal/clear_pipe_tracker_only/result.json",
+      "frame_analysis": {
+        "status_counts": {
+          "lost": 495,
+          "observed": 395,
+          "predicted": 460
+        },
+        "measurement_reasons": {
+          "missing_probability_input": 7,
+          "probability_path": 398,
+          "short_probability_path": 921,
+          "no_probability_seed": 24
+        },
+        "pipe_health_reasons": {
+          "no_pipe": 7,
+          "near_segments_stable": 365,
+          "no_fresh_near_segments": 948,
+          "near_segments_unstable": 30
+        },
+        "active_low_iou_frames": 100,
+        "reverse_phase_frames": 0
+      }
+    },
+    {
+      "stage": "core",
+      "tracker": "skeleton_temporal",
+      "scenario": "clear_pipe",
+      "mode": "tracker_only",
+      "passed": false,
+      "goal": false,
+      "valid_fraction": 0.3803680981595092,
+      "all_frame_valid_fraction": 0.09037037037037036,
+      "pipe_iou": 0.33101317475540887,
+      "elapsed_s": 45.0,
+      "progress_m": 1.2575215635891663,
+      "contact_2d": false,
+      "contact_3d": null,
+      "reverse_attempts": 0,
+      "recovery_failure": null,
+      "unknown_motion_m": 1.4020214736555336,
+      "unverified_passed_segments": 0,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered",
+      "result": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v2/closed_loop/core/skeleton_temporal/clear_pipe_tracker_only/result.json",
+      "frame_analysis": {
+        "status_counts": {
+          "lost": 107,
+          "observed": 669,
+          "predicted": 574
+        },
+        "measurement_reasons": {
+          "missing_probability_input": 7,
+          "no_component": 366,
+          "image_skeleton": 672,
+          "short_skeleton": 289,
+          "short_path": 16
+        },
+        "pipe_health_reasons": {
+          "no_pipe": 7,
+          "no_fresh_near_segments": 674,
+          "near_segments_unstable": 198,
+          "near_segments_stable": 471
+        },
+        "active_low_iou_frames": 101,
+        "reverse_phase_frames": 0
+      }
+    }
+  ],
+  "entry_gates": {
+    "paired_probability_temporal": "FAIL: 0/1 corrected no-fish passed; occlusion/fish/bend expansion not run",
+    "probability_temporal": "FAIL: 0/1 corrected no-fish passed; occlusion/fish/bend expansion not run",
+    "skeleton_temporal": "FAIL: 0/1 corrected no-fish passed; occlusion/fish/bend expansion not run"
+  }
+}

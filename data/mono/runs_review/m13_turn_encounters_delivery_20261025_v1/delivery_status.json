@@ -1,0 +1,54 @@
+{
+  "accepted": true,
+  "new_required_pass": 4,
+  "new_required_total": 4,
+  "all_horizontal_pass": 10,
+  "all_horizontal_total": 10,
+  "complete_paired_episodes": 20,
+  "no_fish_false_intervention_pass": {
+    "clear_pipe": true,
+    "bend_left_90": true,
+    "bend_right_90": true
+  },
+  "identical_final_source_and_configuration": true,
+  "pinned_inputs_unchanged": true,
+  "stage_deadline_exemptions": false,
+  "regression_tests": 407,
+  "video_frames_written": 1467,
+  "video_frames_decoded": 1467,
+  "duration_s": 97.8,
+  "chapters": [
+    {
+      "scenario": "bend_left_fish_before",
+      "start_s": 0.0,
+      "end_s": 25.266666666666666,
+      "result": "mono/runs_review/m13_s345_turn_full_v28_20261025_v1_left/closed_loop/worker_1/bend_left_fish_before_avoidance/result.json"
+    },
+    {
+      "scenario": "bend_left_fish_corner",
+      "start_s": 25.266666666666666,
+      "end_s": 45.333333333333336,
+      "result": "mono/runs_review/m13_s345_turn_full_v28_20261025_v1_left/closed_loop/worker_0/bend_left_fish_corner_avoidance/result.json"
+    },
+    {
+      "scenario": "bend_right_fish_before",
+      "start_s": 45.333333333333336,
+      "end_s": 79.6,
+      "result": "mono/runs_review/m13_s345_turn_full_v28_20261025_v1_right/closed_loop/worker_1/bend_right_fish_before_avoidance/result.json"
+    },
+    {
+      "scenario": "bend_right_fish_corner",
+      "start_s": 79.6,
+      "end_s": 97.8,
+      "result": "mono/runs_review/m13_s345_turn_full_v28_20261025_v1_right/closed_loop/worker_0/bend_right_fish_corner_avoidance/result.json"
+    }
+  ],
+  "final": [
+    "mono/runs_review/m13_s345_turn_full_v28_20261025_v1_left",
+    "mono/runs_review/m13_s345_turn_full_v28_20261025_v1_right"
+  ],
+  "baseline": [
+    "mono/runs_review/m13_s345_left_encounter_baseline_20261025_v1",
+    "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1"
+  ]
+}

@@ -1,0 +1,557 @@
+{
+  "scope": "Actual XYZ ray-cast cylinder/capsule surfaces, horizontal seabed to vertical riser, moving forward camera tilt; level thruster ROV with surge/heave. Still explicit known vertical-plane/diameter/odometry priors, not arbitrary 3D reconstruction.",
+  "controller_truth_access": "None: RGB/predicted masks, measured camera extrinsics and odometry, explicit geometric priors only. Inspection route and scene points are scoring/rendering only.",
+  "timing": "Fixed simulation clock; model wall latency measured but not injected",
+  "config": {
+    "camera_mount": "fixed side-looking, upright; optical axis toward the declared vertical inspection plane",
+    "standoff_m": 2.0,
+    "initial_depth_m": 20.0,
+    "pipe_width_prior_m": 0.8,
+    "cruise_mps": 0.5,
+    "inspection_command_floor_mps": 0.4,
+    "lookahead_m": 0.7,
+    "outgoing_min_m": 0.45,
+    "outgoing_span_m": 0.4,
+    "outgoing_edge_span_m": [
+      0.4,
+      1.2
+    ],
+    "outgoing_min_points": 8,
+    "normal_gain": 0.8,
+    "surge_max_mps": 0.6,
+    "heave_max_mps": 0.6,
+    "response_tau_s": 0.6,
+    "acceleration_mps2": 0.35,
+    "control_rate_hz": 10.0,
+    "image_delay_s": 0.21,
+    "wait_before_retreat_s": 8.0,
+    "reinspect_overlap_m": 0.3,
+    "reacquire_s": 0.5,
+    "max_loss_s": 20.0,
+    "assumptions": "Side mount, known perpendicular observation distance, ideal pressure depth/odometry and vertical-plane prior are explicit simulation assumptions. Heave limits are assumed, not measured BlueROV2 performance. Hull stays level; zero surge during ascent/descent is not zero route speed. No pitch actuator, seabed, pressure or tether physics."
+  },
+  "gimbal_assumptions": {
+    "pitch_range_deg": [
+      -90,
+      90
+    ],
+    "yaw_range_deg": [
+      -90,
+      90
+    ],
+    "rate_deg_s": 45,
+    "tau_s": 0.35,
+    "published_hardware_claim": false
+  },
+  "checkpoints": [
+    {
+      "path": "mono/runs_ablation/M11/best.pt",
+      "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+    },
+    {
+      "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+    }
+  ],
+  "episodes": [],
+  "probe": [
+    {
+      "scene": "floor_to_riser_up",
+      "pose": {
+        "x": 0,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.7853981633974483
+      },
+      "raw_iou": 0.5914282047991788,
+      "estimated_iou": 0.5286235213898195,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -17.90000009536743,
+            1.600000023841858
+          ],
+          [
+            2.0999999046325684,
+            1.600000023841858
+          ],
+          [
+            2.0999999046325684,
+            21.600000023841858
+          ]
+        ],
+        "skeleton_pixels": 132,
+        "observed_support_pixels": 10124,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          2.0999999046325684,
+          -0.3999999761581421
+        ],
+        "turn_sign": 1.0,
+        "estimated_inspection_route_xd": [
+          [
+            -19.90000009536743,
+            -2.399999976158142
+          ],
+          [
+            0.09999990463256836,
+            -2.399999976158142
+          ],
+          [
+            0.09999990463256836,
+            17.600000023841858
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_up",
+      "pose": {
+        "x": 0.5,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.5759586531581288
+      },
+      "raw_iou": 0.25955911470937654,
+      "estimated_iou": 0.4297025951884827,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -18.40000009536743,
+            1.600000023841858
+          ],
+          [
+            1.5999999046325684,
+            1.600000023841858
+          ],
+          [
+            1.5999999046325684,
+            21.600000023841858
+          ]
+        ],
+        "skeleton_pixels": 22,
+        "observed_support_pixels": 3715,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          2.0999999046325684,
+          -0.3999999761581421
+        ],
+        "turn_sign": 1.0,
+        "estimated_inspection_route_xd": [
+          [
+            -19.90000009536743,
+            -2.399999976158142
+          ],
+          [
+            0.09999990463256836,
+            -2.399999976158142
+          ],
+          [
+            0.09999990463256836,
+            17.600000023841858
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_up",
+      "pose": {
+        "x": 1,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.5759586531581288
+      },
+      "raw_iou": 0.22614284498169746,
+      "estimated_iou": 0.337855023314964,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -18.90000009536743,
+            1.600000023841858
+          ],
+          [
+            1.0999999046325684,
+            1.600000023841858
+          ],
+          [
+            1.0999999046325684,
+            21.600000023841858
+          ]
+        ],
+        "skeleton_pixels": 8,
+        "observed_support_pixels": 943,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          2.0999999046325684,
+          -0.3999999761581421
+        ],
+        "turn_sign": 1.0,
+        "estimated_inspection_route_xd": [
+          [
+            -19.90000009536743,
+            -2.399999976158142
+          ],
+          [
+            0.09999990463256836,
+            -2.399999976158142
+          ],
+          [
+            0.09999990463256836,
+            17.600000023841858
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_up",
+      "pose": {
+        "x": 2,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.17453292519943295
+      },
+      "raw_iou": 0.5996191981606552,
+      "estimated_iou": 0.0,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -19.90000009536743,
+            1.600000023841858
+          ],
+          [
+            0.09999990463256836,
+            1.600000023841858
+          ],
+          [
+            0.09999990463256836,
+            21.600000023841858
+          ]
+        ],
+        "skeleton_pixels": 97,
+        "observed_support_pixels": 0,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          2.0999999046325684,
+          -0.3999999761581421
+        ],
+        "turn_sign": 1.0,
+        "estimated_inspection_route_xd": [
+          [
+            -19.90000009536743,
+            -2.399999976158142
+          ],
+          [
+            0.09999990463256836,
+            -2.399999976158142
+          ],
+          [
+            0.09999990463256836,
+            17.600000023841858
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_up",
+      "pose": {
+        "x": 2,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": -0.4363323129985824
+      },
+      "raw_iou": 0.19071513387214156,
+      "estimated_iou": 0.0,
+      "healthy": false,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -19.90000009536743,
+            1.600000023841858
+          ],
+          [
+            0.09999990463256836,
+            1.600000023841858
+          ],
+          [
+            0.09999990463256836,
+            21.600000023841858
+          ]
+        ],
+        "skeleton_pixels": 28,
+        "observed_support_pixels": 0,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          2.0999999046325684,
+          -0.3999999761581421
+        ],
+        "turn_sign": 1.0,
+        "estimated_inspection_route_xd": [
+          [
+            -19.90000009536743,
+            -2.399999976158142
+          ],
+          [
+            0.09999990463256836,
+            -2.399999976158142
+          ],
+          [
+            0.09999990463256836,
+            17.600000023841858
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_down",
+      "pose": {
+        "x": 0,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.7853981633974483
+      },
+      "raw_iou": 0.4888192171146664,
+      "estimated_iou": 0.4885837284071713,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -17.84999990463257,
+            1.4500000476837158
+          ],
+          [
+            2.1500000953674316,
+            1.4500000476837158
+          ],
+          [
+            2.1500000953674316,
+            21.450000047683716
+          ]
+        ],
+        "skeleton_pixels": 121,
+        "observed_support_pixels": 9681,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          2.1500000953674316,
+          -0.5499999523162842
+        ],
+        "turn_sign": 1.0,
+        "estimated_inspection_route_xd": [
+          [
+            -19.84999990463257,
+            -2.549999952316284
+          ],
+          [
+            0.15000009536743164,
+            -2.549999952316284
+          ],
+          [
+            0.15000009536743164,
+            17.450000047683716
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_down",
+      "pose": {
+        "x": 0.5,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.5759586531581288
+      },
+      "raw_iou": 0.209,
+      "estimated_iou": 0.4972460986397396,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -18.34999990463257,
+            1.4500000476837158
+          ],
+          [
+            1.6500000953674316,
+            1.4500000476837158
+          ],
+          [
+            1.6500000953674316,
+            21.450000047683716
+          ]
+        ],
+        "skeleton_pixels": 23,
+        "observed_support_pixels": 3594,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          2.1500000953674316,
+          -0.5499999523162842
+        ],
+        "turn_sign": 1.0,
+        "estimated_inspection_route_xd": [
+          [
+            -19.84999990463257,
+            -2.549999952316284
+          ],
+          [
+            0.15000009536743164,
+            -2.549999952316284
+          ],
+          [
+            0.15000009536743164,
+            17.450000047683716
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_down",
+      "pose": {
+        "x": 1,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.5759586531581288
+      },
+      "raw_iou": 0.13928220944903968,
+      "estimated_iou": 0.4445476500092885,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -18.84999990463257,
+            1.4500000476837158
+          ],
+          [
+            1.1500000953674316,
+            1.4500000476837158
+          ],
+          [
+            1.1500000953674316,
+            21.450000047683716
+          ]
+        ],
+        "skeleton_pixels": 11,
+        "observed_support_pixels": 2550,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          2.1500000953674316,
+          -0.5499999523162842
+        ],
+        "turn_sign": 1.0,
+        "estimated_inspection_route_xd": [
+          [
+            -19.84999990463257,
+            -2.549999952316284
+          ],
+          [
+            0.15000009536743164,
+            -2.549999952316284
+          ],
+          [
+            0.15000009536743164,
+            17.450000047683716
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_down",
+      "pose": {
+        "x": 2,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.17453292519943295
+      },
+      "raw_iou": 0.025140875596012136,
+      "estimated_iou": 0.0,
+      "healthy": false,
+      "trace": {
+        "status": "no_centerline",
+        "estimated_inspection_route_xd": [
+          [
+            -19.84999990463257,
+            -2.549999952316284
+          ],
+          [
+            0.15000009536743164,
+            -2.549999952316284
+          ],
+          [
+            0.15000009536743164,
+            17.450000047683716
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_down",
+      "pose": {
+        "x": 2,
+        "y": -0.8,
+        "depth": 2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.4363323129985824
+      },
+      "raw_iou": 0.7023335707402908,
+      "estimated_iou": 0.0,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -19.84999990463257,
+            -2.549999952316284
+          ],
+          [
+            0.15000009536743164,
+            -2.549999952316284
+          ],
+          [
+            0.15000009536743164,
+            17.450000047683716
+          ]
+        ],
+        "skeleton_pixels": 143,
+        "observed_support_pixels": 688,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          2.1500000953674316,
+          -0.5499999523162842
+        ],
+        "turn_sign": 1.0,
+        "estimated_inspection_route_xd": [
+          [
+            -19.84999990463257,
+            -2.549999952316284
+          ],
+          [
+            0.15000009536743164,
+            -2.549999952316284
+          ],
+          [
+            0.15000009536743164,
+            17.450000047683716
+          ]
+        ]
+      }
+    }
+  ]
+}

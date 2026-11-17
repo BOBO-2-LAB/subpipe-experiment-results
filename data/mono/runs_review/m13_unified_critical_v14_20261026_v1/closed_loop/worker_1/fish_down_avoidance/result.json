@@ -1,0 +1,74 @@
+{
+  "scenario": "fish_down",
+  "mode": "avoidance",
+  "task_completed": false,
+  "goal_reached": false,
+  "inspection_recovered": false,
+  "stop_reason": "unresolved_observed_endpoint",
+  "inspection_valid_fraction": 1.0,
+  "valid_frames": 465,
+  "inspection_frames": 465,
+  "all_frame_valid_fraction": 0.9935897435897436,
+  "contact_3d": false,
+  "contact_xy": true,
+  "primary_contact_rule": "3D",
+  "elapsed_s": 15.799999999999999,
+  "maximum_cross_track_m": 2.6645352591003757e-15,
+  "observed_elbows": [
+    {
+      "t": 5.4,
+      "event": "observed_endpoint_confirmed",
+      "length_m": 4.007837081838835,
+      "position_xyz": [
+        4.007837081838835,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "intervention_frames": 0,
+  "prediction_valid_frames": 0,
+  "frames_logged": 468,
+  "video_frames_written": 468,
+  "fps": 30,
+  "configuration_sha256": "2102da242be56b436dc73bfba8b1f5839af9b43029bfbebb2b54a1d8ef8153a3",
+  "terminal_pipe_observed": true,
+  "pipe_arc_observation_fraction": 0.9375,
+  "schema_version": 2,
+  "route_completed": false,
+  "collision": false,
+  "simplified_3d_contact": false,
+  "active_inspection_valid_fraction": 1.0,
+  "synthetic_inspection_valid_fraction": 0.9935897435897436,
+  "maximum_abs_cross_track_m": 2.6645352591003757e-15,
+  "elapsed_sim_s": 15.799999999999999,
+  "events": {
+    "fish_first_visible": {
+      "simulation_t": 7.566666666666666,
+      "source_t": 7.333333333333333
+    },
+    "fish_first_detection": {
+      "simulation_t": 8.266666666666666,
+      "source_t": 8.033333333333333
+    },
+    "fish_first_effective_detection": {
+      "simulation_t": 8.266666666666666,
+      "source_t": 8.033333333333333
+    },
+    "fish_first_confirmed": {
+      "simulation_t": 8.633333333333333,
+      "source_t": 8.4
+    },
+    "first_contact_xy": {
+      "simulation_t": 11.5,
+      "source_t": 11.266666666666666
+    }
+  },
+  "minimum_clearance_3d_m": 3.7597595110059925,
+  "minimum_clearance_xy_m": -0.25161671752529324,
+  "reverse_attempts": 0,
+  "waiting_frames": 3,
+  "reverse_recovery_frames": 0,
+  "synthetic_pipe_arc_bin_total": 32,
+  "episode_budget_s": 45.0
+}

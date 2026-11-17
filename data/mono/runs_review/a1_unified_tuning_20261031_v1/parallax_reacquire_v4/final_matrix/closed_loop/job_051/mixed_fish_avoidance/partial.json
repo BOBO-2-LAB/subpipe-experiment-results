@@ -1,0 +1,571 @@
+{
+  "last": {
+    "scenario": "mixed_fish",
+    "mode": "avoidance",
+    "t": 62.0,
+    "position_xyz": [
+      16.83838513046789,
+      -3.734864784343603,
+      -1.997611965722929
+    ],
+    "phase": "terminal_recenter",
+    "source_t": 61.766666666666666,
+    "source_pose": {
+      "x": 16.76067357590279,
+      "y": -3.65112172954005,
+      "depth": -1.997891466137494,
+      "yaw": -1.4538289526920731,
+      "pitch": 1.3232498608110521
+    },
+    "camera_yaw_deg": -93.79826312318038,
+    "camera_pitch_deg": 78.31815932423977,
+    "pipe_iou": 0.9180733944954128,
+    "valid": true,
+    "current_observation_trusted": true,
+    "synthetic_corridor_m": 0.26514596977678667,
+    "synthetic_pipe_clearance_3d_m": 1.2951303303212398,
+    "synthetic_fish_clearance_3d_m": 3.009772560078917,
+    "synthetic_fish_clearance_xy_m": 2.778304667597955,
+    "contact_3d": false,
+    "contact_xy": true,
+    "synthetic_end_distance_m": 0.3105185201284348,
+    "bend_count": 6,
+    "inference_wall_s": 0.055600100022275,
+    "fish_observations": 0,
+    "avoidance_offset_m": 0.0,
+    "synthetic_terminal_pipe_observed": true,
+    "synthetic_pipe_arc_observation_fraction": 1.0,
+    "decision": {
+      "action": "nominal",
+      "speed_scale": 1.0,
+      "risk": 1.0934536680338476e-21,
+      "reason": "no_track",
+      "hover_capped": false,
+      "risk_raw": 0.0,
+      "lateral_setpoint": 0.0,
+      "lateral_reason": "recenter",
+      "yield_to_tracker": false
+    },
+    "control": {
+      "phase": "terminal_recenter",
+      "abort": false,
+      "abort_reason": null,
+      "current_observation_trusted": true,
+      "raw_direction_xyz": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "direction_xyz": [
+        1.0,
+        -7.72124802331112e-172,
+        4.28652550812386e-20
+      ],
+      "normal_xyz": [
+        4.28652550812386e-20,
+        -3.309732660647405e-191,
+        -1.0
+      ],
+      "side_xyz": [
+        7.72124802331112e-172,
+        1.0,
+        0.0
+      ],
+      "estimated_route_error_m": 0.26513551203371544,
+      "lateral_offset_m": 0.0,
+      "requested_velocity_xyz": [
+        0.12719714153734005,
+        -0.21210817252511768,
+        0.00031714750260807283
+      ],
+      "route_xyz": [
+        [
+          -5.0,
+          0.0,
+          -2.0
+        ],
+        [
+          4.0,
+          0.0,
+          -2.0
+        ],
+        [
+          4.0,
+          -4.0,
+          -2.0
+        ],
+        [
+          6.0,
+          -4.0,
+          -2.0
+        ],
+        [
+          6.0,
+          -4.0,
+          -5.9972155313446684
+        ],
+        [
+          13.999187042485493,
+          -4.0,
+          -5.9972155313446684
+        ],
+        [
+          13.999187042485493,
+          -4.0,
+          -1.997215531344669
+        ],
+        [
+          23.999187042485495,
+          -4.0,
+          -1.997215531344669
+        ]
+      ],
+      "geometry": {
+        "vision": {
+          "method": "unified_XYZ_finite_axis_RGB",
+          "truth_access": false,
+          "bend_count": 6,
+          "monocular_parallax": {
+            "tracked_features": 400,
+            "current_triangulated_points": 82,
+            "current_reprojection_verified_landmarks": 157,
+            "removed_background_plane_depths": [
+              0.30000000000000004,
+              0.4,
+              0.5
+            ],
+            "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+            "rendered_depth_used": false
+          },
+          "current_surface_appearance_gate": {
+            "enabled": true,
+            "rejected_current_pixels": 0,
+            "historical_mask_fill": false,
+            "reference": "neural-initialized pipe chroma and brightness; current image verification"
+          },
+          "parallax_foreground_recovery": {
+            "usable": false,
+            "current_surface_points": 70,
+            "current_seed_pixels": 350,
+            "missing_seed_pixels": 0,
+            "historical_mask_fill": false,
+            "training": false,
+            "source": "current LK/reprojection verified points, front-facing cylinder association and depth-consistent projection",
+            "recovery_applied": false,
+            "empty_surface_reacquisition_attempted": false
+          },
+          "observation_extent_scope": "current_tail",
+          "current_tail_associated_points": 70,
+          "current_tail_paired_segments": [],
+          "camera_surface_recovery_active": false,
+          "camera_surface_depth_gap_m": 0.0,
+          "camera_surface_recovery_geometry_loss_witness": false,
+          "observation_branch_current_pixels": 0,
+          "whole_observation_branch": {
+            "accepted": false,
+            "reason": "no_independently_supported_image_hypothesis",
+            "neural_hypotheses": 45
+          },
+          "reason": "current_surface_supported",
+          "current_rgb_verified": true,
+          "current_rgb_pixels": 31207,
+          "current_neural_pixels": 17901,
+          "axis_xyz": [
+            [
+              -5.0,
+              0.0,
+              0.0
+            ],
+            [
+              4.0,
+              0.0,
+              0.0
+            ],
+            [
+              4.0,
+              -4.0,
+              0.0
+            ],
+            [
+              8.0,
+              -4.0,
+              0.0
+            ],
+            [
+              8.0,
+              -4.0,
+              -3.997215531344669
+            ],
+            [
+              11.999187042485493,
+              -4.0,
+              -3.997215531344669
+            ],
+            [
+              11.999187042485493,
+              -4.0,
+              0.002784468655331107
+            ],
+            [
+              23.999187042485495,
+              -4.0,
+              0.002784468655331107
+            ]
+          ],
+          "visual_axis_xyz": [
+            [
+              -5.0,
+              0.0,
+              0.0
+            ],
+            [
+              4.0,
+              0.0,
+              0.0
+            ],
+            [
+              4.0,
+              -4.0,
+              0.0
+            ],
+            [
+              8.0,
+              -4.0,
+              0.0
+            ],
+            [
+              8.0,
+              -4.0,
+              -3.997215531344669
+            ],
+            [
+              11.999187042485493,
+              -4.0,
+              -3.997215531344669
+            ],
+            [
+              11.999187042485493,
+              -4.0,
+              0.002784468655331107
+            ],
+            [
+              16.997381557389566,
+              -4.0,
+              0.002784468655331107
+            ]
+          ],
+          "whole_current_pixels": 31207,
+          "whole_mask_separate_from_local": true,
+          "unknown_segment_depth_proxy_m": 8.0,
+          "whole_extra_current_segments": false,
+          "current_geometry_verified": true,
+          "associated_parallax_points": 70,
+          "paired_edge_evidence": {
+            "maximum_supported_arc_m": null,
+            "longest_current_span_m": 0.0,
+            "segments": [],
+            "method": "current aligned paired RGB edges; no history fill"
+          },
+          "verified_arc_max_m": 34.29621993335936,
+          "camera_extent_prefer_paired_edges": true,
+          "paired_arc_max_m": 34.19640257383016,
+          "camera_surface_arc_max_m": 34.29621993335936,
+          "endpoint_evidence": "current_RGB_hemisphere_contour"
+        },
+        "temporal": {
+          "phase": "tracking",
+          "current_observation_trusted": true,
+          "prediction_age_s": 0.03333333333333144,
+          "prediction_counted_valid": false
+        }
+      },
+      "navigation_endpoint_m": null,
+      "current_observed_boundary_m": 4.998194514904071,
+      "boundary_recovery_pending": false,
+      "geometry_probe_without_trusted_geometry": false,
+      "camera_rear_stop_sign": null,
+      "camera_gaze_vector_in_meters": true,
+      "camera_target_arc_m": 33.69621993335936,
+      "camera_frontier_preview_m": 0.0,
+      "camera_preview_active": false,
+      "camera_preview_blocked": false,
+      "camera_boundary_forward_watch_active": false,
+      "camera_near_boundary_gaze_limited": false,
+      "avoidance_reference_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "avoidance_feedforward_applied": false,
+      "steering_curvature_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "navigation_floor_exempt_reason": "terminal_station_keeping",
+      "coverage_cells": 155,
+      "missing_coverage_cells": 0,
+      "reverse_attempts": 0,
+      "reinspect_target_xyz": null,
+      "geometry_probe_requested_m": 0.0,
+      "geometry_rejoining": false,
+      "geometry_active_view_gain": 0.0
+    },
+    "actuator": {
+      "held_body_command_mps": [
+        0.12719714153551487,
+        -0.21210817252621222,
+        0.00031714750260807283
+      ],
+      "held_world_command_mps": [
+        0.12719714153734005,
+        -0.21210817252511768,
+        0.00031714750260807283
+      ],
+      "speed_saturated": [
+        false,
+        false,
+        false
+      ],
+      "acceleration_saturated": [
+        false,
+        false,
+        false
+      ],
+      "hull_yaw_rad": 8.428136611453334e-12,
+      "yaw_rate_rad_s": -5.305614358043424e-12
+    },
+    "velocity_xyz": [
+      0.2949152169694804,
+      -0.33282337796946615,
+      0.0010311241386001774
+    ],
+    "fish_refinement": {
+      "current_objects": [],
+      "calibrated_probability": false,
+      "geometry_feature_exclusion_pixels": 0,
+      "course_bearings": {
+        "frame": "measured course / transported pipe normal",
+        "behind_course_filtered": 0,
+        "current_camera_objects": 0
+      }
+    },
+    "capability_shortfall": false,
+    "encounter": {
+      "active": false,
+      "locked_direction": null,
+      "forward_progress_m": 3.5077918374476114,
+      "net_displacement_m": 0.0,
+      "failure": null,
+      "last_fresh_fish_t": 52.1,
+      "release_allowed_by_pipe_turn": true,
+      "required_progress_m": 3.5
+    },
+    "fish_sensor_dropout": false,
+    "fresh_confirmed_fish": false,
+    "inspection_frame_valid": true,
+    "synthetic_frame_pipe_iou": 0.9180733944954128,
+    "route_cross_track_m": 0.26514596977678667,
+    "motion_phase": "terminal_recenter",
+    "raw_fish_perception": {
+      "max_probability": 0.95458984375,
+      "predicted_pixels": 4529,
+      "predicted_area_eq": 4529.0,
+      "components": [
+        {
+          "pixels": 2689,
+          "area_eq": 2689.0,
+          "mean_probability": 0.7806005623314894,
+          "center_px": [
+            303.78951283004835,
+            152.76162142060247
+          ],
+          "accepted_fragment": true,
+          "filter_reason": "accepted",
+          "synthetic_overlap_pixels": 0
+        },
+        {
+          "pixels": 2059,
+          "area_eq": 2059.0,
+          "mean_probability": 0.6063591103463453,
+          "center_px": [
+            55.88975230694512,
+            202.58863525983486
+          ],
+          "accepted_fragment": true,
+          "filter_reason": "accepted",
+          "synthetic_overlap_pixels": 0
+        },
+        {
+          "pixels": 16,
+          "area_eq": 16.0,
+          "mean_probability": 0.5367431640625,
+          "center_px": [
+            316.5,
+            286.5
+          ],
+          "accepted_fragment": false,
+          "filter_reason": "below_fragment_area",
+          "synthetic_overlap_pixels": 0
+        }
+      ]
+    },
+    "fish_perception": {
+      "max_probability": 0.0,
+      "predicted_pixels": 0,
+      "predicted_area_eq": 0.0,
+      "components": []
+    },
+    "fish_tracks": [],
+    "intervention": false,
+    "synthetic_new_observation_bins": []
+  },
+  "events": [
+    {
+      "t": 0.6,
+      "event": "observed_frontier_end_confirmed",
+      "length_m": 3.700000000000001,
+      "position_xyz": [
+        3.700000000000001,
+        0.0,
+        0.0
+      ],
+      "evidence": "current_paired_edges_and_finite_RGB_surface",
+      "mission_terminal_assumed": false
+    },
+    {
+      "t": 0.9,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "gain": 0.07489402510941814,
+      "evidence": "current_surface_parallax_and_RGB",
+      "confirmation_baseline_m": 0.12782664310416053
+    },
+    {
+      "t": 11.4,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.0,
+        -4.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "gain": 0.4007322273615703,
+      "evidence": "current_surface_parallax_and_RGB",
+      "confirmation_baseline_m": 0.1881954993536171
+    },
+    {
+      "t": 17.7,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        8.0,
+        -4.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "gain": 0.27662337662337666,
+      "evidence": "current_surface_parallax_and_RGB",
+      "confirmation_baseline_m": 0.1344693861066129
+    },
+    {
+      "t": 20.7,
+      "event": "observed_endpoint_confirmed",
+      "length_m": 3.9972155313446676,
+      "position_xyz": [
+        8.0,
+        -4.0,
+        -3.9972155313446676
+      ]
+    },
+    {
+      "t": 25.5,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        8.0,
+        -4.0,
+        -3.9972155313446684
+      ],
+      "outgoing_xyz": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "gain": 0.225,
+      "evidence": "current_multiview_paired_silhouette_RGB",
+      "confirmation_baseline_m": 0.26890215606177004
+    },
+    {
+      "t": 29.8,
+      "event": "observed_frontier_end_confirmed",
+      "length_m": 4.5,
+      "position_xyz": [
+        12.5,
+        -4.0,
+        -3.9972155313446684
+      ],
+      "evidence": "current_paired_edges_and_finite_RGB_surface",
+      "mission_terminal_assumed": false
+    },
+    {
+      "t": 44.1,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        12.074187042485493,
+        -4.0,
+        -3.997215531344669
+      ],
+      "outgoing_xyz": [
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "gain": 0.362433136452619,
+      "evidence": "current_surface_parallax_and_RGB",
+      "confirmation_baseline_m": 0.2628328571350753
+    },
+    {
+      "t": 50.7,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        11.999187042485493,
+        -4.0,
+        0.002784468655331107
+      ],
+      "outgoing_xyz": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "gain": 0.20675446192282554,
+      "evidence": "current_surface_parallax_and_RGB",
+      "confirmation_baseline_m": 0.1201033291141509
+    },
+    {
+      "t": 53.1,
+      "event": "observed_endpoint_confirmed",
+      "length_m": 4.998194514904071,
+      "position_xyz": [
+        16.997381557389566,
+        -4.0,
+        0.002784468655331107
+      ]
+    }
+  ]
+}

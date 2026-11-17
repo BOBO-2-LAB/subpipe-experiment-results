@@ -1,0 +1,98 @@
+{
+  "stopped": [
+    {
+      "pid": 21980,
+      "command": [
+        "[公开副本已隐去本地信息]",
+        "-B",
+        "runs_review/m13_unified_development_20261025_v1/adaptive_episode_matrix_runner.py",
+        "--out",
+        "runs_review/m13_unified_critical_v33_20261026_v1",
+        "--config",
+        "configs/m13_unified_tracking_v33.json",
+        "--regression-log",
+        "runs_review/m13_unified_development_20261025_v1/regression_v33.log",
+        "--workers",
+        "2",
+        "--scenarios",
+        "mixed_clear",
+        "mixed_fish",
+        "--modes",
+        "avoidance",
+        "--max-seconds",
+        "120"
+      ]
+    },
+    {
+      "pid": 19180,
+      "command": [
+        "[公开副本已隐去本地信息]",
+        "-B",
+        "runs_review/m13_unified_development_20261025_v1/continue_adaptive_campaign.py",
+        "--screen",
+        "runs_review/m13_unified_critical_v33_20261026_v1",
+        "--campaign",
+        "runs_review/m13_unified_campaign_v33_20261026_v1",
+        "--matrix",
+        "runs_review/m13_unified_matrix_v33_20261026_v1",
+        "--delivery",
+        "runs_review/m13_unified_delivery_v33_20261026_v1",
+        "--parallel-runner",
+        "runs_review/m13_unified_development_20261025_v1/adaptive_episode_matrix_runner.py",
+        "--matrix-workers",
+        "6"
+      ]
+    },
+    {
+      "pid": 18516,
+      "command": [
+        "[公开副本已隐去本地信息]",
+        "-B",
+        "-m",
+        "tools.m13_unified_loop",
+        "--out",
+        "mono/runs_review/m13_unified_critical_v33_20261026_v1/closed_loop/job_000",
+        "--config",
+        "mono/runs_review/m13_unified_critical_v33_20261026_v1/tracking_config.json",
+        "--perception-profile",
+        "mono/runs_review/m13_unified_critical_v33_20261026_v1/perception_M13.json",
+        "--project-root",
+        "mono",
+        "--scenarios",
+        "mixed_clear",
+        "--modes",
+        "avoidance",
+        "--fps",
+        "30",
+        "--max-seconds",
+        "120.0"
+      ]
+    },
+    {
+      "pid": 19208,
+      "command": [
+        "[公开副本已隐去本地信息]",
+        "-B",
+        "-m",
+        "tools.m13_unified_loop",
+        "--out",
+        "mono/runs_review/m13_unified_critical_v33_20261026_v1/closed_loop/job_001",
+        "--config",
+        "mono/runs_review/m13_unified_critical_v33_20261026_v1/tracking_config.json",
+        "--perception-profile",
+        "mono/runs_review/m13_unified_critical_v33_20261026_v1/perception_M13.json",
+        "--project-root",
+        "mono",
+        "--scenarios",
+        "mixed_fish",
+        "--modes",
+        "avoidance",
+        "--fps",
+        "30",
+        "--max-seconds",
+        "120.0"
+      ]
+    }
+  ],
+  "unfinished_episodes_are_not_formal_results": true
+}

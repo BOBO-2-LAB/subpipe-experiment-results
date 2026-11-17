@@ -1,0 +1,222 @@
+{
+  "status": "PASS",
+  "meaning": "Integrity audit, not mission acceptance",
+  "deepcamo_used": false,
+  "original_sources_and_weights_unchanged": true,
+  "dataset_lock_verified": true,
+  "repaired_masks": 37,
+  "train_val_disjoint": true,
+  "historical_model_metrics_reproduced": true,
+  "regression_tests": 151,
+  "trained_checkpoint_audit": [
+    {
+      "mode": "none",
+      "arm": "full",
+      "actual_epochs": 9,
+      "last_checkpoint": "mono/runs_review/fish_refinement_20261023/02_recipe_regions/none_full/last.pt",
+      "sha256": "eb14c863d54929ae96b338c34b752ceae6a068274d1aa83b1bb9029d3886ba97",
+      "pipe_unchanged": true
+    },
+    {
+      "mode": "plain",
+      "arm": "full",
+      "actual_epochs": 9,
+      "last_checkpoint": "mono/runs_review/fish_refinement_20261023/02_recipe_regions/plain_full/last.pt",
+      "sha256": "ed998434ebe05d73ea7a8ac9daf62ca964d27359bcb0e391e7820c8161637f36",
+      "pipe_unchanged": true
+    },
+    {
+      "mode": "attention",
+      "arm": "full",
+      "actual_epochs": 9,
+      "last_checkpoint": "mono/runs_review/fish_refinement_20261023/02_recipe_regions/attention_full/last.pt",
+      "sha256": "8c55232d09d2846e89467f24310927b81f097e401941bf800554bdd0b0a293af",
+      "pipe_unchanged": true
+    },
+    {
+      "mode": "none",
+      "arm": "region",
+      "actual_epochs": 9,
+      "last_checkpoint": "mono/runs_review/fish_refinement_20261023/02_recipe_regions/none_region/last.pt",
+      "sha256": "706288a085424ba3c4f3786b4ea8a83989fab5e01ea6f1f4460e1a05bfec0617",
+      "pipe_unchanged": true
+    },
+    {
+      "mode": "plain",
+      "arm": "region",
+      "actual_epochs": 9,
+      "last_checkpoint": "mono/runs_review/fish_refinement_20261023/02_recipe_regions/plain_region/last.pt",
+      "sha256": "fabc17a8a03d53b6869b431ff6c1d58de1b33f67016e6a9403b0a8e70bd077df",
+      "pipe_unchanged": true
+    },
+    {
+      "mode": "attention",
+      "arm": "region",
+      "actual_epochs": 9,
+      "last_checkpoint": "mono/runs_review/fish_refinement_20261023/02_recipe_regions/attention_region/last.pt",
+      "sha256": "987a2ae746dd2f7884182a847e5c0118a2bafa9e7cd8d2110b7d2b02209b3feb",
+      "pipe_unchanged": true
+    }
+  ],
+  "selected_pipe_guards": [
+    {
+      "mode": "none",
+      "result": [
+        {
+          "shape": [
+            1,
+            3,
+            384,
+            384
+          ],
+          "bitwise_equal": true,
+          "max_abs_diff": 0.0
+        }
+      ]
+    },
+    {
+      "mode": "plain",
+      "result": [
+        {
+          "shape": [
+            1,
+            3,
+            384,
+            384
+          ],
+          "bitwise_equal": true,
+          "max_abs_diff": 0.0
+        }
+      ]
+    },
+    {
+      "mode": "attention",
+      "result": [
+        {
+          "shape": [
+            1,
+            3,
+            384,
+            384
+          ],
+          "bitwise_equal": true,
+          "max_abs_diff": 0.0
+        }
+      ]
+    }
+  ],
+  "review_sources": {
+    "tools/refine_fish_review.py": "5fff0698b111882e3ae89031f2fb019d49588b3c938a7bc71e3d750995e2c3c6",
+    "models/inspection_loader.py": "d912dfda7d6e045d5ad491a3089f45410e0af670c0ebf57694b8b632a3d807ff",
+    "tests/test_suim_refinement.py": "1e03c2e5acf315cafdbd8da625bd760375c49345b85a88770e5c90ff91ae740e",
+    "tests/test_fish_slicing.py": "b03ea835bd71acb1fff3e1b5447c2a6bff300e51c92771ac96a44922b3ba8a35"
+  },
+  "historical_reference": {
+    "checkpoint": "mono/runs_fish/suim8_sep_e60/best.pt",
+    "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2",
+    "aligned153": {
+      "per_class_iou": {
+        "BW": 0.8327191285491871,
+        "HD": 0.7437407594847191,
+        "PF": 0.1436870673946803,
+        "WR": 0.7101007194546254,
+        "RO": 0.7152429160361112,
+        "RI": 0.743447822613564,
+        "FV": 0.6437499355000552,
+        "SR": 0.5454216649857581
+      },
+      "fish_iou": 0.6437499355000552,
+      "bio_iou": 0.5102949418360998,
+      "all_iou": 0.6347637517523376,
+      "negative_crops": 52,
+      "negative_candidates": 14,
+      "gate": "p(FV)>0.5; largest 8-connected component >=400px at 384x384",
+      "confusion": [
+        [
+          6372787,
+          21932,
+          15524,
+          62195,
+          4573,
+          137391,
+          111894,
+          335888
+        ],
+        [
+          16062,
+          336536,
+          14,
+          16372,
+          6607,
+          1356,
+          13196,
+          5098
+        ],
+        [
+          24989,
+          3718,
+          89658,
+          261,
+          0,
+          135592,
+          25545,
+          64400
+        ],
+        [
+          23977,
+          7040,
+          2034,
+          1354853,
+          0,
+          95288,
+          20243,
+          78965
+        ],
+        [
+          4847,
+          2271,
+          8,
+          5297,
+          68531,
+          293,
+          157,
+          81
+        ],
+        [
+          97462,
+          5387,
+          232271,
+          86910,
+          1881,
+          6454727,
+          292450,
+          353598
+        ],
+        [
+          50538,
+          5562,
+          6694,
+          12619,
+          0,
+          254459,
+          1621852,
+          56916
+        ],
+        [
+          372926,
+          11340,
+          23273,
+          141919,
+          1269,
+          533087,
+          47257,
+          2430898
+        ]
+      ]
+    },
+    "scope": "Different historical training trajectory; context only, not a matched architectural ablation or selection input"
+  },
+  "operational_model_replaced": false,
+  "operational_slicing_enabled": false,
+  "new_closed_loop_episodes": 0
+}

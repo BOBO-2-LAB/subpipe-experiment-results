@@ -1,0 +1,465 @@
+{
+  "scope": "Monocular image-based 2.5D integration simulation; reused training appearance. Not independent recognition evaluation or real-vehicle safety validation.",
+  "truth_access": "Renderer and scorer only. Controller uses model masks/probabilities, their history, and simulated measured speed.",
+  "timing": "Fixed simulated time; inference latency is measured but not injected into feedback. Not a real-time or delay-robustness claim.",
+  "image_delay_assumption_s": 0.21,
+  "reference_profile": {
+    "schema_version": 1,
+    "name": "BlueROV2 planar inspection reference with 4K Cam",
+    "scope": "Published hardware references plus explicit uncalibrated planar simulation assumptions",
+    "sources": {
+      "vehicle": "https://bluerobotics.com/store/rov/bluerov2/",
+      "vehicle_datasheet": "https://bluerobotics.com/wp-content/uploads/2025/04/BROV2-DATASHEET.pdf",
+      "camera": "https://bluerobotics.com/store/sensors-cameras/cameras/4k-cam/",
+      "retrieved_date": "2026-10-11"
+    },
+    "published_vehicle": {
+      "length_m": 0.457,
+      "width_m": 0.338,
+      "height_m": 0.254,
+      "mass_in_air_kg_range": [
+        11,
+        12
+      ],
+      "thrusters": 6,
+      "horizontal_thrusters": 4,
+      "vertical_thrusters": 2,
+      "forward_bollard_thrust_kgf": 9,
+      "depth_rating_aluminum_m": 300,
+      "usage": "Dimensional and propulsion reference, not a deep-sea pressure-rating claim"
+    },
+    "vehicle": {
+      "class": "rov_thruster_planar",
+      "dp_capable": true,
+      "cruise_speed_mps": 0.5,
+      "max_speed_mps": 1.5,
+      "min_control_speed_mps": 0.0,
+      "tau_s": 1.5,
+      "accel_mps2": 0.25,
+      "decel_mps2": 0.35
+    },
+    "interface": {
+      "control_rate_hz": 10.0
+    },
+    "camera": {
+      "model": "Blue Robotics 4K Cam (wide setting, nominal pinhole)",
+      "native_stream_width": 1920,
+      "native_stream_height": 1080,
+      "frame_rate_hz": 30,
+      "horizontal_fov_deg": 94,
+      "vertical_fov_deg": 62,
+      "published_lens_to_screen_delay_s": 0.21,
+      "published_delay_test_setup": "1080p30 on 2024 M3 MacBook Air; not direct inference-input delay",
+      "simulation_width": 512,
+      "simulation_height": 288,
+      "pitch_deg": 45,
+      "altitude_m": 2.0
+    },
+    "controller": {
+      "kp": 0.75,
+      "max_yaw_rate_rad_s": 0.35,
+      "yaw_response_tau_s": 0.6,
+      "loss_timeout_s": 3.0
+    },
+    "simulation": {
+      "fish_height_m": 1.5,
+      "boat_radius_m": 0.32,
+      "pipe_width_m": 0.8,
+      "image_delay_s": 0.21,
+      "delay_usage": "Stress proxy only; do not equate display latency with measured camera-to-inference delay",
+      "resize_short": 288,
+      "fish_resize_short": 288,
+      "max_seconds": 30
+    },
+    "assumption_notes": [
+      "No calibrated lens distortion, housing refraction, current compensation or tether drag",
+      "Planar surge/yaw only; published lateral/heave abilities are not fully implemented",
+      "Stopping surge is not verified station keeping",
+      "Hydrostatic depth, pressure and lighting physics are not simulated"
+    ]
+  },
+  "reference_profile_path": "mono/configs/inspection_rov_reference.yaml",
+  "control_config_path": "mono/configs/inspection_rov_reference.yaml",
+  "camera_assumptions": {
+    "width": 512,
+    "height": 288,
+    "focal_px": 238.25760450817256,
+    "pitch_deg": 45.0,
+    "altitude_m": 2.0,
+    "focal_y_px": 238.82410571729935
+  },
+  "vehicle_assumptions": {
+    "klass": "rov_thruster_planar",
+    "dp_capable": true,
+    "cruise_speed_mps": 0.5,
+    "max_speed_mps": 1.5,
+    "min_control_speed_mps": 0.0,
+    "tau_s": 1.5,
+    "accel_mps2": 0.25,
+    "decel_mps2": 0.35,
+    "control_rate_hz": 10.0,
+    "inspection_min_speed_mps": 0.4
+  },
+  "renderer": "photo_plane",
+  "encounter_geometry": "Original horizontal footprint stop rule plus evaluation-only fixed-height sphere clearance; no depth control",
+  "rate_hz": 30,
+  "resize_short": 288,
+  "boat_radius_m": 0.32,
+  "pipe_width_m": 0.8,
+  "avoidance_config_overrides": {
+    "lateral_speed_coupled": false,
+    "lateral_rate": 0.35,
+    "lateral_fov_margin": 0.66,
+    "lateral_per_risk": 0.45,
+    "lateral_min_setpoint": 0.33,
+    "lateral_motion_direction": true,
+    "lateral_hold_s": 2.0
+  },
+  "fish_height_m": 1.5,
+  "fish_resize_short": 288,
+  "perception_refinement": "combined",
+  "pipe_width_prior_m": 0.8,
+  "loss_policy": "wait_reinspect",
+  "maneuver_speed_mps": 0.4,
+  "inspection_scoring": "inspection_phase",
+  "tracker_sway": true,
+  "pipe_following": "line",
+  "pipe_rotations": false,
+  "pipe_motion_compensation": false,
+  "centerline_assumptions": null,
+  "sway_assumptions": {
+    "max_speed_mps": 0.6,
+    "tau_s": 0.6,
+    "acceleration_mps2": 0.35,
+    "kp": 1.2,
+    "heading_gain": 0.2
+  },
+  "tracker_assumptions": {
+    "kp": 0.75,
+    "max_yaw_rate_rad_s": 0.35,
+    "loss_timeout_s": 3.0,
+    "yaw_response_tau_s": 0.6
+  },
+  "synthetic_inspection_criteria": {
+    "corridor_m": 1.0,
+    "frame_pipe_iou_min": 0.5,
+    "required_valid_fraction": 0.9,
+    "usage": "scoring only, never fed to controller"
+  },
+  "appearance_manifest": {
+    "pipe_cache_index": 187,
+    "ground_cache_index": 0,
+    "fish_video_frame": 240,
+    "photographic_ground_cache_index": 187,
+    "rectified_pipe_width_px": 75,
+    "photo_material_version": 2,
+    "photographic_material": "full photograph with row-wise pipe rectification, reflected tiling; source labels are renderer material only",
+    "fish_annotation": "manually outlined appearance sprite, not real-video evaluation ground truth",
+    "source_cache": "mono/cache/288x512",
+    "source_video": "测试视频.mp4"
+  },
+  "appearance_assets": [
+    {
+      "path": "mono/assets/visual_loop_photo_v2/ground.png",
+      "sha256": "b19a20361528ba7a9057f33e01da6152b2fd378155b63d016c525aee9c00d70b"
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/pipe.png",
+      "sha256": "421ec11cf08051cb25a1e24afbddc75c4cf30f84405bb9f46eadb5ffc4babe0c"
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/fish.png",
+      "sha256": "e8939701733d81630a994e6257ec495964acc7aee9177e10e3e79c033ba081ad"
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/manifest.json",
+      "sha256": "55a190333cf1acf83635f6f0cc010025894cb56b60aeffe79afb85c829df2e36"
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/photo_ground.png",
+      "sha256": "7debdb69980c1e1a9f83ebaaf5fc1146a01bd09d21efc516a1ef4815bd4639f7"
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/photo_pipe_mask.png",
+      "sha256": "d46768dc07512a92f22d2c7ee616af50894aa6f01f2cee31b6319304ebe109e1"
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/photo_background.png",
+      "sha256": "dc95aa5a9f5878ee2dedc282476c82da3beeb9e7068dd48daa89fe05c72edc0e"
+    }
+  ],
+  "checkpoints": [
+    {
+      "path": "mono/runs_ablation/M11/best.pt",
+      "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+    },
+    {
+      "path": "mono/runs_fish/wavelet_20261023_seed42_gpu/plain/best.pt",
+      "sha256": "9848481413a4a279360e7a214281995d7d618c925e11008bff157de693f98b7c"
+    }
+  ],
+  "perception_model": {
+    "profile_path": "mono/configs/perception_wavelet_plain.json",
+    "profile_sha256": "5299c25850849af47b5662f98ceb618b2aa1fbecdab72baa1dc4fa72e41c2afb",
+    "profile": {
+      "schema_version": 1,
+      "name": "wavelet_plain_suim",
+      "adoption_status": "optional research comparison; task acceptance is reported separately",
+      "pipe_checkpoint": "runs_ablation/M11/best.pt",
+      "fish_checkpoint": "runs_fish/wavelet_20261023_seed42_gpu/plain/best.pt",
+      "pipe_sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a",
+      "fish_sha256": "9848481413a4a279360e7a214281995d7d618c925e11008bff157de693f98b7c",
+      "fish_wavelet": "plain",
+      "fish_wavelet_stage": "s8",
+      "includes_deepcamo": false
+    },
+    "checkpoints": [
+      {
+        "path": "mono/runs_ablation/M11/best.pt",
+        "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+      },
+      {
+        "path": "mono/runs_fish/wavelet_20261023_seed42_gpu/plain/best.pt",
+        "sha256": "9848481413a4a279360e7a214281995d7d618c925e11008bff157de693f98b7c"
+      }
+    ],
+    "model_config": {
+      "num_fish_classes": 8,
+      "fish_mid": 64,
+      "separate_encoder": true,
+      "fish_wavelet": "plain",
+      "fish_wavelet_stage": "s8"
+    },
+    "pipe_exactly_matches_reference": true
+  },
+  "implementation_hashes": [
+    {
+      "path": "mono/avoid/decision.py",
+      "sha256": "0aa73c84d63bc3759817030506b7d4ef51c318ad987302711a852e2aa7882810"
+    },
+    {
+      "path": "mono/avoid/actuation.py",
+      "sha256": "9a67cfc66eb508754fec00728ab193554fb317ae3769358c7cac0f5f7fffaaf7"
+    },
+    {
+      "path": "mono/avoid/monocular_refinement.py",
+      "sha256": "a580c5bf3e38d2599841c626ab6f5c633d9bb24f9084e49b301fefa886633180"
+    },
+    {
+      "path": "mono/avoid/planar_tracker.py",
+      "sha256": "465c8fb39a32f62443b9de4e0a1e50923961b64b6879eb3999bfbf7be6184e41"
+    },
+    {
+      "path": "mono/avoid/centerline.py",
+      "sha256": "89af8e557c092339b4a6c627969afb942e6c27b0a6726ac9263dd53e1fb8d249"
+    },
+    {
+      "path": "mono/avoid/pipe_route.py",
+      "sha256": "6fb35cac30c4676aea404321197b3ce74970c3c0a03aa17ea4e211fde9d1327d"
+    },
+    {
+      "path": "mono/avoid/visual_sim.py",
+      "sha256": "23d945094988b21114bc6d23600d5079490b880854b4d0c81f72f2b337bbbb9f"
+    },
+    {
+      "path": "mono/avoid/loss_recovery.py",
+      "sha256": "9feea0e55098fe2ba7d5fc74c9afe7dd91b67c317230976b6650f12c0fe4db1a"
+    },
+    {
+      "path": "mono/tools/visual_closed_loop.py",
+      "sha256": "834c99eb8e6061a114a512688f55268037203ebddee85a11dbad9acdbc5b6dbb"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "clear_pipe",
+      "fish_x": null,
+      "fish_y": 0.0,
+      "fish_vy": 0.0,
+      "fish_radius": 0.45,
+      "current_y": 0.0,
+      "blackout_start": null,
+      "blackout_duration": 0.0,
+      "goal_x": 8.0,
+      "fish_dropout_start": null,
+      "fish_dropout_duration": 0.0,
+      "pipe_points": null
+    },
+    {
+      "name": "head_on",
+      "fish_x": 5.0,
+      "fish_y": 0.0,
+      "fish_vy": 0.0,
+      "fish_radius": 0.45,
+      "current_y": 0.0,
+      "blackout_start": null,
+      "blackout_duration": 0.0,
+      "goal_x": 8.0,
+      "fish_dropout_start": null,
+      "fish_dropout_duration": 0.0,
+      "pipe_points": null
+    }
+  ],
+  "episodes": [
+    {
+      "scenario": "clear_pipe",
+      "mode": "avoidance",
+      "outcome": "goal_reached",
+      "route_completed": true,
+      "task_completed": true,
+      "legacy_task_completed": true,
+      "inspection_scoring": "inspection_phase",
+      "active_inspection_valid_fraction": 0.9648033126293996,
+      "active_inspection_frames": 483,
+      "corridor_preserved": true,
+      "inspection_recovered": true,
+      "synthetic_inspection_valid_fraction": 0.9648033126293996,
+      "collision": false,
+      "minimum_clearance_m": null,
+      "encounter_passed": false,
+      "footprint_contact": false,
+      "physical_collision": null,
+      "contact_metric": "horizontal footprint overlap; not physical 3D collision",
+      "inspection_recovery_time_s": null,
+      "elapsed_sim_s": 16.1,
+      "progress_m": 8.000763284174784,
+      "maximum_abs_cross_track_m": 0.3556284634898971,
+      "pipe_loss_frames": 7,
+      "longest_pipe_loss_s": 0.23333333333333334,
+      "ground_truth_pipe_out_of_view_frames": 0,
+      "tracking_error_abs_mean": 0.04013386176388366,
+      "actions": {
+        "tracker_recovery": 7,
+        "nominal": 476
+      },
+      "synthetic_pipe_iou": 0.7474990386861176,
+      "synthetic_fish_iou": null,
+      "visible_fish_frames": 0,
+      "fish_overlap_hit_frames": 0,
+      "fish_absent_but_detection_frames": 0,
+      "inference_wall_s_median": 0.01797700000133773,
+      "inference_wall_s_p95": 0.02203502999982447,
+      "frames": 483,
+      "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+      "video": "mono/runs_review/wavelet_adoption_20261023_plain/straight/clear_pipe_avoidance/feedback.mp4",
+      "event_times": {
+        "first_visible_s": null,
+        "first_effective_detection_s": null,
+        "first_matching_detection_s": null,
+        "first_confirmed_track_s": null,
+        "first_actionable_track_s": null,
+        "first_intervention_s": null,
+        "first_speed_command_reduction_s": 0.0,
+        "first_actual_speed_reduction_s": 0.13333333333333333,
+        "first_avoidance_setpoint_s": null,
+        "contact_s": null,
+        "detection_delay_s": null,
+        "confirmation_delay_s": null,
+        "decision_delay_s": null,
+        "actuation_delay_s": null,
+        "remaining_time_at_intervention_s": null,
+        "matching_to_first_confirmation_s": null,
+        "matching_to_actionable_track_s": null,
+        "association_caveat": "Global first events; matching-based intervals are not proof of same-fish track identity.",
+        "post_intervention_command_reduction_s": null,
+        "post_intervention_actual_speed_response_s": null,
+        "post_intervention_actuation_delay_s": null
+      },
+      "minimum_sphere_clearance_m": null,
+      "simplified_3d_contact": null,
+      "sphere_metric": "Assumed sphere envelopes at fixed heights; evaluation only. Episode still stops at original horizontal contact.",
+      "speed_saturation_frames": 3,
+      "injected_fish_dropout_frames": 0,
+      "configured_image_delay_s": 0.21,
+      "loss_recovery_events": [],
+      "reinspection_restarts": 0,
+      "pipe_mask_motion_compensated": false,
+      "raw_delayed_pipe_iou": 0.7474990386861176,
+      "raw_delayed_inspection_valid_fraction": 0.9648033126293996,
+      "raw_delayed_active_valid_fraction": 0.9648033126293996,
+      "raw_delayed_task_completed": true,
+      "realized_image_age_s_max": 0.23333333333333428
+    },
+    {
+      "scenario": "head_on",
+      "mode": "avoidance",
+      "outcome": "goal_reached",
+      "route_completed": true,
+      "task_completed": true,
+      "legacy_task_completed": true,
+      "inspection_scoring": "inspection_phase",
+      "active_inspection_valid_fraction": 0.987012987012987,
+      "active_inspection_frames": 539,
+      "corridor_preserved": true,
+      "inspection_recovered": true,
+      "synthetic_inspection_valid_fraction": 0.987012987012987,
+      "collision": false,
+      "minimum_clearance_m": 0.08698058594811753,
+      "encounter_passed": true,
+      "footprint_contact": false,
+      "physical_collision": null,
+      "contact_metric": "horizontal footprint overlap; not physical 3D collision",
+      "inspection_recovery_time_s": 3.0999999999999996,
+      "elapsed_sim_s": 17.96666666666667,
+      "progress_m": 8.015264183113311,
+      "maximum_abs_cross_track_m": 0.915526701500767,
+      "pipe_loss_frames": 7,
+      "longest_pipe_loss_s": 0.23333333333333334,
+      "ground_truth_pipe_out_of_view_frames": 0,
+      "tracking_error_abs_mean": 0.06767385685348401,
+      "actions": {
+        "tracker_recovery": 7,
+        "nominal": 362,
+        "slow": 97,
+        "hover": 73
+      },
+      "synthetic_pipe_iou": 0.8475126341716116,
+      "synthetic_fish_iou": 0.29714763678874667,
+      "visible_fish_frames": 222,
+      "fish_overlap_hit_frames": 175,
+      "fish_absent_but_detection_frames": 5,
+      "inference_wall_s_median": 0.021207800000411225,
+      "inference_wall_s_p95": 0.026656700000239637,
+      "frames": 539,
+      "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+      "video": "mono/runs_review/wavelet_adoption_20261023_plain/straight/head_on_avoidance/feedback.mp4",
+      "event_times": {
+        "first_visible_s": 3.1666666666666665,
+        "first_effective_detection_s": 3.8333333333333335,
+        "first_matching_detection_s": 3.8333333333333335,
+        "first_confirmed_track_s": 4.0,
+        "first_actionable_track_s": 4.366666666666666,
+        "first_intervention_s": 5.0,
+        "first_speed_command_reduction_s": 0.0,
+        "first_actual_speed_reduction_s": 0.13333333333333333,
+        "first_avoidance_setpoint_s": 5.0,
+        "contact_s": null,
+        "detection_delay_s": 0.666666666666667,
+        "confirmation_delay_s": 0.16666666666666652,
+        "decision_delay_s": 1.0,
+        "actuation_delay_s": null,
+        "remaining_time_at_intervention_s": null,
+        "matching_to_first_confirmation_s": 0.16666666666666652,
+        "matching_to_actionable_track_s": 0.5333333333333328,
+        "association_caveat": "Global first events; matching-based intervals are not proof of same-fish track identity.",
+        "post_intervention_command_reduction_s": 5.0,
+        "post_intervention_actual_speed_response_s": 5.133333333333333,
+        "post_intervention_actuation_delay_s": 0.13333333333333286
+      },
+      "minimum_sphere_clearance_m": 0.22217726475261412,
+      "simplified_3d_contact": false,
+      "sphere_metric": "Assumed sphere envelopes at fixed heights; evaluation only. Episode still stops at original horizontal contact.",
+      "speed_saturation_frames": 51,
+      "injected_fish_dropout_frames": 0,
+      "configured_image_delay_s": 0.21,
+      "loss_recovery_events": [],
+      "reinspection_restarts": 0,
+      "pipe_mask_motion_compensated": false,
+      "raw_delayed_pipe_iou": 0.8475126341716116,
+      "raw_delayed_inspection_valid_fraction": 0.987012987012987,
+      "raw_delayed_active_valid_fraction": 0.987012987012987,
+      "raw_delayed_task_completed": true,
+      "realized_image_age_s_max": 0.23333333333333428
+    }
+  ]
+}

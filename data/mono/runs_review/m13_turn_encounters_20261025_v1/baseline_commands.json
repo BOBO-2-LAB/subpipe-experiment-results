@@ -1,0 +1,56 @@
+[
+  {
+    "pid": 14828,
+    "command": [
+      "[公开副本已隐去本地信息]",
+      "-B",
+      "-m",
+      "tools.m13_s345_fish_acceptance",
+      "--out",
+      "mono/runs_review/m13_s345_left_encounter_baseline_20261025_v1",
+      "--fish-config",
+      "mono/runs_review/m13_s345_right_acceptance_20261025_v2/fish_config.json",
+      "--avoidance-config",
+      "mono/runs_review/m13_s345_right_acceptance_20261025_v2/avoidance_config.json",
+      "--baseline-source",
+      "mono/runs_review/m13_s345_right_acceptance_20261025_v2/closed_loop/worker_0",
+      "--regression-log",
+      "mono/runs_review/m13_s345_right_acceptance_20261025_v2/regression.log",
+      "--source-snapshot",
+      "mono/runs_review/m13_s345_right_acceptance_20261025_v2/source_snapshot",
+      "--workers",
+      "2",
+      "--scenarios",
+      "bend_left_fish_before",
+      "bend_left_fish_corner"
+    ],
+    "out": "mono/runs_review/m13_s345_left_encounter_baseline_20261025_v1"
+  },
+  {
+    "pid": 2896,
+    "command": [
+      "[公开副本已隐去本地信息]",
+      "-B",
+      "-m",
+      "tools.m13_s345_fish_acceptance",
+      "--out",
+      "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1",
+      "--fish-config",
+      "mono/runs_review/m13_s345_right_acceptance_20261025_v2/fish_config.json",
+      "--avoidance-config",
+      "mono/runs_review/m13_s345_right_acceptance_20261025_v2/avoidance_config.json",
+      "--baseline-source",
+      "mono/runs_review/m13_s345_right_acceptance_20261025_v2/closed_loop/worker_0",
+      "--regression-log",
+      "mono/runs_review/m13_s345_right_acceptance_20261025_v2/regression.log",
+      "--source-snapshot",
+      "mono/runs_review/m13_s345_right_acceptance_20261025_v2/source_snapshot",
+      "--workers",
+      "2",
+      "--scenarios",
+      "bend_right_fish_before",
+      "bend_right_fish_corner"
+    ],
+    "out": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1"
+  }
+]

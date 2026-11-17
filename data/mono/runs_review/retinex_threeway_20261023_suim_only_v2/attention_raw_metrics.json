@@ -1,0 +1,142 @@
+{
+  "architecture": "attention",
+  "input": "raw",
+  "profile": "mono/runs_review/retinex_threeway_20261023_suim_only_v2/attention_raw.json",
+  "profile_sha256": "d53056ba9aeabcf9166ee7be3d1e4382d5582fe70c9e2a222f13288e8a5258bc",
+  "provenance": {
+    "profile_path": "mono/runs_review/retinex_threeway_20261023_suim_only_v2/attention_raw.json",
+    "profile_sha256": "d53056ba9aeabcf9166ee7be3d1e4382d5582fe70c9e2a222f13288e8a5258bc",
+    "profile": {
+      "schema_version": 1,
+      "name": "attention_raw",
+      "pipe_checkpoint": "mono/runs_ablation/M11/best.pt",
+      "fish_checkpoint": "mono/runs_fish/wavelet_20261023_seed42_gpu/attention/best.pt",
+      "pipe_sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a",
+      "fish_sha256": "6386036ed2f670ecd05199c4e544564b447b9f37afbbbd1564254e4d353f6d73",
+      "fish_wavelet": "attention",
+      "fish_wavelet_stage": "s8",
+      "includes_deepcamo": false,
+      "adoption_status": "Preregistered research comparison; not an operational replacement"
+    },
+    "checkpoints": [
+      {
+        "path": "mono/runs_ablation/M11/best.pt",
+        "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+      },
+      {
+        "path": "mono/runs_fish/wavelet_20261023_seed42_gpu/attention/best.pt",
+        "sha256": "6386036ed2f670ecd05199c4e544564b447b9f37afbbbd1564254e4d353f6d73"
+      }
+    ],
+    "model_config": {
+      "num_fish_classes": 8,
+      "fish_mid": 64,
+      "separate_encoder": true,
+      "fish_wavelet": "attention",
+      "fish_wavelet_stage": "s8"
+    },
+    "pipe_exactly_matches_reference": true
+  },
+  "pipe_bitwise_equal": true,
+  "suim": {
+    "per_class_iou": {
+      "BW": 0.8269361281233243,
+      "HD": 0.6961495626223198,
+      "PF": 0.1318011394211647,
+      "WR": 0.7135584828222783,
+      "RO": 0.6197853280016105,
+      "RI": 0.7210839706984569,
+      "FV": 0.6121800297760782,
+      "SR": 0.5271118562730395
+    },
+    "fish_iou": 0.6121800297760782,
+    "bio_iou": 0.48835504663189994,
+    "all_iou": 0.606075812217284,
+    "negative_crops": 52,
+    "negative_candidates": 9,
+    "gate": "p(FV)>0.5; largest 8-connected component >=400px at 384x384",
+    "confusion": [
+      [
+        6339748,
+        27197,
+        9335,
+        158336,
+        9560,
+        142245,
+        101896,
+        262209
+      ],
+      [
+        16583,
+        321910,
+        0,
+        18815,
+        12080,
+        577,
+        21316,
+        3960
+      ],
+      [
+        29837,
+        4925,
+        90133,
+        264,
+        0,
+        114224,
+        21464,
+        83316
+      ],
+      [
+        26504,
+        16113,
+        2643,
+        1485815,
+        1187,
+        17409,
+        10209,
+        29138
+      ],
+      [
+        3761,
+        3571,
+        0,
+        5867,
+        67732,
+        304,
+        166,
+        62
+      ],
+      [
+        103055,
+        1924,
+        275155,
+        53949,
+        2438,
+        6081297,
+        301806,
+        702670
+      ],
+      [
+        65296,
+        718,
+        10912,
+        13557,
+        56,
+        292586,
+        1547716,
+        71562
+      ],
+      [
+        370989,
+        12726,
+        41648,
+        242455,
+        2499,
+        343910,
+        68944,
+        2492489
+      ]
+    ]
+  },
+  "wall_seconds_including_preprocess": 1.215840399996523
+}

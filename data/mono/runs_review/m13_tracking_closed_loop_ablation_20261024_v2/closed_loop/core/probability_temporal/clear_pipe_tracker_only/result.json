@@ -1,0 +1,307 @@
+{
+  "scenario": "clear_pipe",
+  "mode": "tracker_only",
+  "outcome": "timeout",
+  "route_completed": false,
+  "task_completed": false,
+  "legacy_task_completed": false,
+  "inspection_scoring": "inspection_phase",
+  "active_inspection_valid_fraction": 0.13043478260869565,
+  "active_inspection_frames": 115,
+  "corridor_preserved": true,
+  "inspection_recovered": false,
+  "synthetic_inspection_valid_fraction": 0.013333333333333334,
+  "collision": false,
+  "minimum_clearance_m": null,
+  "encounter_passed": false,
+  "footprint_contact": false,
+  "physical_collision": null,
+  "contact_metric": "horizontal footprint overlap; not physical 3D collision",
+  "inspection_recovery_time_s": null,
+  "elapsed_sim_s": 45.0,
+  "progress_m": 1.2912606781944733,
+  "maximum_abs_cross_track_m": 0.10049895883350152,
+  "pipe_loss_frames": 985,
+  "longest_pipe_loss_s": 6.96666666666667,
+  "ground_truth_pipe_out_of_view_frames": 0,
+  "tracking_error_abs_mean": 0.13167558462368398,
+  "actions": {
+    "recovery_initialization_wait": 13,
+    "nominal": 115,
+    "recovery_debounce_hold": 162,
+    "recovery_waiting": 1060
+  },
+  "synthetic_pipe_iou": 0.2644662315272322,
+  "synthetic_fish_iou": null,
+  "visible_fish_frames": 0,
+  "fish_overlap_hit_frames": 0,
+  "fish_absent_but_detection_frames": 0,
+  "inference_wall_s_median": 0.021142800003872253,
+  "inference_wall_s_p95": 0.026938259995222324,
+  "frames": 1350,
+  "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+  "video": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v2/closed_loop/core/probability_temporal/clear_pipe_tracker_only/feedback.mp4",
+  "event_times": {
+    "first_visible_s": null,
+    "first_effective_detection_s": null,
+    "first_matching_detection_s": null,
+    "first_confirmed_track_s": null,
+    "first_actionable_track_s": null,
+    "first_intervention_s": null,
+    "first_speed_command_reduction_s": 0.0,
+    "first_actual_speed_reduction_s": 0.0,
+    "first_avoidance_setpoint_s": null,
+    "contact_s": null,
+    "detection_delay_s": null,
+    "confirmation_delay_s": null,
+    "decision_delay_s": null,
+    "actuation_delay_s": null,
+    "remaining_time_at_intervention_s": null,
+    "matching_to_first_confirmation_s": null,
+    "matching_to_actionable_track_s": null,
+    "association_caveat": "Global first events; matching-based intervals are not proof of same-fish track identity.",
+    "post_intervention_command_reduction_s": null,
+    "post_intervention_actual_speed_response_s": null,
+    "post_intervention_actuation_delay_s": null
+  },
+  "minimum_sphere_clearance_m": null,
+  "simplified_3d_contact": null,
+  "sphere_metric": "Assumed sphere envelopes at fixed heights; evaluation only. Episode still stops at original horizontal contact.",
+  "speed_saturation_frames": 0,
+  "injected_fish_dropout_frames": 0,
+  "configured_image_delay_s": 0.21,
+  "loss_recovery_events": [
+    {
+      "t": 0.0,
+      "event": "initialization_wait_started"
+    },
+    {
+      "t": 0.43333333333333335,
+      "event": "initialization_confirmed"
+    },
+    {
+      "t": 1.1666666666666667,
+      "event": "loss_debounce_started",
+      "anchor": [
+        0.44161780295517356,
+        -0.04054899644010284
+      ]
+    },
+    {
+      "t": 1.5666666666666667,
+      "event": "brief_loss_resumed",
+      "loss_duration_s": 0.3999999999999999,
+      "odometry_displacement_diagnostic_m": 0.07680336502919688
+    },
+    {
+      "t": 2.0,
+      "event": "loss_debounce_started",
+      "anchor": [
+        0.7220459899659756,
+        -0.04650344493453367
+      ]
+    },
+    {
+      "t": 2.5,
+      "event": "sustained_loss_confirmed",
+      "odometry_displacement_diagnostic_m": 0.1289219370372013
+    },
+    {
+      "t": 2.6,
+      "event": "stationary_loss_resumed",
+      "loss_duration_s": 0.6000000000000001,
+      "odometry_displacement_diagnostic_m": 0.1289219370372013
+    },
+    {
+      "t": 3.5,
+      "event": "loss_debounce_started",
+      "anchor": [
+        1.140968851837839,
+        -0.04993522577005275
+      ]
+    },
+    {
+      "t": 4.0,
+      "event": "sustained_loss_confirmed",
+      "odometry_displacement_diagnostic_m": 0.1525784242052864
+    },
+    {
+      "t": 7.2,
+      "event": "stationary_loss_resumed",
+      "loss_duration_s": 3.7,
+      "odometry_displacement_diagnostic_m": 0.28531279926350134
+    },
+    {
+      "t": 7.366666666666666,
+      "event": "loss_debounce_started",
+      "anchor": [
+        1.2718218988241772,
+        -0.04073882979422816
+      ]
+    },
+    {
+      "t": 7.866666666666666,
+      "event": "sustained_loss_confirmed",
+      "odometry_displacement_diagnostic_m": 0.0
+    },
+    {
+      "t": 8.233333333333333,
+      "event": "stationary_loss_resumed",
+      "loss_duration_s": 0.8666666666666663,
+      "odometry_displacement_diagnostic_m": 0.0
+    },
+    {
+      "t": 8.266666666666666,
+      "event": "loss_debounce_started",
+      "anchor": [
+        1.2355507274278965,
+        -0.04302665641105426
+      ]
+    },
+    {
+      "t": 8.766666666666666,
+      "event": "sustained_loss_confirmed",
+      "odometry_displacement_diagnostic_m": 0.0
+    },
+    {
+      "t": 9.133333333333333,
+      "event": "stationary_loss_resumed",
+      "loss_duration_s": 0.8666666666666671,
+      "odometry_displacement_diagnostic_m": 0.0
+    },
+    {
+      "t": 9.2,
+      "event": "loss_debounce_started",
+      "anchor": [
+        1.2199963221819046,
+        -0.044183249986629175
+      ]
+    },
+    {
+      "t": 9.7,
+      "event": "sustained_loss_confirmed",
+      "odometry_displacement_diagnostic_m": 0.0
+    },
+    {
+      "t": 15.2,
+      "event": "stationary_loss_resumed",
+      "loss_duration_s": 6.0,
+      "odometry_displacement_diagnostic_m": 0.0004604998687618367
+    },
+    {
+      "t": 15.6,
+      "event": "loss_debounce_started",
+      "anchor": [
+        1.2412986999750955,
+        -0.05949569004614788
+      ]
+    },
+    {
+      "t": 16.1,
+      "event": "sustained_loss_confirmed",
+      "odometry_displacement_diagnostic_m": 0.04527855204736194
+    },
+    {
+      "t": 19.866666666666667,
+      "event": "stationary_loss_resumed",
+      "loss_duration_s": 4.2666666666666675,
+      "odometry_displacement_diagnostic_m": 0.08447258287298581
+    },
+    {
+      "t": 19.9,
+      "event": "loss_debounce_started",
+      "anchor": [
+        1.2663489828488483,
+        -0.056602476147836284
+      ]
+    },
+    {
+      "t": 20.4,
+      "event": "sustained_loss_confirmed",
+      "odometry_displacement_diagnostic_m": 0.0
+    },
+    {
+      "t": 20.566666666666666,
+      "event": "stationary_loss_resumed",
+      "loss_duration_s": 0.6666666666666679,
+      "odometry_displacement_diagnostic_m": 0.0
+    },
+    {
+      "t": 21.133333333333333,
+      "event": "loss_debounce_started",
+      "anchor": [
+        1.2756831415153786,
+        -0.051379571322303266
+      ]
+    },
+    {
+      "t": 21.633333333333333,
+      "event": "sustained_loss_confirmed",
+      "odometry_displacement_diagnostic_m": 0.06181553403825292
+    },
+    {
+      "t": 25.933333333333334,
+      "event": "stationary_loss_resumed",
+      "loss_duration_s": 4.800000000000001,
+      "odometry_displacement_diagnostic_m": 0.11672118822786134
+    },
+    {
+      "t": 26.266666666666666,
+      "event": "loss_debounce_started",
+      "anchor": [
+        1.2912277151477964,
+        -0.05982705984767748
+      ]
+    },
+    {
+      "t": 26.766666666666666,
+      "event": "sustained_loss_confirmed",
+      "odometry_displacement_diagnostic_m": 0.020096068689421605
+    },
+    {
+      "t": 35.36666666666667,
+      "event": "stationary_loss_resumed",
+      "loss_duration_s": 9.100000000000001,
+      "odometry_displacement_diagnostic_m": 0.037699281670782264
+    },
+    {
+      "t": 35.53333333333333,
+      "event": "loss_debounce_started",
+      "anchor": [
+        1.2922287016023855,
+        -0.06287184904496475
+      ]
+    },
+    {
+      "t": 36.03333333333333,
+      "event": "sustained_loss_confirmed",
+      "odometry_displacement_diagnostic_m": 0.023503194159019965
+    }
+  ],
+  "reinspection_restarts": 0,
+  "pipe_mask_motion_compensated": true,
+  "raw_delayed_pipe_iou": 0.26501638472726824,
+  "raw_delayed_inspection_valid_fraction": 0.018518518518518517,
+  "raw_delayed_active_valid_fraction": 0.1565217391304348,
+  "raw_delayed_task_completed": false,
+  "realized_image_age_s_max": 0.23333333333333783,
+  "original_inspection_recovered": true,
+  "new_tracker": {
+    "name": "probability_temporal",
+    "recovery_version": "coverage_v1",
+    "reverse_attempts": 0,
+    "completed_gaps": 0,
+    "unresolved_gap": null,
+    "confirmed_uncovered_gaps": [],
+    "failure": null,
+    "coverage": {
+      "known_segments": 114,
+      "fresh_segments": 42,
+      "passed_known_segments": 7,
+      "verified_passed_segments": 7,
+      "unverified_passed_segments": 0,
+      "unknown_motion_m": 0.4185087115512597,
+      "scope": "image-supported local-map coverage under odometry/plane priors; not ground-truth mission coverage"
+    }
+  }
+}

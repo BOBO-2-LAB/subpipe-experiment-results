@@ -1,0 +1,1090 @@
+{
+  "scope": "Monocular image-based 2.5D integration simulation; reused training appearance. Not independent recognition evaluation or real-vehicle safety validation.",
+  "truth_access": "Renderer and scorer only. Controller uses model masks/probabilities, their history, and simulated measured speed.",
+  "timing": "Fixed simulated time; inference latency is measured but not injected into feedback. Not a real-time or delay-robustness claim.",
+  "image_delay_assumption_s": 0.21,
+  "reference_profile": {
+    "schema_version": 1,
+    "name": "BlueROV2 planar inspection reference with 4K Cam",
+    "scope": "Published hardware references plus explicit uncalibrated planar simulation assumptions",
+    "sources": {
+      "vehicle": "https://bluerobotics.com/store/rov/bluerov2/",
+      "vehicle_datasheet": "https://bluerobotics.com/wp-content/uploads/2025/04/BROV2-DATASHEET.pdf",
+      "camera": "https://bluerobotics.com/store/sensors-cameras/cameras/4k-cam/",
+      "retrieved_date": "2026-10-11"
+    },
+    "published_vehicle": {
+      "length_m": 0.457,
+      "width_m": 0.338,
+      "height_m": 0.254,
+      "mass_in_air_kg_range": [
+        11,
+        12
+      ],
+      "thrusters": 6,
+      "horizontal_thrusters": 4,
+      "vertical_thrusters": 2,
+      "forward_bollard_thrust_kgf": 9,
+      "depth_rating_aluminum_m": 300,
+      "usage": "Dimensional and propulsion reference, not a deep-sea pressure-rating claim"
+    },
+    "vehicle": {
+      "class": "rov_thruster_planar",
+      "dp_capable": true,
+      "cruise_speed_mps": 0.5,
+      "max_speed_mps": 1.5,
+      "min_control_speed_mps": 0.0,
+      "tau_s": 1.5,
+      "accel_mps2": 0.25,
+      "decel_mps2": 0.35
+    },
+    "interface": {
+      "control_rate_hz": 10.0
+    },
+    "camera": {
+      "model": "Blue Robotics 4K Cam (wide setting, nominal pinhole)",
+      "native_stream_width": 1920,
+      "native_stream_height": 1080,
+      "frame_rate_hz": 30,
+      "horizontal_fov_deg": 94,
+      "vertical_fov_deg": 62,
+      "published_lens_to_screen_delay_s": 0.21,
+      "published_delay_test_setup": "1080p30 on 2024 M3 MacBook Air; not direct inference-input delay",
+      "simulation_width": 512,
+      "simulation_height": 288,
+      "pitch_deg": 45,
+      "altitude_m": 2.0
+    },
+    "controller": {
+      "kp": 0.75,
+      "max_yaw_rate_rad_s": 0.35,
+      "yaw_response_tau_s": 0.6,
+      "loss_timeout_s": 3.0
+    },
+    "simulation": {
+      "fish_height_m": 1.5,
+      "boat_radius_m": 0.32,
+      "pipe_width_m": 0.8,
+      "image_delay_s": 0.21,
+      "delay_usage": "Stress proxy only; do not equate display latency with measured camera-to-inference delay",
+      "resize_short": 288,
+      "fish_resize_short": 288,
+      "max_seconds": 30
+    },
+    "assumption_notes": [
+      "No calibrated lens distortion, housing refraction, current compensation or tether drag",
+      "Planar surge/yaw only; published lateral/heave abilities are not fully implemented",
+      "Stopping surge is not verified station keeping",
+      "Hydrostatic depth, pressure and lighting physics are not simulated"
+    ]
+  },
+  "reference_profile_path": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1/profile.yaml",
+  "control_config_path": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1/profile.yaml",
+  "camera_assumptions": {
+    "width": 512,
+    "height": 288,
+    "focal_px": 238.25760450817256,
+    "pitch_deg": 45.0,
+    "altitude_m": 2.0,
+    "focal_y_px": 238.82410571729935
+  },
+  "vehicle_assumptions": {
+    "klass": "rov_thruster_planar",
+    "dp_capable": true,
+    "cruise_speed_mps": 0.5,
+    "max_speed_mps": 1.5,
+    "min_control_speed_mps": 0.0,
+    "tau_s": 1.5,
+    "accel_mps2": 0.25,
+    "decel_mps2": 0.35,
+    "control_rate_hz": 10.0,
+    "inspection_min_speed_mps": 0.4
+  },
+  "renderer": "photo_plane",
+  "encounter_geometry": "Original horizontal footprint stop rule plus evaluation-only fixed-height sphere clearance; no depth control",
+  "rate_hz": 30,
+  "resize_short": 288,
+  "boat_radius_m": 0.32,
+  "pipe_width_m": 0.8,
+  "avoidance_config_overrides": {
+    "lateral_speed_coupled": false,
+    "lateral_rate": 0.35,
+    "lateral_fov_margin": 0.65,
+    "lateral_per_risk": 0.45,
+    "lateral_min_setpoint": 0.35,
+    "lateral_motion_direction": true,
+    "lateral_hold_s": 2.0,
+    "risk_slow": 0.2,
+    "center_y_sigma": 2.0
+  },
+  "fish_height_m": 1.5,
+  "fish_resize_short": 288,
+  "perception_refinement": "combined",
+  "pipe_width_prior_m": 0.8,
+  "loss_policy": "wait_reinspect",
+  "maneuver_speed_mps": 0.4,
+  "inspection_scoring": "inspection_phase",
+  "tracker_sway": true,
+  "pipe_following": "centerline",
+  "pipe_rotations": false,
+  "pipe_motion_compensation": true,
+  "centerline_assumptions": {
+    "scheme": "M13-S345 original-material prototype v3",
+    "variant": "jitter",
+    "jitter": {
+      "maximum_age_s": 0.3,
+      "maximum_translation_m": 0.18,
+      "maximum_yaw_change_rad": 0.25,
+      "geometry_span_m": 1.0,
+      "geometry_distance_m": 0.18,
+      "geometry_overlap_min": 0.6,
+      "geometry_heading_rad": 0.3,
+      "minimum_remaining_span_m": 0.6,
+      "minimum_center_probability": 0.18,
+      "mean_center_probability": 0.55,
+      "mean_cross_probability": 0.45,
+      "continuation_speed_mps": 0.4,
+      "association_radius_m": 0.12,
+      "association_samples": 7
+    },
+    "environment": {
+      "name": "original_photographic_pipe",
+      "material": "original unchanged",
+      "background": "original unchanged",
+      "geometry_changed": false
+    },
+    "current_association": "bounded cross-section centroid measurement in current probability map",
+    "cell_m": 0.1,
+    "skeleton": {
+      "threshold": 0.5,
+      "min_component_cells": 8,
+      "min_length_cells": 6.0,
+      "spur_length_cells": 2.5,
+      "near_band_cells": 3.0,
+      "lateral_band_cells": 16.0,
+      "ambiguity_length_cells": 5.0,
+      "ambiguity_probability_margin": 0.08,
+      "max_components": 3
+    },
+    "temporal": {
+      "tangent_window": 0.6,
+      "center_tau_s": 0.12,
+      "heading_tau_s": 0.15,
+      "confirmed_turn_tau_s": 0.06,
+      "center_gate": 0.35,
+      "heading_gate_rad": 0.6,
+      "candidate_heading_gate_rad": 0.35,
+      "prediction_timeout_s": 0.4,
+      "measurement_gap_s": 0.25,
+      "reacquire_frames": 3,
+      "reacquire_s": 0.1,
+      "short_reacquire_frames": 2,
+      "short_reacquire_s": 0.03
+    },
+    "threshold_status": "engineering prototype; not calibrated on an independent validation voyage",
+    "mask": "current RGB paired-edge surface; finite observed chain, explicit width prior, no true route input",
+    "steering": "supported EMA finite curve",
+    "coverage": "current image measured points and current refined surface support; predictions do not verify coverage",
+    "confidence": "engineering neural/appearance fusion score; not a calibrated posterior",
+    "prediction_used_for_control": true,
+    "prediction_valid_observation": false,
+    "route_truth_used": false,
+    "recovery": "coverage-based recovery; bounded current-supported continuation and mild-return resume only in jitter mode",
+    "scope": "uncalibrated flat-bottom projection only; not a riser controller"
+  },
+  "sway_assumptions": {
+    "max_speed_mps": 0.6,
+    "tau_s": 0.6,
+    "acceleration_mps2": 0.35,
+    "kp": 1.2,
+    "heading_gain": 0.2
+  },
+  "tracker_assumptions": {
+    "kp": 0.75,
+    "max_yaw_rate_rad_s": 0.35,
+    "loss_timeout_s": 3.0,
+    "yaw_response_tau_s": 0.6
+  },
+  "synthetic_inspection_criteria": {
+    "corridor_m": 1.0,
+    "frame_pipe_iou_min": 0.5,
+    "required_valid_fraction": 0.9,
+    "usage": "scoring only, never fed to controller"
+  },
+  "appearance_manifest": {
+    "pipe_cache_index": 187,
+    "ground_cache_index": 0,
+    "fish_video_frame": 240,
+    "photographic_ground_cache_index": 187,
+    "rectified_pipe_width_px": 75,
+    "photo_material_version": 2,
+    "photographic_material": "full photograph with row-wise pipe rectification, reflected tiling; source labels are renderer material only",
+    "fish_annotation": "manually outlined appearance sprite, not real-video evaluation ground truth",
+    "source_cache": "mono/cache/288x512",
+    "source_video": "测试视频.mp4"
+  },
+  "appearance_assets": [
+    {
+      "path": "mono/assets/visual_loop_photo_v2/ground.png",
+      "sha256": "b19a20361528ba7a9057f33e01da6152b2fd378155b63d016c525aee9c00d70b"
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/pipe.png",
+      "sha256": "421ec11cf08051cb25a1e24afbddc75c4cf30f84405bb9f46eadb5ffc4babe0c"
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/fish.png",
+      "sha256": "e8939701733d81630a994e6257ec495964acc7aee9177e10e3e79c033ba081ad"
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/manifest.json",
+      "sha256": "55a190333cf1acf83635f6f0cc010025894cb56b60aeffe79afb85c829df2e36"
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/photo_ground.png",
+      "sha256": "7debdb69980c1e1a9f83ebaaf5fc1146a01bd09d21efc516a1ef4815bd4639f7"
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/photo_pipe_mask.png",
+      "sha256": "d46768dc07512a92f22d2c7ee616af50894aa6f01f2cee31b6319304ebe109e1"
+    },
+    {
+      "path": "mono/assets/visual_loop_photo_v2/photo_background.png",
+      "sha256": "dc95aa5a9f5878ee2dedc282476c82da3beeb9e7068dd48daa89fe05c72edc0e"
+    }
+  ],
+  "checkpoints": [
+    {
+      "path": "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M13/best.pt",
+      "sha256": "938b238f52950150b09aa629bdd1ca1bdc2e392000480f95c0d2a16026c5f400"
+    },
+    {
+      "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+    }
+  ],
+  "perception_model": {
+    "profile_path": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1/perception_M13.json",
+    "profile_sha256": "feefc32491d49d44ec826b669cfb0111d70370ad829db84047674fed7e4278ab",
+    "profile": {
+      "schema_version": 1,
+      "name": "M13_original_suim_independent",
+      "composition": "independent_pipe_biology",
+      "pipe_architecture": "M13",
+      "pipe_checkpoint": "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M13/best.pt",
+      "fish_checkpoint": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "pipe_sha256": "938b238f52950150b09aa629bdd1ca1bdc2e392000480f95c0d2a16026c5f400",
+      "fish_sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2",
+      "fish_wavelet": "none",
+      "fish_wavelet_stage": "s8",
+      "includes_deepcamo": false
+    },
+    "checkpoints": [
+      {
+        "path": "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M13/best.pt",
+        "sha256": "938b238f52950150b09aa629bdd1ca1bdc2e392000480f95c0d2a16026c5f400"
+      },
+      {
+        "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+        "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+      }
+    ],
+    "model_config": {
+      "composition": "independent_pipe_biology",
+      "pipe_architecture": "M13",
+      "pipe_config": {
+        "num_classes": 2,
+        "in_ch": 3,
+        "pretrained": false,
+        "out_ch": [
+          64,
+          128,
+          256
+        ],
+        "wavelet": "attention",
+        "wavelet_plain_extra_blocks": 0,
+        "fusion": "concat",
+        "global_mode": "none",
+        "global_blocks": 1,
+        "global_stage": "s16",
+        "global_heads": 8,
+        "global_win": 7,
+        "decoder_mid": 128,
+        "decoder_skip": true,
+        "decoder_dw": true
+      },
+      "separate_encoder": true,
+      "num_fish_classes": 8,
+      "fish_mid": 64,
+      "fish_wavelet": "none",
+      "fish_wavelet_stage": "s8"
+    },
+    "biological_bundle_pipe_used": false,
+    "loader": "tools.m13_closed_loop",
+    "pipe_exactly_matches_reference": true
+  },
+  "implementation_hashes": [
+    {
+      "path": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1/source_snapshot/avoid/decision.py",
+      "sha256": "0aa73c84d63bc3759817030506b7d4ef51c318ad987302711a852e2aa7882810"
+    },
+    {
+      "path": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1/source_snapshot/avoid/actuation.py",
+      "sha256": "9a67cfc66eb508754fec00728ab193554fb317ae3769358c7cac0f5f7fffaaf7"
+    },
+    {
+      "path": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1/source_snapshot/avoid/monocular_refinement.py",
+      "sha256": "a580c5bf3e38d2599841c626ab6f5c633d9bb24f9084e49b301fefa886633180"
+    },
+    {
+      "path": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1/source_snapshot/avoid/planar_tracker.py",
+      "sha256": "465c8fb39a32f62443b9de4e0a1e50923961b64b6879eb3999bfbf7be6184e41"
+    },
+    {
+      "path": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1/source_snapshot/avoid/centerline.py",
+      "sha256": "5954e58d6dcbd58bcbbabe660319ba611b8a413e4b05096da18820ee623cfe9c"
+    },
+    {
+      "path": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1/source_snapshot/avoid/pipe_route.py",
+      "sha256": "6fb35cac30c4676aea404321197b3ce74970c3c0a03aa17ea4e211fde9d1327d"
+    },
+    {
+      "path": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1/source_snapshot/avoid/visual_sim.py",
+      "sha256": "23d945094988b21114bc6d23600d5079490b880854b4d0c81f72f2b337bbbb9f"
+    },
+    {
+      "path": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1/source_snapshot/avoid/loss_recovery.py",
+      "sha256": "9feea0e55098fe2ba7d5fc74c9afe7dd91b67c317230976b6650f12c0fe4db1a"
+    },
+    {
+      "path": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1/source_snapshot/tools/visual_closed_loop.py",
+      "sha256": "834c99eb8e6061a114a512688f55268037203ebddee85a11dbad9acdbc5b6dbb"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "bend_right_fish_before",
+      "fish_x": 2.8,
+      "fish_y": 0.0,
+      "fish_vy": 0.0,
+      "fish_radius": 0.45,
+      "current_y": 0.0,
+      "blackout_start": null,
+      "blackout_duration": 0.0,
+      "goal_x": 8.0,
+      "fish_dropout_start": null,
+      "fish_dropout_duration": 0.0,
+      "pipe_points": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          0.0
+        ],
+        [
+          4.0,
+          5.0
+        ]
+      ]
+    }
+  ],
+  "episodes": [
+    {
+      "scenario": "bend_right_fish_before",
+      "mode": "tracker_only",
+      "outcome": "footprint_contact",
+      "route_completed": false,
+      "task_completed": false,
+      "legacy_task_completed": false,
+      "inspection_scoring": "inspection_phase",
+      "active_inspection_valid_fraction": 0.921875,
+      "active_inspection_frames": 128,
+      "corridor_preserved": true,
+      "inspection_recovered": false,
+      "synthetic_inspection_valid_fraction": 0.8333333333333334,
+      "collision": true,
+      "minimum_clearance_m": -0.012106315687575364,
+      "encounter_passed": false,
+      "footprint_contact": true,
+      "physical_collision": null,
+      "contact_metric": "horizontal footprint overlap; not physical 3D collision",
+      "inspection_recovery_time_s": null,
+      "elapsed_sim_s": 5.0,
+      "progress_m": 2.0450606266056193,
+      "maximum_abs_cross_track_m": 0.06548952613140961,
+      "pipe_loss_frames": 15,
+      "longest_pipe_loss_s": 0.5,
+      "ground_truth_pipe_out_of_view_frames": 0,
+      "tracking_error_abs_mean": 0.04573823914534678,
+      "actions": {
+        "recovery_initialization_wait": 22,
+        "nominal": 128
+      },
+      "synthetic_pipe_iou": 0.5846500539449414,
+      "synthetic_fish_iou": 0.21302255215460153,
+      "visible_fish_frames": 150,
+      "fish_overlap_hit_frames": 54,
+      "fish_absent_but_detection_frames": 0,
+      "inference_wall_s_median": 0.05304134999460075,
+      "inference_wall_s_p95": 0.06577996499399887,
+      "frames": 150,
+      "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+      "video": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1/closed_loop/worker_0/bend_right_fish_before_tracker_only/feedback.mp4",
+      "event_times": {
+        "first_visible_s": 0.0,
+        "first_effective_detection_s": 0.6,
+        "first_matching_detection_s": 0.6,
+        "first_confirmed_track_s": 0.7666666666666666,
+        "first_actionable_track_s": 0.7666666666666666,
+        "first_intervention_s": null,
+        "first_speed_command_reduction_s": 0.0,
+        "first_actual_speed_reduction_s": 0.0,
+        "first_avoidance_setpoint_s": null,
+        "contact_s": 5.0,
+        "detection_delay_s": 0.6,
+        "confirmation_delay_s": 0.16666666666666663,
+        "decision_delay_s": null,
+        "actuation_delay_s": null,
+        "remaining_time_at_intervention_s": null,
+        "matching_to_first_confirmation_s": 0.16666666666666663,
+        "matching_to_actionable_track_s": 0.16666666666666663,
+        "association_caveat": "Global first events; matching-based intervals are not proof of same-fish track identity.",
+        "post_intervention_command_reduction_s": null,
+        "post_intervention_actual_speed_response_s": null,
+        "post_intervention_actuation_delay_s": null
+      },
+      "minimum_sphere_clearance_m": 0.13796631915543056,
+      "simplified_3d_contact": false,
+      "sphere_metric": "Assumed sphere envelopes at fixed heights; evaluation only. Episode still stops at original horizontal contact.",
+      "speed_saturation_frames": 0,
+      "injected_fish_dropout_frames": 0,
+      "configured_image_delay_s": 0.21,
+      "loss_recovery_events": [
+        {
+          "t": 0.0,
+          "event": "initialization_wait_started"
+        },
+        {
+          "t": 0.7333333333333333,
+          "event": "initialization_confirmed"
+        }
+      ],
+      "reinspection_restarts": 0,
+      "pipe_mask_motion_compensated": true,
+      "raw_delayed_pipe_iou": 0.5880673366986663,
+      "raw_delayed_inspection_valid_fraction": 0.8466666666666667,
+      "raw_delayed_active_valid_fraction": 0.9375,
+      "raw_delayed_task_completed": false,
+      "realized_image_age_s_max": 0.23333333333333384,
+      "original_inspection_recovered": false,
+      "new_tracker": {
+        "name": "jitter",
+        "scheme": "M13-S345-jitter-v2",
+        "jitter_control_frames": 0,
+        "mild_return_fast_resumes": 0,
+        "prediction_counted_as_valid": 0,
+        "reverse_attempts": 0,
+        "completed_gaps": 0,
+        "unresolved_gap": null,
+        "confirmed_uncovered_gaps": [],
+        "failure": null,
+        "coverage": {
+          "known_segments": 137,
+          "fresh_segments": 91,
+          "passed_known_segments": 9,
+          "verified_passed_segments": 9,
+          "unverified_passed_segments": 0,
+          "unknown_motion_m": 0.8463516766555901,
+          "scope": "image-supported local-map coverage under odometry/plane priors; not ground-truth mission coverage"
+        }
+      }
+    },
+    {
+      "scenario": "bend_right_fish_before",
+      "mode": "avoidance",
+      "outcome": "footprint_contact",
+      "route_completed": false,
+      "task_completed": false,
+      "legacy_task_completed": false,
+      "inspection_scoring": "inspection_phase",
+      "active_inspection_valid_fraction": 0.8613445378151261,
+      "active_inspection_frames": 238,
+      "corridor_preserved": true,
+      "inspection_recovered": false,
+      "synthetic_inspection_valid_fraction": 0.5408805031446541,
+      "collision": true,
+      "minimum_clearance_m": -0.0009671882974831014,
+      "encounter_passed": false,
+      "footprint_contact": true,
+      "physical_collision": null,
+      "contact_metric": "horizontal footprint overlap; not physical 3D collision",
+      "inspection_recovery_time_s": null,
+      "elapsed_sim_s": 15.9,
+      "progress_m": 3.027712120643239,
+      "maximum_abs_cross_track_m": 0.9228404450930725,
+      "pipe_loss_frames": 215,
+      "longest_pipe_loss_s": 0.7000000000000012,
+      "ground_truth_pipe_out_of_view_frames": 0,
+      "tracking_error_abs_mean": 0.6353053018012205,
+      "actions": {
+        "recovery_initialization_wait": 22,
+        "nominal": 71,
+        "slow": 100,
+        "recovery_debounce_hold": 84,
+        "tracker_recovery": 29,
+        "hover": 38,
+        "recovery_waiting": 133
+      },
+      "synthetic_pipe_iou": 0.6323070516043466,
+      "synthetic_fish_iou": 0.0788622916353807,
+      "visible_fish_frames": 361,
+      "fish_overlap_hit_frames": 93,
+      "fish_absent_but_detection_frames": 0,
+      "inference_wall_s_median": 0.05345819999638479,
+      "inference_wall_s_p95": 0.06562754000187851,
+      "frames": 477,
+      "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+      "video": "mono/runs_review/m13_s345_right_encounter_baseline_20261025_v1/closed_loop/worker_0/bend_right_fish_before_avoidance/feedback.mp4",
+      "event_times": {
+        "first_visible_s": 0.0,
+        "first_effective_detection_s": 0.6,
+        "first_matching_detection_s": 0.6,
+        "first_confirmed_track_s": 0.7666666666666666,
+        "first_actionable_track_s": 0.7666666666666666,
+        "first_intervention_s": 0.7666666666666666,
+        "first_speed_command_reduction_s": 0.0,
+        "first_actual_speed_reduction_s": 0.0,
+        "first_avoidance_setpoint_s": 0.7666666666666666,
+        "contact_s": 15.9,
+        "detection_delay_s": 0.6,
+        "confirmation_delay_s": 0.16666666666666663,
+        "decision_delay_s": 0.0,
+        "actuation_delay_s": null,
+        "remaining_time_at_intervention_s": 15.133333333333333,
+        "matching_to_first_confirmation_s": 0.16666666666666663,
+        "matching_to_actionable_track_s": 0.16666666666666663,
+        "association_caveat": "Global first events; matching-based intervals are not proof of same-fish track identity.",
+        "post_intervention_command_reduction_s": null,
+        "post_intervention_actual_speed_response_s": 8.133333333333333,
+        "post_intervention_actuation_delay_s": 7.366666666666666
+      },
+      "minimum_sphere_clearance_m": 0.14728483333972053,
+      "simplified_3d_contact": false,
+      "sphere_metric": "Assumed sphere envelopes at fixed heights; evaluation only. Episode still stops at original horizontal contact.",
+      "speed_saturation_frames": 42,
+      "injected_fish_dropout_frames": 0,
+      "configured_image_delay_s": 0.21,
+      "loss_recovery_events": [
+        {
+          "t": 0.0,
+          "event": "initialization_wait_started"
+        },
+        {
+          "t": 0.7333333333333333,
+          "event": "initialization_confirmed"
+        },
+        {
+          "t": 1.4,
+          "event": "loss_debounce_started",
+          "anchor": [
+            0.44613651774508906,
+            -0.053146777496375926
+          ]
+        },
+        {
+          "t": 1.4333333333333333,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.03333333333333344,
+          "odometry_displacement_diagnostic_m": 0.01950622813140706
+        },
+        {
+          "t": 2.2666666666666666,
+          "event": "loss_debounce_started",
+          "anchor": [
+            0.683998976105638,
+            -0.29800841656261
+          ]
+        },
+        {
+          "t": 2.433333333333333,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.16666666666666652,
+          "odometry_displacement_diagnostic_m": 0.06196182431463304
+        },
+        {
+          "t": 2.8666666666666667,
+          "event": "loss_debounce_started",
+          "anchor": [
+            0.8314587993120484,
+            -0.4712650740879724
+          ]
+        },
+        {
+          "t": 2.9,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.033333333333333215,
+          "odometry_displacement_diagnostic_m": 0.020677367908443222
+        },
+        {
+          "t": 4.233333333333333,
+          "event": "loss_debounce_started",
+          "anchor": [
+            1.2466413735901323,
+            -0.7139125590893186
+          ]
+        },
+        {
+          "t": 4.266666666666667,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.033333333333333215,
+          "odometry_displacement_diagnostic_m": 0.02432890484182072
+        },
+        {
+          "t": 4.3,
+          "event": "loss_debounce_started",
+          "anchor": [
+            1.2693904106035367,
+            -0.723457048674135
+          ]
+        },
+        {
+          "t": 4.333333333333333,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.033333333333333215,
+          "odometry_displacement_diagnostic_m": 0.0241363454640165
+        },
+        {
+          "t": 7.333333333333333,
+          "event": "loss_debounce_started",
+          "anchor": [
+            2.3884373641334657,
+            -0.9156551099495271
+          ]
+        },
+        {
+          "t": 7.533333333333333,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.20000000000000018,
+          "odometry_displacement_diagnostic_m": 0.08860007399645692
+        },
+        {
+          "t": 7.7,
+          "event": "loss_debounce_started",
+          "anchor": [
+            2.5220222402847576,
+            -0.9005546570557366
+          ]
+        },
+        {
+          "t": 7.766666666666667,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.06666666666666643,
+          "odometry_displacement_diagnostic_m": 0.033533495114974304
+        },
+        {
+          "t": 7.8,
+          "event": "loss_debounce_started",
+          "anchor": [
+            2.5552630903128297,
+            -0.8957839735877529
+          ]
+        },
+        {
+          "t": 8.3,
+          "event": "sustained_loss_confirmed",
+          "odometry_displacement_diagnostic_m": 0.14311049942851692
+        },
+        {
+          "t": 8.6,
+          "event": "stationary_loss_resumed",
+          "loss_duration_s": 0.7999999999999998,
+          "odometry_displacement_diagnostic_m": 0.15687120116850004
+        },
+        {
+          "t": 8.733333333333333,
+          "event": "loss_debounce_started",
+          "anchor": [
+            2.766578614284824,
+            -0.8563221370977175
+          ]
+        },
+        {
+          "t": 8.833333333333334,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.10000000000000142,
+          "odometry_displacement_diagnostic_m": 0.024435467673355835
+        },
+        {
+          "t": 8.966666666666667,
+          "event": "loss_debounce_started",
+          "anchor": [
+            2.8084308487737863,
+            -0.8495682674380158
+          ]
+        },
+        {
+          "t": 9.033333333333333,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.06666666666666643,
+          "odometry_displacement_diagnostic_m": 0.01868659764590316
+        },
+        {
+          "t": 9.1,
+          "event": "loss_debounce_started",
+          "anchor": [
+            2.8330925297375393,
+            -0.8461782655207578
+          ]
+        },
+        {
+          "t": 9.333333333333334,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.23333333333333428,
+          "odometry_displacement_diagnostic_m": 0.04365863276358955
+        },
+        {
+          "t": 9.4,
+          "event": "loss_debounce_started",
+          "anchor": [
+            2.881132062937652,
+            -0.8379661766454003
+          ]
+        },
+        {
+          "t": 9.433333333333334,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.033333333333333215,
+          "odometry_displacement_diagnostic_m": 0.009394291113551867
+        },
+        {
+          "t": 9.466666666666667,
+          "event": "loss_debounce_started",
+          "anchor": [
+            2.890370591612481,
+            -0.8361134586963238
+          ]
+        },
+        {
+          "t": 9.566666666666666,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.09999999999999964,
+          "odometry_displacement_diagnostic_m": 0.013320790009251241
+        },
+        {
+          "t": 9.7,
+          "event": "loss_debounce_started",
+          "anchor": [
+            2.9204821513674815,
+            -0.830086555086528
+          ]
+        },
+        {
+          "t": 9.733333333333333,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.033333333333333215,
+          "odometry_displacement_diagnostic_m": 0.009385424759548365
+        },
+        {
+          "t": 9.766666666666666,
+          "event": "loss_debounce_started",
+          "anchor": [
+            2.929904761021238,
+            -0.8288578722074053
+          ]
+        },
+        {
+          "t": 9.8,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.03333333333333499,
+          "odometry_displacement_diagnostic_m": 0.00897200895253856
+        },
+        {
+          "t": 9.833333333333334,
+          "event": "loss_debounce_started",
+          "anchor": [
+            2.938879253477342,
+            -0.8275476253382685
+          ]
+        },
+        {
+          "t": 9.866666666666667,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.033333333333333215,
+          "odometry_displacement_diagnostic_m": 0.009466957198483165
+        },
+        {
+          "t": 10.1,
+          "event": "loss_debounce_started",
+          "anchor": [
+            2.984523570342929,
+            -0.8312595081258061
+          ]
+        },
+        {
+          "t": 10.133333333333333,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.033333333333333215,
+          "odometry_displacement_diagnostic_m": 0.012031955433358497
+        },
+        {
+          "t": 10.166666666666666,
+          "event": "loss_debounce_started",
+          "anchor": [
+            2.997474449804004,
+            -0.8319327892347486
+          ]
+        },
+        {
+          "t": 10.2,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.033333333333333215,
+          "odometry_displacement_diagnostic_m": 0.011496647712199722
+        },
+        {
+          "t": 10.266666666666666,
+          "event": "loss_debounce_started",
+          "anchor": [
+            3.015941704534718,
+            -0.8320407631009369
+          ]
+        },
+        {
+          "t": 10.766666666666666,
+          "event": "sustained_loss_confirmed",
+          "odometry_displacement_diagnostic_m": 0.08472456006910267
+        },
+        {
+          "t": 14.9,
+          "event": "stationary_loss_resumed",
+          "loss_duration_s": 4.633333333333335,
+          "odometry_displacement_diagnostic_m": 0.15809830537448613
+        },
+        {
+          "t": 14.966666666666667,
+          "event": "loss_debounce_started",
+          "anchor": [
+            3.041710855166102,
+            -0.8217550308614372
+          ]
+        },
+        {
+          "t": 15.0,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.033333333333333215,
+          "odometry_displacement_diagnostic_m": 0.0
+        },
+        {
+          "t": 15.066666666666666,
+          "event": "loss_debounce_started",
+          "anchor": [
+            3.0382371892832345,
+            -0.8193963352078493
+          ]
+        },
+        {
+          "t": 15.299999999999999,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.2333333333333325,
+          "odometry_displacement_diagnostic_m": 0.0005227437476716938
+        },
+        {
+          "t": 15.333333333333334,
+          "event": "loss_debounce_started",
+          "anchor": [
+            3.031705043860936,
+            -0.804770709972217
+          ]
+        },
+        {
+          "t": 15.366666666666667,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.033333333333333215,
+          "odometry_displacement_diagnostic_m": 0.0010438413032269145
+        },
+        {
+          "t": 15.5,
+          "event": "loss_debounce_started",
+          "anchor": [
+            3.0293035338243044,
+            -0.7901071402421116
+          ]
+        },
+        {
+          "t": 15.566666666666666,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.06666666666666643,
+          "odometry_displacement_diagnostic_m": 0.005120641517315942
+        },
+        {
+          "t": 15.6,
+          "event": "loss_debounce_started",
+          "anchor": [
+            3.0284222017921802,
+            -0.7776922753636888
+          ]
+        },
+        {
+          "t": 15.666666666666666,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.06666666666666643,
+          "odometry_displacement_diagnostic_m": 0.004811374295545416
+        },
+        {
+          "t": 15.733333333333333,
+          "event": "loss_debounce_started",
+          "anchor": [
+            3.0278957766222003,
+            -0.763779369179885
+          ]
+        },
+        {
+          "t": 15.799999999999999,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.06666666666666643,
+          "odometry_displacement_diagnostic_m": 0.003904818308785985
+        },
+        {
+          "t": 15.833333333333334,
+          "event": "loss_debounce_started",
+          "anchor": [
+            3.027848748006342,
+            -0.7512469549339176
+          ]
+        },
+        {
+          "t": 15.866666666666667,
+          "event": "brief_loss_resumed",
+          "loss_duration_s": 0.033333333333333215,
+          "odometry_displacement_diagnostic_m": 0.005431045355725055
+        }
+      ],
+      "reinspection_restarts": 0,
+      "pipe_mask_motion_compensated": true,
+      "raw_delayed_pipe_iou": 0.6216558713216782,
+      "raw_delayed_inspection_valid_fraction": 0.5408805031446541,
+      "raw_delayed_active_valid_fraction": 0.8613445378151261,
+      "raw_delayed_task_completed": false,
+      "realized_image_age_s_max": 0.23333333333333428,
+      "original_inspection_recovered": false,
+      "new_tracker": {
+        "name": "jitter",
+        "scheme": "M13-S345-jitter-v2",
+        "jitter_control_frames": 29,
+        "mild_return_fast_resumes": 4,
+        "prediction_counted_as_valid": 0,
+        "reverse_attempts": 0,
+        "completed_gaps": 0,
+        "unresolved_gap": null,
+        "confirmed_uncovered_gaps": [],
+        "failure": null,
+        "coverage": {
+          "known_segments": 194,
+          "fresh_segments": 127,
+          "passed_known_segments": 0,
+          "verified_passed_segments": 0,
+          "unverified_passed_segments": 0,
+          "unknown_motion_m": 3.700125519222435,
+          "scope": "image-supported local-map coverage under odometry/plane priors; not ground-truth mission coverage"
+        }
+      }
+    }
+  ],
+  "legacy_centerline_assumptions": {
+    "lookahead_m": 1.5,
+    "bend_angle_prior_deg": 90,
+    "avoidance_lookahead_m": 1.0,
+    "cell_m": 0.05,
+    "corner_confirmation_samples": 5,
+    "unsupported_coast_s": 0.5,
+    "perception_inputs": "RGB, model masks, explicit diameter/camera/altitude priors, ideal measured odometry only",
+    "route_geometry": "Scene waypoints used only by renderer/scorer; controller constructs its own local map"
+  },
+  "surface_refinement": {
+    "name": "M13-S345 original-material prototype v3",
+    "scope": "Development acceptance on original clear straight and left 90-degree bend only; no independent generalization claim",
+    "tube": {
+      "cell_m": 0.05,
+      "minimum_edge_contrast": 4.0,
+      "semantic_seed": 0.5,
+      "minimum_seed_cells": 6,
+      "minimum_component_cells": 12,
+      "angles": 18,
+      "line_min_cells": 6,
+      "texture_std_min": 0.9,
+      "strong_semantic_min": 0.45,
+      "line_semantic_min": 0.12,
+      "beam_width": 24,
+      "beam_steps": 16
+    },
+    "centerline_source": "current_finite_chain",
+    "centerline_fallback": "original S345 skeleton and bounded current corridor measurement",
+    "pipe_input": "original RGB and 90/270-degree rotated RGB, probability maximum",
+    "biology": "original native-view output; unchanged checkpoint",
+    "geometry": "same v2 finite paired-edge hypotheses and bounded diverse beam search",
+    "segmentation": "unchanged v2 finite current surface with 0.8m planar width prior; engineering fusion scores",
+    "temporal": "original S345 wrapped-angle filter and actual-turn confirmation; canonical current near origin avoids endpoint jitter",
+    "scoring": "original IoU>=0.5 and active valid fraction>=0.9; predictions remain invalid",
+    "actual_tube_config": {
+      "cell_m": 0.05,
+      "minimum_edge_contrast": 4.0,
+      "semantic_seed": 0.5,
+      "minimum_seed_cells": 6,
+      "minimum_component_cells": 12,
+      "angles": 18,
+      "line_min_cells": 6,
+      "texture_std_min": 0.9,
+      "strong_semantic_min": 0.45,
+      "line_semantic_min": 0.12,
+      "beam_width": 24,
+      "beam_steps": 16
+    }
+  },
+  "environment_style": "original photographic pipe and background; no material replacement",
+  "fish_integration": {
+    "name": "M13-S345 fish integration v25 current normal and actuator lag horizon",
+    "scope": "Original straight and left bend; original M13 and biological checkpoints unchanged",
+    "retain_encounter": true,
+    "component_motion": false,
+    "fish_refinement": "motion_seeded_chroma",
+    "rgb_fish": {
+      "minimum_seed_pixels": 20,
+      "maximum_rois": 2,
+      "padding_px": 32,
+      "minimum_roi_side": 128,
+      "maximum_roi_side": 256,
+      "color_distance": 18.0,
+      "iterations": 2
+    },
+    "fast_search": true,
+    "near_search_m": 1.1,
+    "near_reference_forward_m": 0.9,
+    "occlusion_near_forward_m": 0.6,
+    "control_corridor_limit_m": 0.85,
+    "normal_velocity_control": true,
+    "velocity_lookahead_s": 0.6,
+    "visible_curve_prefix": true,
+    "canonical_fallback": true,
+    "anchor_association": true,
+    "anchor_min_hits": 6,
+    "revalidated_map_guidance": true,
+    "separate_full_mask": true,
+    "fish_policy": "CURRENT motion-confirmed neural seeds + current RGB chromaticity segmentation; uncalibrated fusion score; no whole-component expansion",
+    "scoring": "same 1m true corridor, original XY contact and IoU/90% criteria; no predicted valid observations",
+    "current_pipe_rgb": true,
+    "pipe_rotations": [
+      0,
+      1,
+      3
+    ],
+    "pipe_rgb_settings": {
+      "iterations": 2,
+      "minimum_seeds": 20,
+      "preserve_measured_surface": true
+    },
+    "curvature_direction": true,
+    "episode_cv_seed": 0,
+    "normal_fit_span_m": 0.6
+  }
+}

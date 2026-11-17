@@ -1,0 +1,31 @@
+{
+  "scenario": "head_on",
+  "mode": "avoidance",
+  "outcome": "timeout",
+  "task_completed": false,
+  "collision": false,
+  "minimum_clearance_m": 2.3598342220167603,
+  "encounter_passed": false,
+  "inspection_recovery_time_s": null,
+  "elapsed_sim_s": 2.933333333333333,
+  "progress_m": 1.8902292695203762,
+  "maximum_abs_cross_track_m": 0.01779822892585655,
+  "pipe_loss_frames": 19,
+  "longest_pipe_loss_s": 1.1333333333333333,
+  "ground_truth_pipe_out_of_view_frames": 0,
+  "tracking_error_abs_mean": 0.07217441985806164,
+  "actions": {
+    "nominal": 23,
+    "slow": 22
+  },
+  "synthetic_pipe_iou": 0.1636261858608476,
+  "synthetic_fish_iou": 0.6516244801853294,
+  "visible_fish_frames": 45,
+  "fish_overlap_hit_frames": 45,
+  "fish_absent_but_detection_frames": 0,
+  "inference_wall_s_median": 0.014240500000596512,
+  "inference_wall_s_p95": 0.01649558000062825,
+  "frames": 45,
+  "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+  "video": "runs_review\\visual_closed_loop_smoke\\head_on_avoidance\\feedback.mp4"
+}

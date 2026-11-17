@@ -1,0 +1,257 @@
+{
+  "episodes": [
+    {
+      "group": "baseline",
+      "scenario": "clear_pipe",
+      "scope": "45s full entry",
+      "task_pass": false,
+      "goal": false,
+      "progress_m": 6.724608223449558,
+      "elapsed_s": 45.0,
+      "valid_fraction": 0.9232365145228216,
+      "active_frames": 482,
+      "valid_active_frames": 445,
+      "all_frame_valid_fraction": 0.6118518518518519,
+      "pipe_iou": 0.5593812445161092,
+      "contact_2d": false,
+      "recovered": false,
+      "jitter_control_frames": 0,
+      "mild_return_resumes": 0,
+      "inspection_seconds": 16.066666666666666,
+      "waiting_seconds": 28.933333333333334,
+      "failed_checks": "goal_reached;recovered"
+    },
+    {
+      "group": "blackout_probes",
+      "scenario": "brief_occlusion",
+      "scope": "12s behavior probe",
+      "task_pass": false,
+      "goal": false,
+      "progress_m": 1.808318567952194,
+      "elapsed_s": 12.0,
+      "valid_fraction": 0.7789473684210526,
+      "active_frames": 95,
+      "valid_active_frames": 74,
+      "all_frame_valid_fraction": 0.3638888888888889,
+      "pipe_iou": 0.3315021878820295,
+      "contact_2d": false,
+      "recovered": false,
+      "jitter_control_frames": 7,
+      "mild_return_resumes": 2,
+      "inspection_seconds": 3.1666666666666665,
+      "waiting_seconds": 8.833333333333334,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered"
+    },
+    {
+      "group": "blackout_probes",
+      "scenario": "perception_loss",
+      "scope": "12s behavior probe",
+      "task_pass": false,
+      "goal": false,
+      "progress_m": 1.3740404261313612,
+      "elapsed_s": 12.0,
+      "valid_fraction": 0.7578947368421053,
+      "active_frames": 95,
+      "valid_active_frames": 72,
+      "all_frame_valid_fraction": 0.2972222222222222,
+      "pipe_iou": 0.13488673651462138,
+      "contact_2d": false,
+      "recovered": false,
+      "jitter_control_frames": 15,
+      "mild_return_resumes": 2,
+      "inspection_seconds": 3.1666666666666665,
+      "waiting_seconds": 8.833333333333334,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered"
+    },
+    {
+      "group": "blackout_probes",
+      "scenario": "pipe_jitter",
+      "scope": "12s behavior probe",
+      "task_pass": false,
+      "goal": false,
+      "progress_m": 2.554786682131669,
+      "elapsed_s": 12.0,
+      "valid_fraction": 0.7721518987341772,
+      "active_frames": 158,
+      "valid_active_frames": 122,
+      "all_frame_valid_fraction": 0.5,
+      "pipe_iou": 0.49821268637735633,
+      "contact_2d": false,
+      "recovered": false,
+      "jitter_control_frames": 19,
+      "mild_return_resumes": 6,
+      "inspection_seconds": 5.266666666666667,
+      "waiting_seconds": 6.733333333333333,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered"
+    },
+    {
+      "group": "jitter",
+      "scenario": "clear_pipe",
+      "scope": "45s full entry",
+      "task_pass": false,
+      "goal": true,
+      "progress_m": 8.007999431693523,
+      "elapsed_s": 42.93333333333333,
+      "valid_fraction": 0.830155979202773,
+      "active_frames": 577,
+      "valid_active_frames": 479,
+      "all_frame_valid_fraction": 0.593167701863354,
+      "pipe_iou": 0.5423484945980157,
+      "contact_2d": false,
+      "recovered": true,
+      "jitter_control_frames": 20,
+      "mild_return_resumes": 8,
+      "inspection_seconds": 19.233333333333334,
+      "waiting_seconds": 23.7,
+      "failed_checks": "inspection_valid_fraction"
+    }
+  ],
+  "control_observation_audits": [
+    {
+      "group": "baseline",
+      "scenario": "clear_pipe",
+      "prediction_counted_as_valid": 0,
+      "prediction_labeled_observed": 0,
+      "prediction_excluded_from_inspection": 0,
+      "continuation_over_age_bound": 0,
+      "continuation_under_min_speed_command": 0,
+      "status": {
+        "lost": 60,
+        "observed": 919,
+        "predicted": 371
+      },
+      "associated_observed_frames": 0,
+      "associated_below_half_probability": 0,
+      "continuation_reasons": {
+        "null": 1350
+      }
+    },
+    {
+      "group": "blackout_probes",
+      "scenario": "brief_occlusion",
+      "prediction_counted_as_valid": 0,
+      "prediction_labeled_observed": 0,
+      "prediction_excluded_from_inspection": 0,
+      "continuation_over_age_bound": 0,
+      "continuation_under_min_speed_command": 0,
+      "status": {
+        "lost": 40,
+        "observed": 179,
+        "predicted": 141
+      },
+      "associated_observed_frames": 0,
+      "associated_below_half_probability": 0,
+      "continuation_reasons": {
+        "no_accepted_anchor": 12,
+        "bounded_current_supported_jitter": 91,
+        "geometry_change_exceeds_jitter_bound": 74,
+        "anchor_expired": 43,
+        "no_current_image_evidence": 8,
+        "insufficient_current_probability_support": 102,
+        "no_current_geometry_candidate": 30
+      }
+    },
+    {
+      "group": "blackout_probes",
+      "scenario": "perception_loss",
+      "prediction_counted_as_valid": 0,
+      "prediction_labeled_observed": 0,
+      "prediction_excluded_from_inspection": 0,
+      "continuation_over_age_bound": 0,
+      "continuation_under_min_speed_command": 2,
+      "status": {
+        "lost": 125,
+        "observed": 125,
+        "predicted": 110
+      },
+      "associated_observed_frames": 0,
+      "associated_below_half_probability": 0,
+      "continuation_reasons": {
+        "no_accepted_anchor": 12,
+        "bounded_current_supported_jitter": 115,
+        "geometry_change_exceeds_jitter_bound": 64,
+        "anchor_expired": 126,
+        "no_current_image_evidence": 8,
+        "insufficient_remaining_path": 5,
+        "insufficient_current_probability_support": 27,
+        "no_current_geometry_candidate": 3
+      }
+    },
+    {
+      "group": "blackout_probes",
+      "scenario": "pipe_jitter",
+      "prediction_counted_as_valid": 0,
+      "prediction_labeled_observed": 0,
+      "prediction_excluded_from_inspection": 0,
+      "continuation_over_age_bound": 0,
+      "continuation_under_min_speed_command": 4,
+      "status": {
+        "lost": 26,
+        "observed": 198,
+        "predicted": 136
+      },
+      "associated_observed_frames": 1,
+      "associated_below_half_probability": 0,
+      "continuation_reasons": {
+        "no_accepted_anchor": 12,
+        "bounded_current_supported_jitter": 119,
+        "geometry_change_exceeds_jitter_bound": 67,
+        "anchor_expired": 27,
+        "no_current_image_evidence": 6,
+        "no_current_geometry_candidate": 14,
+        "insufficient_current_probability_support": 115
+      }
+    },
+    {
+      "group": "jitter",
+      "scenario": "clear_pipe",
+      "prediction_counted_as_valid": 0,
+      "prediction_labeled_observed": 0,
+      "prediction_excluded_from_inspection": 0,
+      "continuation_over_age_bound": 0,
+      "continuation_under_min_speed_command": 5,
+      "status": {
+        "lost": 40,
+        "observed": 882,
+        "predicted": 366
+      },
+      "associated_observed_frames": 0,
+      "associated_below_half_probability": 0,
+      "continuation_reasons": {
+        "no_accepted_anchor": 12,
+        "bounded_current_supported_jitter": 291,
+        "geometry_change_exceeds_jitter_bound": 293,
+        "anchor_expired": 45,
+        "insufficient_current_probability_support": 628,
+        "no_current_geometry_candidate": 16,
+        "insufficient_remaining_path": 3
+      }
+    }
+  ],
+  "blackout_behavior_probes": [
+    {
+      "scenario": "brief_occlusion",
+      "scope": "behavior only, 12s does not test 8m endpoint",
+      "black_source_frames": 30,
+      "continued_while_black": 0,
+      "black_labeled_valid": 0,
+      "observed_after_black": 142
+    },
+    {
+      "scenario": "perception_loss",
+      "scope": "behavior only, 12s does not test 8m endpoint",
+      "black_source_frames": 120,
+      "continued_while_black": 0,
+      "black_labeled_valid": 0,
+      "observed_after_black": 88
+    },
+    {
+      "scenario": "pipe_jitter",
+      "scope": "behavior only, 12s does not test 8m endpoint",
+      "black_source_frames": 6,
+      "continued_while_black": 0,
+      "black_labeled_valid": 0,
+      "observed_after_black": 161
+    }
+  ]
+}

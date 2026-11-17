@@ -1,0 +1,67 @@
+{
+  "paired_probability_temporal": {
+    "total_frames": 1211,
+    "accepted": 187,
+    "trusted": 171,
+    "active": 64,
+    "valid": 21,
+    "active_low_iou": 43,
+    "measurement_reasons": {
+      "missing_probability_input": 7,
+      "probability_path": 187,
+      "short_probability_path": 680,
+      "insufficient_path_support": 41,
+      "no_paired_edge_seed": 296
+    },
+    "reverse_reinspection_attempts": 0,
+    "negative_surge_frames": 183,
+    "negative_surge_phases": {
+      "waiting": 159,
+      "inspection": 10,
+      "debounce_hold": 14
+    }
+  },
+  "probability_temporal": {
+    "total_frames": 1350,
+    "accepted": 668,
+    "trusted": 300,
+    "active": 100,
+    "valid": 15,
+    "active_low_iou": 85,
+    "measurement_reasons": {
+      "missing_probability_input": 7,
+      "probability_path": 671,
+      "short_probability_path": 535,
+      "no_probability_seed": 131,
+      "insufficient_path_support": 6
+    },
+    "reverse_reinspection_attempts": 0,
+    "negative_surge_frames": 417,
+    "negative_surge_phases": {
+      "waiting": 416,
+      "inspection": 1
+    }
+  },
+  "skeleton_temporal": {
+    "total_frames": 1350,
+    "accepted": 733,
+    "trusted": 475,
+    "active": 164,
+    "valid": 65,
+    "active_low_iou": 99,
+    "measurement_reasons": {
+      "missing_probability_input": 7,
+      "no_component": 334,
+      "image_skeleton": 736,
+      "short_skeleton": 264,
+      "short_path": 9
+    },
+    "reverse_reinspection_attempts": 0,
+    "negative_surge_frames": 420,
+    "negative_surge_phases": {
+      "initialization_wait": 149,
+      "waiting": 265,
+      "inspection": 6
+    }
+  }
+}

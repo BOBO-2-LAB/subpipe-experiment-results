@@ -1,0 +1,216 @@
+{
+  "status": "PASS",
+  "runtime_source_snapshot_verified": true,
+  "current_runtime_sources_match_snapshot": true,
+  "old_weights_unchanged": 123,
+  "loaded_model": "attention",
+  "task_passes": 4,
+  "tested_avoidance_episodes": 6,
+  "results": [
+    {
+      "group": "straight",
+      "scenario": "clear_pipe",
+      "mode": "avoidance",
+      "task_pass": true,
+      "raw_task_completed": true,
+      "goal": true,
+      "valid_fraction": 0.9648033126293996,
+      "contact_3d": null,
+      "legacy_xy_contact": false,
+      "legacy_task_pass": true,
+      "elapsed_sim_s": 16.1,
+      "goal_held_stably_s": null,
+      "intervention_frames": null,
+      "actions": {
+        "tracker_recovery": 7,
+        "nominal": 476
+      },
+      "failures": [],
+      "result": "mono/runs_review/wavelet_adoption_20261023_attention/straight/clear_pipe_avoidance/result.json",
+      "feedback_video": "mono/runs_review/wavelet_adoption_20261023_attention/straight/clear_pipe_avoidance/feedback_h264.mp4"
+    },
+    {
+      "group": "straight",
+      "scenario": "head_on",
+      "mode": "avoidance",
+      "task_pass": true,
+      "raw_task_completed": true,
+      "goal": true,
+      "valid_fraction": 0.9869888475836431,
+      "contact_3d": false,
+      "legacy_xy_contact": false,
+      "legacy_task_pass": true,
+      "elapsed_sim_s": 17.933333333333334,
+      "goal_held_stably_s": null,
+      "intervention_frames": null,
+      "actions": {
+        "tracker_recovery": 7,
+        "nominal": 363,
+        "slow": 99,
+        "hover": 69
+      },
+      "failures": [],
+      "result": "mono/runs_review/wavelet_adoption_20261023_attention/straight/head_on_avoidance/result.json",
+      "feedback_video": "mono/runs_review/wavelet_adoption_20261023_attention/straight/head_on_avoidance/feedback_h264.mp4"
+    },
+    {
+      "group": "up",
+      "scenario": "clear_up",
+      "mode": "avoidance",
+      "task_pass": true,
+      "raw_task_completed": true,
+      "goal": true,
+      "valid_fraction": 1.0,
+      "contact_3d": false,
+      "legacy_xy_contact": false,
+      "legacy_task_pass": true,
+      "elapsed_sim_s": 9.4,
+      "goal_held_stably_s": 0.0,
+      "intervention_frames": 0,
+      "actions": null,
+      "failures": [],
+      "result": "mono/runs_review/wavelet_adoption_20261023_attention/up/clear_up_avoidance/result.json",
+      "feedback_video": "mono/runs_review/wavelet_adoption_20261023_attention/up/clear_up_avoidance/feedback_h264.mp4"
+    },
+    {
+      "group": "up",
+      "scenario": "fish_vertical",
+      "mode": "avoidance",
+      "task_pass": false,
+      "raw_task_completed": false,
+      "goal": true,
+      "valid_fraction": 0.7157894736842105,
+      "contact_3d": false,
+      "legacy_xy_contact": false,
+      "legacy_task_pass": false,
+      "elapsed_sim_s": 9.533333333333333,
+      "goal_held_stably_s": 0.0,
+      "intervention_frames": 0,
+      "actions": null,
+      "failures": [
+        "inspection_valid_fraction"
+      ],
+      "result": "mono/runs_review/wavelet_adoption_20261023_attention/up/fish_vertical_avoidance/result.json",
+      "feedback_video": "mono/runs_review/wavelet_adoption_20261023_attention/up/fish_vertical_avoidance/feedback_h264.mp4"
+    },
+    {
+      "group": "down",
+      "scenario": "clear_down",
+      "mode": "avoidance",
+      "task_pass": true,
+      "raw_task_completed": true,
+      "goal": true,
+      "valid_fraction": 1.0,
+      "contact_3d": false,
+      "legacy_xy_contact": false,
+      "legacy_task_pass": true,
+      "elapsed_sim_s": 37.96666666666667,
+      "goal_held_stably_s": 1.0,
+      "intervention_frames": 0,
+      "actions": null,
+      "failures": [],
+      "result": "mono/runs_review/wavelet_adoption_20261023_attention/down/clear_down_avoidance/result.json",
+      "feedback_video": "mono/runs_review/wavelet_adoption_20261023_attention/down/clear_down_avoidance/feedback_h264.mp4"
+    },
+    {
+      "group": "down",
+      "scenario": "fish_down_vertical",
+      "mode": "avoidance",
+      "task_pass": false,
+      "raw_task_completed": false,
+      "goal": false,
+      "valid_fraction": 0.9595588235294118,
+      "contact_3d": true,
+      "legacy_xy_contact": true,
+      "legacy_task_pass": false,
+      "elapsed_sim_s": 31.666666666666668,
+      "goal_held_stably_s": 0.0,
+      "intervention_frames": 0,
+      "actions": null,
+      "failures": [
+        "goal_reached",
+        "fish_contact_3d",
+        "goal_stability_hold"
+      ],
+      "result": "mono/runs_review/wavelet_adoption_20261023_attention_resume/down/fish_down_vertical_avoidance/fish_down_vertical_avoidance/result.json",
+      "feedback_video": "mono/runs_review/wavelet_adoption_20261023_attention_resume/down/fish_down_vertical_avoidance/fish_down_vertical_avoidance/feedback_h264.mp4"
+    }
+  ],
+  "videos": [
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_attention/straight/clear_pipe_avoidance/feedback.mp4",
+      "decoded_frames": 483,
+      "fps": 30.0,
+      "sha256": "0c69364ead0a9e8f00a3a7d4a2db0ca308cfba795097bc03a733e8246993364a"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_attention/straight/clear_pipe_avoidance/feedback_h264.mp4",
+      "decoded_frames": 483,
+      "fps": 30.0,
+      "sha256": "598eb5300b64dc8b70050d24695f67f38a479208bbc792a58d0935a16c9bc3ee"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_attention/straight/head_on_avoidance/feedback.mp4",
+      "decoded_frames": 538,
+      "fps": 30.0,
+      "sha256": "a3b2cc294398a2a439d28b3a72db2ca8c21a148d56f99f48022daac8fd1eff60"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_attention/straight/head_on_avoidance/feedback_h264.mp4",
+      "decoded_frames": 538,
+      "fps": 30.0,
+      "sha256": "e51f474dd67f7727e85129e0a6577cbe1756cf00b1f5a83e0bdcc50c8dceecff"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_attention/up/clear_up_avoidance/feedback.mp4",
+      "decoded_frames": 276,
+      "fps": 30.0,
+      "sha256": "4509ab4efe2c0fd88319961beb5ddaae8e392eaff2fbf3399584807ab6073490"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_attention/up/clear_up_avoidance/feedback_h264.mp4",
+      "decoded_frames": 276,
+      "fps": 30.0,
+      "sha256": "d49143edbd72d2cd5b0ba9a231450a2576b289f2f58378a83044d5570e94eda3"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_attention/up/fish_vertical_avoidance/feedback.mp4",
+      "decoded_frames": 280,
+      "fps": 30.0,
+      "sha256": "1f2af31735aef51800a9716e58f78f227e51aad04971401407a36c4cf5942d4b"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_attention/up/fish_vertical_avoidance/feedback_h264.mp4",
+      "decoded_frames": 280,
+      "fps": 30.0,
+      "sha256": "13503ed2bbb63e04476a4eb39836c2c84737164cc5b00f57eaabf96f2167ac58"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_attention/down/clear_down_avoidance/feedback.mp4",
+      "decoded_frames": 1133,
+      "fps": 30.0,
+      "sha256": "7dafb26d1473d73d0c3a2f604ae615f8bca9200b94108435024588ed81520a38"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_attention/down/clear_down_avoidance/feedback_h264.mp4",
+      "decoded_frames": 1133,
+      "fps": 30.0,
+      "sha256": "c13d6518c8f2cb02b0a8a13972083bce935f9a28298aff468b44cf19b44091d2"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_attention_resume/down/fish_down_vertical_avoidance/fish_down_vertical_avoidance/feedback.mp4",
+      "decoded_frames": 944,
+      "fps": 30.0,
+      "sha256": "7f54ccab7567a4962901ac2a0232303fa5c02da1385f6e5c006965896086f0c3"
+    },
+    {
+      "path": "mono/runs_review/wavelet_adoption_20261023_attention_resume/down/fish_down_vertical_avoidance/fish_down_vertical_avoidance/feedback_h264.mp4",
+      "decoded_frames": 944,
+      "fps": 30.0,
+      "sha256": "717f90c53f3421c9bcf8c9935c838af7983aafbc3edc02c4f2f6eca7a853e73d"
+    }
+  ],
+  "all_directed_tasks_pass": false,
+  "wall_timing_affected_by_concurrent_workers_and_suspension": true,
+  "scope": "Directed integration only; not full mission matrix or independent model generalization"
+}

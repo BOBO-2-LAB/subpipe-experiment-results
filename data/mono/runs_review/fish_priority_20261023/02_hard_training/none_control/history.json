@@ -1,0 +1,6842 @@
+[
+  {
+    "epoch": 1,
+    "loss": 1.045140830533845,
+    "metrics": {
+      "fish_iou": 0.6132326309288278,
+      "bio_iou": 0.5084636302636018,
+      "fish_precision": 0.7486218177457185,
+      "fish_recall": 0.7722517110655582,
+      "negative_crops": 50,
+      "negative_candidates": 10,
+      "positive_crops_ge400": 95,
+      "positive_overlap_hits": 75,
+      "per_class_iou": [
+        0.8297214483733585,
+        0.7059884239587694,
+        0.16169738488500368,
+        0.7058193865798342,
+        0.7023803229456365,
+        0.7504608749769739,
+        0.6132326309288278,
+        0.5055964552762257
+      ],
+      "confusion": [
+        [
+          6351599,
+          22173,
+          3551,
+          76597,
+          1445,
+          171774,
+          94659,
+          233438
+        ],
+        [
+          23107,
+          333965,
+          0,
+          8554,
+          4807,
+          1681,
+          26691,
+          6782
+        ],
+        [
+          29145,
+          3905,
+          85161,
+          67,
+          0,
+          122905,
+          29600,
+          71511
+        ],
+        [
+          37724,
+          22786,
+          149,
+          1240954,
+          0,
+          110997,
+          15318,
+          61510
+        ],
+        [
+          8469,
+          4766,
+          0,
+          5520,
+          66422,
+          356,
+          391,
+          453
+        ],
+        [
+          100255,
+          1883,
+          138479,
+          30716,
+          1378,
+          6371692,
+          289453,
+          382525
+        ],
+        [
+          68640,
+          2015,
+          3853,
+          7978,
+          0,
+          314300,
+          1523119,
+          52404
+        ],
+        [
+          432522,
+          9931,
+          38343,
+          139305,
+          560,
+          451978,
+          55333,
+          1980438
+        ]
+      ],
+      "frames": [
+        {
+          "stem": "d_r_103_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_153_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 100
+        },
+        {
+          "stem": "d_r_185_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 468
+        },
+        {
+          "stem": "d_r_217_",
+          "gt_fish_pixels": 11347,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 9769
+        },
+        {
+          "stem": "d_r_25_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_297_",
+          "gt_fish_pixels": 5631,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 5473
+        },
+        {
+          "stem": "d_r_319_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 95
+        },
+        {
+          "stem": "d_r_348_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_383_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 459
+        },
+        {
+          "stem": "d_r_428_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_467_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_4_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 21
+        },
+        {
+          "stem": "d_r_527_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_563_",
+          "gt_fish_pixels": 14096,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 11716
+        },
+        {
+          "stem": "d_r_600_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_624_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1042
+        },
+        {
+          "stem": "d_r_657_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 114
+        },
+        {
+          "stem": "d_r_690_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_715_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_741_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_77_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_87_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_1017_",
+          "gt_fish_pixels": 5025,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 8755
+        },
+        {
+          "stem": "f_r_1029_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 6909
+        },
+        {
+          "stem": "f_r_1040_",
+          "gt_fish_pixels": 102115,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 36959
+        },
+        {
+          "stem": "f_r_1053_",
+          "gt_fish_pixels": 43031,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 35592
+        },
+        {
+          "stem": "f_r_107_",
+          "gt_fish_pixels": 25309,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 2621
+        },
+        {
+          "stem": "f_r_1096_",
+          "gt_fish_pixels": 8465,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 248
+        },
+        {
+          "stem": "f_r_1113_",
+          "gt_fish_pixels": 47422,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 15479
+        },
+        {
+          "stem": "f_r_1125_",
+          "gt_fish_pixels": 547,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 169
+        },
+        {
+          "stem": "f_r_1140_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 22879
+        },
+        {
+          "stem": "f_r_1155_",
+          "gt_fish_pixels": 745,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1404
+        },
+        {
+          "stem": "f_r_1171_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 16
+        },
+        {
+          "stem": "f_r_118_",
+          "gt_fish_pixels": 17646,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 10407
+        },
+        {
+          "stem": "f_r_1201_",
+          "gt_fish_pixels": 10398,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1875
+        },
+        {
+          "stem": "f_r_1219_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 35027
+        },
+        {
+          "stem": "f_r_1235_",
+          "gt_fish_pixels": 4920,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 35
+        },
+        {
+          "stem": "f_r_1252_",
+          "gt_fish_pixels": 35953,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 31944
+        },
+        {
+          "stem": "f_r_1305_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 5
+        },
+        {
+          "stem": "f_r_1322_",
+          "gt_fish_pixels": 1692,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 273
+        },
+        {
+          "stem": "f_r_1348_",
+          "gt_fish_pixels": 2277,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 9126
+        },
+        {
+          "stem": "f_r_1371_",
+          "gt_fish_pixels": 3075,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 416
+        },
+        {
+          "stem": "f_r_1386_",
+          "gt_fish_pixels": 15707,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14476
+        },
+        {
+          "stem": "f_r_141_",
+          "gt_fish_pixels": 1341,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 347
+        },
+        {
+          "stem": "f_r_1439_",
+          "gt_fish_pixels": 2665,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1909
+        },
+        {
+          "stem": "f_r_145_",
+          "gt_fish_pixels": 32051,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 40049
+        },
+        {
+          "stem": "f_r_1487_",
+          "gt_fish_pixels": 18137,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 18459
+        },
+        {
+          "stem": "f_r_1500_",
+          "gt_fish_pixels": 13427,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 3101
+        },
+        {
+          "stem": "f_r_1530_",
+          "gt_fish_pixels": 13738,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13960
+        },
+        {
+          "stem": "f_r_1543_",
+          "gt_fish_pixels": 9335,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 6477
+        },
+        {
+          "stem": "f_r_1554_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 80
+        },
+        {
+          "stem": "f_r_1572_",
+          "gt_fish_pixels": 49814,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 34466
+        },
+        {
+          "stem": "f_r_1589_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 15959
+        },
+        {
+          "stem": "f_r_1615_",
+          "gt_fish_pixels": 17249,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 17552
+        },
+        {
+          "stem": "f_r_1631_",
+          "gt_fish_pixels": 46625,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 40795
+        },
+        {
+          "stem": "f_r_1649_",
+          "gt_fish_pixels": 42818,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 41777
+        },
+        {
+          "stem": "f_r_1665_",
+          "gt_fish_pixels": 7245,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1079
+        },
+        {
+          "stem": "f_r_1683_",
+          "gt_fish_pixels": 39488,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 17575
+        },
+        {
+          "stem": "f_r_1695_",
+          "gt_fish_pixels": 10298,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7831
+        },
+        {
+          "stem": "f_r_171_",
+          "gt_fish_pixels": 37520,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 8367
+        },
+        {
+          "stem": "f_r_1734_",
+          "gt_fish_pixels": 20089,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 21347
+        },
+        {
+          "stem": "f_r_1749_",
+          "gt_fish_pixels": 18051,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 9774
+        },
+        {
+          "stem": "f_r_1765_",
+          "gt_fish_pixels": 33549,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 34223
+        },
+        {
+          "stem": "f_r_17_",
+          "gt_fish_pixels": 178,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 111
+        },
+        {
+          "stem": "f_r_1826_",
+          "gt_fish_pixels": 22802,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7952
+        },
+        {
+          "stem": "f_r_1841_",
+          "gt_fish_pixels": 48861,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 28646
+        },
+        {
+          "stem": "f_r_1857_",
+          "gt_fish_pixels": 29567,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 32991
+        },
+        {
+          "stem": "f_r_1871_",
+          "gt_fish_pixels": 41659,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 42890
+        },
+        {
+          "stem": "f_r_1885_",
+          "gt_fish_pixels": 16469,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 6621
+        },
+        {
+          "stem": "f_r_1900_",
+          "gt_fish_pixels": 1767,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_191_",
+          "gt_fish_pixels": 4757,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1542
+        },
+        {
+          "stem": "f_r_1932_",
+          "gt_fish_pixels": 13789,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14979
+        },
+        {
+          "stem": "f_r_1947_",
+          "gt_fish_pixels": 62331,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 60240
+        },
+        {
+          "stem": "f_r_1961_",
+          "gt_fish_pixels": 591,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_1976_",
+          "gt_fish_pixels": 3402,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 3865
+        },
+        {
+          "stem": "f_r_1997_",
+          "gt_fish_pixels": 887,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 693
+        },
+        {
+          "stem": "f_r_2012_",
+          "gt_fish_pixels": 2246,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 3736
+        },
+        {
+          "stem": "f_r_2032_",
+          "gt_fish_pixels": 25558,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 27400
+        },
+        {
+          "stem": "f_r_2058_",
+          "gt_fish_pixels": 7404,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7794
+        },
+        {
+          "stem": "f_r_2082_",
+          "gt_fish_pixels": 7076,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1151
+        },
+        {
+          "stem": "f_r_225_",
+          "gt_fish_pixels": 4152,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1665
+        },
+        {
+          "stem": "f_r_258_",
+          "gt_fish_pixels": 19293,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 19351
+        },
+        {
+          "stem": "f_r_278_",
+          "gt_fish_pixels": 3214,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 316
+        },
+        {
+          "stem": "f_r_290_",
+          "gt_fish_pixels": 22937,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7049
+        },
+        {
+          "stem": "f_r_319_",
+          "gt_fish_pixels": 4909,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1631
+        },
+        {
+          "stem": "f_r_351_",
+          "gt_fish_pixels": 5990,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 721
+        },
+        {
+          "stem": "f_r_371_",
+          "gt_fish_pixels": 6092,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 604
+        },
+        {
+          "stem": "f_r_407_",
+          "gt_fish_pixels": 6423,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 2171
+        },
+        {
+          "stem": "f_r_433_",
+          "gt_fish_pixels": 35566,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 29272
+        },
+        {
+          "stem": "f_r_447_",
+          "gt_fish_pixels": 1844,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 541
+        },
+        {
+          "stem": "f_r_460_",
+          "gt_fish_pixels": 9355,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 431
+        },
+        {
+          "stem": "f_r_490_",
+          "gt_fish_pixels": 14719,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14900
+        },
+        {
+          "stem": "f_r_505_",
+          "gt_fish_pixels": 37787,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 18183
+        },
+        {
+          "stem": "f_r_525_",
+          "gt_fish_pixels": 119704,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 143355
+        },
+        {
+          "stem": "f_r_540_",
+          "gt_fish_pixels": 12789,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 15168
+        },
+        {
+          "stem": "f_r_569_",
+          "gt_fish_pixels": 1198,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 780
+        },
+        {
+          "stem": "f_r_591_",
+          "gt_fish_pixels": 39627,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 34883
+        },
+        {
+          "stem": "f_r_613_",
+          "gt_fish_pixels": 720,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 280
+        },
+        {
+          "stem": "f_r_62_",
+          "gt_fish_pixels": 13899,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13499
+        },
+        {
+          "stem": "f_r_643_",
+          "gt_fish_pixels": 7926,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1495
+        },
+        {
+          "stem": "f_r_658_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 5
+        },
+        {
+          "stem": "f_r_673_",
+          "gt_fish_pixels": 27391,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 25024
+        },
+        {
+          "stem": "f_r_686_",
+          "gt_fish_pixels": 55921,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 71761
+        },
+        {
+          "stem": "f_r_704_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 2588
+        },
+        {
+          "stem": "f_r_722_",
+          "gt_fish_pixels": 15763,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 17867
+        },
+        {
+          "stem": "f_r_74_",
+          "gt_fish_pixels": 13791,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 12917
+        },
+        {
+          "stem": "f_r_771_",
+          "gt_fish_pixels": 12084,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14731
+        },
+        {
+          "stem": "f_r_814_",
+          "gt_fish_pixels": 9042,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 4693
+        },
+        {
+          "stem": "f_r_840_",
+          "gt_fish_pixels": 35773,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 22783
+        },
+        {
+          "stem": "f_r_867_",
+          "gt_fish_pixels": 27888,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 22664
+        },
+        {
+          "stem": "f_r_8_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 289
+        },
+        {
+          "stem": "f_r_912_",
+          "gt_fish_pixels": 5615,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1658
+        },
+        {
+          "stem": "f_r_924_",
+          "gt_fish_pixels": 44926,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 53817
+        },
+        {
+          "stem": "f_r_956_",
+          "gt_fish_pixels": 57132,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 3811
+        },
+        {
+          "stem": "f_r_97_",
+          "gt_fish_pixels": 4587,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 368
+        },
+        {
+          "stem": "n_l_103_",
+          "gt_fish_pixels": 7936,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 9573
+        },
+        {
+          "stem": "n_l_11_",
+          "gt_fish_pixels": 43007,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 41864
+        },
+        {
+          "stem": "n_l_23_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 327
+        },
+        {
+          "stem": "n_l_34_",
+          "gt_fish_pixels": 5258,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1861
+        },
+        {
+          "stem": "n_l_47_",
+          "gt_fish_pixels": 1800,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 717
+        },
+        {
+          "stem": "n_l_59_",
+          "gt_fish_pixels": 46744,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 46331
+        },
+        {
+          "stem": "n_l_69_",
+          "gt_fish_pixels": 34092,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 34034
+        },
+        {
+          "stem": "n_l_78_",
+          "gt_fish_pixels": 51919,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 42051
+        },
+        {
+          "stem": "n_l_8_",
+          "gt_fish_pixels": 28135,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 6857
+        },
+        {
+          "stem": "n_l_9_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_112_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_123_",
+          "gt_fish_pixels": 34,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 5494
+        },
+        {
+          "stem": "w_r_133_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_148_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_160_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_172_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_181_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_190_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_204_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 9
+        },
+        {
+          "stem": "w_r_213_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_226_",
+          "gt_fish_pixels": 12065,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 2732
+        },
+        {
+          "stem": "w_r_237_",
+          "gt_fish_pixels": 5077,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1402
+        },
+        {
+          "stem": "w_r_249_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 7
+        },
+        {
+          "stem": "w_r_274_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_285_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 402
+        },
+        {
+          "stem": "w_r_295_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_42_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_57_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 158
+        },
+        {
+          "stem": "w_r_68_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_79_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_89_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1568
+        },
+        {
+          "stem": "w_r_99_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        }
+      ],
+      "gate": "FV>0.5, largest component >=400px on common 384 grid"
+    },
+    "retention_pass": false,
+    "seconds": 28.849164600000222
+  },
+  {
+    "epoch": 2,
+    "loss": 0.9346538029965901,
+    "metrics": {
+      "fish_iou": 0.6081286590761414,
+      "bio_iou": 0.5036012078627157,
+      "fish_precision": 0.7571999499929359,
+      "fish_recall": 0.7554389297011777,
+      "negative_crops": 50,
+      "negative_candidates": 10,
+      "positive_crops_ge400": 95,
+      "positive_overlap_hits": 73,
+      "per_class_iou": [
+        0.8278562383254019,
+        0.6854561216324353,
+        0.15965722732001686,
+        0.7043367545613095,
+        0.691072103699703,
+        0.7430177371919888,
+        0.6081286590761414,
+        0.5036464900430453
+      ],
+      "confusion": [
+        [
+          6396163,
+          12899,
+          1386,
+          58296,
+          1119,
+          165681,
+          86604,
+          233088
+        ],
+        [
+          39028,
+          308373,
+          0,
+          7112,
+          3666,
+          3052,
+          31017,
+          13339
+        ],
+        [
+          29657,
+          2714,
+          78419,
+          24,
+          0,
+          126086,
+          27680,
+          77714
+        ],
+        [
+          52163,
+          17728,
+          198,
+          1193786,
+          0,
+          109448,
+          10802,
+          105313
+        ],
+        [
+          11951,
+          4693,
+          0,
+          4145,
+          63976,
+          460,
+          712,
+          440
+        ],
+        [
+          108068,
+          1132,
+          119656,
+          16238,
+          1035,
+          6268351,
+          273322,
+          528579
+        ],
+        [
+          78024,
+          691,
+          2753,
+          8723,
+          0,
+          327809,
+          1489959,
+          64350
+        ],
+        [
+          452049,
+          4436,
+          24884,
+          110932,
+          378,
+          387424,
+          47626,
+          2080681
+        ]
+      ],
+      "frames": [
+        {
+          "stem": "d_r_103_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_153_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 267
+        },
+        {
+          "stem": "d_r_185_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 803
+        },
+        {
+          "stem": "d_r_217_",
+          "gt_fish_pixels": 11347,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 9758
+        },
+        {
+          "stem": "d_r_25_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_297_",
+          "gt_fish_pixels": 5631,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 5492
+        },
+        {
+          "stem": "d_r_319_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 145
+        },
+        {
+          "stem": "d_r_348_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_383_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 957
+        },
+        {
+          "stem": "d_r_428_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_467_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_4_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 18
+        },
+        {
+          "stem": "d_r_527_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_563_",
+          "gt_fish_pixels": 14096,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 11172
+        },
+        {
+          "stem": "d_r_600_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_624_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1116
+        },
+        {
+          "stem": "d_r_657_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 165
+        },
+        {
+          "stem": "d_r_690_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_715_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_741_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_77_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_87_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 64
+        },
+        {
+          "stem": "f_r_1017_",
+          "gt_fish_pixels": 5025,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 8482
+        },
+        {
+          "stem": "f_r_1029_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 5136
+        },
+        {
+          "stem": "f_r_1040_",
+          "gt_fish_pixels": 102115,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 38986
+        },
+        {
+          "stem": "f_r_1053_",
+          "gt_fish_pixels": 43031,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 34765
+        },
+        {
+          "stem": "f_r_107_",
+          "gt_fish_pixels": 25309,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1844
+        },
+        {
+          "stem": "f_r_1096_",
+          "gt_fish_pixels": 8465,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 217
+        },
+        {
+          "stem": "f_r_1113_",
+          "gt_fish_pixels": 47422,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 18626
+        },
+        {
+          "stem": "f_r_1125_",
+          "gt_fish_pixels": 547,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 104
+        },
+        {
+          "stem": "f_r_1140_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 21787
+        },
+        {
+          "stem": "f_r_1155_",
+          "gt_fish_pixels": 745,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1733
+        },
+        {
+          "stem": "f_r_1171_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 17
+        },
+        {
+          "stem": "f_r_118_",
+          "gt_fish_pixels": 17646,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 10315
+        },
+        {
+          "stem": "f_r_1201_",
+          "gt_fish_pixels": 10398,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 2757
+        },
+        {
+          "stem": "f_r_1219_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 34532
+        },
+        {
+          "stem": "f_r_1235_",
+          "gt_fish_pixels": 4920,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 25
+        },
+        {
+          "stem": "f_r_1252_",
+          "gt_fish_pixels": 35953,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 31677
+        },
+        {
+          "stem": "f_r_1305_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 38
+        },
+        {
+          "stem": "f_r_1322_",
+          "gt_fish_pixels": 1692,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 250
+        },
+        {
+          "stem": "f_r_1348_",
+          "gt_fish_pixels": 2277,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 8488
+        },
+        {
+          "stem": "f_r_1371_",
+          "gt_fish_pixels": 3075,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 391
+        },
+        {
+          "stem": "f_r_1386_",
+          "gt_fish_pixels": 15707,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14267
+        },
+        {
+          "stem": "f_r_141_",
+          "gt_fish_pixels": 1341,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 365
+        },
+        {
+          "stem": "f_r_1439_",
+          "gt_fish_pixels": 2665,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 2256
+        },
+        {
+          "stem": "f_r_145_",
+          "gt_fish_pixels": 32051,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 39052
+        },
+        {
+          "stem": "f_r_1487_",
+          "gt_fish_pixels": 18137,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 18569
+        },
+        {
+          "stem": "f_r_1500_",
+          "gt_fish_pixels": 13427,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 3039
+        },
+        {
+          "stem": "f_r_1530_",
+          "gt_fish_pixels": 13738,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 16325
+        },
+        {
+          "stem": "f_r_1543_",
+          "gt_fish_pixels": 9335,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 6656
+        },
+        {
+          "stem": "f_r_1554_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 200
+        },
+        {
+          "stem": "f_r_1572_",
+          "gt_fish_pixels": 49814,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33222
+        },
+        {
+          "stem": "f_r_1589_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 14819
+        },
+        {
+          "stem": "f_r_1615_",
+          "gt_fish_pixels": 17249,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 17514
+        },
+        {
+          "stem": "f_r_1631_",
+          "gt_fish_pixels": 46625,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 38968
+        },
+        {
+          "stem": "f_r_1649_",
+          "gt_fish_pixels": 42818,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 41421
+        },
+        {
+          "stem": "f_r_1665_",
+          "gt_fish_pixels": 7245,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1185
+        },
+        {
+          "stem": "f_r_1683_",
+          "gt_fish_pixels": 39488,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 20764
+        },
+        {
+          "stem": "f_r_1695_",
+          "gt_fish_pixels": 10298,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7902
+        },
+        {
+          "stem": "f_r_171_",
+          "gt_fish_pixels": 37520,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 8731
+        },
+        {
+          "stem": "f_r_1734_",
+          "gt_fish_pixels": 20089,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 21354
+        },
+        {
+          "stem": "f_r_1749_",
+          "gt_fish_pixels": 18051,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 9618
+        },
+        {
+          "stem": "f_r_1765_",
+          "gt_fish_pixels": 33549,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33325
+        },
+        {
+          "stem": "f_r_17_",
+          "gt_fish_pixels": 178,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 86
+        },
+        {
+          "stem": "f_r_1826_",
+          "gt_fish_pixels": 22802,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7680
+        },
+        {
+          "stem": "f_r_1841_",
+          "gt_fish_pixels": 48861,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 26800
+        },
+        {
+          "stem": "f_r_1857_",
+          "gt_fish_pixels": 29567,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 31296
+        },
+        {
+          "stem": "f_r_1871_",
+          "gt_fish_pixels": 41659,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 42003
+        },
+        {
+          "stem": "f_r_1885_",
+          "gt_fish_pixels": 16469,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 6501
+        },
+        {
+          "stem": "f_r_1900_",
+          "gt_fish_pixels": 1767,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_191_",
+          "gt_fish_pixels": 4757,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1599
+        },
+        {
+          "stem": "f_r_1932_",
+          "gt_fish_pixels": 13789,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14671
+        },
+        {
+          "stem": "f_r_1947_",
+          "gt_fish_pixels": 62331,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 50179
+        },
+        {
+          "stem": "f_r_1961_",
+          "gt_fish_pixels": 591,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_1976_",
+          "gt_fish_pixels": 3402,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 3574
+        },
+        {
+          "stem": "f_r_1997_",
+          "gt_fish_pixels": 887,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 890
+        },
+        {
+          "stem": "f_r_2012_",
+          "gt_fish_pixels": 2246,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 2591
+        },
+        {
+          "stem": "f_r_2032_",
+          "gt_fish_pixels": 25558,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 27167
+        },
+        {
+          "stem": "f_r_2058_",
+          "gt_fish_pixels": 7404,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7658
+        },
+        {
+          "stem": "f_r_2082_",
+          "gt_fish_pixels": 7076,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1199
+        },
+        {
+          "stem": "f_r_225_",
+          "gt_fish_pixels": 4152,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1786
+        },
+        {
+          "stem": "f_r_258_",
+          "gt_fish_pixels": 19293,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 19176
+        },
+        {
+          "stem": "f_r_278_",
+          "gt_fish_pixels": 3214,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 309
+        },
+        {
+          "stem": "f_r_290_",
+          "gt_fish_pixels": 22937,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 6796
+        },
+        {
+          "stem": "f_r_319_",
+          "gt_fish_pixels": 4909,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1621
+        },
+        {
+          "stem": "f_r_351_",
+          "gt_fish_pixels": 5990,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 894
+        },
+        {
+          "stem": "f_r_371_",
+          "gt_fish_pixels": 6092,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 602
+        },
+        {
+          "stem": "f_r_407_",
+          "gt_fish_pixels": 6423,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 2106
+        },
+        {
+          "stem": "f_r_433_",
+          "gt_fish_pixels": 35566,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 30782
+        },
+        {
+          "stem": "f_r_447_",
+          "gt_fish_pixels": 1844,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 529
+        },
+        {
+          "stem": "f_r_460_",
+          "gt_fish_pixels": 9355,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 421
+        },
+        {
+          "stem": "f_r_490_",
+          "gt_fish_pixels": 14719,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13964
+        },
+        {
+          "stem": "f_r_505_",
+          "gt_fish_pixels": 37787,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 17874
+        },
+        {
+          "stem": "f_r_525_",
+          "gt_fish_pixels": 119704,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 141573
+        },
+        {
+          "stem": "f_r_540_",
+          "gt_fish_pixels": 12789,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14873
+        },
+        {
+          "stem": "f_r_569_",
+          "gt_fish_pixels": 1198,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 768
+        },
+        {
+          "stem": "f_r_591_",
+          "gt_fish_pixels": 39627,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 34454
+        },
+        {
+          "stem": "f_r_613_",
+          "gt_fish_pixels": 720,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 275
+        },
+        {
+          "stem": "f_r_62_",
+          "gt_fish_pixels": 13899,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13415
+        },
+        {
+          "stem": "f_r_643_",
+          "gt_fish_pixels": 7926,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1509
+        },
+        {
+          "stem": "f_r_658_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_673_",
+          "gt_fish_pixels": 27391,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 16009
+        },
+        {
+          "stem": "f_r_686_",
+          "gt_fish_pixels": 55921,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 59838
+        },
+        {
+          "stem": "f_r_704_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1447
+        },
+        {
+          "stem": "f_r_722_",
+          "gt_fish_pixels": 15763,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 17795
+        },
+        {
+          "stem": "f_r_74_",
+          "gt_fish_pixels": 13791,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 11807
+        },
+        {
+          "stem": "f_r_771_",
+          "gt_fish_pixels": 12084,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 15054
+        },
+        {
+          "stem": "f_r_814_",
+          "gt_fish_pixels": 9042,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 4806
+        },
+        {
+          "stem": "f_r_840_",
+          "gt_fish_pixels": 35773,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 22329
+        },
+        {
+          "stem": "f_r_867_",
+          "gt_fish_pixels": 27888,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 20427
+        },
+        {
+          "stem": "f_r_8_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 284
+        },
+        {
+          "stem": "f_r_912_",
+          "gt_fish_pixels": 5615,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1642
+        },
+        {
+          "stem": "f_r_924_",
+          "gt_fish_pixels": 44926,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 52531
+        },
+        {
+          "stem": "f_r_956_",
+          "gt_fish_pixels": 57132,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 4193
+        },
+        {
+          "stem": "f_r_97_",
+          "gt_fish_pixels": 4587,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 481
+        },
+        {
+          "stem": "n_l_103_",
+          "gt_fish_pixels": 7936,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 9362
+        },
+        {
+          "stem": "n_l_11_",
+          "gt_fish_pixels": 43007,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 41479
+        },
+        {
+          "stem": "n_l_23_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1058
+        },
+        {
+          "stem": "n_l_34_",
+          "gt_fish_pixels": 5258,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1862
+        },
+        {
+          "stem": "n_l_47_",
+          "gt_fish_pixels": 1800,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 607
+        },
+        {
+          "stem": "n_l_59_",
+          "gt_fish_pixels": 46744,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 45957
+        },
+        {
+          "stem": "n_l_69_",
+          "gt_fish_pixels": 34092,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33114
+        },
+        {
+          "stem": "n_l_78_",
+          "gt_fish_pixels": 51919,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 40932
+        },
+        {
+          "stem": "n_l_8_",
+          "gt_fish_pixels": 28135,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 6187
+        },
+        {
+          "stem": "n_l_9_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_112_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_123_",
+          "gt_fish_pixels": 34,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1988
+        },
+        {
+          "stem": "w_r_133_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_148_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_160_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 20
+        },
+        {
+          "stem": "w_r_172_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_181_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_190_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_204_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_213_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 19
+        },
+        {
+          "stem": "w_r_226_",
+          "gt_fish_pixels": 12065,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1679
+        },
+        {
+          "stem": "w_r_237_",
+          "gt_fish_pixels": 5077,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1512
+        },
+        {
+          "stem": "w_r_249_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 1
+        },
+        {
+          "stem": "w_r_274_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_285_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 397
+        },
+        {
+          "stem": "w_r_295_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_42_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_57_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 230
+        },
+        {
+          "stem": "w_r_68_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_79_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_89_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 924
+        },
+        {
+          "stem": "w_r_99_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        }
+      ],
+      "gate": "FV>0.5, largest component >=400px on common 384 grid"
+    },
+    "retention_pass": false,
+    "seconds": 16.91423610000129
+  },
+  {
+    "epoch": 3,
+    "loss": 0.8508477572883878,
+    "metrics": {
+      "fish_iou": 0.6114569023013617,
+      "bio_iou": 0.5158971473620346,
+      "fish_precision": 0.7803067189238323,
+      "fish_recall": 0.7386119517783472,
+      "negative_crops": 50,
+      "negative_candidates": 9,
+      "positive_crops_ge400": 95,
+      "positive_overlap_hits": 72,
+      "per_class_iou": [
+        0.8285327090168836,
+        0.6940417993833995,
+        0.1809257278116295,
+        0.686032077894237,
+        0.6872641968368594,
+        0.7553088119731127,
+        0.6114569023013617,
+        0.4873484735273109
+      ],
+      "confusion": [
+        [
+          6373637,
+          18922,
+          404,
+          75376,
+          1469,
+          201531,
+          85837,
+          198060
+        ],
+        [
+          30570,
+          325972,
+          0,
+          5917,
+          3169,
+          4051,
+          27053,
+          8855
+        ],
+        [
+          27668,
+          3794,
+          70015,
+          0,
+          0,
+          156082,
+          20282,
+          64453
+        ],
+        [
+          43203,
+          22777,
+          11,
+          1190455,
+          0,
+          165988,
+          10316,
+          56688
+        ],
+        [
+          10932,
+          7462,
+          0,
+          3116,
+          63574,
+          505,
+          734,
+          54
+        ],
+        [
+          97892,
+          1737,
+          23792,
+          17970,
+          1094,
+          6673352,
+          218944,
+          281600
+        ],
+        [
+          70281,
+          1032,
+          502,
+          9700,
+          0,
+          384732,
+          1456771,
+          49291
+        ],
+        [
+          456898,
+          8361,
+          19979,
+          133759,
+          394,
+          605993,
+          46984,
+          1836042
+        ]
+      ],
+      "frames": [
+        {
+          "stem": "d_r_103_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_153_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 264
+        },
+        {
+          "stem": "d_r_185_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 685
+        },
+        {
+          "stem": "d_r_217_",
+          "gt_fish_pixels": 11347,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 10543
+        },
+        {
+          "stem": "d_r_25_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_297_",
+          "gt_fish_pixels": 5631,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 5847
+        },
+        {
+          "stem": "d_r_319_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 103
+        },
+        {
+          "stem": "d_r_348_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_383_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 92
+        },
+        {
+          "stem": "d_r_428_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 6
+        },
+        {
+          "stem": "d_r_467_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_4_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 15
+        },
+        {
+          "stem": "d_r_527_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_563_",
+          "gt_fish_pixels": 14096,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 11861
+        },
+        {
+          "stem": "d_r_600_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_624_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 831
+        },
+        {
+          "stem": "d_r_657_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 242
+        },
+        {
+          "stem": "d_r_690_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_715_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_741_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_77_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_87_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 11
+        },
+        {
+          "stem": "f_r_1017_",
+          "gt_fish_pixels": 5025,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 8153
+        },
+        {
+          "stem": "f_r_1029_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 3298
+        },
+        {
+          "stem": "f_r_1040_",
+          "gt_fish_pixels": 102115,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 16919
+        },
+        {
+          "stem": "f_r_1053_",
+          "gt_fish_pixels": 43031,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 36397
+        },
+        {
+          "stem": "f_r_107_",
+          "gt_fish_pixels": 25309,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 2021
+        },
+        {
+          "stem": "f_r_1096_",
+          "gt_fish_pixels": 8465,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 399
+        },
+        {
+          "stem": "f_r_1113_",
+          "gt_fish_pixels": 47422,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13564
+        },
+        {
+          "stem": "f_r_1125_",
+          "gt_fish_pixels": 547,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 70
+        },
+        {
+          "stem": "f_r_1140_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 20831
+        },
+        {
+          "stem": "f_r_1155_",
+          "gt_fish_pixels": 745,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 736
+        },
+        {
+          "stem": "f_r_1171_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 16
+        },
+        {
+          "stem": "f_r_118_",
+          "gt_fish_pixels": 17646,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 10126
+        },
+        {
+          "stem": "f_r_1201_",
+          "gt_fish_pixels": 10398,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1960
+        },
+        {
+          "stem": "f_r_1219_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 31598
+        },
+        {
+          "stem": "f_r_1235_",
+          "gt_fish_pixels": 4920,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 29
+        },
+        {
+          "stem": "f_r_1252_",
+          "gt_fish_pixels": 35953,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 31371
+        },
+        {
+          "stem": "f_r_1305_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 18
+        },
+        {
+          "stem": "f_r_1322_",
+          "gt_fish_pixels": 1692,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 223
+        },
+        {
+          "stem": "f_r_1348_",
+          "gt_fish_pixels": 2277,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 6052
+        },
+        {
+          "stem": "f_r_1371_",
+          "gt_fish_pixels": 3075,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 397
+        },
+        {
+          "stem": "f_r_1386_",
+          "gt_fish_pixels": 15707,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14135
+        },
+        {
+          "stem": "f_r_141_",
+          "gt_fish_pixels": 1341,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 351
+        },
+        {
+          "stem": "f_r_1439_",
+          "gt_fish_pixels": 2665,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1613
+        },
+        {
+          "stem": "f_r_145_",
+          "gt_fish_pixels": 32051,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 34680
+        },
+        {
+          "stem": "f_r_1487_",
+          "gt_fish_pixels": 18137,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 17691
+        },
+        {
+          "stem": "f_r_1500_",
+          "gt_fish_pixels": 13427,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 3070
+        },
+        {
+          "stem": "f_r_1530_",
+          "gt_fish_pixels": 13738,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 12409
+        },
+        {
+          "stem": "f_r_1543_",
+          "gt_fish_pixels": 9335,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 5998
+        },
+        {
+          "stem": "f_r_1554_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 40
+        },
+        {
+          "stem": "f_r_1572_",
+          "gt_fish_pixels": 49814,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33693
+        },
+        {
+          "stem": "f_r_1589_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 12930
+        },
+        {
+          "stem": "f_r_1615_",
+          "gt_fish_pixels": 17249,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 17368
+        },
+        {
+          "stem": "f_r_1631_",
+          "gt_fish_pixels": 46625,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 37561
+        },
+        {
+          "stem": "f_r_1649_",
+          "gt_fish_pixels": 42818,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 41778
+        },
+        {
+          "stem": "f_r_1665_",
+          "gt_fish_pixels": 7245,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1314
+        },
+        {
+          "stem": "f_r_1683_",
+          "gt_fish_pixels": 39488,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 16301
+        },
+        {
+          "stem": "f_r_1695_",
+          "gt_fish_pixels": 10298,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7514
+        },
+        {
+          "stem": "f_r_171_",
+          "gt_fish_pixels": 37520,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7597
+        },
+        {
+          "stem": "f_r_1734_",
+          "gt_fish_pixels": 20089,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 21507
+        },
+        {
+          "stem": "f_r_1749_",
+          "gt_fish_pixels": 18051,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 8573
+        },
+        {
+          "stem": "f_r_1765_",
+          "gt_fish_pixels": 33549,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33285
+        },
+        {
+          "stem": "f_r_17_",
+          "gt_fish_pixels": 178,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 85
+        },
+        {
+          "stem": "f_r_1826_",
+          "gt_fish_pixels": 22802,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7829
+        },
+        {
+          "stem": "f_r_1841_",
+          "gt_fish_pixels": 48861,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 24326
+        },
+        {
+          "stem": "f_r_1857_",
+          "gt_fish_pixels": 29567,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33009
+        },
+        {
+          "stem": "f_r_1871_",
+          "gt_fish_pixels": 41659,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 42183
+        },
+        {
+          "stem": "f_r_1885_",
+          "gt_fish_pixels": 16469,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 5115
+        },
+        {
+          "stem": "f_r_1900_",
+          "gt_fish_pixels": 1767,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_191_",
+          "gt_fish_pixels": 4757,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1467
+        },
+        {
+          "stem": "f_r_1932_",
+          "gt_fish_pixels": 13789,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14745
+        },
+        {
+          "stem": "f_r_1947_",
+          "gt_fish_pixels": 62331,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 48111
+        },
+        {
+          "stem": "f_r_1961_",
+          "gt_fish_pixels": 591,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_1976_",
+          "gt_fish_pixels": 3402,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 3404
+        },
+        {
+          "stem": "f_r_1997_",
+          "gt_fish_pixels": 887,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 845
+        },
+        {
+          "stem": "f_r_2012_",
+          "gt_fish_pixels": 2246,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1738
+        },
+        {
+          "stem": "f_r_2032_",
+          "gt_fish_pixels": 25558,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 26668
+        },
+        {
+          "stem": "f_r_2058_",
+          "gt_fish_pixels": 7404,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7478
+        },
+        {
+          "stem": "f_r_2082_",
+          "gt_fish_pixels": 7076,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1135
+        },
+        {
+          "stem": "f_r_225_",
+          "gt_fish_pixels": 4152,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 708
+        },
+        {
+          "stem": "f_r_258_",
+          "gt_fish_pixels": 19293,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 19310
+        },
+        {
+          "stem": "f_r_278_",
+          "gt_fish_pixels": 3214,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 331
+        },
+        {
+          "stem": "f_r_290_",
+          "gt_fish_pixels": 22937,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 6539
+        },
+        {
+          "stem": "f_r_319_",
+          "gt_fish_pixels": 4909,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1553
+        },
+        {
+          "stem": "f_r_351_",
+          "gt_fish_pixels": 5990,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 837
+        },
+        {
+          "stem": "f_r_371_",
+          "gt_fish_pixels": 6092,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 583
+        },
+        {
+          "stem": "f_r_407_",
+          "gt_fish_pixels": 6423,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 2114
+        },
+        {
+          "stem": "f_r_433_",
+          "gt_fish_pixels": 35566,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 27528
+        },
+        {
+          "stem": "f_r_447_",
+          "gt_fish_pixels": 1844,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 567
+        },
+        {
+          "stem": "f_r_460_",
+          "gt_fish_pixels": 9355,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 463
+        },
+        {
+          "stem": "f_r_490_",
+          "gt_fish_pixels": 14719,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13256
+        },
+        {
+          "stem": "f_r_505_",
+          "gt_fish_pixels": 37787,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 16553
+        },
+        {
+          "stem": "f_r_525_",
+          "gt_fish_pixels": 119704,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 141787
+        },
+        {
+          "stem": "f_r_540_",
+          "gt_fish_pixels": 12789,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14397
+        },
+        {
+          "stem": "f_r_569_",
+          "gt_fish_pixels": 1198,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 766
+        },
+        {
+          "stem": "f_r_591_",
+          "gt_fish_pixels": 39627,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33662
+        },
+        {
+          "stem": "f_r_613_",
+          "gt_fish_pixels": 720,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 282
+        },
+        {
+          "stem": "f_r_62_",
+          "gt_fish_pixels": 13899,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13570
+        },
+        {
+          "stem": "f_r_643_",
+          "gt_fish_pixels": 7926,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1533
+        },
+        {
+          "stem": "f_r_658_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_673_",
+          "gt_fish_pixels": 27391,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 19844
+        },
+        {
+          "stem": "f_r_686_",
+          "gt_fish_pixels": 55921,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 55693
+        },
+        {
+          "stem": "f_r_704_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 559
+        },
+        {
+          "stem": "f_r_722_",
+          "gt_fish_pixels": 15763,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 17015
+        },
+        {
+          "stem": "f_r_74_",
+          "gt_fish_pixels": 13791,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 11166
+        },
+        {
+          "stem": "f_r_771_",
+          "gt_fish_pixels": 12084,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13428
+        },
+        {
+          "stem": "f_r_814_",
+          "gt_fish_pixels": 9042,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 4131
+        },
+        {
+          "stem": "f_r_840_",
+          "gt_fish_pixels": 35773,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 21371
+        },
+        {
+          "stem": "f_r_867_",
+          "gt_fish_pixels": 27888,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 19970
+        },
+        {
+          "stem": "f_r_8_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 268
+        },
+        {
+          "stem": "f_r_912_",
+          "gt_fish_pixels": 5615,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1645
+        },
+        {
+          "stem": "f_r_924_",
+          "gt_fish_pixels": 44926,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 51391
+        },
+        {
+          "stem": "f_r_956_",
+          "gt_fish_pixels": 57132,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 3747
+        },
+        {
+          "stem": "f_r_97_",
+          "gt_fish_pixels": 4587,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 368
+        },
+        {
+          "stem": "n_l_103_",
+          "gt_fish_pixels": 7936,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 8971
+        },
+        {
+          "stem": "n_l_11_",
+          "gt_fish_pixels": 43007,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 41853
+        },
+        {
+          "stem": "n_l_23_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 961
+        },
+        {
+          "stem": "n_l_34_",
+          "gt_fish_pixels": 5258,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1881
+        },
+        {
+          "stem": "n_l_47_",
+          "gt_fish_pixels": 1800,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 556
+        },
+        {
+          "stem": "n_l_59_",
+          "gt_fish_pixels": 46744,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 45904
+        },
+        {
+          "stem": "n_l_69_",
+          "gt_fish_pixels": 34092,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33153
+        },
+        {
+          "stem": "n_l_78_",
+          "gt_fish_pixels": 51919,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 39152
+        },
+        {
+          "stem": "n_l_8_",
+          "gt_fish_pixels": 28135,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 2860
+        },
+        {
+          "stem": "n_l_9_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_112_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_123_",
+          "gt_fish_pixels": 34,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 2324
+        },
+        {
+          "stem": "w_r_133_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_148_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_160_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 27
+        },
+        {
+          "stem": "w_r_172_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_181_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_190_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_204_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_213_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 10
+        },
+        {
+          "stem": "w_r_226_",
+          "gt_fish_pixels": 12065,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1062
+        },
+        {
+          "stem": "w_r_237_",
+          "gt_fish_pixels": 5077,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1376
+        },
+        {
+          "stem": "w_r_249_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 2
+        },
+        {
+          "stem": "w_r_274_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_285_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 119
+        },
+        {
+          "stem": "w_r_295_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_42_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_57_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 52
+        },
+        {
+          "stem": "w_r_68_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_79_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_89_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 549
+        },
+        {
+          "stem": "w_r_99_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        }
+      ],
+      "gate": "FV>0.5, largest component >=400px on common 384 grid"
+    },
+    "retention_pass": false,
+    "seconds": 17.023960099999385
+  },
+  {
+    "epoch": 4,
+    "loss": 0.7990815582729521,
+    "metrics": {
+      "fish_iou": 0.613332677960557,
+      "bio_iou": 0.5099403905755552,
+      "fish_precision": 0.767942254622485,
+      "fish_recall": 0.7528673245419455,
+      "negative_crops": 50,
+      "negative_candidates": 8,
+      "positive_crops_ge400": 95,
+      "positive_overlap_hits": 73,
+      "per_class_iou": [
+        0.8247176804484553,
+        0.7008307166081248,
+        0.16614248925545058,
+        0.7001126285710058,
+        0.6951846507402063,
+        0.750346004510658,
+        0.613332677960557,
+        0.48575855186471617
+      ],
+      "confusion": [
+        [
+          6383013,
+          18825,
+          544,
+          73173,
+          1748,
+          173026,
+          84121,
+          220786
+        ],
+        [
+          32514,
+          327419,
+          0,
+          8609,
+          3549,
+          1728,
+          22895,
+          8873
+        ],
+        [
+          33147,
+          4236,
+          76387,
+          0,
+          0,
+          140674,
+          25397,
+          62453
+        ],
+        [
+          43311,
+          21247,
+          0,
+          1230170,
+          0,
+          110562,
+          11236,
+          72912
+        ],
+        [
+          9933,
+          6052,
+          0,
+          4248,
+          65038,
+          394,
+          648,
+          64
+        ],
+        [
+          118601,
+          1766,
+          88566,
+          25762,
+          1427,
+          6446711,
+          254523,
+          379025
+        ],
+        [
+          80831,
+          1170,
+          1717,
+          9745,
+          0,
+          337013,
+          1484887,
+          56946
+        ],
+        [
+          466061,
+          8304,
+          26647,
+          146128,
+          454,
+          511873,
+          49885,
+          1899058
+        ]
+      ],
+      "frames": [
+        {
+          "stem": "d_r_103_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_153_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 251
+        },
+        {
+          "stem": "d_r_185_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 378
+        },
+        {
+          "stem": "d_r_217_",
+          "gt_fish_pixels": 11347,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 10629
+        },
+        {
+          "stem": "d_r_25_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_297_",
+          "gt_fish_pixels": 5631,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 5499
+        },
+        {
+          "stem": "d_r_319_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 151
+        },
+        {
+          "stem": "d_r_348_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_383_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 86
+        },
+        {
+          "stem": "d_r_428_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 11
+        },
+        {
+          "stem": "d_r_467_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_4_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 23
+        },
+        {
+          "stem": "d_r_527_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_563_",
+          "gt_fish_pixels": 14096,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 11656
+        },
+        {
+          "stem": "d_r_600_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_624_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1440
+        },
+        {
+          "stem": "d_r_657_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 174
+        },
+        {
+          "stem": "d_r_690_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 1
+        },
+        {
+          "stem": "d_r_715_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_741_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_77_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_87_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_1017_",
+          "gt_fish_pixels": 5025,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 8775
+        },
+        {
+          "stem": "f_r_1029_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 4633
+        },
+        {
+          "stem": "f_r_1040_",
+          "gt_fish_pixels": 102115,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 19159
+        },
+        {
+          "stem": "f_r_1053_",
+          "gt_fish_pixels": 43031,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 36905
+        },
+        {
+          "stem": "f_r_107_",
+          "gt_fish_pixels": 25309,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1570
+        },
+        {
+          "stem": "f_r_1096_",
+          "gt_fish_pixels": 8465,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 356
+        },
+        {
+          "stem": "f_r_1113_",
+          "gt_fish_pixels": 47422,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 12568
+        },
+        {
+          "stem": "f_r_1125_",
+          "gt_fish_pixels": 547,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 67
+        },
+        {
+          "stem": "f_r_1140_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 7912
+        },
+        {
+          "stem": "f_r_1155_",
+          "gt_fish_pixels": 745,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1773
+        },
+        {
+          "stem": "f_r_1171_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 47
+        },
+        {
+          "stem": "f_r_118_",
+          "gt_fish_pixels": 17646,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 10494
+        },
+        {
+          "stem": "f_r_1201_",
+          "gt_fish_pixels": 10398,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 2890
+        },
+        {
+          "stem": "f_r_1219_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 33145
+        },
+        {
+          "stem": "f_r_1235_",
+          "gt_fish_pixels": 4920,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 15
+        },
+        {
+          "stem": "f_r_1252_",
+          "gt_fish_pixels": 35953,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 31149
+        },
+        {
+          "stem": "f_r_1305_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 51
+        },
+        {
+          "stem": "f_r_1322_",
+          "gt_fish_pixels": 1692,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 275
+        },
+        {
+          "stem": "f_r_1348_",
+          "gt_fish_pixels": 2277,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 7014
+        },
+        {
+          "stem": "f_r_1371_",
+          "gt_fish_pixels": 3075,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 397
+        },
+        {
+          "stem": "f_r_1386_",
+          "gt_fish_pixels": 15707,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14113
+        },
+        {
+          "stem": "f_r_141_",
+          "gt_fish_pixels": 1341,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 360
+        },
+        {
+          "stem": "f_r_1439_",
+          "gt_fish_pixels": 2665,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 2197
+        },
+        {
+          "stem": "f_r_145_",
+          "gt_fish_pixels": 32051,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 39218
+        },
+        {
+          "stem": "f_r_1487_",
+          "gt_fish_pixels": 18137,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 18696
+        },
+        {
+          "stem": "f_r_1500_",
+          "gt_fish_pixels": 13427,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 3021
+        },
+        {
+          "stem": "f_r_1530_",
+          "gt_fish_pixels": 13738,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13889
+        },
+        {
+          "stem": "f_r_1543_",
+          "gt_fish_pixels": 9335,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 6715
+        },
+        {
+          "stem": "f_r_1554_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 58
+        },
+        {
+          "stem": "f_r_1572_",
+          "gt_fish_pixels": 49814,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33828
+        },
+        {
+          "stem": "f_r_1589_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 11993
+        },
+        {
+          "stem": "f_r_1615_",
+          "gt_fish_pixels": 17249,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 17462
+        },
+        {
+          "stem": "f_r_1631_",
+          "gt_fish_pixels": 46625,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 37756
+        },
+        {
+          "stem": "f_r_1649_",
+          "gt_fish_pixels": 42818,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 41328
+        },
+        {
+          "stem": "f_r_1665_",
+          "gt_fish_pixels": 7245,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1344
+        },
+        {
+          "stem": "f_r_1683_",
+          "gt_fish_pixels": 39488,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 16976
+        },
+        {
+          "stem": "f_r_1695_",
+          "gt_fish_pixels": 10298,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7755
+        },
+        {
+          "stem": "f_r_171_",
+          "gt_fish_pixels": 37520,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 8939
+        },
+        {
+          "stem": "f_r_1734_",
+          "gt_fish_pixels": 20089,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 21468
+        },
+        {
+          "stem": "f_r_1749_",
+          "gt_fish_pixels": 18051,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 9653
+        },
+        {
+          "stem": "f_r_1765_",
+          "gt_fish_pixels": 33549,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33931
+        },
+        {
+          "stem": "f_r_17_",
+          "gt_fish_pixels": 178,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 97
+        },
+        {
+          "stem": "f_r_1826_",
+          "gt_fish_pixels": 22802,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7963
+        },
+        {
+          "stem": "f_r_1841_",
+          "gt_fish_pixels": 48861,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 25338
+        },
+        {
+          "stem": "f_r_1857_",
+          "gt_fish_pixels": 29567,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 32006
+        },
+        {
+          "stem": "f_r_1871_",
+          "gt_fish_pixels": 41659,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 42364
+        },
+        {
+          "stem": "f_r_1885_",
+          "gt_fish_pixels": 16469,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 5587
+        },
+        {
+          "stem": "f_r_1900_",
+          "gt_fish_pixels": 1767,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_191_",
+          "gt_fish_pixels": 4757,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1588
+        },
+        {
+          "stem": "f_r_1932_",
+          "gt_fish_pixels": 13789,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14882
+        },
+        {
+          "stem": "f_r_1947_",
+          "gt_fish_pixels": 62331,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 53895
+        },
+        {
+          "stem": "f_r_1961_",
+          "gt_fish_pixels": 591,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_1976_",
+          "gt_fish_pixels": 3402,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 3441
+        },
+        {
+          "stem": "f_r_1997_",
+          "gt_fish_pixels": 887,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 826
+        },
+        {
+          "stem": "f_r_2012_",
+          "gt_fish_pixels": 2246,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 2589
+        },
+        {
+          "stem": "f_r_2032_",
+          "gt_fish_pixels": 25558,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 27287
+        },
+        {
+          "stem": "f_r_2058_",
+          "gt_fish_pixels": 7404,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7612
+        },
+        {
+          "stem": "f_r_2082_",
+          "gt_fish_pixels": 7076,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1159
+        },
+        {
+          "stem": "f_r_225_",
+          "gt_fish_pixels": 4152,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1654
+        },
+        {
+          "stem": "f_r_258_",
+          "gt_fish_pixels": 19293,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 19193
+        },
+        {
+          "stem": "f_r_278_",
+          "gt_fish_pixels": 3214,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 315
+        },
+        {
+          "stem": "f_r_290_",
+          "gt_fish_pixels": 22937,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7091
+        },
+        {
+          "stem": "f_r_319_",
+          "gt_fish_pixels": 4909,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1543
+        },
+        {
+          "stem": "f_r_351_",
+          "gt_fish_pixels": 5990,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 959
+        },
+        {
+          "stem": "f_r_371_",
+          "gt_fish_pixels": 6092,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 594
+        },
+        {
+          "stem": "f_r_407_",
+          "gt_fish_pixels": 6423,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 2146
+        },
+        {
+          "stem": "f_r_433_",
+          "gt_fish_pixels": 35566,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 29350
+        },
+        {
+          "stem": "f_r_447_",
+          "gt_fish_pixels": 1844,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 549
+        },
+        {
+          "stem": "f_r_460_",
+          "gt_fish_pixels": 9355,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 448
+        },
+        {
+          "stem": "f_r_490_",
+          "gt_fish_pixels": 14719,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13908
+        },
+        {
+          "stem": "f_r_505_",
+          "gt_fish_pixels": 37787,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 18180
+        },
+        {
+          "stem": "f_r_525_",
+          "gt_fish_pixels": 119704,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 142112
+        },
+        {
+          "stem": "f_r_540_",
+          "gt_fish_pixels": 12789,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 15180
+        },
+        {
+          "stem": "f_r_569_",
+          "gt_fish_pixels": 1198,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 761
+        },
+        {
+          "stem": "f_r_591_",
+          "gt_fish_pixels": 39627,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 34672
+        },
+        {
+          "stem": "f_r_613_",
+          "gt_fish_pixels": 720,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 287
+        },
+        {
+          "stem": "f_r_62_",
+          "gt_fish_pixels": 13899,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13628
+        },
+        {
+          "stem": "f_r_643_",
+          "gt_fish_pixels": 7926,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1650
+        },
+        {
+          "stem": "f_r_658_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_673_",
+          "gt_fish_pixels": 27391,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 20294
+        },
+        {
+          "stem": "f_r_686_",
+          "gt_fish_pixels": 55921,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 61381
+        },
+        {
+          "stem": "f_r_704_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1619
+        },
+        {
+          "stem": "f_r_722_",
+          "gt_fish_pixels": 15763,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 16864
+        },
+        {
+          "stem": "f_r_74_",
+          "gt_fish_pixels": 13791,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 11790
+        },
+        {
+          "stem": "f_r_771_",
+          "gt_fish_pixels": 12084,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14203
+        },
+        {
+          "stem": "f_r_814_",
+          "gt_fish_pixels": 9042,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 4579
+        },
+        {
+          "stem": "f_r_840_",
+          "gt_fish_pixels": 35773,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 21964
+        },
+        {
+          "stem": "f_r_867_",
+          "gt_fish_pixels": 27888,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 20079
+        },
+        {
+          "stem": "f_r_8_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 273
+        },
+        {
+          "stem": "f_r_912_",
+          "gt_fish_pixels": 5615,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1605
+        },
+        {
+          "stem": "f_r_924_",
+          "gt_fish_pixels": 44926,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 52489
+        },
+        {
+          "stem": "f_r_956_",
+          "gt_fish_pixels": 57132,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 3735
+        },
+        {
+          "stem": "f_r_97_",
+          "gt_fish_pixels": 4587,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 261
+        },
+        {
+          "stem": "n_l_103_",
+          "gt_fish_pixels": 7936,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 9647
+        },
+        {
+          "stem": "n_l_11_",
+          "gt_fish_pixels": 43007,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 41407
+        },
+        {
+          "stem": "n_l_23_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1032
+        },
+        {
+          "stem": "n_l_34_",
+          "gt_fish_pixels": 5258,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1862
+        },
+        {
+          "stem": "n_l_47_",
+          "gt_fish_pixels": 1800,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 590
+        },
+        {
+          "stem": "n_l_59_",
+          "gt_fish_pixels": 46744,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 45872
+        },
+        {
+          "stem": "n_l_69_",
+          "gt_fish_pixels": 34092,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33684
+        },
+        {
+          "stem": "n_l_78_",
+          "gt_fish_pixels": 51919,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 40135
+        },
+        {
+          "stem": "n_l_8_",
+          "gt_fish_pixels": 28135,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 6905
+        },
+        {
+          "stem": "n_l_9_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_112_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_123_",
+          "gt_fish_pixels": 34,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 5934
+        },
+        {
+          "stem": "w_r_133_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_148_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_160_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 18
+        },
+        {
+          "stem": "w_r_172_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_181_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_190_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_204_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_213_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_226_",
+          "gt_fish_pixels": 12065,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1002
+        },
+        {
+          "stem": "w_r_237_",
+          "gt_fish_pixels": 5077,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1231
+        },
+        {
+          "stem": "w_r_249_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 3
+        },
+        {
+          "stem": "w_r_274_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_285_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 165
+        },
+        {
+          "stem": "w_r_295_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_42_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_57_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_68_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_79_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_89_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 415
+        },
+        {
+          "stem": "w_r_99_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        }
+      ],
+      "gate": "FV>0.5, largest component >=400px on common 384 grid"
+    },
+    "retention_pass": false,
+    "seconds": 17.56022710000252
+  },
+  {
+    "epoch": 5,
+    "loss": 0.7755907866216841,
+    "metrics": {
+      "fish_iou": 0.6088214199421044,
+      "bio_iou": 0.5061509329675812,
+      "fish_precision": 0.7893476360256955,
+      "fish_recall": 0.7269297052338148,
+      "negative_crops": 50,
+      "negative_candidates": 9,
+      "positive_crops_ge400": 95,
+      "positive_overlap_hits": 72,
+      "per_class_iou": [
+        0.8250440003181769,
+        0.6936819569475023,
+        0.1604036831865994,
+        0.7094031906935452,
+        0.6927630446013432,
+        0.7492276957740398,
+        0.6088214199421044,
+        0.4896363613796367
+      ],
+      "confusion": [
+        [
+          6409983,
+          16145,
+          651,
+          51253,
+          1517,
+          178800,
+          75599,
+          221288
+        ],
+        [
+          38131,
+          319478,
+          0,
+          5755,
+          3294,
+          2980,
+          24353,
+          11596
+        ],
+        [
+          33717,
+          3771,
+          77833,
+          0,
+          0,
+          142460,
+          21985,
+          62528
+        ],
+        [
+          50698,
+          19887,
+          0,
+          1203411,
+          0,
+          113366,
+          8945,
+          93131
+        ],
+        [
+          11042,
+          6014,
+          0,
+          3754,
+          64366,
+          441,
+          665,
+          95
+        ],
+        [
+          119325,
+          1496,
+          111819,
+          17913,
+          1332,
+          6469002,
+          206897,
+          388597
+        ],
+        [
+          88997,
+          921,
+          2326,
+          9741,
+          0,
+          374446,
+          1433730,
+          62148
+        ],
+        [
+          472116,
+          6733,
+          28142,
+          118517,
+          392,
+          505353,
+          44174,
+          1932983
+        ]
+      ],
+      "frames": [
+        {
+          "stem": "d_r_103_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_153_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 262
+        },
+        {
+          "stem": "d_r_185_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 455
+        },
+        {
+          "stem": "d_r_217_",
+          "gt_fish_pixels": 11347,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 10527
+        },
+        {
+          "stem": "d_r_25_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_297_",
+          "gt_fish_pixels": 5631,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 5375
+        },
+        {
+          "stem": "d_r_319_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 146
+        },
+        {
+          "stem": "d_r_348_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_383_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 102
+        },
+        {
+          "stem": "d_r_428_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 5
+        },
+        {
+          "stem": "d_r_467_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_4_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 23
+        },
+        {
+          "stem": "d_r_527_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_563_",
+          "gt_fish_pixels": 14096,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 11245
+        },
+        {
+          "stem": "d_r_600_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_624_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1508
+        },
+        {
+          "stem": "d_r_657_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 167
+        },
+        {
+          "stem": "d_r_690_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 1
+        },
+        {
+          "stem": "d_r_715_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_741_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_77_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_87_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_1017_",
+          "gt_fish_pixels": 5025,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 8383
+        },
+        {
+          "stem": "f_r_1029_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 3810
+        },
+        {
+          "stem": "f_r_1040_",
+          "gt_fish_pixels": 102115,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 16657
+        },
+        {
+          "stem": "f_r_1053_",
+          "gt_fish_pixels": 43031,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 36376
+        },
+        {
+          "stem": "f_r_107_",
+          "gt_fish_pixels": 25309,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1549
+        },
+        {
+          "stem": "f_r_1096_",
+          "gt_fish_pixels": 8465,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 251
+        },
+        {
+          "stem": "f_r_1113_",
+          "gt_fish_pixels": 47422,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 11223
+        },
+        {
+          "stem": "f_r_1125_",
+          "gt_fish_pixels": 547,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 47
+        },
+        {
+          "stem": "f_r_1140_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 15873
+        },
+        {
+          "stem": "f_r_1155_",
+          "gt_fish_pixels": 745,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 583
+        },
+        {
+          "stem": "f_r_1171_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 14
+        },
+        {
+          "stem": "f_r_118_",
+          "gt_fish_pixels": 17646,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 9911
+        },
+        {
+          "stem": "f_r_1201_",
+          "gt_fish_pixels": 10398,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1955
+        },
+        {
+          "stem": "f_r_1219_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 32228
+        },
+        {
+          "stem": "f_r_1235_",
+          "gt_fish_pixels": 4920,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 3
+        },
+        {
+          "stem": "f_r_1252_",
+          "gt_fish_pixels": 35953,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 29890
+        },
+        {
+          "stem": "f_r_1305_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 8
+        },
+        {
+          "stem": "f_r_1322_",
+          "gt_fish_pixels": 1692,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 256
+        },
+        {
+          "stem": "f_r_1348_",
+          "gt_fish_pixels": 2277,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 5172
+        },
+        {
+          "stem": "f_r_1371_",
+          "gt_fish_pixels": 3075,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 392
+        },
+        {
+          "stem": "f_r_1386_",
+          "gt_fish_pixels": 15707,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13950
+        },
+        {
+          "stem": "f_r_141_",
+          "gt_fish_pixels": 1341,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 308
+        },
+        {
+          "stem": "f_r_1439_",
+          "gt_fish_pixels": 2665,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1734
+        },
+        {
+          "stem": "f_r_145_",
+          "gt_fish_pixels": 32051,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33438
+        },
+        {
+          "stem": "f_r_1487_",
+          "gt_fish_pixels": 18137,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 17624
+        },
+        {
+          "stem": "f_r_1500_",
+          "gt_fish_pixels": 13427,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 2984
+        },
+        {
+          "stem": "f_r_1530_",
+          "gt_fish_pixels": 13738,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 12902
+        },
+        {
+          "stem": "f_r_1543_",
+          "gt_fish_pixels": 9335,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 5677
+        },
+        {
+          "stem": "f_r_1554_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 23
+        },
+        {
+          "stem": "f_r_1572_",
+          "gt_fish_pixels": 49814,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33132
+        },
+        {
+          "stem": "f_r_1589_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 10542
+        },
+        {
+          "stem": "f_r_1615_",
+          "gt_fish_pixels": 17249,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 17311
+        },
+        {
+          "stem": "f_r_1631_",
+          "gt_fish_pixels": 46625,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 35362
+        },
+        {
+          "stem": "f_r_1649_",
+          "gt_fish_pixels": 42818,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 41104
+        },
+        {
+          "stem": "f_r_1665_",
+          "gt_fish_pixels": 7245,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1143
+        },
+        {
+          "stem": "f_r_1683_",
+          "gt_fish_pixels": 39488,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 16044
+        },
+        {
+          "stem": "f_r_1695_",
+          "gt_fish_pixels": 10298,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7567
+        },
+        {
+          "stem": "f_r_171_",
+          "gt_fish_pixels": 37520,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7863
+        },
+        {
+          "stem": "f_r_1734_",
+          "gt_fish_pixels": 20089,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 21273
+        },
+        {
+          "stem": "f_r_1749_",
+          "gt_fish_pixels": 18051,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 8754
+        },
+        {
+          "stem": "f_r_1765_",
+          "gt_fish_pixels": 33549,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33726
+        },
+        {
+          "stem": "f_r_17_",
+          "gt_fish_pixels": 178,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 71
+        },
+        {
+          "stem": "f_r_1826_",
+          "gt_fish_pixels": 22802,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7605
+        },
+        {
+          "stem": "f_r_1841_",
+          "gt_fish_pixels": 48861,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 24464
+        },
+        {
+          "stem": "f_r_1857_",
+          "gt_fish_pixels": 29567,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 31153
+        },
+        {
+          "stem": "f_r_1871_",
+          "gt_fish_pixels": 41659,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 40930
+        },
+        {
+          "stem": "f_r_1885_",
+          "gt_fish_pixels": 16469,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 4599
+        },
+        {
+          "stem": "f_r_1900_",
+          "gt_fish_pixels": 1767,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_191_",
+          "gt_fish_pixels": 4757,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1453
+        },
+        {
+          "stem": "f_r_1932_",
+          "gt_fish_pixels": 13789,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14751
+        },
+        {
+          "stem": "f_r_1947_",
+          "gt_fish_pixels": 62331,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 45752
+        },
+        {
+          "stem": "f_r_1961_",
+          "gt_fish_pixels": 591,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_1976_",
+          "gt_fish_pixels": 3402,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 3262
+        },
+        {
+          "stem": "f_r_1997_",
+          "gt_fish_pixels": 887,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 732
+        },
+        {
+          "stem": "f_r_2012_",
+          "gt_fish_pixels": 2246,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 2155
+        },
+        {
+          "stem": "f_r_2032_",
+          "gt_fish_pixels": 25558,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 26910
+        },
+        {
+          "stem": "f_r_2058_",
+          "gt_fish_pixels": 7404,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7396
+        },
+        {
+          "stem": "f_r_2082_",
+          "gt_fish_pixels": 7076,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1094
+        },
+        {
+          "stem": "f_r_225_",
+          "gt_fish_pixels": 4152,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 620
+        },
+        {
+          "stem": "f_r_258_",
+          "gt_fish_pixels": 19293,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 19128
+        },
+        {
+          "stem": "f_r_278_",
+          "gt_fish_pixels": 3214,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 301
+        },
+        {
+          "stem": "f_r_290_",
+          "gt_fish_pixels": 22937,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 6583
+        },
+        {
+          "stem": "f_r_319_",
+          "gt_fish_pixels": 4909,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1510
+        },
+        {
+          "stem": "f_r_351_",
+          "gt_fish_pixels": 5990,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 562
+        },
+        {
+          "stem": "f_r_371_",
+          "gt_fish_pixels": 6092,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 512
+        },
+        {
+          "stem": "f_r_407_",
+          "gt_fish_pixels": 6423,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 2090
+        },
+        {
+          "stem": "f_r_433_",
+          "gt_fish_pixels": 35566,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 27993
+        },
+        {
+          "stem": "f_r_447_",
+          "gt_fish_pixels": 1844,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 512
+        },
+        {
+          "stem": "f_r_460_",
+          "gt_fish_pixels": 9355,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 393
+        },
+        {
+          "stem": "f_r_490_",
+          "gt_fish_pixels": 14719,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 12973
+        },
+        {
+          "stem": "f_r_505_",
+          "gt_fish_pixels": 37787,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 16674
+        },
+        {
+          "stem": "f_r_525_",
+          "gt_fish_pixels": 119704,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 140568
+        },
+        {
+          "stem": "f_r_540_",
+          "gt_fish_pixels": 12789,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14777
+        },
+        {
+          "stem": "f_r_569_",
+          "gt_fish_pixels": 1198,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 631
+        },
+        {
+          "stem": "f_r_591_",
+          "gt_fish_pixels": 39627,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33415
+        },
+        {
+          "stem": "f_r_613_",
+          "gt_fish_pixels": 720,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 280
+        },
+        {
+          "stem": "f_r_62_",
+          "gt_fish_pixels": 13899,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13322
+        },
+        {
+          "stem": "f_r_643_",
+          "gt_fish_pixels": 7926,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1428
+        },
+        {
+          "stem": "f_r_658_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_673_",
+          "gt_fish_pixels": 27391,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 17503
+        },
+        {
+          "stem": "f_r_686_",
+          "gt_fish_pixels": 55921,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 55859
+        },
+        {
+          "stem": "f_r_704_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 698
+        },
+        {
+          "stem": "f_r_722_",
+          "gt_fish_pixels": 15763,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 15875
+        },
+        {
+          "stem": "f_r_74_",
+          "gt_fish_pixels": 13791,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 11243
+        },
+        {
+          "stem": "f_r_771_",
+          "gt_fish_pixels": 12084,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13361
+        },
+        {
+          "stem": "f_r_814_",
+          "gt_fish_pixels": 9042,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 4403
+        },
+        {
+          "stem": "f_r_840_",
+          "gt_fish_pixels": 35773,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 21132
+        },
+        {
+          "stem": "f_r_867_",
+          "gt_fish_pixels": 27888,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13289
+        },
+        {
+          "stem": "f_r_8_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 253
+        },
+        {
+          "stem": "f_r_912_",
+          "gt_fish_pixels": 5615,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1570
+        },
+        {
+          "stem": "f_r_924_",
+          "gt_fish_pixels": 44926,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 50517
+        },
+        {
+          "stem": "f_r_956_",
+          "gt_fish_pixels": 57132,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 3389
+        },
+        {
+          "stem": "f_r_97_",
+          "gt_fish_pixels": 4587,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 88
+        },
+        {
+          "stem": "n_l_103_",
+          "gt_fish_pixels": 7936,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 8972
+        },
+        {
+          "stem": "n_l_11_",
+          "gt_fish_pixels": 43007,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 41208
+        },
+        {
+          "stem": "n_l_23_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1132
+        },
+        {
+          "stem": "n_l_34_",
+          "gt_fish_pixels": 5258,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1844
+        },
+        {
+          "stem": "n_l_47_",
+          "gt_fish_pixels": 1800,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 448
+        },
+        {
+          "stem": "n_l_59_",
+          "gt_fish_pixels": 46744,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 45429
+        },
+        {
+          "stem": "n_l_69_",
+          "gt_fish_pixels": 34092,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33475
+        },
+        {
+          "stem": "n_l_78_",
+          "gt_fish_pixels": 51919,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 38626
+        },
+        {
+          "stem": "n_l_8_",
+          "gt_fish_pixels": 28135,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 3241
+        },
+        {
+          "stem": "n_l_9_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_112_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_123_",
+          "gt_fish_pixels": 34,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 2054
+        },
+        {
+          "stem": "w_r_133_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_148_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_160_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 12
+        },
+        {
+          "stem": "w_r_172_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_181_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_190_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_204_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_213_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 3
+        },
+        {
+          "stem": "w_r_226_",
+          "gt_fish_pixels": 12065,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 825
+        },
+        {
+          "stem": "w_r_237_",
+          "gt_fish_pixels": 5077,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1201
+        },
+        {
+          "stem": "w_r_249_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 3
+        },
+        {
+          "stem": "w_r_274_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_285_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 209
+        },
+        {
+          "stem": "w_r_295_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_42_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_57_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_68_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_79_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_89_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 936
+        },
+        {
+          "stem": "w_r_99_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        }
+      ],
+      "gate": "FV>0.5, largest component >=400px on common 384 grid"
+    },
+    "retention_pass": false,
+    "seconds": 18.04504100000122
+  },
+  {
+    "epoch": 6,
+    "loss": 0.757210598105476,
+    "metrics": {
+      "fish_iou": 0.6090455079370264,
+      "bio_iou": 0.5101676726303411,
+      "fish_precision": 0.7885221097261925,
+      "fish_recall": 0.7279513504222715,
+      "negative_crops": 50,
+      "negative_candidates": 8,
+      "positive_crops_ge400": 95,
+      "positive_overlap_hits": 72,
+      "per_class_iou": [
+        0.8258598685169319,
+        0.696245976907286,
+        0.16858130363765983,
+        0.7032511715801852,
+        0.6951557167693332,
+        0.7528762063163372,
+        0.6090455079370264,
+        0.48737345452757086
+      ],
+      "confusion": [
+        [
+          6397815,
+          17295,
+          467,
+          55930,
+          1623,
+          185509,
+          76956,
+          219641
+        ],
+        [
+          36614,
+          322545,
+          0,
+          5504,
+          3401,
+          3573,
+          23671,
+          10279
+        ],
+        [
+          33245,
+          3954,
+          74724,
+          0,
+          0,
+          144989,
+          22563,
+          62819
+        ],
+        [
+          47104,
+          20378,
+          0,
+          1202018,
+          0,
+          133138,
+          9109,
+          77691
+        ],
+        [
+          10722,
+          6123,
+          0,
+          3632,
+          64776,
+          451,
+          590,
+          83
+        ],
+        [
+          113494,
+          1559,
+          74248,
+          16815,
+          1367,
+          6556372,
+          208053,
+          344473
+        ],
+        [
+          86345,
+          1001,
+          1443,
+          9890,
+          0,
+          377598,
+          1435745,
+          60287
+        ],
+        [
+          464093,
+          7366,
+          24800,
+          128021,
+          414,
+          546794,
+          44118,
+          1892804
+        ]
+      ],
+      "frames": [
+        {
+          "stem": "d_r_103_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_153_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 240
+        },
+        {
+          "stem": "d_r_185_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 382
+        },
+        {
+          "stem": "d_r_217_",
+          "gt_fish_pixels": 11347,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 10552
+        },
+        {
+          "stem": "d_r_25_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_297_",
+          "gt_fish_pixels": 5631,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 5393
+        },
+        {
+          "stem": "d_r_319_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 122
+        },
+        {
+          "stem": "d_r_348_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_383_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 86
+        },
+        {
+          "stem": "d_r_428_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 5
+        },
+        {
+          "stem": "d_r_467_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_4_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 18
+        },
+        {
+          "stem": "d_r_527_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_563_",
+          "gt_fish_pixels": 14096,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 11358
+        },
+        {
+          "stem": "d_r_600_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_624_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1357
+        },
+        {
+          "stem": "d_r_657_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 162
+        },
+        {
+          "stem": "d_r_690_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 1
+        },
+        {
+          "stem": "d_r_715_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_741_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_77_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "d_r_87_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_1017_",
+          "gt_fish_pixels": 5025,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 8238
+        },
+        {
+          "stem": "f_r_1029_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 3777
+        },
+        {
+          "stem": "f_r_1040_",
+          "gt_fish_pixels": 102115,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 16874
+        },
+        {
+          "stem": "f_r_1053_",
+          "gt_fish_pixels": 43031,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 36459
+        },
+        {
+          "stem": "f_r_107_",
+          "gt_fish_pixels": 25309,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1541
+        },
+        {
+          "stem": "f_r_1096_",
+          "gt_fish_pixels": 8465,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 316
+        },
+        {
+          "stem": "f_r_1113_",
+          "gt_fish_pixels": 47422,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 11545
+        },
+        {
+          "stem": "f_r_1125_",
+          "gt_fish_pixels": 547,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 55
+        },
+        {
+          "stem": "f_r_1140_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 16254
+        },
+        {
+          "stem": "f_r_1155_",
+          "gt_fish_pixels": 745,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 690
+        },
+        {
+          "stem": "f_r_1171_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 9
+        },
+        {
+          "stem": "f_r_118_",
+          "gt_fish_pixels": 17646,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 9915
+        },
+        {
+          "stem": "f_r_1201_",
+          "gt_fish_pixels": 10398,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1931
+        },
+        {
+          "stem": "f_r_1219_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 31973
+        },
+        {
+          "stem": "f_r_1235_",
+          "gt_fish_pixels": 4920,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 3
+        },
+        {
+          "stem": "f_r_1252_",
+          "gt_fish_pixels": 35953,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 29987
+        },
+        {
+          "stem": "f_r_1305_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 8
+        },
+        {
+          "stem": "f_r_1322_",
+          "gt_fish_pixels": 1692,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 249
+        },
+        {
+          "stem": "f_r_1348_",
+          "gt_fish_pixels": 2277,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 5418
+        },
+        {
+          "stem": "f_r_1371_",
+          "gt_fish_pixels": 3075,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 392
+        },
+        {
+          "stem": "f_r_1386_",
+          "gt_fish_pixels": 15707,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13939
+        },
+        {
+          "stem": "f_r_141_",
+          "gt_fish_pixels": 1341,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 304
+        },
+        {
+          "stem": "f_r_1439_",
+          "gt_fish_pixels": 2665,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1696
+        },
+        {
+          "stem": "f_r_145_",
+          "gt_fish_pixels": 32051,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 34161
+        },
+        {
+          "stem": "f_r_1487_",
+          "gt_fish_pixels": 18137,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 17508
+        },
+        {
+          "stem": "f_r_1500_",
+          "gt_fish_pixels": 13427,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 2994
+        },
+        {
+          "stem": "f_r_1530_",
+          "gt_fish_pixels": 13738,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 12925
+        },
+        {
+          "stem": "f_r_1543_",
+          "gt_fish_pixels": 9335,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 5760
+        },
+        {
+          "stem": "f_r_1554_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 13
+        },
+        {
+          "stem": "f_r_1572_",
+          "gt_fish_pixels": 49814,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33245
+        },
+        {
+          "stem": "f_r_1589_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 11197
+        },
+        {
+          "stem": "f_r_1615_",
+          "gt_fish_pixels": 17249,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 17289
+        },
+        {
+          "stem": "f_r_1631_",
+          "gt_fish_pixels": 46625,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 35502
+        },
+        {
+          "stem": "f_r_1649_",
+          "gt_fish_pixels": 42818,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 41192
+        },
+        {
+          "stem": "f_r_1665_",
+          "gt_fish_pixels": 7245,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1130
+        },
+        {
+          "stem": "f_r_1683_",
+          "gt_fish_pixels": 39488,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 15775
+        },
+        {
+          "stem": "f_r_1695_",
+          "gt_fish_pixels": 10298,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7533
+        },
+        {
+          "stem": "f_r_171_",
+          "gt_fish_pixels": 37520,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7814
+        },
+        {
+          "stem": "f_r_1734_",
+          "gt_fish_pixels": 20089,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 21285
+        },
+        {
+          "stem": "f_r_1749_",
+          "gt_fish_pixels": 18051,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 8758
+        },
+        {
+          "stem": "f_r_1765_",
+          "gt_fish_pixels": 33549,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33895
+        },
+        {
+          "stem": "f_r_17_",
+          "gt_fish_pixels": 178,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 70
+        },
+        {
+          "stem": "f_r_1826_",
+          "gt_fish_pixels": 22802,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7762
+        },
+        {
+          "stem": "f_r_1841_",
+          "gt_fish_pixels": 48861,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 24661
+        },
+        {
+          "stem": "f_r_1857_",
+          "gt_fish_pixels": 29567,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 31547
+        },
+        {
+          "stem": "f_r_1871_",
+          "gt_fish_pixels": 41659,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 41110
+        },
+        {
+          "stem": "f_r_1885_",
+          "gt_fish_pixels": 16469,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 4632
+        },
+        {
+          "stem": "f_r_1900_",
+          "gt_fish_pixels": 1767,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_191_",
+          "gt_fish_pixels": 4757,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1411
+        },
+        {
+          "stem": "f_r_1932_",
+          "gt_fish_pixels": 13789,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14730
+        },
+        {
+          "stem": "f_r_1947_",
+          "gt_fish_pixels": 62331,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 46518
+        },
+        {
+          "stem": "f_r_1961_",
+          "gt_fish_pixels": 591,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_1976_",
+          "gt_fish_pixels": 3402,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 3248
+        },
+        {
+          "stem": "f_r_1997_",
+          "gt_fish_pixels": 887,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 751
+        },
+        {
+          "stem": "f_r_2012_",
+          "gt_fish_pixels": 2246,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1955
+        },
+        {
+          "stem": "f_r_2032_",
+          "gt_fish_pixels": 25558,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 26854
+        },
+        {
+          "stem": "f_r_2058_",
+          "gt_fish_pixels": 7404,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 7385
+        },
+        {
+          "stem": "f_r_2082_",
+          "gt_fish_pixels": 7076,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1077
+        },
+        {
+          "stem": "f_r_225_",
+          "gt_fish_pixels": 4152,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 629
+        },
+        {
+          "stem": "f_r_258_",
+          "gt_fish_pixels": 19293,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 19148
+        },
+        {
+          "stem": "f_r_278_",
+          "gt_fish_pixels": 3214,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 306
+        },
+        {
+          "stem": "f_r_290_",
+          "gt_fish_pixels": 22937,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 6213
+        },
+        {
+          "stem": "f_r_319_",
+          "gt_fish_pixels": 4909,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1512
+        },
+        {
+          "stem": "f_r_351_",
+          "gt_fish_pixels": 5990,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 511
+        },
+        {
+          "stem": "f_r_371_",
+          "gt_fish_pixels": 6092,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 527
+        },
+        {
+          "stem": "f_r_407_",
+          "gt_fish_pixels": 6423,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 2090
+        },
+        {
+          "stem": "f_r_433_",
+          "gt_fish_pixels": 35566,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 28035
+        },
+        {
+          "stem": "f_r_447_",
+          "gt_fish_pixels": 1844,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 520
+        },
+        {
+          "stem": "f_r_460_",
+          "gt_fish_pixels": 9355,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 409
+        },
+        {
+          "stem": "f_r_490_",
+          "gt_fish_pixels": 14719,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13345
+        },
+        {
+          "stem": "f_r_505_",
+          "gt_fish_pixels": 37787,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 16178
+        },
+        {
+          "stem": "f_r_525_",
+          "gt_fish_pixels": 119704,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 140861
+        },
+        {
+          "stem": "f_r_540_",
+          "gt_fish_pixels": 12789,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 14688
+        },
+        {
+          "stem": "f_r_569_",
+          "gt_fish_pixels": 1198,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 699
+        },
+        {
+          "stem": "f_r_591_",
+          "gt_fish_pixels": 39627,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33369
+        },
+        {
+          "stem": "f_r_613_",
+          "gt_fish_pixels": 720,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 280
+        },
+        {
+          "stem": "f_r_62_",
+          "gt_fish_pixels": 13899,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13369
+        },
+        {
+          "stem": "f_r_643_",
+          "gt_fish_pixels": 7926,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1439
+        },
+        {
+          "stem": "f_r_658_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "f_r_673_",
+          "gt_fish_pixels": 27391,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 17591
+        },
+        {
+          "stem": "f_r_686_",
+          "gt_fish_pixels": 55921,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 57709
+        },
+        {
+          "stem": "f_r_704_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 837
+        },
+        {
+          "stem": "f_r_722_",
+          "gt_fish_pixels": 15763,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 16054
+        },
+        {
+          "stem": "f_r_74_",
+          "gt_fish_pixels": 13791,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 11272
+        },
+        {
+          "stem": "f_r_771_",
+          "gt_fish_pixels": 12084,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13422
+        },
+        {
+          "stem": "f_r_814_",
+          "gt_fish_pixels": 9042,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 4392
+        },
+        {
+          "stem": "f_r_840_",
+          "gt_fish_pixels": 35773,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 20908
+        },
+        {
+          "stem": "f_r_867_",
+          "gt_fish_pixels": 27888,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 13261
+        },
+        {
+          "stem": "f_r_8_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 250
+        },
+        {
+          "stem": "f_r_912_",
+          "gt_fish_pixels": 5615,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1575
+        },
+        {
+          "stem": "f_r_924_",
+          "gt_fish_pixels": 44926,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 51056
+        },
+        {
+          "stem": "f_r_956_",
+          "gt_fish_pixels": 57132,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 3449
+        },
+        {
+          "stem": "f_r_97_",
+          "gt_fish_pixels": 4587,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 131
+        },
+        {
+          "stem": "n_l_103_",
+          "gt_fish_pixels": 7936,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 8897
+        },
+        {
+          "stem": "n_l_11_",
+          "gt_fish_pixels": 43007,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 41269
+        },
+        {
+          "stem": "n_l_23_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 1084
+        },
+        {
+          "stem": "n_l_34_",
+          "gt_fish_pixels": 5258,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1838
+        },
+        {
+          "stem": "n_l_47_",
+          "gt_fish_pixels": 1800,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 452
+        },
+        {
+          "stem": "n_l_59_",
+          "gt_fish_pixels": 46744,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 45604
+        },
+        {
+          "stem": "n_l_69_",
+          "gt_fish_pixels": 34092,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 33623
+        },
+        {
+          "stem": "n_l_78_",
+          "gt_fish_pixels": 51919,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 38494
+        },
+        {
+          "stem": "n_l_8_",
+          "gt_fish_pixels": 28135,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 3166
+        },
+        {
+          "stem": "n_l_9_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_112_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_123_",
+          "gt_fish_pixels": 34,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 2069
+        },
+        {
+          "stem": "w_r_133_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_148_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_160_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 13
+        },
+        {
+          "stem": "w_r_172_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_181_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_190_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_204_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_213_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_226_",
+          "gt_fish_pixels": 12065,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 765
+        },
+        {
+          "stem": "w_r_237_",
+          "gt_fish_pixels": 5077,
+          "candidate": true,
+          "overlap_hit": true,
+          "largest_component_pixels": 1173
+        },
+        {
+          "stem": "w_r_249_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 1
+        },
+        {
+          "stem": "w_r_274_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_285_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 119
+        },
+        {
+          "stem": "w_r_295_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_42_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_57_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_68_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_79_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        },
+        {
+          "stem": "w_r_89_",
+          "gt_fish_pixels": 0,
+          "candidate": true,
+          "overlap_hit": false,
+          "largest_component_pixels": 821
+        },
+        {
+          "stem": "w_r_99_",
+          "gt_fish_pixels": 0,
+          "candidate": false,
+          "overlap_hit": false,
+          "largest_component_pixels": 0
+        }
+      ],
+      "gate": "FV>0.5, largest component >=400px on common 384 grid"
+    },
+    "retention_pass": false,
+    "seconds": 19.091297099999792
+  }
+]

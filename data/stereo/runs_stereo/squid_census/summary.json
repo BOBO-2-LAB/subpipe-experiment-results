@@ -1,0 +1,91 @@
+{
+  "tag": "squid_census",
+  "args": {
+    "data_root": "[本地引用:bcf6a38854661709]",
+    "layout": "nested",
+    "size": [
+      384,
+      576
+    ],
+    "epochs": 600,
+    "batch": 2,
+    "lr": 0.0002,
+    "max_disp": 96,
+    "disp_scale": 256.0,
+    "sup_weight": 1.0,
+    "grad_thresh": 0.3,
+    "mask_guided": false,
+    "no_census": false,
+    "census_k": 5,
+    "no_lr": false,
+    "lr_thresh": 1.5,
+    "conf_temp": 1.0,
+    "lr_cons_weight": 0.1,
+    "fx": 752.6,
+    "baseline": 0.5,
+    "no_pretrained": false,
+    "workers": 0,
+    "eval_every": 200,
+    "seed": 42,
+    "tag": "squid_census",
+    "out": "[本地引用:6f25ac148c8515b3]"
+  },
+  "params_M": {
+    "total": 0.510384,
+    "encoder": 0.336692,
+    "volume": 0.0,
+    "census": 0.0,
+    "census_volume": 0.0,
+    "agg": 0.033849,
+    "decoder": 0.13965
+  },
+  "val_metrics": {
+    "mIoU": 0.2932049786596381,
+    "IoU_pipe": 0.0,
+    "IoU_bg": 0.5864099573192763,
+    "Dice": 0.0,
+    "Precision": 0.0,
+    "Recall": 0.0,
+    "Dice_bg": 0.7392918263198434,
+    "F_boundary": 0.0,
+    "n_frames": 2,
+    "n": 354804,
+    "EPE": 4.78154993057251,
+    "D1": 0.5450107455253601,
+    "RMSE": 7.218181610107422,
+    "depth_MAE_mm": 4258.416015625,
+    "n_px": 354804,
+    "lr_valid_frac": 0.5904161334037781,
+    "EPE_lrvalid": 4.646988868713379,
+    "D1_lrvalid": 0.5431540608406067,
+    "coverage_lrvalid": 0.5904161334037781,
+    "coverage_curve": {
+      "0.00": {
+        "coverage": 1.0,
+        "EPE": 4.782,
+        "D1": 0.545,
+        "depth_MAE_mm": 4258.4
+      },
+      "0.30": {
+        "coverage": 0.10035963356494904,
+        "EPE": 3.511,
+        "D1": 0.5371,
+        "depth_MAE_mm": 4500.6
+      },
+      "0.50": {
+        "coverage": 0.009689857251942158,
+        "EPE": 2.51,
+        "D1": 0.3967,
+        "depth_MAE_mm": 3833.4
+      }
+    }
+  },
+  "complexity": {
+    "Params_M": 0.51,
+    "input": "576x384",
+    "latency_ms_median": 35.46,
+    "FPS": 28.2,
+    "FLOPs_G": 7.52
+  },
+  "train_seconds": 372.9
+}

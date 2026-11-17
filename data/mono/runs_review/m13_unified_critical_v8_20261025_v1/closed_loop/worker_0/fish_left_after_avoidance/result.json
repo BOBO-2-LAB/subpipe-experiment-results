@@ -1,0 +1,88 @@
+{
+  "scenario": "fish_left_after",
+  "mode": "avoidance",
+  "task_completed": false,
+  "goal_reached": false,
+  "inspection_recovered": false,
+  "stop_reason": "fish_contact_3d",
+  "inspection_valid_fraction": 1.0,
+  "valid_frames": 173,
+  "inspection_frames": 173,
+  "all_frame_valid_fraction": 0.9942528735632183,
+  "contact_3d": true,
+  "contact_xy": true,
+  "primary_contact_rule": "XY",
+  "elapsed_s": 17.6,
+  "maximum_cross_track_m": 0.8872495771847946,
+  "observed_elbows": [
+    {
+      "t": 2.1,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "gain": 0.31758287522905215
+    }
+  ],
+  "intervention_frames": 164,
+  "prediction_valid_frames": 0,
+  "frames_logged": 174,
+  "video_frames_written": 174,
+  "fps": 10,
+  "configuration_sha256": "e884c5f0da25b3a3ad36059bafa3084092f34d78add5259a055f77bd749dff44",
+  "terminal_pipe_observed": true,
+  "pipe_arc_observation_fraction": 0.9444444444444444,
+  "schema_version": 2,
+  "route_completed": false,
+  "collision": true,
+  "simplified_3d_contact": true,
+  "active_inspection_valid_fraction": 1.0,
+  "synthetic_inspection_valid_fraction": 0.9942528735632183,
+  "maximum_abs_cross_track_m": 0.8872495771847946,
+  "elapsed_sim_s": 17.6,
+  "events": {
+    "fish_first_visible": {
+      "simulation_t": 0.4,
+      "source_t": 0.1
+    },
+    "fish_first_detection": {
+      "simulation_t": 0.9,
+      "source_t": 0.6000000000000001
+    },
+    "fish_first_effective_detection": {
+      "simulation_t": 0.9,
+      "source_t": 0.6000000000000001
+    },
+    "fish_first_confirmed": {
+      "simulation_t": 1.1,
+      "source_t": 0.8
+    },
+    "first_intervention": {
+      "simulation_t": 1.3,
+      "source_t": 1.0
+    },
+    "tracking_recovered_after_avoidance": {
+      "simulation_t": 1.4000000000000001,
+      "source_t": 1.1
+    },
+    "first_contact_xy": {
+      "simulation_t": 17.2,
+      "source_t": 16.900000000000002
+    },
+    "first_contact_3d": {
+      "simulation_t": 17.6,
+      "source_t": 17.3
+    }
+  },
+  "minimum_clearance_3d_m": -0.03925219761512666,
+  "minimum_clearance_xy_m": -0.23709067310627618,
+  "reverse_attempts": 0,
+  "waiting_frames": 1
+}

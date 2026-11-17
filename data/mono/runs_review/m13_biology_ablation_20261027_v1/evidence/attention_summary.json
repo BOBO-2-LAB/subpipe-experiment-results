@@ -1,0 +1,220 @@
+{
+  "tag": "attention",
+  "ckpt": "mono/runs_ablation/M11/best.pt",
+  "n_train": 1369,
+  "n_val": 153,
+  "epochs": 60,
+  "batch": 16,
+  "lr": 0.0003,
+  "size": [
+    384,
+    384
+  ],
+  "cache_dir": "mono/suim_clean/cache_384",
+  "separate_encoder": true,
+  "fish_wavelet": "attention",
+  "fish_wavelet_stage": "s8",
+  "seed": 42,
+  "args": {
+    "ckpt": "mono/runs_ablation/M11/best.pt",
+    "root": "[本地引用:f459689f5b5d9ff0]",
+    "index_dir": "mono/suim_clean/masks_index",
+    "meta_dir": "mono/suim_clean",
+    "cache_dir": "mono/suim_clean/cache_384",
+    "size": [
+      384,
+      384
+    ],
+    "epochs": 60,
+    "batch": 16,
+    "lr": 0.0003,
+    "lr_min": 1e-05,
+    "weight_decay": 0.0001,
+    "dice_weight": 1.0,
+    "fish_mid": 64,
+    "separate_encoder": true,
+    "fish_wavelet": "attention",
+    "fish_wavelet_stage": "s8",
+    "gpu_preprocess": true,
+    "val_every": 10,
+    "eval_every": 5,
+    "select": "bio",
+    "photo_strength": 1.0,
+    "limit": 0,
+    "out": "mono/runs_fish/wavelet_20261023_seed42_gpu",
+    "tag": "attention",
+    "seed": 42
+  },
+  "model_config": {
+    "num_fish_classes": 8,
+    "fish_mid": 64,
+    "separate_encoder": true,
+    "fish_wavelet": "attention",
+    "fish_wavelet_stage": "s8"
+  },
+  "train_seconds": 1000.1053743362427,
+  "common_initial_state_sha256": "07b59711d8f3e722053a7859c8c64a4348d417cd7db55959ce493b5a4f184f47",
+  "training_stems_sha256": "7cb3395ac80a40b3b635013676bc49702a204a058040651fe7a60a19bd051a37",
+  "validation_stems_sha256": "773fc2794c24569daf0300f119840a332026bc7ac882184819934e1162b63f40",
+  "select": "bio",
+  "best_epoch": 30,
+  "best_score": 0.48835295469166934,
+  "evaluated_checkpoint": "mono/runs_fish/wavelet_20261023_seed42_gpu/attention/best.pt",
+  "per_class_iou": {
+    "BW": 0.8269344901521443,
+    "HD": 0.6961469342208555,
+    "PF": 0.1318029871873236,
+    "WR": 0.7135375796826812,
+    "RO": 0.6197434395930169,
+    "RI": 0.7210829172473333,
+    "FV": 0.612172959640351,
+    "SR": 0.5271028887260485
+  },
+  "bio_mean_iou": 0.48835295469166934,
+  "all_mean_iou": 0.6060655245562193,
+  "confusion": [
+    [
+      6339728,
+      27196,
+      9335,
+      158358,
+      9561,
+      142240,
+      101901,
+      262207
+    ],
+    [
+      16584,
+      321906,
+      0,
+      18817,
+      12079,
+      577,
+      21318,
+      3960
+    ],
+    [
+      29837,
+      4925,
+      90134,
+      264,
+      0,
+      114223,
+      21465,
+      83315
+    ],
+    [
+      26500,
+      16113,
+      2644,
+      1485815,
+      1191,
+      17407,
+      10209,
+      29139
+    ],
+    [
+      3759,
+      3568,
+      0,
+      5871,
+      67733,
+      304,
+      166,
+      62
+    ],
+    [
+      103059,
+      1923,
+      275150,
+      53945,
+      2439,
+      6081291,
+      301834,
+      702653
+    ],
+    [
+      65297,
+      719,
+      10915,
+      13558,
+      58,
+      292575,
+      1547722,
+      71559
+    ],
+    [
+      370980,
+      12726,
+      41647,
+      242491,
+      2501,
+      343933,
+      68947,
+      2492435
+    ]
+  ],
+  "class_freq_train": {
+    "BW": 0.32104185596426477,
+    "HD": 0.024265020919464413,
+    "PF": 0.022609761931440105,
+    "WR": 0.06833302391059776,
+    "RO": 0.00792224211300747,
+    "RI": 0.3435113741745487,
+    "FV": 0.07209689842619375,
+    "SR": 0.140219822560483
+  },
+  "pipe_guard_before": [
+    {
+      "shape": [
+        2,
+        3,
+        288,
+        512
+      ],
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "shape": [
+        2,
+        3,
+        384,
+        384
+      ],
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    }
+  ],
+  "pipe_guard_after": [
+    {
+      "shape": [
+        2,
+        3,
+        288,
+        512
+      ],
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "shape": [
+        2,
+        3,
+        384,
+        384
+      ],
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    }
+  ],
+  "pipe_state_unchanged": true,
+  "model": {
+    "pipe_total_M": 0.476342,
+    "fish_decoder_M": 0.05396,
+    "fish_encoder_M": 0.336692,
+    "fish_wavelet_M": 0.179392,
+    "total_M": 1.046386,
+    "trainable_M": 0.570044
+  }
+}

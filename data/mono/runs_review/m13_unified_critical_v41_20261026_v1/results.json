@@ -1,0 +1,39 @@
+{
+  "integrity_passed": true,
+  "episodes": [
+    {
+      "scenario": "mixed_clear",
+      "mode": "avoidance",
+      "task_completed": false,
+      "inspection_valid_fraction": 0.9713375796178344,
+      "goal_reached": false,
+      "inspection_recovered": false,
+      "contact_xy": false,
+      "contact_3d": false,
+      "primary_contact_rule": "3D",
+      "maximum_cross_track_m": 0.18047369233745192,
+      "pipe_arc_observation_fraction": 0.8103448275862069,
+      "terminal_pipe_observed": false,
+      "intervention_frames": 0,
+      "elapsed_s": 61.8,
+      "stop_reason": "perception_loss_timeout"
+    },
+    {
+      "scenario": "mixed_fish",
+      "mode": "avoidance",
+      "task_completed": true,
+      "inspection_valid_fraction": 0.9630681818181818,
+      "goal_reached": true,
+      "inspection_recovered": true,
+      "contact_xy": true,
+      "contact_3d": false,
+      "primary_contact_rule": "3D",
+      "maximum_cross_track_m": 0.9477613381743448,
+      "pipe_arc_observation_fraction": 1.0,
+      "terminal_pipe_observed": true,
+      "intervention_frames": 1018,
+      "elapsed_s": 59.766666666666666,
+      "stop_reason": "goal_reached"
+    }
+  ]
+}

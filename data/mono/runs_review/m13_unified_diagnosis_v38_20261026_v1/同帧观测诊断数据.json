@@ -1,0 +1,84 @@
+{
+  "scope": "Evidence report from frozen failed inputs; no inference or control changes.",
+  "labels_score_only": true,
+  "controller_changed": false,
+  "records": [
+    {
+      "t": 36,
+      "source_t": 35.766666666666666,
+      "same_RGB": true,
+      "native288_source_IoU": 0.4539407630522088,
+      "fused384_source_IoU": 0.19161938018332605,
+      "primary_source_IoU": 0.8504962423268889,
+      "whole_source_IoU": 0.8504962423268889,
+      "logged_current_IoU": 0.8445315201106374,
+      "synthetic_pipe_probability_median": 0.24721403419971466,
+      "primary_pixels": 16342,
+      "whole_pixels": 16342,
+      "independent_seed_trace": {
+        "usable": false,
+        "current_surface_points": 126,
+        "current_seed_pixels": 630,
+        "missing_seed_pixels": 0,
+        "historical_mask_fill": false,
+        "training": false,
+        "source": "current LK/reprojection verified points, front-facing cylinder association and depth-consistent projection",
+        "recovery_applied": false
+      },
+      "current_tail_points": 130,
+      "current_geometry_verified": true
+    },
+    {
+      "t": 40,
+      "source_t": 39.766666666666666,
+      "same_RGB": true,
+      "native288_source_IoU": 0.0,
+      "fused384_source_IoU": 0.0021914348326709503,
+      "primary_source_IoU": 0.0,
+      "whole_source_IoU": 0.8630563088211836,
+      "logged_current_IoU": 0.8482832265483818,
+      "synthetic_pipe_probability_median": 0.0060492148622870445,
+      "primary_pixels": 1018,
+      "whole_pixels": 11839,
+      "independent_seed_trace": {
+        "usable": true,
+        "current_surface_points": 50,
+        "current_seed_pixels": 250,
+        "missing_seed_pixels": 250,
+        "historical_mask_fill": false,
+        "training": false,
+        "source": "current LK/reprojection verified points, front-facing cylinder association and depth-consistent projection",
+        "recovery_applied": true,
+        "added_current_pixels": 10821,
+        "affects_local_geometry_observation": false
+      },
+      "current_tail_points": 0,
+      "current_geometry_verified": true
+    },
+    {
+      "t": 44,
+      "source_t": 43.766666666666666,
+      "same_RGB": true,
+      "native288_source_IoU": 0.0,
+      "fused384_source_IoU": 0.0,
+      "primary_source_IoU": 0.0,
+      "whole_source_IoU": 0.0,
+      "logged_current_IoU": 0.0,
+      "synthetic_pipe_probability_median": 0.003054982051253319,
+      "primary_pixels": 1262,
+      "whole_pixels": 1262,
+      "independent_seed_trace": {
+        "usable": false,
+        "current_surface_points": 0,
+        "current_seed_pixels": 0,
+        "missing_seed_pixels": 0,
+        "historical_mask_fill": false,
+        "training": false,
+        "source": "current LK/reprojection verified points, front-facing cylinder association and depth-consistent projection",
+        "recovery_applied": false
+      },
+      "current_tail_points": 0,
+      "current_geometry_verified": false
+    }
+  ]
+}

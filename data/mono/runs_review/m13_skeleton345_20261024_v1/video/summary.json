@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "frames": 481,
+  "fps": 30.04441076102097,
+  "counts": {
+    "legacy_observed": 481,
+    "current_skeleton_measurement": 435,
+    "lost": 285,
+    "observed": 83,
+    "predicted": 113
+  },
+  "reasons": {
+    "ambiguous_near_prefix": 339,
+    "pruned_skeleton": 96,
+    "ambiguous_branch": 41,
+    "short_skeleton_path": 5
+  },
+  "events": {
+    "confirmed_reacquisition": 15,
+    "confirmed_turn": 2
+  },
+  "elapsed_wall_s": 365.0100016593933,
+  "scope": "Unlabeled real video, same 288-short RGB and probabilities. Availability only, no recall/IoU claim.",
+  "confidence": "Current skeleton mean pipe probability; prediction decays; NOT calibrated correctness probability.",
+  "threshold_status": "engineering prototype; not calibrated on an independent validation voyage",
+  "watermark": "Original source retained unchanged",
+  "no_training": true,
+  "no_metric_range": true,
+  "no_mission_acceptance": true
+}

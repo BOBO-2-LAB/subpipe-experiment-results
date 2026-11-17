@@ -1,0 +1,55 @@
+{
+  "identical_perception_profile": true,
+  "horizontal": [
+    "mono/runs_review/m13_s345_left_acceptance_20261025_v2",
+    "mono/runs_review/m13_s345_right_acceptance_20261025_v2"
+  ],
+  "up": [
+    "mono/runs_review/m13_vertical_up_acceptance_20261025_v3"
+  ],
+  "down": [
+    "mono/runs_review/m13_vertical_down_acceptance_20261025_v7"
+  ],
+  "acceptance_summary": {
+    "horizontal": {
+      "passed": 6,
+      "total": 6
+    },
+    "up": {
+      "passed": 3,
+      "total": 3
+    },
+    "down": {
+      "passed": 3,
+      "total": 3
+    }
+  },
+  "complete_episodes": 24,
+  "exempt_historical_failures": [
+    "bend_left_fish_before",
+    "bend_left_fish_corner"
+  ],
+  "chapters": [
+    {
+      "title": "Straight fish / planar acceptance",
+      "start_s": 0.0,
+      "end_s": 20.8,
+      "result": "mono/runs_review/m13_s345_left_acceptance_20261025_v2/closed_loop/worker_0/head_on_avoidance/result.json"
+    },
+    {
+      "title": "Upward riser fish / 3D acceptance",
+      "start_s": 20.8,
+      "end_s": 32.2,
+      "result": "mono/runs_review/m13_vertical_up_acceptance_20261025_v3/closed_loop/resume_20261025_124733_1/fish_vertical_avoidance/result.json"
+    },
+    {
+      "title": "Downward riser fish / 3D acceptance",
+      "start_s": 32.2,
+      "end_s": 70.66666666666667,
+      "result": "mono/runs_review/m13_vertical_down_acceptance_20261025_v7/closed_loop/worker_2/fish_down_vertical_avoidance/result.json"
+    }
+  ],
+  "video_frames_written": 1060,
+  "video_frames_decoded": 1060,
+  "duration_s": 70.66666666666667
+}

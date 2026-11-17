@@ -1,0 +1,70 @@
+{
+  "scenario": "fish_down",
+  "mode": "avoidance",
+  "task_completed": false,
+  "goal_reached": false,
+  "inspection_recovered": false,
+  "stop_reason": "perception_loss_timeout",
+  "inspection_valid_fraction": 0.9668508287292817,
+  "valid_frames": 350,
+  "inspection_frames": 362,
+  "all_frame_valid_fraction": 0.3668763102725367,
+  "contact_3d": false,
+  "contact_xy": false,
+  "primary_contact_rule": "3D",
+  "elapsed_s": 32.0,
+  "maximum_cross_track_m": 2.6645352591003757e-15,
+  "observed_elbows": [
+    {
+      "t": 7.2,
+      "event": "observed_endpoint_confirmed",
+      "length_m": 4.002834673113806,
+      "position_xyz": [
+        4.002834673113806,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "intervention_frames": 0,
+  "prediction_valid_frames": 0,
+  "frames_logged": 954,
+  "video_frames_written": 954,
+  "fps": 30,
+  "configuration_sha256": "4e5d601a0e53a7f48e109bafcc379a8c4ac644f407eaa4c7b7ddf025c8fa92de",
+  "terminal_pipe_observed": true,
+  "pipe_arc_observation_fraction": 0.46875,
+  "schema_version": 2,
+  "route_completed": false,
+  "collision": false,
+  "simplified_3d_contact": false,
+  "active_inspection_valid_fraction": 0.9668508287292817,
+  "synthetic_inspection_valid_fraction": 0.3668763102725367,
+  "maximum_abs_cross_track_m": 2.6645352591003757e-15,
+  "elapsed_sim_s": 32.0,
+  "events": {
+    "fish_first_visible": {
+      "simulation_t": 7.6,
+      "source_t": 7.366666666666666
+    },
+    "fish_first_detection": {
+      "simulation_t": 8.166666666666666,
+      "source_t": 7.933333333333334
+    },
+    "fish_first_effective_detection": {
+      "simulation_t": 8.166666666666666,
+      "source_t": 7.933333333333334
+    },
+    "fish_first_confirmed": {
+      "simulation_t": 8.533333333333333,
+      "source_t": 8.3
+    }
+  },
+  "minimum_clearance_3d_m": 3.8836871868443468,
+  "minimum_clearance_xy_m": 0.4160878690043375,
+  "reverse_attempts": 0,
+  "waiting_frames": 592,
+  "reverse_recovery_frames": 0,
+  "synthetic_pipe_arc_bin_total": 32,
+  "episode_budget_s": 45.0
+}

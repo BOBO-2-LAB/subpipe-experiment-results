@@ -1,0 +1,109 @@
+{
+  "tag": "all_base",
+  "args": {
+    "data_root": "[本地引用:d292ffae675f42c3]",
+    "layout": "nested",
+    "size": [
+      384,
+      576
+    ],
+    "epochs": 500,
+    "batch": 4,
+    "lr": 0.0002,
+    "max_disp": 192,
+    "disp_scale": 256.0,
+    "sup_weight": 1.0,
+    "grad_thresh": 0.3,
+    "mask_guided": false,
+    "no_census": true,
+    "census_k": 5,
+    "no_lr": true,
+    "lr_thresh": 1.5,
+    "conf_temp": 1.0,
+    "lr_cons_weight": 0.1,
+    "fx": 1000.0,
+    "baseline": 0.5,
+    "no_pretrained": false,
+    "workers": 0,
+    "eval_every": 100,
+    "seed": 42,
+    "tag": "all_base",
+    "out": "[本地引用:6f25ac148c8515b3]"
+  },
+  "params_M": {
+    "total": 0.510888,
+    "encoder": 0.336692,
+    "volume": 0.0,
+    "census": 0.0,
+    "census_volume": 0.0,
+    "agg": 0.034353,
+    "decoder": 0.13965
+  },
+  "val_metrics": {
+    "mIoU": 0.15662789050431872,
+    "IoU_pipe": 0.0,
+    "IoU_bg": 0.31325578100863744,
+    "Dice": 0.0,
+    "Precision": 0.0,
+    "Recall": 0.0,
+    "Dice_bg": 0.47706743124792245,
+    "F_boundary": 0.0,
+    "n_frames": 6,
+    "n": 1119411,
+    "EPE": 18.415334701538086,
+    "D1": 0.8670765161514282,
+    "RMSE": 24.955734252929688,
+    "depth_MAE_mm": 2769.900146484375,
+    "n_px": 1119411,
+    "lr_valid_frac": 1.0,
+    "EPE_lrvalid": 18.415334701538086,
+    "D1_lrvalid": 0.8670765161514282,
+    "coverage_lrvalid": 1.0,
+    "coverage_curve": {
+      "0.00": {
+        "coverage": 1.0,
+        "EPE": 18.415,
+        "D1": 0.8671,
+        "depth_MAE_mm": 2769.9
+      },
+      "0.30": {
+        "coverage": 0.7274084091186523,
+        "EPE": 14.732,
+        "D1": 0.8407,
+        "depth_MAE_mm": 3310.1
+      },
+      "0.50": {
+        "coverage": 0.5319458246231079,
+        "EPE": 11.473,
+        "D1": 0.8137,
+        "depth_MAE_mm": 3698.4
+      },
+      "0.70": {
+        "coverage": 0.39327287673950195,
+        "EPE": 8.202,
+        "D1": 0.7782,
+        "depth_MAE_mm": 4022.6
+      },
+      "0.90": {
+        "coverage": 0.0611133873462677,
+        "EPE": 6.79,
+        "D1": 0.7502,
+        "depth_MAE_mm": 3127.3
+      },
+      "0.95": {
+        "coverage": 0.0008263274212367833,
+        "EPE": 5.828,
+        "D1": 0.6335,
+        "depth_MAE_mm": 2061.5
+      }
+    }
+  },
+  "complexity": {
+    "Params_M": 0.511,
+    "input": "576x384",
+    "latency_ms_median": 27.31,
+    "FPS": 36.6,
+    "FLOPs_G": 6.49
+  },
+  "train_seconds": 720.8
+}

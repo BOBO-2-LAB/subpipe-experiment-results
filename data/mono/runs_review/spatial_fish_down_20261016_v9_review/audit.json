@@ -1,0 +1,261 @@
+{
+  "episodes": [
+    {
+      "episode": "mono/runs_review/spatial_fish_down_20261016_v9_compiled/clear_down_avoidance",
+      "rows": 1133,
+      "task_completed": true,
+      "final_controller_cap_length_m": 3.925000000000003,
+      "final_course_velocity_mps": [
+        7.187313564490833e-08,
+        0.0065995548985079205
+      ],
+      "endpoint_hold_duration_s": 3.8333333333333335,
+      "recomputed_goal_stability_hold_s": 1.0,
+      "static_landmark_first_confirmed_s": null,
+      "static_water_support_frames": 0,
+      "static_landmark_intervention_frames": 0,
+      "saturation_frames": {
+        "course_speed": 0,
+        "acceleration": 82,
+        "sway": 0,
+        "gimbal": 151
+      },
+      "minimum_inspection_requested_course_speed_mps": 0.4,
+      "minimum_course_speed_command_pass": true,
+      "pipe_arc_observation_fraction": 0.96875,
+      "terminal_pipe_observed": true,
+      "acceptance_gates": {
+        "goal_reached": true,
+        "inspection_valid_fraction": true,
+        "pipe_arc_observation_fraction": true,
+        "inspection_corridor": true,
+        "end_distance": true,
+        "terminal_pipe_observed": true,
+        "fish_contact_3d": true,
+        "environment_contact_3d": true,
+        "recentered_at_goal": true,
+        "no_fish_false_intervention": true,
+        "additional_goal_stability_hold": true
+      },
+      "failed_acceptance_gates": [],
+      "acceptance_matches_result": true,
+      "pipe_fish_conflict_on_synthetic_fish_pixels": 0,
+      "pipe_fish_conflict_on_synthetic_pipe_pixels": 78766,
+      "decoded_frames": 1133,
+      "frame_count_matches_rows": true,
+      "h264_decoded_frames": 1133,
+      "h264_frame_count_matches_rows": true
+    },
+    {
+      "episode": "mono/runs_review/spatial_fish_down_20261016_v9_compiled/fish_down_bend_tracker_only",
+      "rows": 570,
+      "task_completed": false,
+      "final_controller_cap_length_m": null,
+      "final_course_velocity_mps": [
+        0.3999999212029428,
+        0.0
+      ],
+      "endpoint_hold_duration_s": 0.0,
+      "recomputed_goal_stability_hold_s": 0.0,
+      "static_landmark_first_confirmed_s": 2.8666666666666667,
+      "static_water_support_frames": 99,
+      "static_landmark_intervention_frames": 0,
+      "saturation_frames": {
+        "course_speed": 0,
+        "acceleration": 82,
+        "sway": 0,
+        "gimbal": 88
+      },
+      "minimum_inspection_requested_course_speed_mps": 0.4,
+      "minimum_course_speed_command_pass": true,
+      "pipe_arc_observation_fraction": 0.96875,
+      "terminal_pipe_observed": true,
+      "acceptance_gates": {
+        "goal_reached": false,
+        "inspection_valid_fraction": true,
+        "pipe_arc_observation_fraction": true,
+        "inspection_corridor": true,
+        "end_distance": false,
+        "terminal_pipe_observed": true,
+        "fish_contact_3d": false,
+        "environment_contact_3d": true,
+        "recentered_at_goal": false,
+        "no_fish_false_intervention": true,
+        "additional_goal_stability_hold": false
+      },
+      "failed_acceptance_gates": [
+        "goal_reached",
+        "end_distance",
+        "fish_contact_3d",
+        "recentered_at_goal",
+        "additional_goal_stability_hold"
+      ],
+      "acceptance_matches_result": true,
+      "pipe_fish_conflict_on_synthetic_fish_pixels": 1801,
+      "pipe_fish_conflict_on_synthetic_pipe_pixels": 38975,
+      "decoded_frames": 570,
+      "frame_count_matches_rows": true,
+      "h264_decoded_frames": 570,
+      "h264_frame_count_matches_rows": true
+    },
+    {
+      "episode": "mono/runs_review/spatial_fish_down_20261016_v9_compiled/fish_down_bend_avoidance",
+      "rows": 1135,
+      "task_completed": true,
+      "final_controller_cap_length_m": 4.100000000000003,
+      "final_course_velocity_mps": [
+        -1.2434679279095052e-08,
+        0.0066049675531675
+      ],
+      "endpoint_hold_duration_s": 3.8666666666666667,
+      "recomputed_goal_stability_hold_s": 1.0,
+      "static_landmark_first_confirmed_s": 2.1333333333333333,
+      "static_water_support_frames": 113,
+      "static_landmark_intervention_frames": 648,
+      "saturation_frames": {
+        "course_speed": 0,
+        "acceleration": 73,
+        "sway": 81,
+        "gimbal": 48
+      },
+      "minimum_inspection_requested_course_speed_mps": 0.4,
+      "minimum_course_speed_command_pass": true,
+      "pipe_arc_observation_fraction": 1.0,
+      "terminal_pipe_observed": true,
+      "acceptance_gates": {
+        "goal_reached": true,
+        "inspection_valid_fraction": true,
+        "pipe_arc_observation_fraction": true,
+        "inspection_corridor": true,
+        "end_distance": true,
+        "terminal_pipe_observed": true,
+        "fish_contact_3d": true,
+        "environment_contact_3d": true,
+        "recentered_at_goal": true,
+        "no_fish_false_intervention": true,
+        "additional_goal_stability_hold": true
+      },
+      "failed_acceptance_gates": [],
+      "acceptance_matches_result": true,
+      "pipe_fish_conflict_on_synthetic_fish_pixels": 2605,
+      "pipe_fish_conflict_on_synthetic_pipe_pixels": 37963,
+      "decoded_frames": 1135,
+      "frame_count_matches_rows": true,
+      "h264_decoded_frames": 1135,
+      "h264_frame_count_matches_rows": true
+    },
+    {
+      "episode": "mono/runs_review/spatial_fish_down_20261016_v9_compiled/fish_down_vertical_tracker_only",
+      "rows": 944,
+      "task_completed": false,
+      "final_controller_cap_length_m": null,
+      "final_course_velocity_mps": [
+        -3.284789861793255e-05,
+        0.39999999754035354
+      ],
+      "endpoint_hold_duration_s": 0.0,
+      "recomputed_goal_stability_hold_s": 0.0,
+      "static_landmark_first_confirmed_s": 21.133333333333333,
+      "static_water_support_frames": 111,
+      "static_landmark_intervention_frames": 0,
+      "saturation_frames": {
+        "course_speed": 0,
+        "acceleration": 82,
+        "sway": 0,
+        "gimbal": 151
+      },
+      "minimum_inspection_requested_course_speed_mps": 0.4,
+      "minimum_course_speed_command_pass": true,
+      "pipe_arc_observation_fraction": 0.96875,
+      "terminal_pipe_observed": false,
+      "acceptance_gates": {
+        "goal_reached": false,
+        "inspection_valid_fraction": true,
+        "pipe_arc_observation_fraction": true,
+        "inspection_corridor": true,
+        "end_distance": false,
+        "terminal_pipe_observed": false,
+        "fish_contact_3d": false,
+        "environment_contact_3d": true,
+        "recentered_at_goal": false,
+        "no_fish_false_intervention": true,
+        "additional_goal_stability_hold": false
+      },
+      "failed_acceptance_gates": [
+        "goal_reached",
+        "end_distance",
+        "terminal_pipe_observed",
+        "fish_contact_3d",
+        "recentered_at_goal",
+        "additional_goal_stability_hold"
+      ],
+      "acceptance_matches_result": true,
+      "pipe_fish_conflict_on_synthetic_fish_pixels": 1369,
+      "pipe_fish_conflict_on_synthetic_pipe_pixels": 179689,
+      "decoded_frames": 944,
+      "frame_count_matches_rows": true,
+      "h264_decoded_frames": 944,
+      "h264_frame_count_matches_rows": true
+    },
+    {
+      "episode": "mono/runs_review/spatial_fish_down_20261016_v9_compiled/fish_down_vertical_avoidance",
+      "rows": 1153,
+      "task_completed": true,
+      "final_controller_cap_length_m": 3.950000000000003,
+      "final_course_velocity_mps": [
+        -3.184571617123734e-08,
+        -0.008300279488767373
+      ],
+      "endpoint_hold_duration_s": 4.433333333333334,
+      "recomputed_goal_stability_hold_s": 1.0,
+      "static_landmark_first_confirmed_s": 21.133333333333333,
+      "static_water_support_frames": 148,
+      "static_landmark_intervention_frames": 398,
+      "saturation_frames": {
+        "course_speed": 0,
+        "acceleration": 82,
+        "sway": 85,
+        "gimbal": 151
+      },
+      "minimum_inspection_requested_course_speed_mps": 0.39999999999999997,
+      "minimum_course_speed_command_pass": true,
+      "pipe_arc_observation_fraction": 1.0,
+      "terminal_pipe_observed": true,
+      "acceptance_gates": {
+        "goal_reached": true,
+        "inspection_valid_fraction": true,
+        "pipe_arc_observation_fraction": true,
+        "inspection_corridor": true,
+        "end_distance": true,
+        "terminal_pipe_observed": true,
+        "fish_contact_3d": true,
+        "environment_contact_3d": true,
+        "recentered_at_goal": true,
+        "no_fish_false_intervention": true,
+        "additional_goal_stability_hold": true
+      },
+      "failed_acceptance_gates": [],
+      "acceptance_matches_result": true,
+      "pipe_fish_conflict_on_synthetic_fish_pixels": 1008,
+      "pipe_fish_conflict_on_synthetic_pipe_pixels": 135958,
+      "decoded_frames": 1153,
+      "frame_count_matches_rows": true,
+      "h264_decoded_frames": 1153,
+      "h264_frame_count_matches_rows": true
+    }
+  ],
+  "video_and_speed_audit_pass": true,
+  "checkpoints": [
+    {
+      "path": "mono/runs_ablation/M11/best.pt",
+      "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a",
+      "unchanged": true
+    },
+    {
+      "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2",
+      "unchanged": true
+    }
+  ],
+  "checkpoint_audit_pass": true
+}

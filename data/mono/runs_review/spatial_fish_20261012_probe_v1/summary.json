@@ -1,0 +1,2348 @@
+{
+  "scope": "Synthetic reused fish appearance; not real recall",
+  "config": {
+    "camera_mount": "Forward pan/tilt camera, initially 45 degrees downward; pose follows RGB-estimated pipe",
+    "standoff_m": 2.0,
+    "initial_depth_m": 20.0,
+    "pipe_width_prior_m": 0.8,
+    "cruise_mps": 0.5,
+    "inspection_command_floor_mps": 0.4,
+    "lookahead_m": 0.7,
+    "outgoing_min_m": 0.45,
+    "outgoing_span_m": 0.4,
+    "outgoing_edge_span_m": [
+      0.4,
+      1.2
+    ],
+    "outgoing_min_points": 8,
+    "normal_gain": 0.8,
+    "surge_max_mps": 0.6,
+    "heave_max_mps": 0.6,
+    "response_tau_s": 0.6,
+    "acceleration_mps2": 0.35,
+    "control_rate_hz": 10.0,
+    "image_delay_s": 0.21,
+    "wait_before_retreat_s": 8.0,
+    "reinspect_overlap_m": 0.3,
+    "reacquire_s": 0.5,
+    "max_loss_s": 20.0,
+    "assumptions": "XYZ cylinder/capsule scene. Known incoming pipe floor datum, diameter and local X/depth plane; ideal camera extrinsics and measured odometry. Hull stays level. Pan/tilt and heave responses are simulation assumptions, not published BlueROV2 actuator performance.",
+    "lateral_offset_m": 0.0,
+    "initial_camera_pitch_deg": 45,
+    "model_fit_period_s": 0.3,
+    "model_seed_iou_min": 0.25,
+    "bend_iou_gain_min": 0.02,
+    "fresh_model_support_pixels": 150,
+    "fresh_model_support_fraction": 0.2,
+    "rgb_edge_energy_min": 35,
+    "rgb_edge_sample_min": 25,
+    "rgb_edge_supported_fraction_min": 0.45,
+    "rgb_tracking_hysteresis_ratio": 0.8,
+    "local_pipe_plane_y_m": 0,
+    "incoming_pipe_floor_depth_relative_m": 0,
+    "gimbal_rate_deg_s": 45,
+    "gimbal_response_tau_s": 0.35,
+    "vertical_camera_anticipation_m": 3.5,
+    "avoidance_world_gain_m": 2.5,
+    "lateral_guard_m": 0.85,
+    "sway_gain": 1.2,
+    "sway_max_mps": 0.6,
+    "sway_tau_s": 0.6,
+    "sway_acceleration_mps2": 0.35,
+    "fish_motion_gate": true,
+    "fish_resize_short": 384,
+    "stop_at_observed_pipe_end": true
+  },
+  "probe": [
+    {
+      "scenario": "clear_up",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.7853981633974483
+      },
+      "t": 0,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 31434,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.8240885322883655,
+          "area_eq": 10413.0,
+          "cx": -0.6865025238884087,
+          "cy": -0.6305392831610059
+        },
+        {
+          "prob": 0.8369619505517543,
+          "area_eq": 14907.0,
+          "cx": 0.007966580297846582,
+          "cy": 0.015618128694200293
+        },
+        {
+          "prob": 0.7201743903122041,
+          "area_eq": 7393.0,
+          "cx": 0.7649101134519141,
+          "cy": -0.7778050182605167
+        }
+      ]
+    },
+    {
+      "scenario": "clear_up",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.7853981633974483
+      },
+      "t": 0,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 22392,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.719704926967487,
+          "area_eq": 3563.0,
+          "cx": -0.823241913415661,
+          "cy": -0.7826913181775657
+        },
+        {
+          "prob": 0.8014348537382222,
+          "area_eq": 4431.0,
+          "cx": 0.019547118314150236,
+          "cy": -0.7096451139697586
+        },
+        {
+          "prob": 0.7850723038707268,
+          "area_eq": 3013.0,
+          "cx": 0.7012010454696316,
+          "cy": -0.9201423461297341
+        },
+        {
+          "prob": 0.8673348006506459,
+          "area_eq": 3290.0,
+          "cx": -0.4910227488601824,
+          "cy": -0.521751519756839
+        },
+        {
+          "prob": 0.6581903594771242,
+          "area_eq": 153.0,
+          "cx": 0.12321282679738554,
+          "cy": -0.18641067538126363
+        },
+        {
+          "prob": 0.8663280357720305,
+          "area_eq": 9084.0,
+          "cx": -0.001190709626816333,
+          "cy": 0.5109961348402563
+        }
+      ]
+    },
+    {
+      "scenario": "clear_up",
+      "pose": {
+        "x": 0.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 1,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 21027,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.8083176051909899,
+          "area_eq": 6877.0,
+          "cx": 0.056438695106878045,
+          "cy": -0.5553687412146769
+        },
+        {
+          "prob": 0.6559442213357383,
+          "area_eq": 6783.0,
+          "cx": -0.6589825897464249,
+          "cy": -0.7265989729225023
+        },
+        {
+          "prob": 0.6883535865254041,
+          "area_eq": 3774.0,
+          "cx": 0.8240769491918389,
+          "cy": -0.7227944856621327
+        },
+        {
+          "prob": 0.6184487430811808,
+          "area_eq": 542.0,
+          "cx": 0.4962306849630995,
+          "cy": -0.5771576465764657
+        },
+        {
+          "prob": 0.5729552985165369,
+          "area_eq": 514.0,
+          "cx": -0.9422118190661478,
+          "cy": -0.3129458495460441
+        },
+        {
+          "prob": 0.728409022750354,
+          "area_eq": 3354.0,
+          "cx": -0.5206912455277282,
+          "cy": -0.0956134466308885
+        },
+        {
+          "prob": 0.6198658130787037,
+          "area_eq": 135.0,
+          "cx": 0.9146122685185185,
+          "cy": -0.13029835390946498
+        },
+        {
+          "prob": 0.5632546164772727,
+          "area_eq": 77.0,
+          "cx": 0.9054890422077921,
+          "cy": -0.0020743145743146053
+        },
+        {
+          "prob": 0.597387905778556,
+          "area_eq": 464.0,
+          "cx": 0.12989123114224133,
+          "cy": 0.44178041187739464
+        },
+        {
+          "prob": 0.5481380208333333,
+          "area_eq": 150.0,
+          "cx": 0.02450520833333325,
+          "cy": 0.5120833333333334
+        }
+      ]
+    },
+    {
+      "scenario": "clear_up",
+      "pose": {
+        "x": 0.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 1,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 24649,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.8173869189029989,
+          "area_eq": 10501.0,
+          "cx": -0.0162328290162842,
+          "cy": -0.5058684887153605
+        },
+        {
+          "prob": 0.6957815682755366,
+          "area_eq": 4403.0,
+          "cx": -0.7106979616170792,
+          "cy": -0.7561700355818003
+        },
+        {
+          "prob": 0.6754339840890373,
+          "area_eq": 2049.0,
+          "cx": 0.8112379514397268,
+          "cy": -0.6828703703703705
+        },
+        {
+          "prob": 0.5664306640625,
+          "area_eq": 60.0,
+          "cx": 0.6621744791666666,
+          "cy": -0.8011574074074075
+        },
+        {
+          "prob": 0.7088551749170354,
+          "area_eq": 565.0,
+          "cx": 0.4729742809734514,
+          "cy": -0.5670599803343167
+        },
+        {
+          "prob": 0.7012185835761656,
+          "area_eq": 1244.0,
+          "cx": -0.872776828778135,
+          "cy": -0.227586861379064
+        },
+        {
+          "prob": 0.8192560067034442,
+          "area_eq": 3818.0,
+          "cx": -0.5243920655447878,
+          "cy": -0.056364952563878745
+        },
+        {
+          "prob": 0.7361478764960107,
+          "area_eq": 3290.0,
+          "cx": 0.04772392667173242,
+          "cy": 0.5163015028706517
+        }
+      ]
+    },
+    {
+      "scenario": "clear_up",
+      "pose": {
+        "x": 1,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 2,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 25764,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.7449446300087522,
+          "area_eq": 9212.0,
+          "cx": -0.6318906385692575,
+          "cy": -0.7237668560331935
+        },
+        {
+          "prob": 0.814322167397053,
+          "area_eq": 9395.0,
+          "cx": 0.07320965274081948,
+          "cy": -0.5811653657382769
+        },
+        {
+          "prob": 0.7193090911240108,
+          "area_eq": 4296.0,
+          "cx": 0.7808671947742085,
+          "cy": -0.6920358731636664
+        },
+        {
+          "prob": 0.6732763045873398,
+          "area_eq": 780.0,
+          "cx": -0.9280148237179487,
+          "cy": -0.1844373219373219
+        },
+        {
+          "prob": 0.7474354606818523,
+          "area_eq": 3331.0,
+          "cx": -0.6190731949864905,
+          "cy": 0.06100103405717326
+        },
+        {
+          "prob": 0.6113917032877604,
+          "area_eq": 192.0,
+          "cx": -0.08164469401041663,
+          "cy": 0.018482349537037104
+        }
+      ]
+    },
+    {
+      "scenario": "clear_up",
+      "pose": {
+        "x": 1,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 2,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 30119,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.769114166102434,
+          "area_eq": 25604.0,
+          "cx": 0.011864753798234595,
+          "cy": -0.5988262467669982
+        },
+        {
+          "prob": 0.7531757941183199,
+          "area_eq": 1366.0,
+          "cx": -0.925563918374817,
+          "cy": -0.16629046689442006
+        },
+        {
+          "prob": 0.8407292581314542,
+          "area_eq": 4164.0,
+          "cx": -0.6018636302233429,
+          "cy": 0.07663237805528864
+        },
+        {
+          "prob": 0.6195184616815477,
+          "area_eq": 168.0,
+          "cx": -0.16303943452380953,
+          "cy": 0.4587880291005292
+        },
+        {
+          "prob": 0.5977592468261719,
+          "area_eq": 128.0,
+          "cx": 0.15142822265625,
+          "cy": 0.4786241319444444
+        },
+        {
+          "prob": 0.6594091316991708,
+          "area_eq": 814.0,
+          "cx": 0.004693258599508532,
+          "cy": 0.6555077805077806
+        }
+      ]
+    },
+    {
+      "scenario": "clear_up",
+      "pose": {
+        "x": 1.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      "t": 3,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 7015,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.6549689075934193,
+          "area_eq": 1512.0,
+          "cx": 0.011462983630952328,
+          "cy": -0.3109016754850088
+        },
+        {
+          "prob": 0.6797622369260204,
+          "area_eq": 98.0,
+          "cx": 0.17418686224489788,
+          "cy": 0.18608276643990923
+        },
+        {
+          "prob": 0.690263763777363,
+          "area_eq": 2444.0,
+          "cx": -0.5335099989770867,
+          "cy": 0.2812414757228587
+        },
+        {
+          "prob": 0.5921957775911115,
+          "area_eq": 1516.0,
+          "cx": 0.8174034259564644,
+          "cy": 0.3083864702433304
+        },
+        {
+          "prob": 0.5649151141826924,
+          "area_eq": 65.0,
+          "cx": 0.3183293269230769,
+          "cy": 0.2696581196581196
+        },
+        {
+          "prob": 0.6710653057853001,
+          "area_eq": 1466.0,
+          "cx": -0.04424507588676674,
+          "cy": 0.5023685008337123
+        },
+        {
+          "prob": 0.6231792611135564,
+          "area_eq": 142.0,
+          "cx": -0.25357614436619713,
+          "cy": 0.36585485133020335
+        },
+        {
+          "prob": 0.6301343686112734,
+          "area_eq": 428.0,
+          "cx": -0.02212324766355145,
+          "cy": 0.8782450674974042
+        },
+        {
+          "prob": 0.5130911162405303,
+          "area_eq": 66.0,
+          "cx": -0.9741950757575758,
+          "cy": 0.8580597643097643
+        }
+      ]
+    },
+    {
+      "scenario": "clear_up",
+      "pose": {
+        "x": 1.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      "t": 3,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 7175,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.7865658645539164,
+          "area_eq": 3364.0,
+          "cx": -0.012768467598097466,
+          "cy": -0.35160481899854673
+        },
+        {
+          "prob": 0.5307471865699405,
+          "area_eq": 84.0,
+          "cx": -0.3461216517857143,
+          "cy": 0.26893187830687837
+        },
+        {
+          "prob": 0.7747905933138004,
+          "area_eq": 3797.0,
+          "cx": -0.04954569396892283,
+          "cy": 0.5913385567553332
+        },
+        {
+          "prob": 0.6086439893424855,
+          "area_eq": 173.0,
+          "cx": -0.5475749638728324,
+          "cy": 0.384834617854849
+        }
+      ]
+    },
+    {
+      "scenario": "clear_up",
+      "pose": {
+        "x": 2,
+        "y": 0,
+        "depth": -2.5,
+        "yaw": 0.0,
+        "pitch": -0.5235987755982988
+      },
+      "t": 4,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 0,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": []
+    },
+    {
+      "scenario": "clear_up",
+      "pose": {
+        "x": 2,
+        "y": 0,
+        "depth": -2.5,
+        "yaw": 0.0,
+        "pitch": -0.5235987755982988
+      },
+      "t": 4,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 0,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": []
+    },
+    {
+      "scenario": "fish_horizontal",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.7853981633974483
+      },
+      "t": 0,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 31434,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.8240885322883655,
+          "area_eq": 10413.0,
+          "cx": -0.6865025238884087,
+          "cy": -0.6305392831610059
+        },
+        {
+          "prob": 0.8369619505517543,
+          "area_eq": 14907.0,
+          "cx": 0.007966580297846582,
+          "cy": 0.015618128694200293
+        },
+        {
+          "prob": 0.7201743903122041,
+          "area_eq": 7393.0,
+          "cx": 0.7649101134519141,
+          "cy": -0.7778050182605167
+        }
+      ]
+    },
+    {
+      "scenario": "fish_horizontal",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.7853981633974483
+      },
+      "t": 0,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 22392,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.719704926967487,
+          "area_eq": 3563.0,
+          "cx": -0.823241913415661,
+          "cy": -0.7826913181775657
+        },
+        {
+          "prob": 0.8014348537382222,
+          "area_eq": 4431.0,
+          "cx": 0.019547118314150236,
+          "cy": -0.7096451139697586
+        },
+        {
+          "prob": 0.7850723038707268,
+          "area_eq": 3013.0,
+          "cx": 0.7012010454696316,
+          "cy": -0.9201423461297341
+        },
+        {
+          "prob": 0.8673348006506459,
+          "area_eq": 3290.0,
+          "cx": -0.4910227488601824,
+          "cy": -0.521751519756839
+        },
+        {
+          "prob": 0.6581903594771242,
+          "area_eq": 153.0,
+          "cx": 0.12321282679738554,
+          "cy": -0.18641067538126363
+        },
+        {
+          "prob": 0.8663280357720305,
+          "area_eq": 9084.0,
+          "cx": -0.001190709626816333,
+          "cy": 0.5109961348402563
+        }
+      ]
+    },
+    {
+      "scenario": "fish_horizontal",
+      "pose": {
+        "x": 0.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 1,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 5840,
+      "raw_fish_probability_pixels": 24331,
+      "probability_on_fish_max": 0.9912109375,
+      "fish_overlap_pixels": 1934,
+      "detections": [
+        {
+          "prob": 0.7351052029829909,
+          "area_eq": 21483.0,
+          "cx": -0.05338959875250193,
+          "cy": -0.6632194965528299
+        },
+        {
+          "prob": 0.6011641353438228,
+          "area_eq": 858.0,
+          "cx": -0.943445877039627,
+          "cy": -0.30031080031080026
+        },
+        {
+          "prob": 0.7152610419352872,
+          "area_eq": 3587.0,
+          "cx": -0.5170211005018122,
+          "cy": -0.10078059659882913
+        },
+        {
+          "prob": 0.6150428921568627,
+          "area_eq": 102.0,
+          "cx": 0.9111136642156863,
+          "cy": -0.1356889978213508
+        },
+        {
+          "prob": 0.5503562644675926,
+          "area_eq": 81.0,
+          "cx": 0.9050925925925926,
+          "cy": -0.001800411522633796
+        },
+        {
+          "prob": 0.6112002418154762,
+          "area_eq": 126.0,
+          "cx": 0.14065600198412698,
+          "cy": 0.3466710758377424
+        }
+      ]
+    },
+    {
+      "scenario": "fish_horizontal",
+      "pose": {
+        "x": 0.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 1,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 5840,
+      "raw_fish_probability_pixels": 35046,
+      "probability_on_fish_max": 0.99560546875,
+      "fish_overlap_pixels": 3071,
+      "detections": [
+        {
+          "prob": 0.7755758024739048,
+          "area_eq": 26747.0,
+          "cx": -0.16483113176244069,
+          "cy": -0.38001146546030085
+        },
+        {
+          "prob": 0.7116169720531935,
+          "area_eq": 4016.0,
+          "cx": 0.7505398328560757,
+          "cy": -0.7176225652943781
+        },
+        {
+          "prob": 0.7330472524503016,
+          "area_eq": 2031.0,
+          "cx": -0.8665893494583949,
+          "cy": -0.23589228075934127
+        },
+        {
+          "prob": 0.850820685976041,
+          "area_eq": 4419.0,
+          "cx": -0.5250419000339444,
+          "cy": -0.05107364662693925
+        }
+      ]
+    },
+    {
+      "scenario": "fish_horizontal",
+      "pose": {
+        "x": 1,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 2,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 12085,
+      "raw_fish_probability_pixels": 25580,
+      "probability_on_fish_max": 0.9638671875,
+      "fish_overlap_pixels": 2569,
+      "detections": [
+        {
+          "prob": 0.6915839837065141,
+          "area_eq": 5113.0,
+          "cx": 0.20729711641893211,
+          "cy": -0.6510392898276725
+        },
+        {
+          "prob": 0.8187317800993966,
+          "area_eq": 9696.0,
+          "cx": -0.653054416769802,
+          "cy": -0.7014497673725706
+        },
+        {
+          "prob": 0.789495727448573,
+          "area_eq": 6745.0,
+          "cx": 0.7687795357672349,
+          "cy": -0.6763909480273453
+        },
+        {
+          "prob": 0.7119138323957351,
+          "area_eq": 1061.0,
+          "cx": -0.9170741046182846,
+          "cy": -0.19872499738192484
+        },
+        {
+          "prob": 0.7503262618421933,
+          "area_eq": 3734.0,
+          "cx": -0.6128722131092662,
+          "cy": 0.049827411771707415
+        },
+        {
+          "prob": 0.6283511755601415,
+          "area_eq": 318.0,
+          "cx": -0.06483392295597479,
+          "cy": -0.00539395527603068
+        }
+      ]
+    },
+    {
+      "scenario": "fish_horizontal",
+      "pose": {
+        "x": 1,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 2,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 12085,
+      "raw_fish_probability_pixels": 40986,
+      "probability_on_fish_max": 0.97900390625,
+      "fish_overlap_pixels": 4283,
+      "detections": [
+        {
+          "prob": 0.7813131386893136,
+          "area_eq": 33600.0,
+          "cx": 0.033882533482142874,
+          "cy": -0.4866600529100529
+        },
+        {
+          "prob": 0.7819933232736241,
+          "area_eq": 1926.0,
+          "cx": -0.924126265576324,
+          "cy": -0.16813415830160375
+        },
+        {
+          "prob": 0.5909502162015374,
+          "area_eq": 374.0,
+          "cx": 0.8250752005347595,
+          "cy": -0.1937388591800356
+        },
+        {
+          "prob": 0.8501426519089262,
+          "area_eq": 5453.0,
+          "cx": -0.5984256086099395,
+          "cy": 0.08110341911689803
+        },
+        {
+          "prob": 0.7472469799646435,
+          "area_eq": 1697.0,
+          "cx": 0.004532354890984136,
+          "cy": 0.6219963333988083
+        }
+      ]
+    },
+    {
+      "scenario": "fish_horizontal",
+      "pose": {
+        "x": 1.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      "t": 3,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 49147,
+      "raw_fish_probability_pixels": 17770,
+      "probability_on_fish_max": 0.99169921875,
+      "fish_overlap_pixels": 12253,
+      "detections": [
+        {
+          "prob": 0.849370409528625,
+          "area_eq": 8869.0,
+          "cx": 0.15403151073965504,
+          "cy": -0.25810955137119307
+        },
+        {
+          "prob": 0.5703955995085094,
+          "area_eq": 426.0,
+          "cx": 0.939159697769953,
+          "cy": -0.107769300991132
+        },
+        {
+          "prob": 0.524486644847973,
+          "area_eq": 148.0,
+          "cx": -0.6655933277027026,
+          "cy": -0.12621996996996998
+        },
+        {
+          "prob": 0.732136933519325,
+          "area_eq": 1837.0,
+          "cx": -0.6575620066684813,
+          "cy": 0.28942493800278235
+        },
+        {
+          "prob": 0.7485754701382368,
+          "area_eq": 6922.0,
+          "cx": 0.5450494122002312,
+          "cy": 0.44733277954348455
+        }
+      ]
+    },
+    {
+      "scenario": "fish_horizontal",
+      "pose": {
+        "x": 1.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      "t": 3,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 49147,
+      "raw_fish_probability_pixels": 10635,
+      "probability_on_fish_max": 0.98486328125,
+      "fish_overlap_pixels": 8609,
+      "detections": [
+        {
+          "prob": 0.7712760139366449,
+          "area_eq": 5941.0,
+          "cx": 0.20557947420467926,
+          "cy": -0.2548345770446427
+        },
+        {
+          "prob": 0.512622730152027,
+          "area_eq": 148.0,
+          "cx": -0.6152607685810811,
+          "cy": -0.04654654654654659
+        },
+        {
+          "prob": 0.7338219825924974,
+          "area_eq": 973.0,
+          "cx": -0.5934810187564235,
+          "cy": 0.3262675573826653
+        },
+        {
+          "prob": 0.7090036561515319,
+          "area_eq": 3729.0,
+          "cx": 0.4307999798873692,
+          "cy": 0.5338562617323679
+        },
+        {
+          "prob": 0.5941896529672579,
+          "area_eq": 733.0,
+          "cx": -0.3275601125511596,
+          "cy": 0.5537270729119297
+        }
+      ]
+    },
+    {
+      "scenario": "fish_horizontal",
+      "pose": {
+        "x": 2,
+        "y": 0,
+        "depth": -2.5,
+        "yaw": 0.0,
+        "pitch": -0.5235987755982988
+      },
+      "t": 4,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 0,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": []
+    },
+    {
+      "scenario": "fish_horizontal",
+      "pose": {
+        "x": 2,
+        "y": 0,
+        "depth": -2.5,
+        "yaw": 0.0,
+        "pitch": -0.5235987755982988
+      },
+      "t": 4,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 0,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": []
+    },
+    {
+      "scenario": "fish_cross_right",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.7853981633974483
+      },
+      "t": 0,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 31434,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.8240885322883655,
+          "area_eq": 10413.0,
+          "cx": -0.6865025238884087,
+          "cy": -0.6305392831610059
+        },
+        {
+          "prob": 0.8369619505517543,
+          "area_eq": 14907.0,
+          "cx": 0.007966580297846582,
+          "cy": 0.015618128694200293
+        },
+        {
+          "prob": 0.7201743903122041,
+          "area_eq": 7393.0,
+          "cx": 0.7649101134519141,
+          "cy": -0.7778050182605167
+        }
+      ]
+    },
+    {
+      "scenario": "fish_cross_right",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.7853981633974483
+      },
+      "t": 0,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 22392,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.719704926967487,
+          "area_eq": 3563.0,
+          "cx": -0.823241913415661,
+          "cy": -0.7826913181775657
+        },
+        {
+          "prob": 0.8014348537382222,
+          "area_eq": 4431.0,
+          "cx": 0.019547118314150236,
+          "cy": -0.7096451139697586
+        },
+        {
+          "prob": 0.7850723038707268,
+          "area_eq": 3013.0,
+          "cx": 0.7012010454696316,
+          "cy": -0.9201423461297341
+        },
+        {
+          "prob": 0.8673348006506459,
+          "area_eq": 3290.0,
+          "cx": -0.4910227488601824,
+          "cy": -0.521751519756839
+        },
+        {
+          "prob": 0.6581903594771242,
+          "area_eq": 153.0,
+          "cx": 0.12321282679738554,
+          "cy": -0.18641067538126363
+        },
+        {
+          "prob": 0.8663280357720305,
+          "area_eq": 9084.0,
+          "cx": -0.001190709626816333,
+          "cy": 0.5109961348402563
+        }
+      ]
+    },
+    {
+      "scenario": "fish_cross_right",
+      "pose": {
+        "x": 0.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 1,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 5840,
+      "raw_fish_probability_pixels": 27282,
+      "probability_on_fish_max": 0.98388671875,
+      "fish_overlap_pixels": 2190,
+      "detections": [
+        {
+          "prob": 0.7786188850498301,
+          "area_eq": 13985.0,
+          "cx": 0.3374689957990704,
+          "cy": -0.6348096174472649
+        },
+        {
+          "prob": 0.7411277595980247,
+          "area_eq": 9416.0,
+          "cx": -0.6306892855246389,
+          "cy": -0.7009884180590956
+        },
+        {
+          "prob": 0.623426557892797,
+          "area_eq": 1187.0,
+          "cx": -0.9143915859309183,
+          "cy": -0.2977335486286623
+        },
+        {
+          "prob": 0.7465489611283309,
+          "area_eq": 4053.0,
+          "cx": -0.5191833209967924,
+          "cy": -0.09770197658798689
+        },
+        {
+          "prob": 0.5877234053938356,
+          "area_eq": 438.0,
+          "cx": 0.9111729452054795,
+          "cy": -0.08480783866057845
+        },
+        {
+          "prob": 0.6140587679140127,
+          "area_eq": 157.0,
+          "cx": 0.14089868630573243,
+          "cy": 0.3551397735314933
+        }
+      ]
+    },
+    {
+      "scenario": "fish_cross_right",
+      "pose": {
+        "x": 0.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 1,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 5840,
+      "raw_fish_probability_pixels": 38714,
+      "probability_on_fish_max": 0.9951171875,
+      "fish_overlap_pixels": 2766,
+      "detections": [
+        {
+          "prob": 0.7982384340076722,
+          "area_eq": 34691.0,
+          "cx": 0.01745353171571873,
+          "cy": -0.47448005246317493
+        },
+        {
+          "prob": 0.7213616401693304,
+          "area_eq": 2186.0,
+          "cx": -0.8689744396157365,
+          "cy": -0.23793458371454712
+        },
+        {
+          "prob": 0.8539178652585964,
+          "area_eq": 4435.0,
+          "cx": -0.5250422773393462,
+          "cy": -0.051543905799824645
+        }
+      ]
+    },
+    {
+      "scenario": "fish_cross_right",
+      "pose": {
+        "x": 1,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 2,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 12085,
+      "raw_fish_probability_pixels": 35037,
+      "probability_on_fish_max": 0.98291015625,
+      "fish_overlap_pixels": 2542,
+      "detections": [
+        {
+          "prob": 0.850114864491445,
+          "area_eq": 23466.0,
+          "cx": -0.28167148747123494,
+          "cy": -0.6145395347405702
+        },
+        {
+          "prob": 0.5086329725922131,
+          "area_eq": 122.0,
+          "cx": 0.7500960553278688,
+          "cy": -0.9562841530054644
+        },
+        {
+          "prob": 0.8366598046945842,
+          "area_eq": 5514.0,
+          "cx": 0.8400909899800508,
+          "cy": -0.6161248639825898
+        },
+        {
+          "prob": 0.6354399745904126,
+          "area_eq": 412.0,
+          "cx": 0.5540427791262137,
+          "cy": -0.34088457389428267
+        },
+        {
+          "prob": 0.7097541151228304,
+          "area_eq": 1786.0,
+          "cx": -0.9113241881298992,
+          "cy": -0.16608731491850193
+        },
+        {
+          "prob": 0.5996279761904761,
+          "area_eq": 105.0,
+          "cx": 0.9832217261904761,
+          "cy": -0.2602513227513228
+        },
+        {
+          "prob": 0.7811087092826093,
+          "area_eq": 4414.0,
+          "cx": -0.6046395347190756,
+          "cy": 0.057017129839399966
+        }
+      ]
+    },
+    {
+      "scenario": "fish_cross_right",
+      "pose": {
+        "x": 1,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 2,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 12085,
+      "raw_fish_probability_pixels": 41495,
+      "probability_on_fish_max": 0.98583984375,
+      "fish_overlap_pixels": 4115,
+      "detections": [
+        {
+          "prob": 0.8304801713884084,
+          "area_eq": 36125.0,
+          "cx": -0.07788397491349486,
+          "cy": -0.5303404459823144
+        },
+        {
+          "prob": 0.5925830553337895,
+          "area_eq": 411.0,
+          "cx": 0.824446852189781,
+          "cy": -0.20084820221681532
+        },
+        {
+          "prob": 0.8511720389174813,
+          "area_eq": 5064.0,
+          "cx": -0.5911427478278042,
+          "cy": 0.0701191416535018
+        },
+        {
+          "prob": 0.6637953484195402,
+          "area_eq": 435.0,
+          "cx": -0.1666576867816092,
+          "cy": 0.42718710089399753
+        },
+        {
+          "prob": 0.7004203559027777,
+          "area_eq": 1125.0,
+          "cx": 0.005180555555555522,
+          "cy": 0.6315925925925926
+        }
+      ]
+    },
+    {
+      "scenario": "fish_cross_right",
+      "pose": {
+        "x": 1.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      "t": 3,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 49147,
+      "raw_fish_probability_pixels": 18326,
+      "probability_on_fish_max": 0.99267578125,
+      "fish_overlap_pixels": 10993,
+      "detections": [
+        {
+          "prob": 0.8229096454336607,
+          "area_eq": 7757.0,
+          "cx": 0.3748262657921877,
+          "cy": -0.2036672969217767
+        },
+        {
+          "prob": 0.6193276937905844,
+          "area_eq": 154.0,
+          "cx": -0.029398336038961026,
+          "cy": -0.7098665223665224
+        },
+        {
+          "prob": 0.5251396071742958,
+          "area_eq": 71.0,
+          "cx": -0.03757702464788737,
+          "cy": -0.498141627543036
+        },
+        {
+          "prob": 0.5589695142663044,
+          "area_eq": 575.0,
+          "cx": 0.9429551630434783,
+          "cy": -0.09710144927536232
+        },
+        {
+          "prob": 0.5316141062769396,
+          "area_eq": 464.0,
+          "cx": -0.4819588496767241,
+          "cy": -0.07239284003831416
+        },
+        {
+          "prob": 0.8047174784607588,
+          "area_eq": 3453.0,
+          "cx": -0.5765344446857805,
+          "cy": 0.2974868874086945
+        },
+        {
+          "prob": 0.7652550408454357,
+          "area_eq": 6025.0,
+          "cx": 0.6950012966804979,
+          "cy": 0.45698939603503913
+        },
+        {
+          "prob": 0.7193548931338922,
+          "area_eq": 492.0,
+          "cx": -0.11125666920731703,
+          "cy": 0.806473012646793
+        }
+      ]
+    },
+    {
+      "scenario": "fish_cross_right",
+      "pose": {
+        "x": 1.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      "t": 3,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 49147,
+      "raw_fish_probability_pixels": 10586,
+      "probability_on_fish_max": 0.98583984375,
+      "fish_overlap_pixels": 7126,
+      "detections": [
+        {
+          "prob": 0.7089476391065831,
+          "area_eq": 319.0,
+          "cx": -0.05135677899686519,
+          "cy": -0.7251175548589343
+        },
+        {
+          "prob": 0.7545746932961785,
+          "area_eq": 5648.0,
+          "cx": 0.45976521003009907,
+          "cy": -0.13993645734970095
+        },
+        {
+          "prob": 0.7670126179702409,
+          "area_eq": 2096.0,
+          "cx": -0.5240376013835878,
+          "cy": 0.30616518235793044
+        },
+        {
+          "prob": 0.4854833209325397,
+          "area_eq": 63.0,
+          "cx": -0.1438492063492064,
+          "cy": 0.392526455026455
+        },
+        {
+          "prob": 0.6799251656271251,
+          "area_eq": 2941.0,
+          "cx": 0.6143730342570555,
+          "cy": 0.5759709471457176
+        },
+        {
+          "prob": 0.6796255299507659,
+          "area_eq": 457.0,
+          "cx": -0.13085510120350108,
+          "cy": 0.7442408217845854
+        }
+      ]
+    },
+    {
+      "scenario": "fish_cross_right",
+      "pose": {
+        "x": 2,
+        "y": 0,
+        "depth": -2.5,
+        "yaw": 0.0,
+        "pitch": -0.5235987755982988
+      },
+      "t": 4,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 0,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": []
+    },
+    {
+      "scenario": "fish_cross_right",
+      "pose": {
+        "x": 2,
+        "y": 0,
+        "depth": -2.5,
+        "yaw": 0.0,
+        "pitch": -0.5235987755982988
+      },
+      "t": 4,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 0,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": []
+    },
+    {
+      "scenario": "fish_cross_left",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.7853981633974483
+      },
+      "t": 0,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 31434,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.8240885322883655,
+          "area_eq": 10413.0,
+          "cx": -0.6865025238884087,
+          "cy": -0.6305392831610059
+        },
+        {
+          "prob": 0.8369619505517543,
+          "area_eq": 14907.0,
+          "cx": 0.007966580297846582,
+          "cy": 0.015618128694200293
+        },
+        {
+          "prob": 0.7201743903122041,
+          "area_eq": 7393.0,
+          "cx": 0.7649101134519141,
+          "cy": -0.7778050182605167
+        }
+      ]
+    },
+    {
+      "scenario": "fish_cross_left",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.7853981633974483
+      },
+      "t": 0,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 22392,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.719704926967487,
+          "area_eq": 3563.0,
+          "cx": -0.823241913415661,
+          "cy": -0.7826913181775657
+        },
+        {
+          "prob": 0.8014348537382222,
+          "area_eq": 4431.0,
+          "cx": 0.019547118314150236,
+          "cy": -0.7096451139697586
+        },
+        {
+          "prob": 0.7850723038707268,
+          "area_eq": 3013.0,
+          "cx": 0.7012010454696316,
+          "cy": -0.9201423461297341
+        },
+        {
+          "prob": 0.8673348006506459,
+          "area_eq": 3290.0,
+          "cx": -0.4910227488601824,
+          "cy": -0.521751519756839
+        },
+        {
+          "prob": 0.6581903594771242,
+          "area_eq": 153.0,
+          "cx": 0.12321282679738554,
+          "cy": -0.18641067538126363
+        },
+        {
+          "prob": 0.8663280357720305,
+          "area_eq": 9084.0,
+          "cx": -0.001190709626816333,
+          "cy": 0.5109961348402563
+        }
+      ]
+    },
+    {
+      "scenario": "fish_cross_left",
+      "pose": {
+        "x": 0.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 1,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 5840,
+      "raw_fish_probability_pixels": 24342,
+      "probability_on_fish_max": 0.962890625,
+      "fish_overlap_pixels": 1911,
+      "detections": [
+        {
+          "prob": 0.7201383620751437,
+          "area_eq": 9266.0,
+          "cx": -0.7007718068745953,
+          "cy": -0.6453207065256493
+        },
+        {
+          "prob": 0.7748639879779882,
+          "area_eq": 12533.0,
+          "cx": 0.35887444646134203,
+          "cy": -0.6111831431687013
+        },
+        {
+          "prob": 0.7206108224871766,
+          "area_eq": 3826.0,
+          "cx": -0.5155361751829587,
+          "cy": -0.1096808387059301
+        },
+        {
+          "prob": 0.6178146063112745,
+          "area_eq": 102.0,
+          "cx": 0.9098498774509804,
+          "cy": -0.1376633986928105
+        },
+        {
+          "prob": 0.6081007050304879,
+          "area_eq": 123.0,
+          "cx": 0.14224466463414642,
+          "cy": 0.34857723577235766
+        }
+      ]
+    },
+    {
+      "scenario": "fish_cross_left",
+      "pose": {
+        "x": 0.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 1,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 5840,
+      "raw_fish_probability_pixels": 32456,
+      "probability_on_fish_max": 0.990234375,
+      "fish_overlap_pixels": 2400,
+      "detections": [
+        {
+          "prob": 0.8022014474493344,
+          "area_eq": 23751.0,
+          "cx": -0.29227881194476024,
+          "cy": -0.5719308894596251
+        },
+        {
+          "prob": 0.7245087855554195,
+          "area_eq": 3063.0,
+          "cx": 0.7884388773261508,
+          "cy": -0.7034928537744405
+        },
+        {
+          "prob": 0.5983786386986302,
+          "area_eq": 73.0,
+          "cx": 0.5377247431506849,
+          "cy": -0.7523782343987823
+        },
+        {
+          "prob": 0.8348655382711859,
+          "area_eq": 3959.0,
+          "cx": -0.5246550580954786,
+          "cy": -0.05455221576716913
+        },
+        {
+          "prob": 0.7356222401494565,
+          "area_eq": 3266.0,
+          "cx": 0.0491522504592774,
+          "cy": 0.5122920493978363
+        }
+      ]
+    },
+    {
+      "scenario": "fish_cross_left",
+      "pose": {
+        "x": 1,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 2,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 12085,
+      "raw_fish_probability_pixels": 36147,
+      "probability_on_fish_max": 0.95361328125,
+      "fish_overlap_pixels": 3163,
+      "detections": [
+        {
+          "prob": 0.7921486680564211,
+          "area_eq": 38407.0,
+          "cx": -0.11416040288879636,
+          "cy": -0.491677949332153
+        }
+      ]
+    },
+    {
+      "scenario": "fish_cross_left",
+      "pose": {
+        "x": 1,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 2,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 12085,
+      "raw_fish_probability_pixels": 42441,
+      "probability_on_fish_max": 0.98828125,
+      "fish_overlap_pixels": 3645,
+      "detections": [
+        {
+          "prob": 0.7767800989152959,
+          "area_eq": 14613.0,
+          "cx": -0.7205372570656265,
+          "cy": -0.2806310210847267
+        },
+        {
+          "prob": 0.48782571932164637,
+          "area_eq": 123.0,
+          "cx": -0.30510035569105687,
+          "cy": -0.9597448057813911
+        },
+        {
+          "prob": 0.843766712348298,
+          "area_eq": 27682.0,
+          "cx": 0.2389312098114298,
+          "cy": -0.576666847289454
+        },
+        {
+          "prob": 0.58350830078125,
+          "area_eq": 200.0,
+          "cx": 0.8225976562499999,
+          "cy": -0.20305555555555552
+        },
+        {
+          "prob": 0.618349609375,
+          "area_eq": 475.0,
+          "cx": 0.16212171052631574,
+          "cy": 0.5216812865497076
+        },
+        {
+          "prob": 0.659759354721653,
+          "area_eq": 366.0,
+          "cx": -0.16609033469945356,
+          "cy": 0.43841074681238623
+        },
+        {
+          "prob": 0.6455309416118421,
+          "area_eq": 95.0,
+          "cx": 0.24070723684210527,
+          "cy": 0.46937134502923983
+        },
+        {
+          "prob": 0.6663843908975291,
+          "area_eq": 860.0,
+          "cx": 0.001953125,
+          "cy": 0.6442021963824289
+        }
+      ]
+    },
+    {
+      "scenario": "fish_cross_left",
+      "pose": {
+        "x": 1.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      "t": 3,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 49147,
+      "raw_fish_probability_pixels": 15529,
+      "probability_on_fish_max": 0.99169921875,
+      "fish_overlap_pixels": 11085,
+      "detections": [
+        {
+          "prob": 0.7880841050254775,
+          "area_eq": 13756.0,
+          "cx": 0.05334263230590297,
+          "cy": -0.024496381377015278
+        },
+        {
+          "prob": 0.7201008507834343,
+          "area_eq": 2146.0,
+          "cx": 0.8181500465983225,
+          "cy": 0.30042974008491247
+        },
+        {
+          "prob": 0.5893745422363281,
+          "area_eq": 128.0,
+          "cx": -0.8104248046875,
+          "cy": 0.24235026041666666
+        },
+        {
+          "prob": 0.5738997395833333,
+          "area_eq": 75.0,
+          "cx": -0.6067708333333333,
+          "cy": 0.49518518518518523
+        }
+      ]
+    },
+    {
+      "scenario": "fish_cross_left",
+      "pose": {
+        "x": 1.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      "t": 3,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 49147,
+      "raw_fish_probability_pixels": 9735,
+      "probability_on_fish_max": 0.98681640625,
+      "fish_overlap_pixels": 7370,
+      "detections": [
+        {
+          "prob": 0.7845874399447486,
+          "area_eq": 6428.0,
+          "cx": 0.008485216046981936,
+          "cy": -0.3333981539099772
+        },
+        {
+          "prob": 0.6401352910270468,
+          "area_eq": 171.0,
+          "cx": 0.15419407894736836,
+          "cy": -0.5461744639376218
+        },
+        {
+          "prob": 0.707862338081735,
+          "area_eq": 3904.0,
+          "cx": 0.2009157274590163,
+          "cy": 0.6160455088797815
+        }
+      ]
+    },
+    {
+      "scenario": "fish_cross_left",
+      "pose": {
+        "x": 2,
+        "y": 0,
+        "depth": -2.5,
+        "yaw": 0.0,
+        "pitch": -0.5235987755982988
+      },
+      "t": 4,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 0,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": []
+    },
+    {
+      "scenario": "fish_cross_left",
+      "pose": {
+        "x": 2,
+        "y": 0,
+        "depth": -2.5,
+        "yaw": 0.0,
+        "pitch": -0.5235987755982988
+      },
+      "t": 4,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 0,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": []
+    },
+    {
+      "scenario": "fish_vertical",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.7853981633974483
+      },
+      "t": 0,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 31434,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.8240885322883655,
+          "area_eq": 10413.0,
+          "cx": -0.6865025238884087,
+          "cy": -0.6305392831610059
+        },
+        {
+          "prob": 0.8369619505517543,
+          "area_eq": 14907.0,
+          "cx": 0.007966580297846582,
+          "cy": 0.015618128694200293
+        },
+        {
+          "prob": 0.7201743903122041,
+          "area_eq": 7393.0,
+          "cx": 0.7649101134519141,
+          "cy": -0.7778050182605167
+        }
+      ]
+    },
+    {
+      "scenario": "fish_vertical",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.7853981633974483
+      },
+      "t": 0,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 22392,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.719704926967487,
+          "area_eq": 3563.0,
+          "cx": -0.823241913415661,
+          "cy": -0.7826913181775657
+        },
+        {
+          "prob": 0.8014348537382222,
+          "area_eq": 4431.0,
+          "cx": 0.019547118314150236,
+          "cy": -0.7096451139697586
+        },
+        {
+          "prob": 0.7850723038707268,
+          "area_eq": 3013.0,
+          "cx": 0.7012010454696316,
+          "cy": -0.9201423461297341
+        },
+        {
+          "prob": 0.8673348006506459,
+          "area_eq": 3290.0,
+          "cx": -0.4910227488601824,
+          "cy": -0.521751519756839
+        },
+        {
+          "prob": 0.6581903594771242,
+          "area_eq": 153.0,
+          "cx": 0.12321282679738554,
+          "cy": -0.18641067538126363
+        },
+        {
+          "prob": 0.8663280357720305,
+          "area_eq": 9084.0,
+          "cx": -0.001190709626816333,
+          "cy": 0.5109961348402563
+        }
+      ]
+    },
+    {
+      "scenario": "fish_vertical",
+      "pose": {
+        "x": 0.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 1,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 21027,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.8083176051909899,
+          "area_eq": 6877.0,
+          "cx": 0.056438695106878045,
+          "cy": -0.5553687412146769
+        },
+        {
+          "prob": 0.6559442213357383,
+          "area_eq": 6783.0,
+          "cx": -0.6589825897464249,
+          "cy": -0.7265989729225023
+        },
+        {
+          "prob": 0.6883535865254041,
+          "area_eq": 3774.0,
+          "cx": 0.8240769491918389,
+          "cy": -0.7227944856621327
+        },
+        {
+          "prob": 0.6184487430811808,
+          "area_eq": 542.0,
+          "cx": 0.4962306849630995,
+          "cy": -0.5771576465764657
+        },
+        {
+          "prob": 0.5729552985165369,
+          "area_eq": 514.0,
+          "cx": -0.9422118190661478,
+          "cy": -0.3129458495460441
+        },
+        {
+          "prob": 0.728409022750354,
+          "area_eq": 3354.0,
+          "cx": -0.5206912455277282,
+          "cy": -0.0956134466308885
+        },
+        {
+          "prob": 0.6198658130787037,
+          "area_eq": 135.0,
+          "cx": 0.9146122685185185,
+          "cy": -0.13029835390946498
+        },
+        {
+          "prob": 0.5632546164772727,
+          "area_eq": 77.0,
+          "cx": 0.9054890422077921,
+          "cy": -0.0020743145743146053
+        },
+        {
+          "prob": 0.597387905778556,
+          "area_eq": 464.0,
+          "cx": 0.12989123114224133,
+          "cy": 0.44178041187739464
+        },
+        {
+          "prob": 0.5481380208333333,
+          "area_eq": 150.0,
+          "cx": 0.02450520833333325,
+          "cy": 0.5120833333333334
+        }
+      ]
+    },
+    {
+      "scenario": "fish_vertical",
+      "pose": {
+        "x": 0.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 1,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 24649,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.8173869189029989,
+          "area_eq": 10501.0,
+          "cx": -0.0162328290162842,
+          "cy": -0.5058684887153605
+        },
+        {
+          "prob": 0.6957815682755366,
+          "area_eq": 4403.0,
+          "cx": -0.7106979616170792,
+          "cy": -0.7561700355818003
+        },
+        {
+          "prob": 0.6754339840890373,
+          "area_eq": 2049.0,
+          "cx": 0.8112379514397268,
+          "cy": -0.6828703703703705
+        },
+        {
+          "prob": 0.5664306640625,
+          "area_eq": 60.0,
+          "cx": 0.6621744791666666,
+          "cy": -0.8011574074074075
+        },
+        {
+          "prob": 0.7088551749170354,
+          "area_eq": 565.0,
+          "cx": 0.4729742809734514,
+          "cy": -0.5670599803343167
+        },
+        {
+          "prob": 0.7012185835761656,
+          "area_eq": 1244.0,
+          "cx": -0.872776828778135,
+          "cy": -0.227586861379064
+        },
+        {
+          "prob": 0.8192560067034442,
+          "area_eq": 3818.0,
+          "cx": -0.5243920655447878,
+          "cy": -0.056364952563878745
+        },
+        {
+          "prob": 0.7361478764960107,
+          "area_eq": 3290.0,
+          "cx": 0.04772392667173242,
+          "cy": 0.5163015028706517
+        }
+      ]
+    },
+    {
+      "scenario": "fish_vertical",
+      "pose": {
+        "x": 1,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 2,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 25764,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.7449446300087522,
+          "area_eq": 9212.0,
+          "cx": -0.6318906385692575,
+          "cy": -0.7237668560331935
+        },
+        {
+          "prob": 0.814322167397053,
+          "area_eq": 9395.0,
+          "cx": 0.07320965274081948,
+          "cy": -0.5811653657382769
+        },
+        {
+          "prob": 0.7193090911240108,
+          "area_eq": 4296.0,
+          "cx": 0.7808671947742085,
+          "cy": -0.6920358731636664
+        },
+        {
+          "prob": 0.6732763045873398,
+          "area_eq": 780.0,
+          "cx": -0.9280148237179487,
+          "cy": -0.1844373219373219
+        },
+        {
+          "prob": 0.7474354606818523,
+          "area_eq": 3331.0,
+          "cx": -0.6190731949864905,
+          "cy": 0.06100103405717326
+        },
+        {
+          "prob": 0.6113917032877604,
+          "area_eq": 192.0,
+          "cx": -0.08164469401041663,
+          "cy": 0.018482349537037104
+        }
+      ]
+    },
+    {
+      "scenario": "fish_vertical",
+      "pose": {
+        "x": 1,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.5759586531581288
+      },
+      "t": 2,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 0,
+      "raw_fish_probability_pixels": 30119,
+      "probability_on_fish_max": null,
+      "fish_overlap_pixels": 0,
+      "detections": [
+        {
+          "prob": 0.769114166102434,
+          "area_eq": 25604.0,
+          "cx": 0.011864753798234595,
+          "cy": -0.5988262467669982
+        },
+        {
+          "prob": 0.7531757941183199,
+          "area_eq": 1366.0,
+          "cx": -0.925563918374817,
+          "cy": -0.16629046689442006
+        },
+        {
+          "prob": 0.8407292581314542,
+          "area_eq": 4164.0,
+          "cx": -0.6018636302233429,
+          "cy": 0.07663237805528864
+        },
+        {
+          "prob": 0.6195184616815477,
+          "area_eq": 168.0,
+          "cx": -0.16303943452380953,
+          "cy": 0.4587880291005292
+        },
+        {
+          "prob": 0.5977592468261719,
+          "area_eq": 128.0,
+          "cx": 0.15142822265625,
+          "cy": 0.4786241319444444
+        },
+        {
+          "prob": 0.6594091316991708,
+          "area_eq": 814.0,
+          "cx": 0.004693258599508532,
+          "cy": 0.6555077805077806
+        }
+      ]
+    },
+    {
+      "scenario": "fish_vertical",
+      "pose": {
+        "x": 1.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      "t": 3,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 1447,
+      "raw_fish_probability_pixels": 7738,
+      "probability_on_fish_max": 0.9931640625,
+      "fish_overlap_pixels": 950,
+      "detections": [
+        {
+          "prob": 0.7646703570822011,
+          "area_eq": 1150.0,
+          "cx": -0.009707880434782656,
+          "cy": -0.8970289855072464
+        },
+        {
+          "prob": 0.6753187508418642,
+          "area_eq": 464.0,
+          "cx": 0.011129445043103425,
+          "cy": -0.43510536398467436
+        },
+        {
+          "prob": 0.534850105406746,
+          "area_eq": 63.0,
+          "cx": 0.14781746031746024,
+          "cy": -0.07087742504409178
+        },
+        {
+          "prob": 0.6261829333632376,
+          "area_eq": 627.0,
+          "cx": 0.007407545853269637,
+          "cy": -0.08356592238171186
+        },
+        {
+          "prob": 0.6562554253472223,
+          "area_eq": 90.0,
+          "cx": 0.17417534722222228,
+          "cy": 0.1875
+        },
+        {
+          "prob": 0.6923580062437249,
+          "area_eq": 2490.0,
+          "cx": -0.5346385542168675,
+          "cy": 0.2803240740740741
+        },
+        {
+          "prob": 0.5415702160493827,
+          "area_eq": 81.0,
+          "cx": -0.16965663580246915,
+          "cy": 0.2638888888888889
+        },
+        {
+          "prob": 0.590282115465891,
+          "area_eq": 1257.0,
+          "cx": 0.8104272324980111,
+          "cy": 0.3032296915053478
+        },
+        {
+          "prob": 0.675481890596728,
+          "area_eq": 1658.0,
+          "cx": -0.0495207893546441,
+          "cy": 0.4996397935933522
+        },
+        {
+          "prob": 0.598845451108871,
+          "area_eq": 155.0,
+          "cx": -0.24889112903225807,
+          "cy": 0.36402329749103934
+        },
+        {
+          "prob": 0.6041120256696428,
+          "area_eq": 350.0,
+          "cx": -0.023002232142857126,
+          "cy": 0.8749007936507935
+        }
+      ]
+    },
+    {
+      "scenario": "fish_vertical",
+      "pose": {
+        "x": 1.5,
+        "y": 0,
+        "depth": -2,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      "t": 3,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 1447,
+      "raw_fish_probability_pixels": 7829,
+      "probability_on_fish_max": 0.9873046875,
+      "fish_overlap_pixels": 714,
+      "detections": [
+        {
+          "prob": 0.6999663096905763,
+          "area_eq": 946.0,
+          "cx": 0.011107624207188138,
+          "cy": -0.90625
+        },
+        {
+          "prob": 0.7736639344708857,
+          "area_eq": 2868.0,
+          "cx": -0.012510078887726594,
+          "cy": -0.2613973152022315
+        },
+        {
+          "prob": 0.5439601089015151,
+          "area_eq": 165.0,
+          "cx": -0.3346827651515152,
+          "cy": 0.24957912457912457
+        },
+        {
+          "prob": 0.7787863492846667,
+          "area_eq": 4006.0,
+          "cx": -0.0466760796305542,
+          "cy": 0.586800355023021
+        },
+        {
+          "prob": 0.634130859375,
+          "area_eq": 170.0,
+          "cx": -0.5462316176470587,
+          "cy": 0.37912581699346404
+        }
+      ]
+    },
+    {
+      "scenario": "fish_vertical",
+      "pose": {
+        "x": 2,
+        "y": 0,
+        "depth": -2.5,
+        "yaw": 0.0,
+        "pitch": -0.5235987755982988
+      },
+      "t": 4,
+      "fish_resize_short": 288,
+      "fish_visible_pixels": 30763,
+      "raw_fish_probability_pixels": 3296,
+      "probability_on_fish_max": 0.974609375,
+      "fish_overlap_pixels": 2946,
+      "detections": [
+        {
+          "prob": 0.8323309385265387,
+          "area_eq": 2892.0,
+          "cx": 0.19060527965076068,
+          "cy": -0.468994928538497
+        },
+        {
+          "prob": 0.6117477416992188,
+          "area_eq": 64.0,
+          "cx": 0.1756591796875,
+          "cy": 0.3225911458333333
+        },
+        {
+          "prob": 0.6752724404091591,
+          "area_eq": 333.0,
+          "cx": 0.04288663663663672,
+          "cy": 0.5083208208208208
+        }
+      ]
+    },
+    {
+      "scenario": "fish_vertical",
+      "pose": {
+        "x": 2,
+        "y": 0,
+        "depth": -2.5,
+        "yaw": 0.0,
+        "pitch": -0.5235987755982988
+      },
+      "t": 4,
+      "fish_resize_short": 384,
+      "fish_visible_pixels": 30763,
+      "raw_fish_probability_pixels": 2660,
+      "probability_on_fish_max": 0.97021484375,
+      "fish_overlap_pixels": 2413,
+      "detections": [
+        {
+          "prob": 0.7153963273571383,
+          "area_eq": 2480.0,
+          "cx": 0.1816910282258064,
+          "cy": -0.48747199820788534
+        },
+        {
+          "prob": 0.7033770161290323,
+          "area_eq": 62.0,
+          "cx": 0.22442036290322576,
+          "cy": 0.14068100358422933
+        },
+        {
+          "prob": 0.5343733162715517,
+          "area_eq": 87.0,
+          "cx": 0.18265086206896552,
+          "cy": 0.3701309067688378
+        },
+        {
+          "prob": 0.7063832720588236,
+          "area_eq": 425.0,
+          "cx": 0.036056985294117716,
+          "cy": 0.48815359477124176
+        }
+      ]
+    }
+  ]
+}

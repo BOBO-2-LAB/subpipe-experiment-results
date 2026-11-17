@@ -1,0 +1,32 @@
+{
+  "status": "completed_with_task_failures",
+  "active_objective": "Plain and attention wavelet runtime integration and directed comparison",
+  "research_entry": "tools.wavelet_inspection",
+  "research_entry_default": "attention",
+  "operational_legacy_defaults_preserved": true,
+  "model_replacement_accepted": false,
+  "passed_tasks": {
+    "attention": 4,
+    "plain": 4
+  },
+  "tested_tasks_per_model": 6,
+  "regression_tests_passed": 135,
+  "original_weights_unchanged": 123,
+  "active_workers": [],
+  "paused_processes": [],
+  "pending_this_delivery": [],
+  "comparison_report": "mono/runs_review/wavelet_adoption_20261023_comparison.md",
+  "attention_suite": "mono/runs_review/wavelet_adoption_20261023_attention_resume",
+  "plain_suite": "mono/runs_review/wavelet_adoption_20261023_plain_compiled",
+  "static_water_ablation_adopted": false,
+  "source_scores_modified": false,
+  "scoring_thresholds_changed": false,
+  "new_training": false,
+  "limitations": [
+    "Both models fail fish up observation gate",
+    "Attention fish down contact without intervention",
+    "Plain fish down avoids 3D fish but fails endpoint hold; original XY contact remains failure",
+    "Directed scenes only; not full mission, generalization or realtime validation"
+  ],
+  "verified_main_video_files": 24
+}

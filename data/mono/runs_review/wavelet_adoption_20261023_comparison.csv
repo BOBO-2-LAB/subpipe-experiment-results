@@ -1,0 +1,13 @@
+model,scenario,task_pass,goal,valid_fraction,contact_3d,legacy_xy_contact,minimum_clearance_3d_m,terminal_goal_error_m,goal_held_stably_s,required_goal_stability_hold_s,intervention_frames,stop_reason,failures,result
+attention,clear_pipe,True,True,0.9648033126293996,,False,,,,,,,,mono/runs_review/wavelet_adoption_20261023_attention/straight/clear_pipe_avoidance/result.json
+attention,head_on,True,True,0.9869888475836431,False,False,,,,,,,,mono/runs_review/wavelet_adoption_20261023_attention/straight/head_on_avoidance/result.json
+attention,clear_up,True,True,1.0,False,False,,0.19735262952900776,0.0,0.0,0,goal_reached,,mono/runs_review/wavelet_adoption_20261023_attention/up/clear_up_avoidance/result.json
+attention,fish_vertical,False,True,0.7157894736842105,False,False,0.0917765059919371,0.19298900999277252,0.0,0.0,0,goal_reached,inspection_valid_fraction,mono/runs_review/wavelet_adoption_20261023_attention/up/fish_vertical_avoidance/result.json
+attention,clear_down,True,True,1.0,False,False,,0.06044520437180638,1.0,1.0,0,goal_reached,,mono/runs_review/wavelet_adoption_20261023_attention/down/clear_down_avoidance/result.json
+attention,fish_down_vertical,False,False,0.9595588235294118,True,True,-0.0018953936569420238,1.7651662468805485,0.0,1.0,0,fish_contact_3d,goal_reached;fish_contact_3d;goal_stability_hold,mono/runs_review/wavelet_adoption_20261023_attention_resume/down/fish_down_vertical_avoidance/fish_down_vertical_avoidance/result.json
+plain,clear_pipe,True,True,0.9648033126293996,,False,,,,,,,,mono/runs_review/wavelet_adoption_20261023_plain/straight/clear_pipe_avoidance/result.json
+plain,head_on,True,True,0.987012987012987,False,False,,,,,,,,mono/runs_review/wavelet_adoption_20261023_plain/straight/head_on_avoidance/result.json
+plain,clear_up,True,True,1.0,False,False,,0.19735262952900776,0.0,0.0,0,goal_reached,,mono/runs_review/wavelet_adoption_20261023_plain/up/clear_up_avoidance/result.json
+plain,fish_vertical,False,True,0.7157894736842105,False,False,0.0917765059919371,0.19981807823964728,0.0,0.0,0,goal_reached,inspection_valid_fraction,mono/runs_review/wavelet_adoption_20261023_plain/up/fish_vertical_avoidance/result.json
+plain,clear_down,True,True,1.0,False,False,,0.06044520437180638,1.0,1.0,0,goal_reached,,mono/runs_review/wavelet_adoption_20261023_plain_resume/down/clear_down_avoidance/clear_down_avoidance/result.json
+plain,fish_down_vertical,False,False,1.0,False,True,0.3475890623247859,0.6500369793315458,0.0,1.0,374,timeout,goal_reached;goal_stability_hold,mono/runs_review/wavelet_adoption_20261023_plain_down_fish_parallel/fish_down_vertical_avoidance/result.json

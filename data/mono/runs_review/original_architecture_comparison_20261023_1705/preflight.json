@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "guards": [
+    {
+      "shape": [
+        1,
+        3,
+        288,
+        512
+      ],
+      "pipe_bitwise_equal": true,
+      "fish_bitwise_equal": true
+    },
+    {
+      "shape": [
+        1,
+        3,
+        512,
+        288
+      ],
+      "pipe_bitwise_equal": true,
+      "fish_bitwise_equal": true
+    },
+    {
+      "shape": [
+        1,
+        3,
+        384,
+        683
+      ],
+      "pipe_bitwise_equal": true,
+      "fish_bitwise_equal": true
+    }
+  ],
+  "metadata": {
+    "profile_path": "mono/runs_review/original_architecture_comparison_20261023_1705/perception_M4.json",
+    "profile_sha256": "f61bd06716ffc4e32716a86a612aa76a3e600cf28f98b13fa905a1cb0f76178e",
+    "profile": {
+      "schema_version": 1,
+      "name": "M4_original_suim_independent",
+      "composition": "independent_pipe_biology",
+      "pipe_architecture": "M4",
+      "pipe_checkpoint": "mono/runs_ablation/M4/best.pt",
+      "fish_checkpoint": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "pipe_sha256": "9f5956a788d7cb969f7216f9702fdf3991ee2730b3b032af0323a936b987b365",
+      "fish_sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2",
+      "fish_wavelet": "none",
+      "fish_wavelet_stage": "s8",
+      "includes_deepcamo": false
+    },
+    "checkpoints": [
+      {
+        "path": "mono/runs_ablation/M4/best.pt",
+        "sha256": "9f5956a788d7cb969f7216f9702fdf3991ee2730b3b032af0323a936b987b365"
+      },
+      {
+        "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+        "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+      }
+    ],
+    "model_config": {
+      "composition": "independent_pipe_biology",
+      "pipe_architecture": "M4",
+      "pipe_config": {
+        "num_classes": 2,
+        "in_ch": 3,
+        "pretrained": false,
+        "out_ch": [
+          64,
+          128,
+          256
+        ],
+        "wavelet": "attention",
+        "wavelet_plain_extra_blocks": 0,
+        "fusion": "concat",
+        "global_mode": "swin",
+        "global_blocks": 1,
+        "global_stage": "s16",
+        "global_heads": 8,
+        "global_win": 7,
+        "decoder_mid": 128,
+        "decoder_skip": true,
+        "decoder_dw": false
+      },
+      "separate_encoder": true,
+      "num_fish_classes": 8,
+      "fish_mid": 64,
+      "fish_wavelet": "none",
+      "fish_wavelet_stage": "s8"
+    },
+    "pipe_exactly_matches_reference": true,
+    "biological_bundle_pipe_used": false,
+    "loader": "tools.original_architecture_comparison",
+    "composition": "Original full M4 pipeline with original independent SUIM biology",
+    "pipe_epoch": 25
+  }
+}

@@ -1,0 +1,9 @@
+stage,tracker,scenario,mode,passed,goal,valid_fraction,all_frame_valid_fraction,collision,reverse_attempts,passed_known_segments,verified_passed_segments,unverified_passed_segments,unknown_motion_m,recovery_failure,failed_checks
+core,fullframe,clear_pipe,tracker_only,False,False,0.24705882352941178,0.015555555555555555,False,1,0,0,0,0.0,,goal_reached;inspection_valid_fraction;recovered
+core,fullframe,brief_occlusion,tracker_only,False,False,0.24705882352941178,0.015555555555555555,False,1,0,0,0,0.0,,goal_reached;inspection_valid_fraction;recovered
+core,fullframe,perception_loss,tracker_only,False,False,0.24175824175824176,0.030013642564802184,False,1,0,0,0,0.0,repeated_loss_in_pending_gap,goal_reached;inspection_valid_fraction;recovered
+core,fullframe,pipe_jitter,tracker_only,False,False,0.525,0.065625,False,1,0,0,0,0.0,reinspection_reverse_limit,goal_reached;inspection_valid_fraction;recovered
+core,segmented,clear_pipe,tracker_only,False,False,0.1937984496124031,0.020080321285140562,False,0,7,7,0,0.40142225052537356,perception_loss_timeout,goal_reached;inspection_valid_fraction;recovered
+core,segmented,brief_occlusion,tracker_only,False,False,0.14388489208633093,0.014814814814814815,False,0,4,4,0,0.40142225052537356,,goal_reached;inspection_valid_fraction;recovered
+core,segmented,perception_loss,tracker_only,False,False,0.11235955056179775,0.015555555555555555,False,0,11,11,0,0.40142225052537356,,goal_reached;inspection_valid_fraction;recovered
+core,segmented,pipe_jitter,tracker_only,False,False,0.2777777777777778,0.021538461538461538,False,0,3,3,0,0.40142225052537356,perception_loss_timeout,goal_reached;inspection_valid_fraction;recovered

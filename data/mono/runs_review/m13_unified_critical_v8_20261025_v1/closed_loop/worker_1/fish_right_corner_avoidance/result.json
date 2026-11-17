@@ -1,0 +1,80 @@
+{
+  "scenario": "fish_right_corner",
+  "mode": "avoidance",
+  "task_completed": true,
+  "goal_reached": true,
+  "inspection_recovered": true,
+  "stop_reason": "goal_reached",
+  "inspection_valid_fraction": 1.0,
+  "valid_frames": 226,
+  "inspection_frames": 226,
+  "all_frame_valid_fraction": 0.9576271186440678,
+  "contact_3d": false,
+  "contact_xy": false,
+  "primary_contact_rule": "XY",
+  "elapsed_s": 23.8,
+  "maximum_cross_track_m": 0.8872495771847946,
+  "observed_elbows": [
+    {
+      "t": 1.2000000000000002,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "gain": 0.2577951275343362
+    }
+  ],
+  "intervention_frames": 151,
+  "prediction_valid_frames": 0,
+  "frames_logged": 236,
+  "video_frames_written": 236,
+  "fps": 10,
+  "configuration_sha256": "e884c5f0da25b3a3ad36059bafa3084092f34d78add5259a055f77bd749dff44",
+  "terminal_pipe_observed": true,
+  "pipe_arc_observation_fraction": 0.9444444444444444,
+  "schema_version": 2,
+  "route_completed": true,
+  "collision": false,
+  "simplified_3d_contact": false,
+  "active_inspection_valid_fraction": 1.0,
+  "synthetic_inspection_valid_fraction": 0.9576271186440678,
+  "maximum_abs_cross_track_m": 0.8872495771847946,
+  "elapsed_sim_s": 23.8,
+  "events": {
+    "fish_first_visible": {
+      "simulation_t": 0.4,
+      "source_t": 0.1
+    },
+    "fish_first_detection": {
+      "simulation_t": 0.9,
+      "source_t": 0.6000000000000001
+    },
+    "fish_first_effective_detection": {
+      "simulation_t": 0.9,
+      "source_t": 0.6000000000000001
+    },
+    "fish_first_confirmed": {
+      "simulation_t": 1.1,
+      "source_t": 0.8
+    },
+    "first_intervention": {
+      "simulation_t": 1.1,
+      "source_t": 0.8
+    },
+    "tracking_recovered_after_avoidance": {
+      "simulation_t": 1.2000000000000002,
+      "source_t": 0.9
+    }
+  },
+  "minimum_clearance_3d_m": 0.19718525653925845,
+  "minimum_clearance_xy_m": 0.05791745993601993,
+  "reverse_attempts": 0,
+  "waiting_frames": 4
+}

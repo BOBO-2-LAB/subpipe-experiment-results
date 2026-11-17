@@ -1,0 +1,23 @@
+{
+  "pid": 11240,
+  "command": [
+    "[公开副本已隐去本地信息]",
+    "-B",
+    "-m",
+    "tools.spatial_fish_loop",
+    "--config",
+    "configs/inspection_spatial_fish_down_candidate_v9.json",
+    "--scenarios",
+    "clear_down",
+    "--perception-profile",
+    "mono/configs/perception_wavelet_plain.json",
+    "--out",
+    "mono/runs_review/wavelet_adoption_20261023_plain_resume/down/clear_down_avoidance",
+    "--max-seconds",
+    "45",
+    "--modes",
+    "avoidance"
+  ],
+  "working_directory": "mono",
+  "controller_inputs_and_gates_not_changed": true
+}

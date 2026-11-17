@@ -1,0 +1,97 @@
+{
+  "scenario": "fish_up",
+  "mode": "avoidance",
+  "task_completed": false,
+  "goal_reached": false,
+  "inspection_recovered": false,
+  "stop_reason": "unresolved_observed_endpoint",
+  "inspection_valid_fraction": 1.0,
+  "valid_frames": 457,
+  "inspection_frames": 457,
+  "all_frame_valid_fraction": 0.9934782608695653,
+  "contact_3d": false,
+  "contact_xy": true,
+  "primary_contact_rule": "3D",
+  "elapsed_s": 15.533333333333333,
+  "maximum_cross_track_m": 0.9064786283820113,
+  "observed_elbows": [
+    {
+      "t": 0.9,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "gain": 0.25506759139391644
+    },
+    {
+      "t": 7.2,
+      "event": "observed_endpoint_confirmed",
+      "length_m": 4.00150364302104,
+      "position_xyz": [
+        4.0,
+        0.0,
+        -4.00150364302104
+      ]
+    }
+  ],
+  "intervention_frames": 384,
+  "prediction_valid_frames": 0,
+  "frames_logged": 460,
+  "video_frames_written": 460,
+  "fps": 30,
+  "configuration_sha256": "2102da242be56b436dc73bfba8b1f5839af9b43029bfbebb2b54a1d8ef8153a3",
+  "terminal_pipe_observed": true,
+  "pipe_arc_observation_fraction": 0.9375,
+  "schema_version": 2,
+  "route_completed": false,
+  "collision": false,
+  "simplified_3d_contact": false,
+  "active_inspection_valid_fraction": 1.0,
+  "synthetic_inspection_valid_fraction": 0.9934782608695653,
+  "maximum_abs_cross_track_m": 0.9064786283820113,
+  "elapsed_sim_s": 15.533333333333333,
+  "events": {
+    "fish_first_visible": {
+      "simulation_t": 1.7333333333333334,
+      "source_t": 1.5
+    },
+    "fish_first_detection": {
+      "simulation_t": 2.033333333333333,
+      "source_t": 1.8
+    },
+    "fish_first_effective_detection": {
+      "simulation_t": 2.033333333333333,
+      "source_t": 1.8
+    },
+    "fish_first_confirmed": {
+      "simulation_t": 2.7666666666666666,
+      "source_t": 2.533333333333333
+    },
+    "first_intervention": {
+      "simulation_t": 2.7666666666666666,
+      "source_t": 2.533333333333333
+    },
+    "first_avoidance_offset": {
+      "simulation_t": 2.7666666666666666,
+      "source_t": 2.533333333333333
+    },
+    "first_contact_xy": {
+      "simulation_t": 4.533333333333333,
+      "source_t": 4.3
+    }
+  },
+  "minimum_clearance_3d_m": 0.21512545208595168,
+  "minimum_clearance_xy_m": -0.005000434936223708,
+  "reverse_attempts": 0,
+  "waiting_frames": 3,
+  "reverse_recovery_frames": 0,
+  "synthetic_pipe_arc_bin_total": 32,
+  "episode_budget_s": 45.0
+}

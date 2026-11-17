@@ -1,0 +1,8 @@
+scenario,mode,task_completed,inspection_valid_fraction,goal_reached,inspection_recovered,contact_xy,contact_3d,primary_contact_rule,maximum_cross_track_m,pipe_arc_observation_fraction,terminal_pipe_observed,intervention_frames,elapsed_s,stop_reason
+mixed_clear,avoidance,False,0.9615384615384616,False,False,False,False,3D,0.1977673506334628,0.9827586206896551,False,0,64.96666666666667,perception_loss_timeout
+mixed_fish,avoidance,True,0.9397183098591549,True,True,True,False,3D,0.9550524300887165,1.0,True,994,62.266666666666666,goal_reached
+clear_straight,avoidance,True,0.9862068965517241,True,True,False,False,XY,2.6645352591003757e-15,0.9444444444444444,True,0,19.633333333333333,goal_reached
+fish_up,avoidance,True,0.9375,True,True,True,False,3D,0.9359241090203191,0.9375,True,194,10.566666666666666,goal_reached
+fish_down,avoidance,True,0.9298469387755102,True,True,True,False,3D,0.9373754632179552,1.0,True,399,27.53333333333333,goal_reached
+fish_left_corner,avoidance,True,1.0,True,True,False,False,XY,0.9370127282969721,0.9444444444444444,True,247,16.0,goal_reached
+fish_right_corner,avoidance,True,1.0,True,True,False,False,XY,0.944310716041989,0.9444444444444444,True,307,16.0,goal_reached

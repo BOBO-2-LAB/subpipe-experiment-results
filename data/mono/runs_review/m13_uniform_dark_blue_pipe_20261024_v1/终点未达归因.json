@@ -1,0 +1,107 @@
+{
+  "scope": "Read-only decomposition of completed 45-second episode; no controller changes or extra acceptance run.",
+  "phase_breakdown": {
+    "debounce_hold": {
+      "frames": 552,
+      "duration_s": 18.4,
+      "net_forward_m": 2.793596783005972,
+      "trusted_frames": 257,
+      "mean_actual_surge_mps": 0.15717255855144766,
+      "speed_commands": "DP override"
+    },
+    "initialization_wait": {
+      "frames": 26,
+      "duration_s": 0.8666666666666667,
+      "net_forward_m": 0.3076951575673065,
+      "trusted_frames": 11,
+      "mean_actual_surge_mps": 0.3550328895342887,
+      "speed_commands": "DP override"
+    },
+    "inspection": {
+      "frames": 482,
+      "duration_s": 16.066666666666666,
+      "net_forward_m": 2.7660568469471616,
+      "trusted_frames": 482,
+      "mean_actual_surge_mps": 0.1783019756280314,
+      "speed_commands": {
+        "-0.205": 1,
+        "0.5": 438,
+        "-0.116": 2,
+        "-0.046": 3,
+        "-0.042": 5,
+        "-0.184": 1,
+        "-0.018": 2,
+        "-0.028": 3,
+        "-0.04": 3,
+        "-0.095": 2,
+        "-0.011": 1,
+        "-0.032": 3,
+        "-0.039": 3,
+        "-0.027": 4,
+        "-0.059": 3,
+        "-0.169": 1,
+        "-0.065": 2,
+        "-0.02": 1,
+        "-0.109": 1,
+        "-0.076": 2,
+        "-0.031": 1
+      }
+    },
+    "waiting": {
+      "frames": 290,
+      "duration_s": 9.666666666666666,
+      "net_forward_m": 0.8572594359291181,
+      "trusted_frames": 169,
+      "mean_actual_surge_mps": 0.08943550221157189,
+      "speed_commands": "DP override"
+    }
+  },
+  "health_reasons": {
+    "no_pipe": 7,
+    "no_fresh_near_segments": 424,
+    "near_segments_stable": 919
+  },
+  "geometry_reasons": {
+    "missing_probability_input": 7,
+    "ambiguous_near_prefix": 758,
+    "pruned_skeleton": 564,
+    "no_near_skeleton": 15,
+    "no_near_component": 2,
+    "ambiguous_branch": 4
+  },
+  "temporal_reasons": {
+    "null": 7,
+    "confirming_reacquisition": 152,
+    "current_curve_accepted": 919,
+    "confirming_turn_or_outlier": 251,
+    "missing_measurement": 21
+  },
+  "recovery_event_counts": {
+    "initialization_wait_started": 1,
+    "initialization_confirmed": 1,
+    "loss_debounce_started": 43,
+    "sustained_loss_confirmed": 24,
+    "stationary_loss_resumed": 24,
+    "brief_loss_resumed": 18
+  },
+  "trusted_but_waiting_frames": 437,
+  "trusted_bursts": 98,
+  "trusted_burst_median_s": 0.16666666666666666,
+  "trusted_bursts_shorter_than_0_2_s": 51,
+  "progress_m": 6.724608223449558,
+  "goal_m": 8.0,
+  "remaining_m": 1.2753917765504417,
+  "inspection_valid_frames": 445,
+  "inspection_frames": 482,
+  "all_frame_valid_fraction": 0.6118518518518519,
+  "explicit_reinspection_attempts": 0,
+  "speed_saturation_frames": 0,
+  "no_fish": true,
+  "final_phase": "debounce_hold",
+  "final_temporal_reason": "confirming_reacquisition",
+  "current_raw_path_candidates": 1322,
+  "accepted_current_paths": 919,
+  "candidate_not_yet_accepted": 403,
+  "inspection_frames_retaining_negative_held_command": 44,
+  "mean_forward_progress_mps": 0.14943573829887907
+}

@@ -1,0 +1,46 @@
+stage,mode,condition,epoch,fish_iou,iou_definition,bio_iou,fish_recall,negative_candidates,negative_samples,scope
+resolution,none,288,,0.599682324823925,8-class argmax,0.48525361157964064,0.7187915281023409,5,50,147 native paired validation images
+resolution,none,384,,0.6171569090248652,8-class argmax,0.49306784371867757,0.7821882879406827,8,50,147 native paired validation images
+resolution,none,512,,0.5643330514752227,8-class argmax,0.4610459983630333,0.8080589806161205,18,50,147 native paired validation images
+resolution,plain,288,,0.6008137582866186,8-class argmax,0.4831927325382655,0.7220323995885026,6,50,147 native paired validation images
+resolution,plain,384,,0.6184608366246278,8-class argmax,0.49162282904737076,0.7849713204168313,6,50,147 native paired validation images
+resolution,plain,512,,0.5648905002121138,8-class argmax,0.45124274920195684,0.8061105029688553,20,50,147 native paired validation images
+resolution,attention,288,,0.5936941161919388,8-class argmax,0.47991461530630697,0.7009104557145964,5,50,147 native paired validation images
+resolution,attention,384,,0.6246553889955546,8-class argmax,0.4976804482520775,0.775788175179447,8,50,147 native paired validation images
+resolution,attention,512,,0.5814505204775429,8-class argmax,0.47045072669809995,0.8113348364784626,16,50,147 native paired validation images
+hard,none,control_retained,0,0.6171569090248652,8-class argmax,0.49306784371867757,0.7821882879406827,8,50,147 native paired validation images; epoch0 means fallback
+hard,none,control_actual_candidate,4,0.613332677960557,8-class argmax,0.5099403905755552,0.7528673245419455,8,50,147 native paired validation images; may fail retention
+hard,none,candidate_retained,0,0.6171569090248652,8-class argmax,0.49306784371867757,0.7821882879406827,8,50,147 native paired validation images; epoch0 means fallback
+hard,none,candidate_actual_candidate,1,0.6134558059316751,8-class argmax,0.508176993281029,0.7715038566472089,8,50,147 native paired validation images; may fail retention
+hard,plain,control_retained,0,0.6184608366246278,8-class argmax,0.49162282904737076,0.7849713204168313,6,50,147 native paired validation images; epoch0 means fallback
+hard,plain,control_actual_candidate,1,0.6176388543064724,8-class argmax,0.5078225071334758,0.7734761642318724,9,50,147 native paired validation images; may fail retention
+hard,plain,candidate_retained,0,0.6184608366246278,8-class argmax,0.49162282904737076,0.7849713204168313,6,50,147 native paired validation images; epoch0 means fallback
+hard,plain,candidate_actual_candidate,1,0.6176225804869289,8-class argmax,0.5072745288109294,0.7724606032827513,9,50,147 native paired validation images; may fail retention
+hard,attention,control_retained,0,0.6246553889955546,8-class argmax,0.4976804482520775,0.775788175179447,8,50,147 native paired validation images; epoch0 means fallback
+hard,attention,control_actual_candidate,1,0.6188013028636777,8-class argmax,0.5122146608764143,0.7824448400326723,9,50,147 native paired validation images; may fail retention
+hard,attention,candidate_retained,0,0.6246553889955546,8-class argmax,0.4976804482520775,0.775788175179447,8,50,147 native paired validation images; epoch0 means fallback
+hard,attention,candidate_actual_candidate,1,0.6189439788312469,8-class argmax,0.5117902623503753,0.781786728144525,9,50,147 native paired validation images; may fail retention
+fusion,none,control_retained,0,0.6171569090248652,8-class argmax,0.49306784371867757,0.7821882879406827,8,50,147 native paired validation images; epoch0 means fallback
+fusion,none,control_actual_candidate,1,0.6133396708904953,8-class argmax,0.5080380555295494,0.7713593559629855,8,50,147 native paired validation images; may fail retention
+fusion,none,candidate_retained,0,0.6171569090248652,8-class argmax,0.49306784371867757,0.7821882879406827,8,50,147 native paired validation images; epoch0 means fallback
+fusion,none,candidate_actual_candidate,1,0.6134295526439076,8-class argmax,0.5081475645062996,0.7714272966355677,8,50,147 native paired validation images; may fail retention
+fusion,plain,control_retained,0,0.6184608366246278,8-class argmax,0.49162282904737076,0.7849713204168313,6,50,147 native paired validation images; epoch0 means fallback
+fusion,plain,control_actual_candidate,1,0.6175895419580943,8-class argmax,0.5071998763691029,0.7725883723088015,9,50,147 native paired validation images; may fail retention
+fusion,plain,candidate_retained,0,0.6184608366246278,8-class argmax,0.49162282904737076,0.7849713204168313,6,50,147 native paired validation images; epoch0 means fallback
+fusion,plain,candidate_actual_candidate,1,0.6176453898409507,8-class argmax,0.5072441633876533,0.7726122022461998,9,50,147 native paired validation images; may fail retention
+fusion,attention,control_retained,0,0.6246553889955546,8-class argmax,0.4976804482520775,0.775788175179447,8,50,147 native paired validation images; epoch0 means fallback
+fusion,attention,control_actual_candidate,1,0.6189908520909421,8-class argmax,0.5118470680181386,0.7818992865722358,9,50,147 native paired validation images; may fail retention
+fusion,attention,candidate_retained,0,0.6246553889955546,8-class argmax,0.4976804482520775,0.775788175179447,8,50,147 native paired validation images; epoch0 means fallback
+fusion,attention,candidate_actual_candidate,1,0.6189847069756985,8-class argmax,0.5117830353251651,0.7817710105262411,9,50,147 native paired validation images; may fail retention
+temporal,none,single,,0.5785034460377696,binary FV probability >0.5,,0.624546975942186,1,54,"12 synthetic sequences, not real-video accuracy"
+temporal,none,temporal,,0.577998286362689,binary FV probability >0.5,,0.6231372441324282,1,54,"12 synthetic sequences, not real-video accuracy"
+temporal,plain,single,,0.5836630142423698,binary FV probability >0.5,,0.6289767294388452,2,54,"12 synthetic sequences, not real-video accuracy"
+temporal,plain,temporal,,0.5834376408538089,binary FV probability >0.5,,0.62801138770371,1,54,"12 synthetic sequences, not real-video accuracy"
+temporal,attention,single,,0.6709306731141048,binary FV probability >0.5,,0.7147315309737385,7,54,"12 synthetic sequences, not real-video accuracy"
+temporal,attention,temporal,,0.6719212500860466,binary FV probability >0.5,,0.7148255685737991,7,54,"12 synthetic sequences, not real-video accuracy"
+original_cache,none,baseline,,0.6047289337950045,8-class argmax,0.48571580788102037,0.778088127115271,9,52,153 historical cached validation crops
+original_cache,none,current,,0.6047289337950045,8-class argmax,0.48571580788102037,0.778088127115271,9,52,153 historical cached validation crops
+original_cache,plain,baseline,,0.6084370282730203,8-class argmax,0.4855485846978757,0.7820139102867905,8,52,153 historical cached validation crops
+original_cache,plain,current,,0.6084370282730203,8-class argmax,0.4855485846978757,0.7820139102867905,8,52,153 historical cached validation crops
+original_cache,attention,baseline,,0.6121800297760782,8-class argmax,0.48835504663189994,0.7729293254155133,9,52,153 historical cached validation crops
+original_cache,attention,current,,0.6121800297760782,8-class argmax,0.48835504663189994,0.7729293254155133,9,52,153 historical cached validation crops

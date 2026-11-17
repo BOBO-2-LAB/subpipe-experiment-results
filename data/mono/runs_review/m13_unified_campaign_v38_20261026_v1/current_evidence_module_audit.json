@@ -1,0 +1,114 @@
+{
+  "scope": "Static checks of the frozen current-evidence helper modules, not a formal taint proof.",
+  "passed": true,
+  "checks": {
+    "current_observation_branches.py": {
+      "forbidden_names": [],
+      "no_renderer_import": true,
+      "sha256": "5c3e900aa0c8d6ec469c773d64bb5397b8a288aa32f376cf0152d5a4858f0467",
+      "function_parameters": {
+        "propose": [
+          "camera",
+          "image",
+          "probability",
+          "base",
+          "axis",
+          "pose",
+          "endpoint",
+          "tail_start",
+          "excluded",
+          "geometry_verified",
+          "verified_arc_max",
+          "points",
+          "radius",
+          "minimum_gain",
+          "minimum_near_points",
+          "root_window"
+        ]
+      }
+    },
+    "current_silhouette_branches.py": {
+      "forbidden_names": [],
+      "no_renderer_import": true,
+      "sha256": "08554e0877ef4db99ef066da5ca559db6d92d2d26da7d76319e2850ff8d7e006",
+      "function_parameters": {
+        "propose": [
+          "camera",
+          "image",
+          "base",
+          "axis",
+          "pose",
+          "tail_start",
+          "endpoint",
+          "excluded",
+          "radius",
+          "root_window",
+          "root_step",
+          "axes"
+        ]
+      }
+    },
+    "current_surface_seeds.py": {
+      "forbidden_names": [],
+      "no_renderer_import": true,
+      "sha256": "b3307fb2fff17c889d1541bc00872aada00771d5c08a9845c38f029705e69849",
+      "function_parameters": {
+        "measured_surface_seeds": [
+          "camera",
+          "pose",
+          "axis",
+          "points",
+          "geometry",
+          "excluded",
+          "baseline",
+          "radius",
+          "radial_tolerance",
+          "depth_tolerance",
+          "minimum_points",
+          "minimum_missing_pixels",
+          "pixel_radius"
+        ]
+      }
+    },
+    "current_pipe_rgb.py": {
+      "forbidden_names": [],
+      "no_renderer_import": true,
+      "sha256": "ab5152c9f1ccef6eb25614af75249392b6e2481bb1f07aff2cd7d68918fe2813",
+      "function_parameters": {
+        "_cut": [
+          "image",
+          "gc",
+          "iterations"
+        ],
+        "refine_current_pipe": [
+          "image",
+          "probability",
+          "surface",
+          "excluded",
+          "iterations",
+          "minimum_seeds",
+          "preserve_measured_surface",
+          "measured_foreground"
+        ]
+      }
+    },
+    "monocular_landmarks.py": {
+      "forbidden_names": [],
+      "no_renderer_import": true,
+      "sha256": "f05692e4db8dc037b05c5ca9d4945cdae0f85faf8b512234e9e24417bfa28fff",
+      "function_parameters": {
+        "projection": [
+          "camera",
+          "pose"
+        ],
+        "triangulate": [
+          "camera",
+          "first_pose",
+          "last_pose",
+          "first_pixels",
+          "last_pixels"
+        ]
+      }
+    }
+  }
+}

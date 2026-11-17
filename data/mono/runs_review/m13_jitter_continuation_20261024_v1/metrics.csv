@@ -1,0 +1,6 @@
+group,scenario,scope,task_pass,goal,progress_m,elapsed_s,valid_fraction,active_frames,valid_active_frames,all_frame_valid_fraction,pipe_iou,contact_2d,recovered,jitter_control_frames,mild_return_resumes,inspection_seconds,waiting_seconds,failed_checks
+baseline,clear_pipe,45s full entry,False,False,6.724608223449558,45.0,0.9232365145228216,482,445,0.6118518518518519,0.5593812445161092,False,False,0,0,16.066666666666666,28.933333333333334,goal_reached;recovered
+blackout_probes,brief_occlusion,12s behavior probe,False,False,2.6363961774004063,12.0,0.85,160,136,0.5472222222222223,0.34830547160199776,False,True,0,6,5.333333333333333,6.666666666666667,goal_reached;inspection_valid_fraction
+blackout_probes,perception_loss,12s behavior probe,False,False,1.794047315406107,12.0,0.7033898305084746,118,83,0.28888888888888886,0.12427988382022942,False,True,0,4,3.933333333333333,8.066666666666666,goal_reached;inspection_valid_fraction
+blackout_probes,pipe_jitter,12s behavior probe,False,False,2.6997713026234114,12.0,0.7357142857142858,140,103,0.5,0.4921444679747729,False,False,0,7,4.666666666666667,7.333333333333333,goal_reached;inspection_valid_fraction;recovered
+jitter,clear_pipe,45s full entry,False,False,5.990727205274055,45.0,0.8801742919389978,459,404,0.6325925925925926,0.5701901212302647,False,False,1,8,15.3,29.7,goal_reached;inspection_valid_fraction;recovered

@@ -1,0 +1,162 @@
+{
+  "overall_pass": true,
+  "episodes": [
+    {
+      "scenario": "vertical_up_90",
+      "numerical_pass": true,
+      "reported_pass": true,
+      "coverage_recomputed": 1.0,
+      "coverage_matches": true,
+      "wait_max_drift_m": 0.0,
+      "recovery_pass": true,
+      "all_heave_within_limit": true
+    },
+    {
+      "scenario": "vertical_down_90",
+      "numerical_pass": true,
+      "reported_pass": true,
+      "coverage_recomputed": 1.0,
+      "coverage_matches": true,
+      "wait_max_drift_m": 0.0,
+      "recovery_pass": true,
+      "all_heave_within_limit": true
+    },
+    {
+      "scenario": "vertical_up_1s_loss",
+      "numerical_pass": true,
+      "reported_pass": true,
+      "coverage_recomputed": 0.98635477582846,
+      "coverage_matches": true,
+      "wait_max_drift_m": 0.38213722108940723,
+      "recovery_pass": true,
+      "all_heave_within_limit": true
+    },
+    {
+      "scenario": "vertical_down_4s_loss",
+      "numerical_pass": true,
+      "reported_pass": true,
+      "coverage_recomputed": 0.9859154929577465,
+      "coverage_matches": true,
+      "wait_max_drift_m": 0.3828642221021626,
+      "recovery_pass": true,
+      "all_heave_within_limit": true
+    },
+    {
+      "scenario": "vertical_up_12s_loss",
+      "numerical_pass": true,
+      "reported_pass": true,
+      "coverage_recomputed": 0.9861660079051383,
+      "coverage_matches": true,
+      "wait_max_drift_m": 0.38213722108940723,
+      "recovery_pass": true,
+      "all_heave_within_limit": true
+    }
+  ],
+  "videos": [
+    {
+      "scenario": "vertical_up_90",
+      "decoded_frames": 453,
+      "expected_frames": 453,
+      "shape": [
+        378,
+        812,
+        3
+      ],
+      "valid": true
+    },
+    {
+      "scenario": "vertical_down_90",
+      "decoded_frames": 439,
+      "expected_frames": 439,
+      "shape": [
+        378,
+        812,
+        3
+      ],
+      "valid": true
+    },
+    {
+      "scenario": "vertical_up_1s_loss",
+      "decoded_frames": 659,
+      "expected_frames": 659,
+      "shape": [
+        378,
+        812,
+        3
+      ],
+      "valid": true
+    },
+    {
+      "scenario": "vertical_down_4s_loss",
+      "decoded_frames": 712,
+      "expected_frames": 712,
+      "shape": [
+        378,
+        812,
+        3
+      ],
+      "valid": true
+    },
+    {
+      "scenario": "vertical_up_12s_loss",
+      "decoded_frames": 881,
+      "expected_frames": 881,
+      "shape": [
+        378,
+        812,
+        3
+      ],
+      "valid": true
+    }
+  ],
+  "horizontal_regression": [
+    {
+      "scenario": "bend_left_90",
+      "task_completed": true,
+      "same_frame_count": true,
+      "maximum_control_pose_difference": 0.0,
+      "exact_reproduction": true,
+      "compared_fields": [
+        "x",
+        "y",
+        "yaw",
+        "speed",
+        "speed_command",
+        "yaw_rate_command",
+        "yaw_rate_actual",
+        "sway_command_mps",
+        "sway_actual_mps"
+      ]
+    },
+    {
+      "scenario": "bend_right_90",
+      "task_completed": true,
+      "same_frame_count": true,
+      "maximum_control_pose_difference": 0.0,
+      "exact_reproduction": true,
+      "compared_fields": [
+        "x",
+        "y",
+        "yaw",
+        "speed",
+        "speed_command",
+        "yaw_rate_command",
+        "yaw_rate_actual",
+        "sway_command_mps",
+        "sway_actual_mps"
+      ]
+    }
+  ],
+  "weights": [
+    {
+      "path": "mono/runs_ablation/M11/best.pt",
+      "unchanged": true
+    },
+    {
+      "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "unchanged": true
+    }
+  ],
+  "software_check_exit_code": 0,
+  "expected_failure_controls_retained": true
+}

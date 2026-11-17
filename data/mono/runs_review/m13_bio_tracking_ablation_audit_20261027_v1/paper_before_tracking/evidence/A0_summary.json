@@ -1,0 +1,67 @@
+{
+  "tag": "M11",
+  "config": "M11",
+  "arch": "pipeline",
+  "args": {
+    "config": "M11",
+    "arch": "pipeline",
+    "paper_variant": "P5",
+    "data_root": "[本地引用:81223d50bf43acf0]",
+    "size": [
+      288,
+      512
+    ],
+    "epochs": 60,
+    "batch": 8,
+    "lr": 0.0001,
+    "lr_min": 1e-06,
+    "weight_decay": 0.0001,
+    "workers": 0,
+    "cache_dir": "mono/cache/288x512",
+    "gpu_aug": true,
+    "amp": true,
+    "no_pretrained": false,
+    "eval_every": 5,
+    "dice_weight": 1.0,
+    "out": "mono/runs_review/m13_wavelet_dw_20261023_2059/training",
+    "tag": "M11",
+    "device": "cuda:0",
+    "seed": 42,
+    "norm": "imagenet",
+    "color_jitter": 0.1,
+    "photo_strength": 1.0,
+    "boundary_weight": 0.0,
+    "boundary_cw": 3.0,
+    "unlabeled_cache": null,
+    "unsup_weight": 1.0,
+    "unsup_conf": 0.95,
+    "unsup_ratio": 1.0
+  },
+  "params_M": {
+    "encoder": 0.336692,
+    "wavelet": 0.0,
+    "fusion": 0.0,
+    "global": 0.0,
+    "decoder": 0.13965,
+    "total": 0.476342
+  },
+  "val_metrics": {
+    "mIoU": 0.8029890305945313,
+    "IoU_pipe": 0.682673743644851,
+    "IoU_bg": 0.9233043175442117,
+    "Dice": 0.8114154585500416,
+    "Precision": 0.755885931114922,
+    "Recall": 0.8757505838232524,
+    "Dice_bg": 0.9601229603884435,
+    "F_boundary": 0.27935669224281706,
+    "n_frames": 129
+  },
+  "complexity": {
+    "Params_M": 0.476,
+    "input": "512x288",
+    "FLOPs_G": 2.49,
+    "latency_ms_median": 11.36,
+    "FPS": 88.0
+  },
+  "train_seconds": 536.4
+}

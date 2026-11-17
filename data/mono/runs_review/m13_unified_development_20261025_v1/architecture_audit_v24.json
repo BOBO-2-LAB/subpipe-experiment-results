@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "scope": "Static frozen architecture and fixed-input audit; not a formal taint proof.",
+  "snapshot": "mono/runs_review/m13_unified_critical_v24_20261026_v1/source_snapshot",
+  "checks": {
+    "one_common_tracker_constructor": true,
+    "constructor_inputs_only_camera_config": true,
+    "no_scene_truth_names_in_core": true,
+    "no_per_scene_config_assignment": true,
+    "command_has_no_external_route": true,
+    "M13_fixed_pipe_pin": true,
+    "original_fixed_biology_pin": true,
+    "biology_without_wavelet_or_DeepCamo": true
+  },
+  "constructor_args": [
+    [
+      "renderer.camera",
+      "cfg"
+    ]
+  ],
+  "common_core_sha256": "bce07bc2dc0d78bfcd90d9bd0a015be44ca7943ed915717b4af3d9f3c2f66c3f"
+}

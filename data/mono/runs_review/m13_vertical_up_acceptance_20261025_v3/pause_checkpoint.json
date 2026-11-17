@@ -1,0 +1,40 @@
+{
+  "status": {
+    "status": "paused_by_user",
+    "right_gate": "mono/runs_review/m13_s345_right_acceptance_20261025_v2",
+    "expected_episodes": 6,
+    "pids": [
+      11780,
+      24064
+    ],
+    "completed_episodes": 3,
+    "paused_at": "2026-10-25T11:03:55.769421",
+    "resume_at": "2026-10-25T12:45:00+08:00"
+  },
+  "completed": [
+    {
+      "scenario": "clear_up",
+      "mode": "avoidance",
+      "task_3d": true,
+      "valid": 1.0,
+      "result": "mono/runs_review/m13_vertical_up_acceptance_20261025_v3/closed_loop/worker_0/clear_up_avoidance/result.json"
+    },
+    {
+      "scenario": "clear_up",
+      "mode": "tracker_only",
+      "task_3d": true,
+      "valid": 1.0,
+      "result": "mono/runs_review/m13_vertical_up_acceptance_20261025_v3/closed_loop/worker_0/clear_up_tracker_only/result.json"
+    },
+    {
+      "scenario": "fish_bend",
+      "mode": "tracker_only",
+      "task_3d": false,
+      "valid": 0.6666666666666666,
+      "result": "mono/runs_review/m13_vertical_up_acceptance_20261025_v3/closed_loop/worker_1/fish_bend_tracker_only/result.json"
+    }
+  ],
+  "partial_directories": [
+    "mono/runs_review/m13_vertical_up_acceptance_20261025_v3/closed_loop/worker_1/fish_bend_avoidance"
+  ]
+}

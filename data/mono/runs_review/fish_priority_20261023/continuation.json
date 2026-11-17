@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "pid": 7668,
+  "commands": [
+    [
+      "[公开副本已隐去本地信息]",
+      "-B",
+      "-m",
+      "tools.fish_priority_training",
+      "--resolution",
+      "mono/runs_review/fish_priority_20261023/01_resolution_v2",
+      "--out",
+      "mono/runs_review/fish_priority_20261023/03_fusion_training",
+      "--stage",
+      "fusion",
+      "--previous",
+      "mono/runs_review/fish_priority_20261023/02_hard_training",
+      "--epochs",
+      "6"
+    ],
+    [
+      "[公开副本已隐去本地信息]",
+      "-B",
+      "-m",
+      "tools.fish_temporal_comparison",
+      "--previous",
+      "mono/runs_review/fish_priority_20261023/03_fusion_training",
+      "--resolution",
+      "mono/runs_review/fish_priority_20261023/01_resolution_v2",
+      "--out",
+      "mono/runs_review/fish_priority_20261023/04_temporal"
+    ],
+    [
+      "[公开副本已隐去本地信息]",
+      "-B",
+      "-m",
+      "tools.fish_priority_review",
+      "--root",
+      "mono/runs_review/fish_priority_20261023"
+    ]
+  ]
+}

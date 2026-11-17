@@ -1,0 +1,380 @@
+{
+  "scope": "Vertical-plane monocular integration, level hull with surge/heave; known side standoff and plane prior; reused training photo appearance; no real-vehicle/general 3D validation",
+  "timing": "30 Hz fixed simulated time; measured inference latency not injected",
+  "config": {
+    "camera_mount": "fixed side-looking, upright; optical axis toward the declared vertical inspection plane",
+    "standoff_m": 2.0,
+    "initial_depth_m": 20.0,
+    "pipe_width_prior_m": 0.8,
+    "cruise_mps": 0.5,
+    "inspection_command_floor_mps": 0.4,
+    "lookahead_m": 0.7,
+    "outgoing_min_m": 0.45,
+    "outgoing_span_m": 0.4,
+    "outgoing_edge_span_m": [
+      0.4,
+      1.2
+    ],
+    "outgoing_min_points": 8,
+    "normal_gain": 0.8,
+    "surge_max_mps": 0.6,
+    "heave_max_mps": 0.6,
+    "response_tau_s": 0.6,
+    "acceleration_mps2": 0.35,
+    "control_rate_hz": 10.0,
+    "image_delay_s": 0.21,
+    "wait_before_retreat_s": 8.0,
+    "reinspect_overlap_m": 0.3,
+    "reacquire_s": 0.5,
+    "max_loss_s": 20.0,
+    "assumptions": "Side mount, known perpendicular observation distance, ideal pressure depth/odometry and vertical-plane prior are explicit simulation assumptions. Heave limits are assumed, not measured BlueROV2 performance. Hull stays level; zero surge during ascent/descent is not zero route speed. No pitch actuator, seabed, pressure or tether physics."
+  },
+  "truth_access": "Renderer and scorer only; controller receives predicted masks/RGB and measured X/depth odometry",
+  "criteria": {
+    "pipe_iou_min": 0.5,
+    "inspection_fraction_min": 0.9,
+    "corridor_m": 1,
+    "goal_distance_m": 0.2,
+    "terminal_surge_max_mps": 0.08,
+    "contact": "evaluation-only sphere and pipe-radius envelope"
+  },
+  "checkpoints": [
+    {
+      "path": "mono/runs_ablation/M11/best.pt",
+      "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+    },
+    {
+      "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+    }
+  ],
+  "episodes": [],
+  "probe": [
+    {
+      "scene": "vertical_up_90",
+      "x": 0,
+      "relative_depth": 0,
+      "raw_iou": 0.6486592838270842,
+      "refined_iou": 1.0,
+      "raw_area": 0.2633463541666667,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -20.0,
+            -1.5265571176692275e-14
+          ],
+          [
+            20.0,
+            -1.9706454340243793e-14
+          ]
+        ],
+        "skeleton_pixels": 57,
+        "observed_support_pixels": 34617,
+        "bend_confirmed": false,
+        "measured_corner_world_m": null,
+        "turn_sign": null
+      }
+    },
+    {
+      "scene": "vertical_up_90",
+      "x": 2,
+      "relative_depth": 0,
+      "raw_iou": 0.6652616160794206,
+      "refined_iou": 0.9136761580960476,
+      "raw_area": 0.31842041015625,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -18.300000023841857,
+            -1.5676352866673816e-14
+          ],
+          [
+            1.699999976158142,
+            -1.7896794448449575e-14
+          ],
+          [
+            1.6999999761581397,
+            -20.000000000000018
+          ]
+        ],
+        "skeleton_pixels": 97,
+        "observed_support_pixels": 39371,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          3.699999976158142,
+          -1.7896794448449575e-14
+        ],
+        "turn_sign": -1.0
+      }
+    },
+    {
+      "scene": "vertical_up_90",
+      "x": 3,
+      "relative_depth": 0,
+      "raw_iou": 0.6547781822974152,
+      "refined_iou": 0.8051674386817526,
+      "raw_area": 0.3467746310763889,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -19.300000023841857,
+            -1.5676352866673816e-14
+          ],
+          [
+            0.6999999761581419,
+            -1.7896794448449575e-14
+          ],
+          [
+            0.6999999761581397,
+            -20.000000000000018
+          ]
+        ],
+        "skeleton_pixels": 132,
+        "observed_support_pixels": 34519,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          3.699999976158142,
+          -1.7896794448449575e-14
+        ],
+        "turn_sign": -1.0
+      }
+    },
+    {
+      "scene": "vertical_up_90",
+      "x": 3.7,
+      "relative_depth": 0,
+      "raw_iou": 0.5722900138745598,
+      "refined_iou": 0.7712935167346208,
+      "raw_area": 0.3201565212673611,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -20.000000023841856,
+            -1.5676352866673816e-14
+          ],
+          [
+            -2.3841858265427618e-08,
+            -1.7896794448449575e-14
+          ],
+          [
+            -2.3841860485873667e-08,
+            -20.000000000000018
+          ]
+        ],
+        "skeleton_pixels": 156,
+        "observed_support_pixels": 27148,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          3.699999976158142,
+          -1.7896794448449575e-14
+        ],
+        "turn_sign": -1.0
+      }
+    },
+    {
+      "scene": "vertical_up_90",
+      "x": 4,
+      "relative_depth": -1,
+      "raw_iou": 0.6065979199328726,
+      "refined_iou": 0.651104075662245,
+      "raw_area": 0.2047797309027778,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -20.29000002384186,
+            0.9999999999999843
+          ],
+          [
+            -0.2900000238418583,
+            0.9999999999999821
+          ],
+          [
+            -0.2900000238418605,
+            -19.000000000000018
+          ]
+        ],
+        "skeleton_pixels": 85,
+        "observed_support_pixels": 19066,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          3.7099999761581417,
+          -1.7897904669240464e-14
+        ],
+        "turn_sign": -1.0
+      }
+    },
+    {
+      "scene": "vertical_down_90",
+      "x": 0,
+      "relative_depth": 0,
+      "raw_iou": 0.6486592838270842,
+      "refined_iou": 1.0,
+      "raw_area": 0.2633463541666667,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -20.0,
+            -1.5265571176692275e-14
+          ],
+          [
+            20.0,
+            -1.9706454340243793e-14
+          ]
+        ],
+        "skeleton_pixels": 57,
+        "observed_support_pixels": 34617,
+        "bend_confirmed": false,
+        "measured_corner_world_m": null,
+        "turn_sign": null
+      }
+    },
+    {
+      "scene": "vertical_down_90",
+      "x": 2,
+      "relative_depth": 0,
+      "raw_iou": 0.6997155165406811,
+      "refined_iou": 0.9136761580960476,
+      "raw_area": 0.3335842556423611,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -18.29999997615814,
+            -1.5676352871967764e-14
+          ],
+          [
+            1.700000023841858,
+            -1.7896794453743523e-14
+          ],
+          [
+            1.7000000238418602,
+            19.999999999999982
+          ]
+        ],
+        "skeleton_pixels": 87,
+        "observed_support_pixels": 42332,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          3.700000023841858,
+          -1.7896794453743523e-14
+        ],
+        "turn_sign": 1.0
+      }
+    },
+    {
+      "scene": "vertical_down_90",
+      "x": 3,
+      "relative_depth": 0,
+      "raw_iou": 0.715473781048758,
+      "refined_iou": 0.8051674386817526,
+      "raw_area": 0.2978515625,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -19.29999997615814,
+            -1.5676352871967764e-14
+          ],
+          [
+            0.700000023841858,
+            -1.7896794453743523e-14
+          ],
+          [
+            0.7000000238418602,
+            19.999999999999982
+          ]
+        ],
+        "skeleton_pixels": 88,
+        "observed_support_pixels": 36815,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          3.700000023841858,
+          -1.7896794453743523e-14
+        ],
+        "turn_sign": 1.0
+      }
+    },
+    {
+      "scene": "vertical_down_90",
+      "x": 3.7,
+      "relative_depth": 0,
+      "raw_iou": 0.6453903689385663,
+      "refined_iou": 0.7712935167346208,
+      "raw_area": 0.2518174913194444,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -19.99999997615814,
+            -1.5676352871967764e-14
+          ],
+          [
+            2.3841857821338408e-08,
+            -1.7896794453743523e-14
+          ],
+          [
+            2.3841860041784457e-08,
+            19.999999999999982
+          ]
+        ],
+        "skeleton_pixels": 101,
+        "observed_support_pixels": 28662,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          3.700000023841858,
+          -1.7896794453743523e-14
+        ],
+        "turn_sign": 1.0
+      }
+    },
+    {
+      "scene": "vertical_down_90",
+      "x": 4,
+      "relative_depth": 1,
+      "raw_iou": 0.6866391483814903,
+      "refined_iou": 0.6424324647859223,
+      "raw_area": 0.2378607855902778,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -20.29999997615814,
+            -1.0000000000000158
+          ],
+          [
+            -0.299999976158142,
+            -1.000000000000018
+          ],
+          [
+            -0.2999999761581398,
+            18.999999999999982
+          ]
+        ],
+        "skeleton_pixels": 33,
+        "observed_support_pixels": 26010,
+        "bend_confirmed": true,
+        "measured_corner_world_m": [
+          3.700000023841858,
+          -1.7896794453743523e-14
+        ],
+        "turn_sign": 1.0
+      }
+    }
+  ]
+}

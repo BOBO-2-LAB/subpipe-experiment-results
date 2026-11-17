@@ -1,0 +1,75 @@
+{
+  "episodes": [
+    {
+      "environment": "original",
+      "task_pass": false,
+      "goal": false,
+      "valid_fraction": 0.8333333333333334,
+      "active_frames": 18,
+      "valid_active_frames": 15,
+      "all_frame_valid_fraction": 0.03930817610062893,
+      "pipe_iou": 0.44854493663843376,
+      "progress_m": 0.4312378290269867,
+      "elapsed_s": 21.166666666666668,
+      "recovered": false,
+      "reverse_attempts": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered"
+    },
+    {
+      "environment": "uniform",
+      "task_pass": false,
+      "goal": false,
+      "valid_fraction": 0.9232365145228216,
+      "active_frames": 482,
+      "valid_active_frames": 445,
+      "all_frame_valid_fraction": 0.6118518518518519,
+      "pipe_iou": 0.5593812445161092,
+      "progress_m": 6.724608223449558,
+      "elapsed_s": 45.0,
+      "recovered": false,
+      "reverse_attempts": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failed_checks": "goal_reached;recovered"
+    }
+  ],
+  "funnels": {
+    "original": {
+      "status": {
+        "lost": 468,
+        "observed": 59,
+        "predicted": 109
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "short_skeleton_path": 465,
+        "pruned_skeleton": 136,
+        "no_endpoint_or_cyclic_skeleton": 17,
+        "no_near_component": 11
+      },
+      "smoothing_applied": 58,
+      "smoothing_fallback": 1,
+      "observed_without_current_measurement": 0
+    },
+    "uniform": {
+      "status": {
+        "lost": 60,
+        "observed": 919,
+        "predicted": 371
+      },
+      "measurement_reasons": {
+        "missing_probability_input": 7,
+        "ambiguous_near_prefix": 758,
+        "pruned_skeleton": 564,
+        "no_near_skeleton": 15,
+        "no_near_component": 2,
+        "ambiguous_branch": 4
+      },
+      "smoothing_applied": 750,
+      "smoothing_fallback": 169,
+      "observed_without_current_measurement": 0
+    }
+  }
+}

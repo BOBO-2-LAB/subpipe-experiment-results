@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "name": "none_retinex",
+  "pipe_checkpoint": "mono/runs_ablation/M11/best.pt",
+  "fish_checkpoint": "mono/runs_fish/wavelet_20261023_seed42_gpu/none/best.pt",
+  "pipe_sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a",
+  "fish_sha256": "6eeb3afab454d97990c9228a8307f24045eab0787edca49bd9a6d22d0fe00b42",
+  "fish_wavelet": "none",
+  "fish_wavelet_stage": "s8",
+  "includes_deepcamo": false,
+  "adoption_status": "Preregistered research comparison; not an operational replacement",
+  "fish_preprocess": {
+    "mode": "msr_luminance_v1",
+    "strength": 0.35,
+    "sigma_fractions": [
+      0.04,
+      0.1,
+      0.21
+    ],
+    "target_luminance": 0.45,
+    "max_gain": 2.5,
+    "illumination_max_side": 192
+  }
+}

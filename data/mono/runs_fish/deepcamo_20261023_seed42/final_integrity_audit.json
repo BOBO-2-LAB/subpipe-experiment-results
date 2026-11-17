@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "old_weight_files_unchanged": 123,
+  "dataset_lock_unchanged": true,
+  "test_checkpoint_selection_lock_verified": true,
+  "training_sources_unchanged": true,
+  "runs": [
+    {
+      "mode": "none",
+      "pipe_exactly_matches_original_M11": true,
+      "changed_biological_tensors_in_last": 142,
+      "changed_wavelet_tensors_in_last": 0,
+      "candidate_retention_gate": false,
+      "best_retained_epoch": 0,
+      "retained_checkpoint_is_initial_fallback": true,
+      "retained_gate": true
+    },
+    {
+      "mode": "plain",
+      "pipe_exactly_matches_original_M11": true,
+      "changed_biological_tensors_in_last": 160,
+      "changed_wavelet_tensors_in_last": 18,
+      "candidate_retention_gate": false,
+      "best_retained_epoch": 0,
+      "retained_checkpoint_is_initial_fallback": true,
+      "retained_gate": true
+    },
+    {
+      "mode": "attention",
+      "pipe_exactly_matches_original_M11": true,
+      "changed_biological_tensors_in_last": 166,
+      "changed_wavelet_tensors_in_last": 24,
+      "candidate_retention_gate": false,
+      "best_retained_epoch": 0,
+      "retained_checkpoint_is_initial_fallback": true,
+      "retained_gate": true
+    }
+  ],
+  "fixed_visual_samples": {
+    "none": [
+      "MAS_MarineFish_CrocodileFish_Cam_2889",
+      "MAS_MarineFish_Fish_Cam_1197",
+      "MAS_MarineFish_Flounder_Cam_1447",
+      "MAS_MarineFish_GhostPipeFish_Cam_2103",
+      "MAS_MarineFish_Grouper_Cam_1504",
+      "MAS_MarineFish_PipeFish_Cam_2174",
+      "MAS_MarineFish_ScorpionFish_Cam_2504",
+      "MAS_MarineFish_SeaHorse_Cam_2645"
+    ],
+    "plain": [
+      "MAS_MarineFish_CrocodileFish_Cam_2889",
+      "MAS_MarineFish_Fish_Cam_1197",
+      "MAS_MarineFish_Flounder_Cam_1447",
+      "MAS_MarineFish_GhostPipeFish_Cam_2103",
+      "MAS_MarineFish_Grouper_Cam_1504",
+      "MAS_MarineFish_PipeFish_Cam_2174",
+      "MAS_MarineFish_ScorpionFish_Cam_2504",
+      "MAS_MarineFish_SeaHorse_Cam_2645"
+    ],
+    "attention": [
+      "MAS_MarineFish_CrocodileFish_Cam_2889",
+      "MAS_MarineFish_Fish_Cam_1197",
+      "MAS_MarineFish_Flounder_Cam_1447",
+      "MAS_MarineFish_GhostPipeFish_Cam_2103",
+      "MAS_MarineFish_Grouper_Cam_1504",
+      "MAS_MarineFish_PipeFish_Cam_2174",
+      "MAS_MarineFish_ScorpionFish_Cam_2504",
+      "MAS_MarineFish_SeaHorse_Cam_2645"
+    ]
+  },
+  "default_weights_replaced": false,
+  "postprocessor_source_sha256": "b3eb4403f7914ecc0cfb107d89b738cc31c1e4b8f92bda96218f505ab087f202"
+}

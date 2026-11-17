@@ -1,0 +1,317 @@
+{
+  "scope": "Fixed recorded RGB/native prediction diagnostic, without controller changes.\n\nThe fresh paired-edge surface is stateless, not a replay of the full instance\nhistory. Renderer labels are scored only after all candidate masks are made.\n",
+  "camera_reconstruction": {
+    "rgb_equal": true,
+    "max_difference": 0
+  },
+  "appearance_seed_pixels": 11907,
+  "pipe_chromaticity": [
+    0.8020199304160028,
+    0.5798726191396547,
+    0.14321933105425036
+  ],
+  "radius": 0.06,
+  "frames": [
+    {
+      "t": 1.7333333333333334,
+      "scores": {
+        "raw": {
+          "iou": 0.46598651100688143,
+          "true_positive": 13611,
+          "fish_false_positive": 563,
+          "background_false_positive": 5548,
+          "false_negative": 9487
+        },
+        "surface": {
+          "iou": 0.46558502340093605,
+          "true_positive": 14922,
+          "fish_false_positive": 0,
+          "background_false_positive": 8952,
+          "false_negative": 8176
+        },
+        "old_rgb": {
+          "iou": 0.5196172565639174,
+          "true_positive": 15694,
+          "fish_false_positive": 5,
+          "background_false_positive": 7100,
+          "false_negative": 7404
+        },
+        "colour_filter": {
+          "iou": 0.5212568088215757,
+          "true_positive": 15694,
+          "fish_false_positive": 0,
+          "background_false_positive": 7010,
+          "false_negative": 7404
+        },
+        "colour_connected": {
+          "iou": 0.1630530374780138,
+          "true_positive": 19282,
+          "fish_false_positive": 0,
+          "background_false_positive": 95158,
+          "false_negative": 3816
+        }
+      },
+      "hard_background_true_pipe_pixels": 2655,
+      "surface_on_fish_pixels": 0,
+      "foreground_seeds_on_fish": 0
+    },
+    {
+      "t": 2.8333333333333335,
+      "scores": {
+        "raw": {
+          "iou": 0.47641289117234936,
+          "true_positive": 15300,
+          "fish_false_positive": 1379,
+          "background_false_positive": 5817,
+          "false_negative": 9619
+        },
+        "surface": {
+          "iou": 0.4885008917675772,
+          "true_positive": 15612,
+          "fish_false_positive": 485,
+          "background_false_positive": 6555,
+          "false_negative": 9307
+        },
+        "old_rgb": {
+          "iou": 0.49208950520012606,
+          "true_positive": 15614,
+          "fish_false_positive": 753,
+          "background_false_positive": 6058,
+          "false_negative": 9305
+        },
+        "colour_filter": {
+          "iou": 0.5049479335101222,
+          "true_positive": 15614,
+          "fish_false_positive": 0,
+          "background_false_positive": 6003,
+          "false_negative": 9305
+        },
+        "colour_connected": {
+          "iou": 0.16509704025158276,
+          "true_positive": 19897,
+          "fish_false_positive": 0,
+          "background_false_positive": 95598,
+          "false_negative": 5022
+        }
+      },
+      "hard_background_true_pipe_pixels": 4530,
+      "surface_on_fish_pixels": 485,
+      "foreground_seeds_on_fish": 137
+    },
+    {
+      "t": 3.5,
+      "scores": {
+        "raw": {
+          "iou": 0.5464568443319124,
+          "true_positive": 17050,
+          "fish_false_positive": 200,
+          "background_false_positive": 5250,
+          "false_negative": 8701
+        },
+        "surface": {
+          "iou": 0.6166704906748828,
+          "true_positive": 18814,
+          "fish_false_positive": 0,
+          "background_false_positive": 4758,
+          "false_negative": 6937
+        },
+        "old_rgb": {
+          "iou": 0.49411453511440284,
+          "true_positive": 14944,
+          "fish_false_positive": 0,
+          "background_false_positive": 4493,
+          "false_negative": 10807
+        },
+        "colour_filter": {
+          "iou": 0.49411453511440284,
+          "true_positive": 14944,
+          "fish_false_positive": 0,
+          "background_false_positive": 4493,
+          "false_negative": 10807
+        },
+        "colour_connected": {
+          "iou": 0.17307789007894606,
+          "true_positive": 20652,
+          "fish_false_positive": 0,
+          "background_false_positive": 93571,
+          "false_negative": 5099
+        }
+      },
+      "hard_background_true_pipe_pixels": 3679,
+      "surface_on_fish_pixels": 0,
+      "foreground_seeds_on_fish": 0
+    },
+    {
+      "t": 5.0,
+      "scores": {
+        "raw": {
+          "iou": 0.4798478424995644,
+          "true_positive": 16525,
+          "fish_false_positive": 273,
+          "background_false_positive": 7213,
+          "false_negative": 10427
+        },
+        "surface": {
+          "iou": 0.6149575546302573,
+          "true_positive": 19052,
+          "fish_false_positive": 0,
+          "background_false_positive": 4029,
+          "false_negative": 7900
+        },
+        "old_rgb": {
+          "iou": 0.38017176529588764,
+          "true_positive": 12129,
+          "fish_false_positive": 0,
+          "background_false_positive": 4952,
+          "false_negative": 14823
+        },
+        "colour_filter": {
+          "iou": 0.38017176529588764,
+          "true_positive": 12129,
+          "fish_false_positive": 0,
+          "background_false_positive": 4952,
+          "false_negative": 14823
+        },
+        "colour_connected": {
+          "iou": 0.18909385576052243,
+          "true_positive": 19835,
+          "fish_false_positive": 0,
+          "background_false_positive": 77943,
+          "false_negative": 7117
+        }
+      },
+      "hard_background_true_pipe_pixels": 5351,
+      "surface_on_fish_pixels": 0,
+      "foreground_seeds_on_fish": 0
+    },
+    {
+      "t": 12.5,
+      "scores": {
+        "raw": {
+          "iou": 0.5053552709539219,
+          "true_positive": 22176,
+          "fish_false_positive": 0,
+          "background_false_positive": 8819,
+          "false_negative": 12887
+        },
+        "surface": {
+          "iou": 0.5335939545845647,
+          "true_positive": 28527,
+          "fish_false_positive": 0,
+          "background_false_positive": 18399,
+          "false_negative": 6536
+        },
+        "old_rgb": {
+          "iou": 0.5893791793171531,
+          "true_positive": 31642,
+          "fish_false_positive": 0,
+          "background_false_positive": 18624,
+          "false_negative": 3421
+        },
+        "colour_filter": {
+          "iou": 0.5897780014538948,
+          "true_positive": 31641,
+          "fish_false_positive": 0,
+          "background_false_positive": 18586,
+          "false_negative": 3422
+        },
+        "colour_connected": {
+          "iou": 0.3071599400783187,
+          "true_positive": 35062,
+          "fish_false_positive": 0,
+          "background_false_positive": 79086,
+          "false_negative": 1
+        }
+      },
+      "hard_background_true_pipe_pixels": 3126,
+      "surface_on_fish_pixels": 0,
+      "foreground_seeds_on_fish": 0
+    },
+    {
+      "t": 14.299999999999999,
+      "scores": {
+        "raw": {
+          "iou": 0.493420724717141,
+          "true_positive": 19799,
+          "fish_false_positive": 0,
+          "background_false_positive": 4770,
+          "false_negative": 15557
+        },
+        "surface": {
+          "iou": 0.7280475626466012,
+          "true_positive": 31349,
+          "fish_false_positive": 0,
+          "background_false_positive": 7703,
+          "false_negative": 4007
+        },
+        "old_rgb": {
+          "iou": 0.758473433426234,
+          "true_positive": 33746,
+          "fish_false_positive": 0,
+          "background_false_positive": 9136,
+          "false_negative": 1610
+        },
+        "colour_filter": {
+          "iou": 0.7584060055740358,
+          "true_positive": 33743,
+          "fish_false_positive": 0,
+          "background_false_positive": 9136,
+          "false_negative": 1613
+        },
+        "colour_connected": {
+          "iou": 0.2945445153550064,
+          "true_positive": 35353,
+          "fish_false_positive": 0,
+          "background_false_positive": 84670,
+          "false_negative": 3
+        }
+      },
+      "hard_background_true_pipe_pixels": 1420,
+      "surface_on_fish_pixels": 0,
+      "foreground_seeds_on_fish": 0
+    },
+    {
+      "t": 17.4,
+      "scores": {
+        "raw": {
+          "iou": 0.33265650273600167,
+          "true_positive": 9666,
+          "fish_false_positive": 0,
+          "background_false_positive": 7715,
+          "false_negative": 11676
+        },
+        "surface": {
+          "iou": 0.38440641890945754,
+          "true_positive": 13726,
+          "fish_false_positive": 0,
+          "background_false_positive": 14365,
+          "false_negative": 7616
+        },
+        "old_rgb": {
+          "iou": 0.380773894829677,
+          "true_positive": 13816,
+          "fish_false_positive": 0,
+          "background_false_positive": 14942,
+          "false_negative": 7526
+        },
+        "colour_filter": {
+          "iou": 0.3897979911973818,
+          "true_positive": 13816,
+          "fish_false_positive": 0,
+          "background_false_positive": 14102,
+          "false_negative": 7526
+        },
+        "colour_connected": {
+          "iou": 0.15383415729636157,
+          "true_positive": 19728,
+          "fish_false_positive": 0,
+          "background_false_positive": 106900,
+          "false_negative": 1614
+        }
+      },
+      "hard_background_true_pipe_pixels": 3941,
+      "surface_on_fish_pixels": 0,
+      "foreground_seeds_on_fish": 0
+    }
+  ]
+}

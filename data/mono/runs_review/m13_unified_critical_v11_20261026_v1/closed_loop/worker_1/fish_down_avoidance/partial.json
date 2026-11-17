@@ -1,0 +1,294 @@
+{
+  "last": {
+    "scenario": "fish_down",
+    "mode": "avoidance",
+    "t": 32.0,
+    "position_xyz": [
+      4.113912130995662,
+      0.0,
+      -2.0
+    ],
+    "phase": "waiting",
+    "source_t": 31.766666666666666,
+    "source_pose": {
+      "x": 4.113912130995662,
+      "y": 0.0,
+      "depth": -2.0,
+      "yaw": 3.141592653589791,
+      "pitch": 1.4164939799824234
+    },
+    "camera_yaw_deg": 179.99999999999986,
+    "camera_pitch_deg": 81.15912675868138,
+    "pipe_iou": 0.999948248201625,
+    "valid": false,
+    "current_observation_trusted": false,
+    "synthetic_corridor_m": 8.881784197001252e-16,
+    "synthetic_pipe_clearance_3d_m": 1.2832413667823388,
+    "synthetic_fish_clearance_3d_m": 3.8836871868443468,
+    "synthetic_fish_clearance_xy_m": 0.4160878690043375,
+    "contact_3d": false,
+    "contact_xy": false,
+    "synthetic_end_distance_m": 6.289461618422147,
+    "bend_count": 0,
+    "inference_wall_s": 0.07475700000941288,
+    "fish_observations": 1,
+    "avoidance_offset_m": 0.0,
+    "synthetic_terminal_pipe_observed": true,
+    "synthetic_pipe_arc_observation_fraction": 0.46875,
+    "decision": {
+      "action": "nominal",
+      "speed_scale": 1.0,
+      "risk": 0.0,
+      "reason": "pipe_perception_unreliable",
+      "hover_capped": false,
+      "risk_raw": 0.0,
+      "lateral_setpoint": 0.0,
+      "lateral_reason": "recenter",
+      "yield_to_tracker": true
+    },
+    "control": {
+      "phase": "waiting",
+      "abort": true,
+      "abort_reason": "perception_loss_timeout",
+      "current_observation_trusted": false,
+      "raw_direction_xyz": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "direction_xyz": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "normal_xyz": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "side_xyz": [
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "estimated_route_error_m": 0.0,
+      "lateral_offset_m": 0.0,
+      "requested_velocity_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "route_xyz": [
+        [
+          -5.0,
+          0.0,
+          -2.0
+        ],
+        [
+          12.0,
+          0.0,
+          -2.0
+        ]
+      ],
+      "geometry": {
+        "vision": {
+          "method": "unified_XYZ_finite_axis_RGB",
+          "truth_access": false,
+          "bend_count": 0,
+          "monocular_parallax": {
+            "tracked_features": 400,
+            "current_triangulated_points": 0,
+            "removed_background_plane_depths": [],
+            "source": "LK+known measured pose triangulation",
+            "rendered_depth_used": false
+          },
+          "reason": "insufficient_current_surface",
+          "current_rgb_verified": true,
+          "current_rgb_pixels": 19323,
+          "current_neural_pixels": 11215,
+          "axis_xyz": [
+            [
+              -5.0,
+              0.0,
+              0.0
+            ],
+            [
+              12.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "visual_axis_xyz": [
+            [
+              -5.0,
+              0.0,
+              0.0
+            ],
+            [
+              4.002834673113806,
+              0.0,
+              0.0
+            ]
+          ],
+          "whole_current_pixels": 19323,
+          "whole_mask_separate_from_local": true,
+          "unknown_segment_depth_proxy_m": 8.0,
+          "whole_extra_current_segments": false,
+          "current_geometry_verified": false,
+          "associated_parallax_points": 0,
+          "paired_edge_evidence": {
+            "maximum_supported_arc_m": null,
+            "longest_current_span_m": 0.0,
+            "segments": [],
+            "method": "current aligned paired RGB edges; no history fill"
+          },
+          "verified_arc_max_m": 8.855565280303127
+        },
+        "temporal": {
+          "phase": "lost",
+          "current_observation_trusted": false,
+          "prediction_age_s": 20.03333333333333,
+          "prediction_counted_valid": false
+        }
+      },
+      "steering_curvature_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "navigation_floor_exempt_reason": "perception_wait_hold",
+      "coverage_cells": 16,
+      "missing_coverage_cells": 0,
+      "reverse_attempts": 0,
+      "reinspect_target_xyz": null
+    },
+    "actuator": {
+      "held_body_command_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "held_world_command_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "speed_saturated": [
+        false,
+        false,
+        false
+      ],
+      "acceleration_saturated": [
+        false,
+        false,
+        false
+      ],
+      "hull_yaw_rad": 0.0,
+      "yaw_rate_rad_s": 0.0
+    },
+    "velocity_xyz": [
+      3.010364632661784e-16,
+      0.0,
+      0.0
+    ],
+    "fish_refinement": {
+      "current_objects": [
+        {
+          "model_seed_pixels": 758,
+          "accepted": true,
+          "closed": true,
+          "area": 1298,
+          "box": [
+            233,
+            225,
+            46,
+            47
+          ],
+          "partial_supported": true,
+          "centre": [
+            252.87981510015408,
+            245.37057010785824
+          ],
+          "source": "current_neural_seed_and_RGB_object",
+          "uniform_water_assumed": false
+        }
+      ],
+      "calibrated_probability": false,
+      "geometry_feature_exclusion_pixels": 2756,
+      "course_bearings": {
+        "frame": "measured course / transported pipe normal",
+        "behind_course_filtered": 0,
+        "current_camera_objects": 1
+      }
+    },
+    "capability_shortfall": false,
+    "encounter": {
+      "active": false,
+      "locked_direction": null,
+      "forward_progress_m": 0.0,
+      "net_displacement_m": 0.0,
+      "failure": null,
+      "last_fresh_fish_t": null,
+      "release_allowed_by_pipe_turn": true
+    },
+    "fish_sensor_dropout": false,
+    "fresh_confirmed_fish": false,
+    "inspection_frame_valid": false,
+    "synthetic_frame_pipe_iou": 0.999948248201625,
+    "route_cross_track_m": 8.881784197001252e-16,
+    "motion_phase": "waiting",
+    "raw_fish_perception": {
+      "max_probability": 0.98681640625,
+      "predicted_pixels": 1276,
+      "predicted_area_eq": 1276.0,
+      "components": [
+        {
+          "pixels": 1284,
+          "area_eq": 1284.0,
+          "mean_probability": 0.8428498740508178,
+          "center_px": [
+            256.6666666666667,
+            245.5981308411215
+          ],
+          "accepted_fragment": true,
+          "filter_reason": "accepted",
+          "synthetic_overlap_pixels": 1135
+        }
+      ]
+    },
+    "fish_perception": {
+      "max_probability": 0.98681640625,
+      "predicted_pixels": 1304,
+      "predicted_area_eq": 1304.0,
+      "components": [
+        {
+          "pixels": 1344,
+          "area_eq": 1344.0,
+          "mean_probability": 0.8587515694754464,
+          "center_px": [
+            253.21279761904762,
+            245.6264880952381
+          ],
+          "accepted_fragment": true,
+          "filter_reason": "accepted",
+          "synthetic_overlap_pixels": 1328
+        }
+      ]
+    },
+    "fish_tracks": [],
+    "intervention": false,
+    "synthetic_new_observation_bins": []
+  },
+  "events": [
+    {
+      "t": 7.2,
+      "event": "observed_endpoint_confirmed",
+      "length_m": 4.002834673113806,
+      "position_xyz": [
+        4.002834673113806,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

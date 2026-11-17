@@ -1,0 +1,26 @@
+{
+  "pid": 22932,
+  "command": [
+    "[公开副本已隐去本地信息]",
+    "-B",
+    "-m",
+    "tools.m13_vertical_acceptance",
+    "--right-gate",
+    "mono/runs_review/m13_s345_right_acceptance_20261025_v2",
+    "--out",
+    "mono/runs_review/m13_vertical_down_acceptance_20261025_v7",
+    "--source-snapshot",
+    "mono/runs_review/m13_s345_continuation_20261025_v1/m13_vertical_down_acceptance_20261025_v7_source",
+    "--config",
+    "mono/configs/m13_vertical_down_v7.json",
+    "--regression-log",
+    "mono/runs_review/m13_s345_continuation_20261025_v1/regression_vertical_down_v7.log",
+    "--workers",
+    "3",
+    "--scenarios",
+    "clear_down",
+    "fish_down_bend",
+    "fish_down_vertical"
+  ],
+  "cwd": "mono"
+}

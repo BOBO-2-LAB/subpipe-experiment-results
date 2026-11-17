@@ -1,0 +1,93 @@
+{
+  "groups": [
+    {
+      "group": "A0",
+      "label": "去除注意力小波及必要融合分支（匹配M11）",
+      "model": "M11",
+      "checkpoint": "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M11/best.pt",
+      "reused": true
+    },
+    {
+      "group": "A1",
+      "label": "普通小波替换注意力小波",
+      "model": "M13_plain",
+      "checkpoint": "mono/runs_review/m13_seg_ablation_20261027_v2/training/M13_plain/best.pt",
+      "reused": false
+    },
+    {
+      "group": "A2",
+      "label": "普通卷积替换深度可分离解码器",
+      "model": "M13_standard_decoder",
+      "checkpoint": "mono/runs_review/m13_seg_ablation_20261027_v2/training/M13_standard_decoder/best.pt",
+      "reused": false
+    },
+    {
+      "group": "A3",
+      "label": "完整M13",
+      "model": "M13",
+      "checkpoint": "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M13/best.pt",
+      "reused": true
+    }
+  ],
+  "reference_cfg": {
+    "num_classes": 2,
+    "in_ch": 3,
+    "pretrained": true,
+    "out_ch": [
+      64,
+      128,
+      256
+    ],
+    "wavelet": "attention",
+    "wavelet_plain_extra_blocks": 0,
+    "fusion": "concat",
+    "global_mode": "none",
+    "global_blocks": 1,
+    "global_stage": "s16",
+    "global_heads": 8,
+    "global_win": 7,
+    "decoder_mid": 128,
+    "decoder_skip": true,
+    "decoder_dw": true
+  },
+  "original_matched_study": "mono/runs_review/m13_wavelet_dw_20261023_2059",
+  "training_args": {
+    "config": "M13",
+    "arch": "pipeline",
+    "paper_variant": "P5",
+    "data_root": "[本地引用:81223d50bf43acf0]",
+    "size": [
+      288,
+      512
+    ],
+    "epochs": 60,
+    "batch": 8,
+    "lr": 0.0001,
+    "lr_min": 1e-06,
+    "weight_decay": 0.0001,
+    "workers": 0,
+    "cache_dir": "mono/cache/288x512",
+    "gpu_aug": true,
+    "amp": true,
+    "no_pretrained": false,
+    "eval_every": 5,
+    "dice_weight": 1.0,
+    "out": "mono/runs_review/m13_wavelet_dw_20261023_2059/training",
+    "tag": "M13",
+    "device": "cuda:0",
+    "seed": 42,
+    "norm": "imagenet",
+    "color_jitter": 0.1,
+    "photo_strength": 1.0,
+    "boundary_weight": 0.0,
+    "boundary_cw": 3.0,
+    "unlabeled_cache": null,
+    "unsup_weight": 1.0,
+    "unsup_conf": 0.95,
+    "unsup_ratio": 1.0
+  },
+  "all_essential_source_files_identical": true,
+  "ablation_scope": "branch removal and operator replacement; plain removes both LL gating and adaptive soft threshold, not attention alone",
+  "limits": "one seed 42, same internal validation selected best; no independent test or statistical significance claim",
+  "deployed_weights_unchanged": true
+}

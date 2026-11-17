@@ -1,0 +1,78 @@
+{
+  "video": "测试视频.mp4",
+  "video_sha256": "ebcdb96aee069c9ee9114176304d4d3cafe3bb2a220748364e6c9a5d0b4b7fdd",
+  "config": {
+    "schema": 1,
+    "name": "M13-S345-v1",
+    "threshold_status": "engineering prototype; not calibrated on an independent validation voyage",
+    "image_grid_short": 288,
+    "planar_skeleton": {
+      "threshold": 0.5,
+      "min_component_cells": 8,
+      "min_length_cells": 6.0,
+      "spur_length_cells": 2.5,
+      "near_band_cells": 3.0,
+      "lateral_band_cells": 16.0,
+      "ambiguity_length_cells": 5.0,
+      "ambiguity_probability_margin": 0.08,
+      "max_components": 3
+    },
+    "planar_temporal": {
+      "tangent_window": 0.6,
+      "center_tau_s": 0.12,
+      "heading_tau_s": 0.15,
+      "confirmed_turn_tau_s": 0.06,
+      "center_gate": 0.35,
+      "heading_gate_rad": 0.6,
+      "candidate_heading_gate_rad": 0.35,
+      "prediction_timeout_s": 0.4,
+      "measurement_gap_s": 0.25,
+      "reacquire_frames": 3,
+      "reacquire_s": 0.1,
+      "short_reacquire_frames": 2,
+      "short_reacquire_s": 0.03
+    },
+    "image_skeleton": {
+      "threshold": 0.5,
+      "min_component_cells": 100,
+      "min_length_cells": 24.0,
+      "spur_length_cells": 8.0,
+      "near_band_cells": 144.0,
+      "lateral_band_cells": 200.0,
+      "ambiguity_length_cells": 24.0,
+      "ambiguity_probability_margin": 0.08,
+      "max_components": 3
+    },
+    "image_temporal": {
+      "tangent_window": 0.2,
+      "center_tau_s": 0.12,
+      "heading_tau_s": 0.15,
+      "confirmed_turn_tau_s": 0.06,
+      "center_gate": 0.08,
+      "heading_gate_rad": 0.6,
+      "candidate_heading_gate_rad": 0.35,
+      "prediction_timeout_s": 0.4,
+      "measurement_gap_s": 0.25,
+      "reacquire_frames": 3,
+      "reacquire_s": 0.1,
+      "short_reacquire_frames": 2,
+      "short_reacquire_s": 0.03
+    }
+  },
+  "coordinates": "forward/right in image-height units, not metres",
+  "same_current_probabilities_for_both": true,
+  "raw_pipe_threshold": 0.5,
+  "fish_threshold": 0.5,
+  "training": false,
+  "threshold_calibration": "not yet performed on independent validation footage",
+  "source_and_weight_pins": {
+    "mono/avoid/skeleton345.py": "7b6ef9a5c0e61e4058c4e4d277c659fdcbc5e89fab09fe72227932e245126b4f",
+    "mono/avoid/skeleton345_planar.py": "840f56a05ff355aa73059da10567b144ce7cdc79e818a4865eeb4adb51bc76b3",
+    "mono/tools/m13_skeleton345_video.py": "a5a721207810ea1b4eddbac4df252f36b0655540ce5c05025b88c65287e62bbf",
+    "mono/share_templates/m13/pixel_tracker.py": "7420f94f2209ca6aabae303067ccc4cb5be5a876615b3120db6313ce8e9a0eb1",
+    "mono/avoid/centerline.py": "89af8e557c092339b4a6c627969afb942e6c27b0a6726ac9263dd53e1fb8d249",
+    "mono/tools/probability_perception.py": "e2bee6de98a9404c5582789c3373c03a1ebec298dcfcd9a6c56cf21e2bb4e0a4",
+    "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M13/best.pt": "938b238f52950150b09aa629bdd1ca1bdc2e392000480f95c0d2a16026c5f400",
+    "mono/runs_fish/suim8_sep_e60/best.pt": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+  }
+}

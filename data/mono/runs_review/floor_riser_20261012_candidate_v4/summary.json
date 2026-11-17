@@ -1,0 +1,176 @@
+{
+  "scope": "Actual XYZ ray-cast cylinder/capsule surfaces, horizontal seabed to vertical riser, moving forward camera tilt; level thruster ROV with surge/heave. Still explicit known vertical-plane/diameter/odometry priors, not arbitrary 3D reconstruction.",
+  "controller_truth_access": "None: RGB/predicted masks, measured camera extrinsics and odometry, explicit geometric priors only. Inspection route and scene points are scoring/rendering only.",
+  "timing": "Fixed simulation clock; model wall latency measured but not injected",
+  "config": {
+    "camera_mount": "fixed side-looking, upright; optical axis toward the declared vertical inspection plane",
+    "standoff_m": 2.0,
+    "initial_depth_m": 20.0,
+    "pipe_width_prior_m": 0.8,
+    "cruise_mps": 0.5,
+    "inspection_command_floor_mps": 0.4,
+    "lookahead_m": 0.7,
+    "outgoing_min_m": 0.45,
+    "outgoing_span_m": 0.4,
+    "outgoing_edge_span_m": [
+      0.4,
+      1.2
+    ],
+    "outgoing_min_points": 8,
+    "normal_gain": 0.8,
+    "surge_max_mps": 0.6,
+    "heave_max_mps": 0.6,
+    "response_tau_s": 0.6,
+    "acceleration_mps2": 0.35,
+    "control_rate_hz": 10.0,
+    "image_delay_s": 0.21,
+    "wait_before_retreat_s": 8.0,
+    "reinspect_overlap_m": 0.3,
+    "reacquire_s": 0.5,
+    "max_loss_s": 20.0,
+    "assumptions": "Side mount, known perpendicular observation distance, ideal pressure depth/odometry and vertical-plane prior are explicit simulation assumptions. Heave limits are assumed, not measured BlueROV2 performance. Hull stays level; zero surge during ascent/descent is not zero route speed. No pitch actuator, seabed, pressure or tether physics."
+  },
+  "gimbal_assumptions": {
+    "pitch_range_deg": [
+      -90,
+      90
+    ],
+    "yaw_range_deg": [
+      -180,
+      180
+    ],
+    "rate_deg_s": 45,
+    "tau_s": 0.35,
+    "published_hardware_claim": false
+  },
+  "checkpoints": [
+    {
+      "path": "mono/runs_ablation/M11/best.pt",
+      "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+    },
+    {
+      "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+    }
+  ],
+  "episodes": [
+    {
+      "scenario": "floor_to_riser_up",
+      "task_completed": false,
+      "goal_reached": false,
+      "stop_reason": "timeout",
+      "elapsed_s": 44.96666666666667,
+      "inspection_valid_fraction": 0.592741935483871,
+      "all_frame_valid_fraction": 0.11020104244229337,
+      "maximum_cross_track_m": 0.864255045432702,
+      "minimum_pipe_clearance_3d_m": 1.3406375935464314,
+      "first_bend_confirmation_s": 1.4333333333333333,
+      "first_heave_s": 2.8666666666666667,
+      "end_distance_m": 1.721019315303973,
+      "events": [
+        {
+          "t": 5.133333333333333,
+          "event": "loss_wait_started"
+        },
+        {
+          "t": 13.133333333333333,
+          "event": "retreat_started"
+        },
+        {
+          "t": 18.233333333333334,
+          "event": "vision_reacquired"
+        },
+        {
+          "t": 18.233333333333334,
+          "event": "reinspection_started"
+        },
+        {
+          "t": 18.733333333333334,
+          "event": "loss_wait_started"
+        },
+        {
+          "t": 19.466666666666665,
+          "event": "vision_reacquired"
+        },
+        {
+          "t": 20.7,
+          "event": "vision_reacquired"
+        },
+        {
+          "t": 22.066666666666666,
+          "event": "vision_reacquired"
+        },
+        {
+          "t": 24.4,
+          "event": "vision_reacquired"
+        },
+        {
+          "t": 26.733333333333334,
+          "event": "vision_reacquired"
+        },
+        {
+          "t": 28.2,
+          "event": "reinspection_started"
+        },
+        {
+          "t": 28.9,
+          "event": "loss_wait_started"
+        },
+        {
+          "t": 31.099999999999998,
+          "event": "vision_reacquired"
+        },
+        {
+          "t": 35.06666666666666,
+          "event": "vision_reacquired"
+        },
+        {
+          "t": 36.9,
+          "event": "retreat_started"
+        },
+        {
+          "t": 38.766666666666666,
+          "event": "vision_reacquired"
+        },
+        {
+          "t": 38.766666666666666,
+          "event": "reinspection_started"
+        },
+        {
+          "t": 40.93333333333333,
+          "event": "loss_wait_started"
+        }
+      ],
+      "fixed_gimbal": false
+    },
+    {
+      "scenario": "floor_to_riser_down",
+      "task_completed": false,
+      "goal_reached": false,
+      "stop_reason": "perception_loss_timeout",
+      "elapsed_s": 23.9,
+      "inspection_valid_fraction": 1.0,
+      "all_frame_valid_fraction": 0.16033755274261605,
+      "maximum_cross_track_m": 0.0,
+      "minimum_pipe_clearance_3d_m": 1.434065922853802,
+      "first_bend_confirmation_s": 6.233333333333333,
+      "first_heave_s": null,
+      "end_distance_m": 7.49000352859066,
+      "events": [
+        {
+          "t": 3.9,
+          "event": "loss_wait_started"
+        },
+        {
+          "t": 6.733333333333333,
+          "event": "vision_reacquired"
+        },
+        {
+          "t": 11.9,
+          "event": "retreat_started"
+        }
+      ],
+      "fixed_gimbal": false
+    }
+  ]
+}

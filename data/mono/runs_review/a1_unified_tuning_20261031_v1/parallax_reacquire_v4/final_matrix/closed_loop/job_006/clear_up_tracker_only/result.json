@@ -1,0 +1,83 @@
+{
+  "scenario": "clear_up",
+  "mode": "tracker_only",
+  "task_completed": true,
+  "goal_reached": true,
+  "inspection_recovered": true,
+  "stop_reason": "goal_reached",
+  "inspection_valid_fraction": 1.0,
+  "valid_frames": 230,
+  "inspection_frames": 230,
+  "all_frame_valid_fraction": 0.9871244635193133,
+  "contact_3d": false,
+  "contact_xy": false,
+  "primary_contact_rule": "3D",
+  "elapsed_s": 7.966666666666667,
+  "maximum_cross_track_m": 0.15753835897376955,
+  "observed_elbows": [
+    {
+      "t": 0.9,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "gain": 0.25134446739356475,
+      "evidence": "current_surface_parallax_and_RGB",
+      "confirmation_baseline_m": 0.12933957614849828
+    },
+    {
+      "t": 2.8,
+      "event": "observed_frontier_end_confirmed",
+      "length_m": 4.100000000000001,
+      "position_xyz": [
+        4.0,
+        0.0,
+        -4.100000000000001
+      ],
+      "evidence": "current_paired_edges_and_finite_RGB_surface",
+      "mission_terminal_assumed": false
+    }
+  ],
+  "intervention_frames": 0,
+  "prediction_valid_frames": 0,
+  "frames_logged": 233,
+  "video_frames_written": 233,
+  "fps": 30,
+  "configuration_sha256": "a3bd398a3507ed96eb04a5d3ddaa2aa673d23293d100dc461b851971260c2ce8",
+  "terminal_pipe_observed": true,
+  "pipe_arc_observation_fraction": 0.9375,
+  "schema_version": 2,
+  "route_completed": true,
+  "collision": false,
+  "simplified_3d_contact": false,
+  "active_inspection_valid_fraction": 1.0,
+  "synthetic_inspection_valid_fraction": 0.9871244635193133,
+  "maximum_abs_cross_track_m": 0.15753835897376955,
+  "elapsed_sim_s": 7.966666666666667,
+  "events": {},
+  "minimum_clearance_3d_m": null,
+  "minimum_clearance_xy_m": null,
+  "reverse_attempts": 0,
+  "waiting_frames": 3,
+  "reverse_recovery_frames": 0,
+  "synthetic_pipe_arc_bin_total": 32,
+  "episode_budget_s": 45.0,
+  "tracking_events": [
+    {
+      "t": 4.233333333333333,
+      "event": "finite_boundary_forward_watch_started",
+      "measured_position_xyz": [
+        1.8463754628744422,
+        0.0,
+        -2.167743810848968
+      ]
+    }
+  ]
+}

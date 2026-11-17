@@ -1,0 +1,82 @@
+{
+  "scope": "Offline renderer/scorer feasibility audit only; no values fed to perception/controller",
+  "proof": "For any accepted goal position, XY distance to fish <= distance(goal_xy,fish_xy)+0.2 by triangle inequality. A bound below 0.77 means XY contact is unavoidable at every accepted goal position, regardless of controller.",
+  "scenarios": [
+    {
+      "scene": "fish_bend",
+      "evaluation_goal_xyz": [
+        2.0,
+        0.0,
+        -4.0
+      ],
+      "evaluation_fish_xyz": [
+        2.6,
+        0.0,
+        -2.3
+      ],
+      "goal_radius_m": 0.2,
+      "legacy_combined_radius_m": 0.77,
+      "goal_xy_center_distance_m": 0.6000000000000001,
+      "best_possible_goal_xy_clearance_upper_bound_m": 0.030000000000000027,
+      "joint_goal_and_legacy_xy_mathematically_possible": true,
+      "goal_center_3d_clearance_m": 1.0327756377319948
+    },
+    {
+      "scene": "fish_vertical",
+      "evaluation_goal_xyz": [
+        2.0,
+        0.0,
+        -4.0
+      ],
+      "evaluation_fish_xyz": [
+        2.75,
+        0.0,
+        -3.0
+      ],
+      "goal_radius_m": 0.2,
+      "legacy_combined_radius_m": 0.77,
+      "goal_xy_center_distance_m": 0.75,
+      "best_possible_goal_xy_clearance_upper_bound_m": 0.17999999999999994,
+      "joint_goal_and_legacy_xy_mathematically_possible": true,
+      "goal_center_3d_clearance_m": 0.48
+    },
+    {
+      "scene": "fish_down_bend",
+      "evaluation_goal_xyz": [
+        6.0,
+        0.0,
+        4.0
+      ],
+      "evaluation_fish_xyz": [
+        5.7,
+        0.0,
+        -1.5
+      ],
+      "goal_radius_m": 0.2,
+      "legacy_combined_radius_m": 0.77,
+      "goal_xy_center_distance_m": 0.2999999999999998,
+      "best_possible_goal_xy_clearance_upper_bound_m": -0.2700000000000002,
+      "joint_goal_and_legacy_xy_mathematically_possible": false,
+      "goal_center_3d_clearance_m": 4.738175741568165
+    },
+    {
+      "scene": "fish_down_vertical",
+      "evaluation_goal_xyz": [
+        6.0,
+        0.0,
+        4.0
+      ],
+      "evaluation_fish_xyz": [
+        5.3,
+        0.0,
+        2.5
+      ],
+      "goal_radius_m": 0.2,
+      "legacy_combined_radius_m": 0.77,
+      "goal_xy_center_distance_m": 0.7000000000000002,
+      "best_possible_goal_xy_clearance_upper_bound_m": 0.13000000000000012,
+      "joint_goal_and_legacy_xy_mathematically_possible": true,
+      "goal_center_3d_clearance_m": 0.8852945357246849
+    }
+  ]
+}

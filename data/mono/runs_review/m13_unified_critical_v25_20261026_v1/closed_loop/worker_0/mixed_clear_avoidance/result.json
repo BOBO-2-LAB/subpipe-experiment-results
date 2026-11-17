@@ -1,0 +1,205 @@
+{
+  "scenario": "mixed_clear",
+  "mode": "avoidance",
+  "task_completed": false,
+  "goal_reached": false,
+  "inspection_recovered": false,
+  "stop_reason": "corridor_exceeded",
+  "inspection_valid_fraction": 0.9416445623342176,
+  "valid_frames": 1775,
+  "inspection_frames": 1885,
+  "all_frame_valid_fraction": 0.9014728288471305,
+  "contact_3d": false,
+  "contact_xy": false,
+  "primary_contact_rule": "3D",
+  "elapsed_s": 65.83333333333333,
+  "maximum_cross_track_m": 1.0001695414887255,
+  "observed_elbows": [
+    {
+      "t": 0.6,
+      "event": "observed_frontier_end_confirmed",
+      "length_m": 3.700000000000001,
+      "position_xyz": [
+        3.700000000000001,
+        0.0,
+        0.0
+      ],
+      "evidence": "current_paired_edges_and_finite_RGB_surface",
+      "mission_terminal_assumed": false
+    },
+    {
+      "t": 1.2,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "gain": 0.0671696262405995,
+      "evidence": "current_surface_parallax_and_RGB",
+      "confirmation_baseline_m": 0.13161595056436615
+    },
+    {
+      "t": 5.466666666666667,
+      "event": "observed_frontier_end_confirmed",
+      "length_m": 3.9000000000000004,
+      "position_xyz": [
+        4.0,
+        -3.9000000000000004,
+        0.0
+      ],
+      "evidence": "current_paired_edges_and_finite_RGB_surface",
+      "mission_terminal_assumed": false
+    },
+    {
+      "t": 12.9,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.0,
+        -4.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "gain": 0.2514717786042442,
+      "evidence": "current_surface_parallax_and_RGB",
+      "confirmation_baseline_m": 0.13481156698271948
+    },
+    {
+      "t": 21.0,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        8.0,
+        -3.975,
+        0.0
+      ],
+      "outgoing_xyz": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "gain": 0.2919432294208465,
+      "evidence": "current_surface_parallax_and_RGB",
+      "confirmation_baseline_m": 0.13451466147501318
+    },
+    {
+      "t": 30.3,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        8.0,
+        -3.975,
+        -4.0620058287364795
+      ],
+      "outgoing_xyz": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "gain": 0.6788458884895904,
+      "evidence": "current_surface_parallax_and_RGB",
+      "confirmation_baseline_m": 0.07559001642423845
+    },
+    {
+      "t": 51.6,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        12.053446463974003,
+        -3.975,
+        -4.0620058287364795
+      ],
+      "outgoing_xyz": [
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "gain": 0.15,
+      "evidence": "current_surface_parallax_and_RGB",
+      "confirmation_baseline_m": 0.02921524274826659
+    }
+  ],
+  "intervention_frames": 0,
+  "prediction_valid_frames": 0,
+  "frames_logged": 1969,
+  "video_frames_written": 1969,
+  "fps": 30,
+  "configuration_sha256": "0fde3a228b2dbc9703c170d5cb0134a859afba2c0e9a16276440ceb50a90db1e",
+  "terminal_pipe_observed": false,
+  "pipe_arc_observation_fraction": 1.0,
+  "schema_version": 2,
+  "route_completed": false,
+  "collision": false,
+  "simplified_3d_contact": false,
+  "active_inspection_valid_fraction": 0.9416445623342176,
+  "synthetic_inspection_valid_fraction": 0.9014728288471305,
+  "maximum_abs_cross_track_m": 1.0001695414887255,
+  "elapsed_sim_s": 65.83333333333333,
+  "events": {},
+  "minimum_clearance_3d_m": null,
+  "minimum_clearance_xy_m": null,
+  "reverse_attempts": 0,
+  "waiting_frames": 84,
+  "reverse_recovery_frames": 0,
+  "synthetic_pipe_arc_bin_total": 116,
+  "episode_budget_s": 120.0,
+  "tracking_events": [
+    {
+      "t": 25.6,
+      "event": "active_geometry_view_started",
+      "measured_position_xyz": [
+        5.97392204148602,
+        -3.9746370343355655,
+        -3.717906310442693
+      ]
+    },
+    {
+      "t": 29.066666666666666,
+      "event": "active_geometry_view_started",
+      "measured_position_xyz": [
+        6.001846447616651,
+        -3.975009723252432,
+        -5.159056219036792
+      ]
+    },
+    {
+      "t": 50.06666666666666,
+      "event": "active_geometry_view_started",
+      "measured_position_xyz": [
+        13.911830449172184,
+        -3.9750000007500237,
+        -6.062005813961303
+      ]
+    },
+    {
+      "t": 51.56666666666666,
+      "event": "active_geometry_probe_started",
+      "requested_normal_offset_m": 0.25,
+      "measured_position_xyz": [
+        14.300891683544496,
+        -3.97500000084663,
+        -6.062005803891707
+      ]
+    },
+    {
+      "t": 51.833333333333336,
+      "event": "geometry_probe_rejoin_started",
+      "measured_position_xyz": [
+        14.317768052304439,
+        -3.975000000827573,
+        -6.0626157092154935
+      ]
+    },
+    {
+      "t": 54.53333333333333,
+      "event": "geometry_probe_rejoin_completed",
+      "route_error_m": 0.07947255027121514
+    }
+  ]
+}

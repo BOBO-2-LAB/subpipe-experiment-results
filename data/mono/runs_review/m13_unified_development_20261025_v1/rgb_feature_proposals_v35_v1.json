@@ -1,0 +1,1597 @@
+{
+  "scope": "Offline RGB-only feature proposals on recorded measured poses.\n\nScene geometry is used by the renderer and by post-proposal diagnostics only.\nThis isolated proposal stream does not drive the frozen closed-loop controller.\nExclusion boxes come from recorded CURRENT biological predictions, not labels.\n",
+  "controller_changes": false,
+  "recorded_prediction_exclusion_boxes": true,
+  "independent_RGB_feature_budget": 240,
+  "wall_s": 2404.6261229999945,
+  "records": [
+    {
+      "scene": "mixed_clear",
+      "t": 2.0,
+      "points": 0,
+      "posthoc_true_surface_points": 0,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 1,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 0,
+        "current_reprojection_verified_landmarks": 0,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 4.0,
+      "points": 38,
+      "posthoc_true_surface_points": 10,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 1,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 38,
+        "current_reprojection_verified_landmarks": 122,
+        "removed_background_plane_depths": [
+          0.30000000000000004,
+          0.4,
+          0.5,
+          0.6000000000000001
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 6.0,
+      "points": 48,
+      "posthoc_true_surface_points": 27,
+      "posthoc_true_outgoing_support": [
+        12,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 1,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 48,
+        "current_reprojection_verified_landmarks": 104,
+        "removed_background_plane_depths": [
+          0.2,
+          0.30000000000000004,
+          0.4,
+          0.5
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 8.0,
+      "points": 73,
+      "posthoc_true_surface_points": 30,
+      "posthoc_true_outgoing_support": [
+        25,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 1,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 73,
+        "current_reprojection_verified_landmarks": 93,
+        "removed_background_plane_depths": [
+          0.2,
+          0.30000000000000004
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 10.0,
+      "points": 51,
+      "posthoc_true_surface_points": 28,
+      "posthoc_true_outgoing_support": [
+        17,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 1,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 51,
+        "current_reprojection_verified_landmarks": 112,
+        "removed_background_plane_depths": [
+          0.30000000000000004,
+          0.4,
+          0.5
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 12.0,
+      "points": 45,
+      "posthoc_true_surface_points": 18,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 1,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 45,
+        "current_reprojection_verified_landmarks": 124,
+        "removed_background_plane_depths": [
+          0.30000000000000004,
+          0.4,
+          0.5,
+          0.6000000000000001
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 14.0,
+      "points": 42,
+      "posthoc_true_surface_points": 15,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 2,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 42,
+        "current_reprojection_verified_landmarks": 108,
+        "removed_background_plane_depths": [
+          0.4,
+          0.5,
+          0.6000000000000001
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 16.0,
+      "points": 48,
+      "posthoc_true_surface_points": 24,
+      "posthoc_true_outgoing_support": [
+        0,
+        9,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 2,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 48,
+        "current_reprojection_verified_landmarks": 89,
+        "removed_background_plane_depths": [
+          0.30000000000000004,
+          0.4
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 18.0,
+      "points": 38,
+      "posthoc_true_surface_points": 20,
+      "posthoc_true_outgoing_support": [
+        0,
+        15,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 2,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 38,
+        "current_reprojection_verified_landmarks": 102,
+        "removed_background_plane_depths": [
+          0.30000000000000004,
+          0.4,
+          0.5
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 20.0,
+      "points": 54,
+      "posthoc_true_surface_points": 24,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 2,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 54,
+        "current_reprojection_verified_landmarks": 97,
+        "removed_background_plane_depths": [
+          0.4,
+          0.5,
+          0.6000000000000001
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 22.0,
+      "points": 30,
+      "posthoc_true_surface_points": 7,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 3,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 30,
+        "current_reprojection_verified_landmarks": 79,
+        "removed_background_plane_depths": [
+          0.30000000000000004,
+          0.4,
+          0.5
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 24.0,
+      "points": 55,
+      "posthoc_true_surface_points": 55,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 3,
+      "trace": {
+        "tracked_features": 202,
+        "current_triangulated_points": 55,
+        "current_reprojection_verified_landmarks": 47,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 26.0,
+      "points": 157,
+      "posthoc_true_surface_points": 141,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 3,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 157,
+        "current_reprojection_verified_landmarks": 147,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 28.0,
+      "points": 169,
+      "posthoc_true_surface_points": 110,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 3,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 169,
+        "current_reprojection_verified_landmarks": 167,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 30.0,
+      "points": 35,
+      "posthoc_true_surface_points": 24,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 3,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 35,
+        "current_reprojection_verified_landmarks": 59,
+        "removed_background_plane_depths": [
+          0.30000000000000004
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 32.0,
+      "points": 97,
+      "posthoc_true_surface_points": 16,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 97,
+        "current_reprojection_verified_landmarks": 97,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 34.0,
+      "points": 75,
+      "posthoc_true_surface_points": 9,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        6,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 75,
+        "current_reprojection_verified_landmarks": 75,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 36.0,
+      "points": 52,
+      "posthoc_true_surface_points": 9,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        7,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 52,
+        "current_reprojection_verified_landmarks": 149,
+        "removed_background_plane_depths": [
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 38.0,
+      "points": 61,
+      "posthoc_true_surface_points": 10,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        9,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 61,
+        "current_reprojection_verified_landmarks": 145,
+        "removed_background_plane_depths": [
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 40.0,
+      "points": 58,
+      "posthoc_true_surface_points": 11,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        11,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 58,
+        "current_reprojection_verified_landmarks": 147,
+        "removed_background_plane_depths": [
+          0.4,
+          0.5,
+          0.6000000000000001,
+          0.9
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 42.0,
+      "points": 77,
+      "posthoc_true_surface_points": 5,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 77,
+        "current_reprojection_verified_landmarks": 137,
+        "removed_background_plane_depths": [
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8,
+          0.9
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 44.0,
+      "points": 50,
+      "posthoc_true_surface_points": 1,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 50,
+        "current_reprojection_verified_landmarks": 159,
+        "removed_background_plane_depths": [
+          0.4,
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 46.0,
+      "points": 61,
+      "posthoc_true_surface_points": 3,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 61,
+        "current_reprojection_verified_landmarks": 156,
+        "removed_background_plane_depths": [
+          0.4,
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 48.0,
+      "points": 42,
+      "posthoc_true_surface_points": 10,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 42,
+        "current_reprojection_verified_landmarks": 131,
+        "removed_background_plane_depths": [
+          0.2,
+          0.30000000000000004,
+          0.4,
+          0.5
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 50.0,
+      "points": 88,
+      "posthoc_true_surface_points": 12,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 88,
+        "current_reprojection_verified_landmarks": 77,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 52.0,
+      "points": 14,
+      "posthoc_true_surface_points": 3,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 14,
+        "current_reprojection_verified_landmarks": 14,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 54.0,
+      "points": 31,
+      "posthoc_true_surface_points": 4,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 31,
+        "current_reprojection_verified_landmarks": 29,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 56.0,
+      "points": 74,
+      "posthoc_true_surface_points": 16,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 5,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 74,
+        "current_reprojection_verified_landmarks": 158,
+        "removed_background_plane_depths": [
+          0.2,
+          0.30000000000000004,
+          0.4
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 58.0,
+      "points": 28,
+      "posthoc_true_surface_points": 7,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 6,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 28,
+        "current_reprojection_verified_landmarks": 161,
+        "removed_background_plane_depths": [
+          0.30000000000000004,
+          0.4,
+          0.5,
+          0.6000000000000001
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 60.0,
+      "points": 47,
+      "posthoc_true_surface_points": 6,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 6,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 47,
+        "current_reprojection_verified_landmarks": 43,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 62.0,
+      "points": 78,
+      "posthoc_true_surface_points": 26,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        12
+      ],
+      "original_confirmed_bends": 6,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 78,
+        "current_reprojection_verified_landmarks": 71,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 64.0,
+      "points": 49,
+      "posthoc_true_surface_points": 15,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 6,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 49,
+        "current_reprojection_verified_landmarks": 83,
+        "removed_background_plane_depths": [
+          0.30000000000000004,
+          0.4
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 66.0,
+      "points": 18,
+      "posthoc_true_surface_points": 8,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 6,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 18,
+        "current_reprojection_verified_landmarks": 121,
+        "removed_background_plane_depths": [
+          0.30000000000000004,
+          0.4,
+          0.5
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 68.0,
+      "points": 16,
+      "posthoc_true_surface_points": 11,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 6,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 16,
+        "current_reprojection_verified_landmarks": 122,
+        "removed_background_plane_depths": [
+          0.30000000000000004,
+          0.4,
+          0.5
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_clear",
+      "t": 70.0,
+      "points": 22,
+      "posthoc_true_surface_points": 20,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 6,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 22,
+        "current_reprojection_verified_landmarks": 158,
+        "removed_background_plane_depths": [
+          0.30000000000000004,
+          0.4,
+          0.5
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 2.0,
+      "points": 0,
+      "posthoc_true_surface_points": 0,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 0,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 0,
+        "current_reprojection_verified_landmarks": 0,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 4.0,
+      "points": 38,
+      "posthoc_true_surface_points": 20,
+      "posthoc_true_outgoing_support": [
+        9,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 1,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 38,
+        "current_reprojection_verified_landmarks": 93,
+        "removed_background_plane_depths": [
+          0.30000000000000004,
+          0.4,
+          0.5
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 6.0,
+      "points": 60,
+      "posthoc_true_surface_points": 26,
+      "posthoc_true_outgoing_support": [
+        9,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 1,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 60,
+        "current_reprojection_verified_landmarks": 71,
+        "removed_background_plane_depths": [
+          0.30000000000000004
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 8.0,
+      "points": 60,
+      "posthoc_true_surface_points": 44,
+      "posthoc_true_outgoing_support": [
+        19,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 1,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 60,
+        "current_reprojection_verified_landmarks": 53,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 10.0,
+      "points": 22,
+      "posthoc_true_surface_points": 10,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 1,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 22,
+        "current_reprojection_verified_landmarks": 65,
+        "removed_background_plane_depths": [
+          0.4,
+          0.5
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 12.0,
+      "points": 35,
+      "posthoc_true_surface_points": 33,
+      "posthoc_true_outgoing_support": [
+        0,
+        9,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 2,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 35,
+        "current_reprojection_verified_landmarks": 58,
+        "removed_background_plane_depths": [
+          0.4
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 14.0,
+      "points": 36,
+      "posthoc_true_surface_points": 22,
+      "posthoc_true_outgoing_support": [
+        0,
+        18,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 2,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 36,
+        "current_reprojection_verified_landmarks": 95,
+        "removed_background_plane_depths": [
+          0.30000000000000004,
+          0.4,
+          0.5
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 16.0,
+      "points": 43,
+      "posthoc_true_surface_points": 14,
+      "posthoc_true_outgoing_support": [
+        0,
+        12,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 2,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 43,
+        "current_reprojection_verified_landmarks": 98,
+        "removed_background_plane_depths": [
+          0.4,
+          0.5,
+          0.6000000000000001
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 18.0,
+      "points": 88,
+      "posthoc_true_surface_points": 18,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 3,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 88,
+        "current_reprojection_verified_landmarks": 131,
+        "removed_background_plane_depths": [
+          0.30000000000000004,
+          0.4,
+          0.5
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 20.0,
+      "points": 7,
+      "posthoc_true_surface_points": 2,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 3,
+      "trace": {
+        "tracked_features": 215,
+        "current_triangulated_points": 7,
+        "current_reprojection_verified_landmarks": 0,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 22.0,
+      "points": 52,
+      "posthoc_true_surface_points": 47,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 3,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 52,
+        "current_reprojection_verified_landmarks": 46,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 24.0,
+      "points": 35,
+      "posthoc_true_surface_points": 14,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 3,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 35,
+        "current_reprojection_verified_landmarks": 88,
+        "removed_background_plane_depths": [
+          0.30000000000000004,
+          0.4,
+          0.5
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 26.0,
+      "points": 21,
+      "posthoc_true_surface_points": 4,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 3,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 21,
+        "current_reprojection_verified_landmarks": 71,
+        "removed_background_plane_depths": [
+          0.2,
+          0.30000000000000004,
+          0.4
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 28.0,
+      "points": 61,
+      "posthoc_true_surface_points": 7,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 61,
+        "current_reprojection_verified_landmarks": 57,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 30.0,
+      "points": 102,
+      "posthoc_true_surface_points": 5,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 102,
+        "current_reprojection_verified_landmarks": 89,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 32.0,
+      "points": 39,
+      "posthoc_true_surface_points": 6,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 39,
+        "current_reprojection_verified_landmarks": 147,
+        "removed_background_plane_depths": [
+          0.4,
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 34.0,
+      "points": 75,
+      "posthoc_true_surface_points": 10,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 75,
+        "current_reprojection_verified_landmarks": 148,
+        "removed_background_plane_depths": [
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 36.0,
+      "points": 79,
+      "posthoc_true_surface_points": 8,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        7,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 79,
+        "current_reprojection_verified_landmarks": 131,
+        "removed_background_plane_depths": [
+          0.4,
+          0.5,
+          0.6000000000000001
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 38.0,
+      "points": 86,
+      "posthoc_true_surface_points": 0,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 86,
+        "current_reprojection_verified_landmarks": 128,
+        "removed_background_plane_depths": [
+          0.7000000000000001,
+          0.8
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 40.0,
+      "points": 40,
+      "posthoc_true_surface_points": 1,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 40,
+        "current_reprojection_verified_landmarks": 145,
+        "removed_background_plane_depths": [
+          0.4,
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 42.0,
+      "points": 112,
+      "posthoc_true_surface_points": 8,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 112,
+        "current_reprojection_verified_landmarks": 106,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 44.0,
+      "points": 98,
+      "posthoc_true_surface_points": 8,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 98,
+        "current_reprojection_verified_landmarks": 87,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 46.0,
+      "points": 114,
+      "posthoc_true_surface_points": 8,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 114,
+        "current_reprojection_verified_landmarks": 101,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 48.0,
+      "points": 82,
+      "posthoc_true_surface_points": 4,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 82,
+        "current_reprojection_verified_landmarks": 76,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 50.0,
+      "points": 32,
+      "posthoc_true_surface_points": 7,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 32,
+        "current_reprojection_verified_landmarks": 95,
+        "removed_background_plane_depths": [
+          0.30000000000000004,
+          0.4,
+          0.5
+        ],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 52.0,
+      "points": 79,
+      "posthoc_true_surface_points": 4,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 79,
+        "current_reprojection_verified_landmarks": 74,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    },
+    {
+      "scene": "mixed_fish",
+      "t": 54.0,
+      "points": 94,
+      "posthoc_true_surface_points": 7,
+      "posthoc_true_outgoing_support": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_confirmed_bends": 4,
+      "trace": {
+        "tracked_features": 240,
+        "current_triangulated_points": 94,
+        "current_reprojection_verified_landmarks": 94,
+        "removed_background_plane_depths": [],
+        "source": "LK+known measured pose triangulation; mapped points require current reprojection",
+        "rendered_depth_used": false
+      }
+    }
+  ]
+}

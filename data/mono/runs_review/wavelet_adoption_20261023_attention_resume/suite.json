@@ -1,0 +1,643 @@
+{
+  "selected_model": "attention",
+  "perception_profile": "mono/configs/perception_wavelet_attention.json",
+  "perception_selection": {
+    "profile_path": "mono/configs/perception_wavelet_attention.json",
+    "profile_sha256": "006a03b6999930d5ea69ba4bd0e39b8b5948453b622863c0c6d15f05a5f23979",
+    "profile": {
+      "schema_version": 1,
+      "name": "wavelet_attention_suim",
+      "adoption_status": "user-selected research configuration; task acceptance is reported separately",
+      "pipe_checkpoint": "runs_ablation/M11/best.pt",
+      "fish_checkpoint": "runs_fish/wavelet_20261023_seed42_gpu/attention/best.pt",
+      "pipe_sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a",
+      "fish_sha256": "6386036ed2f670ecd05199c4e544564b447b9f37afbbbd1564254e4d353f6d73",
+      "fish_wavelet": "attention",
+      "fish_wavelet_stage": "s8",
+      "includes_deepcamo": false,
+      "selection_basis": "Same-budget SUIM validation FV IoU 61.218% vs plain 60.844%. Both below historical 63.644%; not selected using DeepCamo held-out test scores."
+    },
+    "checkpoints": [
+      {
+        "path": "mono/runs_ablation/M11/best.pt",
+        "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+      },
+      {
+        "path": "mono/runs_fish/wavelet_20261023_seed42_gpu/attention/best.pt",
+        "sha256": "6386036ed2f670ecd05199c4e544564b447b9f37afbbbd1564254e4d353f6d73"
+      }
+    ]
+  },
+  "scenario_scope": "Six core directed scenes, not a full crossing/occlusion/viewpoint/height matrix",
+  "control_policy": "Existing ROV straight reference, up v18 and down v9 parameters, gates unchanged",
+  "contact_policy": "Keep original planar and assumed 3D scores separately; never convert XY failure into XY pass",
+  "started_epoch_time": 1792733001.5696843,
+  "status": "complete",
+  "source_suite": "mono/runs_review/wavelet_adoption_20261023_attention/suite.json",
+  "groups": [
+    {
+      "name": "straight",
+      "episodes": [
+        {
+          "scenario": "clear_pipe",
+          "mode": "avoidance",
+          "outcome": "goal_reached",
+          "route_completed": true,
+          "task_completed": true,
+          "legacy_task_completed": true,
+          "inspection_scoring": "inspection_phase",
+          "active_inspection_valid_fraction": 0.9648033126293996,
+          "active_inspection_frames": 483,
+          "corridor_preserved": true,
+          "inspection_recovered": true,
+          "synthetic_inspection_valid_fraction": 0.9648033126293996,
+          "collision": false,
+          "minimum_clearance_m": null,
+          "encounter_passed": false,
+          "footprint_contact": false,
+          "physical_collision": null,
+          "contact_metric": "horizontal footprint overlap; not physical 3D collision",
+          "inspection_recovery_time_s": null,
+          "elapsed_sim_s": 16.1,
+          "progress_m": 8.000763284174784,
+          "maximum_abs_cross_track_m": 0.3556284634898971,
+          "pipe_loss_frames": 7,
+          "longest_pipe_loss_s": 0.23333333333333334,
+          "ground_truth_pipe_out_of_view_frames": 0,
+          "tracking_error_abs_mean": 0.04013386176388366,
+          "actions": {
+            "tracker_recovery": 7,
+            "nominal": 476
+          },
+          "synthetic_pipe_iou": 0.7474990386861176,
+          "synthetic_fish_iou": null,
+          "visible_fish_frames": 0,
+          "fish_overlap_hit_frames": 0,
+          "fish_absent_but_detection_frames": 0,
+          "inference_wall_s_median": 0.015002300000560354,
+          "inference_wall_s_p95": 0.017293450001125164,
+          "frames": 483,
+          "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+          "video": "mono/runs_review/wavelet_adoption_20261023_attention/straight/clear_pipe_avoidance/feedback.mp4",
+          "event_times": {
+            "first_visible_s": null,
+            "first_effective_detection_s": null,
+            "first_matching_detection_s": null,
+            "first_confirmed_track_s": null,
+            "first_actionable_track_s": null,
+            "first_intervention_s": null,
+            "first_speed_command_reduction_s": 0.0,
+            "first_actual_speed_reduction_s": 0.13333333333333333,
+            "first_avoidance_setpoint_s": null,
+            "contact_s": null,
+            "detection_delay_s": null,
+            "confirmation_delay_s": null,
+            "decision_delay_s": null,
+            "actuation_delay_s": null,
+            "remaining_time_at_intervention_s": null,
+            "matching_to_first_confirmation_s": null,
+            "matching_to_actionable_track_s": null,
+            "association_caveat": "Global first events; matching-based intervals are not proof of same-fish track identity.",
+            "post_intervention_command_reduction_s": null,
+            "post_intervention_actual_speed_response_s": null,
+            "post_intervention_actuation_delay_s": null
+          },
+          "minimum_sphere_clearance_m": null,
+          "simplified_3d_contact": null,
+          "sphere_metric": "Assumed sphere envelopes at fixed heights; evaluation only. Episode still stops at original horizontal contact.",
+          "speed_saturation_frames": 3,
+          "injected_fish_dropout_frames": 0,
+          "configured_image_delay_s": 0.21,
+          "loss_recovery_events": [],
+          "reinspection_restarts": 0,
+          "pipe_mask_motion_compensated": false,
+          "raw_delayed_pipe_iou": 0.7474990386861176,
+          "raw_delayed_inspection_valid_fraction": 0.9648033126293996,
+          "raw_delayed_active_valid_fraction": 0.9648033126293996,
+          "raw_delayed_task_completed": true,
+          "realized_image_age_s_max": 0.23333333333333428
+        },
+        {
+          "scenario": "head_on",
+          "mode": "avoidance",
+          "outcome": "goal_reached",
+          "route_completed": true,
+          "task_completed": true,
+          "legacy_task_completed": true,
+          "inspection_scoring": "inspection_phase",
+          "active_inspection_valid_fraction": 0.9869888475836431,
+          "active_inspection_frames": 538,
+          "corridor_preserved": true,
+          "inspection_recovered": true,
+          "synthetic_inspection_valid_fraction": 0.9869888475836431,
+          "collision": false,
+          "minimum_clearance_m": 0.09852772577342117,
+          "encounter_passed": true,
+          "footprint_contact": false,
+          "physical_collision": null,
+          "contact_metric": "horizontal footprint overlap; not physical 3D collision",
+          "inspection_recovery_time_s": 3.166666666666666,
+          "elapsed_sim_s": 17.933333333333334,
+          "progress_m": 8.009652196507076,
+          "maximum_abs_cross_track_m": 0.9256236125887088,
+          "pipe_loss_frames": 7,
+          "longest_pipe_loss_s": 0.23333333333333334,
+          "ground_truth_pipe_out_of_view_frames": 0,
+          "tracking_error_abs_mean": 0.06845818852784258,
+          "actions": {
+            "tracker_recovery": 7,
+            "nominal": 363,
+            "slow": 99,
+            "hover": 69
+          },
+          "synthetic_pipe_iou": 0.8349996563364612,
+          "synthetic_fish_iou": 0.25851255155582376,
+          "visible_fish_frames": 221,
+          "fish_overlap_hit_frames": 153,
+          "fish_absent_but_detection_frames": 5,
+          "inference_wall_s_median": 0.01508319999993546,
+          "inference_wall_s_p95": 0.01686370999959763,
+          "frames": 538,
+          "model_input": "rendered RGB only; no ground-truth mask or world coordinates",
+          "video": "mono/runs_review/wavelet_adoption_20261023_attention/straight/head_on_avoidance/feedback.mp4",
+          "event_times": {
+            "first_visible_s": 3.1666666666666665,
+            "first_effective_detection_s": 4.166666666666667,
+            "first_matching_detection_s": 4.166666666666667,
+            "first_confirmed_track_s": 4.333333333333333,
+            "first_actionable_track_s": 4.5,
+            "first_intervention_s": 5.033333333333333,
+            "first_speed_command_reduction_s": 0.0,
+            "first_actual_speed_reduction_s": 0.13333333333333333,
+            "first_avoidance_setpoint_s": 5.033333333333333,
+            "contact_s": null,
+            "detection_delay_s": 1.0000000000000004,
+            "confirmation_delay_s": 0.16666666666666607,
+            "decision_delay_s": 0.7000000000000002,
+            "actuation_delay_s": null,
+            "remaining_time_at_intervention_s": null,
+            "matching_to_first_confirmation_s": 0.16666666666666607,
+            "matching_to_actionable_track_s": 0.33333333333333304,
+            "association_caveat": "Global first events; matching-based intervals are not proof of same-fish track identity.",
+            "post_intervention_command_reduction_s": 5.1,
+            "post_intervention_actual_speed_response_s": 5.233333333333333,
+            "post_intervention_actuation_delay_s": 0.20000000000000018
+          },
+          "minimum_sphere_clearance_m": 0.2321678554200144,
+          "simplified_3d_contact": false,
+          "sphere_metric": "Assumed sphere envelopes at fixed heights; evaluation only. Episode still stops at original horizontal contact.",
+          "speed_saturation_frames": 48,
+          "injected_fish_dropout_frames": 0,
+          "configured_image_delay_s": 0.21,
+          "loss_recovery_events": [],
+          "reinspection_restarts": 0,
+          "pipe_mask_motion_compensated": false,
+          "raw_delayed_pipe_iou": 0.8349996563364612,
+          "raw_delayed_inspection_valid_fraction": 0.9869888475836431,
+          "raw_delayed_active_valid_fraction": 0.9869888475836431,
+          "raw_delayed_task_completed": true,
+          "realized_image_age_s_max": 0.23333333333333428
+        }
+      ],
+      "result_paths": {
+        "clear_pipe_avoidance": "mono/runs_review/wavelet_adoption_20261023_attention/straight/clear_pipe_avoidance/result.json",
+        "head_on_avoidance": "mono/runs_review/wavelet_adoption_20261023_attention/straight/head_on_avoidance/result.json"
+      },
+      "recovery_sources": {
+        "clear_pipe_avoidance": "reused_completed",
+        "head_on_avoidance": "reused_completed"
+      },
+      "model": {
+        "profile_path": "mono/configs/perception_wavelet_attention.json",
+        "profile_sha256": "006a03b6999930d5ea69ba4bd0e39b8b5948453b622863c0c6d15f05a5f23979",
+        "profile": {
+          "schema_version": 1,
+          "name": "wavelet_attention_suim",
+          "adoption_status": "user-selected research configuration; task acceptance is reported separately",
+          "pipe_checkpoint": "runs_ablation/M11/best.pt",
+          "fish_checkpoint": "runs_fish/wavelet_20261023_seed42_gpu/attention/best.pt",
+          "pipe_sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a",
+          "fish_sha256": "6386036ed2f670ecd05199c4e544564b447b9f37afbbbd1564254e4d353f6d73",
+          "fish_wavelet": "attention",
+          "fish_wavelet_stage": "s8",
+          "includes_deepcamo": false,
+          "selection_basis": "Same-budget SUIM validation FV IoU 61.218% vs plain 60.844%. Both below historical 63.644%; not selected using DeepCamo held-out test scores."
+        },
+        "checkpoints": [
+          {
+            "path": "mono/runs_ablation/M11/best.pt",
+            "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+          },
+          {
+            "path": "mono/runs_fish/wavelet_20261023_seed42_gpu/attention/best.pt",
+            "sha256": "6386036ed2f670ecd05199c4e544564b447b9f37afbbbd1564254e4d353f6d73"
+          }
+        ],
+        "model_config": {
+          "num_fish_classes": 8,
+          "fish_mid": 64,
+          "separate_encoder": true,
+          "fish_wavelet": "attention",
+          "fish_wavelet_stage": "s8"
+        },
+        "pipe_exactly_matches_reference": true
+      }
+    },
+    {
+      "name": "up",
+      "episodes": [
+        {
+          "scenario": "clear_up",
+          "mode": "avoidance",
+          "task_completed": true,
+          "scene": {
+            "name": "clear_up",
+            "sign": -1,
+            "fish": null
+          },
+          "evaluation_route_xd": [
+            [
+              0,
+              -2.0
+            ],
+            [
+              2.0,
+              -2.0
+            ],
+            [
+              2.0,
+              -4
+            ]
+          ],
+          "evaluation_goal_xyz": [
+            2.0,
+            0.0,
+            -4.0
+          ],
+          "environment_contact_3d": false,
+          "goal_reached": true,
+          "stop_reason": "goal_reached",
+          "elapsed_s": 9.4,
+          "inspection_valid_fraction": 1.0,
+          "required_goal_stability_hold_s": 0.0,
+          "goal_held_stably_s": 0.0,
+          "all_frame_valid_fraction": 1.0,
+          "maximum_cross_track_m": 0.17651036387207863,
+          "endpoint_hold_duration_s": 1.7333333333333334,
+          "fish_contact_3d": false,
+          "fish_contact_2d": false,
+          "minimum_fish_clearance_3d_m": null,
+          "terminal_pipe_observed": true,
+          "end_distance_m": 0.19735262952900776,
+          "pipe_arc_observation_fraction": 0.96875,
+          "no_fish_false_intervention_pass": true,
+          "recentered_at_goal": true,
+          "failed_acceptance_checks": [],
+          "legacy_2d_no_contact_pass": true,
+          "intervention_frames": 0,
+          "event_times": {
+            "first_goal_region_entry": 9.4
+          },
+          "recovery_events": [],
+          "task_completed_3d": true,
+          "task_completed_legacy_2d": true
+        },
+        {
+          "scenario": "fish_vertical",
+          "mode": "avoidance",
+          "task_completed": false,
+          "scene": {
+            "name": "fish_vertical",
+            "sign": -1,
+            "fish": [
+              2.75,
+              0.0,
+              -3.0
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          "evaluation_route_xd": [
+            [
+              0,
+              -2.0
+            ],
+            [
+              2.0,
+              -2.0
+            ],
+            [
+              2.0,
+              -4
+            ]
+          ],
+          "evaluation_goal_xyz": [
+            2.0,
+            0.0,
+            -4.0
+          ],
+          "environment_contact_3d": false,
+          "goal_reached": true,
+          "stop_reason": "goal_reached",
+          "elapsed_s": 9.533333333333333,
+          "inspection_valid_fraction": 0.7157894736842105,
+          "required_goal_stability_hold_s": 0.0,
+          "goal_held_stably_s": 0.0,
+          "all_frame_valid_fraction": 0.6535714285714286,
+          "maximum_cross_track_m": 0.26994585353391054,
+          "endpoint_hold_duration_s": 3.0,
+          "fish_contact_3d": false,
+          "fish_contact_2d": false,
+          "minimum_fish_clearance_3d_m": 0.0917765059919371,
+          "terminal_pipe_observed": true,
+          "end_distance_m": 0.19298900999277252,
+          "pipe_arc_observation_fraction": 0.96875,
+          "no_fish_false_intervention_pass": true,
+          "recentered_at_goal": true,
+          "failed_acceptance_checks": [
+            "inspection_valid_fraction"
+          ],
+          "legacy_2d_no_contact_pass": true,
+          "intervention_frames": 0,
+          "event_times": {
+            "fish_first_visible": 1.6333333333333333,
+            "fish_first_detection": 6.766666666666667,
+            "fish_first_effective_detection": 6.766666666666667,
+            "first_goal_region_entry": 9.533333333333333
+          },
+          "recovery_events": [],
+          "task_completed_3d": false,
+          "task_completed_legacy_2d": false
+        }
+      ],
+      "result_paths": {
+        "clear_up_avoidance": "mono/runs_review/wavelet_adoption_20261023_attention/up/clear_up_avoidance/result.json",
+        "fish_vertical_avoidance": "mono/runs_review/wavelet_adoption_20261023_attention/up/fish_vertical_avoidance/result.json"
+      },
+      "recovery_sources": {
+        "clear_up_avoidance": "reused_completed",
+        "fish_vertical_avoidance": "reused_completed"
+      },
+      "model": {
+        "profile_path": "mono/configs/perception_wavelet_attention.json",
+        "profile_sha256": "006a03b6999930d5ea69ba4bd0e39b8b5948453b622863c0c6d15f05a5f23979",
+        "profile": {
+          "schema_version": 1,
+          "name": "wavelet_attention_suim",
+          "adoption_status": "user-selected research configuration; task acceptance is reported separately",
+          "pipe_checkpoint": "runs_ablation/M11/best.pt",
+          "fish_checkpoint": "runs_fish/wavelet_20261023_seed42_gpu/attention/best.pt",
+          "pipe_sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a",
+          "fish_sha256": "6386036ed2f670ecd05199c4e544564b447b9f37afbbbd1564254e4d353f6d73",
+          "fish_wavelet": "attention",
+          "fish_wavelet_stage": "s8",
+          "includes_deepcamo": false,
+          "selection_basis": "Same-budget SUIM validation FV IoU 61.218% vs plain 60.844%. Both below historical 63.644%; not selected using DeepCamo held-out test scores."
+        },
+        "checkpoints": [
+          {
+            "path": "mono/runs_ablation/M11/best.pt",
+            "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+          },
+          {
+            "path": "mono/runs_fish/wavelet_20261023_seed42_gpu/attention/best.pt",
+            "sha256": "6386036ed2f670ecd05199c4e544564b447b9f37afbbbd1564254e4d353f6d73"
+          }
+        ],
+        "model_config": {
+          "num_fish_classes": 8,
+          "fish_mid": 64,
+          "separate_encoder": true,
+          "fish_wavelet": "attention",
+          "fish_wavelet_stage": "s8"
+        },
+        "pipe_exactly_matches_reference": true
+      }
+    },
+    {
+      "name": "down",
+      "episodes": [
+        {
+          "scenario": "clear_down",
+          "mode": "avoidance",
+          "task_completed": true,
+          "scene": {
+            "name": "clear_down",
+            "sign": 1,
+            "fish": null
+          },
+          "evaluation_route_xd": [
+            [
+              0,
+              -2.0
+            ],
+            [
+              6.0,
+              -2.0
+            ],
+            [
+              6.0,
+              4
+            ]
+          ],
+          "evaluation_goal_xyz": [
+            6.0,
+            0.0,
+            4.0
+          ],
+          "environment_contact_3d": false,
+          "goal_reached": true,
+          "stop_reason": "goal_reached",
+          "elapsed_s": 37.96666666666667,
+          "inspection_valid_fraction": 1.0,
+          "required_goal_stability_hold_s": 1.0,
+          "goal_held_stably_s": 1.0,
+          "all_frame_valid_fraction": 0.9920564872021183,
+          "maximum_cross_track_m": 0.1401166360541024,
+          "endpoint_hold_duration_s": 3.8333333333333335,
+          "fish_contact_3d": false,
+          "fish_contact_2d": false,
+          "minimum_fish_clearance_3d_m": null,
+          "terminal_pipe_observed": true,
+          "end_distance_m": 0.06044520437180638,
+          "pipe_arc_observation_fraction": 0.96875,
+          "no_fish_false_intervention_pass": true,
+          "recentered_at_goal": true,
+          "failed_acceptance_checks": [],
+          "legacy_2d_no_contact_pass": true,
+          "intervention_frames": 0,
+          "event_times": {
+            "first_goal_region_entry": 36.166666666666664
+          },
+          "recovery_events": [
+            {
+              "t": 5.333333333333333,
+              "event": "loss_wait_started"
+            },
+            {
+              "t": 6.133333333333333,
+              "event": "vision_reacquired"
+            },
+            {
+              "t": 9.6,
+              "event": "reinspection_started"
+            }
+          ],
+          "task_completed_3d": true,
+          "task_completed_legacy_2d": true
+        },
+        {
+          "scenario": "fish_down_vertical",
+          "mode": "avoidance",
+          "task_completed": false,
+          "scene": {
+            "name": "fish_down_vertical",
+            "sign": 1,
+            "fish": [
+              5.3,
+              0.0,
+              2.5
+            ]
+          },
+          "evaluation_route_xd": [
+            [
+              0,
+              -2.0
+            ],
+            [
+              6.0,
+              -2.0
+            ],
+            [
+              6.0,
+              4
+            ]
+          ],
+          "evaluation_goal_xyz": [
+            6.0,
+            0.0,
+            4.0
+          ],
+          "environment_contact_3d": false,
+          "goal_reached": false,
+          "stop_reason": "fish_contact_3d",
+          "elapsed_s": 31.666666666666668,
+          "inspection_valid_fraction": 0.9595588235294118,
+          "required_goal_stability_hold_s": 1.0,
+          "goal_held_stably_s": 0.0,
+          "all_frame_valid_fraction": 0.9555084745762712,
+          "maximum_cross_track_m": 0.1401166360541024,
+          "endpoint_hold_duration_s": 0.0,
+          "fish_contact_3d": true,
+          "fish_contact_2d": true,
+          "minimum_fish_clearance_3d_m": -0.0018953936569420238,
+          "terminal_pipe_observed": false,
+          "end_distance_m": 1.7651662468805485,
+          "pipe_arc_observation_fraction": 0.96875,
+          "no_fish_false_intervention_pass": true,
+          "recentered_at_goal": false,
+          "failed_acceptance_checks": [
+            "goal_reached",
+            "fish_contact_3d",
+            "goal_stability_hold"
+          ],
+          "legacy_2d_no_contact_pass": false,
+          "intervention_frames": 0,
+          "event_times": {
+            "fish_first_visible": 14.9,
+            "fish_first_detection": 16.5,
+            "fish_first_effective_detection": 20.0,
+            "first_confirmed_track": 28.666666666666668,
+            "first_contact_3d": 31.666666666666668
+          },
+          "recovery_events": [
+            {
+              "t": 5.333333333333333,
+              "event": "loss_wait_started"
+            },
+            {
+              "t": 6.133333333333333,
+              "event": "vision_reacquired"
+            },
+            {
+              "t": 9.6,
+              "event": "reinspection_started"
+            }
+          ],
+          "task_completed_3d": false,
+          "task_completed_legacy_2d": false
+        }
+      ],
+      "result_paths": {
+        "clear_down_avoidance": "mono/runs_review/wavelet_adoption_20261023_attention/down/clear_down_avoidance/result.json",
+        "fish_down_vertical_avoidance": "mono/runs_review/wavelet_adoption_20261023_attention_resume/down/fish_down_vertical_avoidance/fish_down_vertical_avoidance/result.json"
+      },
+      "recovery_sources": {
+        "clear_down_avoidance": "reused_completed",
+        "fish_down_vertical_avoidance": "resumed_in_new_directory"
+      },
+      "model": {
+        "profile_path": "mono/configs/perception_wavelet_attention.json",
+        "profile_sha256": "006a03b6999930d5ea69ba4bd0e39b8b5948453b622863c0c6d15f05a5f23979",
+        "profile": {
+          "schema_version": 1,
+          "name": "wavelet_attention_suim",
+          "adoption_status": "user-selected research configuration; task acceptance is reported separately",
+          "pipe_checkpoint": "runs_ablation/M11/best.pt",
+          "fish_checkpoint": "runs_fish/wavelet_20261023_seed42_gpu/attention/best.pt",
+          "pipe_sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a",
+          "fish_sha256": "6386036ed2f670ecd05199c4e544564b447b9f37afbbbd1564254e4d353f6d73",
+          "fish_wavelet": "attention",
+          "fish_wavelet_stage": "s8",
+          "includes_deepcamo": false,
+          "selection_basis": "Same-budget SUIM validation FV IoU 61.218% vs plain 60.844%. Both below historical 63.644%; not selected using DeepCamo held-out test scores."
+        },
+        "checkpoints": [
+          {
+            "path": "mono/runs_ablation/M11/best.pt",
+            "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+          },
+          {
+            "path": "mono/runs_fish/wavelet_20261023_seed42_gpu/attention/best.pt",
+            "sha256": "6386036ed2f670ecd05199c4e544564b447b9f37afbbbd1564254e4d353f6d73"
+          }
+        ],
+        "model_config": {
+          "num_fish_classes": 8,
+          "fish_mid": 64,
+          "separate_encoder": true,
+          "fish_wavelet": "attention",
+          "fish_wavelet_stage": "s8"
+        },
+        "pipe_exactly_matches_reference": true
+      }
+    }
+  ],
+  "commands": [
+    [
+      "[公开副本已隐去本地信息]",
+      "-B",
+      "-m",
+      "tools.spatial_fish_loop",
+      "--config",
+      "configs/inspection_spatial_fish_down_candidate_v9.json",
+      "--scenarios",
+      "fish_down_vertical",
+      "--perception-profile",
+      "mono/configs/perception_wavelet_attention.json",
+      "--out",
+      "mono/runs_review/wavelet_adoption_20261023_attention_resume/down/fish_down_vertical_avoidance",
+      "--max-seconds",
+      "45",
+      "--modes",
+      "avoidance"
+    ]
+  ],
+  "recovery_policy": "Reuse completed result.json, including failures; rerun only incomplete cases in new directories",
+  "elapsed_s": 860.7217397689819,
+  "tested_avoidance_episodes": 6,
+  "passed_task_episodes": 4
+}

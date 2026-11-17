@@ -1,0 +1,99 @@
+{
+  "scenario": "fish_down",
+  "mode": "avoidance",
+  "task_completed": false,
+  "goal_reached": false,
+  "inspection_recovered": false,
+  "stop_reason": "corridor_exceeded",
+  "inspection_valid_fraction": 0.9866666666666667,
+  "valid_frames": 1110,
+  "inspection_frames": 1125,
+  "all_frame_valid_fraction": 0.9814323607427056,
+  "contact_3d": false,
+  "contact_xy": true,
+  "primary_contact_rule": "3D",
+  "elapsed_s": 37.9,
+  "maximum_cross_track_m": 1.0020921787213828,
+  "observed_elbows": [
+    {
+      "t": 5.4,
+      "event": "observed_endpoint_confirmed",
+      "length_m": 4.007837081838835,
+      "position_xyz": [
+        4.007837081838835,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "t": 16.5,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.007837081838835,
+        0.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "gain": 0.29233058647817867,
+      "evidence": "current_multiview_paired_edges_at_observed_endpoint",
+      "confirmation_baseline_m": 0.2125423877375674
+    }
+  ],
+  "intervention_frames": 433,
+  "prediction_valid_frames": 0,
+  "frames_logged": 1131,
+  "video_frames_written": 1131,
+  "fps": 30,
+  "configuration_sha256": "42bc04bd029abd6a3ec32f17779bd52bb00da2ec807c30efb5b68f6dc8791384",
+  "terminal_pipe_observed": true,
+  "pipe_arc_observation_fraction": 1.0,
+  "schema_version": 2,
+  "route_completed": false,
+  "collision": false,
+  "simplified_3d_contact": false,
+  "active_inspection_valid_fraction": 0.9866666666666667,
+  "synthetic_inspection_valid_fraction": 0.9814323607427056,
+  "maximum_abs_cross_track_m": 1.0020921787213828,
+  "elapsed_sim_s": 37.9,
+  "events": {
+    "fish_first_visible": {
+      "simulation_t": 7.566666666666666,
+      "source_t": 7.333333333333333
+    },
+    "fish_first_detection": {
+      "simulation_t": 8.266666666666666,
+      "source_t": 8.033333333333333
+    },
+    "fish_first_effective_detection": {
+      "simulation_t": 8.266666666666666,
+      "source_t": 8.033333333333333
+    },
+    "fish_first_confirmed": {
+      "simulation_t": 8.633333333333333,
+      "source_t": 8.4
+    },
+    "first_contact_xy": {
+      "simulation_t": 11.5,
+      "source_t": 11.266666666666666
+    },
+    "first_intervention": {
+      "simulation_t": 21.633333333333333,
+      "source_t": 21.4
+    },
+    "first_avoidance_offset": {
+      "simulation_t": 21.633333333333333,
+      "source_t": 21.4
+    }
+  },
+  "minimum_clearance_3d_m": 0.2751840252444997,
+  "minimum_clearance_xy_m": -0.77,
+  "reverse_attempts": 0,
+  "waiting_frames": 6,
+  "reverse_recovery_frames": 0,
+  "synthetic_pipe_arc_bin_total": 32,
+  "episode_budget_s": 45.0
+}

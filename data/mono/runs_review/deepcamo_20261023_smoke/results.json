@@ -1,0 +1,232 @@
+[
+  {
+    "mode": "attention",
+    "initial_checkpoint": "mono/runs_fish/wavelet_20261023_seed42_gpu/attention/best.pt",
+    "initial_sha256": "6386036ed2f670ecd05199c4e544564b447b9f37afbbbd1564254e4d353f6d73",
+    "epochs_completed": 1,
+    "max_epochs": 1,
+    "seed": 42,
+    "initialization_histories_matched": false,
+    "before_validation": {
+      "suim": {
+        "per_class_iou": {
+          "BW": 0.8817388643655197,
+          "HD": 0.7710213467545991,
+          "PF": 0.0,
+          "WR": 0.8227438319793238,
+          "RO": 0.8531328320802005,
+          "RI": 0.8628741395125166,
+          "FV": 0.7120825537222883,
+          "SR": 0.7065541789806228
+        },
+        "fish_iou": 0.7120825537222883,
+        "bio_iou": 0.5249855644116016,
+        "all_iou": 0.7012684684243838,
+        "negative_crops": 6,
+        "negative_candidates": 1,
+        "gate": "p(FV)>0.5; largest 8-connected component >=400px at 384x384",
+        "confusion": [
+          [
+            587865,
+            7877,
+            0,
+            6631,
+            1425,
+            709,
+            1503,
+            52255
+          ],
+          [
+            1474,
+            71082,
+            0,
+            3627,
+            32,
+            187,
+            1130,
+            1875
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            3549,
+            392,
+            472,
+            93272,
+            0,
+            0,
+            0,
+            767
+          ],
+          [
+            492,
+            11,
+            0,
+            0,
+            11914,
+            0,
+            65,
+            0
+          ],
+          [
+            271,
+            148,
+            48,
+            0,
+            0,
+            96893,
+            0,
+            4401
+          ],
+          [
+            1178,
+            60,
+            0,
+            0,
+            26,
+            0,
+            12559,
+            460
+          ],
+          [
+            1482,
+            4297,
+            142,
+            4657,
+            0,
+            9634,
+            656,
+            194130
+          ]
+        ]
+      },
+      "deepcamo_val": {
+        "n": 4,
+        "annotated_target_micro_iou": 0.30168864698904474,
+        "annotated_target_macro_iou": 0.12558365329144203,
+        "annotated_foreground_coverage": 0.3328414893890015,
+        "annotation_relative_precision": 0.7632175115478537,
+        "overlap_candidates": 2,
+        "probability_threshold": 0.5,
+        "scope": "Original camouflage-target annotations; not exhaustive fish background, fish precision/recall or real-video acceptance.",
+        "preprocess": "Aspect-preserving 384-square letterbox; padding excluded; no target-based crops at evaluation.",
+        "frames": [
+          {
+            "stem": "MAS_MarineFish_Fish_Cam_1091",
+            "tp": 24139,
+            "annotation_relative_fp": 3253,
+            "fn": 33260,
+            "annotated_target_iou": 0.3979918221987733,
+            "foreground_coverage": 0.4205473962961027,
+            "annotated_foreground_pixels": 57399,
+            "largest_component_pixels": 24836,
+            "overlap_candidate": true
+          },
+          {
+            "stem": "MAS_MarineFish_Fish_Cam_1097",
+            "tp": 0,
+            "annotation_relative_fp": 0,
+            "fn": 3514,
+            "annotated_target_iou": 0.0,
+            "foreground_coverage": 0.0,
+            "annotated_foreground_pixels": 3514,
+            "largest_component_pixels": 0,
+            "overlap_candidate": false
+          },
+          {
+            "stem": "MAS_MarineFish_Fish_Cam_1099",
+            "tp": 1802,
+            "annotation_relative_fp": 4795,
+            "fn": 10673,
+            "annotated_target_iou": 0.1043427909669948,
+            "foreground_coverage": 0.14444889779559117,
+            "annotated_foreground_pixels": 12475,
+            "largest_component_pixels": 4890,
+            "overlap_candidate": true
+          },
+          {
+            "stem": "MAS_MarineFish_Fish_Cam_1145",
+            "tp": 0,
+            "annotation_relative_fp": 0,
+            "fn": 4550,
+            "annotated_target_iou": 0.0,
+            "foreground_coverage": 0.0,
+            "annotated_foreground_pixels": 4550,
+            "largest_component_pixels": 0,
+            "overlap_candidate": false
+          }
+        ]
+      }
+    },
+    "best_retained_epoch": 0,
+    "best_candidate_epoch": 1,
+    "retained_validation_improvement": false,
+    "pipe_state_unchanged": true,
+    "all_BN_buffers_unchanged": true,
+    "pipe_guard_before": [
+      {
+        "shape": [
+          1,
+          3,
+          288,
+          512
+        ],
+        "bitwise_equal": true,
+        "max_abs_diff": 0.0
+      },
+      {
+        "shape": [
+          1,
+          3,
+          384,
+          384
+        ],
+        "bitwise_equal": true,
+        "max_abs_diff": 0.0
+      }
+    ],
+    "pipe_guard_after": [
+      {
+        "shape": [
+          1,
+          3,
+          288,
+          512
+        ],
+        "bitwise_equal": true,
+        "max_abs_diff": 0.0
+      },
+      {
+        "shape": [
+          1,
+          3,
+          384,
+          384
+        ],
+        "bitwise_equal": true,
+        "max_abs_diff": 0.0
+      }
+    ],
+    "train_seconds": 10.964619398117065,
+    "model_config": {
+      "num_fish_classes": 8,
+      "fish_mid": 64,
+      "separate_encoder": true,
+      "fish_wavelet": "attention",
+      "fish_wavelet_stage": "s8"
+    },
+    "checkpoint_sha256": {
+      "best.pt": "ae8c2fbeb25cf8c12bbab84b7157326eb8f9ab99a42c3ee3fda336a390da5d79",
+      "best_candidate.pt": "dda8a870a8dcb8adc1559f4771f6362f6a7d6710983f10363bf45d9620361451",
+      "last.pt": "b7c5e21c51915f670ec5f99270fb0a9e461bd1815c7310adb27015f8eb3419a5"
+    }
+  }
+]

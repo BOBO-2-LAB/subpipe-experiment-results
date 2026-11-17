@@ -1,0 +1,105 @@
+{
+  "status": "complete",
+  "video_frames": 120,
+  "decoded_frames": 120,
+  "status_counts": {
+    "skeleton": {
+      "observed": 120
+    },
+    "skeleton_temporal": {
+      "observed": 88,
+      "predicted": 32
+    },
+    "probability_temporal": {
+      "observed": 95,
+      "predicted": 25
+    },
+    "paired_probability_temporal": {
+      "lost": 22,
+      "observed": 80,
+      "predicted": 18
+    }
+  },
+  "reason_counts": {
+    "skeleton": {
+      "image_skeleton": 120
+    },
+    "skeleton_temporal": {
+      "image_skeleton": 120
+    },
+    "probability_temporal": {
+      "probability_path": 120
+    },
+    "paired_probability_temporal": {
+      "insufficient_path_support": 15,
+      "probability_path": 101,
+      "short_probability_path": 4
+    }
+  },
+  "fixed_frames": {
+    "skeleton": {
+      "observed": 8,
+      "paths_with_support_ge_90_percent": 4,
+      "path_support_values": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.6068376068376068,
+        1.0,
+        1.0
+      ]
+    },
+    "skeleton_temporal": {
+      "observed": 8,
+      "paths_with_support_ge_90_percent": 4,
+      "path_support_values": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.6068376068376068,
+        1.0,
+        1.0
+      ]
+    },
+    "probability_temporal": {
+      "observed": 7,
+      "paths_with_support_ge_90_percent": 7,
+      "path_support_values": [
+        1.0,
+        null,
+        1.0,
+        0.9583333333333334,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "paired_probability_temporal": {
+      "observed": 7,
+      "paths_with_support_ge_90_percent": 7,
+      "path_support_values": [
+        1.0,
+        null,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "scope": "Same RGB and M13/original-biology weights. Eight failure-focused labeled synthetic frames plus first video frames without labels. Observed is tracker status, not detection recall or closed-loop valid fraction. Predictions never count as observations. No training, default changes or GT control input.",
+  "temporal_scope": "Offset and heading states only; measured full curves remain separate. Pixel coordinates use diagnostic grid units, not metric vessel pose.",
+  "source_sha256": {
+    "mono/tools/m13_path_ablation.py": "cd507c8a87765e9e0bcfb8129338b9e753ce1fcb94f1ea26b5507ae37072d118",
+    "mono/avoid/path_ablation.py": "e4d0d921857b953c6b441af6a69b7185a73c6ce384bc170624fe154c09cef08b",
+    "mono/avoid/probability_path.py": "1be69f2700685a692ae098dbffa991eff5748e6b36b754a9133842a9d9a536eb",
+    "mono/share_templates/m13/pixel_tracker.py": "7420f94f2209ca6aabae303067ccc4cb5be5a876615b3120db6313ce8e9a0eb1"
+  }
+}

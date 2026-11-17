@@ -1,0 +1,58 @@
+{
+  "tag": "synth_valid",
+  "args": {
+    "data_root": "[本地引用:15003ce1bb777625]",
+    "layout": "nested",
+    "size": [
+      288,
+      512
+    ],
+    "epochs": 30,
+    "batch": 8,
+    "lr": 0.0001,
+    "max_disp": 96,
+    "disp_scale": 256.0,
+    "sup_weight": 1.0,
+    "grad_thresh": 0.3,
+    "mask_guided": false,
+    "fx": 1612.36,
+    "baseline": 0.05,
+    "no_pretrained": false,
+    "workers": 0,
+    "eval_every": 5,
+    "seed": 42,
+    "tag": "synth_valid",
+    "out": "[本地引用:6f25ac148c8515b3]"
+  },
+  "params_M": {
+    "total": 0.503184,
+    "encoder": 0.336692,
+    "volume": 0.0,
+    "agg": 0.026649,
+    "decoder": 0.13965
+  },
+  "val_metrics": {
+    "mIoU": 0.8771017659739309,
+    "IoU_pipe": 0.7981327571260142,
+    "IoU_bg": 0.9560707748218475,
+    "Dice": 0.8877350729116165,
+    "Precision": 0.8382870321644443,
+    "Recall": 0.9433823729758412,
+    "Dice_bg": 0.9775421085251104,
+    "F_boundary": 0.3480329611817076,
+    "n_frames": 119,
+    "EPE": 4.010170224361555,
+    "D1": 0.2767137418762041,
+    "RMSE": 8.510151166302343,
+    "depth_MAE_mm": 320.01485813554746,
+    "n_px": 17563526
+  },
+  "complexity": {
+    "Params_M": 0.503,
+    "input": "512x288",
+    "latency_ms_median": 15.0,
+    "FPS": 66.7,
+    "FLOPs_G": 4.19
+  },
+  "train_seconds": 652.7
+}

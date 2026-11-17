@@ -1,0 +1,53 @@
+{
+  "groups": {
+    "A0": "无小波及融合分支",
+    "A1": "普通小波",
+    "A3": "注意力小波（M13）"
+  },
+  "n_validation": 129,
+  "input": "identical original RGB, no Retinex",
+  "wavelet_location": "after EFSNet s16: [B,256,18,32], Haar subbands [B,256,9,16]",
+  "comparison": "existing matched 60-epoch, seed42 checkpoints, best selected by internal validation",
+  "low_contrast_proxy": "absolute inside/outside boundary luminance mean difference divided by sqrt(mean of both variances +1e-12)",
+  "boundary_bands": "inside/outside of GT with radius-3 7x7 ellipse; at least20 pixels in each band",
+  "luminance_coefficients": [
+    0.2126,
+    0.7152,
+    0.0722
+  ],
+  "training_quantile": 0.25,
+  "training_eligible_images": 502,
+  "training_excluded_images": 16,
+  "low_contrast_threshold": 0.14959680818931298,
+  "new_training": false,
+  "new_network_inference": false,
+  "qualitative_indices": [
+    0,
+    6,
+    13,
+    20,
+    26,
+    33,
+    40,
+    47,
+    53,
+    60,
+    67,
+    74,
+    80,
+    87,
+    94,
+    101,
+    107,
+    114,
+    121,
+    128
+  ],
+  "caveats": [
+    "Low boundary separability is a defined proxy, not measured physical SNR",
+    "Post-hoc diagnostic on already-used internal validation; not independent confirmation",
+    "Groups differ in learned weights/parameter count; A0 removes both wavelet and its fusion",
+    "Feature-domain IDWT reconstructs a feature tensor, not a displayable restored RGB image",
+    "PSNR/SSIM/UIQM/UCIQE cannot quantify image enhancement absent an RGB enhancement output"
+  ]
+}

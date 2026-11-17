@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "checks": {
+    "original_pipeline_and_biology_tables_unchanged": true,
+    "raw_uiqm_mean": true,
+    "raw_uciqe_mean": true,
+    "retinex_uiqm_mean": true,
+    "retinex_uciqe_mean": true,
+    "psnr": true,
+    "ssim": true,
+    "raw_IoU_pipe": true,
+    "raw_Recall": true,
+    "raw_F_boundary": true,
+    "retinex_IoU_pipe": true,
+    "retinex_Recall": true,
+    "retinex_F_boundary": true,
+    "quality_integrity": true,
+    "segmentation_integrity": true,
+    "one_A4_page": true,
+    "all_text_inside_page": true,
+    "all_new_numbers_in_pdf": true,
+    "psnr_ssim_input_reference_disclosed": true
+  },
+  "metric_tests": {
+    "executed": true,
+    "test_count": 7,
+    "passed": 7,
+    "command": "python -B -m unittest tests.test_image_quality -v"
+  },
+  "visual_review_passed": true,
+  "pdf_pages": 1,
+  "quality_convention": "matched lossless uint8 RGB; segmentation retains original float32 input",
+  "new_training": false,
+  "new_model_inference_for_quality": false,
+  "production_weights_changed": false
+}

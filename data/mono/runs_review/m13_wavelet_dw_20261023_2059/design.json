@@ -1,0 +1,61 @@
+{
+  "configs": {
+    "M13": {
+      "num_classes": 2,
+      "in_ch": 3,
+      "pretrained": true,
+      "out_ch": [
+        64,
+        128,
+        256
+      ],
+      "wavelet": "attention",
+      "wavelet_plain_extra_blocks": 0,
+      "fusion": "concat",
+      "global_mode": "none",
+      "global_blocks": 1,
+      "global_stage": "s16",
+      "global_heads": 8,
+      "global_win": 7,
+      "decoder_mid": 128,
+      "decoder_skip": true,
+      "decoder_dw": true
+    },
+    "M11": {
+      "num_classes": 2,
+      "in_ch": 3,
+      "pretrained": true,
+      "out_ch": [
+        64,
+        128,
+        256
+      ],
+      "wavelet": "none",
+      "wavelet_plain_extra_blocks": 0,
+      "fusion": "concat",
+      "global_mode": "none",
+      "global_blocks": 1,
+      "global_stage": "s16",
+      "global_heads": 8,
+      "global_win": 7,
+      "decoder_mid": 128,
+      "decoder_skip": true,
+      "decoder_dw": true
+    }
+  },
+  "seed": 42,
+  "epochs": 60,
+  "batch": 8,
+  "scope": "Core simulation, single seed, not independent generalization",
+  "fish": "Original suim8_sep_e60, unchanged, no wavelet, no DeepCamo",
+  "caveat": "Matching seed does not guarantee identical augmentation RNG across different architectures",
+  "input_pins": {
+    "mono/cache/288x512/train_img.npy": "36b5c0b29b1d0d3ef69479789a62346c980a9667f2a11b95aef5869001b5ea5d",
+    "mono/cache/288x512/train_msk.npy": "a84eb1308b066f6e908aedf0676a354e2b9b594a89edb3473cd996742bc600d6",
+    "mono/cache/288x512/val_img.npy": "48f35e63f0dbac86666eae2e1203d834c1d469d6b844a7943d2e706586c15cc1",
+    "mono/cache/288x512/val_msk.npy": "176d78c1c20d9c9be0572b9c11f0a6f531c54d9d9a876e7ef6decc97bf819ea3",
+    "mono/runs_ablation/M11/best.pt": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a",
+    "mono/runs_ablation/M9/best.pt": "6d7d976a3d5bc50dfc753e2c7007a714b6250e7c8645ca6995ed8b30ea444aa6",
+    "mono/runs_fish/suim8_sep_e60/best.pt": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+  }
+}

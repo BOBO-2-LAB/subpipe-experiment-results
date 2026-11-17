@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": {
+    "three_tables": true,
+    "retinex_removed_from_body": true,
+    "biology_table_unchanged": true,
+    "A0_full_table_matches": true,
+    "A1_full_table_matches": true,
+    "A2_full_table_matches": true,
+    "A3_full_table_matches": true,
+    "A0_low_table_matches": true,
+    "A1_low_table_matches": true,
+    "A3_low_table_matches": true,
+    "recall_delta_matches": true,
+    "diagnostic_marked_exploratory": true,
+    "feature_rgb_distinction": true,
+    "three_group_full_metrics_reproduced": true,
+    "source_data_weights_unchanged": true,
+    "one_A4_page": true,
+    "all_glyphs_inside_page": true,
+    "new_values_in_pdf": true,
+    "retinex_removed_from_pdf": true
+  },
+  "visual_review_passed": true,
+  "pdf_pages": 1,
+  "new_training": false,
+  "new_network_inference": false,
+  "comparison": "rescore original same-frame A0/A1/A3 predictions; train-defined exploratory low-contrast subset",
+  "retinex_in_paper": false
+}

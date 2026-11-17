@@ -1,0 +1,98 @@
+{
+  "tag": "xs_katzaa2stail",
+  "args": {
+    "data_root": "[本地引用:1eabe4b0fc5ba576]",
+    "layout": "nested",
+    "size": [
+      384,
+      576
+    ],
+    "epochs": 500,
+    "batch": 4,
+    "lr": 0.0002,
+    "max_disp": 192,
+    "disp_scale": 256.0,
+    "sup_weight": 1.0,
+    "grad_thresh": 0.3,
+    "mask_guided": false,
+    "no_census": false,
+    "census_k": 5,
+    "no_lr": false,
+    "lr_thresh": 1.5,
+    "conf_temp": 1.0,
+    "lr_cons_weight": 0.1,
+    "xv_photo": 0.35,
+    "fx": 1000.0,
+    "baseline": 0.5,
+    "no_pretrained": false,
+    "workers": 0,
+    "eval_every": 100,
+    "seed": 42,
+    "tag": "xs_katzaa2stail",
+    "out": "[本地引用:6f25ac148c8515b3]"
+  },
+  "params_M": {
+    "total": 0.525,
+    "encoder": 0.336692,
+    "volume": 0.0,
+    "census": 0.0,
+    "census_volume": 0.0,
+    "agg": 0.048465,
+    "decoder": 0.13965
+  },
+  "val_metrics": {
+    "mIoU": 0.25217993465432675,
+    "IoU_pipe": 0.0,
+    "IoU_bg": 0.5043598693086535,
+    "Dice": 0.0,
+    "Precision": 0.0,
+    "Recall": 0.0,
+    "Dice_bg": 0.6705308744249314,
+    "F_boundary": 0.0,
+    "n_frames": 3,
+    "n": 506788,
+    "EPE": 21.159669876098633,
+    "D1": 0.9076615571975708,
+    "RMSE": 28.548755645751953,
+    "depth_MAE_mm": 7441.79345703125,
+    "n_px": 506788,
+    "lr_valid_frac": 0.29122236371040344,
+    "EPE_lrvalid": 16.54308319091797,
+    "D1_lrvalid": 0.9064693450927734,
+    "coverage_lrvalid": 0.29122236371040344,
+    "coverage_curve": {
+      "0.00": {
+        "coverage": 1.0,
+        "EPE": 21.16,
+        "D1": 0.9077,
+        "depth_MAE_mm": 7441.8
+      },
+      "0.30": {
+        "coverage": 0.16823405027389526,
+        "EPE": 13.724,
+        "D1": 0.8962,
+        "depth_MAE_mm": 6547.7
+      },
+      "0.50": {
+        "coverage": 0.05848599597811699,
+        "EPE": 11.937,
+        "D1": 0.8689,
+        "depth_MAE_mm": 5876.0
+      },
+      "0.70": {
+        "coverage": 0.014143981039524078,
+        "EPE": 10.364,
+        "D1": 0.8253,
+        "depth_MAE_mm": 4858.3
+      }
+    }
+  },
+  "complexity": {
+    "Params_M": 0.525,
+    "input": "576x384",
+    "latency_ms_median": 49.33,
+    "FPS": 20.3,
+    "FLOPs_G": 8.33
+  },
+  "train_seconds": 568.4
+}

@@ -1,0 +1,361 @@
+{
+  "paper": "output/paper/M13_管道识别消融_20261027_v1/第4章_实验_M13管道识别消融.md",
+  "pdf": "output/pdf/第4章_实验_M13管道识别消融_20261027.pdf",
+  "experiment": "mono/runs_review/m13_seg_ablation_20261027_v2",
+  "primary_study": "M13 segmentation architecture ablation",
+  "source_original_paper": "output/paper/M13_统一闭环_v45_20261027_v1",
+  "evaluation": {
+    "groups": [
+      {
+        "group": "A0",
+        "label": "去除注意力小波及必要融合分支（匹配M11）",
+        "model": "M11",
+        "checkpoint": "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M11/best.pt",
+        "reused": true,
+        "best_epoch": 30,
+        "cfg": {
+          "num_classes": 2,
+          "in_ch": 3,
+          "pretrained": true,
+          "out_ch": [
+            64,
+            128,
+            256
+          ],
+          "wavelet": "none",
+          "wavelet_plain_extra_blocks": 0,
+          "fusion": "concat",
+          "global_mode": "none",
+          "global_blocks": 1,
+          "global_stage": "s16",
+          "global_heads": 8,
+          "global_win": 7,
+          "decoder_mid": 128,
+          "decoder_skip": true,
+          "decoder_dw": true
+        },
+        "params": {
+          "encoder": 0.336692,
+          "wavelet": 0.0,
+          "fusion": 0.0,
+          "global": 0.0,
+          "decoder": 0.13965,
+          "total": 0.476342
+        },
+        "metrics": {
+          "mIoU": 0.8029899604412987,
+          "IoU_pipe": 0.682675264049826,
+          "IoU_bg": 0.9233046568327714,
+          "Dice": 0.8114165325123733,
+          "Precision": 0.7558863420700678,
+          "Recall": 0.8757525342359598,
+          "Dice_bg": 0.9601231438322789,
+          "F_boundary": 0.2793559285315203,
+          "n_frames": 129
+        },
+        "complexity": {
+          "Params_M": 0.476,
+          "input": "512x288",
+          "FLOPs_G": 2.49,
+          "latency_ms_median": 4.41,
+          "FPS": 226.5
+        },
+        "confusion": {
+          "tp": [
+            15075507.0,
+            2694053.0
+          ],
+          "fp": [
+            382219.0,
+            870045.0
+          ],
+          "fn": [
+            870045.0,
+            382219.0
+          ],
+          "intersection": [
+            15075507.0,
+            2694053.0
+          ],
+          "union": [
+            16327771.0,
+            3946317.0
+          ]
+        },
+        "checkpoint_sha256": "820f06c8794977b905191fe27896bc8208caf6be8cac19643fbed58d88a793a6"
+      },
+      {
+        "group": "A1",
+        "label": "普通小波替换注意力小波",
+        "model": "M13_plain",
+        "checkpoint": "mono/runs_review/m13_seg_ablation_20261027_v2/training/M13_plain/best.pt",
+        "reused": false,
+        "best_epoch": 30,
+        "cfg": {
+          "num_classes": 2,
+          "in_ch": 3,
+          "pretrained": true,
+          "out_ch": [
+            64,
+            128,
+            256
+          ],
+          "wavelet": "plain",
+          "wavelet_plain_extra_blocks": 0,
+          "fusion": "concat",
+          "global_mode": "none",
+          "global_blocks": 1,
+          "global_stage": "s16",
+          "global_heads": 8,
+          "global_win": 7,
+          "decoder_mid": 128,
+          "decoder_skip": true,
+          "decoder_dw": true
+        },
+        "params": {
+          "encoder": 0.336692,
+          "wavelet": 0.333056,
+          "fusion": 0.1344,
+          "global": 0.0,
+          "decoder": 0.13965,
+          "total": 0.943798
+        },
+        "metrics": {
+          "mIoU": 0.8044745720014242,
+          "IoU_pipe": 0.6870424542258178,
+          "IoU_bg": 0.9219066897770307,
+          "Dice": 0.8144933786400781,
+          "Precision": 0.7404843324241465,
+          "Recall": 0.9049391601259886,
+          "Dice_bg": 0.9593667524868082,
+          "F_boundary": 0.29587935470315513,
+          "n_frames": 129
+        },
+        "complexity": {
+          "Params_M": 0.944,
+          "input": "512x288",
+          "FLOPs_G": 2.8,
+          "latency_ms_median": 5.57,
+          "FPS": 179.5
+        },
+        "confusion": {
+          "tp": [
+            14969907.0,
+            2783839.0
+          ],
+          "fp": [
+            292433.0,
+            975645.0
+          ],
+          "fn": [
+            975645.0,
+            292433.0
+          ],
+          "intersection": [
+            14969907.0,
+            2783839.0
+          ],
+          "union": [
+            16237985.0,
+            4051917.0
+          ]
+        },
+        "checkpoint_sha256": "a30e636d0f8f5ae23e03a0c4a3ac145316815cc140201921a2aadeb2f642af4d"
+      },
+      {
+        "group": "A2",
+        "label": "普通卷积替换深度可分离解码器",
+        "model": "M13_standard_decoder",
+        "checkpoint": "mono/runs_review/m13_seg_ablation_20261027_v2/training/M13_standard_decoder/best.pt",
+        "reused": false,
+        "best_epoch": 55,
+        "cfg": {
+          "num_classes": 2,
+          "in_ch": 3,
+          "pretrained": true,
+          "out_ch": [
+            64,
+            128,
+            256
+          ],
+          "wavelet": "attention",
+          "wavelet_plain_extra_blocks": 0,
+          "fusion": "concat",
+          "global_mode": "none",
+          "global_blocks": 1,
+          "global_stage": "s16",
+          "global_heads": 8,
+          "global_win": 7,
+          "decoder_mid": 128,
+          "decoder_skip": true,
+          "decoder_dw": false
+        },
+        "params": {
+          "encoder": 0.336692,
+          "wavelet": 0.71104,
+          "fusion": 0.1344,
+          "global": 0.0,
+          "decoder": 0.722434,
+          "total": 1.904566
+        },
+        "metrics": {
+          "mIoU": 0.7923599463060249,
+          "IoU_pipe": 0.6690181488749706,
+          "IoU_bg": 0.9157017437370791,
+          "Dice": 0.8016906818250399,
+          "Precision": 0.7226026896841363,
+          "Recall": 0.9002185112366852,
+          "Dice_bg": 0.9559961478666951,
+          "F_boundary": 0.2719645878002682,
+          "n_frames": 129
+        },
+        "complexity": {
+          "Params_M": 1.905,
+          "input": "512x288",
+          "FLOPs_G": 10.04,
+          "latency_ms_median": 6.35,
+          "FPS": 157.4
+        },
+        "confusion": {
+          "tp": [
+            14882449.0,
+            2769317.0
+          ],
+          "fp": [
+            306955.0,
+            1063103.0
+          ],
+          "fn": [
+            1063103.0,
+            306955.0
+          ],
+          "intersection": [
+            14882449.0,
+            2769317.0
+          ],
+          "union": [
+            16252507.0,
+            4139375.0
+          ]
+        },
+        "checkpoint_sha256": "6ed1b558a04c8d4a0115a5fc641d402e89fa7146eba046a08318cb2d9a20dd2a"
+      },
+      {
+        "group": "A3",
+        "label": "完整M13",
+        "model": "M13",
+        "checkpoint": "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M13/best.pt",
+        "reused": true,
+        "best_epoch": 50,
+        "cfg": {
+          "num_classes": 2,
+          "in_ch": 3,
+          "pretrained": true,
+          "out_ch": [
+            64,
+            128,
+            256
+          ],
+          "wavelet": "attention",
+          "wavelet_plain_extra_blocks": 0,
+          "fusion": "concat",
+          "global_mode": "none",
+          "global_blocks": 1,
+          "global_stage": "s16",
+          "global_heads": 8,
+          "global_win": 7,
+          "decoder_mid": 128,
+          "decoder_skip": true,
+          "decoder_dw": true
+        },
+        "params": {
+          "encoder": 0.336692,
+          "wavelet": 0.71104,
+          "fusion": 0.1344,
+          "global": 0.0,
+          "decoder": 0.13965,
+          "total": 1.321782
+        },
+        "metrics": {
+          "mIoU": 0.7973116553584076,
+          "IoU_pipe": 0.6758551224924088,
+          "IoU_bg": 0.9187681882244064,
+          "Dice": 0.8065794153939105,
+          "Precision": 0.7336538016016845,
+          "Recall": 0.8956028595647929,
+          "Dice_bg": 0.957664603637835,
+          "F_boundary": 0.2725950111763439,
+          "n_frames": 129
+        },
+        "complexity": {
+          "Params_M": 1.322,
+          "input": "512x288",
+          "FLOPs_G": 2.9,
+          "latency_ms_median": 6.34,
+          "FPS": 157.6
+        },
+        "confusion": {
+          "tp": [
+            14945332.0,
+            2755118.0
+          ],
+          "fp": [
+            321154.0,
+            1000220.0
+          ],
+          "fn": [
+            1000220.0,
+            321154.0
+          ],
+          "intersection": [
+            14945332.0,
+            2755118.0
+          ],
+          "union": [
+            16266706.0,
+            4076492.0
+          ]
+        },
+        "checkpoint_sha256": "938b238f52950150b09aa629bdd1ca1bdc2e392000480f95c0d2a16026c5f400"
+      }
+    ],
+    "n_validation_images": 129,
+    "evaluation": "common current code, all 129 images including empty GT, AMP, single 512x288 view, no rotation/RGB geometry/biology/controller",
+    "selection": "best checkpoint by validation mIoU during the fixed 60-epoch training",
+    "timing": "same process and device, measure_complexity warmup and 40 CUDA timings; inference only, excludes preprocessing and control"
+  },
+  "pdf_sha256": "c4eefe09e3d20b3f4adfd73b30ec04fa7f1d79f6e512ab438c49156d34b605dc",
+  "all_files": {
+    "render_md_pdf.py": "a00bb2fc1acf41b0be46a6b5c23a5e6d4b97482e5610b4334d609a1db2f57dfb",
+    "排版检查.json": "2a2bb5cc3658877425e9d3719f43d2903c67256a7ec5d233717aee30ea93c9ed",
+    "第4章_实验_M13管道识别消融.md": "2c7ed2e8b514d4e0caec2d78079d133c7cb60dd3c24f8af07ea594409fbaaef4",
+    "编辑与证据说明.md": "c42f4a6edf3c4343e4af50703eaecc3d5fad014ef2915aa98673ea39724f8b10",
+    "evidence\\A0_summary.json": "cdb926894e33228bf49479919509bcbf99f199b74a2c6f4b03361ef1bd9b7a3c",
+    "evidence\\A0_train_log.csv": "d1cc4d4b040e5dba671c01e22c548386d0115f090d068633c53ef33903eeed5d",
+    "evidence\\A1_summary.json": "d2735f351a744eb26ee8ff6d7ed30a861b4170e4974c2c077c9e9d9592f2dfac",
+    "evidence\\A1_train_log.csv": "917b2e9b56358829a342fbb35b768b4ed0ff9cfab39682a2955631dad2e5467d",
+    "evidence\\A2_summary.json": "2618242aa1fcb0ee55d1a4c8e7e695392110216ec5e0b7ffeb5afcd905cc491d",
+    "evidence\\A2_train_log.csv": "2b412e259c8a80f41d91dd0171b6707e6ddef90c39e6711aa6cba01d1e286374",
+    "evidence\\A3_summary.json": "ca47051994df0f9db387e371f53108aa44a51b14178e06f3104ae4af3f50d049",
+    "evidence\\A3_train_log.csv": "40f8c223aef97bc1c340027c3d219c1a63ffb7735c5d7148a3e53352b4322ea3",
+    "evidence\\ablation_metrics.csv": "2f902b89d3df987fd9386c9f4342090b9237823e72b1fe7a1a4e495517a68c40",
+    "evidence\\build_ablation_paper_source.py": "1c14bfb3d858cc65d6959589dc7f730b849cbbb67188c125f8ced2975f6394f6",
+    "evidence\\common_evaluation_code.py": "28705976bf2e77d3affb39ef046f50e2bbb43aafb27ad14a97bb8076ac6b9ff1",
+    "evidence\\design.json": "18eab7154dd5dcbd558f5edb7bfc36319a40ca79da708ccd6596e9fc48558310",
+    "evidence\\evaluation.json": "bbcb2234a14f4a80e22303bd43f52025f5bc8541943a278a8782e084ec5301e3",
+    "evidence\\input_integrity.json": "301fa4f69bd237eaf74f239e2445f7ab273fcc56d66bd2d46dddd066da3c380b",
+    "evidence\\input_pins.json": "7501915a28c0ca4bc3a8d177a52120c18e762241873e7c9e60db9722a62ebff8",
+    "evidence\\original_source_comparison.json": "2df02aaa7ab246a2dd60e0b75b4d59362a1a1051ee87fc844cbc5a1fbcaedd81",
+    "evidence\\per_image_metrics.csv": "30ee32ae0b03f78d349f2637656107c9c7c727eef0c5b4f035e48674fb6fcd1e",
+    "evidence\\reevaluate_uniform_backend.py": "be35d4b0143866329e7ffd9e557353485ff441190ec0bed3664fe20bf9675a01",
+    "evidence\\runtime_environment.json": "f45974495d245508b44d04df430b44277017b6ae5944df8ff249f33bfd87a005",
+    "figures\\M13模型结构.png": "5e04dbd126b24677d88560c91936d2fc149a2ac9e1f0ca8632e348cdb3361506",
+    "figures\\固定样本分割对照.png": "e2b85f6938d377fe0f3c62c39a9970e133a7a51c21329123a173477ca36d9c8c",
+    "figures\\消融训练曲线.png": "ecbc47f010a8780bcee33b8bca9cbe9ae697be51d055fe9d3568cbb24c3da168"
+  },
+  "visual_review": {
+    "passed": true,
+    "pages": 7,
+    "record": "排版检查.json"
+  }
+}

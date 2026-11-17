@@ -1,0 +1,9 @@
+stage,tracker,scenario,mode,passed,goal,valid_fraction,all_frame_valid_fraction,collision,reverse_attempts,recovery_failure,failed_checks
+core,probability,clear_pipe,tracker_only,False,False,0.5555555555555556,0.07911392405063292,False,1,reinspection_reverse_limit,goal_reached;inspection_valid_fraction;recovered
+core,probability,brief_occlusion,tracker_only,False,False,0.3698630136986301,0.08130081300813008,False,1,repeated_loss_in_pending_gap,goal_reached;inspection_valid_fraction;recovered
+core,probability,perception_loss,tracker_only,False,False,0.4533333333333333,0.1206896551724138,False,1,repeated_loss_in_pending_gap,goal_reached;inspection_valid_fraction;recovered
+core,probability,pipe_jitter,tracker_only,False,False,0.3698630136986301,0.08130081300813008,False,1,repeated_loss_in_pending_gap,goal_reached;inspection_valid_fraction;recovered
+core,skeleton,clear_pipe,tracker_only,False,False,0.9572815533980582,0.6968238691049086,False,2,reinspection_reverse_limit,goal_reached;recovered
+core,skeleton,brief_occlusion,tracker_only,False,False,0.9781021897810219,0.788235294117647,False,1,reinspection_region_limit,goal_reached;recovered
+core,skeleton,perception_loss,tracker_only,False,False,0.9701492537313433,0.5862944162436549,False,1,reinspection_region_limit,goal_reached;recovered
+core,skeleton,pipe_jitter,tracker_only,False,False,0.9110032362459547,0.7081481481481482,False,2,,goal_reached;recovered

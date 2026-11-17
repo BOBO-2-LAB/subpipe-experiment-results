@@ -1,0 +1,162 @@
+{
+  "scope": "Actual XYZ ray-cast cylinder/capsule surfaces, horizontal seabed to vertical riser, moving forward camera tilt; level thruster ROV with surge/heave. Still explicit known vertical-plane/diameter/odometry priors, not arbitrary 3D reconstruction.",
+  "controller_truth_access": "None: RGB/predicted masks, measured camera extrinsics and odometry, explicit geometric priors only. Inspection route and scene points are scoring/rendering only.",
+  "timing": "Fixed simulation clock; model wall latency measured but not injected",
+  "config": {
+    "camera_mount": "Forward pan/tilt camera, initially 45 degrees downward; pose follows RGB-estimated pipe",
+    "standoff_m": 2.0,
+    "initial_depth_m": 20.0,
+    "pipe_width_prior_m": 0.8,
+    "cruise_mps": 0.5,
+    "inspection_command_floor_mps": 0.4,
+    "lookahead_m": 0.7,
+    "outgoing_min_m": 0.45,
+    "outgoing_span_m": 0.4,
+    "outgoing_edge_span_m": [
+      0.4,
+      1.2
+    ],
+    "outgoing_min_points": 8,
+    "normal_gain": 0.8,
+    "surge_max_mps": 0.6,
+    "heave_max_mps": 0.6,
+    "response_tau_s": 0.6,
+    "acceleration_mps2": 0.35,
+    "control_rate_hz": 10.0,
+    "image_delay_s": 0.21,
+    "wait_before_retreat_s": 8.0,
+    "reinspect_overlap_m": 0.3,
+    "reacquire_s": 0.5,
+    "max_loss_s": 20.0,
+    "assumptions": "XYZ cylinder/capsule scene. Known incoming pipe floor datum, diameter and local X/depth plane; ideal camera extrinsics and measured odometry. Hull stays level. Pan/tilt and heave responses are simulation assumptions, not published BlueROV2 actuator performance.",
+    "lateral_offset_m": -0.8,
+    "initial_camera_pitch_deg": 45,
+    "model_fit_period_s": 0.3,
+    "model_seed_iou_min": 0.25,
+    "bend_iou_gain_min": 0.02,
+    "fresh_model_support_pixels": 150,
+    "fresh_model_support_fraction": 0.2,
+    "rgb_edge_energy_min": 35,
+    "rgb_edge_sample_min": 25,
+    "rgb_edge_supported_fraction_min": 0.45,
+    "rgb_tracking_hysteresis_ratio": 0.8,
+    "local_pipe_plane_y_m": 0,
+    "incoming_pipe_floor_depth_relative_m": 0,
+    "gimbal_rate_deg_s": 45,
+    "gimbal_response_tau_s": 0.35
+  },
+  "gimbal_assumptions": {
+    "pitch_range_deg": [
+      -90,
+      90
+    ],
+    "yaw_range_deg": [
+      -180,
+      180
+    ],
+    "rate_deg_s": 45,
+    "tau_s": 0.35,
+    "published_hardware_claim": false
+  },
+  "checkpoints": [
+    {
+      "path": "mono/runs_ablation/M11/best.pt",
+      "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+    },
+    {
+      "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+    }
+  ],
+  "episodes": [
+    {
+      "scenario": "floor_to_riser_down",
+      "task_completed": false,
+      "goal_reached": false,
+      "stop_reason": "timeout",
+      "elapsed_s": 44.96666666666667,
+      "inspection_valid_fraction": 0.9919678714859438,
+      "all_frame_valid_fraction": 0.3991064780342517,
+      "maximum_cross_track_m": 0.0,
+      "minimum_pipe_clearance_3d_m": 1.434065922853802,
+      "first_bend_confirmation_s": null,
+      "first_heave_s": null,
+      "end_distance_m": 7.045480115998382,
+      "events": [
+        {
+          "t": 5.933333333333334,
+          "event": "loss_wait_started"
+        },
+        {
+          "t": 6.933333333333334,
+          "event": "vision_reacquired"
+        },
+        {
+          "t": 8.833333333333334,
+          "event": "vision_reacquired"
+        },
+        {
+          "t": 12.766666666666666,
+          "event": "vision_reacquired"
+        },
+        {
+          "t": 13.933333333333334,
+          "event": "retreat_started"
+        },
+        {
+          "t": 21.133333333333333,
+          "event": "vision_reacquired"
+        },
+        {
+          "t": 21.133333333333333,
+          "event": "reinspection_started"
+        },
+        {
+          "t": 21.233333333333334,
+          "event": "loss_wait_started"
+        },
+        {
+          "t": 29.233333333333334,
+          "event": "retreat_started"
+        },
+        {
+          "t": 31.333333333333332,
+          "event": "vision_reacquired"
+        },
+        {
+          "t": 31.733333333333334,
+          "event": "reinspection_started"
+        },
+        {
+          "t": 33.53333333333333,
+          "event": "loss_wait_started"
+        },
+        {
+          "t": 41.53333333333333,
+          "event": "retreat_started"
+        },
+        {
+          "t": 44.233333333333334,
+          "event": "vision_reacquired"
+        },
+        {
+          "t": 44.3,
+          "event": "reinspection_started"
+        }
+      ],
+      "fixed_gimbal": false,
+      "terminal_pipe_observed": false,
+      "pipe_arc_observation_fraction": 0.53125
+    }
+  ],
+  "implementation_hashes": [
+    {
+      "path": "mono/avoid/spatial_transition.py",
+      "sha256": "45646434076feb35ebd525da192cb602586d6b9984150efb1d6d3df6ad0aab9d"
+    },
+    {
+      "path": "mono/tools/spatial_transition_loop.py",
+      "sha256": "b0e1cef66d84a1a5715cb09970783cc2481d72449b577925d865e26c6e3e53df"
+    }
+  ]
+}

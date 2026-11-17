@@ -1,0 +1,55 @@
+{
+  "scenario": "clear_up",
+  "mode": "avoidance",
+  "task_completed": false,
+  "goal_reached": false,
+  "inspection_recovered": false,
+  "stop_reason": "corridor_exceeded",
+  "inspection_valid_fraction": 0.14583333333333334,
+  "valid_frames": 7,
+  "inspection_frames": 48,
+  "all_frame_valid_fraction": 0.14285714285714285,
+  "contact_3d": false,
+  "contact_xy": false,
+  "primary_contact_rule": "3D",
+  "elapsed_s": 5.1000000000000005,
+  "maximum_cross_track_m": 1.0403953884092225,
+  "observed_elbows": [
+    {
+      "t": 0.30000000000000004,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        1.25,
+        0.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "gain": 0.1235081239769524
+    },
+    {
+      "t": 0.9,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        1.25,
+        0.0,
+        -1.771
+      ],
+      "outgoing_xyz": [
+        -1.0,
+        -0.0,
+        -0.0
+      ],
+      "gain": 0.3953814158291691
+    }
+  ],
+  "intervention_frames": 0,
+  "prediction_valid_frames": 0,
+  "frames_logged": 49,
+  "video_frames_written": 49,
+  "fps": 10,
+  "configuration_sha256": "d01f8be6fba98344aabf85b0050944247fe4f02d5e267abb49a89060da451559"
+}

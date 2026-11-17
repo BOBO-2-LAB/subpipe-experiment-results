@@ -1,0 +1,332 @@
+{
+  "scope": "Eight failure-focused replay frames only. GT scores raw segmentation, never chooses seeds or enters tracking. Component radius is an upper bound on constrained graph reachability, not proof that an alternative path will pass.",
+  "input": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v2/closed_loop/core/probability_temporal/clear_pipe_tracker_only",
+  "camera_rgb_reproduction": [
+    {
+      "frame": 60,
+      "exact": true
+    },
+    {
+      "frame": 150,
+      "exact": true
+    }
+  ],
+  "model_selection": {
+    "profile_path": "mono/runs_review/m13_tracking_closed_loop_ablation_20261024_v2/perception_M13.json",
+    "profile_sha256": "feefc32491d49d44ec826b669cfb0111d70370ad829db84047674fed7e4278ab",
+    "profile": {
+      "schema_version": 1,
+      "name": "M13_original_suim_independent",
+      "composition": "independent_pipe_biology",
+      "pipe_architecture": "M13",
+      "pipe_checkpoint": "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M13/best.pt",
+      "fish_checkpoint": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "pipe_sha256": "938b238f52950150b09aa629bdd1ca1bdc2e392000480f95c0d2a16026c5f400",
+      "fish_sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2",
+      "fish_wavelet": "none",
+      "fish_wavelet_stage": "s8",
+      "includes_deepcamo": false
+    },
+    "checkpoints": [
+      {
+        "path": "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M13/best.pt",
+        "sha256": "938b238f52950150b09aa629bdd1ca1bdc2e392000480f95c0d2a16026c5f400"
+      },
+      {
+        "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+        "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+      }
+    ],
+    "model_config": {
+      "composition": "independent_pipe_biology",
+      "pipe_architecture": "M13",
+      "pipe_config": {
+        "num_classes": 2,
+        "in_ch": 3,
+        "pretrained": false,
+        "out_ch": [
+          64,
+          128,
+          256
+        ],
+        "wavelet": "attention",
+        "wavelet_plain_extra_blocks": 0,
+        "fusion": "concat",
+        "global_mode": "none",
+        "global_blocks": 1,
+        "global_stage": "s16",
+        "global_heads": 8,
+        "global_win": 7,
+        "decoder_mid": 128,
+        "decoder_skip": true,
+        "decoder_dw": true
+      },
+      "separate_encoder": true,
+      "num_fish_classes": 8,
+      "fish_mid": 64,
+      "fish_wavelet": "none",
+      "fish_wavelet_stage": "s8"
+    },
+    "biological_bundle_pipe_used": false,
+    "loader": "tools.m13_closed_loop",
+    "pipe_exactly_matches_reference": true
+  },
+  "frames": [
+    {
+      "frame": 39,
+      "source_frame": 32,
+      "t_s": 1.3,
+      "reason": "short_probability_path",
+      "reproduced": true,
+      "raw_iou": 0.4161933959893451,
+      "raw_precision": 0.9455355103905001,
+      "raw_recall": 0.4264160659114315,
+      "raw_tp": 8281,
+      "raw_fp": 477,
+      "raw_fn": 11139,
+      "probability_floor": 0.18,
+      "span_requirement_cells": 6.0,
+      "chosen_seed_rc": [
+        17,
+        51
+      ],
+      "seed_component_pixels": 55,
+      "seed_max_radius_cells": 5.830951894845301,
+      "eligible_seed_components": [
+        {
+          "label": 1,
+          "pixels": 55,
+          "diameter_cells": 9.219544410705566,
+          "best_near_seed_radius_cells": 9.219544457292887,
+          "contains_original_seed": true
+        }
+      ],
+      "alternative_seed_can_reach_span_bound": true,
+      "failed_selected_component_but_alternative_bound": true
+    },
+    {
+      "frame": 426,
+      "source_frame": 419,
+      "t_s": 14.2,
+      "reason": "short_probability_path",
+      "reproduced": true,
+      "raw_iou": 0.18433202850547023,
+      "raw_precision": 0.9024570024570024,
+      "raw_recall": 0.18807926673152747,
+      "raw_tp": 3673,
+      "raw_fp": 397,
+      "raw_fn": 15856,
+      "probability_floor": 0.18,
+      "span_requirement_cells": 6.0,
+      "chosen_seed_rc": [
+        16,
+        50
+      ],
+      "seed_component_pixels": 23,
+      "seed_max_radius_cells": 4.47213595499958,
+      "eligible_seed_components": [
+        {
+          "label": 1,
+          "pixels": 23,
+          "diameter_cells": 6.4031243324279785,
+          "best_near_seed_radius_cells": 6.4031242374328485,
+          "contains_original_seed": true
+        }
+      ],
+      "alternative_seed_can_reach_span_bound": true,
+      "failed_selected_component_but_alternative_bound": true
+    },
+    {
+      "frame": 706,
+      "source_frame": 699,
+      "t_s": 23.53333333333333,
+      "reason": "short_probability_path",
+      "reproduced": true,
+      "raw_iou": 0.1725808894048761,
+      "raw_precision": 0.942652329749104,
+      "raw_recall": 0.17441207978370657,
+      "raw_tp": 3419,
+      "raw_fp": 208,
+      "raw_fn": 16184,
+      "probability_floor": 0.18,
+      "span_requirement_cells": 6.0,
+      "chosen_seed_rc": [
+        18,
+        50
+      ],
+      "seed_component_pixels": 15,
+      "seed_max_radius_cells": 3.1622776601683795,
+      "eligible_seed_components": [
+        {
+          "label": 1,
+          "pixels": 15,
+          "diameter_cells": 6.082762718200684,
+          "best_near_seed_radius_cells": 5.0,
+          "contains_original_seed": true
+        }
+      ],
+      "alternative_seed_can_reach_span_bound": false,
+      "failed_selected_component_but_alternative_bound": false
+    },
+    {
+      "frame": 955,
+      "source_frame": 948,
+      "t_s": 31.833333333333332,
+      "reason": "short_probability_path",
+      "reproduced": true,
+      "raw_iou": 0.3728281973415642,
+      "raw_precision": 0.9546207775653283,
+      "raw_recall": 0.3795550149510922,
+      "raw_tp": 7489,
+      "raw_fp": 356,
+      "raw_fn": 12242,
+      "probability_floor": 0.18,
+      "span_requirement_cells": 6.0,
+      "chosen_seed_rc": [
+        17,
+        50
+      ],
+      "seed_component_pixels": 35,
+      "seed_max_radius_cells": 4.47213595499958,
+      "eligible_seed_components": [
+        {
+          "label": 1,
+          "pixels": 35,
+          "diameter_cells": 7.8102498054504395,
+          "best_near_seed_radius_cells": 7.211102550927978,
+          "contains_original_seed": true
+        }
+      ],
+      "alternative_seed_can_reach_span_bound": true,
+      "failed_selected_component_but_alternative_bound": true
+    },
+    {
+      "frame": 1163,
+      "source_frame": 1156,
+      "t_s": 38.766666666666666,
+      "reason": "short_probability_path",
+      "reproduced": true,
+      "raw_iou": 0.22353353002950443,
+      "raw_precision": 0.951063829787234,
+      "raw_recall": 0.2261344665351343,
+      "raw_tp": 4470,
+      "raw_fp": 230,
+      "raw_fn": 15297,
+      "probability_floor": 0.18,
+      "span_requirement_cells": 6.0,
+      "chosen_seed_rc": [
+        17,
+        50
+      ],
+      "seed_component_pixels": 29,
+      "seed_max_radius_cells": 5.0,
+      "eligible_seed_components": [
+        {
+          "label": 1,
+          "pixels": 29,
+          "diameter_cells": 7.280109882354736,
+          "best_near_seed_radius_cells": 7.0710678118654755,
+          "contains_original_seed": true
+        }
+      ],
+      "alternative_seed_can_reach_span_bound": true,
+      "failed_selected_component_but_alternative_bound": true
+    },
+    {
+      "frame": 1349,
+      "source_frame": 1342,
+      "t_s": 44.96666666666667,
+      "reason": "short_probability_path",
+      "reproduced": true,
+      "raw_iou": 0.31700430927732925,
+      "raw_precision": 0.935535740388832,
+      "raw_recall": 0.32408345148875833,
+      "raw_tp": 6400,
+      "raw_fp": 441,
+      "raw_fn": 13348,
+      "probability_floor": 0.18,
+      "span_requirement_cells": 6.0,
+      "chosen_seed_rc": [
+        17,
+        50
+      ],
+      "seed_component_pixels": 31,
+      "seed_max_radius_cells": 4.47213595499958,
+      "eligible_seed_components": [
+        {
+          "label": 1,
+          "pixels": 31,
+          "diameter_cells": 7.8102498054504395,
+          "best_near_seed_radius_cells": 7.211102550927978,
+          "contains_original_seed": true
+        }
+      ],
+      "alternative_seed_can_reach_span_bound": true,
+      "failed_selected_component_but_alternative_bound": true
+    },
+    {
+      "frame": 7,
+      "source_frame": 0,
+      "t_s": 0.23333333333333334,
+      "reason": "probability_path",
+      "reproduced": true,
+      "raw_iou": 0.4372503166715385,
+      "raw_precision": 0.8892301595164965,
+      "raw_recall": 0.4624381698268755,
+      "raw_tp": 8975,
+      "raw_fp": 1118,
+      "raw_fn": 10433,
+      "probability_floor": 0.18,
+      "span_requirement_cells": 6.0,
+      "chosen_seed_rc": [
+        16,
+        50
+      ],
+      "seed_component_pixels": 119,
+      "seed_max_radius_cells": 16.1245154965971,
+      "eligible_seed_components": [
+        {
+          "label": 1,
+          "pixels": 119,
+          "diameter_cells": 19.235383987426758,
+          "best_near_seed_radius_cells": 18.788294228055936,
+          "contains_original_seed": true
+        }
+      ],
+      "alternative_seed_can_reach_span_bound": true,
+      "failed_selected_component_but_alternative_bound": false
+    },
+    {
+      "frame": 1287,
+      "source_frame": 1280,
+      "t_s": 42.9,
+      "reason": "probability_path",
+      "reproduced": true,
+      "raw_iou": 0.3878835952605225,
+      "raw_precision": 0.9502064610153024,
+      "raw_recall": 0.3959313799908912,
+      "raw_tp": 7824,
+      "raw_fp": 410,
+      "raw_fn": 11937,
+      "probability_floor": 0.18,
+      "span_requirement_cells": 6.0,
+      "chosen_seed_rc": [
+        16,
+        50
+      ],
+      "seed_component_pixels": 39,
+      "seed_max_radius_cells": 6.324555320336759,
+      "eligible_seed_components": [
+        {
+          "label": 1,
+          "pixels": 39,
+          "diameter_cells": 8.602325439453125,
+          "best_near_seed_radius_cells": 8.602325267042627,
+          "contains_original_seed": true
+        }
+      ],
+      "alternative_seed_can_reach_span_bound": true,
+      "failed_selected_component_but_alternative_bound": false
+    }
+  ]
+}

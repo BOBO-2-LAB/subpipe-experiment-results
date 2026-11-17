@@ -1,0 +1,28 @@
+{
+  "camera_mount": "fixed side-looking, upright; optical axis toward the declared vertical inspection plane",
+  "standoff_m": 2.0,
+  "initial_depth_m": 20.0,
+  "pipe_width_prior_m": 0.8,
+  "cruise_mps": 0.5,
+  "inspection_command_floor_mps": 0.4,
+  "lookahead_m": 0.7,
+  "outgoing_min_m": 0.45,
+  "outgoing_span_m": 0.4,
+  "outgoing_edge_span_m": [
+    0.4,
+    1.2
+  ],
+  "outgoing_min_points": 8,
+  "normal_gain": 0.8,
+  "surge_max_mps": 0.6,
+  "heave_max_mps": 0.2,
+  "response_tau_s": 0.6,
+  "acceleration_mps2": 0.35,
+  "control_rate_hz": 10.0,
+  "image_delay_s": 0.21,
+  "wait_before_retreat_s": 8.0,
+  "reinspect_overlap_m": 0.3,
+  "reacquire_s": 0.5,
+  "max_loss_s": 20.0,
+  "assumptions": "Side mount, known perpendicular observation distance, ideal pressure depth/odometry and vertical-plane prior are explicit simulation assumptions. Heave limits are assumed, not measured BlueROV2 performance. Hull stays level; zero surge during ascent/descent is not zero route speed. No pitch actuator, seabed, pressure or tether physics."
+}

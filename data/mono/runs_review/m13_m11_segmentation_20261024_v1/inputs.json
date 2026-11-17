@@ -1,0 +1,17 @@
+{
+  "scope": "Real labeled 129-image validation only; no simulation/closed-loop inputs",
+  "pins": {
+    "mono/cache/288x512/val_img.npy": "48f35e63f0dbac86666eae2e1203d834c1d469d6b844a7943d2e706586c15cc1",
+    "mono/cache/288x512/val_msk.npy": "176d78c1c20d9c9be0572b9c11f0a6f531c54d9d9a876e7ef6decc97bf819ea3",
+    "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M13/best.pt": "938b238f52950150b09aa629bdd1ca1bdc2e392000480f95c0d2a16026c5f400",
+    "mono/runs_review/m13_wavelet_dw_20261023_2059/training/M11/best.pt": "820f06c8794977b905191fe27896bc8208caf6be8cac19643fbed58d88a793a6"
+  },
+  "normalization": "ImageNet",
+  "resolution": [
+    288,
+    512
+  ],
+  "amp": true,
+  "batch": 8,
+  "limitation": "Validation used to select best checkpoints; single seed, same voyage; not independent test"
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "checks": {
+    "camera_assumptions": true,
+    "vehicle_assumptions": true,
+    "synthetic_inspection_criteria": true,
+    "appearance_assets": true,
+    "checkpoints": true,
+    "rate_hz": true,
+    "resize_short": true,
+    "fish_resize_short": true,
+    "fish_height_m": true,
+    "avoidance_config_overrides": true,
+    "image_delay_assumption_s": true,
+    "inspection_scoring": true,
+    "loss_policy": true,
+    "tracker_sway": true,
+    "pipe_motion_compensation": true,
+    "appearance_files_unchanged": true
+  },
+  "compared_summaries": [
+    "closed_loop\\entry\\baseline\\summary.json",
+    "closed_loop\\entry\\multiseed\\summary.json",
+    "closed_loop\\entry\\supported\\summary.json",
+    "closed_loop\\occlusion\\baseline\\summary.json",
+    "closed_loop\\occlusion\\multiseed\\summary.json",
+    "closed_loop\\occlusion\\supported\\summary.json"
+  ]
+}

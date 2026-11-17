@@ -1,0 +1,335 @@
+{
+  "suim": {
+    "per_class_iou": {
+      "BW": 0.8314702454207445,
+      "HD": 0.7374160718858912,
+      "PF": 0.15412681047621718,
+      "WR": 0.6640848759429506,
+      "RO": 0.7249939157945973,
+      "RI": 0.7357718439765439,
+      "FV": 0.6179518338612691,
+      "SR": 0.5480479978980323
+    },
+    "fish_iou": 0.6179518338612691,
+    "bio_iou": 0.5026168294380101,
+    "all_iou": 0.6267329494070307,
+    "negative_crops": 52,
+    "negative_candidates": 15,
+    "gate": "p(FV)>0.5; largest 8-connected component >=400px at 384x384",
+    "confusion": [
+      [
+        6384569,
+        21461,
+        9845,
+        49573,
+        4020,
+        132181,
+        118970,
+        329907
+      ],
+      [
+        17006,
+        331133,
+        15,
+        8658,
+        6233,
+        3027,
+        23352,
+        5817
+      ],
+      [
+        26517,
+        3417,
+        82417,
+        326,
+        0,
+        129988,
+        32482,
+        69016
+      ],
+      [
+        37547,
+        8915,
+        1985,
+        1230963,
+        18,
+        172293,
+        43937,
+        93360
+      ],
+      [
+        4935,
+        2569,
+        2,
+        4323,
+        68517,
+        314,
+        287,
+        516
+      ],
+      [
+        134283,
+        3850,
+        159527,
+        76606,
+        1673,
+        6415645,
+        377006,
+        353704
+      ],
+      [
+        51139,
+        3007,
+        3977,
+        10442,
+        0,
+        218619,
+        1652169,
+        63050
+      ],
+      [
+        356697,
+        10585,
+        15221,
+        114677,
+        1100,
+        540896,
+        75184,
+        2461300
+      ]
+    ]
+  },
+  "deepcamo_val": {
+    "n": 20,
+    "annotated_target_micro_iou": 0.1466908304949942,
+    "annotated_target_macro_iou": 0.13466386373854683,
+    "annotated_foreground_coverage": 0.9601495781688993,
+    "annotation_relative_precision": 0.1475894010123013,
+    "overlap_candidates": 18,
+    "probability_threshold": 0.5,
+    "scope": "Original camouflage-target annotations; not exhaustive fish background, fish precision/recall or real-video acceptance.",
+    "preprocess": "Aspect-preserving 384-square letterbox; padding excluded; no target-based crops at evaluation.",
+    "frames": [
+      {
+        "stem": "MAS_MarineFish_Fish_Cam_1091",
+        "tp": 57380,
+        "annotation_relative_fp": 41042,
+        "fn": 19,
+        "annotated_target_iou": 0.5828872116293008,
+        "foreground_coverage": 0.9996689837802052,
+        "annotated_foreground_pixels": 57399,
+        "largest_component_pixels": 98416,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_Fish_Cam_1097",
+        "tp": 3514,
+        "annotation_relative_fp": 71862,
+        "fn": 0,
+        "annotated_target_iou": 0.04661961367013373,
+        "foreground_coverage": 1.0,
+        "annotated_foreground_pixels": 3514,
+        "largest_component_pixels": 75337,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_Fish_Cam_1099",
+        "tp": 12475,
+        "annotation_relative_fp": 83769,
+        "fn": 0,
+        "annotated_target_iou": 0.12961846972278793,
+        "foreground_coverage": 1.0,
+        "annotated_foreground_pixels": 12475,
+        "largest_component_pixels": 96244,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_Fish_Cam_1145",
+        "tp": 4431,
+        "annotation_relative_fp": 38832,
+        "fn": 119,
+        "annotated_target_iou": 0.10213913604720852,
+        "foreground_coverage": 0.9738461538461538,
+        "annotated_foreground_pixels": 4550,
+        "largest_component_pixels": 41988,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_GhostPipeFish_Cam_2005",
+        "tp": 14420,
+        "annotation_relative_fp": 83874,
+        "fn": 0,
+        "annotated_target_iou": 0.14670274889616863,
+        "foreground_coverage": 1.0,
+        "annotated_foreground_pixels": 14420,
+        "largest_component_pixels": 98294,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_GhostPipeFish_Cam_2008",
+        "tp": 10425,
+        "annotation_relative_fp": 100167,
+        "fn": 0,
+        "annotated_target_iou": 0.0942654079861111,
+        "foreground_coverage": 1.0,
+        "annotated_foreground_pixels": 10425,
+        "largest_component_pixels": 110592,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_GhostPipeFish_Cam_2013",
+        "tp": 20482,
+        "annotation_relative_fp": 80126,
+        "fn": 0,
+        "annotated_target_iou": 0.20358222010178118,
+        "foreground_coverage": 1.0,
+        "annotated_foreground_pixels": 20482,
+        "largest_component_pixels": 100608,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_GhostPipeFish_Cam_2014",
+        "tp": 28753,
+        "annotation_relative_fp": 66470,
+        "fn": 0,
+        "annotated_target_iou": 0.3019543597660229,
+        "foreground_coverage": 1.0,
+        "annotated_foreground_pixels": 28753,
+        "largest_component_pixels": 95223,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_GhostPipeFish_Cam_2017",
+        "tp": 14125,
+        "annotation_relative_fp": 78550,
+        "fn": 0,
+        "annotated_target_iou": 0.1524143512274076,
+        "foreground_coverage": 1.0,
+        "annotated_foreground_pixels": 14125,
+        "largest_component_pixels": 92389,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_PipeFish_Cam_2260",
+        "tp": 4240,
+        "annotation_relative_fp": 93723,
+        "fn": 0,
+        "annotated_target_iou": 0.04328164715249635,
+        "foreground_coverage": 1.0,
+        "annotated_foreground_pixels": 4240,
+        "largest_component_pixels": 97963,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_PipeFish_Cam_2274",
+        "tp": 7271,
+        "annotation_relative_fp": 88872,
+        "fn": 0,
+        "annotated_target_iou": 0.07562693071778497,
+        "foreground_coverage": 1.0,
+        "annotated_foreground_pixels": 7271,
+        "largest_component_pixels": 96140,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_PipeFish_Cam_2303",
+        "tp": 4846,
+        "annotation_relative_fp": 76424,
+        "fn": 0,
+        "annotated_target_iou": 0.059628399163282886,
+        "foreground_coverage": 1.0,
+        "annotated_foreground_pixels": 4846,
+        "largest_component_pixels": 81270,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_PipeFish_Cam_2309",
+        "tp": 4471,
+        "annotation_relative_fp": 75017,
+        "fn": 0,
+        "annotated_target_iou": 0.05624748389694042,
+        "foreground_coverage": 1.0,
+        "annotated_foreground_pixels": 4471,
+        "largest_component_pixels": 79488,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_ScorpionFish_Cam_2563",
+        "tp": 6574,
+        "annotation_relative_fp": 103959,
+        "fn": 0,
+        "annotated_target_iou": 0.05947545077035817,
+        "foreground_coverage": 1.0,
+        "annotated_foreground_pixels": 6574,
+        "largest_component_pixels": 110533,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_ScorpionFish_Cam_2567",
+        "tp": 17590,
+        "annotation_relative_fp": 89533,
+        "fn": 0,
+        "annotated_target_iou": 0.16420376576458837,
+        "foreground_coverage": 1.0,
+        "annotated_foreground_pixels": 17590,
+        "largest_component_pixels": 107123,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_ScorpionFish_Cam_2570",
+        "tp": 153,
+        "annotation_relative_fp": 13203,
+        "fn": 9142,
+        "annotated_target_iou": 0.0068006044981776155,
+        "foreground_coverage": 0.01646046261430877,
+        "annotated_foreground_pixels": 9295,
+        "largest_component_pixels": 13189,
+        "overlap_candidate": false
+      },
+      {
+        "stem": "MAS_MarineFish_SeaHorse_Cam_2700",
+        "tp": 8236,
+        "annotation_relative_fp": 81148,
+        "fn": 0,
+        "annotated_target_iou": 0.0921417703392106,
+        "foreground_coverage": 1.0,
+        "annotated_foreground_pixels": 8236,
+        "largest_component_pixels": 87038,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_SeaHorse_Cam_2706",
+        "tp": 459,
+        "annotation_relative_fp": 10335,
+        "fn": 746,
+        "annotated_target_iou": 0.03977469670710572,
+        "foreground_coverage": 0.3809128630705394,
+        "annotated_foreground_pixels": 1205,
+        "largest_component_pixels": 3589,
+        "overlap_candidate": false
+      },
+      {
+        "stem": "MAS_MarineFish_SeaHorse_Cam_2712",
+        "tp": 5949,
+        "annotation_relative_fp": 73836,
+        "fn": 0,
+        "annotated_target_iou": 0.0745628877608573,
+        "foreground_coverage": 1.0,
+        "annotated_foreground_pixels": 5949,
+        "largest_component_pixels": 79706,
+        "overlap_candidate": true
+      },
+      {
+        "stem": "MAS_MarineFish_SeaHorse_Cam_2723",
+        "tp": 15819,
+        "annotation_relative_fp": 44707,
+        "fn": 2,
+        "annotated_target_iou": 0.26135011895321175,
+        "foreground_coverage": 0.9998735857404715,
+        "annotated_foreground_pixels": 15821,
+        "largest_component_pixels": 60158,
+        "overlap_candidate": true
+      }
+    ]
+  }
+}

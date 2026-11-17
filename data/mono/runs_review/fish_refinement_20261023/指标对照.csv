@@ -1,0 +1,25 @@
+stage,mode,condition,epoch,fish_iou,bio_iou,negative_candidates,negative_images,scope
+label_effect,none,legacy153,,0.6047289337950045,0.48571580788102037,9,52,"Same original weights, different annotation alignment"
+label_effect,none,aligned153,,0.6108178341768558,0.48812228085605547,9,52,"Same original weights, different annotation alignment"
+label_effect,plain,legacy153,,0.6084370282730203,0.4855485846978757,8,52,"Same original weights, different annotation alignment"
+label_effect,plain,aligned153,,0.6144083389440572,0.48789487199552645,8,52,"Same original weights, different annotation alignment"
+label_effect,attention,legacy153,,0.6121800297760782,0.48835504663189994,9,52,"Same original weights, different annotation alignment"
+label_effect,attention,aligned153,,0.6178972504334902,0.49058994761512603,9,52,"Same original weights, different annotation alignment"
+training,none,full,2,0.6174161493244861,0.4886417774340708,8,52,Aligned153 center crops; epoch0 fallback
+actual_candidate,none,full,4,0.6134761635586004,0.49252241356544574,8,52,Actual bio-selected candidate; may fail retention
+training,plain,full,9,0.6228419644215889,0.49065723309620796,7,52,Aligned153 center crops; epoch0 fallback
+actual_candidate,plain,full,4,0.6141839070733851,0.49409296744043824,8,52,Actual bio-selected candidate; may fail retention
+training,attention,full,5,0.6200919804762336,0.49150114280551294,8,52,Aligned153 center crops; epoch0 fallback
+actual_candidate,attention,full,4,0.6150522912142646,0.49450363062785235,8,52,Actual bio-selected candidate; may fail retention
+training,none,region,4,0.6128166864231382,0.49075156452391294,9,52,Aligned153 center crops; epoch0 fallback
+actual_candidate,none,region,4,0.6128166864231382,0.49075156452391294,9,52,Actual bio-selected candidate; may fail retention
+training,plain,region,1,0.6172727136904532,0.4879799545583025,8,52,Aligned153 center crops; epoch0 fallback
+actual_candidate,plain,region,4,0.614842328478232,0.49309890445133014,9,52,Actual bio-selected candidate; may fail retention
+training,attention,region,0,0.6178972504334902,0.49058994761512603,9,52,Aligned153 center crops; epoch0 fallback
+actual_candidate,attention,region,4,0.6148518424579467,0.49322912300013527,8,52,Actual bio-selected candidate; may fail retention
+slicing,none,global,,0.5861661016226095,0.4947081539019156,18,52,Aligned153 full native frames; not center crops
+slicing,none,sliced,,0.5756589497438848,0.4832611303230407,17,52,Aligned153 full native frames; not center crops
+slicing,plain,global,,0.5979963082756836,0.497436398421085,13,52,Aligned153 full native frames; not center crops
+slicing,plain,sliced,,0.5919869641218533,0.49048121449162685,15,52,Aligned153 full native frames; not center crops
+slicing,attention,global,,0.597238148493474,0.5003747609514667,15,52,Aligned153 full native frames; not center crops
+slicing,attention,sliced,,0.5831087088151463,0.49127596432080534,17,52,Aligned153 full native frames; not center crops

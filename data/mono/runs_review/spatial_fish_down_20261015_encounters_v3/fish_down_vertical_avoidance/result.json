@@ -1,0 +1,133 @@
+{
+  "scenario": "fish_down_vertical",
+  "mode": "avoidance",
+  "task_completed": false,
+  "scene": {
+    "name": "fish_down_vertical",
+    "sign": 1,
+    "fish": [
+      5.3,
+      0.0,
+      2.5
+    ]
+  },
+  "evaluation_route_xd": [
+    [
+      0,
+      -2.0
+    ],
+    [
+      6.0,
+      -2.0
+    ],
+    [
+      6.0,
+      4
+    ]
+  ],
+  "evaluation_goal_xyz": [
+    6.0,
+    0.0,
+    4.0
+  ],
+  "environment_contact_3d": false,
+  "goal_reached": false,
+  "stop_reason": "timeout",
+  "elapsed_s": 59.96666666666667,
+  "inspection_valid_fraction": 0.9418439716312057,
+  "all_frame_valid_fraction": 0.6257668711656442,
+  "maximum_cross_track_m": 0.9378494602445269,
+  "endpoint_hold_duration_s": 0.0,
+  "fish_contact_3d": false,
+  "fish_contact_2d": true,
+  "minimum_fish_clearance_3d_m": 2.7035970613673164,
+  "terminal_pipe_observed": false,
+  "end_distance_m": 5.9081205147816105,
+  "pipe_arc_observation_fraction": 0.96875,
+  "no_fish_false_intervention_pass": true,
+  "recentered_at_goal": false,
+  "failed_acceptance_checks": [
+    "goal_reached"
+  ],
+  "legacy_2d_no_contact_pass": false,
+  "intervention_frames": 58,
+  "event_times": {
+    "fish_first_visible": 14.9,
+    "fish_first_detection": 15.866666666666667,
+    "fish_first_effective_detection": 15.866666666666667,
+    "first_confirmed_track": 16.766666666666666,
+    "first_intervention": 22.0
+  },
+  "recovery_events": [
+    {
+      "t": 5.333333333333333,
+      "event": "loss_wait_started"
+    },
+    {
+      "t": 6.133333333333333,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 9.6,
+      "event": "reinspection_started"
+    },
+    {
+      "t": 23.933333333333334,
+      "event": "loss_wait_started"
+    },
+    {
+      "t": 28.633333333333333,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 31.3,
+      "event": "reinspection_started"
+    },
+    {
+      "t": 32.46666666666667,
+      "event": "loss_wait_started"
+    },
+    {
+      "t": 37.333333333333336,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 39.93333333333333,
+      "event": "reinspection_started"
+    },
+    {
+      "t": 40.86666666666667,
+      "event": "loss_wait_started"
+    },
+    {
+      "t": 46.333333333333336,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 48.93333333333333,
+      "event": "reinspection_started"
+    },
+    {
+      "t": 50.0,
+      "event": "loss_wait_started"
+    },
+    {
+      "t": 51.733333333333334,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 56.233333333333334,
+      "event": "vision_reacquired"
+    },
+    {
+      "t": 58.86666666666667,
+      "event": "reinspection_started"
+    },
+    {
+      "t": 59.766666666666666,
+      "event": "loss_wait_started"
+    }
+  ],
+  "task_completed_3d": false,
+  "task_completed_legacy_2d": false
+}

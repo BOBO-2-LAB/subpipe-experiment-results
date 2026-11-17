@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "name": "M13-S345-v1",
+  "threshold_status": "engineering prototype; not calibrated on an independent validation voyage",
+  "image_grid_short": 288,
+  "planar_skeleton": {
+    "threshold": 0.5,
+    "min_component_cells": 8,
+    "min_length_cells": 6.0,
+    "spur_length_cells": 2.5,
+    "near_band_cells": 3.0,
+    "lateral_band_cells": 16.0,
+    "ambiguity_length_cells": 5.0,
+    "ambiguity_probability_margin": 0.08,
+    "max_components": 3
+  },
+  "planar_temporal": {
+    "tangent_window": 0.6,
+    "center_tau_s": 0.12,
+    "heading_tau_s": 0.15,
+    "confirmed_turn_tau_s": 0.06,
+    "center_gate": 0.35,
+    "heading_gate_rad": 0.6,
+    "candidate_heading_gate_rad": 0.35,
+    "prediction_timeout_s": 0.4,
+    "measurement_gap_s": 0.25,
+    "reacquire_frames": 3,
+    "reacquire_s": 0.1,
+    "short_reacquire_frames": 2,
+    "short_reacquire_s": 0.03
+  },
+  "image_skeleton": {
+    "threshold": 0.5,
+    "min_component_cells": 100,
+    "min_length_cells": 24.0,
+    "spur_length_cells": 8.0,
+    "near_band_cells": 144.0,
+    "lateral_band_cells": 200.0,
+    "ambiguity_length_cells": 24.0,
+    "ambiguity_probability_margin": 0.08,
+    "max_components": 3
+  },
+  "image_temporal": {
+    "tangent_window": 0.2,
+    "center_tau_s": 0.12,
+    "heading_tau_s": 0.15,
+    "confirmed_turn_tau_s": 0.06,
+    "center_gate": 0.08,
+    "heading_gate_rad": 0.6,
+    "candidate_heading_gate_rad": 0.35,
+    "prediction_timeout_s": 0.4,
+    "measurement_gap_s": 0.25,
+    "reacquire_frames": 3,
+    "reacquire_s": 0.1,
+    "short_reacquire_frames": 2,
+    "short_reacquire_s": 0.03
+  }
+}

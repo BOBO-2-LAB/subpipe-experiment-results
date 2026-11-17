@@ -1,0 +1,57 @@
+{
+  "scenario": "fish_left_before",
+  "mode": "avoidance",
+  "task_completed": false,
+  "goal_reached": false,
+  "inspection_recovered": false,
+  "stop_reason": "corridor_exceeded",
+  "inspection_valid_fraction": 0.7943262411347518,
+  "valid_frames": 112,
+  "inspection_frames": 141,
+  "all_frame_valid_fraction": 0.7417218543046358,
+  "contact_3d": false,
+  "contact_xy": false,
+  "primary_contact_rule": "XY",
+  "elapsed_s": 15.3,
+  "maximum_cross_track_m": 1.0279167677620231,
+  "observed_elbows": [
+    {
+      "t": 1.8,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "outgoing_xyz": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "gain": 0.3356066473888947
+    },
+    {
+      "t": 12.0,
+      "event": "observed_elbow_confirmed",
+      "corner_xyz": [
+        3.4500000000000104,
+        -1.25,
+        0.0
+      ],
+      "outgoing_xyz": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "gain": 0.31753263264960163
+    }
+  ],
+  "intervention_frames": 148,
+  "prediction_valid_frames": 0,
+  "frames_logged": 151,
+  "video_frames_written": 151,
+  "fps": 10,
+  "configuration_sha256": "9db0563f0cba948335f563c7c1cddd081f0d56e9659a4eada4ec6809dc81535e",
+  "terminal_pipe_observed": false,
+  "pipe_arc_observation_fraction": 0.9444444444444444
+}

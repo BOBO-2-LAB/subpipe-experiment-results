@@ -1,0 +1,424 @@
+{
+  "scope": "Actual XYZ ray-cast cylinder/capsule surfaces, horizontal seabed to vertical riser, moving forward camera tilt; level thruster ROV with surge/heave. Still explicit known vertical-plane/diameter/odometry priors, not arbitrary 3D reconstruction.",
+  "controller_truth_access": "None: RGB/predicted masks, measured camera extrinsics and odometry, explicit geometric priors only. Inspection route and scene points are scoring/rendering only.",
+  "timing": "Fixed simulation clock; model wall latency measured but not injected",
+  "config": {
+    "camera_mount": "fixed side-looking, upright; optical axis toward the declared vertical inspection plane",
+    "standoff_m": 2.0,
+    "initial_depth_m": 20.0,
+    "pipe_width_prior_m": 0.8,
+    "cruise_mps": 0.5,
+    "inspection_command_floor_mps": 0.4,
+    "lookahead_m": 0.7,
+    "outgoing_min_m": 0.45,
+    "outgoing_span_m": 0.4,
+    "outgoing_edge_span_m": [
+      0.4,
+      1.2
+    ],
+    "outgoing_min_points": 8,
+    "normal_gain": 0.8,
+    "surge_max_mps": 0.6,
+    "heave_max_mps": 0.6,
+    "response_tau_s": 0.6,
+    "acceleration_mps2": 0.35,
+    "control_rate_hz": 10.0,
+    "image_delay_s": 0.21,
+    "wait_before_retreat_s": 8.0,
+    "reinspect_overlap_m": 0.3,
+    "reacquire_s": 0.5,
+    "max_loss_s": 20.0,
+    "assumptions": "Side mount, known perpendicular observation distance, ideal pressure depth/odometry and vertical-plane prior are explicit simulation assumptions. Heave limits are assumed, not measured BlueROV2 performance. Hull stays level; zero surge during ascent/descent is not zero route speed. No pitch actuator, seabed, pressure or tether physics."
+  },
+  "gimbal_assumptions": {
+    "pitch_range_deg": [
+      -90,
+      90
+    ],
+    "yaw_range_deg": [
+      -90,
+      90
+    ],
+    "rate_deg_s": 45,
+    "tau_s": 0.35,
+    "published_hardware_claim": false
+  },
+  "checkpoints": [
+    {
+      "path": "mono/runs_ablation/M11/best.pt",
+      "sha256": "ce5736178c1dc5d8c0ccbc0f6d344a4dba4d40fd66c8bfec0c260a5ba236663a"
+    },
+    {
+      "path": "mono/runs_fish/suim8_sep_e60/best.pt",
+      "sha256": "6a5bcff964be3f22a40cd6b13b0303989e1d16ecc7c1f0f7d2684adb67e775e2"
+    }
+  ],
+  "episodes": [],
+  "probe": [
+    {
+      "scene": "floor_to_riser_up",
+      "pose": {
+        "x": 0,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.7853981633974483
+      },
+      "raw_iou": 0.039912072755484675,
+      "estimated_iou": 0.6405675753411524,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -16.11130404472351,
+            5.675309896469116
+          ],
+          [
+            22.811303853988647,
+            -3.545898199081421
+          ]
+        ],
+        "skeleton_pixels": 34,
+        "observed_support_pixels": 323,
+        "bend_confirmed": false,
+        "measured_corner_world_m": null,
+        "turn_sign": null,
+        "estimated_inspection_route_xd": [
+          [
+            -16.572364449501038,
+            1.7291795015335083
+          ],
+          [
+            22.35024344921112,
+            -7.492028594017029
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_up",
+      "pose": {
+        "x": 0.5,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.5759586531581288
+      },
+      "raw_iou": 0.024500989030749865,
+      "estimated_iou": 0.5572041651418876,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -16.61130404472351,
+            5.675309896469116
+          ],
+          [
+            22.311303853988647,
+            -3.545898199081421
+          ]
+        ],
+        "skeleton_pixels": 27,
+        "observed_support_pixels": 19,
+        "bend_confirmed": false,
+        "measured_corner_world_m": null,
+        "turn_sign": null,
+        "estimated_inspection_route_xd": [
+          [
+            -16.572364449501038,
+            1.7291795015335083
+          ],
+          [
+            22.35024344921112,
+            -7.492028594017029
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_up",
+      "pose": {
+        "x": 1,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.5759586531581288
+      },
+      "raw_iou": 0.03350592665497026,
+      "estimated_iou": 0.5086854601190118,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -17.11130404472351,
+            5.675309896469116
+          ],
+          [
+            21.811303853988647,
+            -3.545898199081421
+          ]
+        ],
+        "skeleton_pixels": 31,
+        "observed_support_pixels": 224,
+        "bend_confirmed": false,
+        "measured_corner_world_m": null,
+        "turn_sign": null,
+        "estimated_inspection_route_xd": [
+          [
+            -16.572364449501038,
+            1.7291795015335083
+          ],
+          [
+            22.35024344921112,
+            -7.492028594017029
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_up",
+      "pose": {
+        "x": 2,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.17453292519943295
+      },
+      "raw_iou": 0.05278725033057276,
+      "estimated_iou": 0.3430869016523347,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -18.11130404472351,
+            5.675309896469116
+          ],
+          [
+            20.811303853988647,
+            -3.545898199081421
+          ]
+        ],
+        "skeleton_pixels": 18,
+        "observed_support_pixels": 30,
+        "bend_confirmed": false,
+        "measured_corner_world_m": null,
+        "turn_sign": null,
+        "estimated_inspection_route_xd": [
+          [
+            -16.572364449501038,
+            1.7291795015335083
+          ],
+          [
+            22.35024344921112,
+            -7.492028594017029
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_up",
+      "pose": {
+        "x": 2,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": -0.4363323129985824
+      },
+      "raw_iou": 0.35527089458210837,
+      "estimated_iou": 0.03484059178995624,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -18.11130404472351,
+            5.675309896469116
+          ],
+          [
+            20.811303853988647,
+            -3.545898199081421
+          ]
+        ],
+        "skeleton_pixels": 214,
+        "observed_support_pixels": 341,
+        "bend_confirmed": false,
+        "measured_corner_world_m": null,
+        "turn_sign": null,
+        "estimated_inspection_route_xd": [
+          [
+            -16.572364449501038,
+            1.7291795015335083
+          ],
+          [
+            22.35024344921112,
+            -7.492028594017029
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_down",
+      "pose": {
+        "x": 0,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.7853981633974483
+      },
+      "raw_iou": 0.019393939393939394,
+      "estimated_iou": 0.29074496931639787,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -9.216397762298584,
+            -12.482696533203125
+          ],
+          [
+            12.906397819519043,
+            20.84269666671753
+          ]
+        ],
+        "skeleton_pixels": 24,
+        "observed_support_pixels": 648,
+        "bend_confirmed": false,
+        "measured_corner_world_m": null,
+        "turn_sign": null,
+        "estimated_inspection_route_xd": [
+          [
+            -7.550128102302551,
+            -15.588836312294006
+          ],
+          [
+            14.572667479515076,
+            17.736556887626648
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_down",
+      "pose": {
+        "x": 0.5,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.5759586531581288
+      },
+      "raw_iou": 0.00752435337588176,
+      "estimated_iou": 0.0,
+      "healthy": false,
+      "trace": {
+        "status": "no_centerline",
+        "estimated_inspection_route_xd": [
+          [
+            -7.550128102302551,
+            -15.588836312294006
+          ],
+          [
+            14.572667479515076,
+            17.736556887626648
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_down",
+      "pose": {
+        "x": 1,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.5759586531581288
+      },
+      "raw_iou": 0.006533222129552404,
+      "estimated_iou": 0.0,
+      "healthy": false,
+      "trace": {
+        "status": "no_centerline",
+        "estimated_inspection_route_xd": [
+          [
+            -7.550128102302551,
+            -15.588836312294006
+          ],
+          [
+            14.572667479515076,
+            17.736556887626648
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_down",
+      "pose": {
+        "x": 2,
+        "y": -0.8,
+        "depth": -2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.17453292519943295
+      },
+      "raw_iou": 0.05515587529976019,
+      "estimated_iou": 0.0,
+      "healthy": false,
+      "trace": {
+        "status": "no_centerline",
+        "estimated_inspection_route_xd": [
+          [
+            -7.550128102302551,
+            -15.588836312294006
+          ],
+          [
+            14.572667479515076,
+            17.736556887626648
+          ]
+        ]
+      }
+    },
+    {
+      "scene": "floor_to_riser_down",
+      "pose": {
+        "x": 2,
+        "y": -0.8,
+        "depth": 2,
+        "yaw": 0.260602391747341,
+        "pitch": 0.4363323129985824
+      },
+      "raw_iou": 0.1029664660361135,
+      "estimated_iou": 0.0013959981386691485,
+      "healthy": true,
+      "trace": {
+        "status": "centerline",
+        "points_local_m": [
+          [
+            -11.216397762298584,
+            -16.482696533203125
+          ],
+          [
+            10.906397819519043,
+            16.84269666671753
+          ]
+        ],
+        "skeleton_pixels": 24,
+        "observed_support_pixels": 808,
+        "bend_confirmed": false,
+        "measured_corner_world_m": null,
+        "turn_sign": null,
+        "estimated_inspection_route_xd": [
+          [
+            -7.550128102302551,
+            -15.588836312294006
+          ],
+          [
+            14.572667479515076,
+            17.736556887626648
+          ]
+        ]
+      }
+    }
+  ]
+}

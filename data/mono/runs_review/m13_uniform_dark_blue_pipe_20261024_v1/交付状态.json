@@ -1,0 +1,50 @@
+{
+  "status": "uniform_dark_blue_material_complete_entry_failed",
+  "color_rgb": [
+    12,
+    45,
+    80
+  ],
+  "color_hex": "#0C2D50",
+  "background": "original photo-plane unchanged",
+  "regression_tests_passed": 276,
+  "source_weight_asset_hashes_unchanged": true,
+  "fixed_pose_geometry_and_background_identical": true,
+  "episodes": [
+    {
+      "environment": "original",
+      "task_pass": false,
+      "goal": false,
+      "valid_fraction": 0.8333333333333334,
+      "active_frames": 18,
+      "valid_active_frames": 15,
+      "all_frame_valid_fraction": 0.03930817610062893,
+      "pipe_iou": 0.44854493663843376,
+      "progress_m": 0.4312378290269867,
+      "elapsed_s": 21.166666666666668,
+      "recovered": false,
+      "reverse_attempts": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failed_checks": "goal_reached;inspection_valid_fraction;recovered"
+    },
+    {
+      "environment": "uniform",
+      "task_pass": false,
+      "goal": false,
+      "valid_fraction": 0.9232365145228216,
+      "active_frames": 482,
+      "valid_active_frames": 445,
+      "all_frame_valid_fraction": 0.6118518518518519,
+      "pipe_iou": 0.5593812445161092,
+      "progress_m": 6.724608223449558,
+      "elapsed_s": 45.0,
+      "recovered": false,
+      "reverse_attempts": 0,
+      "contact_2d": false,
+      "contact_3d": null,
+      "failed_checks": "goal_reached;recovered"
+    }
+  ],
+  "adopted_as_generalized_model_improvement": false
+}

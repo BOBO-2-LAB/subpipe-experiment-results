@@ -1,0 +1,42 @@
+{
+  "status": "complete_with_findings",
+  "deepcamo_used": false,
+  "modes": [
+    "none",
+    "plain",
+    "attention"
+  ],
+  "steps": [
+    {
+      "order": 1,
+      "name": "paired resolution",
+      "path": "01_resolution_v2",
+      "status": "complete",
+      "selected_side": 384
+    },
+    {
+      "order": 2,
+      "name": "reviewed SUIM hard examples vs matched continuation",
+      "path": "02_hard_training",
+      "status": "complete"
+    },
+    {
+      "order": 3,
+      "name": "bottom-up biological fusion vs matched continuation",
+      "path": "03_fusion_training",
+      "status": "complete"
+    },
+    {
+      "order": 4,
+      "name": "flow-aligned one-frame probability filtering",
+      "path": "04_temporal",
+      "status": "complete"
+    }
+  ],
+  "protected_old_weights": true,
+  "baseline_selection": "Fallback to exact original if strict retention fails",
+  "new_mission_acceptance_claim": false,
+  "all_four_stages_complete": true,
+  "report": "mono/runs_review/fish_priority_20261023/总报告.md",
+  "operational_defaults_changed": false
+}
